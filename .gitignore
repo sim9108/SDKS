@@ -27,7 +27,6 @@
 *.out
 *.app
 *.log
-LibZ/doc/
 *.tlog
 LibZ/ReleaseStatic/
 LibZ/ReleaseStaticMT/
@@ -45,7 +44,6 @@ LibZ/DebugStaticMT/
 *.user
 LibZ/src/RCa03948
 *.opensdf
-LibBzip2/doc/
 LibBzip2/Debug/
 *.idb
 LibZ/demo/zip_Simple1/Debug/test.txt
