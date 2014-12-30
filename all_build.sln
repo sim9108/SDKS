@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.30324.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibZ", "LibZ\LibZ.vcxproj", "{B26E24E9-C1ED-437E-859D-59C8435D5685}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -11,6 +11,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibBzip2", "LibBzip2\LibBzip2.vcxproj", "{1DC20B58-ED98-4E0A-9F26-F63E4204DEA5}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibJpeg", "LibJpeg\LibJpeg.vcxproj", "{7413D76B-1EA8-484B-B62B-6C353D452420}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibLcms", "LibLcms\LibLcms.vcxproj", "{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,6 +102,30 @@ Global
 		{7413D76B-1EA8-484B-B62B-6C353D452420}.ReleaseStatic|Win32.Build.0 = ReleaseSMT|Win32
 		{7413D76B-1EA8-484B-B62B-6C353D452420}.ReleaseStaticMT|Win32.ActiveCfg = ReleaseSMT|Win32
 		{7413D76B-1EA8-484B-B62B-6C353D452420}.ReleaseStaticMT|Win32.Build.0 = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.Debug|Win32.Build.0 = Debug|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugS|Win32.Build.0 = DebugS|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugStatic|Win32.ActiveCfg = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugStatic|Win32.Build.0 = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugStaticMT|Win32.ActiveCfg = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.DebugStaticMT|Win32.Build.0 = DebugSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.Release|Win32.ActiveCfg = Release|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.Release|Win32.Build.0 = Release|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseStatic|Win32.ActiveCfg = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseStatic|Win32.Build.0 = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseStaticMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{11038C0C-A2C6-43CA-AA9E-7D5213D9F444}.ReleaseStaticMT|Win32.Build.0 = ReleaseSMT|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
