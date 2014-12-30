@@ -5,4 +5,4 @@ LibOpenJpeg - ÀÌ¹ÎÈ£ =>https://github.com/malaterre/openjpeg.git
 LibTbb - ½ÅÀçÀÍ
 LibCurl - ±è´Ù¼Ø =>https://github.com/bagder/curl.git
 LibFreeType - ÀüÇâ¶õ  ==>git://git.sv.nongnu.org/freetype/freetype2.git
-LibExpat - ¹ÚÈñ°æ
+LibExpat - ¹ÚÈñ°æ ==>https://github.com/cgwalters/expat-git-mirror.git
