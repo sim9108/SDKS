@@ -58,3 +58,9 @@ LibJpeg/doc/jpegsr9a/
 Tools/NASM/LICENSE
 Tools/NASM/version.txt
 **/doc/**
+*.mk
+LibTrueType2/src/autofit/Jamfile
+LibTrueType2/src/type1/Jamfile
+LibTrueType2/src/type42/Jamfile
+LibTrueType2/src/winfonts/Jamfile
+Jamfile
