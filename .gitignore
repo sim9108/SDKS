@@ -54,9 +54,10 @@ LibZ/demo/zip1/Debug/
 LibZ/demo/zip1/ReadMe.txt
 LibZ/demo/zip1_standard/Release/
 LibZ/demo/zip1_standard/ReadMe.txt
-LibJpeg/doc/jpegsr9a/
 Tools/NASM/LICENSE
 Tools/NASM/version.txt
-*/doc/*
+*.zip
+*.tar.gz
+*/doc/*/*
 *.mk
 Jamfile

@@ -1,0 +1,2 @@
+git://git.code.sf.net/p/libpng/code 
+version: 1.6.5

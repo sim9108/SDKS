@@ -1,0 +1,3 @@
+git://git.sv.nongnu.org/freetype/freetype2.git
+http://savannah.nongnu.org/git/?group=freetype
+version: 2.0.2
