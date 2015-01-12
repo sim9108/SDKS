@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{9c15cd05-6919-4f69-b298-9b2bb6f614b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{39a7e870-a4ed-4dc1-bc68-8fa8b1586c9c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openjpwl\crc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpwl\jpwl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpwl\rs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\openjpwl\jpwl_lib.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpwl\rs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpwl\crc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpwl\jpwl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\event.c" />
+    <ClCompile Include="src\openmj2\cio.c" />
+  </ItemGroup>
+</Project>

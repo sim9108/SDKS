@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{29f49048-0d4b-41d9-bb85-9c00e6fd7f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{525e2c79-ef8f-41c7-87a0-8a1b180ba9c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openjp2\cidx_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\dwt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\function_list.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\invert.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\j2k.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\openjpeg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_clock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_codec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_malloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_stdint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\raw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\t1_luts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\tgt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\bio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\cio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\indexbox_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\jp2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\mct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\mqc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_includes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_intmath.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_inttypes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\pi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\t1.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\t2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\tcd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp2\opj_config_private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\openjp2\event.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\mct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\mqc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\phix_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\pi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\ppix_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\raw.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\t1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\t1_generate_luts.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\t2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\tcd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\thix_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\tpix_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\cidx_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\dwt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\function_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\image.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\invert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\j2k.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\jp2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\openjpeg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\opj_clock.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\tgt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\bio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp2\cio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

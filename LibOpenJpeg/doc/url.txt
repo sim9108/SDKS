@@ -1,0 +1,3 @@
+http://www.openjpeg.org/
+svn checkout http://openjpeg.googlecode.com/svn/trunk/ openjpeg-read-only
+version: 2.1.0

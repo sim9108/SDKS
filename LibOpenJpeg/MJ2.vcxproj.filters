@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{03ad7a9e-887b-47a7-9538-729515512221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{d7b47677-7c82-40d4-bf9f-cfa370dcfef4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openmj2\bio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\cio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\dwt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\fix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\int.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\j2k.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\j2k_lib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\jp2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\jpt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\mct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\mj2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\mj2_convert.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\mqc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\openjpeg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\opj_includes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\opj_malloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\pi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\raw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\t1.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\t1_luts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\t2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\tcd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openmj2\tgt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\openmj2\bio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\cio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\dwt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\event.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\image.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\j2k.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\j2k_lib.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\jp2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\jpt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\mct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\mj2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\mj2_convert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\mqc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\openjpeg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\pi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\raw.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\t1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\t2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\tcd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openmj2\tgt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

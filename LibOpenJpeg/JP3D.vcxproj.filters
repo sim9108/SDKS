@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{05e43e69-d833-4875-8a9c-5e33af59cb54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{17aa5c98-57ff-441d-be32-6df8308ba6a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openjp3d\bio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\cio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\dwt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\event.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\fix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\int.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\jp3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\jp3d_lib.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\mct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\mqc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\openjp3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\opj_includes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\pi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\raw.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\t1.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\t1_3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\t2.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\tcd.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\tgt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjp3d\volume.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\openjp3d\bio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\cio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\dwt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\event.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\jp3d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\jp3d_lib.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\mct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\mqc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\openjp3d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\pi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\raw.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\t1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\t1_3d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\t2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\tcd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\tgt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjp3d\volume.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\openjpip\auxtrans_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\box_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\boxheader_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\byte_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\cache_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\cachemodel_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\channel_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\codestream_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\dec_clientmsg_handler.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\faixbox_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\ihdrbox_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\imgreg_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\imgsock_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\index_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\j2kheader_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\jp2k_decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\jp2k_encoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\jpip_parser.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\jpipstream_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\manfbox_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\marker_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\metadata_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\mhixbox_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\msgqueue_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\openjpip.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\placeholder_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\query_parser.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\session_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\sock_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\openjpip\target_manager.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\openjpip\box_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\auxtrans_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\boxheader_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\byte_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\cache_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\cachemodel_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\channel_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\codestream_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\dec_clientmsg_handler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\faixbox_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\ihdrbox_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\imgreg_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\imgsock_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\index_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\j2kheader_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\jp2k_decoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\jp2k_encoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\jpip_parser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\jpipstream_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\manfbox_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\marker_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\metadata_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\mhixbox_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\msgqueue_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\openjpip.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\placeholder_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\query_parser.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\session_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\sock_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\openjpip\target_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{1297f244-9af5-42d2-8e3d-faa9476c897b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bf10e2b4-4304-408a-87c3-d35732850ad9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
