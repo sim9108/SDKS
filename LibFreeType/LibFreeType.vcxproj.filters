@@ -2,22 +2,25 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{bbe9c3bc-fc89-4fd5-af45-0e9a6914de55}</UniqueIdentifier>
+      <UniqueIdentifier>{17d7d14e-680d-4175-9504-a980a6ba894b}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{9f73b07e-edda-46d1-b123-86b973788298}</UniqueIdentifier>
+      <UniqueIdentifier>{3c4a61b6-b85f-469b-99cb-62f98e66658f}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\config">
-      <UniqueIdentifier>{40cb0797-5969-4ac0-9d1c-7943f737672f}</UniqueIdentifier>
+      <UniqueIdentifier>{410a8022-ae81-406e-bacd-92b34a4380bf}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\internal">
-      <UniqueIdentifier>{5753514b-2332-4fa5-8fab-ea8401da37f0}</UniqueIdentifier>
+      <UniqueIdentifier>{964dc032-4b6e-4e33-9c8f-1b7abacd5387}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\internal\services">
-      <UniqueIdentifier>{3d7d04c3-25a1-4a21-975e-db68b09597fb}</UniqueIdentifier>
+      <UniqueIdentifier>{4895c0b3-cfb6-42c2-b098-52d90dc38741}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\config\ftstdlib.h">
+      <Filter>include\config</Filter>
+    </ClInclude>
     <ClInclude Include="include\config\ftconfig.h">
       <Filter>include\config</Filter>
     </ClInclude>
@@ -28,9 +31,6 @@
       <Filter>include\config</Filter>
     </ClInclude>
     <ClInclude Include="include\config\ftoption.h">
-      <Filter>include\config</Filter>
-    </ClInclude>
-    <ClInclude Include="include\config\ftstdlib.h">
       <Filter>include\config</Filter>
     </ClInclude>
     <ClInclude Include="include\internal\services\svbdf.h">
@@ -445,6 +445,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="exports.def" />
+    <None Include="export.def" />
   </ItemGroup>
 </Project>

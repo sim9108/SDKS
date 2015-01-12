@@ -350,7 +350,8 @@ FT_BEGIN_HEADER
 #ifdef __cplusplus
 #define FT_BASE( x )  extern "C"  x
 #else
-#define FT_BASE( x )  extern  x
+//#define FT_BASE( x )  extern  x
+#define FT_BASE( x )  extern __declspec(dllexport)x
 #endif
 
 #endif /* !FT_BASE */
