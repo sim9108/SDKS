@@ -61,3 +61,5 @@ Tools/NASM/version.txt
 */doc/*/*
 *.mk
 Jamfile
+LibOpenSSL/src/md5/asm/*.asm
+LibOpenSSL/src/*.asm

@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibOpenSSL", "LibOpenSSL.vcxproj", "{00D0439F-F0BB-404D-A4D2-EA42E8519D55}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB} = {6859B035-FC0A-4179-9188-71BDB32C9CEB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pl_buildings", "pl_buildings.vcxproj", "{6859B035-FC0A-4179-9188-71BDB32C9CEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugMT|Win32 = DebugMT|Win32
+		DebugS|Win32 = DebugS|Win32
+		DebugSMT|Win32 = DebugSMT|Win32
+		Release|Win32 = Release|Win32
+		ReleaseMT|Win32 = ReleaseMT|Win32
+		ReleaseS|Win32 = ReleaseS|Win32
+		ReleaseSMT|Win32 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.Debug|Win32.ActiveCfg = Debug|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.Debug|Win32.Build.0 = Debug|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugS|Win32.Build.0 = DebugS|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.Release|Win32.ActiveCfg = Release|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.Release|Win32.Build.0 = Release|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{00D0439F-F0BB-404D-A4D2-EA42E8519D55}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.Debug|Win32.Build.0 = Debug|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugS|Win32.Build.0 = DebugS|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.Release|Win32.ActiveCfg = Release|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.Release|Win32.Build.0 = Release|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{6859B035-FC0A-4179-9188-71BDB32C9CEB}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

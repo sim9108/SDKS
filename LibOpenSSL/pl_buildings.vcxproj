@@ -1,0 +1,1259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6859B035-FC0A-4179-9188-71BDB32C9CEB}</ProjectGuid>
+    <RootNamespace>pl_buildings</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <OutDir>$(ProjectDir)temp\$(Configuration)_pl\</OutDir>
+    <IntDir>.\temp\$(Configuration)_pl\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\aes\asm\aes-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -fwin32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\aes\asm\aesni-x86.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm
+</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).asm</Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bf\asm\bf-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bn\asm\bn-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\cast\asm\cast-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\camellia\asm\cmll-x86.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bn\asm\co-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\des\asm\crypt586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) buiding</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) buiding</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\des\asm\des-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\engines\asm\e_padlock-x86.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\modes\asm\ghash-x86.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n -DOPENSSL_IA32_SSE2 &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\md5\asm\md5-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\rc4\asm\rc4-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\ripemd\asm\rmd-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\sha\asm\sha1-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\sha\asm\sha256-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\sha\asm\sha512-586.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\aes\asm\vpaes-x86.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\whrlpool\asm\wp-mmx.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\x86cpuid.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</LinkObjects>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bn\asm\x86-gf2m.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\bn\asm\x86-mont.pl">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">perl  %(Identity) win32n &gt;%(RelativeDir)%(Filename).asm
+..\Tools\NASM\nasm.exe -f Win32 -o %(RelativeDir)%(Filename).obj  %(RelativeDir)%(Filename).asm</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj </Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename) building</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename) building</Message>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</TreatOutputAsContent>
+      <TreatOutputAsContent Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</TreatOutputAsContent>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
