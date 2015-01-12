@@ -59,9 +59,6 @@
     <ClCompile Include="src\pngset.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\pngtest.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\pngtrans.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -75,9 +72,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\pngwutil.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\example.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\png.c">
