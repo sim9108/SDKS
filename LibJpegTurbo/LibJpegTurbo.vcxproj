@@ -1,0 +1,1026 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{489261AE-4461-4ED0-9C65-7667A4B6F49D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibJpegTurbo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJPEGTURBO_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\src;.\include;C:\test\libjpeg-turbo-1.3.90.tar\build</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>exports.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jcapimin.c" />
+    <ClCompile Include="src\jcapistd.c" />
+    <ClCompile Include="src\jccoefct.c" />
+    <ClCompile Include="src\jccolor.c" />
+    <ClCompile Include="src\jcdctmgr.c" />
+    <ClCompile Include="src\jchuff.c" />
+    <ClCompile Include="src\jcinit.c" />
+    <ClCompile Include="src\jcmainct.c" />
+    <ClCompile Include="src\jcmarker.c" />
+    <ClCompile Include="src\jcmaster.c" />
+    <ClCompile Include="src\jcomapi.c" />
+    <ClCompile Include="src\jcparam.c" />
+    <ClCompile Include="src\jcphuff.c" />
+    <ClCompile Include="src\jcprepct.c" />
+    <ClCompile Include="src\jcsample.c" />
+    <ClCompile Include="src\jctrans.c" />
+    <ClCompile Include="src\jdapimin.c" />
+    <ClCompile Include="src\jdapistd.c" />
+    <ClCompile Include="src\jdatadst.c" />
+    <ClCompile Include="src\jdatasrc.c" />
+    <ClCompile Include="src\jdcoefct.c" />
+    <ClCompile Include="src\jdcolor.c" />
+    <ClCompile Include="src\jddctmgr.c" />
+    <ClCompile Include="src\jdhuff.c" />
+    <ClCompile Include="src\jdinput.c" />
+    <ClCompile Include="src\jdmainct.c" />
+    <ClCompile Include="src\jdmarker.c" />
+    <ClCompile Include="src\jdmaster.c" />
+    <ClCompile Include="src\jdmerge.c" />
+    <ClCompile Include="src\jdphuff.c" />
+    <ClCompile Include="src\jdpostct.c" />
+    <ClCompile Include="src\jdsample.c" />
+    <ClCompile Include="src\jdtrans.c" />
+    <ClCompile Include="src\jerror.c" />
+    <ClCompile Include="src\jfdctflt.c" />
+    <ClCompile Include="src\jfdctfst.c" />
+    <ClCompile Include="src\jfdctint.c" />
+    <ClCompile Include="src\jidctflt.c" />
+    <ClCompile Include="src\jidctfst.c" />
+    <ClCompile Include="src\jidctint.c" />
+    <ClCompile Include="src\jidctred.c" />
+    <ClCompile Include="src\jquant1.c" />
+    <ClCompile Include="src\jquant2.c" />
+    <ClCompile Include="src\jutils.c" />
+    <ClCompile Include="src\jmemmgr.c" />
+    <ClCompile Include="src\jmemnobs.c" />
+    <ClCompile Include="src\jaricom.c" />
+    <ClCompile Include="src\jcarith.c" />
+    <ClCompile Include="src\jdarith.c" />
+    <ClCompile Include="src\simd\jsimd_i386.c" />
+    <ClCompile Include="src\turbojpeg.c" />
+    <ClCompile Include="src\transupp.c" />
+    <ClCompile Include="src\jdatadst-tj.c" />
+    <ClCompile Include="src\jdatasrc-tj.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\jconfig.h" />
+    <ClInclude Include="include\jconfigint.h" />
+    <ClInclude Include="include\bmp.h" />
+    <ClInclude Include="include\cderror.h" />
+    <ClInclude Include="include\cdjpeg.h" />
+    <ClInclude Include="include\jchuff.h" />
+    <ClInclude Include="include\jdct.h" />
+    <ClInclude Include="include\jdhuff.h" />
+    <ClInclude Include="include\jerror.h" />
+    <ClInclude Include="include\jinclude.h" />
+    <ClInclude Include="include\jmemsys.h" />
+    <ClInclude Include="include\jmorecfg.h" />
+    <ClInclude Include="include\jpegcomp.h" />
+    <ClInclude Include="include\jpegint.h" />
+    <ClInclude Include="include\jpeglib.h" />
+    <ClInclude Include="include\jpeg_nbits_table.h" />
+    <ClInclude Include="include\jsimd.h" />
+    <ClInclude Include="include\jsimddct.h" />
+    <ClInclude Include="include\jversion.h" />
+    <ClInclude Include="include\tjutil.h" />
+    <ClInclude Include="include\transupp.h" />
+    <ClInclude Include="include\turbojpeg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\simd\jccolor-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jccolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jcgray-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jcgray-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jcsample-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jcsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdcolor-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdcolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdmerge-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdmerge-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdsample-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jdsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctflt-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctflt-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctfst-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctint-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jfdctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctflt-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctflt-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctflt-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctfst-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctint-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctred-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jidctred-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jquant-3dn.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jquant-mmx.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jquant-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jquantf-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jquanti-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\jsimdcpu.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\Tools\NASM\nasm.exe -fwin32 -DWIN32 -I$(ProjectDir)src\ -I$(ProjectDir)src\simd\ %(Identity) -o%(RelativeDir)%(Filename).obj</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
