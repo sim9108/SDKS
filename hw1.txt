@@ -1,7 +1,7 @@
 LibTiff - 이태정 =>https://github.com/LuaDist/libtiff.git
 LibPNG - 정태석 =>git://git.code.sf.net/p/libpng/code 
 LibTurboJpeg - 이재오
-LibOpenJpeg - 이민호 =>https://github.com/malaterre/openjpeg.git
+LibLcms2 - 이민호 =>https://github.com/mm2/Little-CMS
 LibTbb - 신재익
 LibCurl - 김다솜 =>http://curl.haxx.se/download/curl-7.40.0.zip
 LibFreeType - 전향란  ==>git://git.sv.nongnu.org/freetype/freetype2.git
