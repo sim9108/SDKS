@@ -64,3 +64,4 @@ Jamfile
 LibOpenSSL/src/md5/asm/*.asm
 LibOpenSSL/src/*.asm
 LibZ/demo/FolderZip/ReadMe.txt
+LibZ/demo/unzip_Simple/ReadMe.txt
