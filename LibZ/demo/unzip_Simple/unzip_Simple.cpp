@@ -7,8 +7,7 @@
 #include <iostream>
 #include <string>
 
-bool extractZip(const std::string zippath, const std::string targetdir)
-{
+bool extractZip(const std::string zippath, const std::string targetdir){
 	unzFile uf = unzOpen(zippath.c_str());
 
 	int ret = unzGoToFirstFile(uf);
@@ -46,10 +45,8 @@ bool extractZip(const std::string zippath, const std::string targetdir)
 	return true;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+int _tmain(int argc, _TCHAR* argv[]){
 	extractZip("c.zip", ".\\test\\");
-
 	return 0;
 }
 
