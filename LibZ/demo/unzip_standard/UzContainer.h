@@ -1,11 +1,11 @@
 #pragma once
 #include <unzip.h>
-#include <iostream>
-#include <string>
 #include <iterator>
+#include <string>
 
-//CurrentFile
-class UzCurrentFile{
+class UzCurrentFile
+{
+private:
 	unz_file_info info_;
 	char filename_[_MAX_PATH];
 	char comment_[_MAX_PATH];
@@ -13,28 +13,29 @@ class UzCurrentFile{
 	unzFile& uf_;
 public:
 	UzCurrentFile(unzFile& uf);
-	~UzCurrentFile();
 
-	const char* filename();
 	bool save_file(const std::string targetdir);
 };
 
-//UzIterator
-class UzIterator :public std::iterator<std::forward_iterator_tag, unzFile>
+
+class UzIterator
+	:public std::iterator<std::input_iterator_tag, UzCurrentFile>
 {
+private:
 	unzFile& uf_;
 	int ret_;
-
 public:
 	UzIterator(unzFile& uf);
 
-	void operator ++();
+	void operator++();
+	void operator++(int);
+
+	UzCurrentFile operator*();
 	bool operator !=(UzIterator& rhs);
-	UzCurrentFile operator* ();
 };
 
-// UzContainer
-class UzContainer{
+class UzContainer
+{
 private:
 	unzFile& uf_;
 
