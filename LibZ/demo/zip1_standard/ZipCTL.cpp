@@ -3,13 +3,13 @@
 #include <filesystem>
 
 void operator <<(ZipCTL::NewCTL& f, std::ifstream& fp){
-	const int BUFSIZE = 1024;
-	Bytef buf[1024];
+	const int BUFSIZE = 4096;
+	Bytef buf[BUFSIZE];
 	do{
 		fp.read(reinterpret_cast<char*>(buf), BUFSIZE);
 		std::size_t size = static_cast<std::size_t>(fp.gcount());
 		zipWriteInFileInZip(f, buf, size);
-	} while (fp.eof());
+	} while (!fp.eof());
 }
 
 ZipCTL::ZipCTL(std::string fname, int flags/* = APPEND_STATUS_CREATE*/)

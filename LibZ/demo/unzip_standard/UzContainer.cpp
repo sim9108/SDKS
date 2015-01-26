@@ -11,7 +11,6 @@ unz_file_info& operator>> (unz_file_info& info, time_t& tval){
 		tdata.tm_hour = info.tmu_date.tm_hour;
 		tdata.tm_min= info.tmu_date.tm_min  ;
 		tdata.tm_sec= info.tmu_date.tm_sec;
-
 		tval=mktime(&tdata);
 		return info;
 }
