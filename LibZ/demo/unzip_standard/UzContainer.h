@@ -3,6 +3,8 @@
 #include <iterator>
 #include <string>
 
+unz_file_info& operator>> (unz_file_info& info, time_t& tval);
+
 class UzCurrentFile
 {
 private:

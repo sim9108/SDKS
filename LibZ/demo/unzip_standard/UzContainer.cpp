@@ -1,5 +1,20 @@
 #include "UzContainer.h"
 #include <fstream>
+#include <filesystem>
+
+unz_file_info& operator>> (unz_file_info& info, time_t& tval){
+	    struct tm tdata;
+		memset(&tdata, 0, sizeof(struct tm));
+		tdata.tm_year = info.tmu_date.tm_year;
+		tdata.tm_mon = info.tmu_date.tm_mon;
+		tdata.tm_mday = info.tmu_date.tm_mday;
+		tdata.tm_hour = info.tmu_date.tm_hour;
+		tdata.tm_min= info.tmu_date.tm_min  ;
+		tdata.tm_sec= info.tmu_date.tm_sec;
+
+		tval=mktime(&tdata);
+		return info;
+}
 
 //UzCurrentFile
 UzCurrentFile::UzCurrentFile(unzFile& uf)
@@ -16,18 +31,35 @@ UzCurrentFile::UzCurrentFile(unzFile& uf)
 
 bool
 UzCurrentFile::save_file(const std::string targetdir){
-	unzOpenCurrentFile(uf_);/////---@@@@
-	std::ofstream ofs(targetdir + filename_, std::ios_base::binary);
-	// 기록 일자 변경...
+	using namespace std::tr2::sys;
 
-	char buf[4096];
-	for (;;){
-		int len = unzReadCurrentFile(uf_, buf, sizeof(buf));///--^^^^^^
-		if (0 == len) break;
-		ofs.write(buf, len);
+	// 폴더 생성하기
+	path targetfile(targetdir);
+	targetfile /=path(filename_);
+	try{
+		 create_directories(targetfile.branch_path());
 	}
-	unzCloseCurrentFile(uf_);/////---@@@@
+	catch (...)	{
+		return false;
+	}
+	/// 파일 생성하기
+	unzOpenCurrentFile(uf_);
+	{
+		const int MAX_BUF= 4096;
+		std::ofstream ofs(targetfile, std::ios_base::binary);
+		char buf[MAX_BUF];
+		for (;;){
+			int len = unzReadCurrentFile(uf_, buf, MAX_BUF);
+			if (0 == len) break;
+			ofs.write(buf, len);
+		}
+	}
+	unzCloseCurrentFile(uf_);
 
+	// 생성 날짜 변경하기
+	time_t tval;
+	this->info_ >> tval;
+	last_write_time(targetfile, tval);
 	return true;
 }
 
