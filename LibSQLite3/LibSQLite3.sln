@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibSQLite3", "LibSQLite3.vcxproj", "{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugMT|Win32 = DebugMT|Win32
+		DebugS|Win32 = DebugS|Win32
+		DebugSMT|Win32 = DebugSMT|Win32
+		Release|Win32 = Release|Win32
+		ReleaseMT|Win32 = ReleaseMT|Win32
+		ReleaseS|Win32 = ReleaseS|Win32
+		ReleaseSMT|Win32 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.Debug|Win32.Build.0 = Debug|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugS|Win32.Build.0 = DebugS|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.Release|Win32.ActiveCfg = Release|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.Release|Win32.Build.0 = Release|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{64AA202C-C547-4DB0-84C6-96E5A9FEE30C}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
