@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{cb5546ad-9309-4163-bca3-f55fed47d51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b712118f-f6a3-4045-ba9c-a4db35c1e3ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\speex">
+      <UniqueIdentifier>{85ed5177-964e-442c-8a4e-6cea15ddf2cc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bits.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cb_search.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_5_64_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_5_256_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_8_128_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_10_16_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_10_32_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exc_20_32_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fftwrap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filterbank.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filters.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gain_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gain_table_lbr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hexc_10_32_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hexc_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\high_lsp_tables.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jitter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kiss_fft.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kiss_fftr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsp_tables_nb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ltp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mdf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modes.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modes_wb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\nb_celp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\preprocess.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quant_lsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sb_celp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallft.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex_callbacks.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex_header.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stereo.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vbr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vq.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\_kiss_fft_guts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\arch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cb_search.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cb_search_arm4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cb_search_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cb_search_sse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fftwrap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filterbank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filters.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filters_arm4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filters_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filters_sse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed_arm4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed_arm5e.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed_debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed_generic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kiss_fft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kiss_fftr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lpc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lpc_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lsp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lsp_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ltp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ltp_arm4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ltp_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ltp_sse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math_approx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\misc_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\nb_celp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\os_support.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\os_support_custom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pseudofloat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\quant_lsp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\quant_lsp_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\resample_sse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sb_celp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smallft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stack_alloc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vbr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis_psy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vq.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vq_arm4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vq_bfin.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vq_sse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_bits.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_buffer.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_callbacks.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_echo.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_header.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_jitter.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_preprocess.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_resampler.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_stereo.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_types.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex.h">
+      <Filter>include\speex</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libspeex.def" />
+  </ItemGroup>
+</Project>
