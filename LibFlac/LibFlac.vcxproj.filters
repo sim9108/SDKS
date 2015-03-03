@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{c29eb4b4-b7ba-4dfe-aa7b-8039893dca6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{ad09664f-c624-416a-bfea-b06146e4bf12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\private">
+      <UniqueIdentifier>{b750881b-d893-4780-a7c8-7924633231b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\protected">
+      <UniqueIdentifier>{4add0a18-6af5-4622-b9f4-3c2db0997750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\nasm">
+      <UniqueIdentifier>{0ac5bc50-7439-4221-8f87-d2ba9042e309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\share">
+      <UniqueIdentifier>{3507e48a-7e45-4d7b-a913-9ed6fda87b3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\private\all.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitmath.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitreader.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitwriter.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\cpu.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\crc.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\fixed.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\float.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\format.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\lpc.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\macros.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\md5.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\memory.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\metadata.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_decoder_aspect.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_encoder_aspect.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_helper.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_mapping.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\stream_encoder.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\stream_encoder_framing.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\window.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\stream_encoder.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\all.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\stream_decoder.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitmath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitreader.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitwriter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpu.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed_intrin_ssse3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_avx2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse41.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata_iterators.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata_object.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_decoder_aspect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_encoder_aspect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_helper.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_mapping.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_framing.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_avx2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_ssse3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\share\win_utf8_io\win_utf8_io.c">
+      <Filter>src\share</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\ia32\cpu_asm.nasm">
+      <Filter>src\nasm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ia32\fixed_asm.nasm">
+      <Filter>src\nasm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ia32\lpc_asm.nasm">
+      <Filter>src\nasm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
