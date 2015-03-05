@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{9c9626b0-5b8a-46eb-b596-4bc56473ae7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8a689698-3d24-488b-952f-2a4b5d3259a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\backends.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bitrate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\codec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codec_internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\envelope.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\floor_all.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\books\floor\floor_books.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\highlevel.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lookup.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lookup_data.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lpc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lsp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\masking.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mdct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\misc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\os.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\psy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\psych_8.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\psych_11.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\psych_16.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\psych_44.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\registry.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\books\coupled\res_books_stereo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\books\uncoupled\res_books_uncoupled.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\residue_8.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\residue_16.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\residue_44.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\residue_44u.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\scales.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_8.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_11.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_16.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_22.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_32.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_44.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_44u.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\modes\setup_X.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\smallft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\vorbisenc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\vorbis\vorbisfile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\window.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\analysis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitrate.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\block.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\codebook.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\envelope.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floor0.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\floor1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\info.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lookup.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mapping0.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mdct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psy.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\registry.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\res0.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sharedbook.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\smallft.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\synthesis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vorbisenc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vorbisfile.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vorbis.def" />
+  </ItemGroup>
+</Project>

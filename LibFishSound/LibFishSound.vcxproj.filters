@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{697e0434-b4f0-4a4a-b3a9-926611bcf750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\fishsound">
+      <UniqueIdentifier>{814cba5a-7741-4199-bd38-2994de914a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a7ace85c-76d2-4947-a7d8-e604a95e8308}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\fishsound\fishsound.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fishsound\comments.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fishsound\constants.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fishsound\decode.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fishsound\deprecated.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fishsound\encode.h">
+      <Filter>include\fishsound</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\convert.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\debug.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fs_compat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fs_vector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\comments.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fishsound.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fs_vector.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\vorbis.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flac.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libfishsound.def" />
+  </ItemGroup>
+</Project>

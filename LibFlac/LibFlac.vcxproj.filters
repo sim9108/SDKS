@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{22162ff4-1526-4bba-9146-faa9fb597dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{0d22dbd6-4a43-4258-842f-c7f59173849c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ia32">
+      <UniqueIdentifier>{9d438ea6-76c8-467a-a9bd-e6da0c42aae7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\FLAC">
+      <UniqueIdentifier>{ba540838-9cc7-4a13-8a84-03eaf75c8cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\private">
+      <UniqueIdentifier>{27d6a351-2c1a-4598-a32a-2af427161718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\protected">
+      <UniqueIdentifier>{eb0f683e-a05e-495a-a5b0-4c0800653ee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\share">
+      <UniqueIdentifier>{00e51fce-a138-4bf1-9d24-b6609c1db334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\share\grabbag">
+      <UniqueIdentifier>{5c1b33ca-beaf-4755-9539-b1e3be4324b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\ia32">
+      <UniqueIdentifier>{7223ff62-53bf-4894-8942-a73ff9e488f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\share">
+      <UniqueIdentifier>{dbf1207a-aebf-4600-969e-9f4da54b4ee0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\share\win_utf8_io">
+      <UniqueIdentifier>{2be0dbff-a56d-4fe0-a4ba-34b5a0faec02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bitmath.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitreader.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitwriter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpu.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\crc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fixed_intrin_ssse3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\float.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_avx2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lpc_intrin_sse41.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\md5.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\memory.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata_iterators.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata_object.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_decoder_aspect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_encoder_aspect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_helper.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg_mapping.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_framing.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_avx2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_sse2.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder_intrin_ssse3.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\window.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\share\win_utf8_io\win_utf8_io.c">
+      <Filter>src\share\win_utf8_io</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\FLAC\all.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\assert.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\callback.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\export.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\format.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\metadata.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\ordinals.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\stream_decoder.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC\stream_encoder.h">
+      <Filter>include\FLAC</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\window.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\all.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitmath.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitreader.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\bitwriter.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\cpu.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\crc.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\fixed.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\float.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\format.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\lpc.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\macros.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\md5.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\memory.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\metadata.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_decoder_aspect.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_encoder_aspect.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_helper.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\ogg_mapping.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\stream_encoder.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\private\stream_encoder_framing.h">
+      <Filter>include\private</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\stream_encoder.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\all.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="include\protected\stream_decoder.h">
+      <Filter>include\protected</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\alloc.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\compat.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\endswap.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\getopt.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\macros.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\private.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\replaygain_analysis.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\replaygain_synthesis.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\safe_str.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\utf8.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\win_utf8_io.h">
+      <Filter>include\share</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag\seektable.h">
+      <Filter>include\share\grabbag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag\cuesheet.h">
+      <Filter>include\share\grabbag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag\file.h">
+      <Filter>include\share\grabbag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag\picture.h">
+      <Filter>include\share\grabbag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\share\grabbag\replaygain.h">
+      <Filter>include\share\grabbag</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ia32\nasm.h">
+      <Filter>include\ia32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\ia32\cpu_asm.nasm">
+      <Filter>src\ia32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ia32\fixed_asm.nasm">
+      <Filter>src\ia32</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\ia32\lpc_asm.nasm">
+      <Filter>src\ia32</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>
