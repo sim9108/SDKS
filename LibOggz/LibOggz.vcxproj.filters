@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{c5992a5d-4692-45bc-8937-a2e9d7e0ae04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f2cf014f-4f08-410e-9638-85530ceb2dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\oggz">
+      <UniqueIdentifier>{6f663a97-c77d-4d4c-92eb-a38e4b28171e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\oggz_write.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dirac.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metric_internal.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_auto.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_comments.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_dlist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_io.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_read.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_seek.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_stream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_table.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\oggz_vector.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\dirac.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\getopt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_auto.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_byteorder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_compat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_dlist.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_macros.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_stream_private.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz_vector.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_write.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_comments.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_constants.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_deprecated.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_io.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_off_t.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_off_t_generated.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_packet.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_read.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_seek.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_stream.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+    <ClInclude Include="include\oggz\oggz_table.h">
+      <Filter>include\oggz</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="liboggz.def" />
+  </ItemGroup>
+</Project>
