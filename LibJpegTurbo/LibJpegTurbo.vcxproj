@@ -124,40 +124,48 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)d</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)MTd</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)SMTd</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)Sd</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)MT</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)SMT</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <TargetName>$(ProjectName)S</TargetName>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -407,6 +415,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jccolor-sse2.asm">
       <FileType>Document</FileType>
@@ -426,6 +442,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jcgray-mmx.asm">
       <FileType>Document</FileType>
@@ -445,6 +469,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jcgray-sse2.asm">
       <FileType>Document</FileType>
@@ -464,6 +496,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jcsample-mmx.asm">
       <FileType>Document</FileType>
@@ -483,6 +523,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jcsample-sse2.asm">
       <FileType>Document</FileType>
@@ -502,6 +550,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdcolor-mmx.asm">
       <FileType>Document</FileType>
@@ -521,6 +577,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdcolor-sse2.asm">
       <FileType>Document</FileType>
@@ -540,6 +604,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdmerge-mmx.asm">
       <FileType>Document</FileType>
@@ -559,6 +631,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdmerge-sse2.asm">
       <FileType>Document</FileType>
@@ -578,6 +658,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdsample-mmx.asm">
       <FileType>Document</FileType>
@@ -597,6 +685,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jdsample-sse2.asm">
       <FileType>Document</FileType>
@@ -616,6 +712,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctflt-3dn.asm">
       <FileType>Document</FileType>
@@ -635,6 +739,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctflt-sse.asm">
       <FileType>Document</FileType>
@@ -654,6 +766,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctfst-mmx.asm">
       <FileType>Document</FileType>
@@ -673,6 +793,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctfst-sse2.asm">
       <FileType>Document</FileType>
@@ -692,6 +820,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctint-mmx.asm">
       <FileType>Document</FileType>
@@ -711,6 +847,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jfdctint-sse2.asm">
       <FileType>Document</FileType>
@@ -730,6 +874,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctflt-3dn.asm">
       <FileType>Document</FileType>
@@ -749,6 +901,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctflt-sse.asm">
       <FileType>Document</FileType>
@@ -768,6 +928,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctflt-sse2.asm">
       <FileType>Document</FileType>
@@ -787,6 +955,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctfst-mmx.asm">
       <FileType>Document</FileType>
@@ -806,6 +982,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctfst-sse2.asm">
       <FileType>Document</FileType>
@@ -825,6 +1009,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctint-mmx.asm">
       <FileType>Document</FileType>
@@ -844,6 +1036,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctint-sse2.asm">
       <FileType>Document</FileType>
@@ -863,6 +1063,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctred-mmx.asm">
       <FileType>Document</FileType>
@@ -882,6 +1090,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jidctred-sse2.asm">
       <FileType>Document</FileType>
@@ -901,6 +1117,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jquant-3dn.asm">
       <FileType>Document</FileType>
@@ -920,6 +1144,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jquant-mmx.asm">
       <FileType>Document</FileType>
@@ -939,6 +1171,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jquant-sse.asm">
       <FileType>Document</FileType>
@@ -958,6 +1198,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jquantf-sse2.asm">
       <FileType>Document</FileType>
@@ -977,6 +1225,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jquanti-sse2.asm">
       <FileType>Document</FileType>
@@ -996,6 +1252,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
     <CustomBuild Include="src\simd\jsimdcpu.asm">
       <FileType>Document</FileType>
@@ -1015,6 +1279,14 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)</Message>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
