@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{471a262e-970d-4510-9b1e-075e06e8b1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{f242682f-0907-4264-a2e9-1f7ba857e086}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Alc">
+      <UniqueIdentifier>{d082ad77-9867-4acf-90d4-d98b2a06d6d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Alc\backends">
+      <UniqueIdentifier>{1de78f04-7f49-4425-ac8e-c6ea8b769d38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Alc\midi">
+      <UniqueIdentifier>{0021fc75-a66e-41a6-a657-e4dfce8c7979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AL">
+      <UniqueIdentifier>{2b40d968-2c2b-400b-8dc3-12d148947026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alc">
+      <UniqueIdentifier>{a1d9719a-810a-4421-8e80-51635aad129c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alc\midi">
+      <UniqueIdentifier>{20419039-dde3-4088-bdd0-50b6417063fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alc\effects">
+      <UniqueIdentifier>{423877c3-5dd2-47bc-88e0-9cb015dac569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Alc\backends">
+      <UniqueIdentifier>{73eac182-1820-4a43-b9be-8a075d8f2694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{c831a776-7cc7-4d35-bca0-26d2473c30bc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\alAuxEffectSlot.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alBuffer.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alEffect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alError.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alFilter.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\align.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alListener.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alMain.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alMidi.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alSource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alThunk.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\alu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\atomic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bs2b.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rwlock.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sample_cvt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\static_assert.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\threads.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\uintmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\alstring.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\compat.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\evtqueue.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\hrtf.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\mixer_defs.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\vector.h">
+      <Filter>include\Alc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\midi\base.h">
+      <Filter>include\Alc\midi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Alc\backends\base.h">
+      <Filter>include\Alc\backends</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\alext.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\efx.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\efx-creative.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\efx-presets.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\al.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\AL\alc.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alAuxEffectSlot.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alBuffer.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alEffect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alError.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alExtension.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alFilter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alFontsound.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alListener.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alMidi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alPreset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alSoundfont.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alSource.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alState.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alThunk.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sample_cvt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\ALc.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\alcConfig.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\alcRing.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\ALu.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\bs2b.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\helpers.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\hrtf.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\mixer.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\mixer_c.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\mixer_sse.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\mixer_sse2.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\mixer_sse41.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\panning.c">
+      <Filter>src\Alc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\midi\base.c">
+      <Filter>src\Alc\midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\midi\dummy.c">
+      <Filter>src\Alc\midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\midi\fluidsynth.c">
+      <Filter>src\Alc\midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\midi\sf2load.c">
+      <Filter>src\Alc\midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\midi\soft.c">
+      <Filter>src\Alc\midi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\chorus.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\compressor.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\dedicated.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\distortion.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\echo.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\equalizer.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\flanger.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\modulator.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\null.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\reverb.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\effects\autowah.c">
+      <Filter>src\Alc\effects</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\base.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\loopback.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\mmdevapi.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\null.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\wave.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Alc\backends\winmm.c">
+      <Filter>src\Alc\backends</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\atomic.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\rwlock.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\threads.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\uintmap.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
