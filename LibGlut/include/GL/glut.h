@@ -52,8 +52,10 @@ typedef unsigned short wchar_t;
 #  endif
 # endif
 
+#if 0
 /* To disable automatic library usage for GLUT, define GLUT_NO_LIB_PRAGMA
    in your compile preprocessor options. */
+
 # if !defined(GLUT_BUILDING_LIB) && !defined(GLUT_NO_LIB_PRAGMA)
 #  pragma comment (lib, "winmm.lib")      /* link with Windows MultiMedia lib */
 /* To enable automatic SGI OpenGL for Windows library usage for GLUT,
@@ -68,6 +70,8 @@ typedef unsigned short wchar_t;
 #   pragma comment (lib, "glut32.lib")    /* link with Win32 GLUT lib */
 #  endif
 # endif
+#endif
+
 
 /* To disable supression of annoying warnings about floats being promoted
    to doubles, define GLUT_NO_WARNING_DISABLE in your compile preprocessor
@@ -119,6 +123,7 @@ typedef unsigned short wchar_t;
 # endif
 
 /* GLUT API entry point declarations for Win32. */
+#ifndef GLUTAPI
 # ifdef GLUT_BUILDING_LIB
 #  define GLUTAPI __declspec(dllexport)
 # else
@@ -128,6 +133,8 @@ typedef unsigned short wchar_t;
 #   define GLUTAPI extern
 #  endif
 # endif
+#endif
+
 
 /* GLUT callback calling convention for Win32. */
 # define GLUTCALLBACK __cdecl
