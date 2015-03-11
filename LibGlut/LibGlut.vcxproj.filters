@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{b8b97983-7eb4-4dc0-ade1-6fdd49a9b66d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{8058b66a-c647-4f18-8ffc-1613ce58b7a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\GL">
+      <UniqueIdentifier>{772acb0b-edc8-4c9f-b537-761ba19362c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\mui">
+      <UniqueIdentifier>{d66add89-bb6b-4ebf-8450-3eee99f17b8c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\glutint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glutstroke.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glutwin32.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\layerutil.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\stroke.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32_glx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\win32_x11.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glutbitmap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\fgl.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\fglu.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\fglut.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\glsmap.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\glut.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\glutf90.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\GL\tube.h">
+      <Filter>include\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\browser.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\displaylist.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\gizmo.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\hslider.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\mui.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\textlist.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\uicolor.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mui\vslider.h">
+      <Filter>include\mui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glut_8x13.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_9x15.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_bitmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_bwidth.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_cindex.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_cmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_cursor.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_dials.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_dstr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_event.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_ext.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_fcb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_fullscrn.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_gamemode.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_get.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_glxext.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_hel10.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_hel12.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_hel18.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_input.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_joy.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_key.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_keyctrl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_keyup.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_mesa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_modifier.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_mroman.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_overlay.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_roman.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_shapes.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_space.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_stroke.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_swap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_swidth.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_tablet.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_teapot.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_tr10.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_tr24.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_vidresize.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_warp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_win.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glut_winmisc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_glx.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_menu.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_winproc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32_x11.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\glut.def">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
