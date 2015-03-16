@@ -890,6 +890,12 @@ FT_BEGIN_HEADER
 #error "Invalid CFF darkening parameters!"
 #endif
 
+/// fixed bug
+#ifdef _USRDLL
+#define FT_EXPORT(x) __declspec(dllexport) x
+#define FT_BASE(x) __declspec(dllexport) x
+#endif
+
 FT_END_HEADER
 
 
