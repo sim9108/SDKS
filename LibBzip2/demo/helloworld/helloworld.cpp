@@ -16,7 +16,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 	int verbosity{ 0 };
 	int workFactor{ 30 };
 
-
 	BZFILE* bz = BZ2_bzWriteOpen(&bzerror, fp, blockSize100k, verbosity, workFactor);
 
 	unsigned int  nbytes_in_lo32, nbytes_in_hi32;
@@ -31,7 +30,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	std::string datas = "hello world! æ»≥Á«œººø‰.";
 
 	do {
-		BZ2_bzWrite(&bzerror, bz, (void*)datas.data(), datas.size());
+		BZ2_bzWrite(&bzerror, bz, reinterpret_cast<void*>( const_cast<char*>((datas.data()) ), datas.size());
 		if (bzerror == BZ_IO_ERROR) {
 			BZ2_bzWriteClose64(&bzerror, bz, 1,	&nbytes_in_lo32, &nbytes_in_hi32,&nbytes_out_lo32, &nbytes_out_hi32);
 			std::cout << "error" << std::endl;
