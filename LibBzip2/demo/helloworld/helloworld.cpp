@@ -8,7 +8,6 @@
 #include <cstdio>
 
 int _tmain(int argc, _TCHAR* argv[]){
-
 	const int BUF = 1024;	
 
 	FILE* fp= fopen("myfile.txt.bz2", "w");	if (!fp){		std::cout << "file io error" << std::endl;		return 0;	}	int bzerror;
@@ -25,10 +24,8 @@ int _tmain(int argc, _TCHAR* argv[]){
 		std::cout << "error" << std::endl;
 		return 0;
 	};
-
-
+	
 	std::string datas = "hello world! ¾È³çÇÏ¼¼¿ä.";
-
 	do {
 		BZ2_bzWrite(&bzerror, bz, reinterpret_cast<void*>( const_cast<char*>((datas.data()) ), datas.size());
 		if (bzerror == BZ_IO_ERROR) {
@@ -36,7 +33,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 			std::cout << "error" << std::endl;
 			return 0;
 		}
-	} while (false);	BZ2_bzWriteClose64(&bzerror, bz, 0,	&nbytes_in_lo32, &nbytes_in_hi32,&nbytes_out_lo32, &nbytes_out_hi32);
+	} while (false);		BZ2_bzWriteClose64(&bzerror, bz, 0,	&nbytes_in_lo32, &nbytes_in_hi32,&nbytes_out_lo32, &nbytes_out_hi32);
 	return 0;
 }
 
