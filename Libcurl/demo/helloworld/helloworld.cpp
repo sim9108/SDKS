@@ -23,8 +23,7 @@ write_data(void *ptr, size_t size, size_t nmemb, void *stream){
 int 
 _tmain(int argc, _TCHAR* argv[]){
 	curl_global_init(CURL_GLOBAL_ALL);
-	std::string datas;
-
+	
 	CURL* curl = curl_easy_init();
 	if (!curl){
 		std::cout << "error" << std::endl;
@@ -33,6 +32,8 @@ _tmain(int argc, _TCHAR* argv[]){
 
 	curl_easy_setopt(curl, CURLOPT_URL, "http://google.com");
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
+
+	std::string datas;
 	curl_easy_setopt(curl, CURLOPT_WRITEDATA, &datas);
 
 	CURLcode rc = curl_easy_perform(curl);
