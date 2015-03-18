@@ -6,27 +6,24 @@
 #include <curl/curl.h>
 #include <string>
 
-static size_t write_data(void *ptr, size_t size, size_t nmemb, void *stream)
-{
+size_t 
+write_data(void *ptr, size_t size, size_t nmemb, void *stream){
 	std::string* mdata = (std::string*)stream;
 
 	size_t written = size*nmemb;
 	mdata->reserve(mdata->size() + written);
 	
 	char* temp = reinterpret_cast<char*>(ptr);
-	for (int i = 0; i<written; ++i){
+	for (size_t i = 0; i<written; ++i){
 		mdata->push_back(temp[i]);
 	}
-
 	return written;
 }
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+int 
+_tmain(int argc, _TCHAR* argv[]){
 	curl_global_init(CURL_GLOBAL_ALL);
 	std::string datas;
-
-	
 
 	CURL* curl = curl_easy_init();
 	if (!curl){
@@ -44,13 +41,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	}
 	else{
 		std::cout << datas << std::endl;
-	}
-	
+	}	
 
 	curl_easy_cleanup(curl);
-
-
-
 
 	return 0;
 }
