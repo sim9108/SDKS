@@ -35,19 +35,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{4662F1ED-7384-4206-B119-6C01B08613E2}</ProjectGuid>
+    <ProjectGuid>{E96274D4-AF4D-4AF8-AF91-A4A3DAA990EE}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LibOggz</RootNamespace>
+    <RootNamespace>LibSFMLGraphics</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
@@ -59,6 +53,12 @@
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
@@ -98,13 +98,13 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -126,12 +126,6 @@
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
-    <IntDir>.\temp\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)Sd</TargetName>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
@@ -144,10 +138,17 @@
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMTd</TargetName>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>$(ProjectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -173,34 +174,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_GRAPHICS_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
-    <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <WarningLevel>Level3</WarningLevel>
-      <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemd.lib;LibSFMLWindowd.lib;LibGLewd.lib;LibFreeTyped.lib;LibJpegTurbod.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
@@ -209,17 +191,16 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_GRAPHICS_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMTd.lib;LibSFMLWindowMTd.lib;LibGLewMTd.lib;LibFreeTypeMTd.lib;LibJpegTurboMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
@@ -228,17 +209,33 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMTd.lib;LibSFMLWindowMTd.lib;LibGLewMTd.lib;LibFreeTypeMTd.lib;LibJpegTurboMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemd.lib;LibSFMLWindowd.lib;LibGLewd.lib;LibFreeTyped.lib;LibJpegTurbod.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -249,18 +246,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_GRAPHICS_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystem.lib;LibSFMLWindow.lib;LibGLew.lib;LibFreeType.lib;LibJpegTurbo.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
@@ -271,18 +267,17 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystem.lib;LibSFMLWindow.lib;LibGLew.lib;LibFreeType.lib;LibJpegTurbo.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
@@ -293,9 +288,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_GRAPHICS_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -303,9 +298,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMT.lib;LibSFMLWindowMT.lib;LibGLewMT.lib;LibFreeTypeMT.lib;LibJpegTurboMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
@@ -316,9 +310,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBOGGZ_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4101;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLGRAPHICS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;..\LibSFMLWindow\include;..\..\LibGLew\include;..\..\LibFreeType\include;..\..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -326,54 +320,78 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>liboggz.def</ModuleDefinitionFile>
+      <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMT.lib;LibSFMLWindowMT.lib;LibGLewMT.lib;LibFreeTypeMT.lib;LibJpegTurboMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="src\dirac.c" />
-    <ClCompile Include="src\metric_internal.c" />
-    <ClCompile Include="src\oggz.c" />
-    <ClCompile Include="src\oggz_auto.c" />
-    <ClCompile Include="src\oggz_comments.c" />
-    <ClCompile Include="src\oggz_dlist.c" />
-    <ClCompile Include="src\oggz_io.c" />
-    <ClCompile Include="src\oggz_read.c" />
-    <ClCompile Include="src\oggz_seek.c" />
-    <ClCompile Include="src\oggz_stream.c" />
-    <ClCompile Include="src\oggz_table.c" />
-    <ClCompile Include="src\oggz_vector.c" />
-    <ClCompile Include="src\oggz_write.c" />
+    <ClCompile Include="src\BlendMode.cpp" />
+    <ClCompile Include="src\CircleShape.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\ConvexShape.cpp" />
+    <ClCompile Include="src\Font.cpp" />
+    <ClCompile Include="src\GLCheck.cpp" />
+    <ClCompile Include="src\GLExtensions.cpp" />
+    <ClCompile Include="src\Image.cpp" />
+    <ClCompile Include="src\ImageLoader.cpp" />
+    <ClCompile Include="src\RectangleShape.cpp" />
+    <ClCompile Include="src\RenderStates.cpp" />
+    <ClCompile Include="src\RenderTarget.cpp" />
+    <ClCompile Include="src\RenderTexture.cpp" />
+    <ClCompile Include="src\RenderTextureImpl.cpp" />
+    <ClCompile Include="src\RenderTextureImplDefault.cpp" />
+    <ClCompile Include="src\RenderTextureImplFBO.cpp" />
+    <ClCompile Include="src\RenderWindow.cpp" />
+    <ClCompile Include="src\Shader.cpp" />
+    <ClCompile Include="src\Shape.cpp" />
+    <ClCompile Include="src\Sprite.cpp" />
+    <ClCompile Include="src\Text.cpp" />
+    <ClCompile Include="src\Texture.cpp" />
+    <ClCompile Include="src\TextureSaver.cpp" />
+    <ClCompile Include="src\Transform.cpp" />
+    <ClCompile Include="src\Transformable.cpp" />
+    <ClCompile Include="src\Vertex.cpp" />
+    <ClCompile Include="src\VertexArray.cpp" />
+    <ClCompile Include="src\View.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\config.h" />
-    <ClInclude Include="include\dirac.h" />
-    <ClInclude Include="include\getopt.h" />
-    <ClInclude Include="include\oggz\oggz.h" />
-    <ClInclude Include="include\oggz\oggz_comments.h" />
-    <ClInclude Include="include\oggz\oggz_constants.h" />
-    <ClInclude Include="include\oggz\oggz_deprecated.h" />
-    <ClInclude Include="include\oggz\oggz_io.h" />
-    <ClInclude Include="include\oggz\oggz_off_t.h" />
-    <ClInclude Include="include\oggz\oggz_off_t_generated.h" />
-    <ClInclude Include="include\oggz\oggz_packet.h" />
-    <ClInclude Include="include\oggz\oggz_read.h" />
-    <ClInclude Include="include\oggz\oggz_seek.h" />
-    <ClInclude Include="include\oggz\oggz_stream.h" />
-    <ClInclude Include="include\oggz\oggz_table.h" />
-    <ClInclude Include="include\oggz\oggz_write.h" />
-    <ClInclude Include="include\oggz_auto.h" />
-    <ClInclude Include="include\oggz_byteorder.h" />
-    <ClInclude Include="include\oggz_compat.h" />
-    <ClInclude Include="include\oggz_dlist.h" />
-    <ClInclude Include="include\oggz_macros.h" />
-    <ClInclude Include="include\oggz_private.h" />
-    <ClInclude Include="include\oggz_stream_private.h" />
-    <ClInclude Include="include\oggz_vector.h" />
+    <ClInclude Include="..\include\SFML\Config.hpp" />
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp" />
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Color.hpp" />
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Export.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Font.hpp" />
+    <ClInclude Include="include\SFML\Graphics\GLCheck.hpp" />
+    <ClInclude Include="include\SFML\Graphics\GLExtensions.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Image.hpp" />
+    <ClInclude Include="include\SFML\Graphics\ImageLoader.hpp" />
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImpl.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplDefault.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplFBO.hpp" />
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Text.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp" />
+    <ClInclude Include="include\SFML\Graphics\TextureSaver.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp" />
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp" />
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp" />
+    <ClInclude Include="include\SFML\Graphics\View.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="liboggz.def" />
+    <None Include="include\SFML\Graphics\Rect.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -35,9 +35,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{96D53DAF-EAA4-4588-83B1-F2FDBABAB4C9}</ProjectGuid>
+    <ProjectGuid>{C3946246-371A-44F2-8C31-6B7590E38D23}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>LibVorbis</RootNamespace>
+    <RootNamespace>LibSFMLWindow</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -71,13 +71,6 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v120</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
@@ -87,6 +80,13 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v120</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -110,62 +110,63 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
-  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)Sd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
-    <IntDir>.\temp\$(Configuration)\</IntDir>
-    <TargetName>$(ProjectName)SMT</TargetName>
+    <TargetName>$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)S</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(projectDir)lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(projectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -173,16 +174,14 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_WINDOW_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystemd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
@@ -191,16 +190,14 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystemd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
@@ -209,17 +206,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_WINDOW_EXPORTS;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystemMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
@@ -228,17 +223,15 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystemd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -249,40 +242,16 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_WINDOW_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
-      <Optimization>MaxSpeed</Optimization>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
-    </ClCompile>
-    <Link>
-      <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
@@ -293,18 +262,16 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
@@ -315,9 +282,8 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBVORBIS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;..\LibOgg\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4244;4996;4305;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>SFML_WINDOW_EXPORTS;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -325,81 +291,84 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>LibOggMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ModuleDefinitionFile>vorbis.def</ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystemMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>SFML_STATIC;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBSFMLWINDOW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;.\include;..\LibSFMLSystem\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;LibSFMLSystem.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="include\backends.h" />
-    <ClInclude Include="include\bitrate.h" />
-    <ClInclude Include="include\codebook.h" />
-    <ClInclude Include="include\vorbis\codec.h" />
-    <ClInclude Include="include\codec_internal.h" />
-    <ClInclude Include="include\envelope.h" />
-    <ClInclude Include="include\modes\floor_all.h" />
-    <ClInclude Include="include\books\floor\floor_books.h" />
-    <ClInclude Include="include\highlevel.h" />
-    <ClInclude Include="include\lookup.h" />
-    <ClInclude Include="include\lookup_data.h" />
-    <ClInclude Include="include\lpc.h" />
-    <ClInclude Include="include\lsp.h" />
-    <ClInclude Include="include\masking.h" />
-    <ClInclude Include="include\mdct.h" />
-    <ClInclude Include="include\misc.h" />
-    <ClInclude Include="include\os.h" />
-    <ClInclude Include="include\psy.h" />
-    <ClInclude Include="include\modes\psych_11.h" />
-    <ClInclude Include="include\modes\psych_16.h" />
-    <ClInclude Include="include\modes\psych_44.h" />
-    <ClInclude Include="include\modes\psych_8.h" />
-    <ClInclude Include="include\registry.h" />
-    <ClInclude Include="include\books\coupled\res_books_stereo.h" />
-    <ClInclude Include="include\books\uncoupled\res_books_uncoupled.h" />
-    <ClInclude Include="include\modes\residue_16.h" />
-    <ClInclude Include="include\modes\residue_44.h" />
-    <ClInclude Include="include\modes\residue_44u.h" />
-    <ClInclude Include="include\modes\residue_8.h" />
-    <ClInclude Include="include\scales.h" />
-    <ClInclude Include="include\modes\setup_11.h" />
-    <ClInclude Include="include\modes\setup_16.h" />
-    <ClInclude Include="include\modes\setup_22.h" />
-    <ClInclude Include="include\modes\setup_32.h" />
-    <ClInclude Include="include\modes\setup_44.h" />
-    <ClInclude Include="include\modes\setup_44u.h" />
-    <ClInclude Include="include\modes\setup_8.h" />
-    <ClInclude Include="include\modes\setup_X.h" />
-    <ClInclude Include="include\smallft.h" />
-    <ClInclude Include="include\vorbis\vorbisenc.h" />
-    <ClInclude Include="include\vorbis\vorbisfile.h" />
-    <ClInclude Include="include\window.h" />
+    <ClCompile Include="src\Context.cpp" />
+    <ClCompile Include="src\GlContext.cpp" />
+    <ClCompile Include="src\GlResource.cpp" />
+    <ClCompile Include="src\Joystick.cpp" />
+    <ClCompile Include="src\JoystickManager.cpp" />
+    <ClCompile Include="src\Keyboard.cpp" />
+    <ClCompile Include="src\Mouse.cpp" />
+    <ClCompile Include="src\Sensor.cpp" />
+    <ClCompile Include="src\SensorManager.cpp" />
+    <ClCompile Include="src\Touch.cpp" />
+    <ClCompile Include="src\VideoMode.cpp" />
+    <ClCompile Include="src\Win32\InputImpl.cpp" />
+    <ClCompile Include="src\Win32\JoystickImpl.cpp" />
+    <ClCompile Include="src\Win32\SensorImpl.cpp" />
+    <ClCompile Include="src\Win32\VideoModeImpl.cpp" />
+    <ClCompile Include="src\Win32\WglContext.cpp" />
+    <ClCompile Include="src\Win32\WindowImplWin32.cpp" />
+    <ClCompile Include="src\Window.cpp" />
+    <ClCompile Include="src\WindowImpl.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\analysis.c" />
-    <ClCompile Include="src\bitrate.c" />
-    <ClCompile Include="src\block.c" />
-    <ClCompile Include="src\codebook.c" />
-    <ClCompile Include="src\envelope.c" />
-    <ClCompile Include="src\floor0.c" />
-    <ClCompile Include="src\floor1.c" />
-    <ClCompile Include="src\info.c" />
-    <ClCompile Include="src\lookup.c" />
-    <ClCompile Include="src\lpc.c" />
-    <ClCompile Include="src\lsp.c" />
-    <ClCompile Include="src\mapping0.c" />
-    <ClCompile Include="src\mdct.c" />
-    <ClCompile Include="src\psy.c" />
-    <ClCompile Include="src\registry.c" />
-    <ClCompile Include="src\res0.c" />
-    <ClCompile Include="src\sharedbook.c" />
-    <ClCompile Include="src\smallft.c" />
-    <ClCompile Include="src\synthesis.c" />
-    <ClCompile Include="src\vorbisenc.c" />
-    <ClCompile Include="src\vorbisfile.c" />
-    <ClCompile Include="src\window.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="vorbis.def" />
+    <ClInclude Include="..\include\SFML\Config.hpp" />
+    <ClInclude Include="..\include\SFML\OpenGL.hpp" />
+    <ClInclude Include="include\SFML\Window\Context.hpp" />
+    <ClInclude Include="include\SFML\Window\ContextSettings.hpp" />
+    <ClInclude Include="include\SFML\Window\EGLCheck.hpp" />
+    <ClInclude Include="include\SFML\Window\EglContext.hpp" />
+    <ClInclude Include="include\SFML\Window\Event.hpp" />
+    <ClInclude Include="include\SFML\Window\Export.hpp" />
+    <ClInclude Include="include\SFML\Window\GlContext.hpp" />
+    <ClInclude Include="include\SFML\Window\GlResource.hpp" />
+    <ClInclude Include="include\SFML\Window\InputImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Joystick.hpp" />
+    <ClInclude Include="include\SFML\Window\JoystickImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\JoystickManager.hpp" />
+    <ClInclude Include="include\SFML\Window\Keyboard.hpp" />
+    <ClInclude Include="include\SFML\Window\Mouse.hpp" />
+    <ClInclude Include="include\SFML\Window\Sensor.hpp" />
+    <ClInclude Include="include\SFML\Window\SensorImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\SensorManager.hpp" />
+    <ClInclude Include="include\SFML\Window\Touch.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoMode.hpp" />
+    <ClInclude Include="include\SFML\Window\VideoModeImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\InputImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\JoystickImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\SensorImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\WglContext.hpp" />
+    <ClInclude Include="include\SFML\Window\Win32\WindowImplWin32.hpp" />
+    <ClInclude Include="include\SFML\Window\Window.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowHandle.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowImpl.hpp" />
+    <ClInclude Include="include\SFML\Window\WindowStyle.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

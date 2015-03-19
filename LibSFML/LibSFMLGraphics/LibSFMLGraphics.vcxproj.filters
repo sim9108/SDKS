@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{22b6c89f-4469-4834-a3f2-b03749dbc6d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{13686af4-b9db-4023-b08e-4f8a689499d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\SFML">
+      <UniqueIdentifier>{77ae5e56-50bb-4638-ad15-b2fb578670f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\SFML\Graphics">
+      <UniqueIdentifier>{2005c6f2-43e5-4da6-9545-b691f2793a97}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BlendMode.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\CircleShape.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Color.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ConvexShape.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Font.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLCheck.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GLExtensions.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Image.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImageLoader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RectangleShape.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderStates.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTarget.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTexture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTextureImpl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTextureImplDefault.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderTextureImplFBO.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderWindow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shader.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Shape.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Sprite.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Text.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Texture.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TextureSaver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transform.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Transformable.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vertex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexArray.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\View.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SFML\Graphics\CircleShape.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Color.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\ConvexShape.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Drawable.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Export.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Font.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\GLCheck.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\GLExtensions.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Glyph.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Image.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\ImageLoader.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\PrimitiveType.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Rect.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RectangleShape.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderStates.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTarget.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTexture.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImpl.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplDefault.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderTextureImplFBO.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\RenderWindow.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shader.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Shape.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Sprite.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Text.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Texture.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\TextureSaver.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transform.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Transformable.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\Vertex.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\VertexArray.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\View.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="include\SFML\Graphics\BlendMode.hpp">
+      <Filter>include\SFML\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\SFML\Config.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\SFML\Graphics\Rect.inl">
+      <Filter>include\SFML\Graphics</Filter>
+    </None>
+  </ItemGroup>
+</Project>
