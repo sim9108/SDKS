@@ -12,12 +12,11 @@ int _tmain(int argc, _TCHAR* argv[])
 	window.create(sf::VideoMode(800, 600), "My First Sfmal Game");
 	
 	sf::Texture pTexture;
-	sf::Sprite playerImage;
-
 	if (!pTexture.loadFromFile("player.png")){
 		std::cout << "Error image file" << std::endl;
 	}
 
+	sf::Sprite playerImage;
 	playerImage.setTexture(pTexture);
 
 	while (window.isOpen())
