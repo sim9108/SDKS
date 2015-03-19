@@ -8,12 +8,12 @@
 
 size_t 
 write_data(void *ptr, size_t size, size_t nmemb, void *stream){
-	std::string* mdata = (std::string*)stream;
+	std::string* mdata =  static_cast<std::string*>(stream);
 
 	size_t written = size*nmemb;
 	mdata->reserve(mdata->size() + written);
 	
-	char* temp = reinterpret_cast<char*>(ptr);
+	char* temp = static_cast<char*>(ptr);
 	for (size_t i = 0; i<written; ++i){
 		mdata->push_back(temp[i]);
 	}
