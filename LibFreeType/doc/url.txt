@@ -1,2 +1,2 @@
-http://www.freetype.org/
+http://sourceforge.net/projects/freetype/
 version:2.5.5
