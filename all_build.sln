@@ -120,6 +120,11 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibSFMLGraphics", "LibSFML\
 		{6EB59BEC-1A3D-496C-82A0-CE8333B85977} = {6EB59BEC-1A3D-496C-82A0-CE8333B85977}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "howtobuild", "howtobuild", "{95AE7663-809A-4D0D-B6E1-71166109BAB0}"
+	ProjectSection(SolutionItems) = preProject
+		howtobuild.txt = howtobuild.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
