@@ -17,6 +17,12 @@ struct ReadData{
 	unsigned int row_bytes_;
 };
 
+void emit_handle(j_common_ptr cinfo, int msg_level){
+	char msg[JMSG_LENGTH_MAX];
+	cinfo->err->format_message(cinfo, msg);
+	std::cout <<"msg:"<< msg << " level:"<<msg_level << std::endl;
+}
+
 void exit_handle(j_common_ptr cinfo){
 	char msg[JMSG_LENGTH_MAX];
 	cinfo->err->format_message(cinfo, msg);
@@ -35,6 +41,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 	jpeg_error_mgr jerr;
 	jpeg_std_error(&jerr);
 	jerr.error_exit = exit_handle;
+	jerr.emit_message = emit_handle;
 
 	// 압축 해제 구조
 	jpeg_decompress_struct cinfo;
@@ -53,8 +60,6 @@ int _tmain(int argc, _TCHAR* argv[]){
 		datas.width_ = cinfo.output_width;
 		datas.height_ = cinfo.output_height;
 		datas.row_bytes_ = datas.width_*cinfo.output_components;
-		std::cout << "width:" << datas.width_ << " height:" << datas.height_ << std::endl;
-		std::cout << "components:" << cinfo.output_components << std::endl;
 
 		while (cinfo.output_scanline < cinfo.output_height){
 			ReadData::ROW_DATA m(datas.row_bytes_);
@@ -70,7 +75,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 		fclose(fp);
 	}
 	catch (std::runtime_error& ex){
-		std::cout << "error:" << ex.what() << std::endl;
+		std::cout << ">>>error:" << ex.what() << std::endl;
 		jpeg_destroy_decompress(&cinfo);
 		fclose(fp);
 	}
