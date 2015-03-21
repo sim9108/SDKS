@@ -54,6 +54,7 @@ int _tmain(int argc, _TCHAR* argv[]){
 		datas.height_ = cinfo.output_height;
 		datas.row_bytes_ = datas.width_*cinfo.output_components;
 		std::cout << "width:" << datas.width_ << " height:" << datas.height_ << std::endl;
+		std::cout << "components:" << cinfo.output_components << std::endl;
 
 		while (cinfo.output_scanline < cinfo.output_height){
 			ReadData::ROW_DATA m(datas.row_bytes_);
