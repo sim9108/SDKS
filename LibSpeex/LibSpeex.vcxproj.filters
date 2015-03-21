@@ -302,8 +302,11 @@
     <ClCompile Include="src\vq.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\resample.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="libspeex.def" />
+    <None Include="exports.def" />
   </ItemGroup>
 </Project>

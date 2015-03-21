@@ -10,7 +10,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	sf::RenderWindow window;
 	window.create(sf::VideoMode(800, 600), "My First Sfml Game");
-	
+		
 	sf::Texture pTexture;
 	if (!pTexture.loadFromFile("player.png")){
 		std::cout << "Error image file" << std::endl;
