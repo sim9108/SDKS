@@ -34,6 +34,9 @@
     <Filter Include="src\share\win_utf8_io">
       <UniqueIdentifier>{2be0dbff-a56d-4fe0-a4ba-34b5a0faec02}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\FLAC++">
+      <UniqueIdentifier>{5bfcf99e-f8e1-44bd-afc1-b5c464da908a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\bitmath.c">
@@ -128,6 +131,15 @@
     </ClCompile>
     <ClCompile Include="src\share\win_utf8_io\win_utf8_io.c">
       <Filter>src\share\win_utf8_io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\metadata.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_decoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stream_encoder.cpp">
+      <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -283,6 +295,21 @@
     </ClInclude>
     <ClInclude Include="include\ia32\nasm.h">
       <Filter>include\ia32</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC++\encoder.h">
+      <Filter>include\FLAC++</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC++\export.h">
+      <Filter>include\FLAC++</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC++\metadata.h">
+      <Filter>include\FLAC++</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC++\all.h">
+      <Filter>include\FLAC++</Filter>
+    </ClInclude>
+    <ClInclude Include="include\FLAC++\decoder.h">
+      <Filter>include\FLAC++</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
