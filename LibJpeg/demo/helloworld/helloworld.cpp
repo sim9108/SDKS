@@ -10,8 +10,8 @@
 struct ReadData{
 	using ROW_DATA = std::vector<JSAMPLE>;
 	using ROWS_DATA = std::vector< ROW_DATA >;
-	ROWS_DATA rows_;
 
+	ROWS_DATA rows_;
 	unsigned int width_;
 	unsigned int height_;
 	unsigned int row_bytes_;
