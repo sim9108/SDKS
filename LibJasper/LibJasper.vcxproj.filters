@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{bdd0f8f5-6ab4-47a3-bb34-29f3804ccc6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{433c092b-4c43-49be-95d1-8f835db6e83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{10ff4f48-06e1-48dd-8840-df6b46c12076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\bmp">
+      <UniqueIdentifier>{dae04666-936e-42e4-86bd-9019fc1b3b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\jp2">
+      <UniqueIdentifier>{101e6ddb-fc24-44d1-b89f-b57215f541d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\jpg">
+      <UniqueIdentifier>{be91bec8-2a39-4387-8779-ccfd46bfdf42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\mif">
+      <UniqueIdentifier>{10134818-4400-48f0-9727-37f08897387a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\jpc">
+      <UniqueIdentifier>{4d1713a0-53cf-40e3-94ad-e4b76f281423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pnm">
+      <UniqueIdentifier>{9e0d89ba-b693-4b88-abeb-ee50a183d4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ras">
+      <UniqueIdentifier>{97657841-9818-49ce-9344-4680d32de40f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pgx">
+      <UniqueIdentifier>{76b69efb-c7fa-4eef-ab88-5fe78cea9557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper">
+      <UniqueIdentifier>{85058152-94b6-49cf-b0ec-69624f02e061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\ras">
+      <UniqueIdentifier>{d0095d45-a74b-4c2d-a276-8ed5503ab34d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\bmp">
+      <UniqueIdentifier>{c7d5ce25-b37d-493b-91d0-173784f80efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\jp2">
+      <UniqueIdentifier>{00e8e3ec-8772-4283-a5b3-ded068010c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\jpc">
+      <UniqueIdentifier>{2d1a7dc4-93fc-431c-bb91-e066fae7a264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\jpg">
+      <UniqueIdentifier>{1cb02caf-3aef-42b4-a4cb-7b9cc1428793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\mif">
+      <UniqueIdentifier>{628d6a37-b4cd-4878-8f21-c39e34f7aabb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\pgx">
+      <UniqueIdentifier>{6458178a-9951-4de4-a67e-8843b134f7df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\japsper\pnm">
+      <UniqueIdentifier>{16ac72e8-6e26-41a0-97d2-c46fce8ecdab}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\jas_cm.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_debug.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_getopt.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_icc.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_iccdata.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_image.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_init.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_malloc.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_seq.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_stream.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_string.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_tmr.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_tvp.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\jas_version.c">
+      <Filter>src\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bmp\bmp_cod.c">
+      <Filter>src\bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bmp\bmp_dec.c">
+      <Filter>src\bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bmp\bmp_enc.c">
+      <Filter>src\bmp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jp2\jp2_cod.c">
+      <Filter>src\jp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jp2\jp2_dec.c">
+      <Filter>src\jp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jp2\jp2_enc.c">
+      <Filter>src\jp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_bs.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_cs.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_dec.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_enc.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_math.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_mct.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_mqcod.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_mqdec.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_mqenc.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_qmfb.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t1cod.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t1dec.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t1enc.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t2cod.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t2dec.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_t2enc.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_tagtree.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_tsfb.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpc\jpc_util.c">
+      <Filter>src\jpc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mif\mif_cod.c">
+      <Filter>src\mif</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pgx\pgx_cod.c">
+      <Filter>src\pgx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pgx\pgx_dec.c">
+      <Filter>src\pgx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pgx\pgx_enc.c">
+      <Filter>src\pgx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pnm\pnm_cod.c">
+      <Filter>src\pnm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pnm\pnm_dec.c">
+      <Filter>src\pnm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pnm\pnm_enc.c">
+      <Filter>src\pnm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ras\ras_cod.c">
+      <Filter>src\ras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ras\ras_dec.c">
+      <Filter>src\ras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ras\ras_enc.c">
+      <Filter>src\ras</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpg\jpg_dummy.c">
+      <Filter>src\jpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpg\jpg_val.c">
+      <Filter>src\jpg</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\jasper\jas_cm.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_config.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_config2.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_debug.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_fix.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_getopt.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_icc.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_image.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_init.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_malloc.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_math.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_seq.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_stream.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_string.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_tmr.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_tvp.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_types.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jas_version.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jasper.h">
+      <Filter>include\japsper</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\bmp\bmp_cod.h">
+      <Filter>include\japsper\bmp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\bmp\bmp_enc.h">
+      <Filter>include\japsper\bmp</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jp2\jp2_cod.h">
+      <Filter>include\japsper\jp2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jp2\jp2_dec.h">
+      <Filter>include\japsper\jp2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_bs.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_cod.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_cs.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_dec.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_enc.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_fix.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_flt.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_math.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_mct.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_mqcod.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_mqdec.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_mqenc.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_qmfb.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t1cod.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t1dec.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t1enc.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t2cod.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t2dec.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_t2enc.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_tagtree.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_tsfb.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpc\jpc_util.h">
+      <Filter>include\japsper\jpc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpg\jpg_cod.h">
+      <Filter>include\japsper\jpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpg\jpg_enc.h">
+      <Filter>include\japsper\jpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\jpg\jpg_jpeglib.h">
+      <Filter>include\japsper\jpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\mif\mif_cod.h">
+      <Filter>include\japsper\mif</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\pgx\pgx_cod.h">
+      <Filter>include\japsper\pgx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\pgx\pgx_enc.h">
+      <Filter>include\japsper\pgx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\pnm\pnm_cod.h">
+      <Filter>include\japsper\pnm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\pnm\pnm_enc.h">
+      <Filter>include\japsper\pnm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\ras\ras_cod.h">
+      <Filter>include\japsper\ras</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jasper\ras\ras_enc.h">
+      <Filter>include\japsper\ras</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

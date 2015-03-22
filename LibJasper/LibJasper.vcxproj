@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FEACAF1C-D673-41F3-9D2D-579AD3224276}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibJasper</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\jas_cm.c" />
+    <ClCompile Include="src\base\jas_debug.c" />
+    <ClCompile Include="src\base\jas_getopt.c" />
+    <ClCompile Include="src\base\jas_icc.c" />
+    <ClCompile Include="src\base\jas_iccdata.c" />
+    <ClCompile Include="src\base\jas_image.c" />
+    <ClCompile Include="src\base\jas_init.c" />
+    <ClCompile Include="src\base\jas_malloc.c" />
+    <ClCompile Include="src\base\jas_seq.c" />
+    <ClCompile Include="src\base\jas_stream.c" />
+    <ClCompile Include="src\base\jas_string.c" />
+    <ClCompile Include="src\base\jas_tmr.c" />
+    <ClCompile Include="src\base\jas_tvp.c" />
+    <ClCompile Include="src\base\jas_version.c" />
+    <ClCompile Include="src\bmp\bmp_cod.c" />
+    <ClCompile Include="src\bmp\bmp_dec.c" />
+    <ClCompile Include="src\bmp\bmp_enc.c" />
+    <ClCompile Include="src\jp2\jp2_cod.c" />
+    <ClCompile Include="src\jp2\jp2_dec.c" />
+    <ClCompile Include="src\jp2\jp2_enc.c" />
+    <ClCompile Include="src\jpc\jpc_bs.c" />
+    <ClCompile Include="src\jpc\jpc_cs.c" />
+    <ClCompile Include="src\jpc\jpc_dec.c" />
+    <ClCompile Include="src\jpc\jpc_enc.c" />
+    <ClCompile Include="src\jpc\jpc_math.c" />
+    <ClCompile Include="src\jpc\jpc_mct.c" />
+    <ClCompile Include="src\jpc\jpc_mqcod.c" />
+    <ClCompile Include="src\jpc\jpc_mqdec.c" />
+    <ClCompile Include="src\jpc\jpc_mqenc.c" />
+    <ClCompile Include="src\jpc\jpc_qmfb.c" />
+    <ClCompile Include="src\jpc\jpc_t1cod.c" />
+    <ClCompile Include="src\jpc\jpc_t1dec.c" />
+    <ClCompile Include="src\jpc\jpc_t1enc.c" />
+    <ClCompile Include="src\jpc\jpc_t2cod.c" />
+    <ClCompile Include="src\jpc\jpc_t2dec.c" />
+    <ClCompile Include="src\jpc\jpc_t2enc.c" />
+    <ClCompile Include="src\jpc\jpc_tagtree.c" />
+    <ClCompile Include="src\jpc\jpc_tsfb.c" />
+    <ClCompile Include="src\jpc\jpc_util.c" />
+    <ClCompile Include="src\jpg\jpg_dummy.c" />
+    <ClCompile Include="src\jpg\jpg_val.c" />
+    <ClCompile Include="src\mif\mif_cod.c" />
+    <ClCompile Include="src\pgx\pgx_cod.c" />
+    <ClCompile Include="src\pgx\pgx_dec.c" />
+    <ClCompile Include="src\pgx\pgx_enc.c" />
+    <ClCompile Include="src\pnm\pnm_cod.c" />
+    <ClCompile Include="src\pnm\pnm_dec.c" />
+    <ClCompile Include="src\pnm\pnm_enc.c" />
+    <ClCompile Include="src\ras\ras_cod.c" />
+    <ClCompile Include="src\ras\ras_dec.c" />
+    <ClCompile Include="src\ras\ras_enc.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\jasper\bmp\bmp_cod.h" />
+    <ClInclude Include="include\jasper\bmp\bmp_enc.h" />
+    <ClInclude Include="include\jasper\jasper.h" />
+    <ClInclude Include="include\jasper\jas_cm.h" />
+    <ClInclude Include="include\jasper\jas_config.h" />
+    <ClInclude Include="include\jasper\jas_config2.h" />
+    <ClInclude Include="include\jasper\jas_debug.h" />
+    <ClInclude Include="include\jasper\jas_fix.h" />
+    <ClInclude Include="include\jasper\jas_getopt.h" />
+    <ClInclude Include="include\jasper\jas_icc.h" />
+    <ClInclude Include="include\jasper\jas_image.h" />
+    <ClInclude Include="include\jasper\jas_init.h" />
+    <ClInclude Include="include\jasper\jas_malloc.h" />
+    <ClInclude Include="include\jasper\jas_math.h" />
+    <ClInclude Include="include\jasper\jas_seq.h" />
+    <ClInclude Include="include\jasper\jas_stream.h" />
+    <ClInclude Include="include\jasper\jas_string.h" />
+    <ClInclude Include="include\jasper\jas_tmr.h" />
+    <ClInclude Include="include\jasper\jas_tvp.h" />
+    <ClInclude Include="include\jasper\jas_types.h" />
+    <ClInclude Include="include\jasper\jas_version.h" />
+    <ClInclude Include="include\jasper\jp2\jp2_cod.h" />
+    <ClInclude Include="include\jasper\jp2\jp2_dec.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_bs.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_cod.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_cs.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_dec.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_enc.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_fix.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_flt.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_math.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_mct.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_mqcod.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_mqdec.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_mqenc.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_qmfb.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t1cod.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t1dec.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t1enc.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t2cod.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t2dec.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_t2enc.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_tagtree.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_tsfb.h" />
+    <ClInclude Include="include\jasper\jpc\jpc_util.h" />
+    <ClInclude Include="include\jasper\jpg\jpg_cod.h" />
+    <ClInclude Include="include\jasper\jpg\jpg_enc.h" />
+    <ClInclude Include="include\jasper\jpg\jpg_jpeglib.h" />
+    <ClInclude Include="include\jasper\mif\mif_cod.h" />
+    <ClInclude Include="include\jasper\pgx\pgx_cod.h" />
+    <ClInclude Include="include\jasper\pgx\pgx_enc.h" />
+    <ClInclude Include="include\jasper\pnm\pnm_cod.h" />
+    <ClInclude Include="include\jasper\pnm\pnm_enc.h" />
+    <ClInclude Include="include\jasper\ras\ras_cod.h" />
+    <ClInclude Include="include\jasper\ras\ras_enc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
