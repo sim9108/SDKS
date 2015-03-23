@@ -1,0 +1,23 @@
+https://github.com/ariya/FastLZ
+//////////////////////////////////////////////////////////////////////
+#if defined(FASTLZ__NO_DLL) //stastic 만들때 프리프로세서 등록
+#define FASTLZ_API
+
+#elif defined(_MSC_VER)
+#ifdef FASTLZ_API_EXPORTS  //dll 만들때 프리프로세서 등록
+#define	FASTLZ_API __declspec(dllexport)
+#else
+#define FASTLZ_API __declspec(dllimport)
+#endif
+
+#elif defined(FASTLZ__USE_VISIBILITY_ATTR)
+#define FASTLZ_API __attribute__ ((visibility ("default")))
+
+#else
+#define FASTLZ_API
+
+#endif
+//////////////////////////////////////////////////////////////////////
+FASTLZ_API int // int class 앞에 변수중에 스태스틱이 아닌변수에 함수등록
+//////////////////////////////////////////////////////////////////////
+fastlz.c 파일에  #include "fastlz.h" 추가

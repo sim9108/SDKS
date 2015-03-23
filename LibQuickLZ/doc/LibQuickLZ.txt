@@ -1,0 +1,25 @@
+http://www.quicklz.com/download.html
+LibQuickLZ  1.5
+QLZ_NO_DLL
+
+//////////////////////////////////////////////////////////////////////
+#if defined(QLZ__NO_DLL) //stastic 만들때 프리프로세서 등록
+#define QLZ_API
+
+#elif defined(_MSC_VER)
+#ifdef QLZ_API_EXPORTS  //dll 만들때 프리프로세서 등록
+#define	QLZ_API __declspec(dllexport)
+#else
+#define QLZ_API __declspec(dllimport)
+#endif
+
+#elif defined(QLZ__USE_VISIBILITY_ATTR)
+#define QLZ_API __attribute__ ((visibility ("default")))
+
+#else
+#define QLZ_API
+
+#endif
+//////////////////////////////////////////////////////////////////////
+QLZ_API int // int class 앞에 변수중에 스태스틱이 아닌변수에 함수등록
+//////////////////////////////////////////////////////////////////////
