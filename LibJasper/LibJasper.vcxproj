@@ -245,7 +245,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
@@ -266,7 +266,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
@@ -287,7 +287,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -309,7 +309,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;jas_eprintf=_printf;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
