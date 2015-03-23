@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{d358733e-4a7d-4f22-9063-43c01d256b49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{12248d39-b6d1-408e-b37e-de926cc9f870}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\snappy-c.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snappy-sinksource.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snappy-stubs-internal.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snappy.cc">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\snappy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snappy-c.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snappy-internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snappy-sinksource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snappy-stubs-internal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snappy-stubs-public.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
