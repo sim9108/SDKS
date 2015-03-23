@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{3094c47e-1f4b-40a0-a2ea-1aa3d6707551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{87cb4e18-c225-4688-a6d4-65b14812b14e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\lz4frame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4frame_static.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4hc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xxhash.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lz4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lz4frame.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lz4hc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xxhash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lz4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
