@@ -231,13 +231,13 @@ typedef int_fast32_t jas_cmattrname_t;
 typedef int_fast32_t jas_cmattrval_t;
 typedef int_fast32_t jas_cmattrtype_t;
 /* Load a profile. */
-int jas_cmprof_load(jas_cmprof_t *prof, jas_stream_t *in, int fmt);
+JASPER_API int jas_cmprof_load(jas_cmprof_t *prof, jas_stream_t *in, int fmt);
 /* Save a profile. */
-int jas_cmprof_save(jas_cmprof_t *prof, jas_stream_t *out, int fmt);
+JASPER_API int jas_cmprof_save(jas_cmprof_t *prof, jas_stream_t *out, int fmt);
 /* Set an attribute of a profile. */
-int jas_cm_prof_setattr(jas_cm_prof_t *prof, jas_cm_attrname_t name, void *val);
+JASPER_API int jas_cm_prof_setattr(jas_cm_prof_t *prof, jas_cm_attrname_t name, void *val);
 /* Get an attribute of a profile. */
-void *jas_cm_prof_getattr(jas_cm_prof_t *prof, jas_cm_attrname_t name);
+JASPER_API void *jas_cm_prof_getattr(jas_cm_prof_t *prof, jas_cm_attrname_t name);
 #endif
 
 JASPER_API jas_cmxform_t *jas_cmxform_create(jas_cmprof_t *inprof, jas_cmprof_t *outprof,
