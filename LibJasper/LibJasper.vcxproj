@@ -174,7 +174,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -182,6 +182,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibJpegTurbo\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibJpegTurbod.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
@@ -191,7 +193,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -208,7 +210,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -217,6 +219,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibJpegTurbo\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibJpegTurboMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
@@ -226,7 +230,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -246,7 +250,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -256,6 +260,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibJpegTurbo\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibJpegTurbo.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
@@ -267,7 +273,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -288,7 +294,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>JASPER_API_EXPORTS;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -299,6 +305,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <ModuleDefinitionFile>
       </ModuleDefinitionFile>
+      <AdditionalLibraryDirectories>..\LibJpegTurbo\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibJpegTurboMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
@@ -310,7 +318,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>JASPER__NO_DLL;JAS_WIN_MSVC_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBJASPER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\include\jasper\bmp;.\include\jasper\jp2;.\include\jasper\jpc;.\include\jasper\jpg;.\include\jasper\mif;.\include\jasper\pgx;.\include\jasper\pnm;.\include\jasper\ras;..\LibJpegTurbo\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4244;4996;4018;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -363,7 +371,8 @@
     <ClCompile Include="src\jpc\jpc_tagtree.c" />
     <ClCompile Include="src\jpc\jpc_tsfb.c" />
     <ClCompile Include="src\jpc\jpc_util.c" />
-    <ClCompile Include="src\jpg\jpg_dummy.c" />
+    <ClCompile Include="src\jpg\jpg_dec.c" />
+    <ClCompile Include="src\jpg\jpg_enc.c" />
     <ClCompile Include="src\jpg\jpg_val.c" />
     <ClCompile Include="src\mif\mif_cod.c" />
     <ClCompile Include="src\pgx\pgx_cod.c" />

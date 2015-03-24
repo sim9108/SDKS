@@ -210,10 +210,13 @@
     <ClCompile Include="src\ras\ras_enc.c">
       <Filter>src\ras</Filter>
     </ClCompile>
-    <ClCompile Include="src\jpg\jpg_dummy.c">
+    <ClCompile Include="src\jpg\jpg_val.c">
       <Filter>src\jpg</Filter>
     </ClCompile>
-    <ClCompile Include="src\jpg\jpg_val.c">
+    <ClCompile Include="src\jpg\jpg_dec.c">
+      <Filter>src\jpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\jpg\jpg_enc.c">
       <Filter>src\jpg</Filter>
     </ClCompile>
   </ItemGroup>
