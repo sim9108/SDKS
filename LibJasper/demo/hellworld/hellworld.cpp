@@ -46,7 +46,6 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	std::cin.get();
 
-
 	return 0;
 }
 
