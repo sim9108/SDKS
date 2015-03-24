@@ -135,6 +135,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibOpenSSL", "LibOpenSSL\Li
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibJasper", "LibJasper\LibJasper.vcxproj", "{FEACAF1C-D673-41F3-9D2D-579AD3224276}"
+	ProjectSection(ProjectDependencies) = postProject
+		{489261AE-4461-4ED0-9C65-7667A4B6F49D} = {489261AE-4461-4ED0-9C65-7667A4B6F49D}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibLZO", "LibLZO\LibLZO.vcxproj", "{662DF7DC-909A-4786-BD2A-2E033EC841F4}"
 EndProject
