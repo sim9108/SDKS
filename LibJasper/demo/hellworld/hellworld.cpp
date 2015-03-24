@@ -44,6 +44,8 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	jas_cleanup();
 
+	std::cin.get();
+
 
 	return 0;
 }
