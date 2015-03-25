@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{23ABDE7D-51CF-4927-89B4-2CE621052468}</ProjectGuid>
+    <ProjectGuid>{66FDD202-8F11-46E7-91BC-22A327AC1828}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LibCurl</RootNamespace>
   </PropertyGroup>

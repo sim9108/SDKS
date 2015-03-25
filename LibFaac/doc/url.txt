@@ -1,0 +1,2 @@
+http://www.audiocoding.com/faac.html
+version:1.28

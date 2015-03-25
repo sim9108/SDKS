@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{83d68b75-26ed-4337-896f-62dd999eaf77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{668d394e-faf2-4d37-87d4-694cb66bb955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\kiss_fft">
+      <UniqueIdentifier>{d89a4b08-a344-4e48-a97a-6bcc0896cf26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aacquant.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\backpred.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bitstream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\channels.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fft.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filtbank.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frame.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\huffman.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ltp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\midside.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\psychkni.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\aacquant.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\backpred.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bitstream.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\channels.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\coder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\faac.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\faaccfg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filtbank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\frame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\huffman.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hufftab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ltp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\midside.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\psych.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tns.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kiss_fft\kiss_fftr.h">
+      <Filter>include\kiss_fft</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kiss_fft\kiss_fft.h">
+      <Filter>include\kiss_fft</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libfaac.def">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\libfaacdrm.def">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>
