@@ -1,0 +1,2 @@
+http://www.fastlz.org
+version:0.1.0
