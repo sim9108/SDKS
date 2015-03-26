@@ -22,7 +22,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << "width:" << w << std::endl;
 	std::cout << "height:" << h << std::endl;
 
-	std::vector<uint32> raster(w*h);
+	std::vector<uint32> raster( w*h );
 	TIFFReadRGBAImage(tif, w, h, raster.data(), 0);
 	TIFFClose(tif);
 
