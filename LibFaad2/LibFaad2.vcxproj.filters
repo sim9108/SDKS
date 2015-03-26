@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{96acf27c-7bf7-4d69-8a9d-9468cf0716ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8f96ee10-91a6-4583-87c2-5769ecfe0f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\codebook">
+      <UniqueIdentifier>{d3dea330-be63-4f04-8740-3fc2f7580fa3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bits.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cfft.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\decoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\drm_dec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\error.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filtbank.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hcr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\huffman.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ic_predict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\is.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lt_predict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mdct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mp4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ms.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\output.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ps_dec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ps_syntax.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pulse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rvlc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_dct.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_dec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_e_nf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_fbt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_hfadj.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_hfgen.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_huff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_qmf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_syntax.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sbr_tf_grid.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\specrec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ssr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ssr_fb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ssr_ipqf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\syntax.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libfaad2.def">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\analysis.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\bits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfft.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cfft_tab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\drm_dec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\faad.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\filtbank.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\fixed.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\huffman.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ic_predict.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\iq_table.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\is.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\kbd_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lt_predict.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mdct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mdct_tab.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mp4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ms.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\neaacdec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\output.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pns.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ps_dec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ps_tables.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pulse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\rvlc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_dct.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_dec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_e_nf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_fbt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_hfadj.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_hfgen.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_huff.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_noise.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_qmf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_qmf_c.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_syntax.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sbr_tf_grid.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sine_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\specrec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ssr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ssr_fb.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ssr_ipqf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ssr_win.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\structs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\syntax.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\tns.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_1.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_2.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_3.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_4.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_5.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_6.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_7.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_8.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_9.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_10.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_11.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+    <ClInclude Include="include\codebook\hcb_sf.h">
+      <Filter>include\codebook</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
