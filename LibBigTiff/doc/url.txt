@@ -1,0 +1,2 @@
+http://bigtiff.org/#SOURCE_CODE_CHANGES
+version:4.1
