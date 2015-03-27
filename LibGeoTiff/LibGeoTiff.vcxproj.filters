@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{00fdde7e-39df-4d53-bc8c-dfba2866e72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{24776447-2ad3-4eba-a977-aa081c4ca017}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\inc">
+      <UniqueIdentifier>{e0558ae9-6a15-4691-8686-a0b1dbdba933}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\csv">
+      <UniqueIdentifier>{3372b3af-4bbe-416d-91a4-581d0937fd48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\xtiff.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpl_csv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cpl_serv.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_extra.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_free.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_get.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_names.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_new.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_normalize.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_print.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_set.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_simpletags.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_tiffp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_trans.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geo_write.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\geotiff_proj4.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\datum.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\ellipsoid.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\gcs.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\pcs.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\prime_meridian.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\projop_wparm.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\unit_of_measure.c">
+      <Filter>src\csv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\geokeys.inc">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\epsg_datum.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_ellipse.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_gcs.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_pcs.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_pm.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_proj.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_units.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\epsg_vertcs.inc">
+      <Filter>src\inc</Filter>
+    </None>
+    <None Include="src\geo_ctrans.inc">
+      <Filter>src\inc</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\geo_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geo_incode_defs.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geo_keyp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geo_normalize.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geo_simpletags.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geo_tiffp.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geokeys.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geonames.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geotiff.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geotiffio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\geovalues.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\xtiffio.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\cpl_serv.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
