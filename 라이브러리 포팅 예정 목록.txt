@@ -1,2 +1,2 @@
 LibXML2
-LibJasper
+LibOpenEXR
