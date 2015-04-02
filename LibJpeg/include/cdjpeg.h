@@ -17,6 +17,12 @@
 #include "cderror.h"		/* get application-specific error codes */
 
 
+#ifdef __cplusplus
+#ifndef DONT_USE_EXTERN_C
+extern "C" {
+#endif
+#endif
+
 /*
  * Object interface for cjpeg's source file decoding modules
  */
@@ -183,5 +189,12 @@ EXTERN(FILE *) write_stdout JPP((void));
 #define EXIT_WARNING  1		/* VMS is very nonstandard */
 #else
 #define EXIT_WARNING  2
+#endif
+#endif
+
+
+#ifdef __cplusplus
+#ifndef DONT_USE_EXTERN_C
+}
 #endif
 #endif
