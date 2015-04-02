@@ -191,14 +191,8 @@
     <ClInclude Include="include\jconfig.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="include\jconfigint.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="include\jdct.h">
       <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\jdhuff.h">
-      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\jerror.h">
       <Filter>include</Filter>
@@ -240,6 +234,12 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\turbojpeg.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jconfigint.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jdhuff.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
