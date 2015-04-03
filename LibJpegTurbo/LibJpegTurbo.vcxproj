@@ -366,11 +366,21 @@
     <ClCompile Include="src\jaricom.c" />
     <ClCompile Include="src\jcarith.c" />
     <ClCompile Include="src\jdarith.c" />
+    <ClCompile Include="src\rdbmp.c" />
+    <ClCompile Include="src\rdgif.c" />
+    <ClCompile Include="src\rdppm.c" />
+    <ClCompile Include="src\rdrle.c" />
+    <ClCompile Include="src\rdtarga.c" />
     <ClCompile Include="src\simd\jsimd_i386.c" />
     <ClCompile Include="src\turbojpeg.c" />
     <ClCompile Include="src\transupp.c" />
     <ClCompile Include="src\jdatadst-tj.c" />
     <ClCompile Include="src\jdatasrc-tj.c" />
+    <ClCompile Include="src\wrbmp.c" />
+    <ClCompile Include="src\wrgif.c" />
+    <ClCompile Include="src\wrppm.c" />
+    <ClCompile Include="src\wrrle.c" />
+    <ClCompile Include="src\wrtarga.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\jconfig.h" />

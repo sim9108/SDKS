@@ -174,6 +174,36 @@
     <ClCompile Include="src\transupp.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\wrgif.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wrppm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wrrle.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wrtarga.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wrbmp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdbmp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdgif.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdppm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdrle.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdtarga.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\bmp.h">
@@ -187,9 +217,6 @@
     </ClInclude>
     <ClInclude Include="include\jchuff.h">
       <Filter>include</Filter>
-    </ClInclude>
-    <ClInclude Include="include\jconfig.h">
-      <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="include\jdct.h">
       <Filter>include</Filter>
@@ -240,6 +267,9 @@
       <Filter>include</Filter>
     </ClInclude>
     <ClInclude Include="include\jdhuff.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\jconfig.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

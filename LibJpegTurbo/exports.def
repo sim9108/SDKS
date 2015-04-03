@@ -29,9 +29,17 @@ EXPORTS
 	jinit_master_decompress
 	jinit_memory_mgr
 	jinit_merged_upsampler
+	jinit_read_bmp
+	jinit_read_gif
+	jinit_read_ppm
+	jinit_read_targa
+	jinit_upsampler
+	jinit_write_bmp
+	jinit_write_gif
+	jinit_write_ppm
+	jinit_write_targa
 	jinit_phuff_decoder
 	jinit_phuff_encoder
-	jinit_upsampler
 	jpeg_CreateCompress
 	jpeg_CreateDecompress
 	jpeg_abort

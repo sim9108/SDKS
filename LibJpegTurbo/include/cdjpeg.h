@@ -19,6 +19,12 @@
 #include "cderror.h"            /* get application-specific error codes */
 
 
+#ifdef __cplusplus
+#ifndef DONT_USE_EXTERN_C
+extern "C" {
+#endif
+#endif
+
 /*
  * Object interface for cjpeg's source file decoding modules
  */
@@ -141,4 +147,11 @@ EXTERN(FILE *) write_stdout (void);
 #endif
 #ifndef EXIT_WARNING
 #define EXIT_WARNING  2
+#endif
+
+
+#ifdef __cplusplus
+#ifndef DONT_USE_EXTERN_C
+}
+#endif
 #endif
