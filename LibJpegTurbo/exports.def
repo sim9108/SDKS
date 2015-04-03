@@ -38,8 +38,6 @@ EXPORTS
 	jinit_write_gif
 	jinit_write_ppm
 	jinit_write_targa
-	jinit_phuff_decoder
-	jinit_phuff_encoder
 	jpeg_CreateCompress
 	jpeg_CreateDecompress
 	jpeg_abort
@@ -48,48 +46,93 @@ EXPORTS
 	jpeg_add_quant_table
 	jpeg_alloc_huff_table
 	jpeg_alloc_quant_table
+	jpeg_calc_jpeg_dimensions
 	jpeg_calc_output_dimensions
 	jpeg_consume_input
 	jpeg_copy_critical_parameters
+	jpeg_core_output_dimensions
 	jpeg_default_colorspace
+	jpeg_default_qtables
 	jpeg_destroy
 	jpeg_destroy_compress
 	jpeg_destroy_decompress
+;	jpeg_fdct_10x10
+;	jpeg_fdct_10x5
+;	jpeg_fdct_11x11
+;	jpeg_fdct_12x12
+;	jpeg_fdct_12x6
+;	jpeg_fdct_13x13
+;	jpeg_fdct_14x14
+;	jpeg_fdct_14x7
+;	jpeg_fdct_15x15
+;	jpeg_fdct_16x16
+;	jpeg_fdct_16x8
+;	jpeg_fdct_1x1
+;	jpeg_fdct_1x2
+;	jpeg_fdct_2x1
+;	jpeg_fdct_2x2
+;	jpeg_fdct_2x4
+;	jpeg_fdct_3x3
+;	jpeg_fdct_3x6
+;	jpeg_fdct_4x2
+;	jpeg_fdct_4x4
+;	jpeg_fdct_4x8
+;	jpeg_fdct_5x10
+;	jpeg_fdct_5x5
+;	jpeg_fdct_6x12
+;	jpeg_fdct_6x3
+;	jpeg_fdct_6x6
+;	jpeg_fdct_7x14
+;	jpeg_fdct_7x7
+;	jpeg_fdct_8x16
+;	jpeg_fdct_8x4
+;	jpeg_fdct_9x9
 	jpeg_fdct_float
 	jpeg_fdct_ifast
 	jpeg_fdct_islow
-	jpeg_fill_bit_buffer
 	jpeg_finish_compress
 	jpeg_finish_decompress
 	jpeg_finish_output
 	jpeg_free_large
 	jpeg_free_small
-	jpeg_gen_optimal_table
 	jpeg_get_large
 	jpeg_get_small
 	jpeg_has_multiple_scans
-	jpeg_huff_decode
 	jpeg_idct_10x10
+;	jpeg_idct_10x5
 	jpeg_idct_11x11
 	jpeg_idct_12x12
+;	jpeg_idct_12x6
 	jpeg_idct_13x13
 	jpeg_idct_14x14
+;	jpeg_idct_14x7
 	jpeg_idct_15x15
 	jpeg_idct_16x16
+;	jpeg_idct_16x8
 	jpeg_idct_1x1
+;	jpeg_idct_1x2
+;	jpeg_idct_2x1
 	jpeg_idct_2x2
+;	jpeg_idct_2x4
 	jpeg_idct_3x3
+;	jpeg_idct_3x6
+;	jpeg_idct_4x2
 	jpeg_idct_4x4
+;	jpeg_idct_4x8
+;	jpeg_idct_5x10
 	jpeg_idct_5x5
+;	jpeg_idct_6x12
+;	jpeg_idct_6x3
 	jpeg_idct_6x6
+;	jpeg_idct_7x14
 	jpeg_idct_7x7
+;	jpeg_idct_8x16
+;	jpeg_idct_8x4
 	jpeg_idct_9x9
 	jpeg_idct_float
 	jpeg_idct_ifast
 	jpeg_idct_islow
 	jpeg_input_complete
-	jpeg_make_c_derived_tbl
-	jpeg_make_d_derived_tbl
 	jpeg_mem_available
 	jpeg_mem_dest
 	jpeg_mem_init
@@ -125,6 +168,20 @@ EXPORTS
 	jpeg_write_scanlines
 	jpeg_write_tables
 	jround_up
+	jtransform_adjust_parameters
+	jtransform_execute_transform
+	jtransform_parse_crop_spec
+	jtransform_perfect_transform
+	jtransform_request_workspace
+	keymatch
+	read_color_map
+	read_quant_tables
+	read_scan_script
+	read_stdin
+	set_quality_ratings
+	set_quant_slots
+	set_sample_factors
+	write_stdout
 	jsimd_can_convsamp
 	jsimd_can_convsamp_float
 	jsimd_can_fdct_float
@@ -173,9 +230,3 @@ EXPORTS
 	jsimd_rgb_ycc_convert
 	jsimd_ycc_rgb565_convert
 	jsimd_ycc_rgb_convert
-	jtransform_adjust_parameters
-	jtransform_execute_transform
-	jtransform_parse_crop_spec
-	jtransform_perfect_transform
-	jtransform_request_workspace
-	jzero_far

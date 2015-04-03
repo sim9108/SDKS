@@ -204,6 +204,15 @@
     <ClCompile Include="src\rdtarga.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\cdjpeg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdcolmap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rdswitch.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\bmp.h">

@@ -317,6 +317,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\cdjpeg.c" />
     <ClCompile Include="src\jcapimin.c" />
     <ClCompile Include="src\jcapistd.c" />
     <ClCompile Include="src\jccoefct.c" />
@@ -367,9 +368,11 @@
     <ClCompile Include="src\jcarith.c" />
     <ClCompile Include="src\jdarith.c" />
     <ClCompile Include="src\rdbmp.c" />
+    <ClCompile Include="src\rdcolmap.c" />
     <ClCompile Include="src\rdgif.c" />
     <ClCompile Include="src\rdppm.c" />
     <ClCompile Include="src\rdrle.c" />
+    <ClCompile Include="src\rdswitch.c" />
     <ClCompile Include="src\rdtarga.c" />
     <ClCompile Include="src\simd\jsimd_i386.c" />
     <ClCompile Include="src\turbojpeg.c" />
