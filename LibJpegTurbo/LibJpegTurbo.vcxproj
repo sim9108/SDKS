@@ -371,7 +371,16 @@
     <ClCompile Include="src\rdcolmap.c" />
     <ClCompile Include="src\rdgif.c" />
     <ClCompile Include="src\rdppm.c" />
-    <ClCompile Include="src\rdrle.c" />
+    <ClCompile Include="src\rdrle.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\rdswitch.c" />
     <ClCompile Include="src\rdtarga.c" />
     <ClCompile Include="src\simd\jsimd_i386.c" />
@@ -382,7 +391,16 @@
     <ClCompile Include="src\wrbmp.c" />
     <ClCompile Include="src\wrgif.c" />
     <ClCompile Include="src\wrppm.c" />
-    <ClCompile Include="src\wrrle.c" />
+    <ClCompile Include="src\wrrle.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\wrtarga.c" />
   </ItemGroup>
   <ItemGroup>
