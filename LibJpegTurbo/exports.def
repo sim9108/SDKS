@@ -230,3 +230,38 @@ EXPORTS
 	jsimd_rgb_ycc_convert
 	jsimd_ycc_rgb565_convert
 	jsimd_ycc_rgb_convert
+	TJBUFSIZE
+	TJBUFSIZEYUV
+	tjAlloc
+	tjBufSize
+	tjBufSizeYUV
+	tjBufSizeYUV2
+	tjCompress
+	tjCompress2
+	tjCompressFromYUV
+	tjCompressFromYUVPlanes
+	tjDecodeYUV
+	tjDecodeYUVPlanes
+	tjDecompress
+	tjDecompress2
+	tjDecompressHeader
+	tjDecompressHeader2
+	tjDecompressHeader3
+	tjDecompressToYUV
+	tjDecompressToYUV2
+	tjDecompressToYUVPlanes
+	tjDestroy
+	tjEncodeYUV
+	tjEncodeYUV2
+	tjEncodeYUV3
+	tjEncodeYUVPlanes
+	tjFree
+	tjGetErrorStr
+	tjGetScalingFactors
+	tjInitCompress
+	tjInitDecompress
+	tjInitTransform
+	tjPlaneHeight
+	tjPlaneSizeYUV
+	tjPlaneWidth
+	tjTransform
