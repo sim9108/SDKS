@@ -1,2 +1,0 @@
-http://www.linuxfromscratch.org/blfs/view/svn/general/pcre.html
-verision:8.36

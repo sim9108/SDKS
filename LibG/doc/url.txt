@@ -1,2 +1,0 @@
-http://www.linuxfromscratch.org/blfs/view/7.7/general/glib2.html
-version:2.42.1
