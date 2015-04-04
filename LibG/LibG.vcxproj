@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B115F722-3C74-4F4E-B51C-DC4E59CEC66E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibG</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB_API_EXPORTS;GLIB_COMPILATION;DLL_EXPORT;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;_DEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;..\LibFfi\lib;..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;Dnsapi.lib;Shlwapi.lib;Iphlpapi.lib;LibZd.lib;LibFfid.lib;LibPcred.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB__NO_DLL;GLIB_COMPILATION;GLIB_STATIC_COMPILATION;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;_DEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;LibPcred.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB_API_EXPORTS;GLIB_COMPILATION;DLL_EXPORT;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;_DEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;..\LibFfi\lib;..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;Dnsapi.lib;Shlwapi.lib;Iphlpapi.lib;LibZMTd.lib;LibFfiMTd.lib;LibPcreMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB__NO_DLL;GLIB_COMPILATION;GLIB_STATIC_COMPILATION;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;_DEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;LibPcreMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB_API_EXPORTS;GLIB_COMPILATION;DLL_EXPORT;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;NDEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;..\LibFfi\lib;..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;Dnsapi.lib;Shlwapi.lib;Iphlpapi.lib;LibZ.lib;LibFfi.lib;LibPcre.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB__NO_DLL;GLIB_COMPILATION;GLIB_STATIC_COMPILATION;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;NDEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;LibPcre.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB_API_EXPORTS;GLIB_COMPILATION;DLL_EXPORT;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;NDEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;..\LibFfi\lib;..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;Dnsapi.lib;Shlwapi.lib;Iphlpapi.lib;LibZMT.lib;LibFfiMT.lib;LibPcreMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;HAVE_CONFIG_H;GOBJECT_COMPILATION;GIO_COMPILATION;GLIB_COMPILATION;GLIB__NO_DLL;GLIB_COMPILATION;GLIB_STATIC_COMPILATION;inline=__inline;strcasecmp=_stricmp;snprintf=_snprintf;NDEBUG;_WINDOWS;_USRDLL;LIBG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\include\glib;.\include\gobject;.\include\gmodule;.\include\gio;..\LibPcre\include;..\LibFfi\include;..\LibZ\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4018;4090;4244;4996;4716;4068;4116;4715;4022;4101;4146;4305;4133;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\LibPcre\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Winmm.lib;Ws2_32.lib;LibPcreMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\gio\gvdb\gvdb-builder.c" />
+    <ClCompile Include="src\gio\gvdb\gvdb-reader.c" />
+    <ClCompile Include="src\gio\win32\gwin32directorymonitor.c" />
+    <ClCompile Include="src\gio\win32\gwinhttpfile.c" />
+    <ClCompile Include="src\gio\win32\gwinhttpfileinputstream.c" />
+    <ClCompile Include="src\gio\win32\gwinhttpfileoutputstream.c" />
+    <ClCompile Include="src\gio\win32\gwinhttpvfs.c" />
+    <ClCompile Include="src\glib\garray.c" />
+    <ClCompile Include="src\glib\gasyncqueue.c" />
+    <ClCompile Include="src\glib\gatomic.c" />
+    <ClCompile Include="src\glib\gbacktrace.c" />
+    <ClCompile Include="src\glib\gbase64.c" />
+    <ClCompile Include="src\glib\gbitlock.c" />
+    <ClCompile Include="src\glib\gbookmarkfile.c" />
+    <ClCompile Include="src\glib\gbytes.c" />
+    <ClCompile Include="src\glib\gcharset.c" />
+    <ClCompile Include="src\glib\gchecksum.c" />
+    <ClCompile Include="src\glib\gconvert.c" />
+    <ClCompile Include="src\glib\gdataset.c" />
+    <ClCompile Include="src\glib\gdate.c" />
+    <ClCompile Include="src\glib\gdatetime.c" />
+    <ClCompile Include="src\glib\gdir.c" />
+    <ClCompile Include="src\glib\genviron.c" />
+    <ClCompile Include="src\glib\gerror.c" />
+    <ClCompile Include="src\glib\gfileutils.c" />
+    <ClCompile Include="src\glib\ggettext.c" />
+    <ClCompile Include="src\glib\ghash.c" />
+    <ClCompile Include="src\glib\ghmac.c" />
+    <ClCompile Include="src\glib\ghook.c" />
+    <ClCompile Include="src\glib\ghostutils.c" />
+    <ClCompile Include="src\glib\giochannel.c" />
+    <ClCompile Include="src\glib\giowin32.c" />
+    <ClCompile Include="src\glib\gkeyfile.c" />
+    <ClCompile Include="src\glib\glib-init.c" />
+    <ClCompile Include="src\glib\glib-private.c" />
+    <ClCompile Include="src\glib\glist.c" />
+    <ClCompile Include="src\glib\gmain.c" />
+    <ClCompile Include="src\glib\gmappedfile.c" />
+    <ClCompile Include="src\glib\gmarkup.c" />
+    <ClCompile Include="src\glib\gmem.c" />
+    <ClCompile Include="src\glib\gmessages.c" />
+    <ClCompile Include="src\glib\gnode.c" />
+    <ClCompile Include="src\glib\goption.c" />
+    <ClCompile Include="src\glib\gpattern.c" />
+    <ClCompile Include="src\glib\gpoll.c" />
+    <ClCompile Include="src\glib\gprimes.c" />
+    <ClCompile Include="src\glib\gprintf.c" />
+    <ClCompile Include="src\glib\gqsort.c" />
+    <ClCompile Include="src\glib\gquark.c" />
+    <ClCompile Include="src\glib\gqueue.c" />
+    <ClCompile Include="src\glib\grand.c" />
+    <ClCompile Include="src\glib\gregex.c" />
+    <ClCompile Include="src\glib\gscanner.c" />
+    <ClCompile Include="src\glib\gsequence.c" />
+    <ClCompile Include="src\glib\gshell.c" />
+    <ClCompile Include="src\glib\gslice.c" />
+    <ClCompile Include="src\glib\gslist.c" />
+    <ClCompile Include="src\glib\gspawn-win32.c" />
+    <ClCompile Include="src\glib\gstdio.c" />
+    <ClCompile Include="src\glib\gstrfuncs.c" />
+    <ClCompile Include="src\glib\gstring.c" />
+    <ClCompile Include="src\glib\gstringchunk.c" />
+    <ClCompile Include="src\glib\gtestutils.c" />
+    <ClCompile Include="src\glib\gthread-win32.c" />
+    <ClCompile Include="src\glib\gthread.c" />
+    <ClCompile Include="src\glib\gthreadpool.c" />
+    <ClCompile Include="src\glib\gtimer.c" />
+    <ClCompile Include="src\glib\gtimezone.c" />
+    <ClCompile Include="src\glib\gtranslit.c" />
+    <ClCompile Include="src\glib\gtrashstack.c" />
+    <ClCompile Include="src\glib\gtree.c" />
+    <ClCompile Include="src\glib\gunibreak.c" />
+    <ClCompile Include="src\glib\gunicollate.c" />
+    <ClCompile Include="src\glib\gunidecomp.c" />
+    <ClCompile Include="src\glib\guniprop.c" />
+    <ClCompile Include="src\glib\gurifuncs.c" />
+    <ClCompile Include="src\glib\gutf8.c" />
+    <ClCompile Include="src\glib\gutils.c" />
+    <ClCompile Include="src\glib\gvariant-core.c" />
+    <ClCompile Include="src\glib\gvariant-parser.c" />
+    <ClCompile Include="src\glib\gvariant-serialiser.c" />
+    <ClCompile Include="src\glib\gvariant.c" />
+    <ClCompile Include="src\glib\gvarianttype.c" />
+    <ClCompile Include="src\glib\gvarianttypeinfo.c" />
+    <ClCompile Include="src\glib\gversion.c" />
+    <ClCompile Include="src\glib\gwakeup.c" />
+    <ClCompile Include="src\glib\gwin32.c" />
+    <ClCompile Include="src\glib\libcharset\localcharset.c" />
+    <ClCompile Include="src\gmodule\gmodule.c" />
+    <ClCompile Include="src\gobject\gatomicarray.c" />
+    <ClCompile Include="src\gobject\gbinding.c" />
+    <ClCompile Include="src\gobject\gboxed.c" />
+    <ClCompile Include="src\gobject\gclosure.c" />
+    <ClCompile Include="src\gobject\genums.c" />
+    <ClCompile Include="src\gobject\gmarshal.c" />
+    <ClCompile Include="src\gobject\gobject.c" />
+    <ClCompile Include="src\gobject\gobjectnotifyqueue.c" />
+    <ClCompile Include="src\gobject\gparam.c" />
+    <ClCompile Include="src\gobject\gparamspecs.c" />
+    <ClCompile Include="src\gobject\gsignal.c" />
+    <ClCompile Include="src\gobject\gsourceclosure.c" />
+    <ClCompile Include="src\gobject\gtype.c" />
+    <ClCompile Include="src\gobject\gtypemodule.c" />
+    <ClCompile Include="src\gobject\gtypeplugin.c" />
+    <ClCompile Include="src\gobject\gvalue.c" />
+    <ClCompile Include="src\gobject\gvaluearray.c" />
+    <ClCompile Include="src\gobject\gvaluetransform.c" />
+    <ClCompile Include="src\gobject\gvaluetypes.c" />
+    <ClCompile Include="src\gio\gaction.c" />
+    <ClCompile Include="src\gio\gactiongroup.c" />
+    <ClCompile Include="src\gio\gactiongroupexporter.c" />
+    <ClCompile Include="src\gio\gactionmap.c" />
+    <ClCompile Include="src\gio\gappinfo.c" />
+    <ClCompile Include="src\gio\gapplication.c" />
+    <ClCompile Include="src\gio\gapplicationcommandline.c" />
+    <ClCompile Include="src\gio\gapplicationimpl-dbus.c" />
+    <ClCompile Include="src\gio\gasynchelper.c" />
+    <ClCompile Include="src\gio\gasyncinitable.c" />
+    <ClCompile Include="src\gio\gasyncresult.c" />
+    <ClCompile Include="src\gio\gbufferedinputstream.c" />
+    <ClCompile Include="src\gio\gbufferedoutputstream.c" />
+    <ClCompile Include="src\gio\gbytesicon.c" />
+    <ClCompile Include="src\gio\gcancellable.c" />
+    <ClCompile Include="src\gio\gcharsetconverter.c" />
+    <ClCompile Include="src\gio\gcontenttype-win32.c" />
+    <ClCompile Include="src\gio\gconverter.c" />
+    <ClCompile Include="src\gio\gconverterinputstream.c" />
+    <ClCompile Include="src\gio\gconverteroutputstream.c" />
+    <ClCompile Include="src\gio\gcredentials.c" />
+    <ClCompile Include="src\gio\gdatainputstream.c" />
+    <ClCompile Include="src\gio\gdataoutputstream.c" />
+    <ClCompile Include="src\gio\gdbus-daemon-generated.c" />
+    <ClCompile Include="src\gio\gdbusactiongroup.c" />
+    <ClCompile Include="src\gio\gdbusaddress.c" />
+    <ClCompile Include="src\gio\gdbusauth.c" />
+    <ClCompile Include="src\gio\gdbusauthmechanism.c" />
+    <ClCompile Include="src\gio\gdbusauthmechanismanon.c" />
+    <ClCompile Include="src\gio\gdbusauthmechanismexternal.c" />
+    <ClCompile Include="src\gio\gdbusauthmechanismsha1.c" />
+    <ClCompile Include="src\gio\gdbusauthobserver.c" />
+    <ClCompile Include="src\gio\gdbusconnection.c" />
+    <ClCompile Include="src\gio\gdbusdaemon.c" />
+    <ClCompile Include="src\gio\gdbuserror.c" />
+    <ClCompile Include="src\gio\gdbusinterface.c" />
+    <ClCompile Include="src\gio\gdbusinterfaceskeleton.c" />
+    <ClCompile Include="src\gio\gdbusintrospection.c" />
+    <ClCompile Include="src\gio\gdbusmenumodel.c" />
+    <ClCompile Include="src\gio\gdbusmessage.c" />
+    <ClCompile Include="src\gio\gdbusmethodinvocation.c" />
+    <ClCompile Include="src\gio\gdbusnameowning.c" />
+    <ClCompile Include="src\gio\gdbusnamewatching.c" />
+    <ClCompile Include="src\gio\gdbusobject.c" />
+    <ClCompile Include="src\gio\gdbusobjectmanager.c" />
+    <ClCompile Include="src\gio\gdbusobjectmanagerclient.c" />
+    <ClCompile Include="src\gio\gdbusobjectmanagerserver.c" />
+    <ClCompile Include="src\gio\gdbusobjectproxy.c" />
+    <ClCompile Include="src\gio\gdbusobjectskeleton.c" />
+    <ClCompile Include="src\gio\gdbusprivate.c" />
+    <ClCompile Include="src\gio\gdbusproxy.c" />
+    <ClCompile Include="src\gio\gdbusserver.c" />
+    <ClCompile Include="src\gio\gdbusutils.c" />
+    <ClCompile Include="src\gio\gdelayedsettingsbackend.c" />
+    <ClCompile Include="src\gio\gdrive.c" />
+    <ClCompile Include="src\gio\gdummyfile.c" />
+    <ClCompile Include="src\gio\gdummyproxyresolver.c" />
+    <ClCompile Include="src\gio\gdummytlsbackend.c" />
+    <ClCompile Include="src\gio\gemblem.c" />
+    <ClCompile Include="src\gio\gemblemedicon.c" />
+    <ClCompile Include="src\gio\gfdonotificationbackend.c" />
+    <ClCompile Include="src\gio\gfile.c" />
+    <ClCompile Include="src\gio\gfileattribute.c" />
+    <ClCompile Include="src\gio\gfiledescriptorbased.c" />
+    <ClCompile Include="src\gio\gfileenumerator.c" />
+    <ClCompile Include="src\gio\gfileicon.c" />
+    <ClCompile Include="src\gio\gfileinfo.c" />
+    <ClCompile Include="src\gio\gfileinputstream.c" />
+    <ClCompile Include="src\gio\gfileiostream.c" />
+    <ClCompile Include="src\gio\gfilemonitor.c" />
+    <ClCompile Include="src\gio\gfilenamecompleter.c" />
+    <ClCompile Include="src\gio\gfileoutputstream.c" />
+    <ClCompile Include="src\gio\gfilterinputstream.c" />
+    <ClCompile Include="src\gio\gfilteroutputstream.c" />
+    <ClCompile Include="src\gio\ggtknotificationbackend.c" />
+    <ClCompile Include="src\gio\gicon.c" />
+    <ClCompile Include="src\gio\ginetaddress.c" />
+    <ClCompile Include="src\gio\ginetaddressmask.c" />
+    <ClCompile Include="src\gio\ginetsocketaddress.c" />
+    <ClCompile Include="src\gio\ginitable.c" />
+    <ClCompile Include="src\gio\ginputstream.c" />
+    <ClCompile Include="src\gio\gio-querymodules.c" />
+    <ClCompile Include="src\gio\gioenumtypes.c" />
+    <ClCompile Include="src\gio\gioerror.c" />
+    <ClCompile Include="src\gio\giomodule.c" />
+    <ClCompile Include="src\gio\gioscheduler.c" />
+    <ClCompile Include="src\gio\giostream.c" />
+    <ClCompile Include="src\gio\gkeyfilesettingsbackend.c" />
+    <ClCompile Include="src\gio\gloadableicon.c" />
+    <ClCompile Include="src\gio\glocaldirectorymonitor.c" />
+    <ClCompile Include="src\gio\glocalfile.c" />
+    <ClCompile Include="src\gio\glocalfileenumerator.c" />
+    <ClCompile Include="src\gio\glocalfileinfo.c" />
+    <ClCompile Include="src\gio\glocalfileinputstream.c" />
+    <ClCompile Include="src\gio\glocalfileiostream.c" />
+    <ClCompile Include="src\gio\glocalfilemonitor.c" />
+    <ClCompile Include="src\gio\glocalfileoutputstream.c" />
+    <ClCompile Include="src\gio\glocalvfs.c" />
+    <ClCompile Include="src\gio\gmemoryinputstream.c" />
+    <ClCompile Include="src\gio\gmemoryoutputstream.c" />
+    <ClCompile Include="src\gio\gmemorysettingsbackend.c" />
+    <ClCompile Include="src\gio\gmenu.c" />
+    <ClCompile Include="src\gio\gmenuexporter.c" />
+    <ClCompile Include="src\gio\gmenumodel.c" />
+    <ClCompile Include="src\gio\gmount.c" />
+    <ClCompile Include="src\gio\gmountoperation.c" />
+    <ClCompile Include="src\gio\gnativevolumemonitor.c" />
+    <ClCompile Include="src\gio\gnetworkaddress.c" />
+    <ClCompile Include="src\gio\gnetworking.c" />
+    <ClCompile Include="src\gio\gnetworkmonitor.c" />
+    <ClCompile Include="src\gio\gnetworkmonitorbase.c" />
+    <ClCompile Include="src\gio\gnetworkservice.c" />
+    <ClCompile Include="src\gio\gnotification.c" />
+    <ClCompile Include="src\gio\gnotificationbackend.c" />
+    <ClCompile Include="src\gio\gnullsettingsbackend.c" />
+    <ClCompile Include="src\gio\goutputstream.c" />
+    <ClCompile Include="src\gio\gpermission.c" />
+    <ClCompile Include="src\gio\gpollableinputstream.c" />
+    <ClCompile Include="src\gio\gpollableoutputstream.c" />
+    <ClCompile Include="src\gio\gpollableutils.c" />
+    <ClCompile Include="src\gio\gpollfilemonitor.c" />
+    <ClCompile Include="src\gio\gpropertyaction.c" />
+    <ClCompile Include="src\gio\gproxy.c" />
+    <ClCompile Include="src\gio\gproxyaddress.c" />
+    <ClCompile Include="src\gio\gproxyaddressenumerator.c" />
+    <ClCompile Include="src\gio\gproxyresolver.c" />
+    <ClCompile Include="src\gio\gregistrysettingsbackend.c" />
+    <ClCompile Include="src\gio\gremoteactiongroup.c" />
+    <ClCompile Include="src\gio\gresolver.c" />
+    <ClCompile Include="src\gio\gresource.c" />
+    <ClCompile Include="src\gio\gresourcefile.c" />
+    <ClCompile Include="src\gio\gseekable.c" />
+    <ClCompile Include="src\gio\gsettings-mapping.c" />
+    <ClCompile Include="src\gio\gsettings.c" />
+    <ClCompile Include="src\gio\gsettingsbackend.c" />
+    <ClCompile Include="src\gio\gsettingsschema.c" />
+    <ClCompile Include="src\gio\gsimpleaction.c" />
+    <ClCompile Include="src\gio\gsimpleactiongroup.c" />
+    <ClCompile Include="src\gio\gsimpleasyncresult.c" />
+    <ClCompile Include="src\gio\gsimplepermission.c" />
+    <ClCompile Include="src\gio\gsimpleproxyresolver.c" />
+    <ClCompile Include="src\gio\gsocket.c" />
+    <ClCompile Include="src\gio\gsocketaddress.c" />
+    <ClCompile Include="src\gio\gsocketaddressenumerator.c" />
+    <ClCompile Include="src\gio\gsocketclient.c" />
+    <ClCompile Include="src\gio\gsocketconnectable.c" />
+    <ClCompile Include="src\gio\gsocketconnection.c" />
+    <ClCompile Include="src\gio\gsocketcontrolmessage.c" />
+    <ClCompile Include="src\gio\gsocketinputstream.c" />
+    <ClCompile Include="src\gio\gsocketlistener.c" />
+    <ClCompile Include="src\gio\gsocketoutputstream.c" />
+    <ClCompile Include="src\gio\gsocketservice.c" />
+    <ClCompile Include="src\gio\gsocks4aproxy.c" />
+    <ClCompile Include="src\gio\gsocks4proxy.c" />
+    <ClCompile Include="src\gio\gsocks5proxy.c" />
+    <ClCompile Include="src\gio\gsrvtarget.c" />
+    <ClCompile Include="src\gio\gsubprocess.c" />
+    <ClCompile Include="src\gio\gsubprocesslauncher.c" />
+    <ClCompile Include="src\gio\gtask.c" />
+    <ClCompile Include="src\gio\gtcpconnection.c" />
+    <ClCompile Include="src\gio\gtcpwrapperconnection.c" />
+    <ClCompile Include="src\gio\gtestdbus.c" />
+    <ClCompile Include="src\gio\gthemedicon.c" />
+    <ClCompile Include="src\gio\gthreadedresolver.c" />
+    <ClCompile Include="src\gio\gthreadedsocketservice.c" />
+    <ClCompile Include="src\gio\gtlsbackend.c" />
+    <ClCompile Include="src\gio\gtlscertificate.c" />
+    <ClCompile Include="src\gio\gtlsclientconnection.c" />
+    <ClCompile Include="src\gio\gtlsconnection.c" />
+    <ClCompile Include="src\gio\gtlsdatabase.c" />
+    <ClCompile Include="src\gio\gtlsfiledatabase.c" />
+    <ClCompile Include="src\gio\gtlsinteraction.c" />
+    <ClCompile Include="src\gio\gtlspassword.c" />
+    <ClCompile Include="src\gio\gtlsserverconnection.c" />
+    <ClCompile Include="src\gio\gunionvolumemonitor.c" />
+    <ClCompile Include="src\gio\gvfs.c" />
+    <ClCompile Include="src\gio\gvolume.c" />
+    <ClCompile Include="src\gio\gvolumemonitor.c" />
+    <ClCompile Include="src\gio\gwin32appinfo.c" />
+    <ClCompile Include="src\gio\gwin32inputstream.c" />
+    <ClCompile Include="src\gio\gwin32mount.c" />
+    <ClCompile Include="src\gio\gwin32outputstream.c" />
+    <ClCompile Include="src\gio\gwin32volumemonitor.c" />
+    <ClCompile Include="src\gio\gzlibcompressor.c" />
+    <ClCompile Include="src\gio\gzlibdecompressor.c" />
+    <ClCompile Include="src\gio\strinfo.c" />
+    <ClCompile Include="src\gio\thumbnail-verify.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\glibconfig.h" />
+    <ClInclude Include="include\glib\deprecated\gallocator.h" />
+    <ClInclude Include="include\glib\deprecated\gcache.h" />
+    <ClInclude Include="include\glib\deprecated\gcompletion.h" />
+    <ClInclude Include="include\glib\deprecated\gmain.h" />
+    <ClInclude Include="include\glib\deprecated\grel.h" />
+    <ClInclude Include="include\glib\deprecated\gthread.h" />
+    <ClInclude Include="include\glib\galloca.h" />
+    <ClInclude Include="include\glib\garray.h" />
+    <ClInclude Include="include\glib\gasyncqueue.h" />
+    <ClInclude Include="include\glib\gasyncqueueprivate.h" />
+    <ClInclude Include="include\glib\gatomic.h" />
+    <ClInclude Include="include\glib\gbacktrace.h" />
+    <ClInclude Include="include\glib\gbase64.h" />
+    <ClInclude Include="include\glib\gbitlock.h" />
+    <ClInclude Include="include\glib\gbookmarkfile.h" />
+    <ClInclude Include="include\glib\gbsearcharray.h" />
+    <ClInclude Include="include\glib\gbytes.h" />
+    <ClInclude Include="include\glib\gcharset.h" />
+    <ClInclude Include="include\glib\gcharsetprivate.h" />
+    <ClInclude Include="include\glib\gchecksum.h" />
+    <ClInclude Include="include\glib\gconstructor.h" />
+    <ClInclude Include="include\glib\gconvert.h" />
+    <ClInclude Include="include\glib\gdataset.h" />
+    <ClInclude Include="include\glib\gdatasetprivate.h" />
+    <ClInclude Include="include\glib\gdate.h" />
+    <ClInclude Include="include\glib\gdatetime.h" />
+    <ClInclude Include="include\glib\gdir.h" />
+    <ClInclude Include="include\glib\genviron.h" />
+    <ClInclude Include="include\glib\gerror.h" />
+    <ClInclude Include="include\glib\gfileutils.h" />
+    <ClInclude Include="include\glib\ggettext.h" />
+    <ClInclude Include="include\glib\ghash.h" />
+    <ClInclude Include="include\glib\ghmac.h" />
+    <ClInclude Include="include\glib\ghook.h" />
+    <ClInclude Include="include\glib\ghostutils.h" />
+    <ClInclude Include="include\glib\gi18n-lib.h" />
+    <ClInclude Include="include\glib\gi18n.h" />
+    <ClInclude Include="include\glib\giochannel.h" />
+    <ClInclude Include="include\glib\gkeyfile.h" />
+    <ClInclude Include="include\glib\glib-init.h" />
+    <ClInclude Include="include\glib\glib-object.h" />
+    <ClInclude Include="include\glib\glib-private.h" />
+    <ClInclude Include="include\glib\glib-unix.h" />
+    <ClInclude Include="include\glib\glib.h" />
+    <ClInclude Include="include\glib\glibintl.h" />
+    <ClInclude Include="include\glib\glib_trace.h" />
+    <ClInclude Include="include\glib\glist.h" />
+    <ClInclude Include="include\glib\gmacros.h" />
+    <ClInclude Include="include\glib\gmain-internal.h" />
+    <ClInclude Include="include\glib\gmain.h" />
+    <ClInclude Include="include\glib\gmappedfile.h" />
+    <ClInclude Include="include\glib\gmarkup.h" />
+    <ClInclude Include="include\glib\gmem.h" />
+    <ClInclude Include="include\glib\gmessages.h" />
+    <ClInclude Include="include\glib\gmirroringtable.h" />
+    <ClInclude Include="include\glib\gnode.h" />
+    <ClInclude Include="include\glib\goption.h" />
+    <ClInclude Include="include\glib\gpattern.h" />
+    <ClInclude Include="include\glib\gpoll.h" />
+    <ClInclude Include="include\glib\gprimes.h" />
+    <ClInclude Include="include\glib\gprintf.h" />
+    <ClInclude Include="include\glib\gprintfint.h" />
+    <ClInclude Include="include\glib\gqsort.h" />
+    <ClInclude Include="include\glib\gquark.h" />
+    <ClInclude Include="include\glib\gqueue.h" />
+    <ClInclude Include="include\glib\grand.h" />
+    <ClInclude Include="include\glib\gregex.h" />
+    <ClInclude Include="include\glib\gscanner.h" />
+    <ClInclude Include="include\glib\gscripttable.h" />
+    <ClInclude Include="include\glib\gsequence.h" />
+    <ClInclude Include="include\glib\gshell.h" />
+    <ClInclude Include="include\glib\gslice.h" />
+    <ClInclude Include="include\glib\gslist.h" />
+    <ClInclude Include="include\glib\gspawn.h" />
+    <ClInclude Include="include\glib\gstdio.h" />
+    <ClInclude Include="include\glib\gstrfuncs.h" />
+    <ClInclude Include="include\glib\gstring.h" />
+    <ClInclude Include="include\glib\gstringchunk.h" />
+    <ClInclude Include="include\glib\gtestutils.h" />
+    <ClInclude Include="include\glib\gthread.h" />
+    <ClInclude Include="include\glib\gthreadpool.h" />
+    <ClInclude Include="include\glib\gthreadprivate.h" />
+    <ClInclude Include="include\glib\gtimer.h" />
+    <ClInclude Include="include\glib\gtimezone.h" />
+    <ClInclude Include="include\glib\gtranslit-data.h" />
+    <ClInclude Include="include\glib\gtrashstack.h" />
+    <ClInclude Include="include\glib\gtree.h" />
+    <ClInclude Include="include\glib\gtypes.h" />
+    <ClInclude Include="include\glib\gunibreak.h" />
+    <ClInclude Include="include\glib\gunichartables.h" />
+    <ClInclude Include="include\glib\gunicode.h" />
+    <ClInclude Include="include\glib\gunicodeprivate.h" />
+    <ClInclude Include="include\glib\gunicomp.h" />
+    <ClInclude Include="include\glib\gunidecomp.h" />
+    <ClInclude Include="include\glib\gurifuncs.h" />
+    <ClInclude Include="include\glib\gutils.h" />
+    <ClInclude Include="include\glib\gvariant-core.h" />
+    <ClInclude Include="include\glib\gvariant-internal.h" />
+    <ClInclude Include="include\glib\gvariant-serialiser.h" />
+    <ClInclude Include="include\glib\gvariant.h" />
+    <ClInclude Include="include\glib\gvarianttype.h" />
+    <ClInclude Include="include\glib\gvarianttypeinfo.h" />
+    <ClInclude Include="include\glib\gversion.h" />
+    <ClInclude Include="include\glib\gversionmacros.h" />
+    <ClInclude Include="include\glib\gwakeup.h" />
+    <ClInclude Include="include\glib\gwin32.h" />
+    <ClInclude Include="include\glib\valgrind.h" />
+    <ClInclude Include="include\libcharset\libcharset.h" />
+    <ClInclude Include="include\libcharset\localcharset.h" />
+    <ClInclude Include="include\msvc_recommended_pragmas.h" />
+    <ClInclude Include="include\win32\dirent.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
