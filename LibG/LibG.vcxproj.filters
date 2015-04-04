@@ -578,9 +578,6 @@
     <ClInclude Include="include\glib\gutils.h">
       <Filter>include\glib</Filter>
     </ClInclude>
-    <ClInclude Include="include\glib\glibconfig.h">
-      <Filter>include\glib</Filter>
-    </ClInclude>
     <ClInclude Include="include\glib\deprecated\gallocator.h">
       <Filter>include\glib\deprecated</Filter>
     </ClInclude>
@@ -607,6 +604,9 @@
     </ClInclude>
     <ClInclude Include="include\win32\dirent.h">
       <Filter>include\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="include\glibconfig.h">
+      <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -75,6 +75,26 @@ extern "C" {
 #include <stddef.h>
 #include <limits.h>
 
+
+#if defined(FFI__NO_DLL)
+#define FFI_EXTERN
+
+#elif defined(_MSC_VER)
+#ifdef FFI_API_EXPORTS
+#define	FFI_EXTERN  __declspec(dllexport)
+#else
+#define FFI_EXTERN __declspec(dllimport)
+#endif
+
+#elif defined(FFI__USE_VISIBILITY_ATTR)
+#define FFI_EXTERN __attribute__ ((visibility ("default")))
+
+#else
+#define FFI_EXTERN
+
+#endif
+
+
 /* LONG_LONG_MAX is not always defined (not if STRICT_ANSI, for example).
    But we can find it either under the correct ANSI name, or under GNU
    C's internal name.  */
@@ -180,23 +200,7 @@ typedef struct _ffi_type
 //#define FFI_EXTERN extern
 //#endif
 
-#if defined(FFI__NO_DLL)
-#define FFI_EXTERN
 
-#elif defined(_MSC_VER)
-#ifdef FFI_API_EXPORTS
-#define	FFI_EXTERN __declspec(dllexport)
-#else
-#define FFI_EXTERN __declspec(dllimport)
-#endif
-
-#elif defined(FFI__USE_VISIBILITY_ATTR)
-#define FFI_EXTERN __attribute__ ((visibility ("default")))
-
-#else
-#define FFI_EXTERN
-
-#endif
 
 /* These are defined in types.c */
 FFI_EXTERN ffi_type ffi_type_void;
@@ -251,11 +255,11 @@ typedef struct {
 
 #if 0
 /* Used to adjust size/alignment of ffi types.  */
-void ffi_prep_types (ffi_abi abi);
+FFI_EXTERN  void ffi_prep_types (ffi_abi abi);
 #endif
 
 /* Used internally, but overridden by some architectures */
-ffi_status ffi_prep_cif_core(ffi_cif *cif,
+FFI_EXTERN  ffi_status ffi_prep_cif_core(ffi_cif *cif,
 			     ffi_abi abi,
 			     unsigned int isvariadic,
 			     unsigned int nfixedargs,
@@ -300,27 +304,27 @@ typedef ffi_raw ffi_java_raw;
 #endif
 
 
-void ffi_raw_call (ffi_cif *cif,
+FFI_EXTERN  void ffi_raw_call(ffi_cif *cif,
 		   void (*fn)(void),
 		   void *rvalue,
 		   ffi_raw *avalue);
 
-void ffi_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_raw *raw);
-void ffi_raw_to_ptrarray (ffi_cif *cif, ffi_raw *raw, void **args);
-size_t ffi_raw_size (ffi_cif *cif);
+FFI_EXTERN  void ffi_ptrarray_to_raw(ffi_cif *cif, void **args, ffi_raw *raw);
+FFI_EXTERN  void ffi_raw_to_ptrarray(ffi_cif *cif, ffi_raw *raw, void **args);
+FFI_EXTERN  size_t ffi_raw_size(ffi_cif *cif);
 
 /* This is analogous to the raw API, except it uses Java parameter	*/
 /* packing, even on 64-bit machines.  I.e. on 64-bit machines		*/
 /* longs and doubles are followed by an empty 64-bit word.		*/
 
-void ffi_java_raw_call (ffi_cif *cif,
+FFI_EXTERN  void ffi_java_raw_call(ffi_cif *cif,
 			void (*fn)(void),
 			void *rvalue,
 			ffi_java_raw *avalue);
 
-void ffi_java_ptrarray_to_raw (ffi_cif *cif, void **args, ffi_java_raw *raw);
-void ffi_java_raw_to_ptrarray (ffi_cif *cif, ffi_java_raw *raw, void **args);
-size_t ffi_java_raw_size (ffi_cif *cif);
+ FFI_EXTERN  void ffi_java_ptrarray_to_raw(ffi_cif *cif, void **args, ffi_java_raw *raw);
+ FFI_EXTERN  void ffi_java_raw_to_ptrarray(ffi_cif *cif, ffi_java_raw *raw, void **args);
+ FFI_EXTERN  size_t ffi_java_raw_size(ffi_cif *cif);
 
 /* ---- Definitions for closures ----------------------------------------- */
 
@@ -348,16 +352,16 @@ typedef struct {
 # endif
 #endif
 
-void *ffi_closure_alloc (size_t size, void **code);
-void ffi_closure_free (void *);
+FFI_EXTERN  void *ffi_closure_alloc(size_t size, void **code);
+FFI_EXTERN  void ffi_closure_free(void *);
 
-ffi_status
+FFI_EXTERN  ffi_status
 ffi_prep_closure (ffi_closure*,
 		  ffi_cif *,
 		  void (*fun)(ffi_cif*,void*,void**,void*),
 		  void *user_data);
 
-ffi_status
+FFI_EXTERN  ffi_status
 ffi_prep_closure_loc (ffi_closure*,
 		      ffi_cif *,
 		      void (*fun)(ffi_cif*,void*,void**,void*),
@@ -418,26 +422,26 @@ typedef struct {
 
 } ffi_java_raw_closure;
 
-ffi_status
+FFI_EXTERN  ffi_status
 ffi_prep_raw_closure (ffi_raw_closure*,
 		      ffi_cif *cif,
 		      void (*fun)(ffi_cif*,void*,ffi_raw*,void*),
 		      void *user_data);
 
-ffi_status
+ FFI_EXTERN  ffi_status
 ffi_prep_raw_closure_loc (ffi_raw_closure*,
 			  ffi_cif *cif,
 			  void (*fun)(ffi_cif*,void*,ffi_raw*,void*),
 			  void *user_data,
 			  void *codeloc);
 
-ffi_status
+ FFI_EXTERN  ffi_status
 ffi_prep_java_raw_closure (ffi_java_raw_closure*,
 		           ffi_cif *cif,
 		           void (*fun)(ffi_cif*,void*,ffi_java_raw*,void*),
 		           void *user_data);
 
-ffi_status
+ FFI_EXTERN   ffi_status
 ffi_prep_java_raw_closure_loc (ffi_java_raw_closure*,
 			       ffi_cif *cif,
 			       void (*fun)(ffi_cif*,void*,ffi_java_raw*,void*),
@@ -448,20 +452,20 @@ ffi_prep_java_raw_closure_loc (ffi_java_raw_closure*,
 
 /* ---- Public interface definition -------------------------------------- */
 
-ffi_status ffi_prep_cif(ffi_cif *cif,
+ FFI_EXTERN  ffi_status ffi_prep_cif(ffi_cif *cif,
 			ffi_abi abi,
 			unsigned int nargs,
 			ffi_type *rtype,
 			ffi_type **atypes);
 
-ffi_status ffi_prep_cif_var(ffi_cif *cif,
+FFI_EXTERN  ffi_status ffi_prep_cif_var(ffi_cif *cif,
 			    ffi_abi abi,
 			    unsigned int nfixedargs,
 			    unsigned int ntotalargs,
 			    ffi_type *rtype,
 			    ffi_type **atypes);
 
-void ffi_call(ffi_cif *cif,
+FFI_EXTERN  void ffi_call(ffi_cif *cif,
 	      void (*fn)(void),
 	      void *rvalue,
 	      void **avalue);

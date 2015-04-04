@@ -731,23 +731,7 @@
 /* defines how to decorate public symbols while building */
 //#define _GLIB_EXTERN __attribute__((visibility("default"))) extern
 
-#if defined(GLIB__NO_DLL)
-#define _GLIB_EXTERN
 
-#elif defined(_MSC_VER)
-#ifdef GLIB_API_EXPORTS
-#define	_GLIB_EXTERN __declspec(dllexport)
-#else
-#define _GLIB_EXTERN __declspec(dllimport)
-#endif
-
-#elif defined(GLIB__USE_VISIBILITY_ATTR)
-#define _GLIB_EXTERN __attribute__ ((visibility ("default")))
-
-#else
-#define _GLIB_EXTERN
-
-#endif
 
 #define G_OS_WIN32 1
 
@@ -792,4 +776,3 @@
 /* #undef size_t */
 
 #define LIBDIR "/usr/local/share/locale"
-#include <glib/glib.h>

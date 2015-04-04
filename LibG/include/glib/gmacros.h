@@ -343,6 +343,24 @@
 #define G_UNAVAILABLE(maj,min) G_DEPRECATED
 #endif
 
+#if defined(GLIB__NO_DLL)
+#define _GLIB_EXTERN
+
+#elif defined(_MSC_VER)
+#ifdef GLIB_API_EXPORTS
+#define	_GLIB_EXTERN __declspec(dllexport)
+#else
+#define _GLIB_EXTERN __declspec(dllimport)
+#endif
+
+#elif defined(GLIB__USE_VISIBILITY_ATTR)
+#define _GLIB_EXTERN __attribute__ ((visibility ("default")))
+
+#else
+#define _GLIB_EXTERN
+
+#endif
+
 #ifndef _GLIB_EXTERN
 #define _GLIB_EXTERN extern
 #endif

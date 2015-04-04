@@ -409,6 +409,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\glibconfig.h" />
     <ClInclude Include="include\glib\deprecated\gallocator.h" />
     <ClInclude Include="include\glib\deprecated\gcache.h" />
     <ClInclude Include="include\glib\deprecated\gcompletion.h" />
@@ -453,7 +454,6 @@
     <ClInclude Include="include\glib\glib-private.h" />
     <ClInclude Include="include\glib\glib-unix.h" />
     <ClInclude Include="include\glib\glib.h" />
-    <ClInclude Include="include\glib\glibconfig.h" />
     <ClInclude Include="include\glib\glibintl.h" />
     <ClInclude Include="include\glib\glib_trace.h" />
     <ClInclude Include="include\glib\glist.h" />
