@@ -305,6 +305,9 @@
     <ClCompile Include="src\resample.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\scal.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="exports.def" />
