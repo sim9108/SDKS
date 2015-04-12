@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibXtra", "LibXtra.vcxproj", "{2749564B-81EE-4B65-8796-0CF7977CD4A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugS|Win32 = DebugS|Win32
+		DebugSMT|Win32 = DebugSMT|Win32
+		ReleaseS|Win32 = ReleaseS|Win32
+		ReleaseSMT|Win32 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.DebugS|Win32.Build.0 = DebugS|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{2749564B-81EE-4B65-8796-0CF7977CD4A9}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
