@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3301fb32-5566-4d15-b98c-e4ffa41727ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{144acea4-a2c0-49b8-a4de-af376e66d412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma">
+      <UniqueIdentifier>{fa2a50c5-7b6a-48d1-82c9-1db2526cf618}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\lzma">
+      <UniqueIdentifier>{d2089abf-7fbb-4da0-955f-ec2da4213b2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\common">
+      <UniqueIdentifier>{2916feb9-75c3-4482-926c-4e9c5b76d1c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\check">
+      <UniqueIdentifier>{7e9f24bf-ceaf-4136-8984-e96abda32098}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\delta">
+      <UniqueIdentifier>{d63cb726-a704-490c-a53b-392843c86393}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\lz">
+      <UniqueIdentifier>{af0a6159-2ee8-43fd-872d-7424fe2aaa0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\rangecoder">
+      <UniqueIdentifier>{e41abca0-ff8b-4ee3-be62-5f85a25fc0f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\liblzma\simple">
+      <UniqueIdentifier>{53d31171-3dc3-49b5-975a-cbf066e8cc72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{8ab692aa-0f28-40fc-b42a-987434a53562}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\lzma">
+      <UniqueIdentifier>{000caf80-59c3-4512-b0a8-a259c07e4426}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\tuklib_cpucores.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_exit.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_mbstr_fw.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_mbstr_width.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_open_stdxxx.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_physmem.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\tuklib_progname.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma_decoder.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma_encoder.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma_encoder_optimum_fast.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma_encoder_optimum_normal.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma_encoder_presets.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma2_decoder.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\lzma2_encoder.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lzma\fastpos_table.c">
+      <Filter>src\liblzma\lzma</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\alone_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\alone_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\auto_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_buffer_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_buffer_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_header_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_header_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\block_util.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\common.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\easy_buffer_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\easy_decoder_memusage.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\easy_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\easy_encoder_memusage.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\easy_preset.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_buffer_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_buffer_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_common.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_flags_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\filter_flags_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\hardware_physmem.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\index.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\index_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\index_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\index_hash.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_buffer_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_buffer_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_flags_common.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_flags_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\stream_flags_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\vli_decoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\vli_encoder.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\common\vli_size.c">
+      <Filter>src\liblzma\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\crc32_fast.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\crc32_table.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\crc64_fast.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\crc64_table.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\check.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\delta\delta_decoder.c">
+      <Filter>src\liblzma\delta</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\delta\delta_encoder.c">
+      <Filter>src\liblzma\delta</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\delta\delta_common.c">
+      <Filter>src\liblzma\delta</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lz\lz_decoder.c">
+      <Filter>src\liblzma\lz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lz\lz_encoder.c">
+      <Filter>src\liblzma\lz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\lz\lz_encoder_mf.c">
+      <Filter>src\liblzma\lz</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\rangecoder\price_table.c">
+      <Filter>src\liblzma\rangecoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\simple_coder.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\simple_decoder.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\simple_encoder.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\x86.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\armthumb.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\arm.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\ia64.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\powerpc.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\simple\sparc.c">
+      <Filter>src\liblzma\simple</Filter>
+    </ClCompile>
+    <ClCompile Include="src\liblzma\check\sha256.c">
+      <Filter>src\liblzma\check</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\lzma.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\base.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\bcj.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\block.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\check.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\container.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\delta.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\filter.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\hardware.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\index.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\index_hash.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\lzma.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\stream_flags.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\version.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lzma\vli.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>include\lzma</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,186 @@
+liblzma_la-easy_encoder.lo: common/easy_encoder.c common/easy_preset.h \
+ common/common.h ../../src/common/sysdefs.h ../../config.h \
+ /usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stddef.h \
+ /usr/include/inttypes.h \
+ /usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stdint.h /usr/include/stdint.h \
+ /usr/include/bits/wordsize.h /usr/include/_ansi.h /usr/include/newlib.h \
+ /usr/include/sys/config.h /usr/include/machine/ieeefp.h \
+ /usr/include/sys/features.h /usr/include/cygwin/config.h \
+ /usr/lib/gcc/i686-pc-cygwin/4.9.2/include-fixed/limits.h \
+ /usr/lib/gcc/i686-pc-cygwin/4.9.2/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/features.h /usr/include/sys/cdefs.h \
+ /usr/include/machine/_default_types.h /usr/include/stdlib.h \
+ /usr/include/_ansi.h /usr/include/sys/reent.h /usr/include/sys/_types.h \
+ /usr/include/machine/_types.h /usr/include/sys/lock.h \
+ /usr/include/machine/stdlib.h /usr/include/alloca.h \
+ /usr/include/cygwin/stdlib.h /usr/include/cygwin/wait.h \
+ /usr/include/assert.h \
+ /usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stdbool.h \
+ /usr/include/string.h /usr/include/sys/string.h /usr/include/strings.h \
+ /usr/include/sys/types.h /usr/include/machine/types.h \
+ /usr/include/cygwin/types.h /usr/include/endian.h \
+ /usr/include/bits/endian.h /usr/include/byteswap.h \
+ /usr/include/sys/sysmacros.h /usr/include/memory.h \
+ ../../src/common/mythread.h ../../src/common/sysdefs.h \
+ /usr/include/pthread.h /usr/include/signal.h /usr/include/sys/signal.h \
+ /usr/include/cygwin/signal.h /usr/include/sched.h \
+ /usr/include/sys/sched.h /usr/include/time.h /usr/include/machine/time.h \
+ /usr/include/cygwin/time.h ../../src/common/tuklib_integer.h \
+ ../../src/common/tuklib_common.h ../../src/common/tuklib_config.h \
+ ../../src/liblzma/api/lzma.h ../../src/liblzma/api/lzma/version.h \
+ ../../src/liblzma/api/lzma/base.h ../../src/liblzma/api/lzma/vli.h \
+ ../../src/liblzma/api/lzma/check.h ../../src/liblzma/api/lzma/filter.h \
+ ../../src/liblzma/api/lzma/bcj.h ../../src/liblzma/api/lzma/delta.h \
+ ../../src/liblzma/api/lzma/lzma.h ../../src/liblzma/api/lzma/container.h \
+ ../../src/liblzma/api/lzma/stream_flags.h \
+ ../../src/liblzma/api/lzma/block.h ../../src/liblzma/api/lzma/index.h \
+ ../../src/liblzma/api/lzma/index_hash.h \
+ ../../src/liblzma/api/lzma/hardware.h common/stream_encoder.h
+
+common/easy_preset.h:
+
+common/common.h:
+
+../../src/common/sysdefs.h:
+
+../../config.h:
+
+/usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/newlib.h:
+
+/usr/include/sys/config.h:
+
+/usr/include/machine/ieeefp.h:
+
+/usr/include/sys/features.h:
+
+/usr/include/cygwin/config.h:
+
+/usr/lib/gcc/i686-pc-cygwin/4.9.2/include-fixed/limits.h:
+
+/usr/lib/gcc/i686-pc-cygwin/4.9.2/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/features.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/machine/_default_types.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/_ansi.h:
+
+/usr/include/sys/reent.h:
+
+/usr/include/sys/_types.h:
+
+/usr/include/machine/_types.h:
+
+/usr/include/sys/lock.h:
+
+/usr/include/machine/stdlib.h:
+
+/usr/include/alloca.h:
+
+/usr/include/cygwin/stdlib.h:
+
+/usr/include/cygwin/wait.h:
+
+/usr/include/assert.h:
+
+/usr/lib/gcc/i686-pc-cygwin/4.9.2/include/stdbool.h:
+
+/usr/include/string.h:
+
+/usr/include/sys/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/machine/types.h:
+
+/usr/include/cygwin/types.h:
+
+/usr/include/endian.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/byteswap.h:
+
+/usr/include/sys/sysmacros.h:
+
+/usr/include/memory.h:
+
+../../src/common/mythread.h:
+
+../../src/common/sysdefs.h:
+
+/usr/include/pthread.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/signal.h:
+
+/usr/include/cygwin/signal.h:
+
+/usr/include/sched.h:
+
+/usr/include/sys/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/machine/time.h:
+
+/usr/include/cygwin/time.h:
+
+../../src/common/tuklib_integer.h:
+
+../../src/common/tuklib_common.h:
+
+../../src/common/tuklib_config.h:
+
+../../src/liblzma/api/lzma.h:
+
+../../src/liblzma/api/lzma/version.h:
+
+../../src/liblzma/api/lzma/base.h:
+
+../../src/liblzma/api/lzma/vli.h:
+
+../../src/liblzma/api/lzma/check.h:
+
+../../src/liblzma/api/lzma/filter.h:
+
+../../src/liblzma/api/lzma/bcj.h:
+
+../../src/liblzma/api/lzma/delta.h:
+
+../../src/liblzma/api/lzma/lzma.h:
+
+../../src/liblzma/api/lzma/container.h:
+
+../../src/liblzma/api/lzma/stream_flags.h:
+
+../../src/liblzma/api/lzma/block.h:
+
+../../src/liblzma/api/lzma/index.h:
+
+../../src/liblzma/api/lzma/index_hash.h:
+
+../../src/liblzma/api/lzma/hardware.h:
+
+common/stream_encoder.h:
