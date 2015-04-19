@@ -1,5 +1,6 @@
 #include "_Basic.h"
 #include <jpeglib.h>
+#include <vector>
 
 //_Basic
 
@@ -10,6 +11,7 @@ void exit_handle(j_common_ptr cinfo){
 _Basic::MAP_FN
 _Basic::map_ = {
 		{ "readfile", { "readfile(fname:UTF8STRING):IMAGE", &readfile } },
+		{ "writefile", { "writefile(img:IMAGE,fname:UTF8STRING):bool", &writefile } },
 };
 
 _Basic::MAP_GET_FN
@@ -142,6 +144,71 @@ _Basic::readfile(MoaMmCallInfo& callPtr){
 	}
 
 	jpeg_destroy_decompress(&cinfo);
+	fclose(fp);
+
+	return kMoaErr_NoErr;
+}
+
+HRESULT
+_Basic::writefile(MoaMmCallInfo& callPtr){
+	ImageLock bimg{ *this,  callPtr, 0 };
+	if (!bimg){
+		return kMoaErr_BadParam;
+	}
+
+	std::wstring file;
+	bool bret = this->utils_.read(callPtr, 1, file);//!!!
+	if (!bret) return kMoaErr_BadParam;
+
+	std::locale loc("");
+	std::string cfile = wchar_to_ansi(file, loc);
+
+	FILE* fp = fopen(cfile.data(), "wb");
+	if (!fp){
+		return kMoaErr_BadParam;
+	}
+	struct jpeg_compress_struct cinfo;
+	jpeg_create_compress(&cinfo);
+
+	try{
+		jpeg_error_mgr jerr;
+		jpeg_std_error(&jerr);
+		jerr.error_exit = &exit_handle;
+		cinfo.err = &jerr;
+
+		// io
+		jpeg_stdio_dest(&cinfo, fp);
+
+		// setting
+		cinfo.image_width = bimg.width();
+		cinfo.image_height = bimg.height();
+		cinfo.input_components = 4;
+		cinfo.in_color_space = JCS_EXT_BGRA;
+		jpeg_set_defaults(&cinfo);
+
+		jpeg_set_quality(&cinfo, 100, true);
+
+		// start compress
+		jpeg_start_compress(&cinfo, true);
+
+		// real image 
+		std::vector<unsigned char*> ma(bimg.height());
+		for (int k = 0; k < bimg.height(); ++k){
+			ma[k] = bimg.ptr<unsigned char>(bimg.height()-k-1);
+		}
+
+		jpeg_write_scanlines(&cinfo, ma.data(), ma.size());
+
+		// end compress
+		jpeg_finish_compress(&cinfo);
+
+		this->utils_.write(true, callPtr);///!!!!
+	}
+	catch (...){
+		this->utils_.write(false, callPtr);
+	}
+
+	jpeg_destroy_compress(&cinfo);
 	fclose(fp);
 
 	return kMoaErr_NoErr;

@@ -37,4 +37,5 @@ private:
 	//Handler
 	HRESULT get_interface(GetRef& ref);
 	HRESULT readfile(MoaMmCallInfo& callPtr);
+	HRESULT writefile(MoaMmCallInfo& callPtr);
 };
