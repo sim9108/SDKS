@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb788cfe-7b2c-4326-aeab-fc42f8e1707c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\win32">
+      <UniqueIdentifier>{2ba49f84-ebc9-4ce1-a682-1bc0f8297088}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fontconfig\fcarch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcatomic.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcblanks.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fccache.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fccfg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fccharset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fccompat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcdbg.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcdefault.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcdir.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcformat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcfreetype.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcfs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fchash.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcinit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fclang.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fclist.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcmatch.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcmatrix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcname.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcobjs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcpat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcserialize.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcstat.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcstr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\fcxml.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fontconfig\ftglue.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\dirent.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\wdirent.c">
+      <Filter>src\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="exports.def" />
+  </ItemGroup>
+</Project>
