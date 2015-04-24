@@ -1,4 +1,3 @@
 LibXML2
 LibOpenEXR
-https://github.com/libharu/libharu
 LibMupdf

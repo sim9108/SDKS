@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{0ec6faf7-526b-4eef-a387-4774dadf9040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{5cff5c80-530a-435d-816b-d7fc39224097}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\hpdf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_3dmeasure.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_annotation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_catalog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_conf.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_consts.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_destination.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_doc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_encoder.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_encrypt.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_encryptdict.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_error.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_exdata.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_ext_gstate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_font.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_fontdef.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_gstate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_image.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_info.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_list.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_mmgr.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_namedict.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_objects.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_outline.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_page_label.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_pages.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_pdfa.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_streams.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_u3d.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_utils.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\t4.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hpdf_config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\hpdf_xref.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_3dmeasure.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_annotation.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_array.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_binary.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_boolean.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_catalog.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_destination.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_dict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_doc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_doc_png.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder_cns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder_cnt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder_jp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder_kr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encoder_utf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encrypt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_encryptdict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_error.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_exdata.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_ext_gstate.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_font.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_font_cid.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_font_tt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_font_type1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_base14.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_cid.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_cns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_cnt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_jp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_kr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_tt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_fontdef_type1.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_gstate.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_image.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_image_ccitt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_image_png.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_info.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_list.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_mmgr.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_name.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_namedict.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_null.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_number.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_objects.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_outline.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_page_label.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_page_operator.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_pages.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_pdfa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_real.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_streams.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_string.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_u3d.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hpdf_utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libhpdf.def" />
+  </ItemGroup>
+</Project>
