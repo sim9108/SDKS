@@ -1,3 +1,8 @@
-LibXML2
-LibOpenEXR
-LibMupdf
+--LibXML2
+--LibOpenEXR
+--LibMupdf
+LibAngelScript
+LibV8 JavaScript Engine
+LibLua
+LibPython
+LibPerl
