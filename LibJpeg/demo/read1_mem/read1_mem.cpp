@@ -13,8 +13,7 @@ void exit_handle(j_common_ptr cinfo){
 	throw std::runtime_error(msg);
 }
 
-int _tmain(int argc, _TCHAR* argv[])
-{
+int _tmain(int argc, _TCHAR* argv[]){
 	/// buffer data---start
 	FILE* fp = fopen("test.jpg", "rb");
 	if (!fp){
@@ -29,8 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	fread(all_data.data(), fsize, 1, fp);
 	fclose(fp);
 	//// buffer data---end
-
-
+	
 	jpeg_decompress_struct cinfo;
 	jpeg_create_decompress(&cinfo);
 
