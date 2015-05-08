@@ -40,7 +40,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		jerr.error_exit = &exit_handle;
 		cinfo.err = &jerr;
 
-		jpeg_mem_src(&cinfo, all_data.data(), all_data.size());
+		jpeg_mem_src(&cinfo, all_data.data(), all_data.size()); ///!!!! diff
 		jpeg_read_header(&cinfo, true);
 		cinfo.out_color_space = JCS_RGB;
 
