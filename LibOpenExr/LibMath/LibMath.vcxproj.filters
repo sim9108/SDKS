@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{839365c5-d69d-4bbc-8127-c9237ceda819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{7afec460-391c-4a1c-8333-7cc5ce23f339}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ImathBox.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathColorAlgo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathFun.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathMatrixAlgo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathRandom.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathShear.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ImathVec.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\ImathBoxAlgo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathColor.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathColorAlgo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathEuler.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathExport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathForward.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathFrame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathFrustum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathFrustumTest.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathFun.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathGL.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathGLU.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathHalfLimits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathInt64.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathInterval.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathLimits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathLine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathLineAlgo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathMath.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathMatrix.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathMatrixAlgo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathNamespace.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathPlane.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathPlatform.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathQuat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathRandom.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathRoots.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathShear.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathSphere.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathVec.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathVecAlgo.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\ImathBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

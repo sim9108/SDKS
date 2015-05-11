@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{486b0ec9-f1dc-47f0-9ed9-12ea09833713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{b239a731-7ed9-4765-94fb-75cd92919c93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\IlmThreadMutexWin32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadPool.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadPosix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadSemaphore.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadSemaphorePosix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadSemaphorePosixCompat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadSemaphoreWin32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadWin32.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThread.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadMutex.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IlmThreadMutexPosix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\IlmThreadExport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThreadForward.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThreadMutex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThreadNamespace.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThreadPool.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThreadSemaphore.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmThread.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

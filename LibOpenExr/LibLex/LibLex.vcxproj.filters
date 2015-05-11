@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{0966daf7-e5a4-4e1b-8780-8b43e3795979}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{9c3b5b59-98b9-4e5a-9120-a169ad92ca75}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\IexBaseExc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IexThrowErrnoExc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\IexBaseExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexErrnoExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexExport.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexForward.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexMacros.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexMathExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexNamespace.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexThrowErrnoExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Iex.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IlmBaseConfig.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

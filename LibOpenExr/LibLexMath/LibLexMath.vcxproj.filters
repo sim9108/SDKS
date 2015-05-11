@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{6c638f2e-895d-42e1-978e-c8d7035195af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{cfbafd37-6585-486d-b8d7-781b80922e76}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\IexMathFloatExc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IexMathFpu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\IexMathFloatExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexMathFpu.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IexMathIeeeExc.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
