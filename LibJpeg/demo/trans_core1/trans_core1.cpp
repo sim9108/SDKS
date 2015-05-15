@@ -28,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	jpeg_create_decompress(&cinfo);
 
 	jpeg_transform_info transformoption;
-	JCOPY_OPTION copyoption;
+	JCOPY_OPTION copyoption = JCOPYOPT_DEFAULT;;
 
 	do{
 		try{
