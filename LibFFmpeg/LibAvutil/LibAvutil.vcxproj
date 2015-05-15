@@ -364,7 +364,7 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\cpu.c">
+    <ClCompile Include="src\libavutil\x86\cpu.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
@@ -374,7 +374,7 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\float_dsp_init.c">
+    <ClCompile Include="src\libavutil\x86\float_dsp_init.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">false</ExcludedFromBuild>
@@ -392,7 +392,7 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
     </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\lls_init.c">
+    <ClCompile Include="src\libavutil\x86\lls_init.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">false</ExcludedFromBuild>
@@ -402,7 +402,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">false</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\pixelutils_init.c">
+    <ClCompile Include="src\libavutil\x86\pixelutils_init.c">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">false</ExcludedFromBuild>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">false</ExcludedFromBuild>
