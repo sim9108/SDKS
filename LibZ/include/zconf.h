@@ -411,7 +411,9 @@ typedef uLong FAR uLongf;
 #endif
 
 #ifdef HAVE_UNISTD_H    /* may be set to #if 1 by ./configure */
+#if HAVE_UNISTD_H
 #  define Z_HAVE_UNISTD_H
+#endif
 #endif
 
 #ifdef HAVE_STDARG_H    /* may be set to #if 1 by ./configure */

@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC7696ED-D9FA-446E-8B67-D4DF295B795D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibAvFormat</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtild.lib;LibAvCodecd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtild.lib;LibAvCodecd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtilMTd.lib;LibAvCodecMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtild.lib;LibAvCodecd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtil.lib;LibAvCodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtil.lib;LibAvCodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtilMT.lib;LibAvCodecMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Ws2_32.lib;LibAvUtil.lib;LibAvCodec.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avformat-56.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LibAvFormat\4xm.c" />
+    <ClCompile Include="src\LibAvFormat\a64.c" />
+    <ClCompile Include="src\LibAvFormat\aacdec.c" />
+    <ClCompile Include="src\LibAvFormat\ac3dec.c" />
+    <ClCompile Include="src\LibAvFormat\act.c" />
+    <ClCompile Include="src\LibAvFormat\adp.c" />
+    <ClCompile Include="src\LibAvFormat\adtsenc.c" />
+    <ClCompile Include="src\LibAvFormat\adxdec.c" />
+    <ClCompile Include="src\LibAvFormat\aea.c" />
+    <ClCompile Include="src\LibAvFormat\afc.c" />
+    <ClCompile Include="src\LibAvFormat\aiffdec.c" />
+    <ClCompile Include="src\LibAvFormat\aiffenc.c" />
+    <ClCompile Include="src\LibAvFormat\allformats.c" />
+    <ClCompile Include="src\LibAvFormat\amr.c" />
+    <ClCompile Include="src\LibAvFormat\anm.c" />
+    <ClCompile Include="src\LibAvFormat\apc.c" />
+    <ClCompile Include="src\LibAvFormat\ape.c" />
+    <ClCompile Include="src\LibAvFormat\apetag.c" />
+    <ClCompile Include="src\LibAvFormat\apngdec.c" />
+    <ClCompile Include="src\LibAvFormat\aqtitledec.c" />
+    <ClCompile Include="src\LibAvFormat\asf.c" />
+    <ClCompile Include="src\LibAvFormat\asfcrypt.c" />
+    <ClCompile Include="src\LibAvFormat\asfdec.c" />
+    <ClCompile Include="src\LibAvFormat\asfenc.c" />
+    <ClCompile Include="src\LibAvFormat\assdec.c" />
+    <ClCompile Include="src\LibAvFormat\assenc.c" />
+    <ClCompile Include="src\LibAvFormat\ast.c" />
+    <ClCompile Include="src\LibAvFormat\astdec.c" />
+    <ClCompile Include="src\LibAvFormat\astenc.c" />
+    <ClCompile Include="src\LibAvFormat\au.c" />
+    <ClCompile Include="src\LibAvFormat\audiointerleave.c" />
+    <ClCompile Include="src\LibAvFormat\avc.c" />
+    <ClCompile Include="src\LibAvFormat\avidec.c" />
+    <ClCompile Include="src\LibAvFormat\avienc.c" />
+    <ClCompile Include="src\LibAvFormat\avio.c" />
+    <ClCompile Include="src\LibAvFormat\aviobuf.c" />
+    <ClCompile Include="src\LibAvFormat\avlanguage.c" />
+    <ClCompile Include="src\LibAvFormat\avr.c" />
+    <ClCompile Include="src\LibAvFormat\avs.c" />
+    <ClCompile Include="src\LibAvFormat\bethsoftvid.c" />
+    <ClCompile Include="src\LibAvFormat\bfi.c" />
+    <ClCompile Include="src\LibAvFormat\bink.c" />
+    <ClCompile Include="src\LibAvFormat\bintext.c" />
+    <ClCompile Include="src\LibAvFormat\bit.c" />
+    <ClCompile Include="src\LibAvFormat\bmv.c" />
+    <ClCompile Include="src\LibAvFormat\boadec.c" />
+    <ClCompile Include="src\LibAvFormat\brstm.c" />
+    <ClCompile Include="src\LibAvFormat\c93.c" />
+    <ClCompile Include="src\LibAvFormat\cache.c" />
+    <ClCompile Include="src\LibAvFormat\caf.c" />
+    <ClCompile Include="src\LibAvFormat\cafdec.c" />
+    <ClCompile Include="src\LibAvFormat\cafenc.c" />
+    <ClCompile Include="src\LibAvFormat\cavsvideodec.c" />
+    <ClCompile Include="src\LibAvFormat\cdg.c" />
+    <ClCompile Include="src\LibAvFormat\cdxl.c" />
+    <ClCompile Include="src\LibAvFormat\cinedec.c" />
+    <ClCompile Include="src\LibAvFormat\concat.c" />
+    <ClCompile Include="src\LibAvFormat\concatdec.c" />
+    <ClCompile Include="src\LibAvFormat\crcenc.c" />
+    <ClCompile Include="src\LibAvFormat\crypto.c" />
+    <ClCompile Include="src\LibAvFormat\cutils.c" />
+    <ClCompile Include="src\LibAvFormat\dashenc.c" />
+    <ClCompile Include="src\LibAvFormat\data_uri.c" />
+    <ClCompile Include="src\LibAvFormat\dauddec.c" />
+    <ClCompile Include="src\LibAvFormat\daudenc.c" />
+    <ClCompile Include="src\LibAvFormat\dfa.c" />
+    <ClCompile Include="src\LibAvFormat\diracdec.c" />
+    <ClCompile Include="src\LibAvFormat\dnxhddec.c" />
+    <ClCompile Include="src\LibAvFormat\dsfdec.c" />
+    <ClCompile Include="src\LibAvFormat\dsicin.c" />
+    <ClCompile Include="src\LibAvFormat\dss.c" />
+    <ClCompile Include="src\LibAvFormat\dtsdec.c" />
+    <ClCompile Include="src\LibAvFormat\dtshddec.c" />
+    <ClCompile Include="src\LibAvFormat\dump.c" />
+    <ClCompile Include="src\LibAvFormat\dv.c" />
+    <ClCompile Include="src\LibAvFormat\dvbsub.c" />
+    <ClCompile Include="src\LibAvFormat\dvenc.c" />
+    <ClCompile Include="src\LibAvFormat\dxa.c" />
+    <ClCompile Include="src\LibAvFormat\eacdata.c" />
+    <ClCompile Include="src\LibAvFormat\electronicarts.c" />
+    <ClCompile Include="src\LibAvFormat\epafdec.c" />
+    <ClCompile Include="src\LibAvFormat\ffmdec.c" />
+    <ClCompile Include="src\LibAvFormat\ffmenc.c" />
+    <ClCompile Include="src\LibAvFormat\ffmetadec.c" />
+    <ClCompile Include="src\LibAvFormat\ffmetaenc.c" />
+    <ClCompile Include="src\LibAvFormat\file.c" />
+    <ClCompile Include="src\LibAvFormat\file_open.c" />
+    <ClCompile Include="src\LibAvFormat\filmstripdec.c" />
+    <ClCompile Include="src\LibAvFormat\filmstripenc.c" />
+    <ClCompile Include="src\LibAvFormat\flacdec.c" />
+    <ClCompile Include="src\LibAvFormat\flacenc.c" />
+    <ClCompile Include="src\LibAvFormat\flacenc_header.c" />
+    <ClCompile Include="src\LibAvFormat\flac_picture.c" />
+    <ClCompile Include="src\LibAvFormat\flic.c" />
+    <ClCompile Include="src\LibAvFormat\flvdec.c" />
+    <ClCompile Include="src\LibAvFormat\flvenc.c" />
+    <ClCompile Include="src\LibAvFormat\format.c" />
+    <ClCompile Include="src\LibAvFormat\framecrcenc.c" />
+    <ClCompile Include="src\LibAvFormat\framehash.c" />
+    <ClCompile Include="src\LibAvFormat\frmdec.c" />
+    <ClCompile Include="src\LibAvFormat\ftp.c" />
+    <ClCompile Include="src\LibAvFormat\g722.c" />
+    <ClCompile Include="src\LibAvFormat\g723_1.c" />
+    <ClCompile Include="src\LibAvFormat\g729dec.c" />
+    <ClCompile Include="src\LibAvFormat\gif.c" />
+    <ClCompile Include="src\LibAvFormat\gifdec.c" />
+    <ClCompile Include="src\LibAvFormat\golomb_tab.c" />
+    <ClCompile Include="src\LibAvFormat\gopher.c" />
+    <ClCompile Include="src\LibAvFormat\gsmdec.c" />
+    <ClCompile Include="src\LibAvFormat\gxf.c" />
+    <ClCompile Include="src\LibAvFormat\gxfenc.c" />
+    <ClCompile Include="src\LibAvFormat\h261dec.c" />
+    <ClCompile Include="src\LibAvFormat\h263dec.c" />
+    <ClCompile Include="src\LibAvFormat\h264dec.c" />
+    <ClCompile Include="src\LibAvFormat\hdsenc.c" />
+    <ClCompile Include="src\LibAvFormat\hevc.c" />
+    <ClCompile Include="src\LibAvFormat\hevcdec.c" />
+    <ClCompile Include="src\LibAvFormat\hls.c" />
+    <ClCompile Include="src\LibAvFormat\hlsenc.c" />
+    <ClCompile Include="src\LibAvFormat\hlsproto.c" />
+    <ClCompile Include="src\LibAvFormat\hnm.c" />
+    <ClCompile Include="src\LibAvFormat\http.c" />
+    <ClCompile Include="src\LibAvFormat\httpauth.c" />
+    <ClCompile Include="src\LibAvFormat\icecast.c" />
+    <ClCompile Include="src\LibAvFormat\icodec.c" />
+    <ClCompile Include="src\LibAvFormat\icoenc.c" />
+    <ClCompile Include="src\LibAvFormat\id3v1.c" />
+    <ClCompile Include="src\LibAvFormat\id3v2.c" />
+    <ClCompile Include="src\LibAvFormat\id3v2enc.c" />
+    <ClCompile Include="src\LibAvFormat\idcin.c" />
+    <ClCompile Include="src\LibAvFormat\idroqdec.c" />
+    <ClCompile Include="src\LibAvFormat\idroqenc.c" />
+    <ClCompile Include="src\LibAvFormat\iff.c" />
+    <ClCompile Include="src\LibAvFormat\ilbc.c" />
+    <ClCompile Include="src\LibAvFormat\img2.c" />
+    <ClCompile Include="src\LibAvFormat\img2dec.c" />
+    <ClCompile Include="src\LibAvFormat\img2enc.c" />
+    <ClCompile Include="src\LibAvFormat\img2_alias_pix.c" />
+    <ClCompile Include="src\LibAvFormat\img2_brender_pix.c" />
+    <ClCompile Include="src\LibAvFormat\ingenientdec.c" />
+    <ClCompile Include="src\LibAvFormat\ipmovie.c" />
+    <ClCompile Include="src\LibAvFormat\ircam.c" />
+    <ClCompile Include="src\LibAvFormat\ircamdec.c" />
+    <ClCompile Include="src\LibAvFormat\ircamenc.c" />
+    <ClCompile Include="src\LibAvFormat\isom.c" />
+    <ClCompile Include="src\LibAvFormat\iss.c" />
+    <ClCompile Include="src\LibAvFormat\iv8.c" />
+    <ClCompile Include="src\LibAvFormat\ivfdec.c" />
+    <ClCompile Include="src\LibAvFormat\ivfenc.c" />
+    <ClCompile Include="src\LibAvFormat\jacosubdec.c" />
+    <ClCompile Include="src\LibAvFormat\jacosubenc.c" />
+    <ClCompile Include="src\LibAvFormat\jvdec.c" />
+    <ClCompile Include="src\LibAvFormat\latmenc.c" />
+    <ClCompile Include="src\LibAvFormat\lmlm4.c" />
+    <ClCompile Include="src\LibAvFormat\loasdec.c" />
+    <ClCompile Include="src\LibAvFormat\log2_tab.c" />
+    <ClCompile Include="src\LibAvFormat\lrc.c" />
+    <ClCompile Include="src\LibAvFormat\lrcdec.c" />
+    <ClCompile Include="src\LibAvFormat\lrcenc.c" />
+    <ClCompile Include="src\LibAvFormat\lvfdec.c" />
+    <ClCompile Include="src\LibAvFormat\lxfdec.c" />
+    <ClCompile Include="src\LibAvFormat\m4vdec.c" />
+    <ClCompile Include="src\LibAvFormat\matroska.c" />
+    <ClCompile Include="src\LibAvFormat\matroskadec.c" />
+    <ClCompile Include="src\LibAvFormat\matroskaenc.c" />
+    <ClCompile Include="src\LibAvFormat\md5enc.c" />
+    <ClCompile Include="src\LibAvFormat\md5proto.c" />
+    <ClCompile Include="src\LibAvFormat\metadata.c" />
+    <ClCompile Include="src\LibAvFormat\mgsts.c" />
+    <ClCompile Include="src\LibAvFormat\microdvddec.c" />
+    <ClCompile Include="src\LibAvFormat\microdvdenc.c" />
+    <ClCompile Include="src\LibAvFormat\mkvtimestamp_v2.c" />
+    <ClCompile Include="src\LibAvFormat\mlvdec.c" />
+    <ClCompile Include="src\LibAvFormat\mm.c" />
+    <ClCompile Include="src\LibAvFormat\mmf.c" />
+    <ClCompile Include="src\LibAvFormat\mms.c" />
+    <ClCompile Include="src\LibAvFormat\mmsh.c" />
+    <ClCompile Include="src\LibAvFormat\mmst.c" />
+    <ClCompile Include="src\LibAvFormat\mov.c" />
+    <ClCompile Include="src\LibAvFormat\movenc.c" />
+    <ClCompile Include="src\LibAvFormat\movenchint.c" />
+    <ClCompile Include="src\LibAvFormat\mov_chan.c" />
+    <ClCompile Include="src\LibAvFormat\mp3dec.c" />
+    <ClCompile Include="src\LibAvFormat\mp3enc.c" />
+    <ClCompile Include="src\LibAvFormat\mpc.c" />
+    <ClCompile Include="src\LibAvFormat\mpc8.c" />
+    <ClCompile Include="src\LibAvFormat\mpeg.c" />
+    <ClCompile Include="src\LibAvFormat\mpegenc.c" />
+    <ClCompile Include="src\LibAvFormat\mpegts.c" />
+    <ClCompile Include="src\LibAvFormat\mpegtsenc.c" />
+    <ClCompile Include="src\LibAvFormat\mpegvideodec.c" />
+    <ClCompile Include="src\LibAvFormat\mpjpeg.c" />
+    <ClCompile Include="src\LibAvFormat\mpl2dec.c" />
+    <ClCompile Include="src\LibAvFormat\mpsubdec.c" />
+    <ClCompile Include="src\LibAvFormat\msnwc_tcp.c" />
+    <ClCompile Include="src\LibAvFormat\mtv.c" />
+    <ClCompile Include="src\LibAvFormat\mux.c" />
+    <ClCompile Include="src\LibAvFormat\mvdec.c" />
+    <ClCompile Include="src\LibAvFormat\mvi.c" />
+    <ClCompile Include="src\LibAvFormat\mxf.c" />
+    <ClCompile Include="src\LibAvFormat\mxfdec.c" />
+    <ClCompile Include="src\LibAvFormat\mxfenc.c" />
+    <ClCompile Include="src\LibAvFormat\mxg.c" />
+    <ClCompile Include="src\LibAvFormat\ncdec.c" />
+    <ClCompile Include="src\LibAvFormat\network.c" />
+    <ClCompile Include="src\LibAvFormat\nistspheredec.c" />
+    <ClCompile Include="src\LibAvFormat\nsvdec.c" />
+    <ClCompile Include="src\LibAvFormat\nullenc.c" />
+    <ClCompile Include="src\LibAvFormat\nut.c" />
+    <ClCompile Include="src\LibAvFormat\nutdec.c" />
+    <ClCompile Include="src\LibAvFormat\nutenc.c" />
+    <ClCompile Include="src\LibAvFormat\nuv.c" />
+    <ClCompile Include="src\LibAvFormat\oggdec.c" />
+    <ClCompile Include="src\LibAvFormat\oggenc.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsecelt.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsedirac.c" />
+    <ClCompile Include="src\LibAvFormat\oggparseflac.c" />
+    <ClCompile Include="src\LibAvFormat\oggparseogm.c" />
+    <ClCompile Include="src\LibAvFormat\oggparseopus.c" />
+    <ClCompile Include="src\LibAvFormat\oggparseskeleton.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsespeex.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsetheora.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsevorbis.c" />
+    <ClCompile Include="src\LibAvFormat\oggparsevp8.c" />
+    <ClCompile Include="src\LibAvFormat\oma.c" />
+    <ClCompile Include="src\LibAvFormat\omadec.c" />
+    <ClCompile Include="src\LibAvFormat\omaenc.c" />
+    <ClCompile Include="src\LibAvFormat\options.c" />
+    <ClCompile Include="src\LibAvFormat\os_support.c" />
+    <ClCompile Include="src\LibAvFormat\paf.c" />
+    <ClCompile Include="src\LibAvFormat\pcm.c" />
+    <ClCompile Include="src\LibAvFormat\pcmdec.c" />
+    <ClCompile Include="src\LibAvFormat\pcmenc.c" />
+    <ClCompile Include="src\LibAvFormat\pjsdec.c" />
+    <ClCompile Include="src\LibAvFormat\pmpdec.c" />
+    <ClCompile Include="src\LibAvFormat\psxstr.c" />
+    <ClCompile Include="src\LibAvFormat\pva.c" />
+    <ClCompile Include="src\LibAvFormat\pvfdec.c" />
+    <ClCompile Include="src\LibAvFormat\qcp.c" />
+    <ClCompile Include="src\LibAvFormat\r3d.c" />
+    <ClCompile Include="src\LibAvFormat\rawdec.c" />
+    <ClCompile Include="src\LibAvFormat\rawenc.c" />
+    <ClCompile Include="src\LibAvFormat\rawvideodec.c" />
+    <ClCompile Include="src\LibAvFormat\rdt.c" />
+    <ClCompile Include="src\LibAvFormat\realtextdec.c" />
+    <ClCompile Include="src\LibAvFormat\redspark.c" />
+    <ClCompile Include="src\LibAvFormat\replaygain.c" />
+    <ClCompile Include="src\LibAvFormat\riff.c" />
+    <ClCompile Include="src\LibAvFormat\riffdec.c" />
+    <ClCompile Include="src\LibAvFormat\riffenc.c" />
+    <ClCompile Include="src\LibAvFormat\rl2.c" />
+    <ClCompile Include="src\LibAvFormat\rm.c" />
+    <ClCompile Include="src\LibAvFormat\rmdec.c" />
+    <ClCompile Include="src\LibAvFormat\rmenc.c" />
+    <ClCompile Include="src\LibAvFormat\rmsipr.c" />
+    <ClCompile Include="src\LibAvFormat\rpl.c" />
+    <ClCompile Include="src\LibAvFormat\rsd.c" />
+    <ClCompile Include="src\LibAvFormat\rso.c" />
+    <ClCompile Include="src\LibAvFormat\rsodec.c" />
+    <ClCompile Include="src\LibAvFormat\rsoenc.c" />
+    <ClCompile Include="src\LibAvFormat\rtmphttp.c" />
+    <ClCompile Include="src\LibAvFormat\rtmppkt.c" />
+    <ClCompile Include="src\LibAvFormat\rtmpproto.c" />
+    <ClCompile Include="src\LibAvFormat\rtp.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_ac3.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_amr.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_asf.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_dv.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_g726.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_h261.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_h263.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_h263_rfc2190.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_h264.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_hevc.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_ilbc.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_jpeg.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_latm.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_mpa_robust.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_mpeg12.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_mpeg4.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_mpegts.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_qcelp.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_qdm2.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_qt.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_svq3.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_vp8.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_vp9.c" />
+    <ClCompile Include="src\LibAvFormat\rtpdec_xiph.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_aac.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_amr.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_chain.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_h261.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_h263.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_h263_rfc2190.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_h264_hevc.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_jpeg.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_latm.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_mpegts.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_mpv.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_vp8.c" />
+    <ClCompile Include="src\LibAvFormat\rtpenc_xiph.c" />
+    <ClCompile Include="src\LibAvFormat\rtpproto.c" />
+    <ClCompile Include="src\LibAvFormat\rtsp.c" />
+    <ClCompile Include="src\LibAvFormat\rtspdec.c" />
+    <ClCompile Include="src\LibAvFormat\rtspenc.c" />
+    <ClCompile Include="src\LibAvFormat\samidec.c" />
+    <ClCompile Include="src\LibAvFormat\sapdec.c" />
+    <ClCompile Include="src\LibAvFormat\sapenc.c" />
+    <ClCompile Include="src\LibAvFormat\sauce.c" />
+    <ClCompile Include="src\LibAvFormat\sbgdec.c" />
+    <ClCompile Include="src\LibAvFormat\sdp.c" />
+    <ClCompile Include="src\LibAvFormat\sdr2.c" />
+    <ClCompile Include="src\LibAvFormat\segafilm.c" />
+    <ClCompile Include="src\LibAvFormat\segment.c" />
+    <ClCompile Include="src\LibAvFormat\sierravmd.c" />
+    <ClCompile Include="src\LibAvFormat\siff.c" />
+    <ClCompile Include="src\LibAvFormat\smacker.c" />
+    <ClCompile Include="src\LibAvFormat\smjpeg.c" />
+    <ClCompile Include="src\LibAvFormat\smjpegdec.c" />
+    <ClCompile Include="src\LibAvFormat\smjpegenc.c" />
+    <ClCompile Include="src\LibAvFormat\smoothstreamingenc.c" />
+    <ClCompile Include="src\LibAvFormat\smush.c" />
+    <ClCompile Include="src\LibAvFormat\sol.c" />
+    <ClCompile Include="src\LibAvFormat\soxdec.c" />
+    <ClCompile Include="src\LibAvFormat\soxenc.c" />
+    <ClCompile Include="src\LibAvFormat\spdif.c" />
+    <ClCompile Include="src\LibAvFormat\spdifdec.c" />
+    <ClCompile Include="src\LibAvFormat\spdifenc.c" />
+    <ClCompile Include="src\LibAvFormat\srtdec.c" />
+    <ClCompile Include="src\LibAvFormat\srtenc.c" />
+    <ClCompile Include="src\LibAvFormat\srtp.c" />
+    <ClCompile Include="src\LibAvFormat\srtpproto.c" />
+    <ClCompile Include="src\LibAvFormat\stldec.c" />
+    <ClCompile Include="src\LibAvFormat\subfile.c" />
+    <ClCompile Include="src\LibAvFormat\subtitles.c" />
+    <ClCompile Include="src\LibAvFormat\subviewer1dec.c" />
+    <ClCompile Include="src\LibAvFormat\subviewerdec.c" />
+    <ClCompile Include="src\LibAvFormat\supdec.c" />
+    <ClCompile Include="src\LibAvFormat\swf.c" />
+    <ClCompile Include="src\LibAvFormat\swfdec.c" />
+    <ClCompile Include="src\LibAvFormat\swfenc.c" />
+    <ClCompile Include="src\LibAvFormat\takdec.c" />
+    <ClCompile Include="src\LibAvFormat\tcp.c" />
+    <ClCompile Include="src\LibAvFormat\tedcaptionsdec.c" />
+    <ClCompile Include="src\LibAvFormat\tee.c" />
+    <ClCompile Include="src\LibAvFormat\thp.c" />
+    <ClCompile Include="src\LibAvFormat\tiertexseq.c" />
+    <ClCompile Include="src\LibAvFormat\tmv.c" />
+    <ClCompile Include="src\LibAvFormat\tta.c" />
+    <ClCompile Include="src\LibAvFormat\tty.c" />
+    <ClCompile Include="src\LibAvFormat\txd.c" />
+    <ClCompile Include="src\LibAvFormat\udp.c" />
+    <ClCompile Include="src\LibAvFormat\uncodedframecrcenc.c" />
+    <ClCompile Include="src\LibAvFormat\url.c" />
+    <ClCompile Include="src\LibAvFormat\urldecode.c" />
+    <ClCompile Include="src\LibAvFormat\utils.c" />
+    <ClCompile Include="src\LibAvFormat\vc1test.c" />
+    <ClCompile Include="src\LibAvFormat\vc1testenc.c" />
+    <ClCompile Include="src\LibAvFormat\vivo.c" />
+    <ClCompile Include="src\LibAvFormat\voc.c" />
+    <ClCompile Include="src\LibAvFormat\vocdec.c" />
+    <ClCompile Include="src\LibAvFormat\vocenc.c" />
+    <ClCompile Include="src\LibAvFormat\vorbiscomment.c" />
+    <ClCompile Include="src\LibAvFormat\vplayerdec.c" />
+    <ClCompile Include="src\LibAvFormat\vqf.c" />
+    <ClCompile Include="src\LibAvFormat\w64.c" />
+    <ClCompile Include="src\LibAvFormat\wavdec.c" />
+    <ClCompile Include="src\LibAvFormat\wavenc.c" />
+    <ClCompile Include="src\LibAvFormat\wc3movie.c" />
+    <ClCompile Include="src\LibAvFormat\webmdashenc.c" />
+    <ClCompile Include="src\LibAvFormat\webpenc.c" />
+    <ClCompile Include="src\LibAvFormat\webvttdec.c" />
+    <ClCompile Include="src\LibAvFormat\webvttenc.c" />
+    <ClCompile Include="src\LibAvFormat\westwood_aud.c" />
+    <ClCompile Include="src\LibAvFormat\westwood_vqa.c" />
+    <ClCompile Include="src\LibAvFormat\wtvdec.c" />
+    <ClCompile Include="src\LibAvFormat\wtvenc.c" />
+    <ClCompile Include="src\LibAvFormat\wtv_common.c" />
+    <ClCompile Include="src\LibAvFormat\wv.c" />
+    <ClCompile Include="src\LibAvFormat\wvdec.c" />
+    <ClCompile Include="src\LibAvFormat\wvenc.c" />
+    <ClCompile Include="src\LibAvFormat\xa.c" />
+    <ClCompile Include="src\LibAvFormat\xmv.c" />
+    <ClCompile Include="src\LibAvFormat\xwma.c" />
+    <ClCompile Include="src\LibAvFormat\yop.c" />
+    <ClCompile Include="src\LibAvFormat\yuv4mpegdec.c" />
+    <ClCompile Include="src\LibAvFormat\yuv4mpegenc.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

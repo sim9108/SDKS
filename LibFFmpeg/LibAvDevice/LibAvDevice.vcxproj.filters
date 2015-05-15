@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8a3b9a4-e05b-415e-ab29-6c4e8133c715}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LibAvDevice\utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\vfwcap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\alldevices.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\avdevice.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_common.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_crossbar.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_enummediatypes.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_enumpins.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_filter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\dshow_pin.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\file_open.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\gdigrab.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvDevice\lavfi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

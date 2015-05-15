@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\LibSwResample\audioconvert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\dither.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\log2_tab.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\options.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\rematrix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\resample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\resample_dsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\swresample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\swresample_frame.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\x86\audio_convert_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\x86\rematrix_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwResample\x86\resample_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d7f1d8aa-7aa9-4cd8-8372-1de27d5b6fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\X86">
+      <UniqueIdentifier>{aaa79cef-5501-420a-9e92-afb9653fd772}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\X86\asm">
+      <UniqueIdentifier>{4167f17a-1ce2-40f8-9114-ba4aca249d6f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibSwResample\x86\audio_convert.asm">
+      <Filter>src\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibSwResample\x86\rematrix.asm">
+      <Filter>src\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibSwResample\x86\resample.asm">
+      <Filter>src\X86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

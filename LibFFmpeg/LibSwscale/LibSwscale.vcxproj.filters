@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9c0075e4-d3ae-4e76-8771-65dc1f363c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\x86">
+      <UniqueIdentifier>{03bea14c-98e4-474c-a486-b421c9b5d794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\x86\asm">
+      <UniqueIdentifier>{205a41e4-33bb-46da-9af2-d15051f80c2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{4cce9c91-f527-48d1-8490-6e240ce7d54c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LibSwscale\hscale_fast_bilinear.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\input.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\log2_tab.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\options.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\output.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\rgb2rgb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\swscale.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\swscale_unscaled.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\yuv2rgb.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\x86\rgb2rgb.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\x86\swscale.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\x86\yuv2rgb.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\x86\hscale_fast_bilinear_simd.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibSwscale\x86\input.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibSwscale\x86\output.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibSwscale\x86\scale.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LibSwscale\swscale_internal.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibSwscale\swscale.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibSwscale\rgb2rgb.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibSwscale\version.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

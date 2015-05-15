@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{13e95136-f449-4720-81fc-c1ab278d0b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{6ca3586f-c338-44d8-92cd-03f4e224fb35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\msvcrt">
+      <UniqueIdentifier>{44d24284-20c2-4924-b553-1b3da8f4efb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\strtod.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\msvcrt\snprintf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\compat\msvcrt\snprintf.h">
+      <Filter>include\msvcrt</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat\os2threads.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat\va_copy.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\compat\w32pthreads.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

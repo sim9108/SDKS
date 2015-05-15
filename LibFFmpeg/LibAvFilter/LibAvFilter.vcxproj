@@ -1,0 +1,961 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A2364EB5-9FA0-4EB9-B584-7CC3187994B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibAvFilter</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtild.lib;LibSwResampled.lib;LibAvCodecd.lib;LibAvFormatd.lib;LibPostProcd.lib;LibSwScaled.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtild.lib;LibSwResampled.lib;LibAvCodecd.lib;LibAvFormatd.lib;LibPostProcd.lib;LibSwScaled.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtilMTd.lib;LibSwResampleMTd.lib;LibAvCodecMTd.lib;LibAvFormatMTd.lib;LibPostProcMTd.lib;LibSwScaleMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtilMTd.lib;LibSwResampleMTd.lib;LibAvCodecMTd.lib;LibAvFormatMTd.lib;LibPostProcMTd.lib;LibSwScaleMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtil.lib;LibSwResample.lib;LibAvCodec.lib;LibAvFormat.lib;LibPostProc.lib;LibSwScale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtil.lib;LibSwResample.lib;LibAvCodec.lib;LibAvFormat.lib;LibPostProc.lib;LibSwScale.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtilMT.lib;LibSwResampleMT.lib;LibAvCodecMT.lib;LibAvFormatMT.lib;LibPostProcMT.lib;LibSwScaleMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFILTER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\LibAvUtil\src;..\LibSwResample\src;..\LibAvCodec\src;..\LibAvFormat\src;..\LibSwScale\src;..\libPostProc\src;..\LibAvResample\src;..\src;.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibAvUtilMT.lib;LibSwResampleMT.lib;LibAvCodecMT.lib;LibAvFormatMT.lib;LibPostProcMT.lib;LibSwScaleMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>.\src\avfilter-5.def</ModuleDefinitionFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LibAvFilter\aeval.c" />
+    <ClCompile Include="src\LibAvFilter\af_adelay.c" />
+    <ClCompile Include="src\LibAvFilter\af_aecho.c" />
+    <ClCompile Include="src\LibAvFilter\af_afade.c" />
+    <ClCompile Include="src\LibAvFilter\af_aformat.c" />
+    <ClCompile Include="src\LibAvFilter\af_amerge.c" />
+    <ClCompile Include="src\LibAvFilter\af_amix.c" />
+    <ClCompile Include="src\LibAvFilter\af_anull.c" />
+    <ClCompile Include="src\LibAvFilter\af_apad.c" />
+    <ClCompile Include="src\LibAvFilter\af_aphaser.c" />
+    <ClCompile Include="src\LibAvFilter\af_aresample.c" />
+    <ClCompile Include="src\LibAvFilter\af_asetnsamples.c" />
+    <ClCompile Include="src\LibAvFilter\af_asetrate.c" />
+    <ClCompile Include="src\LibAvFilter\af_ashowinfo.c" />
+    <ClCompile Include="src\LibAvFilter\af_astats.c" />
+    <ClCompile Include="src\LibAvFilter\af_astreamsync.c" />
+    <ClCompile Include="src\LibAvFilter\af_atempo.c" />
+    <ClCompile Include="src\LibAvFilter\af_biquads.c" />
+    <ClCompile Include="src\LibAvFilter\af_channelmap.c" />
+    <ClCompile Include="src\LibAvFilter\af_channelsplit.c" />
+    <ClCompile Include="src\LibAvFilter\af_compand.c" />
+    <ClCompile Include="src\LibAvFilter\af_dcshift.c" />
+    <ClCompile Include="src\LibAvFilter\af_earwax.c" />
+    <ClCompile Include="src\LibAvFilter\af_flanger.c" />
+    <ClCompile Include="src\LibAvFilter\af_join.c" />
+    <ClCompile Include="src\LibAvFilter\af_pan.c" />
+    <ClCompile Include="src\LibAvFilter\af_replaygain.c" />
+    <ClCompile Include="src\LibAvFilter\af_silencedetect.c" />
+    <ClCompile Include="src\LibAvFilter\af_silenceremove.c" />
+    <ClCompile Include="src\LibAvFilter\af_volume.c" />
+    <ClCompile Include="src\LibAvFilter\af_volumedetect.c" />
+    <ClCompile Include="src\LibAvFilter\allfilters.c" />
+    <ClCompile Include="src\LibAvFilter\asink_anullsink.c" />
+    <ClCompile Include="src\LibAvFilter\asrc_anullsrc.c" />
+    <ClCompile Include="src\LibAvFilter\asrc_sine.c" />
+    <ClCompile Include="src\LibAvFilter\audio.c" />
+    <ClCompile Include="src\LibAvFilter\avcodec.c" />
+    <ClCompile Include="src\LibAvFilter\avfilter.c" />
+    <ClCompile Include="src\LibAvFilter\avfiltergraph.c" />
+    <ClCompile Include="src\LibAvFilter\avf_avectorscope.c" />
+    <ClCompile Include="src\LibAvFilter\avf_concat.c" />
+    <ClCompile Include="src\LibAvFilter\avf_showcqt.c" />
+    <ClCompile Include="src\LibAvFilter\avf_showspectrum.c" />
+    <ClCompile Include="src\LibAvFilter\avf_showwaves.c" />
+    <ClCompile Include="src\LibAvFilter\bbox.c" />
+    <ClCompile Include="src\LibAvFilter\buffer.c" />
+    <ClCompile Include="src\LibAvFilter\buffersink.c" />
+    <ClCompile Include="src\LibAvFilter\buffersrc.c" />
+    <ClCompile Include="src\LibAvFilter\drawutils.c" />
+    <ClCompile Include="src\LibAvFilter\dualinput.c" />
+    <ClCompile Include="src\LibAvFilter\fifo.c" />
+    <ClCompile Include="src\LibAvFilter\filtfmts.c" />
+    <ClCompile Include="src\LibAvFilter\formats.c" />
+    <ClCompile Include="src\LibAvFilter\framesync.c" />
+    <ClCompile Include="src\LibAvFilter\f_ebur128.c" />
+    <ClCompile Include="src\LibAvFilter\f_interleave.c" />
+    <ClCompile Include="src\LibAvFilter\f_perms.c" />
+    <ClCompile Include="src\LibAvFilter\f_select.c" />
+    <ClCompile Include="src\LibAvFilter\f_sendcmd.c" />
+    <ClCompile Include="src\LibAvFilter\generate_wave_table.c" />
+    <ClCompile Include="src\LibAvFilter\graphdump.c" />
+    <ClCompile Include="src\LibAvFilter\graphparser.c" />
+    <ClCompile Include="src\LibAvFilter\lavfutils.c" />
+    <ClCompile Include="src\LibAvFilter\log2_tab.c" />
+    <ClCompile Include="src\LibAvFilter\lswsutils.c" />
+    <ClCompile Include="src\LibAvFilter\opencl_allkernels.c" />
+    <ClCompile Include="src\LibAvFilter\pthread.c" />
+    <ClCompile Include="src\LibAvFilter\setpts.c" />
+    <ClCompile Include="src\LibAvFilter\settb.c" />
+    <ClCompile Include="src\LibAvFilter\split.c" />
+    <ClCompile Include="src\LibAvFilter\src_movie.c" />
+    <ClCompile Include="src\LibAvFilter\transform.c" />
+    <ClCompile Include="src\LibAvFilter\trim.c" />
+    <ClCompile Include="src\LibAvFilter\vf_alphamerge.c" />
+    <ClCompile Include="src\LibAvFilter\vf_aspect.c" />
+    <ClCompile Include="src\LibAvFilter\vf_bbox.c" />
+    <ClCompile Include="src\LibAvFilter\vf_blackdetect.c" />
+    <ClCompile Include="src\LibAvFilter\vf_blackframe.c" />
+    <ClCompile Include="src\LibAvFilter\vf_blend.c" />
+    <ClCompile Include="src\LibAvFilter\vf_boxblur.c" />
+    <ClCompile Include="src\LibAvFilter\vf_codecview.c" />
+    <ClCompile Include="src\LibAvFilter\vf_colorbalance.c" />
+    <ClCompile Include="src\LibAvFilter\vf_colorchannelmixer.c" />
+    <ClCompile Include="src\LibAvFilter\vf_colorlevels.c" />
+    <ClCompile Include="src\LibAvFilter\vf_colormatrix.c" />
+    <ClCompile Include="src\LibAvFilter\vf_copy.c" />
+    <ClCompile Include="src\LibAvFilter\vf_crop.c" />
+    <ClCompile Include="src\LibAvFilter\vf_cropdetect.c" />
+    <ClCompile Include="src\LibAvFilter\vf_curves.c" />
+    <ClCompile Include="src\LibAvFilter\vf_dctdnoiz.c" />
+    <ClCompile Include="src\LibAvFilter\vf_decimate.c" />
+    <ClCompile Include="src\LibAvFilter\vf_dejudder.c" />
+    <ClCompile Include="src\LibAvFilter\vf_delogo.c" />
+    <ClCompile Include="src\LibAvFilter\vf_deshake.c" />
+    <ClCompile Include="src\LibAvFilter\vf_drawbox.c" />
+    <ClCompile Include="src\LibAvFilter\vf_edgedetect.c" />
+    <ClCompile Include="src\LibAvFilter\vf_elbg.c" />
+    <ClCompile Include="src\LibAvFilter\vf_eq.c" />
+    <ClCompile Include="src\LibAvFilter\vf_extractplanes.c" />
+    <ClCompile Include="src\LibAvFilter\vf_fade.c" />
+    <ClCompile Include="src\LibAvFilter\vf_field.c" />
+    <ClCompile Include="src\LibAvFilter\vf_fieldmatch.c" />
+    <ClCompile Include="src\LibAvFilter\vf_fieldorder.c" />
+    <ClCompile Include="src\LibAvFilter\vf_format.c" />
+    <ClCompile Include="src\LibAvFilter\vf_fps.c" />
+    <ClCompile Include="src\LibAvFilter\vf_framepack.c" />
+    <ClCompile Include="src\LibAvFilter\vf_framestep.c" />
+    <ClCompile Include="src\LibAvFilter\vf_fspp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_geq.c" />
+    <ClCompile Include="src\LibAvFilter\vf_gradfun.c" />
+    <ClCompile Include="src\LibAvFilter\vf_hflip.c" />
+    <ClCompile Include="src\LibAvFilter\vf_histeq.c" />
+    <ClCompile Include="src\LibAvFilter\vf_histogram.c" />
+    <ClCompile Include="src\LibAvFilter\vf_hqdn3d.c" />
+    <ClCompile Include="src\LibAvFilter\vf_hqx.c" />
+    <ClCompile Include="src\LibAvFilter\vf_hue.c" />
+    <ClCompile Include="src\LibAvFilter\vf_idet.c" />
+    <ClCompile Include="src\LibAvFilter\vf_il.c" />
+    <ClCompile Include="src\LibAvFilter\vf_interlace.c" />
+    <ClCompile Include="src\LibAvFilter\vf_kerndeint.c" />
+    <ClCompile Include="src\LibAvFilter\vf_lenscorrection.c" />
+    <ClCompile Include="src\LibAvFilter\vf_lut.c" />
+    <ClCompile Include="src\LibAvFilter\vf_lut3d.c" />
+    <ClCompile Include="src\LibAvFilter\vf_mcdeint.c" />
+    <ClCompile Include="src\LibAvFilter\vf_mergeplanes.c" />
+    <ClCompile Include="src\LibAvFilter\vf_mpdecimate.c" />
+    <ClCompile Include="src\LibAvFilter\vf_noise.c" />
+    <ClCompile Include="src\LibAvFilter\vf_null.c" />
+    <ClCompile Include="src\LibAvFilter\vf_overlay.c" />
+    <ClCompile Include="src\LibAvFilter\vf_owdenoise.c" />
+    <ClCompile Include="src\LibAvFilter\vf_pad.c" />
+    <ClCompile Include="src\LibAvFilter\vf_palettegen.c" />
+    <ClCompile Include="src\LibAvFilter\vf_paletteuse.c" />
+    <ClCompile Include="src\LibAvFilter\vf_perspective.c" />
+    <ClCompile Include="src\LibAvFilter\vf_phase.c" />
+    <ClCompile Include="src\LibAvFilter\vf_pixdesctest.c" />
+    <ClCompile Include="src\LibAvFilter\vf_pp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_pp7.c" />
+    <ClCompile Include="src\LibAvFilter\vf_psnr.c" />
+    <ClCompile Include="src\LibAvFilter\vf_pullup.c" />
+    <ClCompile Include="src\LibAvFilter\vf_qp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_removelogo.c" />
+    <ClCompile Include="src\LibAvFilter\vf_repeatfields.c" />
+    <ClCompile Include="src\LibAvFilter\vf_rotate.c" />
+    <ClCompile Include="src\LibAvFilter\vf_sab.c" />
+    <ClCompile Include="src\LibAvFilter\vf_scale.c" />
+    <ClCompile Include="src\LibAvFilter\vf_separatefields.c" />
+    <ClCompile Include="src\LibAvFilter\vf_setfield.c" />
+    <ClCompile Include="src\LibAvFilter\vf_showinfo.c" />
+    <ClCompile Include="src\LibAvFilter\vf_showpalette.c" />
+    <ClCompile Include="src\LibAvFilter\vf_shuffleplanes.c" />
+    <ClCompile Include="src\LibAvFilter\vf_signalstats.c" />
+    <ClCompile Include="src\LibAvFilter\vf_smartblur.c" />
+    <ClCompile Include="src\LibAvFilter\vf_spp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_stereo3d.c" />
+    <ClCompile Include="src\LibAvFilter\vf_super2xsai.c" />
+    <ClCompile Include="src\LibAvFilter\vf_swapuv.c" />
+    <ClCompile Include="src\LibAvFilter\vf_telecine.c" />
+    <ClCompile Include="src\LibAvFilter\vf_thumbnail.c" />
+    <ClCompile Include="src\LibAvFilter\vf_tile.c" />
+    <ClCompile Include="src\LibAvFilter\vf_tinterlace.c" />
+    <ClCompile Include="src\LibAvFilter\vf_transpose.c" />
+    <ClCompile Include="src\LibAvFilter\vf_unsharp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_uspp.c" />
+    <ClCompile Include="src\LibAvFilter\vf_vflip.c" />
+    <ClCompile Include="src\LibAvFilter\vf_vignette.c" />
+    <ClCompile Include="src\LibAvFilter\vf_w3fdif.c" />
+    <ClCompile Include="src\LibAvFilter\vf_xbr.c" />
+    <ClCompile Include="src\LibAvFilter\vf_yadif.c" />
+    <ClCompile Include="src\LibAvFilter\vf_zoompan.c" />
+    <ClCompile Include="src\LibAvFilter\video.c" />
+    <ClCompile Include="src\LibAvFilter\vsink_nullsink.c" />
+    <ClCompile Include="src\LibAvFilter\vsrc_cellauto.c" />
+    <ClCompile Include="src\LibAvFilter\vsrc_life.c" />
+    <ClCompile Include="src\LibAvFilter\vsrc_mandelbrot.c" />
+    <ClCompile Include="src\LibAvFilter\vsrc_mptestsrc.c" />
+    <ClCompile Include="src\LibAvFilter\vsrc_testsrc.c" />
+    <ClCompile Include="src\LibAvFilter\x86\af_volume_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_eq.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_fspp_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_gradfun_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_hqdn3d_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_idet_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_interlace_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_noise.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_pp7_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_pullup_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_spp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_tinterlace_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_yadif_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86_%(Filename).obj</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvFilter\x86\af_volume.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_fspp.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_gradfun.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_hqdn3d.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_idet.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_interlace.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_pp7.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_pullup.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_yadif.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\yadif-10.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\yadif-16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)..</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)..</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
