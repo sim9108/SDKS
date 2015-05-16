@@ -1,5 +1,4 @@
 --LibXML2
---LibOpenEXR
 --LibMupdf
 LibAngelScript
 LibV8 JavaScript Engine
