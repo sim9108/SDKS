@@ -32,14 +32,14 @@ double avpriv_strtod(const char *nptr, char **endptr);
 #undef snprintf
 #undef _snprintf
 #undef vsnprintf
-#undef strtod
-#undef _strtod
+//#undef strtod
+//#undef _strtod
 
 #define snprintf avpriv_snprintf
 #define _snprintf avpriv_snprintf
 #define vsnprintf avpriv_vsnprintf
-#define strtod avpriv_strtod
-#define _strtod avpriv_strtod
+//#define strtod avpriv_strtod
+//#define _strtod avpriv_strtod
 
 
 

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d116028e-4c81-4309-8947-cc7a3c76a296}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\X86">
+      <UniqueIdentifier>{33818636-af28-43df-bc0b-2c6fed4b5fe1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\X86\asm">
+      <UniqueIdentifier>{58ac6342-efb8-4804-9a85-8a456f4560e8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\LibAvResample\utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\resample.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\options.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\dither.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\audio_mix_matrix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\audio_mix.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\audio_data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\audio_convert.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\x86\audio_convert_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\x86\audio_mix_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvResample\x86\dither_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\LibAvResample\x86\util.asm">
+      <Filter>src\X86\asm</Filter>
+    </None>
+    <None Include="src\LibAvResample\x86\dither.asm">
+      <Filter>src\X86\asm</Filter>
+    </None>
+    <None Include="src\LibAvResample\x86\audio_convert.asm">
+      <Filter>src\X86\asm</Filter>
+    </None>
+    <None Include="src\LibAvResample\x86\audio_mix.asm">
+      <Filter>src\X86\asm</Filter>
+    </None>
+  </ItemGroup>
+</Project>

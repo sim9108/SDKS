@@ -484,3 +484,6 @@ static av_always_inline av_const int av_popcount64_c(uint64_t x)
 #ifndef av_popcount64
 #   define av_popcount64    av_popcount64_c
 #endif
+
+
+#include "compat\msvcrt\snprintf.h"
