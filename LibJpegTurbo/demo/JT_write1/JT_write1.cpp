@@ -8,7 +8,7 @@
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	///// feak start 
+	///// fake start 
 	auto width = 320;
 	auto height = 240;
 	auto compoents = 3;//rgb
@@ -20,7 +20,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	for (auto& item : datas){
 		item = (++val) % 256;
 	}
-	//////// feak end...
+	//////// fake end...
 
 	unsigned char * output = tjAlloc(TJBUFSIZE(width, height));
 	auto handleCompress = tjInitCompress();
