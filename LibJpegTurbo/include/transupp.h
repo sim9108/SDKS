@@ -24,6 +24,11 @@
 #define TRANSFORMS_SUPPORTED 1          /* 0 disables transform code */
 #endif
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
 /*
  * Although rotating and flipping data expressed as DCT coefficients is not
  * hard, there is an asymmetry in the JPEG format specification for images
@@ -204,3 +209,7 @@ EXTERN(void) jcopy_markers_setup
 EXTERN(void) jcopy_markers_execute
         (j_decompress_ptr srcinfo, j_compress_ptr dstinfo,
          JCOPY_OPTION option);
+
+#ifdef __cplusplus
+}
+#endif
