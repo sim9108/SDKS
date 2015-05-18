@@ -7,6 +7,9 @@
 #include <iostream>
 #include <vector>
 
+typedef std::vector<png_byte> ROW_DATA;
+typedef std::vector<ROW_DATA> IMAGE_DATA;
+
 void error_handler(png_structp ptr, png_const_charp warning){
 	throw std::runtime_error(warning);
 }
@@ -45,7 +48,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				std::cout << "update width:" << width << " height:" << height << " color_type:" << (int)color_type << " bit_depth:" << (int)bit_depth << " bytes_stride:" << bytes_stride << std::endl;
 				
 				//DECODE REQUIRE
-				auto number_of_passess = png_set_interlace_handling(read_ptr);
+				
 				if ( !(PNG_COLOR_MASK_ALPHA & color_type))	png_set_add_alpha(read_ptr, 0xFF, PNG_FILLER_AFTER);
 				if ( PNG_COLOR_TYPE_GRAY_ALPHA == color_type || PNG_COLOR_TYPE_GRAY == color_type) png_set_gray_to_rgb(read_ptr);				
 				if (bit_depth>8) png_set_strip_16(read_ptr);
@@ -54,10 +57,11 @@ int _tmain(int argc, _TCHAR* argv[])
 				if (bit_depth<8) png_set_expand(read_ptr);
 				if (png_get_valid(read_ptr, info_ptr, PNG_INFO_tRNS)) png_set_expand(read_ptr);
 
-				//
+				auto number_of_passess = png_set_interlace_handling(read_ptr);
+
 				png_set_bgr(read_ptr);
 								
-				//update
+				//update				
 				png_read_update_info(read_ptr, info_ptr);				
 
 				width = png_get_image_width(read_ptr, info_ptr);
@@ -67,11 +71,18 @@ int _tmain(int argc, _TCHAR* argv[])
 				bytes_stride = png_get_rowbytes(read_ptr, info_ptr);
 				std::cout << "update width:" << width << " height:" << height << " color_type:" << (int)color_type << " bit_depth:" << (int)bit_depth <<" bytes_stride:" << bytes_stride << std::endl;
 
-				///
-				std::vector<unsigned char> row(bytes_stride);
+				///				
+				IMAGE_DATA rows(height);
+				for (auto& item : rows){
+					item.resize(bytes_stride);
+				}
 
-				for (unsigned int h = 0; h < height; ++h){
-					png_read_row(read_ptr, row.data(), nullptr);
+				png_byte* m[1];
+				for (int pass = 0; pass < number_of_passess; ++pass){
+				for (unsigned int h = 0; h < height; ++h){		
+					m[0] = rows[h].data();
+					png_read_rows(read_ptr, m, nullptr,1);
+					}
 				};
 
 				png_read_end(read_ptr, info_ptr);
