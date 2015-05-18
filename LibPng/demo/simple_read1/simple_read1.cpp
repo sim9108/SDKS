@@ -25,13 +25,13 @@ int _tmain(int argc, _TCHAR* argv[])
 		png_infop info_ptr = png_create_info_struct(read_ptr);
 		do{			
 			if (!info_ptr) break;
+			FILE* fp = fopen("test.png", "rb");
+			if (!fp){
+				std::cout << "file not found." << std::endl;
+				break;
+			}
 
 			try{
-				FILE* fp = fopen("test.png", "rb");
-				if (!fp){
-					std::cout << "file not found." << std::endl;
-					break;
-				}
 
 				png_init_io(read_ptr, fp);
 
@@ -77,15 +77,15 @@ int _tmain(int argc, _TCHAR* argv[])
 				};
 
 				png_read_end(read_ptr, info_ptr);
-				fclose(fp);
-
 				std::cout << "complete" << std::endl;
 
 			}
 			catch (std::runtime_error& ex){
 				std::cout << ex.what() << std::endl;
-				break;
 			}
+
+			fclose(fp);
+
 		} while (false);
 		png_destroy_info_struct(read_ptr, &info_ptr);				
 
