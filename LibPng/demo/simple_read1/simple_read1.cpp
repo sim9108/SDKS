@@ -7,10 +7,6 @@
 #include <iostream>
 #include <vector>
 
-typedef std::vector<unsigned char> ROW_DATA;
-typedef std::vector<ROW_DATA>  IMAGE_DATA;
-typedef std::vector<unsigned char*>  PTR_DATA;
-
 void error_handler(png_structp ptr, png_const_charp warning){
 	throw std::runtime_error(warning);
 }
@@ -72,15 +68,14 @@ int _tmain(int argc, _TCHAR* argv[])
 				std::cout << "update width:" << width << " height:" << height << " color_type:" << (int)color_type << " bit_depth:" << (int)bit_depth <<" bytes_stride:" << bytes_stride << std::endl;
 
 				///
-				IMAGE_DATA datas(height);
-				PTR_DATA datas_ptr;
-				
-				for (auto& item : datas){
-					item.resize(bytes_stride);
-					datas_ptr.push_back(item.data());
-				}
+				std::vector<unsigned char> row(bytes_stride);
+				unsigned char* rows[1];
+				rows[0] = row.data();
 
-				png_read_image(read_ptr, datas_ptr.data());
+				for (unsigned int y = 0; y < height; y++){
+					png_read_rows(read_ptr, rows, nullptr, 1);
+				};
+
 				png_read_end(read_ptr, info_ptr);
 				fclose(fp);
 
