@@ -55,6 +55,8 @@ int _tmain(int argc, _TCHAR* argv[])
 				if ( PNG_COLOR_TYPE_PALETTE & color_type ) png_set_expand(read_ptr);
 				if (bit_depth>8) png_set_strip_16(read_ptr);
 				if (bit_depth<8) png_set_expand(read_ptr);
+				//
+				png_set_bgr(read_ptr);
 								
 				//update
 				png_read_update_info(read_ptr, info_ptr);				
