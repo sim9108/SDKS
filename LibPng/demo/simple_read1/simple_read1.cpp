@@ -72,7 +72,7 @@ int _tmain(int argc, _TCHAR* argv[])
 				unsigned char* rows[1];
 				rows[0] = row.data();
 
-				for (unsigned int y = 0; y < height; y++){
+				for (unsigned int h = 0; h < height; ++h){
 					png_read_rows(read_ptr, rows, nullptr, 1);
 				};
 
