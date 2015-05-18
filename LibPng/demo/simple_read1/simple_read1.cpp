@@ -69,11 +69,9 @@ int _tmain(int argc, _TCHAR* argv[])
 
 				///
 				std::vector<unsigned char> row(bytes_stride);
-				unsigned char* rows[1];
-				rows[0] = row.data();
 
 				for (unsigned int h = 0; h < height; ++h){
-					png_read_rows(read_ptr, rows, nullptr, 1);
+					png_read_row(read_ptr, row.data(), nullptr);
 				};
 
 				png_read_end(read_ptr, info_ptr);
