@@ -47,15 +47,14 @@ int _tmain(int argc, _TCHAR* argv[])
 				auto bytes_stride = png_get_rowbytes(read_ptr, info_ptr);
 				std::cout << "update width:" << width << " height:" << height << " color_type:" << (int)color_type << " bit_depth:" << (int)bit_depth << " bytes_stride:" << bytes_stride << std::endl;
 				
-				//DECODE REQUIRE
-				
+				//DECODE REQUIRE				
 				if ( !(PNG_COLOR_MASK_ALPHA & color_type))	png_set_add_alpha(read_ptr, 0xFF, PNG_FILLER_AFTER);
 				if ( PNG_COLOR_TYPE_GRAY_ALPHA == color_type || PNG_COLOR_TYPE_GRAY == color_type) png_set_gray_to_rgb(read_ptr);				
 				if (bit_depth>8) png_set_strip_16(read_ptr);
 
-				if (PNG_COLOR_TYPE_PALETTE & color_type) png_set_expand(read_ptr);
+				if (PNG_COLOR_TYPE_PALETTE & color_type) png_set_palette_to_rgb(read_ptr);
 				if (bit_depth<8) png_set_expand(read_ptr);
-				if (png_get_valid(read_ptr, info_ptr, PNG_INFO_tRNS)) png_set_expand(read_ptr);
+				if (png_get_valid(read_ptr, info_ptr, PNG_INFO_tRNS)) png_set_tRNS_to_alpha(read_ptr);
 
 				auto number_of_passess = png_set_interlace_handling(read_ptr);
 
