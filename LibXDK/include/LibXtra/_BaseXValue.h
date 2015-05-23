@@ -74,6 +74,21 @@ public:
 	void reset();
 
 	template<typename T>
+	T* rptr(int rows){
+		if (rows >= this->height()) rows = 0;
+		return  reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*(this->height()-rows-1));
+	}
+
+	template<typename T>
+	T* rptr(int rows, int cols){
+		if (rows >= this->height()) rows = 0;
+		if (cols >= this->width()) cols = 0;
+
+		return reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*(this->height() - rows - 1) + cols* info_.iTotalDepth / 8);
+	}
+
+
+	template<typename T>
 	T* ptr(int rows){
 		if (rows >= this->height()) rows = 0;
 		return  reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*rows);
