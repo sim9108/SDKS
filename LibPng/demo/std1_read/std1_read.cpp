@@ -26,7 +26,14 @@ int _tmain(int argc, _TCHAR* argv[])
 
 	PNG::IMAGE datas;
 	PNG::PngReader reader;
-	reader << fp << PNG::read_info<<print <<PNG::set_rgba<< PNG::set_bgr << PNG::read_update_info<<print >> datas;
+	reader 
+		<< fp 
+		<< PNG::read_info<<print 
+		<<PNG::set_rgba
+		<< PNG::set_bgr 
+		<< PNG::read_update_info
+		<<print 
+		>> datas;
 	
 
 	fclose(fp);
