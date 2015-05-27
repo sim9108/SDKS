@@ -23,10 +23,7 @@ int _tmain(int argc, _TCHAR* argv[])
 {
 	png_structp write_ptr = png_create_write_struct(
 		PNG_LIBPNG_VER_STRING,
-		0, 
-		nullptr,
-		nullptr
-		);
+		0, nullptr,nullptr);
 
 	do{
 		if (!write_ptr) break;
@@ -34,7 +31,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		png_set_error_fn(write_ptr, 0, error_handler, warning_handler);
 		png_infop info_ptr = png_create_info_struct(write_ptr);
 		try{
-
 			FILE* fp = fopen("test.png", "wb");
 			if (!fp){
 				std::cout << "file not found." << std::endl;
