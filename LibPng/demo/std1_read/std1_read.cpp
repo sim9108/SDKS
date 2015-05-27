@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "PngReader.h"
+#include <iostream>
 
 void print(png_structp read_ptr, png_infop info_ptr){
 	auto width = png_get_image_width(read_ptr, info_ptr);

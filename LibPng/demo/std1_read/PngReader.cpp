@@ -1,4 +1,6 @@
 #include "PngReader.h"
+#include <stdexcept>
+#include <iostream>
 
 namespace PNG{
 	void error_handler(png_structp ptr, png_const_charp cmt){

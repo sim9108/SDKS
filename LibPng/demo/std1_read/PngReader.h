@@ -1,7 +1,5 @@
 #pragma once
 #include <png.h>
-#include <stdexcept>
-#include <iostream>
 #include <vector>
 // 반복적인 부분 요소 지원(메모리, 에러 핸들링,reading)
 // 추가로 필요한 확장_ 열어버리자.
