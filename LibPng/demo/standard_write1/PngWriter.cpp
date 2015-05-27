@@ -95,18 +95,6 @@ namespace PNG{
 		return *this;
 	}
 
-	PngWriter&
-	PngWriter::operator << (PNG_OP fn){
-		try{
-			fn(this->write_ptr_, this->info_ptr_);
-		}
-		catch (std::runtime_error& ex){
-			this->failed_ = true;
-			this->error_ = ex.what();
-		}
-		return *this;
-	}
-
 
 	void set_bgr(png_structp write_ptr, png_infop info_ptr){
 		png_set_bgr(write_ptr);
@@ -115,6 +103,5 @@ namespace PNG{
 	void write_info(png_structp write_ptr, png_infop info_ptr){
 		png_write_info(write_ptr, info_ptr);
 	}
-
-
+	
 }

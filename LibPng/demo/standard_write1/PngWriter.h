@@ -9,7 +9,6 @@ namespace PNG{
 	typedef std::vector<PIXEL> LINE;
 	typedef std::vector<LINE> IMAGE;
 
-	typedef void PNG_OP(png_structp, png_infop);
 
 	class PngWriter
 	{
@@ -25,10 +24,9 @@ namespace PNG{
 		~PngWriter();
 
 		PngWriter& operator >>(FILE* fp);
-		PngWriter& operator << (PNG_OP fn);
 
 		template<typename FN>
-		PngWriter& operator << (FN& fn){
+		PngWriter& operator << (FN fn){
 			try{
 				fn(this->write_ptr_, this->info_ptr_);
 			}
