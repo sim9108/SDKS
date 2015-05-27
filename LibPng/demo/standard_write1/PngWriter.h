@@ -26,7 +26,7 @@ namespace PNG{
 		PngWriter& operator >>(FILE* fp);
 
 		template<typename FN>
-		PngWriter& operator << (FN fn){
+		PngWriter& operator << (FN&& fn){
 			try{
 				fn(this->write_ptr_, this->info_ptr_);
 			}
