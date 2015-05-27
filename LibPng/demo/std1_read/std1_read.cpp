@@ -13,7 +13,6 @@ void print(png_structp read_ptr, png_infop info_ptr){
 
 	std::cout << "init: " << "width:" << width << " height:" << height << " color type:" << (int)color_type
 		<< " bit_depth:" << (int)bit_depth << " bytes_stride:" << bytes_stride << std::endl;
-
 }
 
 int _tmain(int argc, _TCHAR* argv[])

@@ -32,7 +32,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		try{
 			FILE* fp = fopen("test.png", "rb");
 			if (!fp){
-				std::cout << " file not found." << std::endl;
+				std::cout << "file not found." << std::endl;
 				break;
 			}
 
@@ -87,6 +87,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			}
 
 			png_read_end(read_ptr, info_ptr);
+			fclose(fp);
 			std::cout << "complete" << std::endl;
 						
 		}
@@ -94,6 +95,7 @@ int _tmain(int argc, _TCHAR* argv[])
 			std::cout <<"error:"<< ex.what() << std::endl; // exception-safty
 		}
 		png_destroy_info_struct(read_ptr, &info_ptr);
+		
 
 	} while (false);
 
