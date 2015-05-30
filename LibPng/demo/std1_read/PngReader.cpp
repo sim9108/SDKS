@@ -49,9 +49,7 @@ namespace PNG{
 	PngReader::error_string(){
 			return this->error_;
 	}
-
-
-
+	
 	PngReader& 
 	PngReader::operator >>(IMAGE& datas){
 		try{

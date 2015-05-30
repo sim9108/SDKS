@@ -27,7 +27,7 @@ namespace PNG{
 		png_destroy_info_struct(write_ptr_, &info_ptr_);
 		png_destroy_write_struct(&write_ptr_, nullptr);
 	}
-
+	
 	PngWriter&
 	PngWriter::operator>>(FILE* fp){
 		try{
@@ -104,4 +104,36 @@ namespace PNG{
 		png_write_info(write_ptr, info_ptr);
 	}
 	
+	CALLFN get_height(unsigned int & mvalue){
+		auto fn = [&](png_structp write_ptr, png_infop info_ptr){
+			mvalue = png_get_image_height(write_ptr, info_ptr);
+		};
+		return fn;
+	}
+
+	CALLFN get_width(unsigned int & mvalue){
+		auto fn = [&](png_structp write_ptr, png_infop info_ptr){
+			mvalue = png_get_image_width(write_ptr, info_ptr);
+		};
+		return fn;
+	}
+
+
+	CALLFN set_IDHR(png_uint_32 width, png_uint_32 height, int bit_depth,
+		int color_type, int interlace_method, int compression_method,
+		int filter_method){
+
+		auto fn = [=](png_structp write_ptr, png_infop info_ptr){
+			png_set_IHDR(
+				write_ptr, info_ptr,
+				width, height, bit_depth,
+				color_type, interlace_method,
+				compression_method,
+				filter_method
+				);
+		};
+		return fn;
+	}
+
+
 }

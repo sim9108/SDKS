@@ -17,23 +17,20 @@ int _tmain(int argc, _TCHAR* argv[])
 	auto width = 320;
 	auto height = 240;
 	auto bit_depth = 8;
-	PNG::LINE rows(width*4);
+	PNG::LINE rows(width * 4);
 
-	writer 
-		>> fp 
-		<< 	[&](png_structp write_ptr, png_infop info_ptr){
-				png_set_IHDR(
-					write_ptr, info_ptr,
-					width, height, bit_depth,
-					PNG_COLOR_TYPE_RGB_ALPHA, PNG_INTERLACE_NONE,
-					PNG_COMPRESSION_TYPE_DEFAULT,
-					PNG_FILTER_TYPE_DEFAULT
-				);
-			} 
-		<< PNG::set_bgr 
-		<< PNG::write_info 
+	writer
+		>> fp
+		<< PNG::set_IDHR(
+			width, height, bit_depth,
+			PNG_COLOR_TYPE_RGB_ALPHA, PNG_INTERLACE_NONE,
+			PNG_COMPRESSION_TYPE_DEFAULT,
+			PNG_FILTER_TYPE_DEFAULT
+			)
+	<< PNG::set_bgr
+		<< PNG::write_info
 		<< rows;
-
+		
 	fclose(fp);
 	std::cout << "complete" << std::endl;
 	std::cin.get();
