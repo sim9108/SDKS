@@ -117,15 +117,13 @@ namespace PNG{
 		};
 		return fn;
 	}
-
-
+	
 	CALLFN set_IDHR(png_uint_32 width, png_uint_32 height, int bit_depth,
 		int color_type, int interlace_method, int compression_method,
 		int filter_method){
 
 		auto fn = [=](png_structp write_ptr, png_infop info_ptr){
-			png_set_IHDR(
-				write_ptr, info_ptr,
+			png_set_IHDR(write_ptr, info_ptr,
 				width, height, bit_depth,
 				color_type, interlace_method,
 				compression_method,

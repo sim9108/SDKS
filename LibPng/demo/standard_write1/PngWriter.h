@@ -9,7 +9,6 @@ namespace PNG{
 	typedef std::vector<PIXEL> LINE;
 	typedef std::vector<LINE> IMAGE;
 
-
 	class PngWriter
 	{
 	private:
