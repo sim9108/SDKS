@@ -12,7 +12,6 @@ typedef BYTE   PIXEL;
 typedef std::vector<PIXEL> LINE;
 typedef std::vector<LINE> IMAGE;
 
-
 void error_handler(png_structp ptr, png_const_charp cmt){
 	throw std::runtime_error(cmt);
 }
@@ -94,8 +93,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		catch (std::runtime_error& ex){
 			std::cout <<"error:"<< ex.what() << std::endl; // exception-safty
 		}
-		png_destroy_info_struct(read_ptr, &info_ptr);
-		
+		png_destroy_info_struct(read_ptr, &info_ptr);		
 
 	} while (false);
 
