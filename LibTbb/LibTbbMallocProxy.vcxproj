@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{33EA32D8-379D-4381-8006-1A56A5492423}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>LibTbb</RootNamespace>
+    <ProjectName>LibTbbMallocProxy</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4800</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <AdditionalLibraryDirectories>.\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibTbbMallocd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4221</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AddModuleNamesToAssembly>.\temp\$(Configuration)\tbb.def</AddModuleNamesToAssembly>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4221</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AddModuleNamesToAssembly>.\temp\$(Configuration)\tbb.def</AddModuleNamesToAssembly>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <AdditionalLibraryDirectories>.\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibTbbMallocMTd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <AdditionalLibraryDirectories>.\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibTbbMalloc.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBBMALLOC_BUILD;USE_WINTHREAD;__TBB_BUILD;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBTBB_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include\;.\src;.\src\rml\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AddModuleNamesToAssembly>
+      </AddModuleNamesToAssembly>
+      <AdditionalLibraryDirectories>.\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibTbbMallocMT.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\serial\tbb\parallel_for.h" />
+    <ClInclude Include="include\serial\tbb\tbb_annotate.h" />
+    <ClInclude Include="include\tbb\aggregator.h" />
+    <ClInclude Include="include\tbb\aligned_space.h" />
+    <ClInclude Include="include\tbb\atomic.h" />
+    <ClInclude Include="include\tbb\blocked_range.h" />
+    <ClInclude Include="include\tbb\blocked_range2d.h" />
+    <ClInclude Include="include\tbb\blocked_range3d.h" />
+    <ClInclude Include="include\tbb\cache_aligned_allocator.h" />
+    <ClInclude Include="include\tbb\combinable.h" />
+    <ClInclude Include="include\tbb\compat\ppl.h" />
+    <ClInclude Include="include\tbb\concurrent_hash_map.h" />
+    <ClInclude Include="include\tbb\concurrent_lru_cache.h" />
+    <ClInclude Include="include\tbb\concurrent_priority_queue.h" />
+    <ClInclude Include="include\tbb\concurrent_queue.h" />
+    <ClInclude Include="include\tbb\concurrent_unordered_map.h" />
+    <ClInclude Include="include\tbb\concurrent_unordered_set.h" />
+    <ClInclude Include="include\tbb\concurrent_vector.h" />
+    <ClInclude Include="include\tbb\critical_section.h" />
+    <ClInclude Include="include\tbb\enumerable_thread_specific.h" />
+    <ClInclude Include="include\tbb\flow_graph.h" />
+    <ClInclude Include="include\tbb\global_control.h" />
+    <ClInclude Include="include\tbb\internal\_aggregator_impl.h" />
+    <ClInclude Include="include\tbb\internal\_concurrent_queue_impl.h" />
+    <ClInclude Include="include\tbb\internal\_concurrent_unordered_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_indexer_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_item_buffer_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_join_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_node_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_tagged_buffer_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_trace_impl.h" />
+    <ClInclude Include="include\tbb\internal\_flow_graph_types_impl.h" />
+    <ClInclude Include="include\tbb\internal\_mutex_padding.h" />
+    <ClInclude Include="include\tbb\internal\_range_iterator.h" />
+    <ClInclude Include="include\tbb\internal\_tbb_strings.h" />
+    <ClInclude Include="include\tbb\internal\_tbb_windef.h" />
+    <ClInclude Include="include\tbb\internal\_template_helpers.h" />
+    <ClInclude Include="include\tbb\internal\_x86_eliding_mutex_impl.h" />
+    <ClInclude Include="include\tbb\internal\_x86_rtm_rw_mutex_impl.h" />
+    <ClInclude Include="include\tbb\machine\gcc_armv7.h" />
+    <ClInclude Include="include\tbb\machine\gcc_generic.h" />
+    <ClInclude Include="include\tbb\machine\gcc_ia32_common.h" />
+    <ClInclude Include="include\tbb\machine\gcc_itsx.h" />
+    <ClInclude Include="include\tbb\machine\ibm_aix51.h" />
+    <ClInclude Include="include\tbb\machine\icc_generic.h" />
+    <ClInclude Include="include\tbb\machine\linux_common.h" />
+    <ClInclude Include="include\tbb\machine\linux_ia32.h" />
+    <ClInclude Include="include\tbb\machine\linux_ia64.h" />
+    <ClInclude Include="include\tbb\machine\linux_intel64.h" />
+    <ClInclude Include="include\tbb\machine\macos_common.h" />
+    <ClInclude Include="include\tbb\machine\mac_ppc.h" />
+    <ClInclude Include="include\tbb\machine\mic_common.h" />
+    <ClInclude Include="include\tbb\machine\msvc_armv7.h" />
+    <ClInclude Include="include\tbb\machine\msvc_ia32_common.h" />
+    <ClInclude Include="include\tbb\machine\sunos_sparc.h" />
+    <ClInclude Include="include\tbb\machine\windows_api.h" />
+    <ClInclude Include="include\tbb\machine\windows_ia32.h" />
+    <ClInclude Include="include\tbb\machine\windows_intel64.h" />
+    <ClInclude Include="include\tbb\machine\xbox360_ppc.h" />
+    <ClInclude Include="include\tbb\memory_pool.h" />
+    <ClInclude Include="include\tbb\mutex.h" />
+    <ClInclude Include="include\tbb\null_mutex.h" />
+    <ClInclude Include="include\tbb\null_rw_mutex.h" />
+    <ClInclude Include="include\tbb\parallel_do.h" />
+    <ClInclude Include="include\tbb\parallel_for.h" />
+    <ClInclude Include="include\tbb\parallel_for_each.h" />
+    <ClInclude Include="include\tbb\parallel_invoke.h" />
+    <ClInclude Include="include\tbb\parallel_reduce.h" />
+    <ClInclude Include="include\tbb\parallel_scan.h" />
+    <ClInclude Include="include\tbb\parallel_sort.h" />
+    <ClInclude Include="include\tbb\parallel_while.h" />
+    <ClInclude Include="include\tbb\partitioner.h" />
+    <ClInclude Include="include\tbb\pipeline.h" />
+    <ClInclude Include="include\tbb\queuing_mutex.h" />
+    <ClInclude Include="include\tbb\queuing_rw_mutex.h" />
+    <ClInclude Include="include\tbb\reader_writer_lock.h" />
+    <ClInclude Include="include\tbb\recursive_mutex.h" />
+    <ClInclude Include="include\tbb\runtime_loader.h" />
+    <ClInclude Include="include\tbb\scalable_allocator.h" />
+    <ClInclude Include="include\tbb\spin_mutex.h" />
+    <ClInclude Include="include\tbb\spin_rw_mutex.h" />
+    <ClInclude Include="include\tbb\task.h" />
+    <ClInclude Include="include\tbb\task_arena.h" />
+    <ClInclude Include="include\tbb\task_group.h" />
+    <ClInclude Include="include\tbb\task_scheduler_init.h" />
+    <ClInclude Include="include\tbb\task_scheduler_observer.h" />
+    <ClInclude Include="include\tbb\tbb.h" />
+    <ClInclude Include="include\tbb\tbbmalloc_proxy.h" />
+    <ClInclude Include="include\tbb\tbb_allocator.h" />
+    <ClInclude Include="include\tbb\tbb_config.h" />
+    <ClInclude Include="include\tbb\tbb_exception.h" />
+    <ClInclude Include="include\tbb\tbb_machine.h" />
+    <ClInclude Include="include\tbb\tbb_profiling.h" />
+    <ClInclude Include="include\tbb\tbb_stddef.h" />
+    <ClInclude Include="include\tbb\tbb_thread.h" />
+    <ClInclude Include="include\tbb\tick_count.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\tbb\compat\condition_variable" />
+    <None Include="include\tbb\compat\thread" />
+    <None Include="include\tbb\compat\tuple" />
+    <None Include="include\version_string.ver" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\tbbmalloc\proxy.cpp" />
+    <ClCompile Include="src\tbbmalloc\tbb_function_replacement.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
