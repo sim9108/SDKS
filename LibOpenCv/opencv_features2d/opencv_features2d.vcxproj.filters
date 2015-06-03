@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{b4cf89c3-7f44-4fa9-8677-55805044554e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{dcea61eb-81e9-49a1-b5be-95a6ee5330ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c6f54370-67e8-4cba-bf39-2c01a42d2532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{67ac94a5-e7bd-45ab-90bc-f9e9e1a8a845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\kaze">
+      <UniqueIdentifier>{46793580-0218-44a6-950d-eab6861ebb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{fa66ad37-f757-4435-935f-bc40aabcabfb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\features2d.hpp">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\features2d\features2d.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fast_score.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opencl_kernels_features2d.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\AKAZEConfig.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\AKAZEFeatures.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\fed.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\KAZEConfig.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\KAZEFeatures.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\nldiffusion_functions.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\TEvolution.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+    <ClInclude Include="src\kaze\utils.h">
+      <Filter>src\kaze</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\akaze.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bagofwords.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blobdetector.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\brisk.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\draw.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dynamic.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\evaluation.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fast.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fast_score.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\feature2d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gftt.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kaze.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\keypoint.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matchers.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mser.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencl_kernels_features2d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_features2d_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\orb.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kaze\AKAZEFeatures.cpp">
+      <Filter>src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kaze\fed.cpp">
+      <Filter>src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kaze\KAZEFeatures.cpp">
+      <Filter>src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kaze\nldiffusion_functions.cpp">
+      <Filter>src\kaze</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\opencl\brute_force_match.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="src\opencl\fast.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="src\opencl\orb.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

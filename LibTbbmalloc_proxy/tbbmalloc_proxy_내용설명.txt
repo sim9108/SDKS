@@ -1,0 +1,13 @@
+proxy.cpp
+error C2664: 'void ReplaceFunctionWithStore(const wchar_t *,const char *,FUNCPTR,const char **,FUNCPTR *)' :
+cannot convert argument 1 from 'const char [13]' to 'const wchar_t *'
+
+Use Multi-Byte Character Set
+
+..\LibTbbmalloc\lib		LibTbbmallocd.lib		LibTbbmalloc.lib
+
+    <ClInclude Include="src\tbbmalloc\tbb_function_replacement.h" />
+    <ClInclude Include="include\tbb\tbbmalloc_proxy.h" />
+
+    <ClCompile Include="src\tbbmalloc\proxy.cpp" />
+    <ClCompile Include="src\tbbmalloc\tbb_function_replacement.cpp" />

@@ -1,0 +1,33 @@
+http://opencv.org
+http://opencv.org/opencv-3-0-rc1.html
+https://github.com/Itseez/opencv/archive/3.0.0-rc1.zip
+
+https://github.com/itseez/opencv
+
+opencv_halSd.lib,  opencv_halSMTd.lib
+/ignore:4221
+
+.\include;.\src;..\include
+
+Static library (.lib) - ¸¸ »ç¿ë
+
+__OPENCV_BUILD=1
+
+opencv_hal
+opencv_core
+opencv_imgproc
+opencv_imgcodecs
+opencv_videoio
+opencv_ml
+opencv_flann
+opencv_highgui
+opencv_features2d
+opencv_video
+opencv_calib3d
+opencv_objdetect
+opencv_ts
+opencv_superres
+opencv_stitching
+opencv_shape
+opencv_photo
+opencv_videostab

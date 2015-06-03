@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{ede467c0-0817-46b0-af3c-20a1e9134588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c12b42df-188c-49a2-a185-c5e011400c6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{959c38fb-f381-4b6a-b72f-e9ba4b300c09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\superres">
+      <UniqueIdentifier>{53856e52-88f1-4866-96e2-6ee3ac3ccc47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{07123776-d90e-47af-8912-252f6e55104c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cuda">
+      <UniqueIdentifier>{4b743f73-43ba-4260-b77a-c7a65a4f5ec3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{d833c815-df70-4c4a-b2a3-4a0e690f1b33}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\superres.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\superres\optical_flow.hpp">
+      <Filter>include\opencv2\superres</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\input_array_utility.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opencl_kernels_superres.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ring_buffer.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\btv_l1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\btv_l1_cuda.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frame_source.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\input_array_utility.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencl_kernels_superres.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_superres_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optical_flow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\super_resolution.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\cuda\btv_l1_gpu.cu">
+      <Filter>src\cuda</Filter>
+    </None>
+    <None Include="src\opencl\superres_btvl1.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

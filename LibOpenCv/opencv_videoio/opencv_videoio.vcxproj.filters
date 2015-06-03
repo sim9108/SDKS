@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d333bea0-0731-4b48-b78e-b56a28bc1942}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{a01185b2-81c9-471b-b84f-803971d4d25e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{e47b81f5-e5a5-4318-b61d-f3e918b64751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\videoio">
+      <UniqueIdentifier>{34ca5dce-f43b-4351-8757-3b4abe3d69be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{a136c65e-f1f7-49af-9fce-d4d25b268073}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\videoio.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\cap_ios.h">
+      <Filter>include\opencv2\videoio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\videoio.hpp">
+      <Filter>include\opencv2\videoio</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\videoio\videoio_c.h">
+      <Filter>include\opencv2\videoio</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cap_dshow.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\cap_ffmpeg_impl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_cmu.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_dshow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_ffmpeg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_images.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_mjpeg_decoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_mjpeg_encoder.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cap_vfw.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_videoio_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB7550AC-BD68-426A-A669-18ADFCAB4A04}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>opencv_imgcodecs</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_cored.lib;opencv_halSd.lib;opencv_imgprocd.lib;LibIlmImfd.lib;LibJasperd.lib;LibJpegTurbod.lib;LibPngd.lib;LibTiffd.lib;LibZd.lib;LibMathd.lib;LibLexd.lib;LibHalfd.lib;LibTbbd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_cored.lib;opencv_halSd.lib;opencv_imgprocd.lib;LibIlmImfd.lib;LibJasperd.lib;LibJpegTurbod.lib;LibPngd.lib;LibTiffd.lib;LibZd.lib;LibMathd.lib;LibLexd.lib;LibHalfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMTd.lib;opencv_halSMTd.lib;opencv_imgprocMTd.lib;LibIlmImfMTd.lib;LibJasperMTd.lib;LibJpegTurboMTd.lib;LibPngMTd.lib;LibTiffMTd.lib;LibZMTd.lib;LibMathMTd.lib;LibLexMTd.lib;LibHalfMTd.lib;LibTbbMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMTd.lib;opencv_halSMTd.lib;opencv_imgprocMTd.lib;LibIlmImfMTd.lib;LibJasperMTd.lib;LibJpegTurboMTd.lib;LibPngMTd.lib;LibTiffMTd.lib;LibZMTd.lib;LibMathMTd.lib;LibLexMTd.lib;LibHalfMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_core.lib;opencv_halS.lib;opencv_imgproc.lib;LibIlmImf.lib;LibJasper.lib;LibJpegTurbo.lib;LibPng.lib;LibTiff.lib;LibZ.lib;LibMath.lib;LibLex.lib;LibHalf.lib;LibTbb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_core.lib;opencv_halS.lib;opencv_imgproc.lib;LibIlmImf.lib;LibJasper.lib;LibJpegTurbo.lib;LibPng.lib;LibTiff.lib;LibZ.lib;LibMath.lib;LibLex.lib;LibHalf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMT.lib;opencv_halSMT.lib;opencv_imgprocMT.lib;LibIlmImfMT.lib;LibJasperMT.lib;LibJpegTurboMT.lib;LibPngMT.lib;LibTiffMT.lib;LibZMT.lib;LibMathMT.lib;LibLexMT.lib;LibHalfMT.lib;LibTbbMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;OPENEXR_DLL;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_IMGCODECS_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\..\LibIppicv\include;..\opencv_imgproc\include;..\..\LibOpenExr\LibIlmImf\include;..\..\LibJasper\include;..\..\LibJpegTurbo\include;..\..\LibPng\include;..\..\LibTiff\include;..\..\LibOpenExr\LibMath\include;..\..\LibZ\include;..\..\LibOpenExr\include;..\..\LibOpenExr\LibLex\include;..\..\LibOpenExr\LibHalf\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4800;4275;4251;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibJasper\lib;..\..\LibJpegTurbo\lib;..\..\LibPng\lib;..\..\LibTiff\lib;..\..\LibZ\lib;..\..\LibOpenExr\LibLex\lib;..\..\LibOpenExr\LibHalf\lib;..\..\LibOpenExr\LibIlmImf\lib;..\..\LibOpenExr\LibMath\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMT.lib;opencv_halSMT.lib;opencv_imgprocMT.lib;LibIlmImfMT.lib;LibJasperMT.lib;LibJpegTurboMT.lib;LibPngMT.lib;LibTiffMT.lib;LibZMT.lib;LibMathMT.lib;LibLexMT.lib;LibHalfMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="include\opencv2\imgcodecs\imgcodecs.hpp" />
+    <ClInclude Include="include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="include\opencv2\imgcodecs\ios.h" />
+    <ClInclude Include="src\bitstrm.hpp" />
+    <ClInclude Include="src\grfmts.hpp" />
+    <ClInclude Include="src\grfmt_base.hpp" />
+    <ClInclude Include="src\grfmt_bmp.hpp" />
+    <ClInclude Include="src\grfmt_exr.hpp" />
+    <ClInclude Include="src\grfmt_gdal.hpp" />
+    <ClInclude Include="src\grfmt_hdr.hpp" />
+    <ClInclude Include="src\grfmt_jpeg.hpp" />
+    <ClInclude Include="src\grfmt_jpeg2000.hpp" />
+    <ClInclude Include="src\grfmt_png.hpp" />
+    <ClInclude Include="src\grfmt_pxm.hpp" />
+    <ClInclude Include="src\grfmt_sunras.hpp" />
+    <ClInclude Include="src\grfmt_tiff.hpp" />
+    <ClInclude Include="src\grfmt_webp.hpp" />
+    <ClInclude Include="src\precomp.hpp" />
+    <ClInclude Include="src\rgbe.hpp" />
+    <ClInclude Include="src\utils.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bitstrm.cpp" />
+    <ClCompile Include="src\grfmt_base.cpp" />
+    <ClCompile Include="src\grfmt_bmp.cpp" />
+    <ClCompile Include="src\grfmt_exr.cpp" />
+    <ClCompile Include="src\grfmt_gdal.cpp" />
+    <ClCompile Include="src\grfmt_hdr.cpp" />
+    <ClCompile Include="src\grfmt_jpeg.cpp" />
+    <ClCompile Include="src\grfmt_jpeg2000.cpp" />
+    <ClCompile Include="src\grfmt_png.cpp" />
+    <ClCompile Include="src\grfmt_pxm.cpp" />
+    <ClCompile Include="src\grfmt_sunras.cpp" />
+    <ClCompile Include="src\grfmt_tiff.cpp" />
+    <ClCompile Include="src\grfmt_webp.cpp" />
+    <ClCompile Include="src\loadsave.cpp" />
+    <ClCompile Include="src\opencv_imgcodecs_pch.cpp" />
+    <ClCompile Include="src\rgbe.cpp" />
+    <ClCompile Include="src\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\ios_conversions.mm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

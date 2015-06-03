@@ -1,0 +1,37 @@
+C4819:Save the file in Unicode format to prevent data loss
+warning C4996:_CRT_SECURE_NO_WARNINGS.
+
+CVAPI_EXPORTS <----  Static library (.lib) 삭제할것
+__OPENCV_BUILD=1
+
+C4251
+
+opencv_flannMTd, opencv_flannMT
+MT에서  -  warning C4275: non dll-interface class
+MT에만 경고 등록
+-----------------
+.\include;.\src;..\include
+..\opencv_core\include
+..\opencv_hal\include
+..\..\LibIppicv\include
+-----------------
+..\opencv_core\lib
+..\opencv_hal\lib
+..\..\LibIppicv\lib\ia32
+-----------------
+ippicvmt.lib
+opencv_cored.lib
+opencv_halSd.lib
+-----------------
+ippicvmt.lib
+opencv_core.lib
+opencv_halS.lib
+-----------------
+ippicvmt.lib
+opencv_coreMTd.lib
+opencv_halSMTd.lib
+-----------------
+ippicvmt.lib
+opencv_coreMT.lib
+opencv_halSMT.lib
+-----------------

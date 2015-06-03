@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{0fec594b-c561-4fab-98ee-33df72af3985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{53f2401a-0906-4eaf-905f-d12b80b934be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f33ececa-38d8-4d44-bbae-0943112016ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{40a57cc7-c843-4261-bcac-013e906459d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\photo">
+      <UniqueIdentifier>{6fcc94b0-5047-434f-8945-7b6a58ff15ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\cuda">
+      <UniqueIdentifier>{94143842-6f37-474b-ba3c-e15bbe2ef4b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{197926e4-7896-4826-9f87-428ca79c8ba7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\cuda.hpp">
+      <Filter>include\opencv2\photo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\photo.hpp">
+      <Filter>include\opencv2\photo</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\photo\photo_c.h">
+      <Filter>include\opencv2\photo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\arrays.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\contrast_preserve.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fast_nlmeans_denoising_invoker.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fast_nlmeans_denoising_invoker_commons.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fast_nlmeans_denoising_opencl.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fast_nlmeans_multi_denoising_invoker.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\hdr_common.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\npr.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opencl_kernels_photo.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\seamless_cloning.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\align.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calibrate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\contrast_preserve.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\denoise_tvl1.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\denoising.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\denoising.cuda.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hdr_common.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\inpaint.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\merge.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\npr.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencl_kernels_photo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_photo_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seamless_cloning.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\seamless_cloning_impl.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tonemap.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\cuda\nlm.cu">
+      <Filter>src\cuda</Filter>
+    </None>
+    <None Include="src\opencl\nlmeans.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

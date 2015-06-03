@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{2bd655ed-d021-4377-902a-83e493ad4e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{f9ddc08c-4176-4f93-8f55-5d65a3cfc3f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{b64ba3b3-d464-40e1-8d6d-2923dfc472cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\video">
+      <UniqueIdentifier>{cf009069-d5fa-449e-82da-5ea87917df5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{8c79afea-9163-4c3b-9a23-eaf1796d8316}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{f5c7c965-5f19-4be1-ab04-dfbeb2f033e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\video.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\background_segm.hpp">
+      <Filter>include\opencv2\video</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\tracking.hpp">
+      <Filter>include\opencv2\video</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\tracking_c.h">
+      <Filter>include\opencv2\video</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\video\video.hpp">
+      <Filter>include\opencv2\video</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\lkpyramid.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opencl_kernels_video.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\bgfg_gaussmix2.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\bgfg_KNN.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\camshift.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat_video.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ecc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\kalman.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lkpyramid.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencl_kernels_video.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_video_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\optflowgf.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tvl1flow.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\opencl\bgfg_mog2.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="src\opencl\optical_flow_farneback.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="src\opencl\optical_flow_tvl1.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+    <None Include="src\opencl\pyrlk.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

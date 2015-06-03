@@ -1,0 +1,383 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugMT|Win32">
+      <Configuration>DebugMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugSMT|Win32">
+      <Configuration>DebugSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugS|Win32">
+      <Configuration>DebugS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseMT|Win32">
+      <Configuration>ReleaseMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseSMT|Win32">
+      <Configuration>ReleaseSMT</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseS|Win32">
+      <Configuration>ReleaseS</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DCE2EA9-8BA5-4576-91F1-3CC3839E09B3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>opencv_calib3d</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)Sd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)S</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)MT</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib\</OutDir>
+    <IntDir>.\temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbd.lib;opencv_cored.lib;opencv_halSd.lib;opencv_features2dd.lib;opencv_flannd.lib;opencv_imgprocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_cored.lib;opencv_halSd.lib;opencv_features2dd.lib;opencv_flannd.lib;opencv_imgprocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbMTd.lib;opencv_coreMTd.lib;opencv_halSMTd.lib;opencv_features2dMTd.lib;opencv_flannMTd.lib;opencv_imgprocMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMTd.lib;opencv_halSMTd.lib;opencv_features2dMTd.lib;opencv_flannMTd.lib;opencv_imgprocMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <AdditionalOptions>/ignore:4221 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbb.lib;opencv_core.lib;opencv_halS.lib;opencv_features2d.lib;opencv_flann.lib;opencv_imgproc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_core.lib;opencv_halS.lib;opencv_features2d.lib;opencv_flann.lib;opencv_imgproc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;..\..\LibTbb\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbMT.lib;opencv_coreMT.lib;opencv_halSMT.lib;opencv_features2dMT.lib;opencv_flannMT.lib;opencv_imgprocMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_CALIB3D_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\opencv_core\lib;..\opencv_hal\lib;..\opencv_features2d\lib;..\opencv_flann\lib;..\..\LibIppicv\lib\ia32;..\opencv_imgproc\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;opencv_coreMT.lib;opencv_halSMT.lib;opencv_features2dMT.lib;opencv_flannMT.lib;opencv_imgprocMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cvconfig.h" />
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp" />
+    <ClInclude Include="include\opencv2\calib3d.hpp" />
+    <ClInclude Include="include\opencv2\calib3d\calib3d.hpp" />
+    <ClInclude Include="include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="src\circlesgrid.hpp" />
+    <ClInclude Include="src\dls.h" />
+    <ClInclude Include="src\epnp.h" />
+    <ClInclude Include="src\fisheye.hpp" />
+    <ClInclude Include="src\opencl_kernels_calib3d.hpp" />
+    <ClInclude Include="src\p3p.h" />
+    <ClInclude Include="src\polynom_solver.h" />
+    <ClInclude Include="src\precomp.hpp" />
+    <ClInclude Include="src\rho.h" />
+    <ClInclude Include="src\upnp.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\calibinit.cpp" />
+    <ClCompile Include="src\calibration.cpp" />
+    <ClCompile Include="src\checkchessboard.cpp" />
+    <ClCompile Include="src\circlesgrid.cpp" />
+    <ClCompile Include="src\compat_ptsetreg.cpp" />
+    <ClCompile Include="src\compat_stereo.cpp" />
+    <ClCompile Include="src\dls.cpp" />
+    <ClCompile Include="src\epnp.cpp" />
+    <ClCompile Include="src\fisheye.cpp" />
+    <ClCompile Include="src\five-point.cpp" />
+    <ClCompile Include="src\fundam.cpp" />
+    <ClCompile Include="src\homography_decomp.cpp" />
+    <ClCompile Include="src\levmarq.cpp" />
+    <ClCompile Include="src\opencl_kernels_calib3d.cpp" />
+    <ClCompile Include="src\opencv_calib3d_pch.cpp" />
+    <ClCompile Include="src\p3p.cpp" />
+    <ClCompile Include="src\polynom_solver.cpp" />
+    <ClCompile Include="src\posit.cpp" />
+    <ClCompile Include="src\ptsetreg.cpp" />
+    <ClCompile Include="src\quadsubpix.cpp" />
+    <ClCompile Include="src\rho.cpp" />
+    <ClCompile Include="src\solvepnp.cpp" />
+    <ClCompile Include="src\stereobm.cpp" />
+    <ClCompile Include="src\stereosgbm.cpp" />
+    <ClCompile Include="src\triangulate.cpp" />
+    <ClCompile Include="src\upnp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\opencl\stereobm.cl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

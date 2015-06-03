@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{27df2eb5-afbd-4832-b822-96ad5e5f16a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{02cfc49d-29df-49b0-a81e-d860eee4ad1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{f08d75a0-e966-4d6a-8f0d-9aae15516b38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\calib3d">
+      <UniqueIdentifier>{004ab667-139d-4c1d-9a02-100f763fd66b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{e3c85de6-bc65-49fb-9b51-1f0ccafdc5e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\opencl">
+      <UniqueIdentifier>{5c29f47f-1f8f-4a4b-9684-ac9893085f93}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\opencv2\calib3d.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\calib3d\calib3d.hpp">
+      <Filter>include\opencv2\calib3d</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\calib3d\calib3d_c.h">
+      <Filter>include\opencv2\calib3d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="src\circlesgrid.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\dls.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\epnp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fisheye.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opencl_kernels_calib3d.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\p3p.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\polynom_solver.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rho.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\upnp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\opencl\stereobm.cl">
+      <Filter>src\opencl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\calibinit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\calibration.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\checkchessboard.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\circlesgrid.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat_ptsetreg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\compat_stereo.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dls.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\epnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fisheye.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\five-point.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fundam.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\homography_decomp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\levmarq.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencl_kernels_calib3d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_calib3d_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\p3p.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\polynom_solver.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\posit.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ptsetreg.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\quadsubpix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rho.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\solvepnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stereobm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stereosgbm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\triangulate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\upnp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

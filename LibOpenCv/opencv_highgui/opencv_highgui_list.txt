@@ -1,0 +1,60 @@
+C4251
+
+LPCWSTR  <--  Use Multi-Byte Character Set
+warning C4251:
+
+C4819:Save the file in Unicode format to prevent data loss
+warning C4996:_CRT_SECURE_NO_WARNINGS.
+
+CVAPI_EXPORTS <----  Static library (.lib) 삭제할것
+__OPENCV_BUILD=1
+
+opencv_highguiSd.lib  opencv_highguiSMTd.lib
+warning LNK4221      /ignore:4221
+
+opencv_highguiMTd, opencv_highguiMT
+MT에서  -  warning C4275: non dll-interface class
+-----------------
+.\include;.\src;..\include
+..\opencv_core\include
+..\opencv_hal\include
+..\..\LibIppicv\include
+..\opencv_imgcodecs\include
+..\opencv_videoio\include
+..\opencv_imgproc\include
+-----------------
+..\opencv_core\lib
+..\opencv_hal\lib
+..\..\LibIppicv\lib\ia32
+..\opencv_imgcodecs\lib
+..\opencv_videoio\lib
+..\opencv_imgproc\lib
+-----------------
+ippicvmt.lib
+opencv_cored.lib
+opencv_halSd.lib
+opencv_imgcodecsd.lib
+opencv_videoiod.lib
+opencv_imgprocd.lib
+-----------------
+ippicvmt.lib
+opencv_core.lib
+opencv_halS.lib
+opencv_imgcodecs.lib
+opencv_videoio.lib
+opencv_imgproc.lib
+-----------------
+ippicvmt.lib
+opencv_coreMTd.lib
+opencv_halSMTd.lib
+opencv_imgcodecsMTd.lib
+opencv_videoioMTd.lib
+opencv_imgprocMTd.lib
+-----------------
+ippicvmt.lib
+opencv_coreMT.lib
+opencv_halSMT.lib
+opencv_imgcodecsMT.lib
+opencv_videoioMT.lib
+opencv_imgprocMT.lib
+-----------------

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opencv_shape", "opencv_shape.vcxproj", "{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		DebugMT|Win32 = DebugMT|Win32
+		DebugS|Win32 = DebugS|Win32
+		DebugSMT|Win32 = DebugSMT|Win32
+		Release|Win32 = Release|Win32
+		ReleaseMT|Win32 = ReleaseMT|Win32
+		ReleaseS|Win32 = ReleaseS|Win32
+		ReleaseSMT|Win32 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.Debug|Win32.Build.0 = Debug|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugS|Win32.Build.0 = DebugS|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.Release|Win32.ActiveCfg = Release|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.Release|Win32.Build.0 = Release|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{DA4F0C9E-DE48-457E-9059-FDDFFA9BBCAC}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,173 @@
+https://www.threadingbuildingblocks.org		tbb43_20150316oss_win.zip
+
+cl /nologo /TC /EP ../../src/tbb/win32-tbb-export.def /DTBB_USE_DEBUG /DDO_ITT_NOTIFY /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0400 /D__TBB_BUILD=1 /I./src /I./include >"$(IntDir)tbb.def"
+
+
+
+    <ClCompile Include="src\tbb\concurrent_hash_map.cpp" />
+    <ClCompile Include="src\tbb\concurrent_queue.cpp" />
+    <ClCompile Include="src\tbb\concurrent_vector.cpp" />
+    <ClCompile Include="src\tbb\dynamic_link.cpp" />
+    <ClCompile Include="src\tbb\itt_notify.cpp" />
+    <ClCompile Include="src\tbb\cache_aligned_allocator.cpp" />
+    <ClCompile Include="src\tbb\pipeline.cpp" />
+    <ClCompile Include="src\tbb\queuing_mutex.cpp" />
+    <ClCompile Include="src\tbb\queuing_rw_mutex.cpp" />
+    <ClCompile Include="src\tbb\reader_writer_lock.cpp" />
+    <ClCompile Include="src\tbb\spin_rw_mutex.cpp" />
+    <ClCompile Include="src\tbb\spin_mutex.cpp" />
+    <ClCompile Include="src\tbb\critical_section.cpp" />
+    <ClCompile Include="src\tbb\mutex.cpp" />
+    <ClCompile Include="src\tbb\recursive_mutex.cpp" />
+    <ClCompile Include="src\tbb\condition_variable.cpp" />
+    <ClCompile Include="src\tbb\tbb_thread.cpp" />
+    <ClCompile Include="src\tbb\concurrent_monitor.cpp" />
+    <ClCompile Include="src\tbb\semaphore.cpp" />
+    <ClCompile Include="src\tbb\private_server.cpp" />
+    <ClCompile Include="src\rml\client\rml_tbb.cpp" />
+    <ClCompile Include="src\tbb\tbb_misc.cpp" />
+    <ClCompile Include="src\tbb\tbb_misc_ex.cpp" />
+    <ClCompile Include="src\tbb\task.cpp" />
+    <ClCompile Include="src\tbb\task_group_context.cpp" />
+    <ClCompile Include="src\tbb\governor.cpp" />
+    <ClCompile Include="src\tbb\market.cpp" />
+    <ClCompile Include="src\tbb\arena.cpp" />
+    <ClCompile Include="src\tbb\scheduler.cpp" />
+    <ClCompile Include="src\tbb\observer_proxy.cpp" />
+    <ClCompile Include="src\tbb\tbb_statistics.cpp" />
+    <ClCompile Include="src\tbb\tbb_main.cpp" />
+    <ClCompile Include="src\tbb\x86_rtm_rw_mutex.cpp" />
+    <ClCompile Include="src\old\concurrent_vector_v2.cpp" />
+    <ClCompile Include="src\old\concurrent_queue_v2.cpp" />
+    <ClCompile Include="src\old\spin_rw_mutex_v2.cpp" />
+    <ClCompile Include="src\old\task_v2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\tbb\internal\_concurrent_queue_impl.h" />
+    <ClInclude Include="include\tbb\_tbb_windef.h" />
+    <ClInclude Include="include\tbb\aligned_space.h" />
+    <ClInclude Include="include\tbb\atomic.h" />
+    <ClInclude Include="include\tbb\blocked_range.h" />
+    <ClInclude Include="include\tbb\blocked_range2d.h" />
+    <ClInclude Include="include\tbb\blocked_range3d.h" />
+    <ClInclude Include="include\tbb\cache_aligned_allocator.h" />
+    <ClInclude Include="include\tbb\combinable.h" />
+    <ClInclude Include="include\tbb\concurrent_hash_map.h" />
+    <ClInclude Include="src\tbb\concurrent_monitor.h" />
+    <ClInclude Include="include\tbb\concurrent_priority_queue.h" />
+    <ClInclude Include="include\tbb\concurrent_queue.h" />
+    <ClInclude Include="src\old\concurrent_queue_v2.h" />
+    <ClInclude Include="include\tbb\concurrent_vector.h" />
+    <ClInclude Include="src\old\concurrent_vector_v2.h" />
+    <ClInclude Include="include\tbb\critical_section.h" />
+    <ClInclude Include="src\tbb\dynamic_link.h" />
+    <ClInclude Include="include\tbb\enumerable_thread_specific.h" />
+    <ClInclude Include="src\tbb\gate.h" />
+    <ClInclude Include="src\test\harness.h" />
+    <ClInclude Include="src\test\harness_allocator.h" />
+    <ClInclude Include="src\test\harness_assert.h" />
+    <ClInclude Include="src\test\harness_bad_expr.h" />
+    <ClInclude Include="src\test\harness_barrier.h" />
+    <ClInclude Include="src\test\harness_concurrency_tracker.h" />
+    <ClInclude Include="src\test\harness_cpu.h" />
+    <ClInclude Include="src\test\harness_eh.h" />
+    <ClInclude Include="src\test\harness_iterator.h" />
+    <ClInclude Include="src\test\harness_m128.h" />
+    <ClInclude Include="src\test\harness_memory.h" />
+    <ClInclude Include="src\test\harness_report.h" />
+    <ClInclude Include="include\tbb\machine\ibm_aix51.h" />
+    <ClInclude Include="src\tbb\itt_notify.h" />
+    <ClInclude Include="include\tbb\machine\linux_common.h" />
+    <ClInclude Include="include\tbb\machine\linux_ia32.h" />
+    <ClInclude Include="include\tbb\machine\linux_ia64.h" />
+    <ClInclude Include="include\tbb\machine\linux_intel64.h" />
+    <ClInclude Include="include\tbb\machine\mac_ppc.h" />
+    <ClInclude Include="include\tbb\mutex.h" />
+    <ClInclude Include="include\tbb\null_mutex.h" />
+    <ClInclude Include="include\tbb\null_rw_mutex.h" />
+    <ClInclude Include="include\tbb\parallel_do.h" />
+    <ClInclude Include="include\tbb\parallel_for.h" />
+    <ClInclude Include="include\tbb\parallel_for_each.h" />
+    <ClInclude Include="include\tbb\parallel_invoke.h" />
+    <ClInclude Include="include\tbb\parallel_reduce.h" />
+    <ClInclude Include="include\tbb\parallel_scan.h" />
+    <ClInclude Include="include\tbb\parallel_sort.h" />
+    <ClInclude Include="include\tbb\parallel_while.h" />
+    <ClInclude Include="include\tbb\partitioner.h" />
+    <ClInclude Include="include\tbb\pipeline.h" />
+    <ClInclude Include="include\tbb\compat\ppl.h" />
+    <ClInclude Include="include\tbb\queuing_mutex.h" />
+    <ClInclude Include="include\tbb\queuing_rw_mutex.h" />
+    <ClInclude Include="include\tbb\reader_writer_lock.h" />
+    <ClInclude Include="include\tbb\recursive_mutex.h" />
+    <ClInclude Include="include\tbb\scalable_allocator.h" />
+    <ClInclude Include="src\tbb\semaphore.h" />
+    <ClInclude Include="include\tbb\spin_mutex.h" />
+    <ClInclude Include="include\tbb\spin_rw_mutex.h" />
+    <ClInclude Include="src\old\spin_rw_mutex_v2.h" />
+    <ClInclude Include="include\tbb\task.h" />
+    <ClInclude Include="include\tbb\task_group.h" />
+    <ClInclude Include="include\tbb\task_scheduler_init.h" />
+    <ClInclude Include="include\tbb\task_scheduler_observer.h" />
+    <ClInclude Include="include\tbb\tbb.h" />
+    <ClInclude Include="include\tbb\tbb_allocator.h" />
+    <ClInclude Include="src\tbb\tbb_assert_impl.h" />
+    <ClInclude Include="include\tbb\tbb_config.h" />
+    <ClInclude Include="include\tbb\tbb_exception.h" />
+    <ClInclude Include="include\tbb\tbb_machine.h" />
+    <ClInclude Include="src\tbb\tbb_misc.h" />
+    <ClInclude Include="include\tbb\tbb_profiling.h" />
+    <ClInclude Include="include\tbb\tbb_stddef.h" />
+    <ClInclude Include="include\tbb\tbb_thread.h" />
+    <ClInclude Include="src\tbb\tbb_version.h" />
+    <ClInclude Include="include\tbb\tbbmalloc_proxy.h" />
+    <ClInclude Include="src\test\test_allocator.h" />
+    <ClInclude Include="src\test\test_allocator_STL.h" />
+    <ClInclude Include="include\tbb\tick_count.h" />
+    <ClInclude Include="src\tbb\tls.h" />
+    <ClInclude Include="include\tbb\machine\windows_ia32.h" />
+    <ClInclude Include="include\tbb\machine\windows_intel64.h" />
+  </ItemGroup>
+
+D:\Level1\SDKS\LibTbb\src\tbb\ia32-masm
+  /c /MD /O2 /Zi /EHsc /GR /Zc:forScope /Zc:wchar_t /D__TBB_LIB_NAME=tbb.lib /DDO_ITT_NOTIFY /GS /volatile:iso /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0502 /D__TBB_BUILD=1 /W4 /I../../src /I../../src/rml/include /I../../include
+
+Right-click on your project ->
+Properties -> 
+Configuration Properties ->
+Linker ->
+Advanced and changed "Image Has Safe Exception Handlers" to "No (/SAFESEH:NO)"
+
+  /c /MDd /Od /Ob0 /Zi /EHsc /GR /Zc:forScope /Zc:wchar_t
+TBB_USE_DEBUG 
+__TBB_LIB_NAME=tbb_debug.lib 
+DO_ITT_NOTIFY /GS /volatile:iso 
+USE_WINTHREAD 
+_WIN32_WINNT=0x0502 
+__TBB_BUILD=1
+
+ /W4 /I../../src /I../../src/rml/include /I../../include
+
+DO_ITT_NOTIFY 
+USE_WINTHREAD
+_CRT_SECURE_NO_DEPRECATE 
+_WIN32_WINNT=0x0502
+
+__TBB_BUILD=1 
+src/rml/include
+
+rml_tbb.h
+#include "../server/thread_monitor.h"
+
+/c /MDd /Od /Ob0 /Zi /EHsc /GR /Zc:forScope /Zc:wchar_t /DTBB_USE_DEBUG /D__TBB_LIB_NAME=tbb_debug.lib /DDO_ITT_NOTIFY /GS /volatile:iso /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0502 /D__TBB_BUILD=1 /W4 /I../../src /I../../src/rml/include /I../../include
+cl /nologo /TC /EP ../../src/tbb/win32-tbb-export.def /DTBB_USE_DEBUG /DDO_ITT_NOTIFY /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0400 /D__TBB_BUILD=1 /I../../src /I../../include >"$(IntDir)tbb.def"
+
+cl /nologo /TC /EP ../../src/tbb/win32-tbb-export.def /DTBB_USE_DEBUG /DDO_ITT_NOTIFY /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0400 /D__TBB_BUILD=1 /I../../src /I../../include >"$(IntDir)tbb.def"
+cl /nologo /TC /EP %(Identity) /DTBB_USE_DEBUG /DDO_ITT_NOTIFY /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0400 /D__TBB_BUILD=1 /I./src /I./include >"./tbb.def"
+
+generating tbb.def file
+./tbb.def
+
+$(IntDir)tbb.def;%(Outputs)
+-------------------------
+/ignore:4221

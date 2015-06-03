@@ -1,0 +1,86 @@
+LibTbbmalloc_proxy
+backend.cpp
+customize.h(168) : see declaration of 'tbb::internal::notify_type'
+__TBBMALLOC_BUILD=1
+warning C4800, C4146
+
+frontend.cpp
+fatal error C1083: Cannot open include file: 'version_string.ver': No such file or directory
+'version_string.ver'  <-- 파일찾아서 추가
+warning C4996: 'getenv  warning C4244: 'argument'
+
+large_objects.cpp
+warning C4018: '>'
+
+win32-tbbmalloc-export.def
+cl /nologo /TC /EP ./src/tbbmalloc/win32-tbbmalloc-export.def /DTBB_USE_DEBUG /DDO_ITT_NOTIFY
+ /DUSE_WINTHREAD /D_CRT_SECURE_NO_DEPRECATE /D_WIN32_WINNT=0x0400
+ /D__TBBMALLOC_BUILD=1 >".\tbbmalloc.def"
+
+	<ItemGroup>
+		<ClCompile Include="src\tbbmalloc\backend.cpp"/>
+		<ClCompile Include="src\tbbmalloc\large_objects.cpp"/>
+		<ClCompile Include="src\tbbmalloc\backref.cpp"/>
+		<ClCompile Include="src\tbbmalloc\tbbmalloc.cpp"/>
+		<ClCompile Include="src\tbb\itt_notify.cpp"/>
+		<ClCompile Include="src\tbbmalloc\frontend.cpp"/>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="include\tbb\internal\_concurrent_queue_impl.h"/>
+		<ClInclude Include="include\tbb\_tbb_windef.h"/>
+		<ClInclude Include="include\tbb\aligned_space.h"/>
+		<ClInclude Include="include\tbb\atomic.h"/>
+		<ClInclude Include="include\tbb\blocked_range.h"/>
+		<ClInclude Include="include\tbb\blocked_range2d.h"/>
+		<ClInclude Include="include\tbb\blocked_range3d.h"/>
+		<ClInclude Include="include\tbb\cache_aligned_allocator.h"/>
+		<ClInclude Include="include\tbb\combinable.h"/>
+		<ClInclude Include="include\tbb\concurrent_hash_map.h"/>
+		<ClInclude Include="include\tbb\concurrent_queue.h"/>
+		<ClInclude Include="include\tbb\concurrent_vector.h"/>
+		<ClInclude Include="include\tbb\critical_section.h"/>
+		<ClInclude Include="src\tbbmalloc\Customize.h"/>
+		<ClInclude Include="include\tbb\enumerable_thread_specific.h"/>
+		<ClInclude Include="src\tbbmalloc\LifoList.h"/>
+		<ClInclude Include="src\tbbmalloc\MapMemory.h"/>
+		<ClInclude Include="include\tbb\mutex.h"/>
+		<ClInclude Include="include\tbb\null_mutex.h"/>
+		<ClInclude Include="include\tbb\null_rw_mutex.h"/>
+		<ClInclude Include="include\tbb\parallel_do.h"/>
+		<ClInclude Include="include\tbb\parallel_for.h"/>
+		<ClInclude Include="include\tbb\parallel_for_each.h"/>
+		<ClInclude Include="include\tbb\parallel_invoke.h"/>
+		<ClInclude Include="include\tbb\parallel_reduce.h"/>
+		<ClInclude Include="include\tbb\parallel_scan.h"/>
+		<ClInclude Include="include\tbb\parallel_sort.h"/>
+		<ClInclude Include="include\tbb\parallel_while.h"/>
+		<ClInclude Include="include\tbb\partitioner.h"/>
+		<ClInclude Include="include\tbb\pipeline.h"/>
+		<ClInclude Include="src\tbbmalloc\proxy.h"/>
+		<ClInclude Include="include\tbb\queuing_mutex.h"/>
+		<ClInclude Include="include\tbb\queuing_rw_mutex.h"/>
+		<ClInclude Include="include\tbb\recursive_mutex.h"/>
+		<ClInclude Include="include\tbb\scalable_allocator.h"/>
+		<ClInclude Include="include\tbb\spin_mutex.h"/>
+		<ClInclude Include="include\tbb\spin_rw_mutex.h"/>
+		<ClInclude Include="src\tbbmalloc\Statistics.h"/>
+		<ClInclude Include="include\tbb\task.h"/>
+		<ClInclude Include="include\tbb\task_group.h"/>
+		<ClInclude Include="include\tbb\task_scheduler_init.h"/>
+		<ClInclude Include="include\tbb\task_scheduler_observer.h"/>
+		<ClInclude Include="include\tbb\tbb.h"/>
+		<ClInclude Include="include\tbb\tbb_allocator.h"/>
+		<ClInclude Include="include\tbb\tbb_config.h"/>
+		<ClInclude Include="include\tbb\tbb_exception.h"/>
+		<ClInclude Include="src\tbbmalloc\tbb_function_replacement.h"/>
+		<ClInclude Include="include\tbb\tbb_machine.h"/>
+		<ClInclude Include="include\tbb\tbb_profiling.h"/>
+		<ClInclude Include="include\tbb\tbb_stddef.h"/>
+		<ClInclude Include="include\tbb\tbb_thread.h"/>
+		<ClInclude Include="include\tbb\tbb_version.h"/>
+		<ClInclude Include="include\tbb\tbbmalloc_proxy.h"/>
+		<ClInclude Include="include\tbb\tick_count.h"/>
+		<ClInclude Include="src\tbbmalloc\TypeDefinitions.h"/>
+		<ClInclude Include="include\tbb\machine\windows_ia32.h"/>
+		<ClInclude Include="include\tbb\machine\windows_intel64.h"/>
+	</ItemGroup>

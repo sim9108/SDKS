@@ -1,0 +1,38 @@
+opencv_mlMTd.dll, opencv_mlMT
+MT에서  -  warning C4275: non dll-interface class
+MT에만 경고 등록
+
+CVAPI_EXPORTS <----  Static library (.lib) 삭제할것
+__OPENCV_BUILD=1
+
+4996;4251;
+
+opencv_mlSd.lib
+opencv_mlSMTd.lib
+/ignore:4221
+-----------------
+.\include;.\src;..\include
+..\opencv_core\include
+..\opencv_hal\include
+..\..\LibIppicv\include
+-----------------
+..\opencv_core\lib
+..\opencv_hal\lib
+..\..\LibIppicv\lib\ia32
+-----------------
+ippicvmt.lib
+opencv_cored.lib
+opencv_halSd.lib
+-----------------
+ippicvmt.lib
+opencv_core.lib
+opencv_halS.lib
+-----------------
+ippicvmt.lib
+opencv_coreMTd.lib
+opencv_halSMTd.lib
+-----------------
+ippicvmt.lib
+opencv_coreMT.lib
+opencv_halSMT.lib
+-----------------

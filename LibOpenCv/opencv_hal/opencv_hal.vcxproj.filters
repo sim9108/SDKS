@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{d270ab38-52b9-4bd3-a7ae-637203b192c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{e659257b-130f-4872-bfe5-149e0efec1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\opencv2">
+      <UniqueIdentifier>{ba250717-1cf9-4497-8fb2-99de6d8b1b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2">
+      <UniqueIdentifier>{24b4e3c4-1097-4f45-b115-ed298de2dd13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\opencv2\hal">
+      <UniqueIdentifier>{aa053abd-8cb0-4d5a-a03f-d1bafc84e4c4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\cvconfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\opencv2\opencv_modules.hpp">
+      <Filter>Header Files\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal\intrin_sse.hpp">
+      <Filter>include\opencv2\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal\defs.h">
+      <Filter>include\opencv2\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal\intrin.hpp">
+      <Filter>include\opencv2\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal\intrin_cpp.hpp">
+      <Filter>include\opencv2\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\hal\intrin_neon.hpp">
+      <Filter>include\opencv2\hal</Filter>
+    </ClInclude>
+    <ClInclude Include="src\precomp.hpp">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\arithm.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\color.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\filter.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mathfuncs.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\matrix.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opencv_hal_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\resize.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stat.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\warp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

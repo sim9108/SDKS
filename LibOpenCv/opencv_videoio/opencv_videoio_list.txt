@@ -1,0 +1,53 @@
+ICOpen  <-- Header   Vfw.h    Library  Vfw32.lib
+
+MT에서  -  warning C4275: non dll-interface class
+MT에만 경고 등록
+
+LPCWSTR   <---  Use Multi-Byte Character Set
+
+CVAPI_EXPORTS <----  Static library (.lib) 삭제할것
+__OPENCV_BUILD=1
+
+4996;4251;
+
+opencv_videoioSd.lib
+opencv_videoioSMTd.lib
+/ignore:4221
+-----------------
+.\include;.\src;..\include
+..\opencv_core\include
+..\opencv_hal\include
+..\..\LibIppicv\include
+..\opencv_imgcodecs\include
+..\opencv_imgproc\include
+-----------------
+..\opencv_core\lib
+..\opencv_hal\lib
+..\..\LibIppicv\lib\ia32
+..\opencv_imgcodecs\lib
+..\opencv_imgproc\lib
+-----------------
+ippicvmt.lib
+opencv_cored.lib
+opencv_halSd.lib
+opencv_imgcodecsd.lib
+opencv_imgprocd.lib
+-----------------
+ippicvmt.lib
+opencv_core.lib
+opencv_halS.lib
+opencv_imgcodecs.lib
+opencv_imgproc.lib
+-----------------
+ippicvmt.lib
+opencv_coreMTd.lib
+opencv_halSMTd.lib
+opencv_imgcodecsMTd.lib
+opencv_imgprocMTd.lib
+-----------------
+ippicvmt.lib
+opencv_coreMT.lib
+opencv_halSMT.lib
+opencv_imgcodecsMT.lib
+opencv_imgprocMT.lib
+-----------------

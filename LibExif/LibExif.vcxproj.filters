@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{900fc38e-79bc-45e7-bcc9-344d2fc7feab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{608c1170-ef1d-4fa5-ab72-6651b761225f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\canon">
+      <UniqueIdentifier>{7499d335-02c3-47b7-a266-369bffb9f98c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fuji">
+      <UniqueIdentifier>{28b9ea3e-f721-40d2-a025-7e850977ae3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\olympus">
+      <UniqueIdentifier>{e8bea27e-5bef-4802-8940-ded90e76bb1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\pentax">
+      <UniqueIdentifier>{98fb6fdc-e7ce-43e2-b622-db610083df0e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\config.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\canon\exif-mnote-data-canon.c">
+      <Filter>src\canon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\canon\mnote-canon-entry.c">
+      <Filter>src\canon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\canon\mnote-canon-tag.c">
+      <Filter>src\canon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fuji\exif-mnote-data-fuji.c">
+      <Filter>src\fuji</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fuji\mnote-fuji-entry.c">
+      <Filter>src\fuji</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fuji\mnote-fuji-tag.c">
+      <Filter>src\fuji</Filter>
+    </ClCompile>
+    <ClCompile Include="src\olympus\exif-mnote-data-olympus.c">
+      <Filter>src\olympus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\olympus\mnote-olympus-entry.c">
+      <Filter>src\olympus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\olympus\mnote-olympus-tag.c">
+      <Filter>src\olympus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pentax\exif-mnote-data-pentax.c">
+      <Filter>src\pentax</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pentax\mnote-pentax-entry.c">
+      <Filter>src\pentax</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pentax\mnote-pentax-tag.c">
+      <Filter>src\pentax</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-byte-order.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-content.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-entry.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-format.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-ifd.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-loader.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-log.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-mem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-mnote-data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-tag.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\exif-utils.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="export.def" />
+  </ItemGroup>
+</Project>

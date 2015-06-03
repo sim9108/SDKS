@@ -1,0 +1,85 @@
+C4251
+warning C4297
+warning C4535
+LPCWSTR  <--  Use Multi-Byte Character Set
+warning C4251:
+
+C4819:Save the file in Unicode format to prevent data loss
+warning C4996:_CRT_SECURE_NO_WARNINGS.
+
+CVAPI_EXPORTS <----  Static library (.lib) 삭제할것
+__OPENCV_BUILD=1
+
+opencv_videostabSd.lib, opencv_videostabSMTd.lib
+warning LNK4221      /ignore:4221
+
+opencv_videostabMTd.dll, opencv_videostabMT.dll
+MT에서  -  warning C4275: non dll-interface class
+-----------------
+.\include;.\src;..\include
+..\opencv_core\include
+..\opencv_hal\include
+..\..\LibIppicv\include
+..\opencv_imgproc\include
+..\opencv_video\include
+..\opencv_features2d\include
+..\opencv_flann\include
+..\opencv_calib3d\include
+..\opencv_videoio\include
+..\opencv_photo\include
+-----------------
+..\..\LibIppicv\lib\ia32
+..\opencv_core\lib
+..\opencv_hal\lib
+..\opencv_imgproc\lib
+..\opencv_video\lib
+..\opencv_features2d\lib
+..\opencv_flann\lib
+..\opencv_calib3d\lib
+..\opencv_videoio\lib
+..\opencv_photo\lib
+-----------------
+ippicvmt.lib
+opencv_cored.lib
+opencv_halSd.lib
+opencv_imgprocd.lib
+opencv_videod.lib
+opencv_features2dd.lib
+opencv_flannd.lib
+opencv_calib3dd.lib
+opencv_videoiod.lib
+opencv_photod.lib
+-----------------
+ippicvmt.lib
+opencv_core.lib
+opencv_halS.lib
+opencv_imgproc.lib
+opencv_video.lib
+opencv_features2d.lib
+opencv_flann.lib
+opencv_calib3d.lib
+opencv_videoio.lib
+opencv_photo.lib
+-----------------
+ippicvmt.lib
+opencv_coreMTd.lib
+opencv_halSMTd.lib
+opencv_imgprocMTd.lib
+opencv_videoMTd.lib
+opencv_features2dMTd.lib
+opencv_flannMTd.lib
+opencv_calib3dMTd.lib
+opencv_videoioMTd.lib
+opencv_photoMTd.lib
+-----------------
+ippicvmt.lib
+opencv_coreMT.lib
+opencv_halSMT.lib
+opencv_imgprocMT.lib
+opencv_videoMT.lib
+opencv_features2dMT.lib
+opencv_flannMT.lib
+opencv_calib3dMT.lib
+opencv_videoioMT.lib
+opencv_photoMT.lib
+-----------------
