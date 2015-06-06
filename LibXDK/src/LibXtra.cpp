@@ -1,10 +1,11 @@
 #define INITGUID 
 #include <LibXtra\LibXtra.h>
 #include <LibXtra/_GUID.h>
+#include <list>
 
 ///BASIC
 MoaLong DllgXtraInterfaceCount = 0; 
-HINSTANCE g_hInst;
+HINSTANCE g_hInst = nullptr;
 
 #pragma comment(linker, "/ENTRY:DllEntryPoint")
 
@@ -25,6 +26,7 @@ extern "C"  {
 		if (ulReason == DLL_PROCESS_ATTACH) {
 			// Must happen before any other code is executed.  Thankfully - it's re-entrant
 			__security_init_cookie();
+					
 		}
 		return _DllEntryPoint(hInstance, ulReason, pv);
 	}
@@ -40,6 +42,7 @@ extern "C"  {
 		{
 		case DLL_PROCESS_ATTACH:
 			g_hInst = hInstance;
+			DisableThreadLibraryCalls(hInstance);
 			break;
 
 		case DLL_PROCESS_DETACH:
@@ -220,7 +223,8 @@ MoaUtils::MoaUtils(_MOAFactory* obj)
 	xvalue_{ this->obj_->pCallback }, 
 	color_{ this->obj_->pCallback },
 	utils2_{ this->obj_->pCallback },
-	image_{ this->obj_->pCallback }
+	image_{ this->obj_->pCallback },
+	utils_{ this->obj_->pCallback }
 {
 	obj_->AddRef();
 }
@@ -926,6 +930,55 @@ MoaUtils::get_index(const SetRef& ref, MoaLong index)
 	return pargs[index];
 }
 
+MoaMmDialogCookie
+MoaUtils::WinPrepareDialogBox(){
+	MoaMmDialogCookie value{ 0 };
+	this->utils_->WinPrepareDialogBox(&value);
+	return value;
+}
+
+void  
+MoaUtils::WinUnprepareDialogBox(MoaMmDialogCookie& mvalue){
+	this->utils_->WinUnprepareDialogBox(mvalue);
+}
+
+MoaMmHWnd
+MoaUtils::WinGetParent(){
+	MoaMmHInst hInstance = g_hInst;
+	MoaMmHWnd hWinParent = nullptr;
+	this->utils_->WinGetParent(&hInstance, &hWinParent);
+	return hWinParent;
+}
+
+OwnerClass 
+MoaUtils::make_owner(){
+	return OwnerClass(*this);
+}
+
+//OwnerClass
+OwnerClass::OwnerClass(MoaUtils& util)
+:utils_{ util }, is_destory_{true}
+{
+	cookie_ = this->utils_.WinPrepareDialogBox();
+	hwnd_ = this->utils_.WinGetParent();
+}
+
+OwnerClass::OwnerClass(OwnerClass&& obj)
+:utils_{ obj.utils_ }, is_destory_{ true },
+cookie_{ obj.cookie_ }, hwnd_{obj.hwnd_}
+{
+	obj.is_destory_ = false;
+}
+
+
+OwnerClass::operator HWND(){
+	return (HWND)this->hwnd_;
+}
+
+OwnerClass::~OwnerClass(){
+	if (!is_destory_) return;
+	this->utils_.WinUnprepareDialogBox(this->cookie_);
+}
 
 //GUID
 void 

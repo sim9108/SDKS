@@ -56,6 +56,8 @@ class ImageLock{
 	MoaMmImageInfo info_;
 	MoaMmValue mv_;
 	bool ready_;
+	RECT crop_rect_;
+	RECT raw_rect_;
 
 public:
 	explicit ImageLock(_BaseXValue& mobj, MoaMmCallInfo& callPtr, int idx);
@@ -71,36 +73,67 @@ public:
 	MoaBool is_cartesian() const;
 	MoaLong row_bytes()  const;
 
+	void set_crop_rect(RECT& rect);
+
 	void reset();
 
 	template<typename T>
 	T* rptr(int rows){
-		if (rows >= this->height()) rows = 0;
-		return  reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*(this->height()-rows-1));
+		if (rows >= this->height() || rows<0) return nullptr;
+		return ptr<T>(this->height() - rows - 1);
+	}
+
+	template<typename T>
+	T* crop_rptr(int rows){
+		if (rows >= crop_rect_.bottom || rows<crop_rect_.top) return nullptr;
+		auto real_row = (rows + crop_rect_.top);
+		return  rptr<T>(real_row);
 	}
 
 	template<typename T>
 	T* rptr(int rows, int cols){
-		if (rows >= this->height()) rows = 0;
-		if (cols >= this->width()) cols = 0;
-
-		return reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*(this->height() - rows - 1) + cols* info_.iTotalDepth / 8);
+		if (rows >= this->height() || cols >= this->width() || rows < 0 || cols < 0) return nullptr;
+		return ptr<T>(this->height() - rows - 1, cols);
 	}
 
+	template<typename T>
+	T* crop_rptr(int rows, int cols){
+		if (rows >= this->crop_rect_.bottom || cols >= crop_rect_.right || rows < crop_rect_.left || cols < crop_rect_.top) return nullptr;
+		auto real_row = (rows + crop_rect_.top);
+		auto real_col = (cols + crop_rect_.left);
+		return rptr<T>(real_row, real_col);
+	}
+	
 
 	template<typename T>
 	T* ptr(int rows){
-		if (rows >= this->height()) rows = 0;
+		if (rows >= this->height() || rows<0) return nullptr;
 		return  reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*rows);
 	}
 
 	template<typename T>
-	T* ptr(int rows, int cols){
-		if (rows >= this->height()) rows = 0;
-		if (cols >= this->width()) cols = 0;
+	T* crop_ptr(int rows){
+		if (rows >= crop_rect_.bottom || rows<crop_rect_.top) return nullptr;
+		auto real_row = (rows + crop_rect_.top);
+		return ptr<T>(real_row);
+	}
 
+
+	template<typename T>
+	T* ptr(int rows, int cols){
+		if (rows >= this->height() || cols >= this->width() || rows < 0 || cols < 0) return nullptr;
 		return reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*rows + cols* info_.iTotalDepth/8);
 	}
+
+	template<typename T>
+	T* crop_ptr(int rows, int cols){
+		if (rows >= this->crop_rect_.bottom || cols >= crop_rect_.right || rows < crop_rect_.left || cols < crop_rect_.top) return nullptr;
+
+		auto real_row = (rows + crop_rect_.top);
+		auto real_col = (cols + crop_rect_.left);
+		return ptr<T>(real_row, real_col);
+	}
+
 
 	bool operator !() const {
 		return !ready_;

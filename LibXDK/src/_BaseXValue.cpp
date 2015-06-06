@@ -149,7 +149,7 @@ ImageLock
 */
 
 ImageLock::ImageLock(_BaseXValue& mobj, MoaMmValue& mv)
-	:mobj_(mobj)
+:mobj_(mobj), crop_rect_({ 0, 0, 0, 0 })
 {
 	auto mtype = mobj.utils_.is_type(mv);
 	if (kMoaMmValueType_Other != mtype){
@@ -161,12 +161,13 @@ ImageLock::ImageLock(_BaseXValue& mobj, MoaMmValue& mv)
 	this->mv_ = mv;
 	mobj_.utils_.GetImageInfo(&this->mv_, &this->info_);
 	this->mobj_.utils_.LockPixels(&this->mv_, (PMoaVoid*)&this->data_);
+	SetRect(&raw_rect_, 0, 0, this->width() - 1, this->height() - 1);
+	SetRect(&crop_rect_, 0, 0, this->width() - 1, this->height() - 1);
 }
 
 
-
 ImageLock::ImageLock(_BaseXValue& mobj, MoaMmCallInfo& callPtr, int idx)
-	:mobj_(mobj)
+:mobj_(mobj), crop_rect_({ 0, 0, 0, 0 })
 {
 	auto mtype = mobj.utils_.is_type(callPtr, idx);
 	if (kMoaMmValueType_Other != mtype){
@@ -178,6 +179,14 @@ ImageLock::ImageLock(_BaseXValue& mobj, MoaMmCallInfo& callPtr, int idx)
 	this->mv_ = this->mobj_.utils_.get_index(callPtr, idx);
 	mobj_.utils_.GetImageInfo(&this->mv_, &this->info_);
 	this->mobj_.utils_.LockPixels(&this->mv_, (PMoaVoid*)&this->data_);
+	SetRect(&raw_rect_, 0, 0, this->width() - 1, this->height() - 1);
+	SetRect(&crop_rect_, 0, 0, this->width() - 1, this->height() - 1);
+}
+
+void 
+ImageLock::set_crop_rect(RECT& rect){
+	
+	::IntersectRect(&this->crop_rect_, &rect, &raw_rect_);
 }
 
 ImageLock::~ImageLock(){

@@ -282,6 +282,8 @@ std::wstring ansi_to_wchar(const std::string& str, const std::locale& loc /*= st
 #define DSTDMETHOD(method)        COM_DECLSPEC_NOTHROW HRESULT STDMETHODCALLTYPE method
 #define DSTDMETHOD_(type,method)  COM_DECLSPEC_NOTHROW type STDMETHODCALLTYPE method
 
+class OwnerClass;
+
 class MoaUtils
 {
 private:
@@ -292,6 +294,7 @@ private:
 	MOAQIPtr<IMoaMmColor, &IID_IMoaMmColor> color_;
 	MOAQIPtr<IMoaMmUtils2, &IID_IMoaMmUtils2> utils2_;
 	MOAQIPtr<IMoaMmImage, &IID_IMoaMmImage> image_;
+	MOAQIPtr<IMoaMmUtils, &IID_IMoaMmUtils> utils_;
 
 public:
 	explicit MoaUtils(_MOAFactory* obj);
@@ -427,6 +430,12 @@ public:
 	void make_prop_list(MoaMmValue& value);
 	void make_prop_list(MoaMmCallInfo& callPtr);
 	void make_prop_list(GetRef& ref);
+
+	MoaMmDialogCookie WinPrepareDialogBox();
+	void  WinUnprepareDialogBox(MoaMmDialogCookie& mvalue);
+	MoaMmHWnd WinGetParent();
+	OwnerClass make_owner();
+
 	
 	//append
 	void append(MoaMmValue& mvalue, MoaMmValue& value){
@@ -2413,6 +2422,19 @@ public:
 	}
 };
 
+
+class OwnerClass{
+private:
+	MoaUtils& utils_;
+	MoaMmDialogCookie cookie_;
+	MoaMmHWnd hwnd_;
+	bool is_destory_;
+public:
+	OwnerClass(MoaUtils& util);
+	OwnerClass(OwnerClass&& obj);
+	~OwnerClass();
+	operator HWND();
+};
 
 template<typename T>
 STDMETHODIMP Build_Interface(PMoaVoid pObj, PPMoaVoid ppIF)
