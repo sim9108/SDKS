@@ -132,6 +132,4 @@ namespace PNG{
 		};
 		return fn;
 	}
-
-
 }
