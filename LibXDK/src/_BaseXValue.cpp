@@ -142,51 +142,99 @@ _BaseXValue::StreamIn(PIMoaStream2 pStream){
 	return kMoaMmErr_AccessNotSupported;
 }
 
+//ImageCrop
 
+ImageCrop::ImageCrop(BYTE* data, int width, int height, int pixel_bytes, int image_row_bytes, int pitch_bytes)
+:
+data_{ data }, 
+width_{ width }, height_{ height },
+pitch_bytes_{ pitch_bytes },image_row_bytes_{ image_row_bytes },pixel_bytes_{ pixel_bytes }
+{}
 
-/*
-ImageLock
-*/
+MoaLong ImageCrop::width() const{
+	return this->width_;
+}
 
+MoaLong ImageCrop::height() const{
+	return this->height_;
+}
+
+MoaLong ImageCrop::image_row_bytes() const{
+	return this->image_row_bytes_;
+}
+
+MoaLong ImageCrop::pitch_bytes() const{
+	return this->pitch_bytes_;
+}
+
+MoaLong ImageCrop::pixel_bytes() const{
+	return this->pixel_bytes_;
+}
+
+// ImageLock
 ImageLock::ImageLock(_BaseXValue& mobj, MoaMmValue& mv)
-:mobj_(mobj), crop_rect_({ 0, 0, 0, 0 })
+:mobj_(mobj), ready_{false}
 {
 	auto mtype = mobj.utils_.is_type(mv);
-	if (kMoaMmValueType_Other != mtype){
-		ready_ = false;
-		return;
-	}
-
+	if (kMoaMmValueType_Other != mtype) return;
+		
 	ready_ = true;
 	this->mv_ = mv;
-	mobj_.utils_.GetImageInfo(&this->mv_, &this->info_);
+	this->raw_update_info();
 	this->mobj_.utils_.LockPixels(&this->mv_, (PMoaVoid*)&this->data_);
-	SetRect(&raw_rect_, 0, 0, this->width() - 1, this->height() - 1);
-	SetRect(&crop_rect_, 0, 0, this->width() - 1, this->height() - 1);
 }
 
 
 ImageLock::ImageLock(_BaseXValue& mobj, MoaMmCallInfo& callPtr, int idx)
-:mobj_(mobj), crop_rect_({ 0, 0, 0, 0 })
+:mobj_(mobj), ready_{ false }
 {
 	auto mtype = mobj.utils_.is_type(callPtr, idx);
-	if (kMoaMmValueType_Other != mtype){
-		ready_ = false;
-		return;
-	}
+	if (kMoaMmValueType_Other != mtype) return;
 
 	ready_ = true;
 	this->mv_ = this->mobj_.utils_.get_index(callPtr, idx);
-	mobj_.utils_.GetImageInfo(&this->mv_, &this->info_);
+	this->raw_update_info();
 	this->mobj_.utils_.LockPixels(&this->mv_, (PMoaVoid*)&this->data_);
-	SetRect(&raw_rect_, 0, 0, this->width() - 1, this->height() - 1);
-	SetRect(&crop_rect_, 0, 0, this->width() - 1, this->height() - 1);
 }
 
-void 
-ImageLock::set_crop_rect(RECT& rect){
-	
-	::IntersectRect(&this->crop_rect_, &rect, &raw_rect_);
+void
+ImageLock::raw_update_info(){
+	MoaMmImageInfo info;
+	mobj_.utils_.GetImageInfo(&this->mv_, &info);
+	this->width_ = info.iWidth;
+	this->height_ = info.iHeight;
+	this->image_row_bytes_ = info.iRowBytes;
+	this->pitch_bytes_ = info.iRowBytes;
+	this->pixel_bytes_ = info.iTotalDepth / 8;
+	this->alpha_pixel_bytes_ = info.iAlphaDepth / 8;
+}
+
+
+ImageCrop
+ImageLock::get_crop(RECT& rect){
+	RECT full_rect;
+	SetRect(&full_rect, 0, 0, this->width() - 1, this->height() - 1);
+
+	RECT result_rect;
+	::IntersectRect(&result_rect, &rect, &full_rect);
+	BYTE* data = this->data_
+		+ this->pitch_bytes_*(this->height_ - result_rect.bottom - 1)
+		+ result_rect.left *  this->pixel_bytes_;
+
+	int width = result_rect.right - result_rect.left + 1;
+	int height = result_rect.bottom - result_rect.top + 1;
+	int pixel_bytes = this->pixel_bytes_;
+	int image_row_bytes = pixel_bytes*width;
+	int pitch_bytes = this->pitch_bytes_;
+
+	return ImageCrop(data, width, height, pixel_bytes, image_row_bytes, pitch_bytes);
+}
+
+
+ImageLock::operator ImageCrop(){
+	RECT full_rect;
+	SetRect(&full_rect, 0, 0, this->width() - 1, this->height() - 1);
+	return this->get_crop(full_rect);
 }
 
 ImageLock::~ImageLock(){
@@ -199,7 +247,7 @@ ImageLock::reset(){
 	this->mobj_.utils_.UnlockPixels(&this->mv_);
 	ready_ = false;
 	this->data_ = nullptr;
-	std::memset(&this->info_, 0, sizeof(this->info_));
+	width_ = height_ = image_row_bytes_ = pitch_bytes_ = pixel_bytes_ = alpha_pixel_bytes_ = 0;
 }
 
 BYTE*
@@ -209,30 +257,20 @@ ImageLock::data()  const{
 
 MoaLong
 ImageLock::width()  const{
-	return this->info_.iWidth;
+	return this->width_;
 }
 
 MoaLong
 ImageLock::height() const {
-	return this->info_.iHeight;
+	return this->height_;
 }
 
 MoaLong
 ImageLock::total_depth()  const{
-	return this->info_.iTotalDepth;
-}
-
-MoaLong
-ImageLock::alpha_depth() const{
-	return this->info_.iAlphaDepth;
-}
-
-MoaBool
-ImageLock::is_cartesian() const{
-	return this->info_.bCartesian;
+	return this->pixel_bytes_;
 }
 
 MoaLong
 ImageLock::row_bytes() const{
-	return this->info_.iRowBytes;
+	return this->image_row_bytes_;
 }

@@ -49,15 +49,66 @@ public:
 
 #include <LibXtra/_GUID.h>
 
+//ImageCrop
+class ImageCrop{
+	BYTE* data_;	
+	int width_;
+	int height_;
+
+	int pixel_bytes_;
+	int image_row_bytes_;
+	int pitch_bytes_;
+	
+	
+public:
+	ImageCrop(BYTE* data, int width, int height, int pixel_bytes, int image_row_bytes, int pitch_bytes);
+
+	MoaLong width() const;
+	MoaLong height() const;
+	MoaLong image_row_bytes()  const;
+	MoaLong pitch_bytes() const;
+	MoaLong pixel_bytes() const;
+
+	template<typename T>
+	T* rptr(int rows){
+		if (rows >= this->height_ || rows < 0) return nullptr;
+		return  reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows);
+	}
+
+	template<typename T>
+	T* rptr(int rows, int cols){
+		if (rows >= this->height_ || cols >= this->width_ || rows < 0 || cols < 0) return nullptr;
+		return reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows + cols* this->pixel_bytes_);
+	}
+
+	template<typename T>
+	T* ptr(int rows){
+		return  rptr<T>(this->height_ - rows - 1);
+	}
+
+	template<typename T>
+	T* ptr(int rows, int cols){
+		return rptr<T>(this->height_ - rows - 1, cols);
+	}
+
+};
+
 // ImageLock
 class ImageLock{
 	_BaseXValue& mobj_;
+
 	BYTE* data_;
-	MoaMmImageInfo info_;
 	MoaMmValue mv_;
+
+	int width_;
+	int height_;
+
+	int image_row_bytes_;
+	int pitch_bytes_;
+	int pixel_bytes_;
+	int alpha_pixel_bytes_;
+		
 	bool ready_;
-	RECT crop_rect_;
-	RECT raw_rect_;
 
 public:
 	explicit ImageLock(_BaseXValue& mobj, MoaMmCallInfo& callPtr, int idx);
@@ -69,75 +120,41 @@ public:
 	MoaLong width() const;
 	MoaLong height() const;
 	MoaLong total_depth() const;
-	MoaLong alpha_depth() const;
-	MoaBool is_cartesian() const;
 	MoaLong row_bytes()  const;
 
-	void set_crop_rect(RECT& rect);
+	ImageCrop get_crop(RECT& rect);
+	operator ImageCrop();
 
 	void reset();
 
 	template<typename T>
 	T* rptr(int rows){
-		if (rows >= this->height() || rows<0) return nullptr;
-		return ptr<T>(this->height() - rows - 1);
-	}
-
-	template<typename T>
-	T* crop_rptr(int rows){
-		if (rows >= crop_rect_.bottom || rows<crop_rect_.top) return nullptr;
-		auto real_row = (rows + crop_rect_.top);
-		return  rptr<T>(real_row);
+		if (rows >= this->height_ || rows < 0) return nullptr;
+		return  reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows);
 	}
 
 	template<typename T>
 	T* rptr(int rows, int cols){
-		if (rows >= this->height() || cols >= this->width() || rows < 0 || cols < 0) return nullptr;
-		return ptr<T>(this->height() - rows - 1, cols);
+		if (rows >= this->height_ || cols >= this->width_ || rows < 0 || cols < 0) return nullptr;
+		return reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows + cols* this->pixel_bytes_);
 	}
-
-	template<typename T>
-	T* crop_rptr(int rows, int cols){
-		if (rows >= this->crop_rect_.bottom || cols >= crop_rect_.right || rows < crop_rect_.left || cols < crop_rect_.top) return nullptr;
-		auto real_row = (rows + crop_rect_.top);
-		auto real_col = (cols + crop_rect_.left);
-		return rptr<T>(real_row, real_col);
-	}
-	
-
+		
 	template<typename T>
 	T* ptr(int rows){
-		if (rows >= this->height() || rows<0) return nullptr;
-		return  reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*rows);
+		return  rptr<T>(this->height_ - rows - 1);
 	}
-
-	template<typename T>
-	T* crop_ptr(int rows){
-		if (rows >= crop_rect_.bottom || rows<crop_rect_.top) return nullptr;
-		auto real_row = (rows + crop_rect_.top);
-		return ptr<T>(real_row);
-	}
-
-
+		
 	template<typename T>
 	T* ptr(int rows, int cols){
-		if (rows >= this->height() || cols >= this->width() || rows < 0 || cols < 0) return nullptr;
-		return reinterpret_cast<T*>(this->data_ + this->info_.iRowBytes*rows + cols* info_.iTotalDepth/8);
+		return rptr<T>(this->height_ - rows - 1, cols);
 	}
-
-	template<typename T>
-	T* crop_ptr(int rows, int cols){
-		if (rows >= this->crop_rect_.bottom || cols >= crop_rect_.right || rows < crop_rect_.left || cols < crop_rect_.top) return nullptr;
-
-		auto real_row = (rows + crop_rect_.top);
-		auto real_col = (cols + crop_rect_.left);
-		return ptr<T>(real_row, real_col);
-	}
-
-
+	
 	bool operator !() const {
 		return !ready_;
 	}
+
+private:
+	void raw_update_info();
 };
 
 struct BGRPIXEL4{
