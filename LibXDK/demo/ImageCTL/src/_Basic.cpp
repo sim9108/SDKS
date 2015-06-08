@@ -129,9 +129,8 @@ _Basic::readfile(MoaMmCallInfo& callPtr){
 
 		unsigned char* ma[1];
 		while (cinfo.output_scanline < cinfo.output_height){
-			ma[0] = bimg.ptr<unsigned char>(
-				cinfo.output_height - cinfo.output_scanline-1
-				);
+			ma[0] = bimg.ptr<unsigned char>(cinfo.output_scanline);
+			if (!ma[0]) break;
 			jpeg_read_scanlines(&cinfo, ma, 1);
 		}
 
@@ -192,12 +191,13 @@ _Basic::writefile(MoaMmCallInfo& callPtr){
 		jpeg_start_compress(&cinfo, true);
 
 		// real image 
-		std::vector<unsigned char*> ma(bimg.height());
-		for (int k = 0; k < bimg.height(); ++k){
-			ma[k] = bimg.ptr<unsigned char>(bimg.height()-k-1);
-		}
+		unsigned char* ma[1];
 
-		jpeg_write_scanlines(&cinfo, ma.data(), ma.size());
+		for (int k = 0; k < bimg.height(); ++k){
+			ma[0] = bimg.ptr<unsigned char>(k);
+			if (!ma[0]) break;
+			jpeg_write_scanlines(&cinfo, ma, 1);			
+		}		
 
 		// end compress
 		jpeg_finish_compress(&cinfo);
@@ -213,32 +213,3 @@ _Basic::writefile(MoaMmCallInfo& callPtr){
 
 	return kMoaErr_NoErr;
 }
-
-/*
-HRESULT
-_Basic::readfile(MoaMmCallInfo& callPtr){
-	std::wstring file;
-	bool bret = this->utils_.read(callPtr, 0, file);
-	if (!bret) return kMoaErr_BadParam;
-	
-	std::locale loc("");
-	std::string cfile = wchar_to_ansi(file, loc);
-
-	Jpeg_Info info_;
-	bret = info_.read(cfile);
-	if (!bret){
-		this->utils_.ValueRelease(callPtr);
-		return kMoaErr_NoErr;
-	}
-	
-	this->utils_.NewImage(info_.width(), info_.height(), 32, 0, NULL, &callPtr.resultValue);
-	ImageLock bimg{ *this, callPtr.resultValue };
-
-	auto size = info_.height();
-	for (unsigned int y = 0; y < size; ++y){
-		std::memcpy(bimg.ptr<BYTE>(y), info_.row_ptr(size - y - 1), info_.row_bytes());
-	}
-		
-	return kMoaErr_NoErr;
-}
-*/
