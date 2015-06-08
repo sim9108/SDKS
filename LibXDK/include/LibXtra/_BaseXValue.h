@@ -49,46 +49,47 @@ public:
 
 #include <LibXtra/_GUID.h>
 
+class ImageLock;
+
 //ImageCrop
 class ImageCrop{
-	BYTE* data_;	
 	int width_;
 	int height_;
 
-	int pixel_bytes_;
-	int image_row_bytes_;
-	int pitch_bytes_;
-	
-	
+	RECT roi_rect_;
+	RECT intersect_rect_;
+
+	ImageLock& org_image_;	
 public:
-	ImageCrop(BYTE* data, int width, int height, int pixel_bytes, int image_row_bytes, int pitch_bytes);
+	ImageCrop(ImageLock& org_image, RECT& roi_rect, RECT& intersect_rect);
 
 	MoaLong width() const;
 	MoaLong height() const;
-	MoaLong image_row_bytes()  const;
-	MoaLong pitch_bytes() const;
-	MoaLong pixel_bytes() const;
+
+	const RECT& intersect_rect() const;
 
 	template<typename T>
 	T* rptr(int rows){
 		if (rows >= this->height_ || rows < 0) return nullptr;
-		return  reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows);
+		return org_image_.rptr<T>(roi_rect_.top + rows);
 	}
 
 	template<typename T>
 	T* rptr(int rows, int cols){
 		if (rows >= this->height_ || cols >= this->width_ || rows < 0 || cols < 0) return nullptr;
-		return reinterpret_cast<T*>(this->data_ + this->pitch_bytes_*rows + cols* this->pixel_bytes_);
+		return org_image_.rptr<T>(roi_rect_.top + rows, roi_rect_.left + cols);
 	}
 
 	template<typename T>
 	T* ptr(int rows){
-		return  rptr<T>(this->height_ - rows - 1);
+		if (rows >= this->height_ || rows < 0) return nullptr;
+		return  org_image_.ptr<T>(roi_rect_.top+rows);
 	}
 
 	template<typename T>
 	T* ptr(int rows, int cols){
-		return rptr<T>(this->height_ - rows - 1, cols);
+		if (rows >= this->height_ || cols >= this->width_ || rows < 0 || cols < 0) return nullptr;
+		return  org_image_.ptr<T>(roi_rect_.top + rows, roi_rect_.left + cols);
 	}
 
 };

@@ -144,12 +144,18 @@ _BaseXValue::StreamIn(PIMoaStream2 pStream){
 
 //ImageCrop
 
-ImageCrop::ImageCrop(BYTE* data, int width, int height, int pixel_bytes, int image_row_bytes, int pitch_bytes)
-:
-data_{ data }, 
-width_{ width }, height_{ height },
-pitch_bytes_{ pitch_bytes },image_row_bytes_{ image_row_bytes },pixel_bytes_{ pixel_bytes }
-{}
+ImageCrop::ImageCrop(ImageLock& org_image, RECT& roi_rect, RECT& intersect_rect)
+:org_image_{ org_image },
+roi_rect_( roi_rect ),
+intersect_rect_(intersect_rect)
+{
+	width_ = roi_rect_.right - roi_rect_.left + 1;
+	height_ = roi_rect_.bottom - roi_rect_.top + 1;
+}
+
+const RECT& ImageCrop::intersect_rect() const{
+	return this->intersect_rect_;
+}
 
 MoaLong ImageCrop::width() const{
 	return this->width_;
@@ -157,18 +163,6 @@ MoaLong ImageCrop::width() const{
 
 MoaLong ImageCrop::height() const{
 	return this->height_;
-}
-
-MoaLong ImageCrop::image_row_bytes() const{
-	return this->image_row_bytes_;
-}
-
-MoaLong ImageCrop::pitch_bytes() const{
-	return this->pitch_bytes_;
-}
-
-MoaLong ImageCrop::pixel_bytes() const{
-	return this->pixel_bytes_;
 }
 
 // ImageLock
@@ -212,28 +206,20 @@ ImageLock::raw_update_info(){
 
 ImageCrop
 ImageLock::get_crop(RECT& rect){
-	RECT full_rect;
-	SetRect(&full_rect, 0, 0, this->width() - 1, this->height() - 1);
+	RECT full_rect = { 0, 0, this->width() - 1, this->height() - 1 };
+	RECT intersect_rect;
+	::IntersectRect(&intersect_rect, &full_rect, &rect);
 
-	RECT result_rect;
-	::IntersectRect(&result_rect, &rect, &full_rect);
-	BYTE* data = this->data_
-		+ this->pitch_bytes_*(this->height_ - result_rect.bottom - 1)
-		+ result_rect.left *  this->pixel_bytes_;
-
-	int width = result_rect.right - result_rect.left + 1;
-	int height = result_rect.bottom - result_rect.top + 1;
-	int pixel_bytes = this->pixel_bytes_;
-	int image_row_bytes = pixel_bytes*width;
-	int pitch_bytes = this->pitch_bytes_;
-
-	return ImageCrop(data, width, height, pixel_bytes, image_row_bytes, pitch_bytes);
+	intersect_rect.left -= rect.left;
+	intersect_rect.right -= rect.left;
+	intersect_rect.top -= rect.top;
+	intersect_rect.bottom -= rect.top;
+	return ImageCrop(*this, rect, intersect_rect);
 }
 
 
 ImageLock::operator ImageCrop(){
-	RECT full_rect;
-	SetRect(&full_rect, 0, 0, this->width() - 1, this->height() - 1);
+	RECT full_rect = { 0, 0, this->width() - 1, this->height() - 1 };
 	return this->get_crop(full_rect);
 }
 
@@ -245,6 +231,9 @@ void
 ImageLock::reset(){
 	if (!ready_) return;
 	this->mobj_.utils_.UnlockPixels(&this->mv_);
+
+
+
 	ready_ = false;
 	this->data_ = nullptr;
 	width_ = height_ = image_row_bytes_ = pitch_bytes_ = pixel_bytes_ = alpha_pixel_bytes_ = 0;

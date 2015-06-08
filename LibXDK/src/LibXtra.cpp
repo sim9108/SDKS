@@ -854,7 +854,12 @@ MoaUtils::LockPixels( ConstPMoaMmValue pImage, PMoaVoid *ppPixels){
 
 MoaError
 MoaUtils::UnlockPixels( ConstPMoaMmValue pImage){
-	return image_->UnlockPixels(pImage);
+	MoaError ret = image_->UnlockPixels(pImage);
+	MoaMmValue result;
+	image_->GetPixel(pImage, 0, 0, &result);
+	image_->SetPixel(pImage, 0, 0, &result);
+	value_->ValueRelease(&result);	
+	return ret;
 }
 
 MoaError
