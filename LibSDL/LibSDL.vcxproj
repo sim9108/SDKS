@@ -438,7 +438,16 @@
     <ClCompile Include="src\video\SDL_rect.c" />
     <ClCompile Include="src\video\SDL_RLEaccel.c" />
     <ClCompile Include="src\file\SDL_rwops.c" />
-    <ClCompile Include="src\stdlib\SDL_stdlib.c" />
+    <ClCompile Include="src\stdlib\SDL_stdlib.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="src\video\SDL_stretch.c" />
     <ClCompile Include="src\stdlib\SDL_string.c" />
     <ClCompile Include="src\video\SDL_surface.c" />
