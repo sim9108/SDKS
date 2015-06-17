@@ -63,7 +63,6 @@ int main(int argc, char** argv){
 
 	// Allocate video frame
 	AVFrame *pFrame = avcodec_alloc_frame();
-
 	AVFrame *pFrameYUV = avcodec_alloc_frame();
 	if (pFrameYUV == NULL)
 		return -1;
@@ -81,29 +80,25 @@ int main(int argc, char** argv){
 		exit(1);
 	}
 	
-	SDL_Texture    *bmp = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, pCodecCtx->width, pCodecCtx->height);
+	SDL_Texture *bmp = SDL_CreateTexture(renderer, SDL_PIXELFORMAT_IYUV, SDL_TEXTUREACCESS_STREAMING, pCodecCtx->width, pCodecCtx->height);
 
-	SwsContext* sws_ctx =
-		sws_getContext
-		(
-		pCodecCtx->width,
-		pCodecCtx->height,
-		pCodecCtx->pix_fmt,
-		pCodecCtx->width,
-		pCodecCtx->height,
-		PIX_FMT_YUV420P,
-		SWS_BILINEAR,
-		NULL,
-		NULL,
-		NULL
-		);
+	SwsContext *sws_ctx =sws_getContext(
+							pCodecCtx->width,
+							pCodecCtx->height,
+							pCodecCtx->pix_fmt,
+							pCodecCtx->width,
+							pCodecCtx->height,
+							PIX_FMT_YUV420P,
+							SWS_BILINEAR,
+							NULL,
+							NULL,
+							NULL
+						);
 
-	int numBytes = avpicture_get_size(PIX_FMT_YUV420P, pCodecCtx->width,
-		pCodecCtx->height);
+	int numBytes = avpicture_get_size(PIX_FMT_YUV420P, pCodecCtx->width,pCodecCtx->height);
 	uint8_t* buffer = (uint8_t *)av_malloc(numBytes*sizeof(uint8_t));
 
-	avpicture_fill((AVPicture *)pFrameYUV, buffer, PIX_FMT_YUV420P,
-		pCodecCtx->width, pCodecCtx->height);
+	avpicture_fill((AVPicture *)pFrameYUV, buffer, PIX_FMT_YUV420P,pCodecCtx->width, pCodecCtx->height);
 	
 	SDL_Rect rect = { 0, 0, pCodecCtx->width, pCodecCtx->height };
 	AVPacket  packet;
