@@ -64,7 +64,6 @@ int main(int argc, char** argv){
 	SDL_Event event;
 
 	while (av_read_frame(pFormatCtx, &packet) >= 0) {
-
 		do{
 			if (packet.stream_index != videoStream) break;			
 			avcodec_decode_video2(pCodecCtx, pFrame, &frameFinished, &packet);
