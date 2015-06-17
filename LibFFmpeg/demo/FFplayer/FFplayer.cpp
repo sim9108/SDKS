@@ -108,6 +108,7 @@ int main(int argc, char** argv){
 
 	av_free(pFrame);
 	av_free(pFrameYUV);
+	av_free(buffer);
 
 	avcodec_close(pCodecCtx);
 
