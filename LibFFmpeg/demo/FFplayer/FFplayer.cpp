@@ -16,19 +16,16 @@ int main(int argc, char** argv){
 		fprintf(stderr, "Usage: test <file>\n");
 		exit(1);
 	}
-
-	// Register all formats and codecs
-	av_register_all();
-
+	
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER)) return 0;
 
+	av_register_all();
 	AVFormatContext *pFormatCtx = nullptr;
 	if (avformat_open_input(&pFormatCtx, argv[1], NULL, NULL) != 0) return 0;
 	if (avformat_find_stream_info(pFormatCtx, NULL)<0) return 0;
 
 	av_dump_format(pFormatCtx, 0, argv[1], 0);
 
-	// Find the first video stream
 	unsigned int videoStream = -1;
 	for (unsigned int i = 0; i<pFormatCtx->nb_streams; i++)
 	if (pFormatCtx->streams[i]->codec->codec_type == AVMEDIA_TYPE_VIDEO) {
@@ -37,18 +34,14 @@ int main(int argc, char** argv){
 	}
 	if (videoStream == -1) return 0;
 
-	// Get a pointer to the codec context for the video stream
 	AVCodecContext *pCodecCtx = pFormatCtx->streams[videoStream]->codec;
 
-	// Find the decoder for the video stream
 	AVCodec *pCodec = avcodec_find_decoder(pCodecCtx->codec_id);
 	if (!pCodec)return 0;
 
-	// Open codec
 	AVDictionary* optionsDict = nullptr;
 	if (avcodec_open2(pCodecCtx, pCodec, &optionsDict)<0) return 0;
 
-	// Allocate video frame
 	AVFrame *pFrame = avcodec_alloc_frame();
 	AVFrame *pFrameYUV = avcodec_alloc_frame();
 	if (!pFrameYUV)return 0;
@@ -73,7 +66,6 @@ int main(int argc, char** argv){
 	SDL_Event event;
 
 	while (av_read_frame(pFormatCtx, &packet) >= 0) {
-		// Is this a packet from the video stream?
 		if (packet.stream_index == videoStream) {
 			avcodec_decode_video2(pCodecCtx, pFrame, &frameFinished,&packet);
 			if (!frameFinished) {
