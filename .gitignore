@@ -71,3 +71,4 @@ LibFreeType/demo/hello/ipch/hello-33b552a2/hello-a026449a.ipch
 LibBzip2/demo/helloworld/Debug/
 *.png
 *.bz2
+*.bmp
