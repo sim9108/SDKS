@@ -47,7 +47,9 @@ int main(int argc, char** argv){
 	AVFrame *pFrameYUV = avcodec_alloc_frame();
 	if (!pFrameYUV) return 0;
 	
-	SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, pCodecCtx->width, pCodecCtx->height, SDL_WINDOW_OPENGL);
+
+	//SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, pCodecCtx->width/2, pCodecCtx->height/2, SDL_WINDOW_OPENGL);
+	SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 3840, 1620, SDL_WINDOW_OPENGL);
 	if (!screen) return 0;
 
 	SDL_Renderer *renderer = SDL_CreateRenderer(screen, -1, 0);	
@@ -59,6 +61,8 @@ int main(int argc, char** argv){
 	avpicture_fill((AVPicture *)pFrameYUV, buffer, PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height);
 	
 	SDL_Rect rect = { 0, 0, pCodecCtx->width, pCodecCtx->height };
+	//SDL_Rect drect = { 0, 0, pCodecCtx->width/2, pCodecCtx->height/2 };
+	SDL_Rect drect = { 0, 0, 3840, 1620 };
 	AVPacket  packet;
 	int frameFinished{};
 	SDL_Event event;
@@ -76,9 +80,9 @@ int main(int argc, char** argv){
 
 			SDL_UpdateTexture(bmp, &rect, pFrameYUV->data[0], pFrameYUV->linesize[0]);
 			SDL_RenderClear(renderer);
-			SDL_RenderCopy(renderer, bmp, &rect, &rect);
+			SDL_RenderCopy(renderer, bmp, &rect, &drect);
 			SDL_RenderPresent(renderer);
-			SDL_Delay(20);
+			//SDL_Delay(20);
 		} while (false);
 				
 		av_free_packet(&packet);
