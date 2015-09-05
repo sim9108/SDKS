@@ -1,7 +1,8 @@
 /*
    xxHash - Extremely Fast Hash algorithm
    Header File
-   Copyright (C) 2012-2014, Yann Collet.
+   Copyright (C) 2012-2015, Yann Collet.
+
    BSD 2-Clause License (http://www.opensource.org/licenses/bsd-license.php)
 
    Redistribution and use in source and binary forms, with or without
@@ -28,7 +29,7 @@
    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
    You can contact the author at :
-   - xxHash source repository : http://code.google.com/p/xxhash/
+   - xxHash source repository : https://github.com/Cyan4973/xxHash
 */
 
 /* Notice extracted from xxHash homepage :
@@ -55,10 +56,15 @@ SHA1-32         0.28 GB/s    10
 Q.Score is a measure of quality of the hash function.
 It depends on successfully passing SMHasher test set.
 10 is a perfect score.
+
+A 64-bits version, named XXH64, is available since r35.
+It offers much better speed, but for 64-bits applications only.
+Name     Speed on 64 bits    Speed on 32 bits
+XXH64       13.8 GB/s            1.9 GB/s
+XXH32        6.8 GB/s            6.0 GB/s
 */
 
 #pragma once
-#include "config.h"
 
 #if defined (__cplusplus)
 extern "C" {
@@ -66,24 +72,52 @@ extern "C" {
 
 
 /*****************************
-   Includes
+*  Definitions
 *****************************/
 #include <stddef.h>   /* size_t */
-
-
-/*****************************
-   Type
-*****************************/
 typedef enum { XXH_OK=0, XXH_ERROR } XXH_errorcode;
 
 
+/*****************************
+*  Namespace Emulation
+*****************************/
+/* Motivations :
+
+If you need to include xxHash into your library,
+but wish to avoid xxHash symbols to be present on your library interface
+in an effort to avoid potential name collision if another library also includes xxHash,
+
+you can use XXH_NAMESPACE, which will automatically prefix any symbol from xxHash
+with the value of XXH_NAMESPACE (so avoid to keep it NULL, and avoid numeric values).
+
+Note that no change is required within the calling program :
+it can still call xxHash functions using their regular name.
+They will be automatically translated by this header.
+*/
+#ifdef XXH_NAMESPACE
+#  define XXH_CAT(A,B) A##B
+#  define XXH_NAME2(A,B) XXH_CAT(A,B)
+#  define XXH32 XXH_NAME2(XXH_NAMESPACE, XXH32)
+#  define XXH64 XXH_NAME2(XXH_NAMESPACE, XXH64)
+#  define XXH32_createState XXH_NAME2(XXH_NAMESPACE, XXH32_createState)
+#  define XXH64_createState XXH_NAME2(XXH_NAMESPACE, XXH64_createState)
+#  define XXH32_freeState XXH_NAME2(XXH_NAMESPACE, XXH32_freeState)
+#  define XXH64_freeState XXH_NAME2(XXH_NAMESPACE, XXH64_freeState)
+#  define XXH32_reset XXH_NAME2(XXH_NAMESPACE, XXH32_reset)
+#  define XXH64_reset XXH_NAME2(XXH_NAMESPACE, XXH64_reset)
+#  define XXH32_update XXH_NAME2(XXH_NAMESPACE, XXH32_update)
+#  define XXH64_update XXH_NAME2(XXH_NAMESPACE, XXH64_update)
+#  define XXH32_digest XXH_NAME2(XXH_NAMESPACE, XXH32_digest)
+#  define XXH64_digest XXH_NAME2(XXH_NAMESPACE, XXH64_digest)
+#endif
+
 
 /*****************************
-   Simple Hash Functions
+*  Simple Hash Functions
 *****************************/
 
-LZ4_API unsigned int       XXH32(const void* input, size_t length, unsigned seed);
-LZ4_API unsigned long long XXH64(const void* input, size_t length, unsigned long long seed);
+unsigned int       XXH32 (const void* input, size_t length, unsigned seed);
+unsigned long long XXH64 (const void* input, size_t length, unsigned long long seed);
 
 /*
 XXH32() :
@@ -94,12 +128,13 @@ XXH32() :
     Speed on Core 2 Duo @ 3 GHz (single thread, SMHasher benchmark) : 5.4 GB/s
 XXH64() :
     Calculate the 64-bits hash of sequence of length "len" stored at memory address "input".
+    Faster on 64-bits systems. Slower on 32-bits systems.
 */
 
 
 
 /*****************************
-   Advanced Hash Functions
+*  Advanced Hash Functions
 *****************************/
 typedef struct { long long ll[ 6]; } XXH32_state_t;
 typedef struct { long long ll[11]; } XXH64_state_t;
@@ -111,11 +146,11 @@ States must then be initialized using XXHnn_reset() before first use.
 If you prefer dynamic allocation, please refer to functions below.
 */
 
-LZ4_API XXH32_state_t* XXH32_createState(void);
-LZ4_API XXH_errorcode  XXH32_freeState(XXH32_state_t* statePtr);
+XXH32_state_t* XXH32_createState(void);
+XXH_errorcode  XXH32_freeState(XXH32_state_t* statePtr);
 
-LZ4_API XXH64_state_t* XXH64_createState(void);
-LZ4_API XXH_errorcode  XXH64_freeState(XXH64_state_t* statePtr);
+XXH64_state_t* XXH64_createState(void);
+XXH_errorcode  XXH64_freeState(XXH64_state_t* statePtr);
 
 /*
 These functions create and release memory for XXH state.
@@ -123,13 +158,13 @@ States must then be initialized using XXHnn_reset() before first use.
 */
 
 
-LZ4_API XXH_errorcode XXH32_reset(XXH32_state_t* statePtr, unsigned seed);
-LZ4_API XXH_errorcode XXH32_update(XXH32_state_t* statePtr, const void* input, size_t length);
-LZ4_API unsigned int  XXH32_digest(const XXH32_state_t* statePtr);
+XXH_errorcode XXH32_reset  (XXH32_state_t* statePtr, unsigned seed);
+XXH_errorcode XXH32_update (XXH32_state_t* statePtr, const void* input, size_t length);
+unsigned int  XXH32_digest (const XXH32_state_t* statePtr);
 
-LZ4_API XXH_errorcode      XXH64_reset(XXH64_state_t* statePtr, unsigned long long seed);
-LZ4_API XXH_errorcode      XXH64_update(XXH64_state_t* statePtr, const void* input, size_t length);
-LZ4_API unsigned long long XXH64_digest(const XXH64_state_t* statePtr);
+XXH_errorcode      XXH64_reset  (XXH64_state_t* statePtr, unsigned long long seed);
+XXH_errorcode      XXH64_update (XXH64_state_t* statePtr, const void* input, size_t length);
+unsigned long long XXH64_digest (const XXH64_state_t* statePtr);
 
 /*
 These functions calculate the xxHash of an input provided in multiple smaller packets,
