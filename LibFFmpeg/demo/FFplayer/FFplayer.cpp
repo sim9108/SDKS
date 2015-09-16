@@ -21,6 +21,7 @@ int main(int argc, char** argv){
 	
 	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_TIMER)) return 0;
 
+	avcodec_register_all();
 	av_register_all();
 	AVFormatContext *pFormatCtx = nullptr;
 	if (avformat_open_input(&pFormatCtx, argv[1], nullptr, nullptr) != 0) return 0;
