@@ -46,8 +46,7 @@ int main(int argc, char** argv){
 
 	AVFrame *pFrame = avcodec_alloc_frame();
 	AVFrame *pFrameYUV = avcodec_alloc_frame();
-	if (!pFrameYUV) return 0;
-	
+		
 
 	//SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, pCodecCtx->width/2, pCodecCtx->height/2, SDL_WINDOW_OPENGL);
 	SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 3840, 1620, SDL_WINDOW_OPENGL);
