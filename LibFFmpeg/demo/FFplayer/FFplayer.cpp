@@ -43,11 +43,7 @@ int main(int argc, char** argv){
 
 	AVDictionary* optionsDict = nullptr;
 	if (avcodec_open2(pCodecCtx, pCodec, &optionsDict) < 0) return 0;
-
-	AVFrame *pFrame = avcodec_alloc_frame();
-	AVFrame *pFrameYUV = avcodec_alloc_frame();
 		
-
 	//SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, pCodecCtx->width/2, pCodecCtx->height/2, SDL_WINDOW_OPENGL);
 	SDL_Window* screen = SDL_CreateWindow("My Game Window", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, 3840, 1620, SDL_WINDOW_OPENGL);
 	if (!screen) return 0;
@@ -58,23 +54,27 @@ int main(int argc, char** argv){
 
 	int numBytes = avpicture_get_size(PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height);
 	uint8_t* buffer = (uint8_t *)av_malloc(numBytes*sizeof(uint8_t));
+	AVFrame *pFrameYUV = av_frame_alloc();
 	avpicture_fill((AVPicture *)pFrameYUV, buffer, PIX_FMT_YUV420P, pCodecCtx->width, pCodecCtx->height);
 	
 	SDL_Rect rect = { 0, 0, pCodecCtx->width, pCodecCtx->height };
 	//SDL_Rect drect = { 0, 0, pCodecCtx->width/2, pCodecCtx->height/2 };
-	SDL_Rect drect = { 0, 0, 3840, 1620 };
-	AVPacket  packet;
-	int frameFinished{};
+	SDL_Rect drect = { 0, 0, 3840, 1620 };	
+	int done{};
 	SDL_Event event;
 
+	AVPacket  packet; 
+	av_init_packet(&packet);
+
+	AVFrame *pFrame = av_frame_alloc();
 	while (av_read_frame(pFormatCtx, &packet) >= 0) {
 		do{
 			if (packet.stream_index != videoStream) break;			
-			avcodec_decode_video2(pCodecCtx, pFrame, &frameFinished, &packet);
-			if (!frameFinished) break;
+			avcodec_decode_video2(pCodecCtx, pFrame, &done, &packet);
+			if (!done) break;
 
 			sws_scale(
-				sws_ctx, (uint8_t const * const *)pFrame->data, pFrame->linesize, 0,
+				sws_ctx, (const uint8_t* const *)pFrame->data, pFrame->linesize, 0,
 				pCodecCtx->height, pFrameYUV->data, pFrameYUV->linesize
 				);
 
