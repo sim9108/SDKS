@@ -606,9 +606,6 @@
     <ClCompile Include="src\LibAvFormat\asfcrypt.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\LibAvFormat\asfdec.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\LibAvFormat\asfenc.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -1171,6 +1168,24 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvFormat\vc1test.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\aadec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\apngenc.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\asfdec_f.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\asfdec_o.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\mpjpegdec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFormat\webm_chunk.c">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

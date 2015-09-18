@@ -174,7 +174,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
@@ -198,7 +198,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
@@ -224,7 +224,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
@@ -249,7 +249,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
@@ -277,7 +277,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -301,7 +301,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -327,7 +327,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -352,7 +352,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVCODEC_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\..\LibZ\include;..\LibSwResample\src;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;4996;4307;4293;4334;4702;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <WholeProgramOptimization>false</WholeProgramOptimization>
@@ -380,11 +380,19 @@
     <ClCompile Include="src\LibAvCodec\aacadtsdec.c" />
     <ClCompile Include="src\LibAvCodec\aaccoder.c" />
     <ClCompile Include="src\LibAvCodec\aacdec.c" />
+    <ClCompile Include="src\LibAvCodec\aacdec_fixed.c" />
     <ClCompile Include="src\LibAvCodec\aacenc.c" />
+    <ClCompile Include="src\LibAvCodec\aacenctab.c" />
+    <ClCompile Include="src\LibAvCodec\aacenc_is.c" />
+    <ClCompile Include="src\LibAvCodec\aacenc_pred.c" />
+    <ClCompile Include="src\LibAvCodec\aacenc_tns.c" />
     <ClCompile Include="src\LibAvCodec\aacps.c" />
-    <ClCompile Include="src\LibAvCodec\aacpsdsp.c" />
+    <ClCompile Include="src\LibAvCodec\aacpsdsp_fixed.c" />
+    <ClCompile Include="src\LibAvCodec\aacpsdsp_float.c" />
     <ClCompile Include="src\LibAvCodec\aacpsy.c" />
+    <ClCompile Include="src\LibAvCodec\aacps_fixed.c" />
     <ClCompile Include="src\LibAvCodec\aacsbr.c" />
+    <ClCompile Include="src\LibAvCodec\aacsbr_fixed.c" />
     <ClCompile Include="src\LibAvCodec\aactab.c" />
     <ClCompile Include="src\LibAvCodec\aac_ac3_parser.c" />
     <ClCompile Include="src\LibAvCodec\aac_adtstoasc_bsf.c" />
@@ -392,7 +400,6 @@
     <ClCompile Include="src\LibAvCodec\aandcttab.c" />
     <ClCompile Include="src\LibAvCodec\aasc.c" />
     <ClCompile Include="src\LibAvCodec\ac3.c" />
-    <ClCompile Include="src\LibAvCodec\ac3dec.c" />
     <ClCompile Include="src\LibAvCodec\ac3dec_data.c" />
     <ClCompile Include="src\LibAvCodec\ac3dec_fixed.c" />
     <ClCompile Include="src\LibAvCodec\ac3dec_float.c" />
@@ -478,6 +485,7 @@
     <ClCompile Include="src\LibAvCodec\bswapdsp.c" />
     <ClCompile Include="src\LibAvCodec\c93.c" />
     <ClCompile Include="src\LibAvCodec\cabac.c" />
+    <ClCompile Include="src\LibAvCodec\canopus.c" />
     <ClCompile Include="src\LibAvCodec\cavs.c" />
     <ClCompile Include="src\LibAvCodec\cavsdata.c" />
     <ClCompile Include="src\LibAvCodec\cavsdec.c" />
@@ -510,9 +518,11 @@
     <ClCompile Include="src\LibAvCodec\dcaenc.c" />
     <ClCompile Include="src\LibAvCodec\dca_exss.c" />
     <ClCompile Include="src\LibAvCodec\dca_parser.c" />
+    <ClCompile Include="src\LibAvCodec\dca_xll.c" />
     <ClCompile Include="src\LibAvCodec\dct.c" />
     <ClCompile Include="src\LibAvCodec\dct32_fixed.c" />
     <ClCompile Include="src\LibAvCodec\dct32_float.c" />
+    <ClCompile Include="src\LibAvCodec\dds.c" />
     <ClCompile Include="src\LibAvCodec\dfa.c" />
     <ClCompile Include="src\LibAvCodec\dirac.c" />
     <ClCompile Include="src\LibAvCodec\diracdec.c" />
@@ -601,6 +611,7 @@
     <ClCompile Include="src\LibAvCodec\g726.c" />
     <ClCompile Include="src\LibAvCodec\g729dec.c" />
     <ClCompile Include="src\LibAvCodec\g729postfilter.c" />
+    <ClCompile Include="src\LibAvCodec\g729_parser.c" />
     <ClCompile Include="src\LibAvCodec\gif.c" />
     <ClCompile Include="src\LibAvCodec\gifdec.c" />
     <ClCompile Include="src\LibAvCodec\golomb.c" />
@@ -613,6 +624,7 @@
     <ClCompile Include="src\LibAvCodec\h261enc.c" />
     <ClCompile Include="src\LibAvCodec\h261_parser.c" />
     <ClCompile Include="src\LibAvCodec\h263.c" />
+    <ClCompile Include="src\LibAvCodec\h263data.c" />
     <ClCompile Include="src\LibAvCodec\h263dec.c" />
     <ClCompile Include="src\LibAvCodec\h263dsp.c" />
     <ClCompile Include="src\LibAvCodec\h263_parser.c" />
@@ -634,12 +646,17 @@
     <ClCompile Include="src\LibAvCodec\h264_refs.c" />
     <ClCompile Include="src\LibAvCodec\h264_sei.c" />
     <ClCompile Include="src\LibAvCodec\h264_slice.c" />
+    <ClCompile Include="src\LibAvCodec\hap.c" />
+    <ClCompile Include="src\LibAvCodec\hapdec.c" />
     <ClCompile Include="src\LibAvCodec\hevc.c" />
     <ClCompile Include="src\LibAvCodec\hevcdsp.c" />
     <ClCompile Include="src\LibAvCodec\hevcpred.c" />
     <ClCompile Include="src\LibAvCodec\hevc_cabac.c" />
+    <ClCompile Include="src\LibAvCodec\hevc_data.c" />
     <ClCompile Include="src\LibAvCodec\hevc_filter.c" />
+    <ClCompile Include="src\LibAvCodec\hevc_mp4toannexb_bsf.c" />
     <ClCompile Include="src\LibAvCodec\hevc_mvs.c" />
+    <ClCompile Include="src\LibAvCodec\hevc_parse.c" />
     <ClCompile Include="src\LibAvCodec\hevc_parser.c" />
     <ClCompile Include="src\LibAvCodec\hevc_ps.c" />
     <ClCompile Include="src\LibAvCodec\hevc_refs.c" />
@@ -647,7 +664,11 @@
     <ClCompile Include="src\LibAvCodec\hnm4video.c" />
     <ClCompile Include="src\LibAvCodec\hpeldsp.c" />
     <ClCompile Include="src\LibAvCodec\hqx.c" />
+    <ClCompile Include="src\LibAvCodec\hqxdsp.c" />
     <ClCompile Include="src\LibAvCodec\hqxvlc.c" />
+    <ClCompile Include="src\LibAvCodec\hq_hqa.c" />
+    <ClCompile Include="src\LibAvCodec\hq_hqadata.c" />
+    <ClCompile Include="src\LibAvCodec\hq_hqadsp.c" />
     <ClCompile Include="src\LibAvCodec\huffman.c" />
     <ClCompile Include="src\LibAvCodec\huffyuv.c" />
     <ClCompile Include="src\LibAvCodec\huffyuvdec.c" />
@@ -672,7 +693,7 @@
     <ClCompile Include="src\LibAvCodec\intrax8dsp.c" />
     <ClCompile Include="src\LibAvCodec\ituh263dec.c" />
     <ClCompile Include="src\LibAvCodec\ituh263enc.c" />
-    <ClCompile Include="src\LibAvCodec\ivi_common.c" />
+    <ClCompile Include="src\LibAvCodec\ivi.c" />
     <ClCompile Include="src\LibAvCodec\ivi_dsp.c" />
     <ClCompile Include="src\LibAvCodec\j2kenc.c" />
     <ClCompile Include="src\LibAvCodec\jacosubdec.c" />
@@ -685,6 +706,7 @@
     <ClCompile Include="src\LibAvCodec\jpegls.c" />
     <ClCompile Include="src\LibAvCodec\jpeglsdec.c" />
     <ClCompile Include="src\LibAvCodec\jpeglsenc.c" />
+    <ClCompile Include="src\LibAvCodec\jpegtables.c" />
     <ClCompile Include="src\LibAvCodec\jrevdct.c" />
     <ClCompile Include="src\LibAvCodec\jvdec.c" />
     <ClCompile Include="src\LibAvCodec\kbdwin.c" />
@@ -715,7 +737,6 @@
     <ClCompile Include="src\LibAvCodec\me_cmp.c" />
     <ClCompile Include="src\LibAvCodec\microdvddec.c" />
     <ClCompile Include="src\LibAvCodec\mimic.c" />
-    <ClCompile Include="src\LibAvCodec\mjpeg.c" />
     <ClCompile Include="src\LibAvCodec\mjpeg2jpeg_bsf.c" />
     <ClCompile Include="src\LibAvCodec\mjpega_dump_header_bsf.c" />
     <ClCompile Include="src\LibAvCodec\mjpegbdec.c" />
@@ -746,6 +767,7 @@
     <ClCompile Include="src\LibAvCodec\mpeg4videodec.c" />
     <ClCompile Include="src\LibAvCodec\mpeg4videoenc.c" />
     <ClCompile Include="src\LibAvCodec\mpeg4video_parser.c" />
+    <ClCompile Include="src\LibAvCodec\mpeg4_unpack_bframes_bsf.c" />
     <ClCompile Include="src\LibAvCodec\mpegaudio.c" />
     <ClCompile Include="src\LibAvCodec\mpegaudiodata.c" />
     <ClCompile Include="src\LibAvCodec\mpegaudiodecheader.c" />
@@ -758,8 +780,10 @@
     <ClCompile Include="src\LibAvCodec\mpegaudioenc_fixed.c" />
     <ClCompile Include="src\LibAvCodec\mpegaudioenc_float.c" />
     <ClCompile Include="src\LibAvCodec\mpegaudio_parser.c" />
+    <ClCompile Include="src\LibAvCodec\mpegpicture.c" />
     <ClCompile Include="src\LibAvCodec\mpegutils.c" />
     <ClCompile Include="src\LibAvCodec\mpegvideo.c" />
+    <ClCompile Include="src\LibAvCodec\mpegvideodata.c" />
     <ClCompile Include="src\LibAvCodec\mpegvideodsp.c" />
     <ClCompile Include="src\LibAvCodec\mpegvideoencdsp.c" />
     <ClCompile Include="src\LibAvCodec\mpegvideo_enc.c" />
@@ -854,6 +878,8 @@
     <ClCompile Include="src\LibAvCodec\remove_extradata_bsf.c" />
     <ClCompile Include="src\LibAvCodec\resample.c" />
     <ClCompile Include="src\LibAvCodec\resample2.c" />
+    <ClCompile Include="src\LibAvCodec\reverse.c" />
+    <ClCompile Include="src\LibAvCodec\rl.c" />
     <ClCompile Include="src\LibAvCodec\rl2.c" />
     <ClCompile Include="src\LibAvCodec\rle.c" />
     <ClCompile Include="src\LibAvCodec\roqaudioenc.c" />
@@ -874,10 +900,10 @@
     <ClCompile Include="src\LibAvCodec\rv40dsp.c" />
     <ClCompile Include="src\LibAvCodec\s302m.c" />
     <ClCompile Include="src\LibAvCodec\s302menc.c" />
-    <ClCompile Include="src\LibAvCodec\s3tc.c" />
     <ClCompile Include="src\LibAvCodec\samidec.c" />
     <ClCompile Include="src\LibAvCodec\sanm.c" />
     <ClCompile Include="src\LibAvCodec\sbrdsp.c" />
+    <ClCompile Include="src\LibAvCodec\sbrdsp_fixed.c" />
     <ClCompile Include="src\LibAvCodec\sgidec.c" />
     <ClCompile Include="src\LibAvCodec\sgienc.c" />
     <ClCompile Include="src\LibAvCodec\sgirledec.c" />
@@ -889,6 +915,7 @@
     <ClCompile Include="src\LibAvCodec\smacker.c" />
     <ClCompile Include="src\LibAvCodec\smc.c" />
     <ClCompile Include="src\LibAvCodec\smvjpegdec.c" />
+    <ClCompile Include="src\LibAvCodec\snappy.c" />
     <ClCompile Include="src\LibAvCodec\snow.c" />
     <ClCompile Include="src\LibAvCodec\snowdec.c" />
     <ClCompile Include="src\LibAvCodec\snowenc.c" />
@@ -914,6 +941,7 @@
     <ClCompile Include="src\LibAvCodec\targaenc.c" />
     <ClCompile Include="src\LibAvCodec\targa_y216dec.c" />
     <ClCompile Include="src\LibAvCodec\textdec.c" />
+    <ClCompile Include="src\LibAvCodec\texturedsp.c" />
     <ClCompile Include="src\LibAvCodec\tiertexseqv.c" />
     <ClCompile Include="src\LibAvCodec\tiff.c" />
     <ClCompile Include="src\LibAvCodec\tiffenc.c" />
@@ -985,6 +1013,9 @@
     <ClCompile Include="src\LibAvCodec\vp8_parser.c" />
     <ClCompile Include="src\LibAvCodec\vp9.c" />
     <ClCompile Include="src\LibAvCodec\vp9dsp.c" />
+    <ClCompile Include="src\LibAvCodec\vp9dsp_10bpp.c" />
+    <ClCompile Include="src\LibAvCodec\vp9dsp_12bpp.c" />
+    <ClCompile Include="src\LibAvCodec\vp9dsp_8bpp.c" />
     <ClCompile Include="src\LibAvCodec\vp9_parser.c" />
     <ClCompile Include="src\LibAvCodec\vqavideo.c" />
     <ClCompile Include="src\LibAvCodec\wavpack.c" />
@@ -1006,6 +1037,7 @@
     <ClCompile Include="src\LibAvCodec\wmv2enc.c" />
     <ClCompile Include="src\LibAvCodec\wnv1.c" />
     <ClCompile Include="src\LibAvCodec\ws-snd1.c" />
+    <ClCompile Include="src\LibAvCodec\x86\aacpsdsp_init.c" />
     <ClCompile Include="src\LibAvCodec\x86\ac3dsp_init.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
@@ -1276,6 +1308,7 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
     </ClCompile>
+    <ClCompile Include="src\LibAvCodec\x86\jpeg2000dsp_init.c" />
     <ClCompile Include="src\LibAvCodec\x86\lossless_audiodsp_init.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
@@ -1587,26 +1620,6 @@
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\x86\xvididct_init.c">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\x86\xvididct_mmx.c">
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\x86\xvididct_sse2.c">
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
       <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)X86%(Filename).obj</ObjectFileName>
@@ -3418,6 +3431,125 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvCodec\x86\aacpsdsp.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvCodec\x86\xvididct.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
+      </AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
+      </AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvCodec\x86\jpeg2000dsp.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

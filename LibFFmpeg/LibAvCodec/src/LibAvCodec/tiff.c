@@ -453,25 +453,21 @@ static int tiff_unpack_fax(TiffContext *s, uint8_t *dst, int stride,
     int i, ret = 0;
     int line;
     uint8_t *src2 = av_malloc((unsigned)size +
-                              FF_INPUT_BUFFER_PADDING_SIZE);
+                              AV_INPUT_BUFFER_PADDING_SIZE);
 
     if (!src2) {
         av_log(s->avctx, AV_LOG_ERROR,
                "Error allocating temporary buffer\n");
         return AVERROR(ENOMEM);
     }
-    if (s->fax_opts & 2) {
-        avpriv_request_sample(s->avctx, "Uncompressed fax mode");
-        av_free(src2);
-        return AVERROR_PATCHWELCOME;
-    }
+
     if (!s->fill_order) {
         memcpy(src2, src, size);
     } else {
         for (i = 0; i < size; i++)
             src2[i] = ff_reverse[src[i]];
     }
-    memset(src2 + size, 0, FF_INPUT_BUFFER_PADDING_SIZE);
+    memset(src2 + size, 0, AV_INPUT_BUFFER_PADDING_SIZE);
     ret = ff_ccitt_unpack(s->avctx, src2, size, dst, lines, stride,
                           s->compr, s->fax_opts);
     if (s->bpp < 8 && s->avctx->pix_fmt == AV_PIX_FMT_PAL8)
@@ -657,6 +653,14 @@ static int init_image(TiffContext *s, ThreadFrame *frame)
 {
     int ret;
     int create_gray_palette = 0;
+
+    // make sure there is no aliasing in the following switch
+    if (s->bpp >= 100 || s->bppcount >= 10) {
+        av_log(s->avctx, AV_LOG_ERROR,
+               "Unsupported image parameters: bpp=%d, bppcount=%d\n",
+               s->bpp, s->bppcount);
+        return AVERROR_INVALIDDATA;
+    }
 
     switch (s->planar * 1000 + s->bpp * 10 + s->bppcount) {
     case 11:
@@ -1380,5 +1384,5 @@ AVCodec ff_tiff_decoder = {
     .close          = tiff_end,
     .decode         = decode_frame,
     .init_thread_copy = ONLY_IF_THREADS_ENABLED(tiff_init),
-    .capabilities   = CODEC_CAP_DR1 | CODEC_CAP_FRAME_THREADS,
+    .capabilities   = AV_CODEC_CAP_DR1 | AV_CODEC_CAP_FRAME_THREADS,
 };

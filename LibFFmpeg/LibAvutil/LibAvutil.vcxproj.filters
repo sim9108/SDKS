@@ -195,19 +195,17 @@
     <ClCompile Include="src\libavutil\xtea.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\cpu.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\float_dsp_init.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\lls_init.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\ffmpeg\libavutil\x86\pixelutils_init.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
     <ClCompile Include="src\libavutil\float_dsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\cpu.c" />
+    <ClCompile Include="src\libavutil\x86\float_dsp_init.c" />
+    <ClCompile Include="src\libavutil\x86\lls_init.c" />
+    <ClCompile Include="src\libavutil\x86\pixelutils_init.c" />
+    <ClCompile Include="src\libavutil\tea.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\reverse.c">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>

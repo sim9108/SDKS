@@ -184,7 +184,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;LibAvFilterd.lib;LibAvFormatd.lib;LibAvCodecd.lib;LibAvUtild.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;Shlwapi.lib;LibAvFilterd.lib;LibAvFormatd.lib;LibAvCodecd.lib;LibAvUtild.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\src\avdevice-56.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -227,7 +227,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;LibAvFilterMTd.lib;LibAvFormatMTd.lib;LibAvCodecMTd.lib;LibAvUtilMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;Shlwapi.lib;LibAvFilterMTd.lib;LibAvFormatMTd.lib;LibAvCodecMTd.lib;LibAvUtilMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\src\avdevice-56.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -272,7 +272,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;LibAvFilter.lib;LibAvFormat.lib;LibAvCodec.lib;LibAvUtil.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;Shlwapi.lib;LibAvFilter.lib;LibAvFormat.lib;LibAvCodec.lib;LibAvUtil.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\src\avdevice-56.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -319,7 +319,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;LibAvFilterMT.lib;LibAvFormatMT.lib;LibAvCodecMT.lib;LibAvUtilMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Strmiids.lib;Vfw32.lib;Shlwapi.lib;LibAvFilterMT.lib;LibAvFormatMT.lib;LibAvCodecMT.lib;LibAvUtilMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ModuleDefinitionFile>.\src\avdevice-56.def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>

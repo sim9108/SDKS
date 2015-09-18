@@ -582,6 +582,84 @@
     <ClCompile Include="src\LibAvFilter\x86\vf_yadif_init.c">
       <Filter>src\x86</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibAvFilter\f_reverse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\af_chorus.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\af_sidechaincompress.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_atadenoise.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_colorkey.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_cover_rect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_deband.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_detelecine.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\avf_showvolume.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\avf_showfreqs.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\avf_aphasemeter.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\f_drawgraph.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_waveform.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_stack.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_vectorscope.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_ssim.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\af_dynaudnorm.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_random.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_fftfilt.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_framerate.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_find_rect.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_psnr_init.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_removegrain_init.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\x86\vf_ssim_init.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_removegrain.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvFilter\vf_neighbor.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="src\LibAvFilter\x86\af_volume.asm">
@@ -615,6 +693,15 @@
       <Filter>src\x86\asm</Filter>
     </CustomBuild>
     <CustomBuild Include="src\LibAvFilter\x86\yadif-16.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_psnr.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_removegrain.asm">
+      <Filter>src\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvFilter\x86\vf_ssim.asm">
       <Filter>src\x86\asm</Filter>
     </CustomBuild>
   </ItemGroup>

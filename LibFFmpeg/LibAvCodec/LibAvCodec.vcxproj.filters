@@ -40,9 +40,6 @@
     <ClCompile Include="src\LibAvCodec\aacps.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\LibAvCodec\aacpsdsp.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\LibAvCodec\aacpsy.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -62,9 +59,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\ac3_parser.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\ac3dec.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\ac3dec_data.c">
@@ -871,9 +865,6 @@
     <ClCompile Include="src\LibAvCodec\ituh263enc.c">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\LibAvCodec\ivi_common.c">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="src\LibAvCodec\ivi_dsp.c">
       <Filter>src</Filter>
     </ClCompile>
@@ -995,9 +986,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\mimic.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\mjpeg.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\mjpeg_parser.c">
@@ -1463,9 +1451,6 @@
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\rv40dsp.c">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\s3tc.c">
       <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="src\LibAvCodec\s302m.c">
@@ -1957,12 +1942,6 @@
     <ClCompile Include="src\LibAvCodec\x86\xvididct_init.c">
       <Filter>src\X86</Filter>
     </ClCompile>
-    <ClCompile Include="src\LibAvCodec\x86\xvididct_mmx.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
-    <ClCompile Include="src\LibAvCodec\x86\xvididct_sse2.c">
-      <Filter>src\X86</Filter>
-    </ClCompile>
     <ClCompile Include="src\LibAvCodec\x86\ac3dsp_init.c">
       <Filter>src\X86</Filter>
     </ClCompile>
@@ -2116,6 +2095,120 @@
     <ClCompile Include="src\LibAvCodec\dump_extradata_bsf.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibAvCodec\jpegtables.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacenc_tns.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacenc_is.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\dca_xll.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\reverse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\dds.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\h263data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\ivi.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hq_hqa.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hq_hqadata.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hq_hqadsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\g729_parser.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hapdec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacdec_fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hevc_mp4toannexb_bsf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\mpeg4_unpack_bframes_bsf.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hevc_data.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\texturedsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\rl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\vp9dsp_8bpp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\vp9dsp_10bpp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\vp9dsp_12bpp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hap.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hqxdsp.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacenctab.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\snappy.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\mpegvideodata.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\mpegpicture.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\canopus.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\x86\jpeg2000dsp_init.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacenc_pred.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\hevc_parse.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\x86\aacpsdsp_init.c">
+      <Filter>src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacsbr_fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\sbrdsp_fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacps_fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacpsdsp_fixed.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\aacpsdsp_float.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -2126,6 +2219,9 @@
     </Filter>
     <Filter Include="src\X86\asm">
       <UniqueIdentifier>{3b7c6410-c9b7-4369-bad0-560ac4f41eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\X86\ams2">
+      <UniqueIdentifier>{7f164bcc-7d26-46c4-851f-2c6edcd1ce58}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -2327,5 +2423,16 @@
     <CustomBuild Include="src\LibAvCodec\x86\vp9mc.asm">
       <Filter>src\X86\asm</Filter>
     </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\x86\xvididct.asm">
+      <Filter>src\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\x86\jpeg2000dsp.asm">
+      <Filter>src\X86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\LibAvCodec\x86\aacpsdsp.asm">
+      <Filter>src\X86\asm</Filter>
+    </None>
   </ItemGroup>
 </Project>

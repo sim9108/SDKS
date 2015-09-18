@@ -108,7 +108,7 @@ static const int rates[] = {
     48000,
 };
 
-uint64_t layouts[]={
+static const uint64_t layouts[]={
     AV_CH_LAYOUT_MONO                    ,
     AV_CH_LAYOUT_STEREO                  ,
     AV_CH_LAYOUT_2_1                     ,
@@ -314,6 +314,11 @@ int main(int argc, char **argv){
             fprintf(stderr, "Failed to init backw_ctx\n");
             return 1;
         }
+        if (uint_rand(rand_seed) % 3 == 0)
+            av_opt_set_int(forw_ctx, "ich", 0, 0);
+        if (uint_rand(rand_seed) % 3 == 0)
+            av_opt_set_int(forw_ctx, "och", 0, 0);
+
         if(swr_init( forw_ctx) < 0)
             fprintf(stderr, "swr_init(->) failed\n");
         if(swr_init(backw_ctx) < 0)

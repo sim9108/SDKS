@@ -118,7 +118,6 @@ struct pollfd {
     short revents; /* events that occurred */
 };
 
-
 /* events & revents */
 #define POLLIN     0x0001  /* any readable data available */
 #define POLLOUT    0x0002  /* file descriptor is writeable */

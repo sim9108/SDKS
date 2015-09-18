@@ -54,6 +54,6 @@ typedef struct {
                        int qp, const uint8_t *permutation);
 } SPPContext;
 
- void ff_spp_init_x86(SPPContext *s);
+void ff_spp_init_x86(SPPContext *s);
 
 #endif /* AVFILTER_SPP_H */

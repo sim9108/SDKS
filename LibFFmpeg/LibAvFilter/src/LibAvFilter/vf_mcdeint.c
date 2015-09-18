@@ -69,8 +69,8 @@ enum MCDeintParity {
 
 typedef struct {
     const AVClass *class;
-    enum MCDeintMode mode;
-    enum MCDeintParity parity;
+    int mode;           ///< MCDeintMode
+    int parity;         ///< MCDeintParity
     int qp;
     AVCodecContext *enc_ctx;
 } MCDeintContext;
@@ -120,7 +120,7 @@ static int config_props(AVFilterLink *inlink)
     enc_ctx->gop_size = INT_MAX;
     enc_ctx->max_b_frames = 0;
     enc_ctx->pix_fmt = AV_PIX_FMT_YUV420P;
-    enc_ctx->flags = CODEC_FLAG_QSCALE | CODEC_FLAG_LOW_DELAY;
+    enc_ctx->flags = AV_CODEC_FLAG_QSCALE | CODEC_FLAG_LOW_DELAY;
     enc_ctx->strict_std_compliance = FF_COMPLIANCE_EXPERIMENTAL;
     enc_ctx->global_quality = 1;
     enc_ctx->me_cmp = enc_ctx->me_sub_cmp = FF_CMP_SAD;
@@ -134,10 +134,10 @@ static int config_props(AVFilterLink *inlink)
     case MODE_SLOW:
         enc_ctx->me_method = ME_ITER;
     case MODE_MEDIUM:
-        enc_ctx->flags |= CODEC_FLAG_4MV;
+        enc_ctx->flags |= AV_CODEC_FLAG_4MV;
         enc_ctx->dia_size = 2;
     case MODE_FAST:
-        enc_ctx->flags |= CODEC_FLAG_QPEL;
+        enc_ctx->flags |= AV_CODEC_FLAG_QPEL;
     }
 
     ret = avcodec_open2(enc_ctx, enc, &opts);
@@ -160,13 +160,13 @@ static av_cold void uninit(AVFilterContext *ctx)
 
 static int query_formats(AVFilterContext *ctx)
 {
-    static const enum PixelFormat pix_fmts[] = {
+    static const enum AVPixelFormat pix_fmts[] = {
         AV_PIX_FMT_YUV420P, AV_PIX_FMT_NONE
     };
-
-    ff_set_common_formats(ctx, ff_make_format_list(pix_fmts));
-
-    return 0;
+    AVFilterFormats *fmts_list = ff_make_format_list(pix_fmts);
+    if (!fmts_list)
+        return AVERROR(ENOMEM);
+    return ff_set_common_formats(ctx, fmts_list);
 }
 
 static int filter_frame(AVFilterLink *inlink, AVFrame *inpic)

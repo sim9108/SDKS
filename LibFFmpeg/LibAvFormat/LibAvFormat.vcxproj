@@ -175,7 +175,7 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -196,7 +196,7 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -217,7 +217,7 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -239,7 +239,7 @@
       <Optimization>MaxSpeed</Optimization>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -263,7 +263,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
@@ -286,7 +286,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
@@ -309,7 +309,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;FFMOEG_DLL_USE;FFMPEG_DLL_EXPORT;AVUTIL_IMPORT;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -333,7 +333,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;__STDC_CONSTANT_MACROS;HAVE_AV_CONFIG_H;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBAVFORMAT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\LibCompat\include;..\src;.\src;..\LibAvUtil\src;..\LibAvCodec\src;..\LibSwResample\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4028;4133;4101;4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4702;4056;4090;4756;4996;4307;4293;4334;4308;4114;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -351,6 +351,7 @@
     <ClCompile Include="src\LibAvFormat\4xm.c" />
     <ClCompile Include="src\LibAvFormat\a64.c" />
     <ClCompile Include="src\LibAvFormat\aacdec.c" />
+    <ClCompile Include="src\LibAvFormat\aadec.c" />
     <ClCompile Include="src\LibAvFormat\ac3dec.c" />
     <ClCompile Include="src\LibAvFormat\act.c" />
     <ClCompile Include="src\LibAvFormat\adp.c" />
@@ -367,10 +368,12 @@
     <ClCompile Include="src\LibAvFormat\ape.c" />
     <ClCompile Include="src\LibAvFormat\apetag.c" />
     <ClCompile Include="src\LibAvFormat\apngdec.c" />
+    <ClCompile Include="src\LibAvFormat\apngenc.c" />
     <ClCompile Include="src\LibAvFormat\aqtitledec.c" />
     <ClCompile Include="src\LibAvFormat\asf.c" />
     <ClCompile Include="src\LibAvFormat\asfcrypt.c" />
-    <ClCompile Include="src\LibAvFormat\asfdec.c" />
+    <ClCompile Include="src\LibAvFormat\asfdec_f.c" />
+    <ClCompile Include="src\LibAvFormat\asfdec_o.c" />
     <ClCompile Include="src\LibAvFormat\asfenc.c" />
     <ClCompile Include="src\LibAvFormat\assdec.c" />
     <ClCompile Include="src\LibAvFormat\assenc.c" />
@@ -540,6 +543,7 @@
     <ClCompile Include="src\LibAvFormat\mpegtsenc.c" />
     <ClCompile Include="src\LibAvFormat\mpegvideodec.c" />
     <ClCompile Include="src\LibAvFormat\mpjpeg.c" />
+    <ClCompile Include="src\LibAvFormat\mpjpegdec.c" />
     <ClCompile Include="src\LibAvFormat\mpl2dec.c" />
     <ClCompile Include="src\LibAvFormat\mpsubdec.c" />
     <ClCompile Include="src\LibAvFormat\msnwc_tcp.c" />
@@ -720,6 +724,7 @@
     <ClCompile Include="src\LibAvFormat\wavenc.c" />
     <ClCompile Include="src\LibAvFormat\wc3movie.c" />
     <ClCompile Include="src\LibAvFormat\webmdashenc.c" />
+    <ClCompile Include="src\LibAvFormat\webm_chunk.c" />
     <ClCompile Include="src\LibAvFormat\webpenc.c" />
     <ClCompile Include="src\LibAvFormat\webvttdec.c" />
     <ClCompile Include="src\LibAvFormat\webvttenc.c" />

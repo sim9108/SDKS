@@ -28,16 +28,8 @@
 
 #include <stdint.h>
 #include "internal.h"
-#ifdef AVUTIL_IMPORT
-extern __declspec(dllimport) const uint8_t avpriv_cga_font[2048];
-extern __declspec(dllimport) const uint8_t avpriv_vga16_font[4096];
-#else
+
 extern av_export const uint8_t avpriv_cga_font[2048];
 extern av_export const uint8_t avpriv_vga16_font[4096];
-#endif
-
-
-
-
 
 #endif /* AVUTIL_XGA_FONT_DATA_H */

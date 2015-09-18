@@ -57,6 +57,21 @@
     <ClCompile Include="src\LibSwscale\x86\hscale_fast_bilinear_simd.c">
       <Filter>src\x86</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibSwscale\gamma.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\slice.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\hscale.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\vscale.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibSwscale\alphablend.c">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="src\LibSwscale\x86\input.asm">
