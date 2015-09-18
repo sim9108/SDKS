@@ -59,7 +59,13 @@
 #endif
 
 #if defined(_MSC_VER) && CONFIG_SHARED
+///!!!!!
+#ifdef FFMPEG_DLL_EXPORT
+#    define av_export __declspec(dllexport)
+#else
 #    define av_export __declspec(dllimport)
+#endif
+///!!!!!
 #else
 #    define av_export
 #endif
