@@ -298,6 +298,8 @@ int main(int argc, char** argv){
 		default:
 			break;
 		}
+
+		
 	}
 
 	SDL_DestroyTexture(bmp);
