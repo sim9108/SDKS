@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\sfemovie">
+      <UniqueIdentifier>{233c5415-c105-4adc-acde-804ab2971b4d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,12 +27,69 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MediaInfo.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StreamSelector.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UserInterface.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="helloworld.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Demuxer.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Log.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Macros.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Movie.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\MovieImpl.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Stream.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\StreamSelection.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\SubtitleStream.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Timer.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\TimerPriorities.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\Utilities.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\VideoStream.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="..\TEST\AudioStream.cpp">
+      <Filter>Source Files\sfemovie</Filter>
+    </ClCompile>
+    <ClCompile Include="MediaInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StreamSelector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
