@@ -1,26 +1,31 @@
 #pragma once
-#define SFML_STATIC
-#define GLEW_STATIC
-
-
 
 #ifdef _DEBUG
-#pragma comment(lib,"LibSFMLSystemSMTd.lib")
-#pragma comment(lib,"LibSFMLGraphicsSMTd.lib")
-#pragma comment(lib,"LibSFMLWindowSMTd.lib")
-#pragma comment(lib,"LibSFMLNetworkSMTd.lib")
-#pragma comment(lib,"LibSFMLAudioSMTd.lib")
-#pragma comment(lib,"LibJpegTurboSMTd.lib")
-#pragma comment(lib,"LibGLewSMTd.lib")
+#define DEBUG_FIX "d"
 #else
-#pragma comment(lib,"LibSFMLSystemSMT.lib")
-#pragma comment(lib,"LibSFMLGraphicsSMT.lib")
-#pragma comment(lib,"LibSFMLWindowSMT.lib")
-#pragma comment(lib,"LibSFMLNetworkSMT.lib")
-#pragma comment(lib,"LibSFMLAudioSMT.lib")
-#pragma comment(lib,"LibJpegTurboSMT.lib")
-#pragma comment(lib,"LibGLewSMT.lib")
+#define DEBUG_FIX ""
 #endif
 
+#if defined(_MT) && defined(_DLL)
+#define RT_FIX ""
+#else
+#define RT_FIX "MT"
+#endif
+
+#if defined(DYNAIC_MODE)
+#define STATIC_FIX ""
+#else
+#define STATIC_FIX "S"
+#define SFML_STATIC
+#define GLEW_STATIC
+#endif
+
+#pragma comment(lib,"LibSFMLSystem" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibSFMLGraphics" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibSFMLWindow" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibSFMLNetwork" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibSFMLAudio" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibJpegTurbo" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
+#pragma comment(lib,"LibGLew" STATIC_FIX  RT_FIX  DEBUG_FIX".lib")
 #pragma comment(lib,"Winmm.lib")
 #pragma comment(lib,"Opengl32.lib")
