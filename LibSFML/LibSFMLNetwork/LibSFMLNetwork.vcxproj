@@ -122,48 +122,48 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)Sd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)S</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MT</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMT</TargetName>
   </PropertyGroup>
