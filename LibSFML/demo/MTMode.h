@@ -2,7 +2,7 @@
 #define SFML_STATIC
 #define GLEW_STATIC
 
-#include <SFML/Graphics.hpp>
+
 
 #ifdef _DEBUG
 #pragma comment(lib,"LibSFMLSystemSMTd.lib")

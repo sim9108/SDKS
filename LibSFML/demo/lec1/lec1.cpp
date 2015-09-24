@@ -3,17 +3,16 @@
 
 #include "stdafx.h"
 #include "..\MTMode.h"
-
+#include <SFML/Graphics.hpp>
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	sf::RenderWindow window(sf::VideoMode(640, 480), "SFML Application");
-
 	sf::CircleShape shape;
 	shape.setPosition(100.0f, 100.f);
 	shape.setRadius(40.0f);
 	shape.setFillColor(sf::Color::Cyan);
 
+	sf::RenderWindow window(sf::VideoMode(640, 480), "SFML Application");
 	while (window.isOpen()){
 
 		sf::Event event;
@@ -25,7 +24,6 @@ int _tmain(int argc, _TCHAR* argv[])
 		window.draw(shape);
 		window.display();
 	}
-
 
 	return 0;
 }
