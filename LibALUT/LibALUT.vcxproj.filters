@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{ee4838dd-c202-4076-9326-f110f4192e48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{fb1892b5-e900-4631-a490-6518f790f910}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\AL">
+      <UniqueIdentifier>{14cb69d0-51f5-4945-8dd5-16e318cc84f9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\AL\alut.h">
+      <Filter>include\AL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\alutInternal.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alutBufferData.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutCodec.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutError.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutInit.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutInputStream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutLoader.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutOutputStream.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutUtil.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutVersion.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\alutWaveform.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

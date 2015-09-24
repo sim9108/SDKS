@@ -74,3 +74,5 @@ LibBzip2/demo/helloworld/Debug/
 *.bmp
 *.flv
 *.mpeg
+*.au
+*.wav

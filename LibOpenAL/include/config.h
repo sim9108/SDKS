@@ -187,6 +187,8 @@
 /* Define if we have _wfindfirst() */
 #define HAVE__WFINDFIRST
 
+#define HAVE_SLEEP 1
+
 /* Define if we have pthread_setschedparam() */
 /* #undef HAVE_PTHREAD_SETSCHEDPARAM */
 
