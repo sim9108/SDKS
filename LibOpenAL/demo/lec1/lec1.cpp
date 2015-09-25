@@ -2,39 +2,31 @@
 //
 
 #include "stdafx.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include <cstdlib>
+#include <cstdio>
+#include <iostream>
 
 #include <AL/al.h>
 #include <AL/alc.h>
 #include <Al/alext.h>
 #include <AL/alut.h>
 
-/*
-* This program loads and plays a variety of files, basically an automated
-* version of examples/playfile.c.
-*/
-
 static void
-playFile(const char *fileName)
-{
-	ALuint buffer;
-	ALuint source;
-	ALenum error;
-	ALint status;
+playFile(const char *fileName){	
+	ALenum error;	
 
 	/* Create an AL buffer from the given sound file. */
-	buffer = alutCreateBufferFromFile(fileName);
+	ALuint buffer = alutCreateBufferFromFile(fileName);
+	error = alutGetError();
 	if (buffer == AL_NONE)
-	{
-		error = alutGetError();
-		fprintf(stderr, "Error loading file: '%s'\n",
-			alutGetErrorString(error));
+	{		
+		std::cerr<< "Error loading file:"<<	alutGetErrorString(error)<<std::endl;
 		alutExit();
-		exit(EXIT_FAILURE);
+		std::exit(EXIT_FAILURE);
 	}
 
 	/* Generate a single source, attach the buffer to it and start playing. */
+	ALuint source;
 	alGenSources(1, &source);
 	alSourcei(source, AL_BUFFER, buffer);
 	alSourcePlay(source);
@@ -43,12 +35,13 @@ playFile(const char *fileName)
 	error = alGetError();
 	if (error != ALUT_ERROR_NO_ERROR)
 	{
-		fprintf(stderr, "%s\n", alGetString(error));
+		std::cerr<<alGetString(error)<<std::endl;
 		alutExit();
-		exit(EXIT_FAILURE);
+		std::exit(EXIT_FAILURE);
 	}
 
 	/* Check every 0.1 seconds if the sound is still playing. */
+	ALint status;
 	do
 	{
 		alutSleep(0.1f);
@@ -63,18 +56,17 @@ main(int argc, char **argv)
 	if (!alutInit(&argc, argv))
 	{
 		ALenum error = alutGetError();
-		fprintf(stderr, "%s\n", alutGetErrorString(error));
-		exit(EXIT_FAILURE);
+		std::cerr << alutGetErrorString(error) << std::endl;
+		std::exit(EXIT_FAILURE);
 	}
 
-	/* If everything is OK, play the sound files and exit when finished. */
 	playFile(argv[1]);
 
 	if (!alutExit())
 	{
 		ALenum error = alutGetError();
-		fprintf(stderr, "%s\n", alutGetErrorString(error));
-		exit(EXIT_FAILURE);
+		std::cerr << alutGetErrorString(error) << std::endl;
+		std::exit(EXIT_FAILURE);
 	}
 	return EXIT_SUCCESS;
 }
