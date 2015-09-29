@@ -53,7 +53,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
-      <AdditionalIncludeDirectories>..\..\include;..\..\LibSFMLAudio\include;..\..\LibSFMLGraphics\include;..\..\LibSFMLNetwork\include;..\..\LibSFMLSystem\include;..\..\LibSFMLWindow\include;..\..\..\LibJpegTurbo\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\LibSFMLAudio\include;..\..\LibSFMLGraphics\include;..\..\LibSFMLNetwork\include;..\..\LibSFMLSystem\include;..\..\LibSFMLWindow\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -71,7 +71,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
-      <AdditionalIncludeDirectories>..\..\include;..\..\LibSFMLAudio\include;..\..\LibSFMLGraphics\include;..\..\LibSFMLNetwork\include;..\..\LibSFMLSystem\include;..\..\LibSFMLWindow\include;..\..\..\LibJpegTurbo\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\include;..\..\LibSFMLAudio\include;..\..\LibSFMLGraphics\include;..\..\LibSFMLNetwork\include;..\..\LibSFMLSystem\include;..\..\LibSFMLWindow\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

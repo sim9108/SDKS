@@ -78,11 +78,10 @@ int main(int argc, const char *argv[])
 	}
 
 	// Create window
-	sf::RenderWindow window(sf::VideoMode(width, height), "sfeMovie Player",
-		sf::Style::Close | sf::Style::Resize);
+	sf::RenderWindow window(sf::VideoMode(width, height), "sfeMovie Player", sf::Style::Close | sf::Style::Resize);
 
 	// Scale movie to the window drawing area and enable VSync
-	window.setFramerateLimit(60);
+	//window.setFramerateLimit(60);
 	window.setVerticalSyncEnabled(true);
 	movie.fit(0, 0, width, height);
 
