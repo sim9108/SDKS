@@ -23,7 +23,14 @@ int _tmain(int argc, _TCHAR* argv[])
 	std::cout << "+GL_SHADING_LANGUAGE_VERSION:" << glGetString(GL_SHADING_LANGUAGE_VERSION) << std::endl;	
 	std::cout << "+GL_RENDERER:" << glGetString(GL_RENDERER) << std::endl;
 	std::cout << "+GL_VENDOR:" << glGetString(GL_VENDOR) << std::endl;
-	std::cout << "+GL_EXTENSIONS:" << glGetString(GL_EXTENSIONS) << std::endl;
+	//std::cout << "+GL_EXTENSIONS:" << glGetString(GL_EXTENSIONS) << std::endl;
+
+	GLint num_exts{ 0 };
+	glGetIntegerv(GL_NUM_EXTENSIONS, &num_exts);
+
+	for (int i = 0; i < num_exts; i++)
+		std::cout <<i<<":"<< glGetStringi(GL_EXTENSIONS, i) << std::endl;
+
 	return 0;
 }
 
