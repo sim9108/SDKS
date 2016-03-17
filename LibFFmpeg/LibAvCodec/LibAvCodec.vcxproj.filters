@@ -2429,10 +2429,6 @@
     <CustomBuild Include="src\LibAvCodec\x86\jpeg2000dsp.asm">
       <Filter>src\X86\asm</Filter>
     </CustomBuild>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="src\LibAvCodec\x86\aacpsdsp.asm">
-      <Filter>src\X86\asm</Filter>
-    </None>
+    <CustomBuild Include="src\LibAvCodec\x86\aacpsdsp.asm" />
   </ItemGroup>
 </Project>

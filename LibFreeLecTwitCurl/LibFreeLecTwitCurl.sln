@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25029.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibFreeLecTwitCurl", "LibFreeLecTwitCurl.vcxproj", "{8173B64D-362E-4574-BCA1-3590D40C8D13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		DebugMT|x86 = DebugMT|x86
+		DebugS|x86 = DebugS|x86
+		DebugSMT|x86 = DebugSMT|x86
+		Release|x86 = Release|x86
+		ReleaseMT|x86 = ReleaseMT|x86
+		ReleaseS|x86 = ReleaseS|x86
+		ReleaseSMT|x86 = ReleaseSMT|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.Debug|x86.ActiveCfg = Debug|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.Debug|x86.Build.0 = Debug|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugMT|x86.ActiveCfg = DebugMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugMT|x86.Build.0 = DebugMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugS|x86.ActiveCfg = DebugS|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugS|x86.Build.0 = DebugS|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugSMT|x86.ActiveCfg = DebugSMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.DebugSMT|x86.Build.0 = DebugSMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.Release|x86.ActiveCfg = Release|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.Release|x86.Build.0 = Release|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseMT|x86.ActiveCfg = ReleaseMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseMT|x86.Build.0 = ReleaseMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseS|x86.ActiveCfg = ReleaseS|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseS|x86.Build.0 = ReleaseS|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseSMT|x86.ActiveCfg = ReleaseSMT|Win32
+		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseSMT|x86.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

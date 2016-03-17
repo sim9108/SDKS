@@ -1,6 +1,0 @@
-LibExif-->정태석(0)
-LibFishSound  ->전향란(0)
-LibJson -->이민호
-LibTinyXML2  ->이재오
-wxwidgets ->신재익
-LibRaw  -->이태정

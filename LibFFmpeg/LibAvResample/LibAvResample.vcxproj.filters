@@ -47,17 +47,9 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\LibAvResample\x86\util.asm">
-      <Filter>src\X86\asm</Filter>
-    </None>
-    <None Include="src\LibAvResample\x86\dither.asm">
-      <Filter>src\X86\asm</Filter>
-    </None>
-    <None Include="src\LibAvResample\x86\audio_convert.asm">
-      <Filter>src\X86\asm</Filter>
-    </None>
-    <None Include="src\LibAvResample\x86\audio_mix.asm">
-      <Filter>src\X86\asm</Filter>
-    </None>
+    <CustomBuild Include="src\LibAvResample\x86\audio_convert.asm" />
+    <CustomBuild Include="src\LibAvResample\x86\audio_mix.asm" />
+    <CustomBuild Include="src\LibAvResample\x86\dither.asm" />
+    <CustomBuild Include="src\LibAvResample\x86\util.asm" />
   </ItemGroup>
 </Project>

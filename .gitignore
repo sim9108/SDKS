@@ -76,3 +76,8 @@ LibBzip2/demo/helloworld/Debug/
 *.mpeg
 *.au
 *.wav
+*.iobj
+*.ipdb
+*.db
+*.mp4
+*.avi

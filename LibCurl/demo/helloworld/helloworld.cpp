@@ -30,7 +30,7 @@ _tmain(int argc, _TCHAR* argv[]){
 		return 0;
 	}
 
-	curl_easy_setopt(curl, CURLOPT_URL, "http://google.com");
+	curl_easy_setopt(curl, CURLOPT_URL, "http://wttr.in/suwon");
 	curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
 
 	std::string datas;

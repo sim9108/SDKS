@@ -90,7 +90,7 @@
 /* #define HAVE_SGTTY_H 1 */
 
 /* Define if you have the <ssl.h> header file. */
-/* #define HAVE_SSL_H 1 */
+#define HAVE_SSL_H 1
 
 /* Define to 1 if you have the <stdbool.h> header file. */
 #if defined(_MSC_VER) && (_MSC_VER >= 1800)

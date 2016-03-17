@@ -1,2 +1,0 @@
-openCV
-libJpeg or libJpegTurbo 라이브러리 표준 샘플 만들어보기
