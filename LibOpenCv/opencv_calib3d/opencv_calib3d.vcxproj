@@ -181,8 +181,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ippicvmt.lib;LibTbbd.lib;opencv_cored.lib;opencv_halSd.lib;opencv_features2dd.lib;opencv_flannd.lib;opencv_imgprocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib;..\..\LibIppicv\lib\ia32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbd.lib;opencv_cored.lib;opencv_hald.lib;opencv_features2dd.lib;opencv_flannd.lib;opencv_imgprocd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
@@ -219,8 +219,8 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ippicvmt.lib;LibTbbMTd.lib;opencv_coreMTd.lib;opencv_halSMTd.lib;opencv_features2dMTd.lib;opencv_flannMTd.lib;opencv_imgprocMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib;..\..\LibIppicv\lib\ia32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbMTd.lib;opencv_coreMTd.lib;opencv_halMTd.lib;opencv_features2dMTd.lib;opencv_flannMTd.lib;opencv_imgprocMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
@@ -261,8 +261,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ippicvmt.lib;LibTbb.lib;opencv_core.lib;opencv_halS.lib;opencv_features2d.lib;opencv_flann.lib;opencv_imgproc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib;..\..\LibIppicv\lib\ia32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbb.lib;opencv_core.lib;opencv_hal.lib;opencv_features2d.lib;opencv_flann.lib;opencv_imgproc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
@@ -304,8 +304,8 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>ippicvmt.lib;LibTbbMT.lib;opencv_coreMT.lib;opencv_halSMT.lib;opencv_features2dMT.lib;opencv_flannMT.lib;opencv_imgprocMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\LibTbb\lib;..\lib;..\..\LibIppicv\lib\ia32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibTbbMT.lib;opencv_coreMT.lib;opencv_halMT.lib;opencv_features2dMT.lib;opencv_flannMT.lib;opencv_imgprocMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">

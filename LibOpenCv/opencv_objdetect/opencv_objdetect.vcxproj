@@ -175,7 +175,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -192,7 +192,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -212,7 +212,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -230,7 +230,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;_DEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
@@ -253,7 +253,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -274,7 +274,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
@@ -295,7 +295,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;CVAPI_EXPORTS;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -317,7 +317,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>__TBB_NO_IMPLICIT_LINKAGE;__OPENCV_BUILD=1;WIN32;NDEBUG;_WINDOWS;_USRDLL;OPENCV_OBJDETECT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>.\include;.\src;..\include;..\opencv_core\include;..\opencv_hal\include;..\opencv_features2d\include;..\opencv_flann\include;..\opencv_imgproc\include;..\opencv_calib3d\include;..\..\LibIppicv\include;..\..\LibTbb\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251;4297;4275;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
@@ -333,9 +333,10 @@
   <ItemGroup>
     <ClInclude Include="..\include\cvconfig.h" />
     <ClInclude Include="..\include\opencv2\opencv_modules.hpp" />
-    <ClInclude Include="include\opencv2\calib3d.hpp" />
-    <ClInclude Include="include\opencv2\calib3d\calib3d.hpp" />
-    <ClInclude Include="include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="include\opencv2\objdetect.hpp" />
+    <ClInclude Include="include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="include\opencv2\objdetect\objdetect_c.h" />
     <ClInclude Include="src\circlesgrid.hpp" />
     <ClInclude Include="src\dls.h" />
     <ClInclude Include="src\epnp.h" />

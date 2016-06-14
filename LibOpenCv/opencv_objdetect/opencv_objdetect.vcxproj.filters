@@ -14,26 +14,17 @@
     <Filter Include="include\opencv2">
       <UniqueIdentifier>{f08d75a0-e966-4d6a-8f0d-9aae15516b38}</UniqueIdentifier>
     </Filter>
-    <Filter Include="include\opencv2\calib3d">
-      <UniqueIdentifier>{004ab667-139d-4c1d-9a02-100f763fd66b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\opencv2">
       <UniqueIdentifier>{e3c85de6-bc65-49fb-9b51-1f0ccafdc5e5}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\opencl">
       <UniqueIdentifier>{5c29f47f-1f8f-4a4b-9684-ac9893085f93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="include\opencv2\objdetect">
+      <UniqueIdentifier>{60141224-3325-455a-b783-0fd598c45765}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\opencv2\calib3d.hpp">
-      <Filter>include\opencv2</Filter>
-    </ClInclude>
-    <ClInclude Include="include\opencv2\calib3d\calib3d.hpp">
-      <Filter>include\opencv2\calib3d</Filter>
-    </ClInclude>
-    <ClInclude Include="include\opencv2\calib3d\calib3d_c.h">
-      <Filter>include\opencv2\calib3d</Filter>
-    </ClInclude>
     <ClInclude Include="..\include\cvconfig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -69,6 +60,18 @@
     </ClInclude>
     <ClInclude Include="src\upnp.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect.hpp">
+      <Filter>include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect\detection_based_tracker.hpp">
+      <Filter>include\opencv2\objdetect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect\objdetect.hpp">
+      <Filter>include\opencv2\objdetect</Filter>
+    </ClInclude>
+    <ClInclude Include="include\opencv2\objdetect\objdetect_c.h">
+      <Filter>include\opencv2\objdetect</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
