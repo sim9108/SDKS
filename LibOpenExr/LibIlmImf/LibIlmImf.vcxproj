@@ -38,6 +38,7 @@
     <ProjectGuid>{75D5A751-CC70-425E-937D-3F01824D811F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>LibIlmImf</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -122,48 +123,48 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)Sd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMTd</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)S</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)MT</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(ProjectDir)lib\</OutDir>
+    <OutDir>$(ProjectDir)..\lib\</OutDir>
     <IntDir>.\temp\$(Configuration)\</IntDir>
     <TargetName>$(ProjectName)SMT</TargetName>
   </PropertyGroup>
@@ -180,7 +181,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibHalf\lib;..\LibLex\lib;..\LibMath\lib;..\LibIlmThread\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibZd.lib;LibHalfd.lib;LibMathd.lib;LibIlmThreadd.lib;LibLexd.lib;%(AdditionalDependencies);</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -215,7 +216,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibHalf\lib;..\LibLex\lib;..\LibMath\lib;..\LibIlmThread\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibZMTd.lib;LibHalfMTd.lib;LibMathMTd.lib;LibIlmThreadMTd.lib;LibLexMTd.lib;%(AdditionalDependencies);</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -254,7 +255,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibHalf\lib;..\LibLex\lib;..\LibMath\lib;..\LibIlmThread\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibZ.lib;LibHalf.lib;LibMath.lib;LibIlmThread.lib;LibLex.lib;%(AdditionalDependencies);</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -297,7 +298,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibHalf\lib;..\LibLex\lib;..\LibMath\lib;..\LibIlmThread\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibZ\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibZMT.lib;LibHalfMT.lib;LibMathMT.lib;LibIlmThreadMT.lib;LibLex.lib;%(AdditionalDependencies);</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
