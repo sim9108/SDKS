@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\SDK\LibOpenCv\include;..\..\SDK\LibOpenCv\opencv_calib3d\include;..\..\SDK\LibOpenCv\opencv_core\include;..\..\SDK\LibOpenCv\opencv_features2d\include;..\..\SDK\LibOpenCv\opencv_flann\include;..\..\SDK\LibOpenCv\opencv_hal\include;..\..\SDK\LibOpenCv\opencv_highgui\include;..\..\SDK\LibOpenCv\opencv_imgcodecs\include;..\..\SDK\LibOpenCv\opencv_imgproc\include;..\..\SDK\LibOpenCv\opencv_ml\include;..\..\SDK\LibOpenCv\opencv_objdetect\include;..\..\SDK\LibOpenCv\opencv_photo\include;..\..\SDK\LibOpenCv\opencv_shape\include;..\..\SDK\LibOpenCv\opencv_stitching\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>..\..\SDK\LibOpenCv\lib;..\..\SDK\LibIppicv\lib\ia32;..\..\SDK\libZ\lib;..\..\SDK\LibTbb\lib;..\..\SDK\LibJpegTurbo\lib;..\..\SDK\LibTiff\lib;..\..\SDK\LibPng\lib;..\..\SDK\LibJasper\lib;..\..\SDK\LibOpenExr\lib</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
