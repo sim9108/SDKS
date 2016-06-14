@@ -81,3 +81,4 @@ LibBzip2/demo/helloworld/Debug/
 *.db
 *.mp4
 *.avi
+*.opendb
