@@ -5,6 +5,7 @@
 
 #include <iostream>
 #include <jasper/jasper.h>
+#include <Windows.h>
 
 int _tmain(int argc, _TCHAR* argv[])
 {
@@ -13,7 +14,7 @@ int _tmain(int argc, _TCHAR* argv[])
 	do {
 		jas_setdbglevel(1);
 
-		jas_stream_t* in = jas_stream_fopen("test.jpg", "rb");
+		jas_stream_t* in = jas_stream_fopen("test.jp2", "rb");
 		if (!in){
 			std::cout << "file error";
 			break;
@@ -27,7 +28,7 @@ int _tmain(int argc, _TCHAR* argv[])
 		jas_tmr_stop(&dectmr);
 
 		{
-			jas_stream_t* out = jas_stream_fopen("test.jp2", "w+b");
+			jas_stream_t* out = jas_stream_fopen("test_tr.jp2", "w+b");
 			jas_tmr_t enctmr;
 			jas_tmr_start(&enctmr);
 			jas_image_encode(in_img, out, jas_image_strtofmt((char*)"jp2"), nullptr);

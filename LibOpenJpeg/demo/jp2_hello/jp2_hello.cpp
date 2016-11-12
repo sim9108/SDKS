@@ -3,11 +3,14 @@
 
 #include "stdafx.h"
 #include <openjp2/openjpeg.h>
+#include <Windows.h>
 #include <string.h>
 #include <iostream>
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	int a = GetTickCount();
+
 	opj_dparameters_t parameters;
 	opj_set_default_decoder_parameters(&parameters);
 	parameters.infile[0] = 0;
@@ -30,6 +33,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	opj_destroy_codec(l_codec);
 	opj_stream_destroy(l_stream);
 	opj_image_destroy(image);
+
+	int b = GetTickCount();
+	printf("\n Decoding time: %u msec\n\n", b - a);  system("pause");
 
 	return 0;
 }

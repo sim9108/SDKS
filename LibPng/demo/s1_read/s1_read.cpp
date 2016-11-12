@@ -6,6 +6,7 @@
 #include <stdexcept>
 #include <iostream>
 #include <vector>
+#include <Windows.h>
 
 typedef unsigned char BYTE;
 typedef BYTE   PIXEL;
@@ -22,6 +23,8 @@ void warning_handler(png_structp ptr, png_const_charp cmt){
 
 int _tmain(int argc, _TCHAR* argv[])
 {
+	int a = GetTickCount();
+
 	png_structp read_ptr = png_create_read_struct(PNG_LIBPNG_VER_STRING, nullptr, nullptr, nullptr);
 	do{
 		if (!read_ptr) break;
@@ -98,7 +101,9 @@ int _tmain(int argc, _TCHAR* argv[])
 	} while (false);
 
 	png_destroy_read_struct(&read_ptr, nullptr, nullptr);
-	std::cin.get();
+	int b = GetTickCount();
+	printf("\n Decoding time: %u msec\n\n", b - a);  system("pause");
+
 
 	return 0;
 }
