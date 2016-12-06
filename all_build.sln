@@ -1,6 +1,7 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25029.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibZ", "LibZ\LibZ.vcxproj", "{B26E24E9-C1ED-437E-859D-59C8435D5685}"
 EndProject
@@ -474,6 +475,11 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibFreeLecTwitCurl", "LibFreeLecTwitCurl\LibFreeLecTwitCurl.vcxproj", "{8173B64D-362E-4574-BCA1-3590D40C8D13}"
 	ProjectSection(ProjectDependencies) = postProject
 		{66FDD202-8F11-46E7-91BC-22A327AC1828} = {66FDD202-8F11-46E7-91BC-22A327AC1828}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibHDF5", "LibHDF5\LibHDF5.vcxproj", "{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B26E24E9-C1ED-437E-859D-59C8435D5685} = {B26E24E9-C1ED-437E-859D-59C8435D5685}
 	EndProjectSection
 EndProject
 Global
@@ -2056,6 +2062,22 @@ Global
 		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
 		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
 		{8173B64D-362E-4574-BCA1-3590D40C8D13}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.Debug|Win32.Build.0 = Debug|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugMT|Win32.ActiveCfg = DebugMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugMT|Win32.Build.0 = DebugMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugS|Win32.ActiveCfg = DebugS|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugS|Win32.Build.0 = DebugS|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugSMT|Win32.ActiveCfg = DebugSMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.DebugSMT|Win32.Build.0 = DebugSMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.Release|Win32.ActiveCfg = Release|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.Release|Win32.Build.0 = Release|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseMT|Win32.ActiveCfg = ReleaseMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseMT|Win32.Build.0 = ReleaseMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseS|Win32.ActiveCfg = ReleaseS|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseS|Win32.Build.0 = ReleaseS|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseSMT|Win32.ActiveCfg = ReleaseSMT|Win32
+		{0C700C8E-3645-4ACA-BBE5-12CC9D21621D}.ReleaseSMT|Win32.Build.0 = ReleaseSMT|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
