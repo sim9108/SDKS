@@ -33,7 +33,7 @@
 #include <stdio.h>
 #include <assert.h>
 #ifdef _WIN32
-#define snprintf _snprintf /* Visual Studio */
+//#define snprintf _snprintf /* Visual Studio */
 #include <io.h>
 #else
 #include <sys/types.h>

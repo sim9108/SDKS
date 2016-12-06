@@ -37,7 +37,7 @@
 #define inline __inline
 #define alloca _alloca
 #define strncasecmp _strnicmp
-#define snprintf _snprintf
+//#define snprintf _snprintf
 #ifndef __SYMBIAN32__
 #define strcasecmp _stricmp
 #endif /* ! __SYMBIAN32__ */

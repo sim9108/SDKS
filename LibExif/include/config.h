@@ -95,6 +95,6 @@
 
 #define GETTEXT_PACKAGE ""
 #define ssize_t signed int
-#define snprintf _snprintf
+//#define snprintf _snprintf
 
 

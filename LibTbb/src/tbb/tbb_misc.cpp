@@ -80,7 +80,7 @@ namespace internal {
 void handle_perror( int error_code, const char* what ) {
     char buf[256];
 #if _MSC_VER
- #define snprintf _snprintf
+// #define snprintf _snprintf
 #endif
     int written = snprintf(buf, sizeof(buf), "%s: %s", what, strerror( error_code ));
     // On overflow, the returned value exceeds sizeof(buf) (for GLIBC) or is negative (for MSVC).

@@ -208,9 +208,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -226,9 +226,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -244,9 +244,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -263,9 +263,9 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -284,9 +284,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -306,9 +306,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -328,9 +328,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -351,9 +351,9 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;snprintf=_snprintf;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;inline=__inline;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBFONTCONFIG_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\fontconfig;..\LibFreeType\include;.\include\win32;..\LibExpat\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4090;4018;4244;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4090;4018;4244;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

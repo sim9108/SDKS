@@ -102,7 +102,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;snprintf=avpriv_snprintf;_snprintf=avpriv_snprintf;vsnprintf=avpriv_vsnprintf;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>.\include;..\LibAvUtil\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -121,7 +121,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;snprintf=avpriv_snprintf;_snprintf=avpriv_snprintf;vsnprintf=avpriv_vsnprintf;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>.\include;..\LibAvUtil\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <MinimalRebuild>false</MinimalRebuild>
@@ -141,7 +141,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;snprintf=avpriv_snprintf;_snprintf=avpriv_snprintf;vsnprintf=avpriv_vsnprintf;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>.\include;..\LibAvUtil\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -161,7 +161,7 @@
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;snprintf=avpriv_snprintf;_snprintf=avpriv_snprintf;vsnprintf=avpriv_vsnprintf;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_ISOC99_SOURCE;_FILE_OFFSET_BITS=64;_LARGEFILE_SOURCE;_WIN32_WINNT=0x0502;strtod=avpriv_strtod;_USE_MATH_DEFINES;_CRT_SECURE_NO_WARNINGS;inline=__inline;strtoll=_strtoi64;WIN32;__STDC_CONSTANT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <DisableSpecificWarnings>4244;4127;4018;4389;4146;4057;4204;4706;4305;4152;4324;4013;4100;4214;4554;4273;4701;4056;4090;4756;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <AdditionalIncludeDirectories>.\include;..\LibAvUtil\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
