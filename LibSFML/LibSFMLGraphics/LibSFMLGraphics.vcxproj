@@ -182,7 +182,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Opengl32.lib;LibSFMLSystemd.lib;LibSFMLWindowd.lib;LibGLewd.lib;LibFreeTyped.lib;LibJpegTurbod.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">
@@ -200,7 +200,7 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMTd.lib;LibSFMLWindowMTd.lib;LibGLewMTd.lib;LibFreeTypeMTd.lib;LibJpegTurboMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">
@@ -256,7 +256,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>Opengl32.lib;LibSFMLSystem.lib;LibSFMLWindow.lib;LibGLew.lib;LibFreeType.lib;LibJpegTurbo.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">
@@ -299,7 +299,7 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies>Opengl32.lib;LibSFMLSystemMT.lib;LibSFMLWindowMT.lib;LibGLewMT.lib;LibFreeTypeMT.lib;LibJpegTurboMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\LibSFMLWindow\lib;..\..\LibGLew\lib;..\..\LibFreeType\lib;..\..\LibJpegTurbo\lib</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">

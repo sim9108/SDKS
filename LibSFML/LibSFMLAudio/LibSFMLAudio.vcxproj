@@ -180,7 +180,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibSFMLSystemd.lib;LibOpenALd.lib;LibFlacd.lib;LibVorbisd.lib;LibOggd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -215,7 +215,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibSFMLSystemMTd.lib;LibOpenALMTd.lib;LibFlacMTd.lib;LibVorbisMTd.lib;LibOggMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -254,7 +254,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibSFMLSystem.lib;LibOpenAL.lib;LibFlac.lib;LibVorbis.lib;LibOgg.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -297,7 +297,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalLibraryDirectories>..\LibSFMLSystem\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib;..\..\LibOpenAL\lib;..\..\LibFlac\lib;..\..\LibVorbis\lib;..\..\LibOgg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>LibSFMLSystemMT.lib;LibOpenALMT.lib;LibFlacMT.lib;LibVorbisMT.lib;LibOggMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
