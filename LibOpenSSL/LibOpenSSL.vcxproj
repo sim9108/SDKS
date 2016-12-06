@@ -176,7 +176,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_SYSNAME_WIN32;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;_DEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -192,7 +192,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;_DEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -212,7 +212,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_SYSNAME_WIN32;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;_DEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -231,7 +231,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;_DEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -254,7 +254,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_SYSNAME_WIN32;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;NDEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -276,7 +276,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;NDEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -300,7 +300,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_SYSNAME_WIN32;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;NDEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -323,7 +323,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;DSO_WIN32;WIN32_LEAN_AND_MEAN;MK1MF_BUILD;MK1MF_PLATFORM_VC_WIN32;OPENSSL_THREADS;OPENSSL_BN_ASM_PART_WORDS;OPENSSL_IA32_SSE2;OPENSSL_BN_ASM_MONT;OPENSSL_BN_ASM_GF2m;OPENSSL_NO_RC5;OPENSSL_NO_MD2;OPENSSL_NO_KRB5;OPENSSL_NO_JPAKE;OPENSSL_NO_DYNAMIC_ENGINE;OPENSSL_BUILD_SHLIBCRYPTO;OPENSSL_BUILD_SHLIBSSL;OPENSSL_USE_DEPRECATED;L_ENDIAN;_CRT_SECURE_NO_DEPRECATE;SHA1_ASM;GHASH_ASM;WHIRLPOOL_ASM;SHA256_ASM;VPAES_ASM;AES_ASM;RMD160_ASM;MD5_ASM;SHA512_ASM;NDEBUG;_WINDOWS;_USRDLL;LIBOPENSSL_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\src;.\crypto;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4267;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

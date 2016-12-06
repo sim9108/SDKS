@@ -175,7 +175,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -192,7 +192,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_STATIC;_DEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -209,7 +209,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_EXPORTS;_DEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -227,7 +227,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_STATIC;_DEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -247,7 +247,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -268,7 +268,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_STATIC;NDEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -289,7 +289,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_EXPORTS;NDEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -311,7 +311,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;USE_JPIP;OPJ_STATIC;NDEBUG;_WINDOWS;_USRDLL;JPIP_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;.\include\openjpip;.\src\openjpip;.\include\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4244;4700;</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4477;4996;4244;4700;</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>

@@ -175,7 +175,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -190,7 +190,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -205,7 +205,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -221,7 +221,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;_DEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -239,7 +239,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -258,7 +258,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -277,7 +277,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
@@ -297,7 +297,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>LIBRAW_BUILDLIB;WIN32;NDEBUG;_WINDOWS;_USRDLL;LIBRAW_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>.\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275</DisableSpecificWarnings>
+      <DisableSpecificWarnings>4996;4018;4101;4244;4305;4804;4819;4309;4102;4146;4715;4258;4554;4275;4251;4838</DisableSpecificWarnings>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
