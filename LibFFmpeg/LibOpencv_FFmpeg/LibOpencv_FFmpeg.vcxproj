@@ -324,6 +324,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
     <ClInclude Include="src\cap_ffmpeg_api.hpp" />
   </ItemGroup>
   <ItemGroup>

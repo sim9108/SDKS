@@ -633,7 +633,7 @@ static void finish_group(OptionParseContext *octx, int group_idx,
     g->arg         = arg;
     g->group_def   = l->group_def;
 #if CONFIG_SWSCALE
-    g->sws_opts    = sws_opts;
+    g->swr_opts    = sws_opts;
 #endif
     g->swr_opts    = swr_opts;
     g->codec_opts  = codec_opts;
@@ -702,7 +702,7 @@ void uninit_parse_context(OptionParseContext *octx)
             av_dict_free(&l->groups[j].format_opts);
             av_dict_free(&l->groups[j].resample_opts);
 #if CONFIG_SWSCALE
-            sws_freeContext(l->groups[j].sws_opts);
+            sws_freeContext(l->groups[j].swr_opts);
 #endif
             av_dict_free(&l->groups[j].swr_opts);
         }

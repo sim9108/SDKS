@@ -717,6 +717,210 @@
     <ClCompile Include="src\LibAvCodec\latm_parser.c" />
     <ClCompile Include="src\LibAvCodec\lcldec.c" />
     <ClCompile Include="src\LibAvCodec\lclenc.c" />
+    <ClCompile Include="src\LibAvCodec\libx264.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_bitstream.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_cabac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_cpu.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_dct.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_deblock.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_analyse.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_cabac.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_cavlc.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_encoder.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_lookahead.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_macroblock.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_me.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_ratecontrol.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_set.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_slicetype-cl.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_frame.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_macroblock.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_mc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_mvpred.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_opencl.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_osdep.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_pixel.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_predict.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_quant.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_rectangle.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_set.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_threadpool.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_vlc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_win32thread.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x86\x264_x86_mc-c.c" />
+    <ClCompile Include="src\LibAvCodec\libx264\x86\x264_x86_predict-c.c" />
     <ClCompile Include="src\LibAvCodec\ljpegenc.c" />
     <ClCompile Include="src\LibAvCodec\loco.c" />
     <ClCompile Include="src\LibAvCodec\log2_tab.c" />
@@ -3550,6 +3754,448 @@
       <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32  -DPREFIX  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=1 -DHAVE_AVX_EXTERNAL=1 -DHAVE_ALIGNED_STACK=0 -DHAVE_CPUNOP=1 -DARCH_X86=1 -DARCH_X86_32=1 -DARCH_X86_64=0 --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+    <ClInclude Include="src\LibAvCodec\libx264\common.h" />
+    <ClInclude Include="src\LibAvCodec\libx264\opencl.h" />
+    <ClInclude Include="src\LibAvCodec\libx264\osdep.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\bitstream-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\cabac-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\const-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\cpu-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\dct-32.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\dct-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\deblock-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\mc-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\mc-a2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\pixel-32.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\pixel-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\predict-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\quant-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\sad-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\x86inc.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\x86util.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='ReleaseSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">..\..\Tools\yasm\yasm.exe -f win32 -DARCH_X86_64=0  -DPREFIX  -DSTACK_ALIGNMENT=4 -DHIGH_BIT_DEPTH=0 -DBIT_DEPTH=8 -DWIN32=1 -rnasm -pnasm --arch=x86 -I "..\LibAvUtil\src" -I ".\src" -o %(RelativeDir)%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugS|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
     </CustomBuild>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

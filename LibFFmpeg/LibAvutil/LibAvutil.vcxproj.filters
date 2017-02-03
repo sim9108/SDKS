@@ -515,6 +515,7 @@
     <ClInclude Include="src\libavutil\des.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\config.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\avutil-54.def" />

@@ -391,7 +391,7 @@ static int read_key(void)
         is_pipe = !GetConsoleMode(input_handle, &dw);
     }
 
-    if (stdin->_cnt > 0) {
+    if (stdin->_Placeholder > 0) {
         read(0, &ch, 1);
         return ch;
     }
@@ -2076,7 +2076,7 @@ static int decode_video(InputStream *ist, AVPacket *pkt, int *got_output)
             ret = 0; /* ignore */
         } else if (ret < 0) {
             av_log(NULL, AV_LOG_FATAL,
-                   "Failed to inject frame into filter network: %s\n", av_err2str(ret));
+                   "Failed to inject frame into filter network: %s\n", (char*)av_err2str(ret));
             exit_program(1);
         }
     }
@@ -2417,7 +2417,7 @@ static int init_input_stream(int ist_index, char *error, int error_len)
             snprintf(error, error_len,
                      "Error while opening decoder for input stream "
                      "#%d:%d : %s",
-                     ist->file_index, ist->st->index, av_err2str(ret));
+                     ist->file_index, ist->st->index, (char*)av_err2str(ret));
             return ret;
         }
         assert_avoptions(ist->decoder_opts);

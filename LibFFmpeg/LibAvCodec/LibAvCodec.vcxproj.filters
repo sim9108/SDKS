@@ -2209,6 +2209,105 @@
     <ClCompile Include="src\LibAvCodec\aacpsdsp_float.c">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_analyse.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_cabac.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_cavlc.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_encoder.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_lookahead.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_macroblock.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_me.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_ratecontrol.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_set.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\encoder\x264_encoder_slicetype-cl.c">
+      <Filter>libx264\src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x86\x264_x86_mc-c.c">
+      <Filter>libx264\src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x86\x264_x86_predict-c.c">
+      <Filter>libx264\src\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_bitstream.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_cabac.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_common.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_cpu.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_dct.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_deblock.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_frame.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_macroblock.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_mc.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_mvpred.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_opencl.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_osdep.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_pixel.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_predict.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_quant.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_rectangle.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_set.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_threadpool.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_vlc.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LibAvCodec\libx264\x264_common_win32thread.c">
+      <Filter>libx264\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="src">
@@ -2222,6 +2321,21 @@
     </Filter>
     <Filter Include="src\X86\ams2">
       <UniqueIdentifier>{7f164bcc-7d26-46c4-851f-2c6edcd1ce58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libx264">
+      <UniqueIdentifier>{4f92132e-4f50-4bd4-b0b5-c5797c3e3412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libx264\include">
+      <UniqueIdentifier>{c109b952-52a0-4be9-8617-4857b6b39113}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libx264\src">
+      <UniqueIdentifier>{ccb7134c-772f-44e1-846a-f57a2fb91a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libx264\src\X86">
+      <UniqueIdentifier>{497d5cd5-15dc-4821-a3c5-1e951e6dd9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libx264\src\encoder">
+      <UniqueIdentifier>{a7673cd1-c419-465f-ada1-7df3fac05616}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -2429,6 +2543,70 @@
     <CustomBuild Include="src\LibAvCodec\x86\jpeg2000dsp.asm">
       <Filter>src\X86\asm</Filter>
     </CustomBuild>
-    <CustomBuild Include="src\LibAvCodec\x86\aacpsdsp.asm" />
+    <CustomBuild Include="src\LibAvCodec\x86\aacpsdsp.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\bitstream-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\cabac-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\const-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\cpu-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\dct-32.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\dct-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\deblock-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\mc-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\mc-a2.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\pixel-32.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\pixel-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\predict-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\quant-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\sad-a.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\x86inc.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\LibAvCodec\libx264\x86\x86util.asm">
+      <Filter>libx264\src\X86</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\LibAvCodec\libx264\common.h">
+      <Filter>libx264\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibAvCodec\libx264\osdep.h">
+      <Filter>libx264\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LibAvCodec\libx264\opencl.h">
+      <Filter>libx264\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

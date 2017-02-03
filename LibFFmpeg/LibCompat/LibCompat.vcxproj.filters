@@ -32,5 +32,6 @@
     <ClInclude Include="include\compat\w32pthreads.h">
       <Filter>include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\config.h" />
   </ItemGroup>
 </Project>

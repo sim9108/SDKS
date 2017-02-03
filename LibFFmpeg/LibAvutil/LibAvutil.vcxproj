@@ -695,6 +695,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
     <ClInclude Include="src\libavutil\adler32.h" />
     <ClInclude Include="src\libavutil\aes.h" />
     <ClInclude Include="src\libavutil\atomic.h" />

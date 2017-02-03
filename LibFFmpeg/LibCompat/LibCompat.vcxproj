@@ -23,6 +23,7 @@
     <ClCompile Include="src\strtod.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
     <ClInclude Include="include\compat\msvcrt\snprintf.h" />
     <ClInclude Include="include\compat\os2threads.h" />
     <ClInclude Include="include\compat\va_copy.h" />

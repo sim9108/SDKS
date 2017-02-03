@@ -6,7 +6,7 @@
 #define CONFIG_THIS_YEAR 2015
 #define FFMPEG_DATADIR "/usr/local/share/ffmpeg"
 #define AVCONV_DATADIR "/usr/local/share/ffmpeg"
-#define CC_IDENT "Microsoft (R) C/C++ Optimizing Compiler Version 18.00.21005.1 for x86"
+#define CC_IDENT "Microsoft (R) C/C++ Optimizing Compiler Version 19.00.24215.1 for x86"
 #define av_restrict __restrict
 #define EXTERN_PREFIX "_"
 #define EXTERN_ASM _
@@ -224,7 +224,7 @@
 #define HAVE_SYS_VIDEOIO_H 0
 #define HAVE_TERMIOS_H 0
 #define HAVE_UDPLITE_H 0
-//#define HAVE_UNISTD_H 0
+#define HAVE_UNISTD_H 0
 #define HAVE_VALGRIND_VALGRIND_H 0
 #define HAVE_WINDOWS_H 1
 #define HAVE_WINSOCK2_H 1
@@ -244,7 +244,7 @@
 #define HAVE_LDEXPF 1
 #define HAVE_LLRINT 1
 #define HAVE_LLRINTF 1
-#define HAVE_LOG2 0
+#define HAVE_LOG2 1
 #define HAVE_LOG2F 1
 #define HAVE_LOG10F 1
 #define HAVE_LRINT 1
@@ -255,7 +255,7 @@
 #define HAVE_ROUNDF 1
 #define HAVE_SINF 1
 #define HAVE_TRUNC 1
-#define HAVE_TRUNCF 0
+#define HAVE_TRUNCF 1
 #define HAVE_ACCESS 1
 #define HAVE_ALIGNED_MALLOC 1
 #define HAVE_CLOCK_GETTIME 0
@@ -458,7 +458,7 @@
 #define CONFIG_LIBVPX 0
 #define CONFIG_LIBWAVPACK 0
 #define CONFIG_LIBWEBP 0
-#define CONFIG_LIBX264 0
+#define CONFIG_LIBX264 1
 #define CONFIG_LIBX265 0
 #define CONFIG_LIBXAVS 0
 #define CONFIG_LIBXCB 0
@@ -489,6 +489,7 @@
 #ifdef FFMOEG_DLL_USE
 #define CONFIG_SHARED 1
 #endif
+
 
 #define CONFIG_SMALL 0
 #define CONFIG_STATIC 0
@@ -1449,8 +1450,8 @@
 #define CONFIG_LIBWEBP_ANIM_ENCODER 0
 #define CONFIG_LIBWEBP_ENCODER 0
 #define CONFIG_LIBX262_ENCODER 0
-#define CONFIG_LIBX264_ENCODER 0
-#define CONFIG_LIBX264RGB_ENCODER 0
+#define CONFIG_LIBX264_ENCODER 1
+#define CONFIG_LIBX264RGB_ENCODER 1
 #define CONFIG_LIBX265_ENCODER 0
 #define CONFIG_LIBXAVS_ENCODER 0
 #define CONFIG_LIBXVID_ENCODER 0

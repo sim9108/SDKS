@@ -97,5 +97,6 @@
     <ClInclude Include="src\LibSwscale\version.h">
       <Filter>src\include</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\config.h" />
   </ItemGroup>
 </Project>

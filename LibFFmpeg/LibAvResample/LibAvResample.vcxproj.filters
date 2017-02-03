@@ -52,4 +52,7 @@
     <CustomBuild Include="src\LibAvResample\x86\dither.asm" />
     <CustomBuild Include="src\LibAvResample\x86\util.asm" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
 </Project>

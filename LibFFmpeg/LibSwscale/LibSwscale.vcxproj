@@ -488,6 +488,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
     <ClInclude Include="src\LibSwscale\rgb2rgb.h" />
     <ClInclude Include="src\LibSwscale\swscale.h" />
     <ClInclude Include="src\LibSwscale\swscale_internal.h" />

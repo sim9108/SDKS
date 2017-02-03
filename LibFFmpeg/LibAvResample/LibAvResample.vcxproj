@@ -108,6 +108,9 @@
       <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugSMT|Win32'">%(RelativeDir)%(Filename).obj</Outputs>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D87E80E3-AC0E-4BF3-B517-42C08D7010A4}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>

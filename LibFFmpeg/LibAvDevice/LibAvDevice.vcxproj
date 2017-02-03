@@ -363,6 +363,9 @@
     <ClCompile Include="src\LibAvDevice\utils.c" />
     <ClCompile Include="src\LibAvDevice\vfwcap.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

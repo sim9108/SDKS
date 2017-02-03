@@ -60,4 +60,7 @@
       <Filter>src\X86\asm</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
 </Project>

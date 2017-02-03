@@ -350,6 +350,9 @@
   <ItemGroup>
     <ClCompile Include="src\LibPostProc\postprocess.c" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\config.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

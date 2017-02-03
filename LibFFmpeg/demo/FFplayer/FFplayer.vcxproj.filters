@@ -29,7 +29,10 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="FFplayer.cpp">
+    <ClCompile Include="FFPlayer2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FFplayer.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

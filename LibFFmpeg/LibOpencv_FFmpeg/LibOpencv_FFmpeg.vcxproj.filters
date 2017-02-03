@@ -9,6 +9,7 @@
     <ClInclude Include="src\cap_ffmpeg_api.hpp">
       <Filter>src</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\config.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ffopencv.c">
