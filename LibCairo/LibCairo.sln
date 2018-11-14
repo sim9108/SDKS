@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibCairo", "LibCairo.vcxproj", "{B57CB2B2-529E-483A-BDE6-02708BF78B33}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x86 = Release|x86
+		ReleaseMT|x86 = ReleaseMT|x86
+		ReleaseS|x86 = ReleaseS|x86
+		ReleaseSMT|x86 = ReleaseSMT|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.Release|x86.ActiveCfg = Release|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.Release|x86.Build.0 = Release|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseMT|x86.ActiveCfg = ReleaseMT|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseMT|x86.Build.0 = ReleaseMT|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseS|x86.ActiveCfg = ReleaseS|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseS|x86.Build.0 = ReleaseS|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseSMT|x86.ActiveCfg = ReleaseSMT|Win32
+		{B57CB2B2-529E-483A-BDE6-02708BF78B33}.ReleaseSMT|x86.Build.0 = ReleaseSMT|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E829FA65-9194-4576-A514-4E3A18B4D6AB}
+	EndGlobalSection
+EndGlobal

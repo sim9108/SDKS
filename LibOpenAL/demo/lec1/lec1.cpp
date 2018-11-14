@@ -5,6 +5,7 @@
 #include <cstdlib>
 #include <cstdio>
 #include <iostream>
+#include <cmath>
 
 #include <AL/al.h>
 #include <AL/alc.h>
@@ -29,6 +30,13 @@ playFile(const char *fileName){
 	ALuint source;
 	alGenSources(1, &source);
 	alSourcei(source, AL_BUFFER, buffer);
+	
+	auto _pan = -10000.0f;
+	float pan = (float)_pan / 10000.0f;
+	float pan2 = (float)sqrt(1 - pan*pan);
+
+	float sourcePosAL[] = { pan,pan2, 0.0f };
+	alSourcefv(source, AL_POSITION, sourcePosAL);
 	alSourcePlay(source);
 
 	/* Normally nothing should go wrong above, but one never knows... */

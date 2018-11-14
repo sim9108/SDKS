@@ -35,7 +35,13 @@
 */
 #ifndef XMLCALL
 #if defined(_MSC_VER)
+
+#ifdef EXPAT_STATIC
+#define XMLCALL 
+#else
 #define XMLCALL __cdecl
+#endif
+
 #elif defined(__GNUC__) && defined(__i386) && !defined(__INTEL_COMPILER)
 #define XMLCALL __attribute__((cdecl))
 #else
@@ -59,7 +65,13 @@
 /* using Expat from an application */
 
 #ifdef XML_USE_MSC_EXTENSIONS
+#ifdef EXPAT_STATIC
+#define XMLIMPORT 
+#undef XMLCALL
+#define XMLCALL 
+#else
 #define XMLIMPORT __declspec(dllimport)
+#endif
 #endif
 
 #endif

@@ -82,3 +82,6 @@ LibBzip2/demo/helloworld/Debug/
 *.mp4
 *.avi
 *.opendb
+LibPixel/.vs/
+*/.vs/
+.vs/

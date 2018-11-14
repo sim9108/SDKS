@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\pixman.c" />
+    <ClCompile Include="src\pixman-fast-path.c" />
+    <ClCompile Include="src\pixman-general.c" />
+    <ClCompile Include="src\pixman-gradient-walker.c" />
+    <ClCompile Include="src\pixman-image.c" />
+    <ClCompile Include="src\pixman-implementation.c" />
+    <ClCompile Include="src\pixman-linear-gradient.c" />
+    <ClCompile Include="src\pixman-matrix.c" />
+    <ClCompile Include="src\pixman-mmx.c" />
+    <ClCompile Include="src\pixman-noop.c" />
+    <ClCompile Include="src\pixman-radial-gradient.c" />
+    <ClCompile Include="src\pixman-region16.c" />
+    <ClCompile Include="src\pixman-region32.c" />
+    <ClCompile Include="src\pixman-solid-fill.c" />
+    <ClCompile Include="src\pixman-sse2.c" />
+    <ClCompile Include="src\pixman-timer.c" />
+    <ClCompile Include="src\pixman-trap.c" />
+    <ClCompile Include="src\pixman-utils.c" />
+    <ClCompile Include="src\pixman-access.c" />
+    <ClCompile Include="src\pixman-access-accessors.c" />
+    <ClCompile Include="src\pixman-bits-image.c" />
+    <ClCompile Include="src\pixman-combine32.c" />
+    <ClCompile Include="src\pixman-combine64.c" />
+    <ClCompile Include="src\pixman-conical-gradient.c" />
+    <ClCompile Include="src\pixman-cpu.c" />
+    <ClCompile Include="src\pixman-edge.c" />
+    <ClCompile Include="src\pixman-edge-accessors.c" />
+  </ItemGroup>
+</Project>

@@ -93,6 +93,7 @@
   <ItemGroup>
     <ClCompile Include="FFplayer.hpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="FFPlayer2.cpp" />
     <ClCompile Include="stdafx.cpp" />

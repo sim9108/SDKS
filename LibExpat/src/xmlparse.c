@@ -6,7 +6,7 @@
 #include <string.h>                     /* memset(), memcpy() */
 #include <assert.h>
 
-#define XML_BUILDING_EXPAT 1
+//#define XML_BUILDING_EXPAT 1
 
 #ifdef COMPILED_FROM_DSP
 #include "winconfig.h"
