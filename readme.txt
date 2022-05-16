@@ -62,7 +62,7 @@
 +LibOpenAl
 +LibOpenCL ICD Loader
 
-
+msvc 2022 64 bit MT 모드 빌드
 
 
 
