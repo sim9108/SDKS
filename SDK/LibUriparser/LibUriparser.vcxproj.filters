@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e2f6c561-f634-4ff8-aac1-f22e21524d2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{44d5a182-f548-43e9-acf7-e1331e876cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\include">
+      <UniqueIdentifier>{1a4c13f3-4051-4280-b69b-81b1584ba8f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{e5b80921-8a00-4c49-a87e-23ccf849b239}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\uriparser">
+      <UniqueIdentifier>{cc531287-8b7a-407c-a0fe-2ebe73451f24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\UriCommon.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriCompare.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriEscape.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriFile.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriIp4.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriIp4Base.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriMemory.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriNormalize.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriNormalizeBase.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriParse.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriParseBase.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriQuery.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriRecompose.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriResolve.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\UriShorten.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\UriIp4Base.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\UriMemory.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\UriNormalizeBase.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\UriParseBase.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\UriCommon.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\UriBase.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\UriDefsAnsi.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\UriDefsConfig.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\UriDefsUnicode.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\UriIp4.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\uriparser\Uri.h">
+      <Filter>src\include\uriparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

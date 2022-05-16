@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9c25238-74cf-46f7-8d60-4ad3d1be83d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libpostproc">
+      <UniqueIdentifier>{88103d2a-b69b-49d9-aee0-c6c4357e278c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libpostproc\postprocess.c">
+      <Filter>src\libpostproc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

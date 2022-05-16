@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{014eddbc-bd54-4445-ad35-73bc902f939e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{0ba876c4-3eb8-4826-a29f-c754cc107e8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\ittnotify">
+      <UniqueIdentifier>{c690bf0f-3cd7-4d57-81eb-000c31c94e60}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\ittnotify\ittnotify_config.h">
+      <Filter>src\src\ittnotify</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ittnotify\ittnotify_static.h">
+      <Filter>src\src\ittnotify</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ittnotify\ittnotify_types.h">
+      <Filter>src\src\ittnotify</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\ittnotify\disable_warnings.h">
+      <Filter>src\src\ittnotify</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\ittnotify\ittnotify_static.c">
+      <Filter>src\src\ittnotify</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\ittnotify\jitprofiling.c">
+      <Filter>src\src\ittnotify</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

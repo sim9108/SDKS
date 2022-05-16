@@ -1,0 +1,91 @@
+>>LibOpenCV_core = {
+	ippicvmt.lib
+	LibIppicvSMT.lib
+	LibTBBSMT.lib
+	LibIttnotifySMT.lib
+	LibZSMT.lib
+}
+
+>>LibOpenCV_imgproc = LibOpenCV_core
+>>LibOpenCV_flann = LibOpenCV_core
+
+>>LibOpenCV_imgcodecs = LibOpenCV_core + LibOpenCV_imgproc + {
+	LibOpenEXRSMT.lib
+	LibOpenJPEGSMT.lib
+	LibPngSMT.lib
+	LibWebPSMT.lib
+	LibTiffSMT.lib
+	LibJpegturboSMT.lib
+	LibImathSMT.lib
+}
+
+>>LibOpenCV_features2d = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_flann
+>>LibOpenCV_calib3d = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_flann + LibOpenCV_features2d
+>>LibOpenCV_dnn = LibOpenCV_core + LibOpenCV_imgproc +{LibProtobufSMT.lib}
+>>LibOpenCV_video = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_flann + LibOpenCV_features2d + LibOpenCV_calib3d + LibOpenCV_dnn
+>>LibOpenCV_gapi = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_flann + LibOpenCV_features2d + LibOpenCV_calib3d + LibOpenCV_dnn + {Ws2_32.lib}
+>>LibOpenCV_ml = LibOpenCV_core
+>>LibOpenCV_photo = LibOpenCV_core + LibOpenCV_imgproc
+>>LibOpenCV_videoio = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_imgcodecs
+>>LibOpenCV_objdetect = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_flann + LibOpenCV_features2d + LibOpenCV_calib3d + LibOpenCV_dnn + {LibQuircSMT.lib}
+>>LibOpenCV_highgui = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_imgcodecs
+>>LibOpenCV_ts = LibOpenCV_core + LibOpenCV_imgproc + LibOpenCV_imgcodecs + LibOpenCV_highgui
+
+
+
+AVX
+CV_CPU_DISPATCH_MODE=AVX
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+CV_CPU_COMPILE_POPCNT=1
+CV_CPU_COMPILE_SSE4_2=1
+CV_CPU_COMPILE_AVX=1
+
+AVX2
+CV_CPU_DISPATCH_MODE=AVX2
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+CV_CPU_COMPILE_POPCNT=1
+CV_CPU_COMPILE_SSE4_2=1
+CV_CPU_COMPILE_FP16=1
+CV_CPU_COMPILE_FMA3=1
+CV_CPU_COMPILE_AVX=1
+CV_CPU_COMPILE_AVX2=1
+
+SSE4_1
+CV_CPU_DISPATCH_MODE=SSE4_1
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+
+SSE4_2
+CV_CPU_DISPATCH_MODE=SSE4_2
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+CV_CPU_COMPILE_POPCNT=1
+CV_CPU_COMPILE_SSE4_2=1
+
+AVX512_SKX
+CV_CPU_DISPATCH_MODE=AVX512_SKX
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+CV_CPU_COMPILE_POPCNT=1
+CV_CPU_COMPILE_SSE4_2=1
+CV_CPU_COMPILE_FP16=1
+CV_CPU_COMPILE_FMA3=1
+CV_CPU_COMPILE_AVX=1
+CV_CPU_COMPILE_AVX2=1
+CV_CPU_COMPILE_AVX_512F=1
+CV_CPU_COMPILE_AVX512_COMMON=1
+CV_CPU_COMPILE_AVX512_SKX=1
+
+FP16
+CV_CPU_DISPATCH_MODE=FP16
+CV_CPU_COMPILE_SSSE3=1
+CV_CPU_COMPILE_SSE4_1=1
+CV_CPU_COMPILE_POPCNT=1
+CV_CPU_COMPILE_SSE4_2=1
+CV_CPU_COMPILE_FP16=1
+CV_CPU_COMPILE_AVX=1
+
+
+

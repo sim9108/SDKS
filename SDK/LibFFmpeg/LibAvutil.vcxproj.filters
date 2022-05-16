@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9c25238-74cf-46f7-8d60-4ad3d1be83d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavutil">
+      <UniqueIdentifier>{aee92f6d-d036-47d5-9be6-1fd2f6b67392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavutil\include">
+      <UniqueIdentifier>{dbbccd88-1551-4837-aa50-ffe44a7b3cbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavutil\x86">
+      <UniqueIdentifier>{cfc8b114-6b91-4d66-b3e1-7fba09025f42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavutil\x86\asm">
+      <UniqueIdentifier>{9e7c986b-237d-41c5-a5ec-83d5a3783267}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\adler32.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\aes.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\aes_ctr.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\aes_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\attributes.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\audio_fifo.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\avassert.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\avconfig.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\avstring.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\avutil.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\base64.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\blowfish.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\bprint.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\bswap.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\buffer.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\buffer_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\camellia.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\cast5.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\channel_layout.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\colorspace.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\color_utils.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\common.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\cpu.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\cpu_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\crc.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\cuda_check.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\des.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\detection_bbox.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\dict.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\display.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\dovi_meta.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\downmix_info.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\dynarray.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\encryption_info.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\error.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\eval.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\ffmath.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\ffversion.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\fifo.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\file.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\film_grain_params.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\fixed_dsp.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\float_dsp.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\frame.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hash.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hdr_dynamic_metadata.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hmac.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_cuda.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_cuda_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_d3d11va.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_drm.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_dxva2.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_mediacodec.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_opencl.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_qsv.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_vaapi.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_vdpau.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_videotoolbox.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\hwcontext_vulkan.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\imgutils.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\imgutils_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\integer.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\intfloat.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\intmath.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\intreadwrite.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\lfg.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\libm.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\lls.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\log.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\lzo.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\macos_kperf.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\macros.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\mastering_display_metadata.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\mathematics.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\md5.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\mem.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\mem_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\motion_vector.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\murmur3.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\opt.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\parseutils.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\pca.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\pixdesc.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\pixelutils.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\pixfmt.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\qsort.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\random_seed.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\rational.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\rc4.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\replaygain.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\reverse.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\ripemd.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\samplefmt.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\sha.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\sha512.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\slicethread.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\softfloat.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\softfloat_ieee754.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\softfloat_tables.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\spherical.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\stereo3d.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\tablegen.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\tea.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\thread.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\threadmessage.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\time.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\timecode.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\timer.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\timestamp.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\time_internal.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\tree.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\twofish.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\tx.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\tx_priv.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\version.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\video_enc_params.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\wchar_filename.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\xga_font_data.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libavutil\xtea.h">
+      <Filter>src\libavutil\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavutil\adler32.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\aes.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\aes_ctr.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\audio_fifo.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\avsscanf.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\avstring.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\base64.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\blowfish.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\bprint.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\buffer.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\camellia.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\cast5.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\channel_layout.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\color_utils.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\cpu.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\crc.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\des.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\detection_bbox.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\dict.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\display.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\dovi_meta.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\downmix_info.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\encryption_info.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\error.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\eval.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\fifo.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\file.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\file_open.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\film_grain_params.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\fixed_dsp.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\float_dsp.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\frame.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hash.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hdr_dynamic_metadata.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hmac.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext_d3d11va.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext_dxva2.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\imgutils.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\integer.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\intmath.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lfg.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lls.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\log.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\log2_tab.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lzo.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mastering_display_metadata.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mathematics.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\md5.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mem.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\murmur3.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\opt.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\parseutils.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\pixdesc.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\pixelutils.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\random_seed.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\rational.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\rc4.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\reverse.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\ripemd.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\samplefmt.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\sha.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\sha512.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\slicethread.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\spherical.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\stereo3d.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tea.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\threadmessage.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\time.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\timecode.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tree.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\twofish.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_double.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_float.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_int32.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\utils.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\video_enc_params.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\xga_font_data.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\xtea.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\fixed_dsp_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\float_dsp_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\imgutils_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\lls_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\pixelutils_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\cpu.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\tx_float_init.c">
+      <Filter>src\libavutil\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hdr_dynamic_vivid_metadata.c">
+      <Filter>src\libavutil</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\cpuid.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\emms.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\fixed_dsp.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\float_dsp.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\imgutils.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\lls.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\pixelutils.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavutil\x86\tx_float.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <Filter>src</Filter>
+    </None>
+    <None Include="src\libavutil\x86\x86util.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </None>
+    <None Include="src\libavutil\x86\x86inc.asm">
+      <Filter>src\libavutil\x86\asm</Filter>
+    </None>
+  </ItemGroup>
+</Project>

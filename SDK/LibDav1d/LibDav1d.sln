@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibDav1d", "LibDav1d.vcxproj", "{35C7E340-354C-4716-B6B2-C93A4FCD003B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2F7A9E31-AC45-45F7-B238-67448D1D8E0B} = {2F7A9E31-AC45-45F7-B238-67448D1D8E0B}
+		{FB930892-1ADA-4CF4-8F9A-9CB93966833F} = {FB930892-1ADA-4CF4-8F9A-9CB93966833F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibDav1d_bitdepth_8", "LibDav1d_bitdepth_8.vcxproj", "{FB930892-1ADA-4CF4-8F9A-9CB93966833F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibDav1d_bitdepth_16", "LibDav1d_bitdepth_16.vcxproj", "{2F7A9E31-AC45-45F7-B238-67448D1D8E0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{35C7E340-354C-4716-B6B2-C93A4FCD003B}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{35C7E340-354C-4716-B6B2-C93A4FCD003B}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{35C7E340-354C-4716-B6B2-C93A4FCD003B}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{35C7E340-354C-4716-B6B2-C93A4FCD003B}.Release_SMT|x64.Build.0 = Release_SMT|x64
+		{FB930892-1ADA-4CF4-8F9A-9CB93966833F}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{FB930892-1ADA-4CF4-8F9A-9CB93966833F}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{FB930892-1ADA-4CF4-8F9A-9CB93966833F}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{FB930892-1ADA-4CF4-8F9A-9CB93966833F}.Release_SMT|x64.Build.0 = Release_SMT|x64
+		{2F7A9E31-AC45-45F7-B238-67448D1D8E0B}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{2F7A9E31-AC45-45F7-B238-67448D1D8E0B}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{2F7A9E31-AC45-45F7-B238-67448D1D8E0B}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{2F7A9E31-AC45-45F7-B238-67448D1D8E0B}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7EA0FC4-9C3B-4798-8BCB-4122C006B7A8}
+	EndGlobalSection
+EndGlobal

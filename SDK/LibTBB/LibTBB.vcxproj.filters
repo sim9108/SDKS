@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{97ff4df0-9495-4127-9039-2eac5b62cbc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{ea700861-715e-427e-a61a-da842f8b2880}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tbb">
+      <UniqueIdentifier>{d91bfbc7-f93f-4053-b39b-f219d310c965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tbbmalloc">
+      <UniqueIdentifier>{4a32831e-71af-434a-a8ca-e6feec016416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tbbmalloc\header">
+      <UniqueIdentifier>{1d6933b8-32c3-45e6-a2e5-8c49af3a148b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\tbb\queuing_rw_mutex.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\rml_tbb.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\rtm_mutex.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\rtm_rw_mutex.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\semaphore.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\small_object_pool.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\task.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\task_dispatcher.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\task_group_context.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\version.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\address_waiter.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\allocator.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\arena.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\arena_slot.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\concurrent_bounded_queue.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\dynamic_link.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\exception.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\global_control.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\governor.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\itt_notify.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\main.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\market.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\misc.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\misc_ex.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\observer_proxy.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\parallel_pipeline.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\private_server.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\profiling.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbbmalloc\frontend.cpp">
+      <Filter>src\src\tbbmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbbmalloc\large_objects.cpp">
+      <Filter>src\src\tbbmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbbmalloc\tbbmalloc.cpp">
+      <Filter>src\src\tbbmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbbmalloc\backend.cpp">
+      <Filter>src\src\tbbmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbbmalloc\backref.cpp">
+      <Filter>src\src\tbbmalloc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tbb\assert_impl.cpp">
+      <Filter>src\src\tbb</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\tbbmalloc\backend.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\Customize.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\large_objects.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\MapMemory.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\shared_utils.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\Statistics.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\Synchronize.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\tbbmalloc_internal.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\tbbmalloc_internal_api.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\tbbmalloc\TypeDefinitions.h">
+      <Filter>src\src\tbbmalloc\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\imgcodecs\opencv_imgcodecs_pch.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\bitstrm.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\exif.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_base.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_bmp.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_exr.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_gdal.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_gdcm.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_hdr.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg2000.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pam.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pfm.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_png.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pxm.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_sunras.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_tiff.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_webp.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\loadsave.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\rgbe.cpp" />
+    <ClCompile Include="src\modules\imgcodecs\src\utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\imgcodecs\src\apple_conversions.h" />
+    <ClInclude Include="src\modules\imgcodecs\src\bitstrm.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\exif.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmts.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_base.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_bmp.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_exr.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_gdal.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_gdcm.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_hdr.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg2000.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pam.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pfm.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_png.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pxm.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_sunras.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_tiff.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_webp.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\precomp.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\rgbe.hpp" />
+    <ClInclude Include="src\modules\imgcodecs\src\utils.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{600740de-20b9-4075-8bc2-52e306cfad7f}</ProjectGuid>
+    <RootNamespace>LibOpenCVimgcodecs</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\imgcodecs\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\imgcodecs\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgcodecs;.\src\modules\imgcodecs\include;.\src\modules\imgcodecs\src;.\src\modules\imgproc\include;..\LibOpenEXR\src\src\lib\Iex;..\LibOpenEXR\src\src\lib\OpenEXR;..\LibImath\src\src\Imath;..\LibJpegturbo\src;..\LibOpenJPEG\src\src\lib\openjp2;..\LibOpenJPEG\src\src\lib\openjpip;..\LibPng\src;..\LibZ\src;..\LibTiff\src\libtiff;..\LibWebP\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4996;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMTd.lib;LibOpenJPEGSMTd.lib;LibPngSMTd.lib;LibWebPSMTd.lib;LibTiffSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibJpegturboSMTd.lib;LibImathSMTd.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibOpenCV_coreSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgcodecs;.\src\modules\imgcodecs\include;.\src\modules\imgcodecs\src;.\src\modules\imgproc\include;..\LibOpenEXR\src\src\lib\Iex;..\LibOpenEXR\src\src\lib\OpenEXR;..\LibImath\src\src\Imath;..\LibJpegturbo\src;..\LibOpenJPEG\src\src\lib\openjp2;..\LibOpenJPEG\src\src\lib\openjpip;..\LibPng\src;..\LibZ\src;..\LibTiff\src\libtiff;..\LibWebP\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4996;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMT.lib;LibOpenJPEGSMT.lib;LibPngSMT.lib;LibWebPSMT.lib;LibTiffSMT.lib;LibOpenCV_imgprocSMT.lib;LibJpegturboSMT.lib;LibImathSMT.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibOpenCV_coreSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

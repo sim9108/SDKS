@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f79ad9c3-eabb-4a6e-af9b-7b0fa6553773}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs">
+      <UniqueIdentifier>{7b3707c5-3738-4d14-99b2-269c03fea7e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\3d">
+      <UniqueIdentifier>{57f5baa9-b3cf-4597-ad85-8ae293146d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\3d\header">
+      <UniqueIdentifier>{84a51780-0bb2-4a3a-b6be-39e1f9b649fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\app">
+      <UniqueIdentifier>{897816b2-81a3-494b-a04c-347ad7aa773b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\app\header">
+      <UniqueIdentifier>{19f9193c-74d7-45e3-9af3-c4c6112f084b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\communication">
+      <UniqueIdentifier>{ad5f53cc-4864-4cd7-b648-dafebaf25210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\communication\header">
+      <UniqueIdentifier>{52cec548-e310-4317-bb1c-290079d2c8da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\events">
+      <UniqueIdentifier>{5924346c-a9d8-4107-bec8-5385ed8afbff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\events\header">
+      <UniqueIdentifier>{84fc5157-5421-458d-82c5-5798c29e0023}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\gl">
+      <UniqueIdentifier>{04038db2-808d-4721-ba93-e23fde5fa965}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\gl\header">
+      <UniqueIdentifier>{3877b736-e59a-4ebf-af4e-686fe6303e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\gl\shaders">
+      <UniqueIdentifier>{eb3eaa2f-a086-4edf-af80-dcb9680a41b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\graphics">
+      <UniqueIdentifier>{489f2dc3-c4c1-4ead-b698-b0984d2451de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\graphics\header">
+      <UniqueIdentifier>{b7b823d7-ac6d-46c9-a6a2-e995f9d1c939}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\math">
+      <UniqueIdentifier>{220d496d-e221-4329-b5c4-c4b36bc560d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\math\header">
+      <UniqueIdentifier>{e189772e-e226-4702-bf15-160b54346c20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\sound">
+      <UniqueIdentifier>{e3a62485-2a22-4ba5-a58f-5ed991a6470b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\sound\header">
+      <UniqueIdentifier>{b3916f47-c7ac-4855-a4e5-cb9528e1ba03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\types">
+      <UniqueIdentifier>{7f17db67-6a83-45ab-93fa-99d98999bb4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\types\header">
+      <UniqueIdentifier>{410a3b8f-1479-442b-a3d5-a87f457e1907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\utils">
+      <UniqueIdentifier>{b6468781-f18f-4ac0-9d21-72c90f6214ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\utils\header">
+      <UniqueIdentifier>{c6560542-3162-4c75-8b09-4a3fe7200a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\video">
+      <UniqueIdentifier>{98fdde02-308d-4d71-9452-1a647eacb258}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libs\video\header">
+      <UniqueIdentifier>{c4c8b6c8-6127-4f09-b3fd-db943b4a563d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons">
+      <UniqueIdentifier>{0e5aa314-b41a-4d37-bd0b-58ae8afbc261}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxGui">
+      <UniqueIdentifier>{533e3aed-e365-4c0a-90a3-ea523c9f4c2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxGui\src">
+      <UniqueIdentifier>{1eb6b433-f571-4a89-91fe-8c870ffce4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxGui\src\header">
+      <UniqueIdentifier>{5d8692ef-354b-43e3-a3eb-d24e65f9e1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxPoco">
+      <UniqueIdentifier>{55ebbcba-b3d0-41dc-a50c-62b57ac00b54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxPoco\src">
+      <UniqueIdentifier>{b6ea4d9e-f448-4ecc-a5b2-217b33250569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxOsc">
+      <UniqueIdentifier>{d48150c3-3675-4a07-853c-bcd6fa5b0334}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxOsc\header">
+      <UniqueIdentifier>{622e4a2f-761d-402f-9176-d096c60665b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxNetwork">
+      <UniqueIdentifier>{6e985832-be1a-4ac6-8280-9ac65de92b59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxNetwork\src">
+      <UniqueIdentifier>{7e4e50b0-d4a2-4513-a3bc-5ca25d668e1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxNetwork\src\header">
+      <UniqueIdentifier>{681b3374-39c4-4bc0-8ede-2a9d638d4c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxXmlSettings">
+      <UniqueIdentifier>{15224ab4-5a50-439d-845f-cd73b62342b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxXmlSettings\src">
+      <UniqueIdentifier>{05c42065-3d1b-4ac5-8711-363d650d5ae9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxXmlSettings\libs">
+      <UniqueIdentifier>{7535058b-3d33-457e-b8a2-8495ea5c139b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxVectorGraphics">
+      <UniqueIdentifier>{702389a6-4f49-4466-94f3-9f740f477832}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxVectorGraphics\src">
+      <UniqueIdentifier>{f331a451-82fb-4245-a700-fc068fe3a786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxVectorGraphics\libs">
+      <UniqueIdentifier>{23c920f5-558c-4e87-a74c-3e47f6be955f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxThreadedImageLoader">
+      <UniqueIdentifier>{76ee19fd-2755-49f9-8980-af54cf38e957}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxThreadedImageLoader\src">
+      <UniqueIdentifier>{ec12c34d-b31f-4078-8ec8-e1192a600036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxOpenCv">
+      <UniqueIdentifier>{0c58a523-5ded-4368-b419-64dcac9394e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxOpenCv\src">
+      <UniqueIdentifier>{10647433-b426-4217-a8f4-c4cb9ae09ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxOpenCv\src\header">
+      <UniqueIdentifier>{7715732a-d4a9-4f44-bd2e-576193179f91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxAssimpModelLoader">
+      <UniqueIdentifier>{4f65b5c7-e81b-4b7b-a699-d2d485bc2f6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxAssimpModelLoader\src">
+      <UniqueIdentifier>{570e0cf5-f8a4-478c-9d61-49c36bb77905}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\addons\ofxAssimpModelLoader\src\header">
+      <UniqueIdentifier>{b5c161c9-b1b1-4fbb-9e85-21fee34aca6c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libs\openFrameworks\3d\of3dPrimitives.cpp">
+      <Filter>src\libs\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\3d\of3dUtils.cpp">
+      <Filter>src\libs\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\3d\ofCamera.cpp">
+      <Filter>src\libs\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\3d\ofEasyCam.cpp">
+      <Filter>src\libs\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\3d\ofNode.cpp">
+      <Filter>src\libs\3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppGLFWWindow.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppGlutWindow.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppNoWindow.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppRunner.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofBaseApp.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\app\ofMainLoop.cpp">
+      <Filter>src\libs\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\communication\ofArduino.cpp">
+      <Filter>src\libs\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\communication\ofSerial.cpp">
+      <Filter>src\libs\communication</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\events\ofEvents.cpp">
+      <Filter>src\libs\events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLRenderer.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLUtils.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofLight.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofMaterial.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofShader.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofTexture.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofVbo.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofVboMesh.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofBufferObject.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofFbo.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLProgrammableRenderer.cpp">
+      <Filter>src\libs\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofImage.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofPath.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofPixels.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofRendererCollection.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofTessellator.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofTrueTypeFont.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\of3dGraphics.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofBitmapFont.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofCairoRenderer.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofGraphics.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofGraphicsBaseTypes.cpp">
+      <Filter>src\libs\graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofMath.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofMatrix3x3.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofMatrix4x4.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofQuaternion.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofVec2f.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\math\ofVec4f.cpp">
+      <Filter>src\libs\math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofFmodSoundPlayer.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofOpenALSoundPlayer.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofRtAudioSoundStream.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundBaseTypes.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundBuffer.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundPlayer.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundStream.cpp">
+      <Filter>src\libs\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\types\ofBaseTypes.cpp">
+      <Filter>src\libs\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\types\ofColor.cpp">
+      <Filter>src\libs\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\types\ofParameter.cpp">
+      <Filter>src\libs\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\types\ofParameterGroup.cpp">
+      <Filter>src\libs\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\types\ofRectangle.cpp">
+      <Filter>src\libs\types</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofFileUtils.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofFpsCounter.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofLog.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofMatrixStack.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofSystemUtils.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofThread.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofTimer.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofURLFileLoader.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofUtils.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\utils\ofXml.cpp">
+      <Filter>src\libs\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\video\ofVideoGrabber.cpp">
+      <Filter>src\libs\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\video\ofVideoPlayer.cpp">
+      <Filter>src\libs\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\video\ofDirectShowGrabber.cpp">
+      <Filter>src\libs\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libs\openFrameworks\video\ofDirectShowPlayer.cpp">
+      <Filter>src\libs\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxBaseGui.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxButton.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxColorPicker.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxGuiGroup.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxInputField.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxLabel.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxPanel.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxSlider.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxSliderGroup.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxGui\src\ofxToggle.cpp">
+      <Filter>src\addons\ofxGui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxPoco\src\ofxXmlPoco.cpp">
+      <Filter>src\addons\ofxPoco\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscBundle.cpp">
+      <Filter>src\addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscMessage.cpp">
+      <Filter>src\addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscParameterSync.cpp">
+      <Filter>src\addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscReceiver.cpp">
+      <Filter>src\addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscSender.cpp">
+      <Filter>src\addons\ofxOsc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxUDPManager.cpp">
+      <Filter>src\addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPManager.cpp">
+      <Filter>src\addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPServer.cpp">
+      <Filter>src\addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPClient.cpp">
+      <Filter>src\addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxNetworkUtils.cpp">
+      <Filter>src\addons\ofxNetwork\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
+      <Filter>src\addons\ofxXmlSettings\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxml.cpp">
+      <Filter>src\addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxmlerror.cpp">
+      <Filter>src\addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxmlparser.cpp">
+      <Filter>src\addons\ofxXmlSettings\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp">
+      <Filter>src\addons\ofxVectorGraphics\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxVectorGraphics\libs\CreEPS.cpp">
+      <Filter>src\addons\ofxVectorGraphics\libs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.cpp">
+      <Filter>src\addons\ofxThreadedImageLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvColorImage.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvContourFinder.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvFloatImage.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvImage.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvShortImage.cpp">
+      <Filter>src\addons\ofxOpenCv\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp">
+      <Filter>src\addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp">
+      <Filter>src\addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp">
+      <Filter>src\addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp">
+      <Filter>src\addons\ofxAssimpModelLoader\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\libs\openFrameworks\3d\ofCamera.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\3d\ofEasyCam.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\3d\ofMesh.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\3d\ofNode.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\3d\of3dPrimitives.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\3d\of3dUtils.h">
+      <Filter>src\libs\3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofMainLoop.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofWindowSettings.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppBaseWindow.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppEGLWindow.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppGLFWWindow.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppGlutWindow.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppNoWindow.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppRunner.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofBaseApp.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\app\ofIcon.h">
+      <Filter>src\libs\app\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\communication\ofArduino.h">
+      <Filter>src\libs\communication\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\communication\ofSerial.h">
+      <Filter>src\libs\communication\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\events\ofEvent.h">
+      <Filter>src\libs\events\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\events\ofEvents.h">
+      <Filter>src\libs\events\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\events\ofEventUtils.h">
+      <Filter>src\libs\events\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLProgrammableRenderer.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLRenderer.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLUtils.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofLight.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofMaterial.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofShader.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofTexture.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofVbo.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofVboMesh.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofBufferObject.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofFbo.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLBaseTypes.h">
+      <Filter>src\libs\gl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofBitmapFont.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofCairoRenderer.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphics.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphicsBaseTypes.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphicsConstants.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofImage.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPath.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPixels.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPolyline.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofRendererCollection.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofTessellator.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofTrueTypeFont.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\graphics\of3dGraphics.h">
+      <Filter>src\libs\graphics\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofMath.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofMathConstants.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofMatrix3x3.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofMatrix4x4.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofQuaternion.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec2f.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec3f.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec4f.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\math\ofVectorMath.h">
+      <Filter>src\libs\math\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofFmodSoundPlayer.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofOpenALSoundPlayer.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofRtAudioSoundStream.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundBaseTypes.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundBuffer.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundPlayer.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundStream.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundUtils.h">
+      <Filter>src\libs\sound\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofBaseTypes.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofColor.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofParameter.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofParameterGroup.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofPoint.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofRectangle.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\types\ofTypes.h">
+      <Filter>src\libs\types\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofConstants.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofFileUtils.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofFpsCounter.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofJson.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofLog.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofMatrixStack.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofNoise.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofSystemUtils.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofThread.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofThreadChannel.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofTimer.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofURLFileLoader.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofUtils.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\utils\ofXml.h">
+      <Filter>src\libs\utils\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationVideoPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofDirectShowGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofDirectShowPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstUtils.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstVideoGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstVideoPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitMovieRenderer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQtUtils.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQuickTimeGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofQuickTimePlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoBaseTypes.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoGrabber.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoPlayer.h">
+      <Filter>src\libs\video\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\libs\openFrameworks\ofMain.h">
+      <Filter>src\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxButton.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxColorPicker.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxGui.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxGuiGroup.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxGuiUtils.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxInputField.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxLabel.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxPanel.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxSlider.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxSliderGroup.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxToggle.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxGui\src\ofxBaseGui.h">
+      <Filter>src\addons\ofxGui\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxPoco\src\ofxXmlPoco.h">
+      <Filter>src\addons\ofxPoco\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscBundle.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscMessage.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscParameterSync.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscReceiver.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscSender.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOsc.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscArg.h">
+      <Filter>src\addons\ofxOsc\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxNetwork.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxNetworkUtils.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPClient.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPManager.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPServer.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPSettings.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxUDPManager.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxUDPSettings.h">
+      <Filter>src\addons\ofxNetwork\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxXmlSettings\src\ofxXmlSettings.h">
+      <Filter>src\addons\ofxXmlSettings\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxXmlSettings\libs\tinyxml.h">
+      <Filter>src\addons\ofxXmlSettings\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxVectorGraphics\src\ofxVectorGraphics.h">
+      <Filter>src\addons\ofxVectorGraphics\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxVectorGraphics\libs\CreEPS.hpp">
+      <Filter>src\addons\ofxVectorGraphics\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxVectorGraphics\libs\CreEPS_Types.hpp">
+      <Filter>src\addons\ofxVectorGraphics\libs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.h">
+      <Filter>src\addons\ofxThreadedImageLoader\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvBlob.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvColorImage.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvConstants.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvContourFinder.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvFloatImage.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvHaarFinder.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvImage.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvShortImage.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxOpenCv.h">
+      <Filter>src\addons\ofxOpenCv\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h">
+      <Filter>src\addons\ofxAssimpModelLoader\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h">
+      <Filter>src\addons\ofxAssimpModelLoader\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h">
+      <Filter>src\addons\ofxAssimpModelLoader\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h">
+      <Filter>src\addons\ofxAssimpModelLoader\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h">
+      <Filter>src\addons\ofxAssimpModelLoader\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libs\openFrameworks\3d\ofMesh.inl">
+      <Filter>src\libs\3d\header</Filter>
+    </None>
+    <None Include="src\libs\openFrameworks\gl\shaders\phong.frag">
+      <Filter>src\libs\gl\shaders</Filter>
+    </None>
+    <None Include="src\libs\openFrameworks\gl\shaders\phong.vert">
+      <Filter>src\libs\gl\shaders</Filter>
+    </None>
+    <None Include="src\libs\openFrameworks\graphics\ofPolyline.inl">
+      <Filter>src\libs\graphics\header</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

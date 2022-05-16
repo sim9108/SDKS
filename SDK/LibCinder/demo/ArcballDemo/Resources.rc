@@ -1,0 +1,4 @@
+#include ".\src\Resources.h"
+
+1	ICON	"./src/cinder_app_icon.ico"
+EARTH_TEX_RES

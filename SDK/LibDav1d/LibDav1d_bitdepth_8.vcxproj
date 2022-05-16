@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\cdef_apply_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\cdef_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\fg_apply_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\film_grain_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\ipred_prepare_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\ipred_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\lf_apply_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\loopfilter_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\looprestoration_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\lr_apply_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\mc_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\recon_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\cdef_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\film_grain_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\ipred_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\itx_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\loopfilter_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\looprestoration_init_tmpl.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\mc_init_tmpl.c" />
+    <ClCompile Include="src\src\itx_tmpl.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{FB930892-1ADA-4CF4-8F9A-9CB93966833F}</ProjectGuid>
+    <RootNamespace>LibDav1d</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\Dav1d\bitdepth_8\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\Dav1d\bitdepth_8\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BITDEPTH=8;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\include\dav1d;.\src\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703;4090;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;BITDEPTH=8;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\include\dav1d;.\src\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703;4090;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

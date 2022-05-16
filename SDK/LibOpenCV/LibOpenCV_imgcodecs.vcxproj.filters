@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{19c78434-b33a-4ae7-b9ec-3288774cfca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{411bc26f-93cb-4fff-a38c-30800fada83c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\src">
+      <UniqueIdentifier>{6cdcf910-deea-47d3-b59e-a8e52a6145f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\src\header">
+      <UniqueIdentifier>{6b19bbf6-d1e6-49ca-86f3-faf6b8dba1b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\imgcodecs\opencv_imgcodecs_pch.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pam.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pfm.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_png.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_pxm.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_sunras.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_tiff.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_webp.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\loadsave.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\rgbe.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\utils.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\bitstrm.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\exif.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_base.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_bmp.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_exr.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_gdal.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_gdcm.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_hdr.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg2000.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\imgcodecs\src\apple_conversions.h">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\bitstrm.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\exif.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_base.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_bmp.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_exr.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_gdal.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_gdcm.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_hdr.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg2000.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_jpeg2000_openjpeg.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pam.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pfm.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_png.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_pxm.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_sunras.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_tiff.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmt_webp.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\grfmts.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\precomp.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\rgbe.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\imgcodecs\src\utils.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

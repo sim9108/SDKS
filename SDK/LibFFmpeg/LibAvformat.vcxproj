@@ -1,0 +1,2090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavformat\dovi_isom.c" />
+    <ClCompile Include="src\libavformat\3dostr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\4xm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\a64.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aacdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aadec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aaxdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ac3dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\acedec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\acm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\act.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\adp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ads.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\adtsenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\adxdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aea.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\afc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aiff.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aiffdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aiffenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aixdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\allformats.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\alp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\amr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\amvenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\anm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\apc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ape.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\apetag.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\apm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\apngdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\apngenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aptxdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aqtitledec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\argo_asf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\argo_brp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\argo_cvg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\asf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\asfcrypt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\asfdec_f.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\asfdec_o.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\asfenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\assdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\assenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ast.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\astdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\astenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\async.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\au.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\av1.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\av1dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avidec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avienc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avio.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\aviobuf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avlanguage.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avs.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avs2dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\avs3dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bethsoftvid.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bfi.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bink.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\binka.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bintext.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bit.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\bmv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\boadec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\brstm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\c93.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cache.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\caf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cafdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cafenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cavsvideodec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cdg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cdxl.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\cinedec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\codec2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\concat.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\concatdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\crcenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\crypto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dash.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dashenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\data_uri.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dauddec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\daudenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dcstr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\demux.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\derf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dfa.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dhav.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\diracdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dnxhddec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dsfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dsicin.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dss.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dtsdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dtshddec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dump.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dvbsub.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dvbtxt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dvenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\dxa.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\eacdata.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\electronicarts.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\epafdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ffmetadec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ffmetaenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fifo.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fifo_test.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\file.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\filmstripdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\filmstripenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fitsdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fitsenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flacdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flacenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flacenc_header.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flac_picture.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flic.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\flvenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\format.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\framecrcenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\framehash.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\frmdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fsb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ftp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\fwse.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\g722.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\g723_1.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\g726.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\g729dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gdv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\genh.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gif.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gifdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gopher.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gsmdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gxf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\gxfenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\h261dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\h263dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\h264dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hashenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hca.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hcom.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hdsenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hevc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hevcdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hls.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hlsenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hlsplaylist.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hlsproto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hls_sample_encryption.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\hnm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\http.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\httpauth.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\icecast.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\icodec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\icoenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\id3v1.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\id3v2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\id3v2enc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\idcin.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\idroqdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\idroqenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\iff.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ifv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ilbc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\img2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\img2dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\img2enc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\img2_alias_pix.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\img2_brender_pix.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\imx.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ingenientdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ip.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ipmovie.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ipudec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ircam.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ircamdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ircamenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\isom.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\isom_tags.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\iss.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\iv8.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ivfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ivfenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\jacosubdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\jacosubenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\jvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\kvag.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\latmenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lmlm4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\loasdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lrc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lrcdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lrcenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\luodatdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lvfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\lxfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\m4vdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\matroska.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\matroskadec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\matroskaenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mca.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mccdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\md5proto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\metadata.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mgsts.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\microdvddec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\microdvdenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mj2kdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mkvtimestamp_v2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mlpdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mlvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mmf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mms.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mmsh.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mmst.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mods.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\moflex.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mov.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\movenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\movenccenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\movenchint.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\movenc_ttml.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mov_chan.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mov_esds.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mp3dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mp3enc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpc8.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpegenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpegts.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpegtsenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpegvideodec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpjpeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpjpegdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpl2dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mpsubdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\msf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\msnwc_tcp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mspdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mtaf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mtv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\musx.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mux.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mvi.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mxf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mxfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mxfenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\mxg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ncdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\network.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nistspheredec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nspdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nsvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nullenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nut.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nutdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nutenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\nuv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsecelt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsedirac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparseflac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparseogm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparseopus.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparseskeleton.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsespeex.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsetheora.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsevorbis.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oggparsevp8.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\oma.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\omadec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\omaenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\options.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\os_support.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\paf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pcm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pcmdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pcmenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pjsdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pmpdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pp_bnk.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\prompeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\protocols.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\psxstr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pva.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\pvfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\qcp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\qtpalette.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\r3d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rawdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rawenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rawutils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rawvideodec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rdt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\realtextdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\redspark.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\replaygain.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\riff.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\riffdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\riffenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rl2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rmdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rmenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rmsipr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rpl.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rsd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rso.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rsodec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rsoenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtmpdigest.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtmphttp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtmppkt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtmpproto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_ac3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_amr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_asf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_dv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_g726.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_h261.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_h263.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_h263_rfc2190.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_h264.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_hevc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_ilbc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_jpeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_latm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_mpa_robust.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_mpeg12.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_mpeg4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_mpegts.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_qcelp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_qdm2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_qt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_rfc4175.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_svq3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_vc2hq.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_vp8.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_vp9.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpdec_xiph.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_aac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_amr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_chain.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_h261.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_h263.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_h263_rfc2190.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_h264_hevc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_jpeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_latm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_mpegts.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_mpv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_rfc4175.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_vc2hq.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_vp8.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_vp9.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpenc_xiph.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtpproto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtsp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtspdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\rtspenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\s337m.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\samidec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sapdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sapenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sauce.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sbcdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sbgdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sccdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sccenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sdp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sdr2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sdsdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sdxdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\seek.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\segafilm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\segafilmenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\segment.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\serdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sga.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\shortendec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sierravmd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\siff.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smacker.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smjpeg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smjpegdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smjpegenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smoothstreamingenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\smush.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\sol.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\soxdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\soxenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\spdif.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\spdifdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\spdifenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\srtdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\srtenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\srtp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\srtpproto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\stldec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\subfile.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\subtitles.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\subviewer1dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\subviewerdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\supdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\supenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\svag.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\svs.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\swf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\swfdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\swfenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\takdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tcp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tedcaptionsdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tee.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\teeproto.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tee_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\thp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tiertexseq.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tls.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tls_schannel.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tmv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tta.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ttaenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ttmlenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\tty.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\txd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\ty.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\udp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\uncodedframecrcenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\url.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\urldecode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vag.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vc1dec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vc1test.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vc1testenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vividas.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vivo.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\voc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vocdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vocenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\voc_packet.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vorbiscomment.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vpcc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vpk.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vplayerdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\vqf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\w64.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wavdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wavenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wc3movie.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\webmdashenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\webm_chunk.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\webpenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\webvttdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\webvttenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\westwood_aud.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\westwood_audenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\westwood_vqa.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wsddec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wtvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wtvenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wtv_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wvdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wvedec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\wvenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\xa.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\xmv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\xvag.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\xwma.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\yop.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\yuv4mpegdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavformat\yuv4mpegenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavformat\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5A2FE11A-6293-4B90-B216-E37A75E96913}</ProjectGuid>
+    <RootNamespace>LibFFMPEG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibAvformat\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibAvformat\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;Ws2_32.lib;Secur32.lib;Mfplat.lib;Strmiids.lib;Mfuuid.lib;LibZSMTd.lib;LibAvutilSMTd.lib;LibAvcodecSMTd.lib;LibSwresampleSMTd.lib;LibAomSMTd.lib;LibDav1d_bitdepth_8SMTd.lib;LibDav1d_bitdepth_16SMTd.lib;LibDav1dSMTd.lib;LibX264SMTd.lib;LibX264_bitdepth_8SMTd.lib;LibX264_bitdepth_10SMTd.lib;LibX265SMTd.lib;LibFdkAccSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;..\LibDav1d\lib64;.\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;Ws2_32.lib;Secur32.lib;Mfplat.lib;Strmiids.lib;Mfuuid.lib;LibZSMT.lib;LibAvutilSMT.lib;LibAvcodecSMT.lib;LibSwresampleSMT.lib;LibAomSMT.lib;LibDav1d_bitdepth_8SMT.lib;LibDav1d_bitdepth_16SMT.lib;LibDav1dSMT.lib;LibX264SMT.lib;LibX264_bitdepth_8SMT.lib;LibX264_bitdepth_10SMT.lib;LibX265SMT.lib;LibFdkAccSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\libZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;..\LibDav1d\lib64;.\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

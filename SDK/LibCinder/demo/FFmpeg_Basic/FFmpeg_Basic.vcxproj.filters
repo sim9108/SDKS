@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4bd8b6f0-da09-410c-b4da-76ffdcade9b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addon">
+      <UniqueIdentifier>{d3719a40-2deb-40f5-891f-f15d29d6dbec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addon\movierenderer">
+      <UniqueIdentifier>{d634a2dd-1085-4014-9051-90bb45bfa82e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addon\common">
+      <UniqueIdentifier>{17710b7c-2a2a-4460-a5b1-ff891e99819f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addon\audiorenderer">
+      <UniqueIdentifier>{f9647c62-247e-4a43-a2f6-f9829dccdd4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addon\include">
+      <UniqueIdentifier>{e141e6a4-bf81-4f73-bfa2-4ce126e2511a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\sample.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\CinderFFmpeg.cpp">
+      <Filter>addon</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\movierenderer\moviedecoder.cpp">
+      <Filter>addon\movierenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\movierenderer\videoframe.cpp">
+      <Filter>addon\movierenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\common\numericoperations.cpp">
+      <Filter>addon\common</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\audiorenderer\audioframe.cpp">
+      <Filter>addon\audiorenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\audiorenderer\audiorenderer.cpp">
+      <Filter>addon\audiorenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\audiorenderer\audiorendererfactory.cpp">
+      <Filter>addon\audiorenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="addon\audiorenderer\openalrenderer.cpp">
+      <Filter>addon\audiorenderer</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="addon\include\CinderFFmpeg.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\movierenderer\moviedecoder.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\movierenderer\videoframe.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\common\commontypes.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\common\numericoperations.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\audiorenderer\audioformat.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\audiorenderer\audioframe.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\audiorenderer\audiorenderer.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\audiorenderer\audiorendererfactory.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+    <ClInclude Include="addon\include\audiorenderer\openalrenderer.h">
+      <Filter>addon\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

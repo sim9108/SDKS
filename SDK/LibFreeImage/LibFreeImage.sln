@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibFreeImage", "LibFreeImage.vcxproj", "{E37B83C3-A150-4856-9820-D1D2D6E8E1F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E37B83C3-A150-4856-9820-D1D2D6E8E1F2}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{E37B83C3-A150-4856-9820-D1D2D6E8E1F2}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{E37B83C3-A150-4856-9820-D1D2D6E8E1F2}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{E37B83C3-A150-4856-9820-D1D2D6E8E1F2}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {613C166F-0957-4DC3-A9FC-43C7A3D073FF}
+	EndGlobalSection
+EndGlobal

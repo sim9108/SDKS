@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\imgproc\accum.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\accum.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\accum.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\bilateral_filter.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\box_filter.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\box_filter.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_hsv.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_hsv.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_rgb.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_rgb.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_yuv.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\color_yuv.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\filter.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\filter.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\median_blur.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\median_blur.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\morph.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\morph.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\opencl_kernels_imgproc.cpp" />
+    <ClCompile Include="src\modules\imgproc\opencv_imgproc_pch.cpp" />
+    <ClCompile Include="src\modules\imgproc\smooth.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\smooth.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\accum.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\accum.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\approx.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\bilateral_filter.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\blend.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\box_filter.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\canny.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\clahe.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\color.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\colormap.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\color_hsv.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\color_lab.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\color_rgb.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\color_yuv.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\connectedcomponents.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\contours.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\convhull.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\corner.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\corner.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\cornersubpix.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\demosaicing.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\deriv.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\distransform.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\drawing.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\emd.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\featureselect.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\filter.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\floodfill.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\gabor.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\generalized_hough.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\geometry.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\grabcut.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\hershey_fonts.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\histogram.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\hough.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\imgwarp.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\imgwarp.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\imgwarp.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\intelligent_scissors.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\intersection.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\linefit.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\lsd.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\main.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\matchcontours.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\median_blur.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\min_enclosing_triangle.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\moments.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\morph.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\phasecorr.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\pyramids.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\resize.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\resize.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\resize.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\src\rotcalipers.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\samplers.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\segmentation.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\shapedescr.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\smooth.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\spatialgradient.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\subdivision2d.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\sumpixels.dispatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\tables.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\templmatch.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\thresh.cpp" />
+    <ClCompile Include="src\modules\imgproc\src\utils.cpp" />
+    <ClCompile Include="src\modules\imgproc\sumpixels.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\imgproc\sumpixels.avx512_skx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\imgproc\accum.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\bilateral_filter.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\box_filter.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\color_hsv.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\color_rgb.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\color_yuv.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\filter.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\median_blur.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\morph.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\opencl_kernels_imgproc.hpp" />
+    <ClInclude Include="src\modules\imgproc\smooth.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\accum.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\bilateral_filter.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\box_filter.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\ccl_bolelli_forest.inc.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\ccl_bolelli_forest_firstline.inc.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\ccl_bolelli_forest_lastline.inc.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\ccl_bolelli_forest_singleline.inc.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\color.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\color.simd_helpers.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\color_hsv.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\color_rgb.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\color_yuv.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\corner.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\filter.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\filter.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\filterengine.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\fixedpoint.inl.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\hal_replacement.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\imgwarp.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\median_blur.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\morph.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\resize.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\smooth.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\sumpixels.avx512_skx.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\sumpixels.simd.hpp" />
+    <ClInclude Include="src\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="src\modules\imgproc\sumpixels.simd_declarations.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\imgproc\src\opencl\accumulate.cl" />
+    <None Include="src\modules\imgproc\src\opencl\bilateral.cl" />
+    <None Include="src\modules\imgproc\src\opencl\blend_linear.cl" />
+    <None Include="src\modules\imgproc\src\opencl\boxFilter.cl" />
+    <None Include="src\modules\imgproc\src\opencl\boxFilter3x3.cl" />
+    <None Include="src\modules\imgproc\src\opencl\calc_back_project.cl" />
+    <None Include="src\modules\imgproc\src\opencl\canny.cl" />
+    <None Include="src\modules\imgproc\src\opencl\clahe.cl" />
+    <None Include="src\modules\imgproc\src\opencl\color_hsv.cl" />
+    <None Include="src\modules\imgproc\src\opencl\color_lab.cl" />
+    <None Include="src\modules\imgproc\src\opencl\color_rgb.cl" />
+    <None Include="src\modules\imgproc\src\opencl\color_yuv.cl" />
+    <None Include="src\modules\imgproc\src\opencl\corner.cl" />
+    <None Include="src\modules\imgproc\src\opencl\covardata.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filter2D.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filter2DSmall.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filterSepCol.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filterSepRow.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filterSep_singlePass.cl" />
+    <None Include="src\modules\imgproc\src\opencl\filterSmall.cl" />
+    <None Include="src\modules\imgproc\src\opencl\gaussianBlur3x3.cl" />
+    <None Include="src\modules\imgproc\src\opencl\gaussianBlur5x5.cl" />
+    <None Include="src\modules\imgproc\src\opencl\gftt.cl" />
+    <None Include="src\modules\imgproc\src\opencl\histogram.cl" />
+    <None Include="src\modules\imgproc\src\opencl\hough_lines.cl" />
+    <None Include="src\modules\imgproc\src\opencl\integral_sum.cl" />
+    <None Include="src\modules\imgproc\src\opencl\laplacian3.cl" />
+    <None Include="src\modules\imgproc\src\opencl\laplacian5.cl" />
+    <None Include="src\modules\imgproc\src\opencl\linearPolar.cl" />
+    <None Include="src\modules\imgproc\src\opencl\logPolar.cl" />
+    <None Include="src\modules\imgproc\src\opencl\match_template.cl" />
+    <None Include="src\modules\imgproc\src\opencl\medianFilter.cl" />
+    <None Include="src\modules\imgproc\src\opencl\moments.cl" />
+    <None Include="src\modules\imgproc\src\opencl\morph.cl" />
+    <None Include="src\modules\imgproc\src\opencl\morph3x3.cl" />
+    <None Include="src\modules\imgproc\src\opencl\precornerdetect.cl" />
+    <None Include="src\modules\imgproc\src\opencl\pyramid_up.cl" />
+    <None Include="src\modules\imgproc\src\opencl\pyr_down.cl" />
+    <None Include="src\modules\imgproc\src\opencl\pyr_up.cl" />
+    <None Include="src\modules\imgproc\src\opencl\remap.cl" />
+    <None Include="src\modules\imgproc\src\opencl\resize.cl" />
+    <None Include="src\modules\imgproc\src\opencl\sepFilter3x3.cl" />
+    <None Include="src\modules\imgproc\src\opencl\threshold.cl" />
+    <None Include="src\modules\imgproc\src\opencl\warp_affine.cl" />
+    <None Include="src\modules\imgproc\src\opencl\warp_perspective.cl" />
+    <None Include="src\modules\imgproc\src\opencl\warp_transform.cl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1df1ee0b-6d23-42fa-bedb-9abe6b821aef}</ProjectGuid>
+    <RootNamespace>LibOpenCVimgproc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\imgproc\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\imgproc\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc;.\src\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibOpenCV_coreSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc;.\src\modules\imgproc\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibOpenCV_coreSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

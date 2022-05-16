@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\video\opencl_kernels_video.cpp" />
+    <ClCompile Include="src\modules\video\opencv_video_pch.cpp" />
+    <ClCompile Include="src\modules\video\src\bgfg_gaussmix2.cpp" />
+    <ClCompile Include="src\modules\video\src\bgfg_KNN.cpp" />
+    <ClCompile Include="src\modules\video\src\camshift.cpp" />
+    <ClCompile Include="src\modules\video\src\dis_flow.cpp" />
+    <ClCompile Include="src\modules\video\src\ecc.cpp" />
+    <ClCompile Include="src\modules\video\src\kalman.cpp" />
+    <ClCompile Include="src\modules\video\src\lkpyramid.cpp" />
+    <ClCompile Include="src\modules\video\src\optflowgf.cpp" />
+    <ClCompile Include="src\modules\video\src\optical_flow_io.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_feature.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_feature_set.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_mil_model.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_mil_state.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_model.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_sampler.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_state_estimator.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracking_feature.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracking_online_mil.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\tracker.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\tracker_dasiamrpn.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\tracker_goturn.cpp" />
+    <ClCompile Include="src\modules\video\src\tracking\tracker_mil.cpp" />
+    <ClCompile Include="src\modules\video\src\variational_refinement.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\video\opencl_kernels_video.hpp" />
+    <ClInclude Include="src\modules\video\src\lkpyramid.hpp" />
+    <ClInclude Include="src\modules\video\src\precomp.hpp" />
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_feature_haar.impl.hpp" />
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_mil_model.hpp" />
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_mil_state.hpp" />
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracking_feature.hpp" />
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracking_online_mil.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\video\src\opencl\bgfg_knn.cl" />
+    <None Include="src\modules\video\src\opencl\bgfg_mog2.cl" />
+    <None Include="src\modules\video\src\opencl\dis_flow.cl" />
+    <None Include="src\modules\video\src\opencl\optical_flow_farneback.cl" />
+    <None Include="src\modules\video\src\opencl\pyrlk.cl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{d5262b8a-8592-4be7-b8b5-9203fce50a0c}</ProjectGuid>
+    <RootNamespace>LibOpenCVvideo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\video\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\video\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\imgproc\include;.\src\modules\dnn\include;.\src\modules\video;.\src\modules\video\include;.\src\modules\video\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibOpenCV_calib3dSMTd.lib;LibOpenCV_dnnSMTd.lib;LibOpenCV_flannSMTd.lib;LibOpenCV_features2dSMTd.lib;LibProtobufSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\imgproc\include;.\src\modules\dnn\include;.\src\modules\video;.\src\modules\video\include;.\src\modules\video\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibOpenCV_dnnSMT.lib;LibOpenCV_calib3dSMT.lib;LibOpenCV_flannSMT.lib;LibOpenCV_features2dSMT.lib;LibProtobufSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

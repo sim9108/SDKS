@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8f8aeb41-5cd0-4c6f-a9ce-fe81d2aa4e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{77cfe462-09bd-47d6-9229-ff7002899b47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn_superres">
+      <UniqueIdentifier>{5f55c3a8-9417-4748-8737-93a90d47efca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn_superres\src">
+      <UniqueIdentifier>{341f642e-ccdd-4286-9cef-35c4e9951d80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\dnn_superres\opencv_dnn_superres_pch.cpp">
+      <Filter>src\modules\dnn_superres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn_superres\src\dnn_superres.cpp">
+      <Filter>src\modules\dnn_superres\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\dnn_superres\src\precomp.hpp">
+      <Filter>src\modules\dnn_superres\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

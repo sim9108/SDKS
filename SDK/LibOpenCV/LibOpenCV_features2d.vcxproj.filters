@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a3a55a7e-2d21-470a-a98e-07d688a6407b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\simd">
+      <UniqueIdentifier>{7c58620b-3a3e-44e7-8ade-f2289216d8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\header">
+      <UniqueIdentifier>{1a6017f7-02e1-4f8e-ae90-1c137d867829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{a22ebc63-5aae-4768-9365-1e9b1a86cf7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\header">
+      <UniqueIdentifier>{d25c7f2c-f2eb-4a10-a691-a702bd8b867b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\simd">
+      <UniqueIdentifier>{6f52f534-d3f6-403c-b85a-58e7c9bb5dfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\opencl">
+      <UniqueIdentifier>{341451b5-8caa-434f-b018-31f08a5a5f8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\kaze">
+      <UniqueIdentifier>{64ef7b31-8941-4d3a-bffa-27be3f89c6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\kaze\header">
+      <UniqueIdentifier>{4073df26-4e80-4801-9402-afa97643d016}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\features2d\opencl_kernels_features2d.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\opencv_features2d_pch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\sift.avx2.cpp">
+      <Filter>src\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\sift.avx512_skx.cpp">
+      <Filter>src\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\sift.sse4_1.cpp">
+      <Filter>src\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\affine_feature.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\agast.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\agast_score.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\akaze.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\bagofwords.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\blobdetector.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\brisk.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\draw.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\dynamic.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\evaluation.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\fast.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\fast_score.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\feature2d.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\gftt.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\kaze.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\keypoint.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\main.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\matchers.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\mser.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\orb.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\sift.dispatch.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\fast.avx2.cpp">
+      <Filter>src\src\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\kaze\KAZEFeatures.cpp">
+      <Filter>src\src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\kaze\nldiffusion_functions.cpp">
+      <Filter>src\src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\kaze\AKAZEFeatures.cpp">
+      <Filter>src\src\kaze</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\features2d\src\kaze\fed.cpp">
+      <Filter>src\src\kaze</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\features2d\src\agast_score.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\fast.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\fast_score.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\hal_replacement.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\precomp.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\sift.simd.hpp">
+      <Filter>src\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\AKAZEConfig.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\AKAZEFeatures.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\fed.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\KAZEConfig.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\KAZEFeatures.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\nldiffusion_functions.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\TEvolution.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\src\kaze\utils.h">
+      <Filter>src\src\kaze\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\opencl_kernels_features2d.hpp">
+      <Filter>src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\features2d\sift.simd_declarations.hpp">
+      <Filter>src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\features2d\src\opencl\akaze.cl">
+      <Filter>src\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\features2d\src\opencl\brute_force_match.cl">
+      <Filter>src\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\features2d\src\opencl\fast.cl">
+      <Filter>src\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\features2d\src\opencl\orb.cl">
+      <Filter>src\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

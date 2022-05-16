@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4b4e18ee-7fa7-42f8-b6be-911b4ccd3e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{928d737b-8eb7-425b-84ed-3f01bf367eba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\tracking">
+      <UniqueIdentifier>{bb93d256-3a1c-4592-a555-b592328a4eee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\tracking\src">
+      <UniqueIdentifier>{56c810aa-5a55-4dec-840a-2f7d62add0cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\tracking\src\header">
+      <UniqueIdentifier>{5b1d0169-3c8c-4104-9d62-bd93d816ba53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\tracking\src\opencl">
+      <UniqueIdentifier>{a3f4c1fb-036b-49e9-8889-e4658712578e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\tracking\src\legacy">
+      <UniqueIdentifier>{a58240f6-d5f7-4bd5-92ea-e5b76336a8be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\tracking\opencl_kernels_tracking.cpp">
+      <Filter>src\modules\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\opencv_tracking_pch.cpp">
+      <Filter>src\modules\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerStateEstimator.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tracking_by_matching.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tracking_utils.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\unscented_kalman.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\augmented_unscented_kalman.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\feature.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\featureColorName.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\gtrUtils.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\kuhn_munkres.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\mosseTracker.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\multiTracker.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\multiTracker_alt.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\onlineBoosting.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldDataset.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldDetector.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldEnsembleClassifier.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldModel.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldTracker.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tldUtils.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\tracker.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerBoosting.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerBoostingModel.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerCSRT.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerCSRTScaleEstimation.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerCSRTSegmentation.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerCSRTUtils.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerFeature.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerFeatureSet.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerKCF.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerMedianFlow.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerMIL_legacy.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerSampler.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\tracking\src\trackerSamplerAlgorithm.cpp">
+      <Filter>src\modules\tracking\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\tracking\opencl_kernels_tracking.hpp">
+      <Filter>src\modules\tracking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\kuhn_munkres.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\multiTracker.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\PFSolver.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\precomp.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tldDetector.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tldEnsembleClassifier.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tldModel.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tldTracker.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tldUtils.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\trackerBoostingModel.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\trackerCSRTScaleEstimation.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\trackerCSRTSegmentation.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\trackerCSRTUtils.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\tracking_utils.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\TrackingFunctionPF.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\gtrUtils.hpp">
+      <Filter>src\modules\tracking\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\legacy\trackerCSRT.legacy.hpp">
+      <Filter>src\modules\tracking\src\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\legacy\trackerKCF.legacy.hpp">
+      <Filter>src\modules\tracking\src\legacy</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\tracking\src\legacy\tracker.legacy.hpp">
+      <Filter>src\modules\tracking\src\legacy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\tracking\src\opencl\tldDetector.cl">
+      <Filter>src\modules\tracking\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\tracking\src\opencl\tmm.cl">
+      <Filter>src\modules\tracking\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

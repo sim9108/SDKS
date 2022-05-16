@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f5172b64-095b-41cd-be2f-a7a087920648}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\samples">
+      <UniqueIdentifier>{0139851a-228b-42ed-a8c7-bade5f07e30a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\samples\cpp">
+      <UniqueIdentifier>{0a03011b-f81f-482b-b0cc-7f974abc2fc9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\samples\cpp\dbt_face_detection.cpp">
+      <Filter>src\samples\cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

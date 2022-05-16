@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibIttnotify", "LibIttnotify.vcxproj", "{B7750733-65D6-4C99-9FE7-101F53E280B0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7750733-65D6-4C99-9FE7-101F53E280B0}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{B7750733-65D6-4C99-9FE7-101F53E280B0}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{B7750733-65D6-4C99-9FE7-101F53E280B0}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{B7750733-65D6-4C99-9FE7-101F53E280B0}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED3F1B4D-2675-403B-AEA6-635464172D3A}
+	EndGlobalSection
+EndGlobal

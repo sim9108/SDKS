@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{dc423b75-28be-4c38-b55a-09ea23fbf233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{2269eaca-9ecb-4799-83df-c259e3dcba00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ximgproc">
+      <UniqueIdentifier>{c2fbd860-91a7-456e-b289-d0453e59aaf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ximgproc\src">
+      <UniqueIdentifier>{2ba57415-d6dd-47f9-8851-01bed96d2674}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ximgproc\src\header">
+      <UniqueIdentifier>{6885bd58-0014-49e9-aa60-b67d7b473330}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ximgproc\src\opencl">
+      <UniqueIdentifier>{59f09403-a298-44f8-85f6-57e14b4f1d1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\ximgproc\src\adaptive_manifold_filter_n.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\anisodiff.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\bilateral_texture_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\brightedges.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\deriche_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\disparity_filters.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\domain_transform.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\dtfilter_cpu.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\edge_drawing.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\edgeaware_filters_common.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\edgeboxes.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\edgepreserving_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\estimated_covariance.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\fast_hough_transform.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\fast_line_detector.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\fbs_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\fgs_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\fourier_descriptors.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\graphsegmentation.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\guided_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\joint_bilateral_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\l0_smooth.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\lsc.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\niblack_thresholding.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\paillou_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\peilin.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\quaternion.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\radon_transform.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\ridgedetectionfilter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\rolling_guidance_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\run_length_morphology.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\scansegment.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\seeds.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\selectivesearchsegmentation.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\slic.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\sparse_match_interpolators.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\structured_edge_detection.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\thinning.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\src\weighted_median_filter.cpp">
+      <Filter>src\modules\ximgproc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\opencl_kernels_ximgproc.cpp">
+      <Filter>src\modules\ximgproc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ximgproc\opencv_ximgproc_pch.cpp">
+      <Filter>src\modules\ximgproc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\ximgproc\src\advanced_types.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\src\dtfilter_cpu.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\src\dtfilter_cpu.inl.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\src\edge_drawing_common.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\src\edgeaware_filters_common.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\src\precomp.hpp">
+      <Filter>src\modules\ximgproc\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ximgproc\opencl_kernels_ximgproc.hpp">
+      <Filter>src\modules\ximgproc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\ximgproc\src\opencl\anisodiff.cl">
+      <Filter>src\modules\ximgproc\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

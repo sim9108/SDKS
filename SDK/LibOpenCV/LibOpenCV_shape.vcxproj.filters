@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{065625ea-b398-46b0-9047-0541b75def23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{29fd665b-4177-433c-84cc-d9f799e73776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\shape">
+      <UniqueIdentifier>{a34d5630-c879-4126-a82d-713a0de0a405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\shape\src">
+      <UniqueIdentifier>{9b1ccaaf-6bf4-4d92-8546-da919517e94b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\shape\src\header">
+      <UniqueIdentifier>{85f77fc3-07b7-4b34-bf3c-5e5148ff05e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\shape\src\aff_trans.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\shape\src\emdL1.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\shape\src\haus_dis.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\shape\src\hist_cost.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\shape\src\sc_dis.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\shape\src\tps_trans.cpp">
+      <Filter>src\modules\shape\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\shape\src\emdL1_def.hpp">
+      <Filter>src\modules\shape\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\shape\src\precomp.hpp">
+      <Filter>src\modules\shape\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\shape\src\scd_def.hpp">
+      <Filter>src\modules\shape\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

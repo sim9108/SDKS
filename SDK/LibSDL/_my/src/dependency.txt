@@ -1,0 +1,1 @@
+Version.lib;Imm32.lib;Winmm.lib;Setupapi.lib;

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{34ce2149-a886-4577-adc8-3753ad361545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{d23cda7a-1892-4ead-9ce1-66f0e2c50b12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\alphamat">
+      <UniqueIdentifier>{d514fc9e-bc5a-4d6d-a56b-57719bb163d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\alphamat\src">
+      <UniqueIdentifier>{8f74c097-6d0f-470b-8588-3388c4c7aed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\alphamat\src\header">
+      <UniqueIdentifier>{7737b4be-4e42-4766-b57b-7d19a61463dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\alphamat\src\3rdparty">
+      <UniqueIdentifier>{591cc452-f116-40f0-b330-49fa90a46b6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\alphamat\opencv_alphamat_pch.cpp">
+      <Filter>src\modules\alphamat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\alphamat\src\cm.cpp">
+      <Filter>src\modules\alphamat\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\alphamat\src\infoflow.cpp">
+      <Filter>src\modules\alphamat\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\alphamat\src\intraU.cpp">
+      <Filter>src\modules\alphamat\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\alphamat\src\local_info.cpp">
+      <Filter>src\modules\alphamat\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\alphamat\src\cm.hpp">
+      <Filter>src\modules\alphamat\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\alphamat\src\intraU.hpp">
+      <Filter>src\modules\alphamat\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\alphamat\src\local_info.hpp">
+      <Filter>src\modules\alphamat\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\alphamat\src\precomp.hpp">
+      <Filter>src\modules\alphamat\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\alphamat\src\3rdparty\KDTreeVectorOfVectorsAdaptor.h">
+      <Filter>src\modules\alphamat\src\3rdparty</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\alphamat\src\3rdparty\nanoflann.hpp">
+      <Filter>src\modules\alphamat\src\3rdparty</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

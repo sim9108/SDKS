@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{4b775559-74dc-4e47-9def-8516dc88f86d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{3d9857f8-c672-4ee8-8f7e-96f3e9811672}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ml">
+      <UniqueIdentifier>{fce6fd97-ddb8-4abe-973f-5f53108c3ec9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ml\src">
+      <UniqueIdentifier>{2fff9e8a-c41b-469a-a72a-1e36771c166d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\ml\src\header">
+      <UniqueIdentifier>{b5bc493e-6698-4dc2-8f7d-a92ca96b501c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\ml\opencv_ml_pch.cpp">
+      <Filter>src\modules\ml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\ann_mlp.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\boost.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\data.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\em.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\gbt.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\inner_functions.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\kdtree.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\knearest.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\lr.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\nbayes.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\rtrees.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\svm.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\svmsgd.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\testset.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ml\src\tree.cpp">
+      <Filter>src\modules\ml\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\ml\src\kdtree.hpp">
+      <Filter>src\modules\ml\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ml\src\precomp.hpp">
+      <Filter>src\modules\ml\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

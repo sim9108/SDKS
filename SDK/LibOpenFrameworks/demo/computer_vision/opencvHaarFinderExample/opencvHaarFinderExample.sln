@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "opencvHaarFinderExample", "opencvHaarFinderExample.vcxproj", "{2D86C750-B980-4424-A5E8-933E215272D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D86C750-B980-4424-A5E8-933E215272D2}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{2D86C750-B980-4424-A5E8-933E215272D2}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{2D86C750-B980-4424-A5E8-933E215272D2}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{2D86C750-B980-4424-A5E8-933E215272D2}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBA6963D-1B89-421B-BF51-25C23134FFA1}
+	EndGlobalSection
+EndGlobal

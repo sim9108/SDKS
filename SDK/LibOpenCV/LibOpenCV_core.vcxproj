@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\core\arithm.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\arithm.sse4_1.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\convert.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\convert_scale.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\count_non_zero.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\mathfuncs_core.avx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\mathfuncs_core.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\matmul.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\matmul.avx512_skx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\matmul.sse4_1.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\mean.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\merge.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\opencl_kernels_core.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\opencv_core_pch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\split.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\algorithm.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\alloc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\arithm.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\arithm.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\array.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\async.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\batch_distance.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\bindings_utils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\buffer_area.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\channels.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\check.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\command_line_parser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\conjugate_gradient.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\convert.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\convert_c.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\convert_scale.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\copy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\count_non_zero.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\cuda_gpu_mat.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\cuda_gpu_mat_nd.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\cuda_host_mem.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\cuda_info.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\cuda_stream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\datastructs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\directx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\downhill_simplex.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\dxt.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\glob.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\gl_core_3_1.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\hal_internal.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\kmeans.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\lapack.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\lda.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\logger.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\lpsolver.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\lut.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\mathfuncs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\mathfuncs_core.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matmul.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_c.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_decomp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_expressions.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_iterator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_operations.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_sparse.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_transform.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\matrix_wrap.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\mean.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\merge.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\minmax.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\norm.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\ocl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\opencl\runtime\opencl_clblas.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\opencl\runtime\opencl_clfft.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\opencl\runtime\opencl_core.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\opencl\runtime\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\opengl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\out.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\ovx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\parallel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\parallel\parallel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\parallel\parallel_openmp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\parallel\parallel_tbb.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\parallel\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\parallel_impl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\pca.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence_base64_encoding.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence_json.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence_types.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence_xml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\persistence_yml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\rand.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\softfloat.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\split.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\stat.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\stat_c.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\stl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\sum.dispatch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\system.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\tables.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\trace.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\types.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\umatrix.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\utils\datafile.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\utils\filesystem.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\utils\logtagconfigparser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\utils\logtagmanager.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\utils\samples.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\src\va_intel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\stat.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\stat.sse4_2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\core\sum.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)modules\core\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\core\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\async.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\base.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\bindings_utils.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\check.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\core.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\core_c.h" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cvstd_wrapper.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cv_cpu_dispatch.h" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\cv_cpu_helper.h" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\dualquaternion.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\dualquaternion.inl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clblas.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_clfft.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_core_wrappers.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\autogenerated\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_clblas.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_clfft.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_core.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_core_wrappers.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_gl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opencl\runtime\opencl_gl_wrappers.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\private.cuda.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\private.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\quaternion.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\quaternion.inl.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\simd_intrinsics.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\softfloat.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\types.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\types_c.h" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\version.hpp" />
+    <ClInclude Include="src\modules\core\include\opencv2\core\vsx_utils.hpp" />
+    <ClInclude Include="src\modules\core\src\opencl\runtime\runtime_common.hpp" />
+    <ClInclude Include="src\modules\custom_hal.hpp" />
+    <ClInclude Include="src\modules\cvconfig.h" />
+    <ClInclude Include="src\modules\cv_cpu_config.h" />
+    <ClInclude Include="src\modules\opencv_data_config.hpp" />
+    <ClInclude Include="src\modules\opencv_tests_config.hpp" />
+    <ClInclude Include="src\modules\text_config.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\core\src\opencl\arithm.cl" />
+    <None Include="src\modules\core\src\opencl\convert.cl" />
+    <None Include="src\modules\core\src\opencl\copymakeborder.cl" />
+    <None Include="src\modules\core\src\opencl\copyset.cl" />
+    <None Include="src\modules\core\src\opencl\cvtclr_dx.cl" />
+    <None Include="src\modules\core\src\opencl\fft.cl" />
+    <None Include="src\modules\core\src\opencl\flip.cl" />
+    <None Include="src\modules\core\src\opencl\gemm.cl" />
+    <None Include="src\modules\core\src\opencl\halfconvert.cl" />
+    <None Include="src\modules\core\src\opencl\inrange.cl" />
+    <None Include="src\modules\core\src\opencl\intel_gemm.cl" />
+    <None Include="src\modules\core\src\opencl\lut.cl" />
+    <None Include="src\modules\core\src\opencl\meanstddev.cl" />
+    <None Include="src\modules\core\src\opencl\minmaxloc.cl" />
+    <None Include="src\modules\core\src\opencl\mixchannels.cl" />
+    <None Include="src\modules\core\src\opencl\mulspectrums.cl" />
+    <None Include="src\modules\core\src\opencl\normalize.cl" />
+    <None Include="src\modules\core\src\opencl\reduce.cl" />
+    <None Include="src\modules\core\src\opencl\reduce2.cl" />
+    <None Include="src\modules\core\src\opencl\repeat.cl" />
+    <None Include="src\modules\core\src\opencl\set_identity.cl" />
+    <None Include="src\modules\core\src\opencl\split_merge.cl" />
+    <None Include="src\modules\core\src\opencl\transpose.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\dependency.txt">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">mkdir $(ProjectDir)include
+xcopy /Y /s .\src\*\include$(ProjectDir)include\</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">mkdir $(ProjectDir)include
+xcopy /Y /s .\src\*\include$(ProjectDir)include\</Command>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{dbc7649d-04d4-4066-9532-4e4d2477964d}</ProjectGuid>
+    <RootNamespace>LibOpenCV</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIttnotify\src\include;..\LibIppicv\src\icv\include;..\LibIppicv\src\iw\include;.\src\include;.\src\modules;.\src\modules\core;.\src\modules\core\include;.\src\modules\core\src\opencl\runtime\autogenerated;..\LibTBB\src\include;..\LibEigen\src;..\LibOpenCL\1.2;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIttnotify\src\include;..\LibIppicv\src\icv\include;..\LibIppicv\src\iw\include;.\src\include;.\src\modules;.\src\modules\core;.\src\modules\core\include;.\src\modules\core\src\opencl\runtime\autogenerated;..\LibTBB\src\include;..\LibEigen\src;..\LibOpenCL\1.2;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

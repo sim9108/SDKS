@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{6115d15f-ccc4-4d16-9e86-0a29495b7963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ogg">
+      <UniqueIdentifier>{91c744a4-0f84-4eba-8a49-386f86c07a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ogg\src">
+      <UniqueIdentifier>{7324c695-e58f-4d4a-9343-d5690efe9a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ogg\vorbis">
+      <UniqueIdentifier>{bc3db567-687e-4cf4-91d9-6c9f3f43e022}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ogg\vorbis\header">
+      <UniqueIdentifier>{ffe7460b-251d-420e-86a0-7dedb0d2aeac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ogg\src\bitwise.c">
+      <Filter>src\ogg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ogg\src\framing.c">
+      <Filter>src\ogg\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\sharedbook.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\smallft.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\synthesis.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\vorbisenc.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\vorbisfile.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\window.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\analysis.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\bitrate.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\block.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\codebook.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\envelope.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\floor0.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\floor1.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\info.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\lookup.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\lpc.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\lsp.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\mapping0.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\mdct.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\psy.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\registry.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LibCinder\src\src\oggvorbis\vorbis\res0.c">
+      <Filter>src\ogg\vorbis</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\os.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\psy.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\registry.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\scales.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\smallft.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\window.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\backends.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\bitrate.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\codebook.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\codec_internal.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\envelope.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\highlevel.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\lookup.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\lookup_data.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\lpc.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\lsp.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\masking.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\mdct.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LibCinder\src\src\oggvorbis\vorbis\misc.h">
+      <Filter>src\ogg\vorbis\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

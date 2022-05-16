@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{189b3ade-2db9-4b97-bc66-4abfa31e2f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{1ffc72eb-5345-42be-82e6-16d0b5f0c01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\datasets">
+      <UniqueIdentifier>{9c461ef8-c44a-4466-9ab8-1c531cab2570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\datasets\src">
+      <UniqueIdentifier>{220d8767-98c6-4844-ba06-360ec4fd5af4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\datasets\tinyxml2">
+      <UniqueIdentifier>{b13ae45b-e98a-43fd-b019-6c0c80ba74fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\datasets\src\tr_icdar.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\tr_chars.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\sr_general100.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\sr_div2k.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\sr_bsds.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\slam_tumindoor.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\slam_kitti.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\pd_inria.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\pd_caltech.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\or_sun.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\or_pascal.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\or_mnist.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\or_imagenet.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\msm_middlebury.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\msm_epfl.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\is_weizmann.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\is_bsds.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\ir_robot.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\ir_affine.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\hpe_parse.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\hpe_humaneva.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\gr_skig.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\gr_chalearn.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\fr_lfw.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\fr_adience.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\dataset.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\ar_sports.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\ar_hmdb.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\util.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\track_vot.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\track_alov.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\tr_svt.cpp">
+      <Filter>src\modules\datasets\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\datasets\src\tinyxml2\tinyxml2.cpp">
+      <Filter>src\modules\datasets\tinyxml2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\datasets\src\tinyxml2\tinyxml2.h">
+      <Filter>src\modules\datasets\tinyxml2</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

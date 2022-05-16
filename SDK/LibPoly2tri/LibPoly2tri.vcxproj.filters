@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e02f0e0f-7d21-4c1d-8c41-2843e841a46b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\poly2tri">
+      <UniqueIdentifier>{9cd68e56-d071-48ed-bde0-5e19e2106551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\poly2tri\sweep">
+      <UniqueIdentifier>{cd8a0858-c23e-4c14-81d7-e0aa0ade8482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\poly2tri\sweep\header">
+      <UniqueIdentifier>{0e0ffe2d-1f48-4885-9300-7af8c9d7906a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\poly2tri\common">
+      <UniqueIdentifier>{54f08c90-7498-4232-b391-7c19b17e9d50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\poly2tri\sweep\advancing_front.cc">
+      <Filter>src\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\poly2tri\sweep\cdt.cc">
+      <Filter>src\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\poly2tri\sweep\sweep.cc">
+      <Filter>src\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\poly2tri\sweep\sweep_context.cc">
+      <Filter>src\poly2tri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="src\poly2tri\common\shapes.cc">
+      <Filter>src\poly2tri\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\poly2tri\sweep\cdt.h">
+      <Filter>src\poly2tri\sweep\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\poly2tri\sweep\sweep.h">
+      <Filter>src\poly2tri\sweep\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\poly2tri\sweep\sweep_context.h">
+      <Filter>src\poly2tri\sweep\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\poly2tri\sweep\advancing_front.h">
+      <Filter>src\poly2tri\sweep\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{33bbe144-307c-434d-8f9a-782c19d5065d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{2e1d8933-fe6a-4ff9-ab10-267a983e4d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\saliency">
+      <UniqueIdentifier>{a2305a34-34df-4ad9-a7e9-7a465991a8e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\saliency\src">
+      <UniqueIdentifier>{3d1d5363-5069-49ea-8050-026306d2f713}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\saliency\src\header">
+      <UniqueIdentifier>{86df687b-7489-4b42-8214-9640c56e2b0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\saliency\src\header\BING">
+      <UniqueIdentifier>{fbadb3b7-be60-494c-97f8-9255fd29116f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\saliency\src\header\BING\header">
+      <UniqueIdentifier>{c760caf9-b530-4c9c-a3c9-9c860d84ea26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\saliency\src\motionSaliency.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\motionSaliencyBinWangApr2014.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\objectness.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\saliency.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\staticSaliency.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\staticSaliencyFineGrained.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\staticSaliencySpectralResidual.cpp">
+      <Filter>src\modules\saliency\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\BING\CmFile.cpp">
+      <Filter>src\modules\saliency\src\header\BING</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\BING\CmShow.cpp">
+      <Filter>src\modules\saliency\src\header\BING</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\BING\FilterTIG.cpp">
+      <Filter>src\modules\saliency\src\header\BING</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\BING\objectnessBING.cpp">
+      <Filter>src\modules\saliency\src\header\BING</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\saliency\src\BING\ValStructVec.cpp">
+      <Filter>src\modules\saliency\src\header\BING</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\saliency\src\precomp.hpp">
+      <Filter>src\modules\saliency\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\saliency\src\BING\CmFile.hpp">
+      <Filter>src\modules\saliency\src\header\BING\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\saliency\src\BING\CmShow.hpp">
+      <Filter>src\modules\saliency\src\header\BING\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\saliency\src\BING\CmTimer.hpp">
+      <Filter>src\modules\saliency\src\header\BING\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\saliency\src\BING\kyheader.hpp">
+      <Filter>src\modules\saliency\src\header\BING\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

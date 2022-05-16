@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{27d9b432-4678-47de-b73a-567d9e0ff5fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{26eb0d91-3fb0-43bf-b8b0-3d4b119e85b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xphoto">
+      <UniqueIdentifier>{60211b9c-2368-4a25-9b43-145d9717de5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xphoto\src">
+      <UniqueIdentifier>{74e3d9eb-d95a-4f28-bba6-632df0c032f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xphoto\src\header">
+      <UniqueIdentifier>{4572b3a1-8172-4267-a13e-2c69d63b9cd1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\xphoto\src\bm3d_image_denoising.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\dct_image_denoising.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\grayworld_white_balance.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\inpainting.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\learning_based_color_balance.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\oilpainting.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\simple_color_balance.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xphoto\src\tonemap.cpp">
+      <Filter>src\modules\xphoto\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\xphoto\src\advanced_types.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\annf.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\blending.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_invoker_commons.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_invoker_step1.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_invoker_step2.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_invoker_structs.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_transforms.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_transforms_1D.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_transforms_2D.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\bm3d_denoising_transforms_haar.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\gcgraph.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\inpainting_fsr.impl.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\kaiser_window.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\learning_based_color_balance_model.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\norm2.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\photomontage.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xphoto\src\whs.hpp">
+      <Filter>src\modules\xphoto\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

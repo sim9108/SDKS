@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9a1effc-e8a2-4363-b6e1-d0122a327d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{ff2c8394-5f06-4294-84e3-090d211786bb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\RtAudio.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\rtaudio_c.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\RtAudio.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\rtaudio_c.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

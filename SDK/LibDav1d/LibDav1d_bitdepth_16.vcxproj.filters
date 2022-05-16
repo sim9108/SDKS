@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b97953d8-ca37-4ff6-a7b8-3227fb0b165e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\x86">
+      <UniqueIdentifier>{383f40a0-81e7-4640-9923-e48821c2191e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\cdef_apply_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\cdef_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\fg_apply_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\film_grain_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\ipred_prepare_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\ipred_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\lf_apply_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\loopfilter_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\looprestoration_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\lr_apply_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\mc_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\recon_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\itx_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\loopfilter_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\looprestoration_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\mc_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\cdef_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\film_grain_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\ipred_init_tmpl.c">
+      <Filter>src\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\itx_tmpl.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{211da695-500c-43e7-9f77-58c9f37dc592}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{1510ab10-6188-4156-b582-e1b1ec7b8589}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d">
+      <UniqueIdentifier>{c95cbb31-fa28-4711-b69a-3b59c2a1805f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\header">
+      <UniqueIdentifier>{5f5c816e-44f2-449b-a04c-063ce222aa4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\src">
+      <UniqueIdentifier>{29c7f951-6e54-41f8-83dc-ddb3f07eccee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\src\header">
+      <UniqueIdentifier>{62bd4349-89fd-48aa-a901-2a579a7158d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\src\usac">
+      <UniqueIdentifier>{ae539703-10b0-4d92-9ee9-c6e0a1e4dff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\src\opencl">
+      <UniqueIdentifier>{299b2493-2353-472d-8cea-6b4209468cc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\calib3d\simd">
+      <UniqueIdentifier>{16d0c2ba-5c56-4160-9037-7978298eaa99}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\calib3d\opencv_calib3d_main.cpp">
+      <Filter>src\modules\calib3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\opencv_calib3d_pch.cpp">
+      <Filter>src\modules\calib3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\opencl_kernels_calib3d.cpp">
+      <Filter>src\modules\calib3d</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\calibration.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\calibration_handeye.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\checkchessboard.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\chessboard.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\circlesgrid.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\compat_ptsetreg.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\dls.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\epnp.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\fisheye.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\five-point.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\fundam.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\homography_decomp.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\ippe.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\levmarq.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\main.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\p3p.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\polynom_solver.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\posit.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\ptsetreg.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\quadsubpix.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\rho.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\solvepnp.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\sqpnp.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\stereobm.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\stereosgbm.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\triangulate.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\undistort.dispatch.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\upnp.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\ap3p.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\calibinit.cpp">
+      <Filter>src\modules\calib3d\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\degeneracy.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\dls_solver.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\essential_solver.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\estimator.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\fundamental_solver.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\gamma_values.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\homography_solver.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\local_optimization.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\pnp_solver.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\quality.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\ransac_solvers.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\sampler.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\termination.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\src\usac\utils.cpp">
+      <Filter>src\modules\calib3d\src\usac</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\calib3d\undistort.avx2.cpp">
+      <Filter>src\modules\calib3d\simd</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\calib3d\opencl_kernels_calib3d.hpp">
+      <Filter>src\modules\calib3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\undistort.simd_declarations.hpp">
+      <Filter>src\modules\calib3d\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\ap3p.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\calib3d_c_api.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\chessboard.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\circlesgrid.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\distortion_model.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\dls.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\epnp.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\fisheye.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\ippe.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\p3p.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\polynom_solver.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\precomp.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\rho.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\sqpnp.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\undistort.simd.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\upnp.h">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\calib3d\src\usac.hpp">
+      <Filter>src\modules\calib3d\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\calib3d\src\opencl\stereobm.cl">
+      <Filter>src\modules\calib3d\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

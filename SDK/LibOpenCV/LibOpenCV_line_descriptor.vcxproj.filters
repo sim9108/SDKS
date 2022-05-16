@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{64d3ebaa-39d5-49f4-87cc-3bb4b5df6c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{7ad1be18-7f6a-4a2b-a6ab-93ecc4966d8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\line_descriptor">
+      <UniqueIdentifier>{e868d0dc-6f65-4837-95e1-fe50462aba96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\line_descriptor\src">
+      <UniqueIdentifier>{5c7f5f86-34bb-49cb-af1f-f0dcbb3dc05f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\line_descriptor\opencv_line_descriptor_pch.cpp">
+      <Filter>src\modules\line_descriptor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\line_descriptor\src\binary_descriptor_matcher.cpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\line_descriptor\src\draw.cpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\line_descriptor\src\LSDDetector.cpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\line_descriptor\src\binary_descriptor.cpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\line_descriptor\src\bitarray.hpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\line_descriptor\src\bitops.hpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\line_descriptor\src\precomp.hpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\line_descriptor\src\types.hpp">
+      <Filter>src\modules\line_descriptor\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

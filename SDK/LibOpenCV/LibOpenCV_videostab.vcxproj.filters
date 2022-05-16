@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e1d5a497-a26e-439f-bd10-f55a70f7e0e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{acc4c5e6-6b41-4102-b258-40cb0c32229d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videostab">
+      <UniqueIdentifier>{67d501ff-33fd-455c-a9da-b1f3d23e57fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videostab\src">
+      <UniqueIdentifier>{0d07e5c3-a2aa-4daf-9ce3-98382ae8babd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videostab\src\header">
+      <UniqueIdentifier>{e58c1be6-32ce-49e3-98f4-9978fca76e00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\videostab\src\frame_source.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\global_motion.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\inpainting.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\log.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\motion_stabilizing.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\optical_flow.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\outlier_rejection.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\stabilizer.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\wobble_suppression.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\deblurring.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videostab\src\fast_marching.cpp">
+      <Filter>src\modules\videostab\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\videostab\src\clp.hpp">
+      <Filter>src\modules\videostab\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videostab\src\precomp.hpp">
+      <Filter>src\modules\videostab\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

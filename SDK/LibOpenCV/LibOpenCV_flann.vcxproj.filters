@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{671e9d2d-7260-4a4e-92d8-60413f8606b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{3c405283-0e12-464f-828e-b491a8365e3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\flann">
+      <UniqueIdentifier>{e3acb448-0fa8-405b-a45e-2b768e0ad2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\flann\src">
+      <UniqueIdentifier>{42189b10-56ca-454c-9c9f-234043b38a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\flann\src\header">
+      <UniqueIdentifier>{a2b7ad93-27c7-450c-96de-e35b98372f5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\flann\opencv_flann_pch.cpp">
+      <Filter>src\modules\flann</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\flann\src\flann.cpp">
+      <Filter>src\modules\flann\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\flann\src\miniflann.cpp">
+      <Filter>src\modules\flann\src\header</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\flann\src\precomp.hpp">
+      <Filter>src\modules\flann\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

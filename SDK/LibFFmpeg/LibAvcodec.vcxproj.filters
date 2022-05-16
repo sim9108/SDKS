@@ -1,0 +1,2618 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9c25238-74cf-46f7-8d60-4ad3d1be83d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavcodec">
+      <UniqueIdentifier>{22e0b04e-185d-4353-afc1-1bae35b345f0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavcodec\012v.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\4xm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\8bps.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\8svx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\a64multienc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aaccoder.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacdec_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenctab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenc_is.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenc_ltp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenc_pred.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacenc_tns.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacpsdsp_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacpsdsp_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacpsy.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacps_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacps_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacps_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacsbr.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aacsbr_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aactab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aac_ac3_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aac_adtstoasc_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aac_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aandcttab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aasc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3dec_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3dec_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3dec_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3enc_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3enc_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3tab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\acelp_filters.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\acelp_pitch_delay.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\acelp_vectors.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adpcm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adpcmenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adpcm_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adts_header.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adts_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adxdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adxenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\adx_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\agm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aic.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\alac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\alacdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\alacenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\alac_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aliaspixdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aliaspixenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\allcodecs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\alsdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\amrnbdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\amrwbdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\anm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ansi.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\apedec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aptx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aptxdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aptxenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\arbc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\argo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ass.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\assdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\assenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ass_split.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\asv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\asvdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\asvenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac3plus.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac3plusdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac3plusdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atrac9dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\atsc_a53.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\audiodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\audio_frame_queue.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\aura.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1_frame_merge_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1_frame_split_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\av1_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avcodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avdct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avfft.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avpacket.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avrndec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avs2_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avs3_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avuidec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\avuienc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bethsoftvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bfi.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bgmc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bink.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\binkaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\binkdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bintext.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bitpacked_dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bitpacked_enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bitstream.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bitstream_filters.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\blockdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bmp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bmpenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bmp_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bmvaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bmvvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\brenderpix.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\bswapdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\c93.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cabac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\canopus.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cavs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cavsdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cavsdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cavsdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cavs_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbrt_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbrt_data_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_av1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_h2645.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_mpeg2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_sei.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cbs_vp9.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ccaption_dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cdgraphics.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cdtoons.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cdxl.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\celp_filters.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\celp_math.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cfhd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cfhddata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cfhddsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cfhdenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cfhdencdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cga_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\chomp_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cinepak.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cinepakenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\clearvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cljrdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cljrenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cllc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cngdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cngenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\codec_desc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\codec_par.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cook.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cook_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cpia.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cri.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cri_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cscd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cuviddec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\cyuv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\d3d11va.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcaadpcm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcadata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcadct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcadec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcadsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcaenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dcahuff.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_core.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_core_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_exss.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_lbr.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_xll.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dct32_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dct32_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dds.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\decode.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dfa.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dirac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\diracdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\diracdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\diractab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dirac_arith.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dirac_dwt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dirac_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dirac_vlc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dnxhddata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dnxhddec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dnxhdenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dnxhd_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dolby_e.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dolby_e_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dolby_e_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dpcm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dpx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dpxenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dpx_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dsd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dsddec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dsicinaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dsicinvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dss_sp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dstdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dump_extradata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvaudiodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvaudio_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvbsubdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvbsubenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvbsub_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdsub.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdsubdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdsubenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvdsub_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvd_nav_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dvenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dv_profile.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxtory.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_av1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_h264.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_hevc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_mpeg2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_vc1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dxva2_vp9.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dynamic_hdr10_plus.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eac3enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eac3_core_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eac3_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eacmv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eaidct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eamad.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eatgq.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eatgv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\eatqi.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\elbg.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\encode.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\error_resilience.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\escape124.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\escape130.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\evrcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\exif.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\extract_extradata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\faandct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\faanidct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fastaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\faxcompr.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fdctdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fft_fixed_32.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fft_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fft_init_table.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ffv1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ffv1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ffv1enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ffwavesynth.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fic.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\filter_units_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fits.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fitsdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fitsenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flacdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flacdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flacdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flacenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flac_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flicvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flvdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\flvenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fmtconvert.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fmvc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\frame_thread_encoder.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\fraps.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\frwu.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g722.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g722dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g722dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g722enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g723_1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g723_1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g723_1enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g723_1_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g726.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g729dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g729postfilter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\g729_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gdv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gif.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gifdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gif_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\golomb.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gsmdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gsmdec_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\gsm_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h261.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h261data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h261dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h261enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h261_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h263.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h263data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h263dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h263dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h263_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h2645_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264chroma.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264idct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264pred.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264qpel.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_cabac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_cavlc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_direct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_levels.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_loopfilter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_mb.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_mp4toannexb_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_picture.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_ps.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_redundant_pps_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_refs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_sei.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h264_slice.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h265_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h265_profile_level.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\h274.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hap.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hapdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hapqa_extract_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hcadec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hcom.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevcdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevcpred.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_cabac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_filter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_mp4toannexb_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_mvs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_ps.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_refs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hevc_sei.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hnm4video.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hpeldsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hqx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hqxdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hqxvlc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hq_hqa.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hq_hqadata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\hq_hqadsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\htmlsubtitles.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffman.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffyuv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffyuvdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffyuvdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffyuvenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\huffyuvencdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\idcinvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\idctdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\iff.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\iirfilter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ilbcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imgconvert.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imm4.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imm5.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\imx_dump_header_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\indeo2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\indeo3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\indeo4.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\indeo5.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\intelh263dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\interplayacm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\interplayvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\intrax8.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\intrax8dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ipu_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ituh263dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ituh263enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ivi.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ivi_dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\j2kenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jacosubdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jfdctfst.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jfdctint.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jni.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeg2000.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeg2000dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeg2000dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeg2000dwt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeg2000_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpegls.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeglsdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpeglsenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jpegtables.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jrevdct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\jvdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\kbdwin.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\kgv1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\kmvc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lagarith.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lagarithrac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\latm_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lcldec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libaomdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libaomenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libdav1d.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libfdk-aacdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libfdk-aacenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libx264.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\libx265.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ljpegenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\loco.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lossless_audiodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lossless_videodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lossless_videoencdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lpc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lzf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lzw.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\lzwenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\m101.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mace.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\magicyuv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\magicyuvenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mathtables.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mdct15.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mdct_fixed_32.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mdct_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mediacodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\metasound.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\metasound_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\me_cmp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mfenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mf_utils.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\microdvddec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\midivid.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mimic.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpeg2jpeg_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpega_dump_header_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegbdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegdec_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegenc_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpegenc_huffman.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mjpeg_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlpdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlpdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlpenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlp_parse.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlp_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mlz.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mmvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mobiclip.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\motionpixels.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\motion_est.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\movsub_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\movtextdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\movtextenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mp3_header_decompress_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpc7.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpc8.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg12.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg12data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg12dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg12enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg12framerate.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg2_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4audio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4video.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4videodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4videoenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4video_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4_unpack_bframes_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodecheader.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodec_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodec_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodec_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodsp_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodsp_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiodsp_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudioenc_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudioenc_float.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudio_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegpicture.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegutils.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideodata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideoencdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideo_enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideo_motion.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideo_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg_er.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpl2dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mqc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mqcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mqcenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msgsmdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msmpeg4.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msmpeg4data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msmpeg4dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msmpeg4enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msp2dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msrle.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msrledec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss12.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss2dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss34dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mss4.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msvideo1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\msvideo1enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mv30.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mvcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mxpegdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\nellymoser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\nellymoserdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\nellymoserenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\noise_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\notchlc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\null_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\nuv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\on2avc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\on2avcdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\options.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opusdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opusdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opusenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opusenc_psy.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opustab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_celt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_pvq.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_rc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\opus_silk.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pafaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pafvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pamenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\parsers.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcm-bluray.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcm-dvd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcm-dvdenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcm_rechunk_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pcxenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pgssubdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pgxdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\photocd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pictordec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pixblockdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pixlet.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\png.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pngdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pngdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pngenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\png_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pnm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pnmdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pnmenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pnm_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\profiles.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\proresdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\proresdec2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\proresdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\proresenc_anatoliy.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\proresenc_kostya.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\prores_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\prosumer.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\psd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\psymodel.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pthread.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pthread_frame.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\pthread_slice.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ptx.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qcelpdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qdm2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qdmc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qdrw.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qpeg.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qpeldsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qsv_api.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qtrle.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\qtrleenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\r210dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\r210enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ra144.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ra144dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ra144enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ra288.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ralf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rangecoder.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ratecontrol.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\raw.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rawdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rawenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rdft.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\realtextdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\remove_extradata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rl.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rl2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rle.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\roqaudioenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\roqvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\roqvideodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\roqvideoenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rpza.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rpzaenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rtjpeg.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv10.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv10enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv20enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv30.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv30dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv34.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv34dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv34_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv40.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\rv40dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\s302m.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\s302menc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\samidec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sanm.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbcdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbcdec_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbcdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbcdsp_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbcenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbc_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbrdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sbrdsp_fixed.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\scpr.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\setts_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sga.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sgidec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sgienc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sgirledec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sheervideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\shorten.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\simple_idct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sinewin.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sipr.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sipr16k.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sipr_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\siren.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\smacker.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\smc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\smcenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\snappy.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\snow.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\snowdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\snowenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\snow_dwt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sonic.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sp5xdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\speedhq.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\speedhqenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\srtdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\srtenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\startcode.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\subviewerdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sunrast.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\sunrastenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\svq1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\svq1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\svq1enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\svq3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\synth_filter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tak.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\takdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\takdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tak_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\targa.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\targaenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\targa_y216dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\textdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\texturedsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tiertexseqv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tiff.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tiffenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tiff_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tmv.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tpeldsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\trace_headers_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\truehd_core_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\truemotion1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\truemotion2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\truemotion2rt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\truespeech.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tscc2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\tta.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ttadata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ttadsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ttaenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ttaencdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ttmlenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\twinvq.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\twinvqdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\txd.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ulti.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\utils.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\utvideodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\utvideodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\utvideoenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v210dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v210enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v210x.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v308dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v308enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v408dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v408enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v410dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\v410enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vb.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vble.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1_block.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1_loopfilter.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1_mc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc1_pred.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc2enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vc2enc_dwt.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vcr1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\videodsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vima.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vmdaudio.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vmdvideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vmnc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbis.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbisdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbisdsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbisenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbis_data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vorbis_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp3.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp3dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp3_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp5.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp56.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp56data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp56dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp56rac.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp6.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp6dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp8.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp8dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp8_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9block.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9dsp_10bpp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9dsp_12bpp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9dsp_8bpp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9lpf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9mvs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9prob.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9recon.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9_metadata_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9_raw_reorder_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9_superframe_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vp9_superframe_split_bsf.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vqavideo.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wavpack.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wavpackdata.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wavpackenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\webp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\webp_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\webvttdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\webvttenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wma.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmadec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmaenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmalosslessdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmaprodec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmavoice.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wma_common.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wma_freqs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmv2.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmv2data.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmv2dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmv2dsp.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wmv2enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wnv1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\wrapped_avframe.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ws-snd1.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xan.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xbmdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xbmenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xbm_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xface.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xfacedec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xfaceenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xiph.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xl.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xma_parser.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xpmdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xsubdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xsubenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xvididct.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xwddec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xwdenc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\xxan.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\y41pdec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\y41penc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ylc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\yop.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\yuv4dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\yuv4enc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpeg4audio_sample_rates.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\ac3_channel_layout_tab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dca_sample_rate_tab.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegvideo_dec.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\to_upper4.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dovi_rpu.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\mpegaudiotabs.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\dynamic_hdr_vivid.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\vlc.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\get_buffer.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavcodec\zlib_wrapper.c">
+      <Filter>src\libavcodec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

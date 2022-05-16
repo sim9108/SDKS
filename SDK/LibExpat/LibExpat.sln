@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibExpat", "LibExpat.vcxproj", "{964004EF-14DB-4FAA-B5AB-EF7F518541E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{964004EF-14DB-4FAA-B5AB-EF7F518541E8}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{964004EF-14DB-4FAA-B5AB-EF7F518541E8}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{964004EF-14DB-4FAA-B5AB-EF7F518541E8}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{964004EF-14DB-4FAA-B5AB-EF7F518541E8}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7223F826-EE74-4018-9B66-A2E55F000173}
+	EndGlobalSection
+EndGlobal

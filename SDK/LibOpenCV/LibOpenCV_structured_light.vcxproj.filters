@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1f4a5228-c68b-46b4-a4e1-35dad22ced37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{c0c7734f-5d42-42f3-99a2-5216ebf60d1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\structured_light">
+      <UniqueIdentifier>{980a0671-5834-4fa1-9bc8-d96cbc3f0c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\structured_light\src">
+      <UniqueIdentifier>{888b0bce-17ed-4ae8-9e26-cdee54e271f7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\structured_light\src\graycodepattern.cpp">
+      <Filter>src\modules\structured_light\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\structured_light\src\sinusoidalpattern.cpp">
+      <Filter>src\modules\structured_light\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\structured_light\src\precomp.hpp">
+      <Filter>src\modules\structured_light\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

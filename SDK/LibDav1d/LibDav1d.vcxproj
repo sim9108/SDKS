@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\cpu.h" />
+    <ClInclude Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\msac.h" />
+    <ClInclude Include="src\cli_config.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\src\cdef.h" />
+    <ClInclude Include="src\src\cdef_apply.h" />
+    <ClInclude Include="src\src\cdf.h" />
+    <ClInclude Include="src\src\cpu.h" />
+    <ClInclude Include="src\src\ctx.h" />
+    <ClInclude Include="src\src\data.h" />
+    <ClInclude Include="src\src\decode.h" />
+    <ClInclude Include="src\src\dequant_tables.h" />
+    <ClInclude Include="src\src\env.h" />
+    <ClInclude Include="src\src\fg_apply.h" />
+    <ClInclude Include="src\src\film_grain.h" />
+    <ClInclude Include="src\src\getbits.h" />
+    <ClInclude Include="src\src\internal.h" />
+    <ClInclude Include="src\src\intra_edge.h" />
+    <ClInclude Include="src\src\ipred.h" />
+    <ClInclude Include="src\src\ipred_prepare.h" />
+    <ClInclude Include="src\src\itx.h" />
+    <ClInclude Include="src\src\itx_1d.h" />
+    <ClInclude Include="src\src\levels.h" />
+    <ClInclude Include="src\src\lf_apply.h" />
+    <ClInclude Include="src\src\lf_mask.h" />
+    <ClInclude Include="src\src\log.h" />
+    <ClInclude Include="src\src\loopfilter.h" />
+    <ClInclude Include="src\src\looprestoration.h" />
+    <ClInclude Include="src\src\lr_apply.h" />
+    <ClInclude Include="src\src\mc.h" />
+    <ClInclude Include="src\src\mem.h" />
+    <ClInclude Include="src\src\msac.h" />
+    <ClInclude Include="src\src\obu.h" />
+    <ClInclude Include="src\src\picture.h" />
+    <ClInclude Include="src\src\qm.h" />
+    <ClInclude Include="src\src\recon.h" />
+    <ClInclude Include="src\src\ref.h" />
+    <ClInclude Include="src\src\refmvs.h" />
+    <ClInclude Include="src\src\scan.h" />
+    <ClInclude Include="src\src\tables.h" />
+    <ClInclude Include="src\src\thread.h" />
+    <ClInclude Include="src\src\thread_data.h" />
+    <ClInclude Include="src\src\thread_task.h" />
+    <ClInclude Include="src\src\warpmv.h" />
+    <ClInclude Include="src\src\wedge.h" />
+    <ClInclude Include="src\vcs_version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\win32\thread.c" />
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\cpu.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\msac_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\..\dev2019\SDK\LibDav1d\src\dav1d\src\x86\refmvs_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cdf.c" />
+    <ClCompile Include="src\src\cpu.c" />
+    <ClCompile Include="src\src\data.c" />
+    <ClCompile Include="src\src\decode.c" />
+    <ClCompile Include="src\src\dequant_tables.c" />
+    <ClCompile Include="src\src\getbits.c" />
+    <ClCompile Include="src\src\intra_edge.c" />
+    <ClCompile Include="src\src\itx_1d.c" />
+    <ClCompile Include="src\src\lf_mask.c" />
+    <ClCompile Include="src\src\lib.c" />
+    <ClCompile Include="src\src\log.c" />
+    <ClCompile Include="src\src\mem.c" />
+    <ClCompile Include="src\src\msac.c" />
+    <ClCompile Include="src\src\obu.c" />
+    <ClCompile Include="src\src\picture.c" />
+    <ClCompile Include="src\src\qm.c" />
+    <ClCompile Include="src\src\ref.c" />
+    <ClCompile Include="src\src\refmvs.c" />
+    <ClCompile Include="src\src\scan.c" />
+    <ClCompile Include="src\src\tables.c" />
+    <ClCompile Include="src\src\thread_task.c" />
+    <ClCompile Include="src\src\warpmv.c" />
+    <ClCompile Include="src\src\wedge.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\src\x86\cdef16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\cdef16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\cdef_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\cdef_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\cdef_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\cpuid.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\film_grain16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\film_grain16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\film_grain_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\film_grain_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\ipred16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\ipred16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\ipred_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\ipred_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\ipred_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\itx16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\itx16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\itx_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\itx_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\itx_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\loopfilter16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\loopfilter16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\loopfilter_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\loopfilter_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\loopfilter_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration16_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\looprestoration_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc16_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc16_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc16_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc_avx512.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\mc_sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\msac.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\src\x86\refmvs.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64  -Dprivate_prefix=dav1d -DARCH_X86_64=1 -w-macro-params-legacy -I$(ProjectDir)src\ -I$(ProjectDir)src\src\ %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\config.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{35c7e340-354c-4716-b6b2-c93a4fcd003b}</ProjectGuid>
+    <RootNamespace>LibDav1d</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\Dav1d\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\Dav1d\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703;4090;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibDav1d_bitdepth_8SMTd.lib;LibDav1d_bitdepth_16SMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\include\compat\msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703;4090;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibDav1d_bitdepth_8SMT.lib;LibDav1d_bitdepth_16SMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

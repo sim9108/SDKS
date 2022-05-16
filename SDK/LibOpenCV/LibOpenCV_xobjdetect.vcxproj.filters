@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{77c3442c-ccf5-4475-af13-60fbe6ec520a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{ae8cfc80-755b-4646-a7e8-2e42925e7760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xobjdetect">
+      <UniqueIdentifier>{49bdf6de-d733-4599-a633-34e1db5723fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xobjdetect\src">
+      <UniqueIdentifier>{89750e47-0c1e-405b-88e9-4bccc1fc2a08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\xobjdetect\src\header">
+      <UniqueIdentifier>{a929244d-ee59-4739-b6a2-8f460a77f8dd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\xobjdetect\opencv_xobjdetect_pch.cpp">
+      <Filter>src\modules\xobjdetect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xobjdetect\src\feature_evaluator.cpp">
+      <Filter>src\modules\xobjdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xobjdetect\src\lbpfeatures.cpp">
+      <Filter>src\modules\xobjdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xobjdetect\src\waldboost.cpp">
+      <Filter>src\modules\xobjdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\xobjdetect\src\wbdetector.cpp">
+      <Filter>src\modules\xobjdetect\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\xobjdetect\src\cascadeclassifier.h">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xobjdetect\src\feature_evaluator.hpp">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xobjdetect\src\lbpfeatures.h">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xobjdetect\src\precomp.hpp">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xobjdetect\src\waldboost.hpp">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\xobjdetect\src\wbdetector.hpp">
+      <Filter>src\modules\xobjdetect\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

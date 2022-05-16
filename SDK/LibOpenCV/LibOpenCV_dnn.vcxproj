@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\dnn\misc\caffe\opencv-caffe.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\onnx\opencv-onnx.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\attr_value.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\function.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\graph.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\op_def.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\tensor.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\tensor_shape.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\types.pb.cc" />
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\versions.pb.cc" />
+    <ClCompile Include="src\modules\dnn\opencl_kernels_dnn.cpp" />
+    <ClCompile Include="src\modules\dnn\opencv_dnn_pch.cpp" />
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_importer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_io.cpp" />
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_shrinker.cpp" />
+    <ClCompile Include="src\modules\dnn\src\darknet\darknet_importer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\darknet\darknet_io.cpp" />
+    <ClCompile Include="src\modules\dnn\src\debug_utils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\dnn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\graph_simplifier.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\halide_scheduler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ie_ngraph.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\init.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\layers_common.avx2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\layers_common.avx512_skx.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\quantization_utils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\scale_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\int8layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\accum_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\arg_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\blank_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\concat_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\const_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\convolution_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\correlation_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\crop_and_resize_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\cumsum_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\detection_output_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\elementwise_layers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\eltwise_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\flatten_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\flow_warp_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_AVX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx512_skx.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX512_SKX;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;CV_CPU_COMPILE_AVX_512F=1;CV_CPU_COMPILE_AVX512_COMMON=1;CV_CPU_COMPILE_AVX512_SKX=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.rvv.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\lrn_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\max_unpooling_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\mvn_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\normalize_bbox_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\not_implemented_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\padding_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\permute_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\pooling_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\prior_box_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\proposal_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\recurrent_layers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\region_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\reorg_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\reshape_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\resize_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\scale_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\shuffle_channel_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\slice_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\softmax_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\split_layer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\layers\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\model.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\nms.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\common.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\math_functions.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp" />
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp" />
+    <ClCompile Include="src\modules\dnn\src\onnx\onnx_graph_simplifier.cpp" />
+    <ClCompile Include="src\modules\dnn\src\onnx\onnx_importer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\op_halide.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_inf_engine.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_vkcom.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_webnn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dnn\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\tengine4dnn\src\tengine_graph_convolution.cpp" />
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp" />
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_importer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_io.cpp" />
+    <ClCompile Include="src\modules\dnn\src\torch\THDiskFile.cpp" />
+    <ClCompile Include="src\modules\dnn\src\torch\THFile.cpp" />
+    <ClCompile Include="src\modules\dnn\src\torch\THGeneral.cpp" />
+    <ClCompile Include="src\modules\dnn\src\torch\torch_importer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\avg_pool_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\concat_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\conv48_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\conv_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\dw_conv_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\lrn_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\max_pool_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\permute_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\prior_box_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\relu_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\softmax_spv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\buffer.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\context.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\internal.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_base.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_concat.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_conv.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_lrn.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_permute.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_pool.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_prior_box.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_relu.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_softmax.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\tensor.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\vulkan\vk_functions.cpp" />
+    <ClCompile Include="src\modules\dnn\src\vkcom\vulkan\vk_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\dnn\misc\caffe\opencv-caffe.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\onnx\opencv-onnx.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\attr_value.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\function.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\graph.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\op_def.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\tensor.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\tensor_shape.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\types.pb.h" />
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\versions.pb.h" />
+    <ClInclude Include="src\modules\dnn\opencl_kernels_dnn.hpp" />
+    <ClInclude Include="src\modules\dnn\src\caffe\caffe_io.hpp" />
+    <ClInclude Include="src\modules\dnn\src\caffe\glog_emulator.hpp" />
+    <ClInclude Include="src\modules\dnn\src\darknet\darknet_io.hpp" />
+    <ClInclude Include="src\modules\dnn\src\dnn_common.hpp" />
+    <ClInclude Include="src\modules\dnn\src\graph_simplifier.hpp" />
+    <ClInclude Include="src\modules\dnn\src\halide_scheduler.hpp" />
+    <ClInclude Include="src\modules\dnn\src\ie_ngraph.hpp" />
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.hpp" />
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.simd.hpp" />
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.hpp" />
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.simd.hpp" />
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\dnn\src\math_utils.hpp" />
+    <ClInclude Include="src\modules\dnn\src\nms.inl.hpp" />
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\common.hpp" />
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\default_kernel_config.hpp" />
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\math_functions.hpp" />
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\ocl4dnn.hpp" />
+    <ClInclude Include="src\modules\dnn\src\onnx\onnx_graph_simplifier.hpp" />
+    <ClInclude Include="src\modules\dnn\src\op_cuda.hpp" />
+    <ClInclude Include="src\modules\dnn\src\op_halide.hpp" />
+    <ClInclude Include="src\modules\dnn\src\op_inf_engine.hpp" />
+    <ClInclude Include="src\modules\dnn\src\op_vkcom.hpp" />
+    <ClInclude Include="src\modules\dnn\src\op_webnn.hpp" />
+    <ClInclude Include="src\modules\dnn\src\precomp.hpp" />
+    <ClInclude Include="src\modules\dnn\src\tengine4dnn\include\tengine_graph_convolution.hpp" />
+    <ClInclude Include="src\modules\dnn\src\tensorflow\tf_graph_simplifier.hpp" />
+    <ClInclude Include="src\modules\dnn\src\tensorflow\tf_io.hpp" />
+    <ClInclude Include="src\modules\dnn\src\torch\THDiskFile.h" />
+    <ClInclude Include="src\modules\dnn\src\torch\THFile.h" />
+    <ClInclude Include="src\modules\dnn\src\torch\THFilePrivate.h" />
+    <ClInclude Include="src\modules\dnn\src\torch\THGeneral.h" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\shader\spv_shader.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\common.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\context.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\internal.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\function_list.inl.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\vk_functions.hpp" />
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\vk_loader.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\dnn\src\caffe\opencv-caffe.proto" />
+    <None Include="src\modules\dnn\src\onnx\opencv-onnx.proto" />
+    <None Include="src\modules\dnn\src\opencl\activations.cl" />
+    <None Include="src\modules\dnn\src\opencl\batchnorm.cl" />
+    <None Include="src\modules\dnn\src\opencl\col2im.cl" />
+    <None Include="src\modules\dnn\src\opencl\concat.cl" />
+    <None Include="src\modules\dnn\src\opencl\conv_layer_spatial.cl" />
+    <None Include="src\modules\dnn\src\opencl\conv_spatial_helper.cl" />
+    <None Include="src\modules\dnn\src\opencl\detection_output.cl" />
+    <None Include="src\modules\dnn\src\opencl\dummy.cl" />
+    <None Include="src\modules\dnn\src\opencl\eltwise.cl" />
+    <None Include="src\modules\dnn\src\opencl\gemm_buffer.cl" />
+    <None Include="src\modules\dnn\src\opencl\gemm_image.cl" />
+    <None Include="src\modules\dnn\src\opencl\im2col.cl" />
+    <None Include="src\modules\dnn\src\opencl\lrn.cl" />
+    <None Include="src\modules\dnn\src\opencl\math.cl" />
+    <None Include="src\modules\dnn\src\opencl\matvec_mul.cl" />
+    <None Include="src\modules\dnn\src\opencl\mvn.cl" />
+    <None Include="src\modules\dnn\src\opencl\ocl4dnn_lrn.cl" />
+    <None Include="src\modules\dnn\src\opencl\ocl4dnn_pooling.cl" />
+    <None Include="src\modules\dnn\src\opencl\permute.cl" />
+    <None Include="src\modules\dnn\src\opencl\pooling.cl" />
+    <None Include="src\modules\dnn\src\opencl\prior_box.cl" />
+    <None Include="src\modules\dnn\src\opencl\region.cl" />
+    <None Include="src\modules\dnn\src\opencl\slice.cl" />
+    <None Include="src\modules\dnn\src\opencl\softmax.cl" />
+    <None Include="src\modules\dnn\src\opencl\softmax_loss.cl" />
+    <None Include="src\modules\dnn\src\tensorflow\attr_value.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\function.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\graph.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\op_def.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\tensor.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\tensor_shape.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\types.proto" />
+    <None Include="src\modules\dnn\src\tensorflow\versions.proto" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{19eec985-a5e2-4b64-aaa0-136f92301620}</ProjectGuid>
+    <RootNamespace>LibOpenCVdnn</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\dnn\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\dnn\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_PROTOBUF=1;CV_OCL4DNN=1;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\dnn;.\src\modules\dnn\include;.\src\modules\dnn\src;..\LibProtobuf\src\src;..\LibOpenCL\1.2;.\src\modules\dnn\misc\caffe;.\src\modules\dnn\misc\tensorflow;.\src\modules\dnn\misc\onnx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4244;4267;4305;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibProtobufSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;HAVE_PROTOBUF=1;CV_OCL4DNN=1;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\dnn;.\src\modules\dnn\include;.\src\modules\dnn\src;..\LibProtobuf\src\src;..\LibOpenCL\1.2;.\src\modules\dnn\misc\caffe;.\src\modules\dnn\misc\tensorflow;.\src\modules\dnn\misc\onnx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4244;4267;4305;4018;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibProtobufSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

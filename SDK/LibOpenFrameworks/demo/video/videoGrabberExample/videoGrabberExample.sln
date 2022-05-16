@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "videoGrabberExample", "videoGrabberExample.vcxproj", "{71301451-CF4E-4E15-AC8C-6CB209F3B33D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71301451-CF4E-4E15-AC8C-6CB209F3B33D}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{71301451-CF4E-4E15-AC8C-6CB209F3B33D}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{71301451-CF4E-4E15-AC8C-6CB209F3B33D}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{71301451-CF4E-4E15-AC8C-6CB209F3B33D}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {763AF995-AE8C-4D77-A090-BCC8C5DD1B18}
+	EndGlobalSection
+EndGlobal

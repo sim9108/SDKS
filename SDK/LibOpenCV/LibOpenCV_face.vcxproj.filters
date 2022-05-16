@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{6a690b57-bec0-4b6e-9cda-78c330a4a42b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{89150c03-05cf-4bc5-ab03-d0e2d3a3c233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\face">
+      <UniqueIdentifier>{b721b348-ed72-4262-a22b-c2bddfdf174e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\face\src">
+      <UniqueIdentifier>{7a97a457-90b2-4394-bd26-b2ad53d8ab53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\face\src\header">
+      <UniqueIdentifier>{fe50c817-5aad-4c4c-aca1-4a98b484ef27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\face\opencv_face_pch.cpp">
+      <Filter>src\modules\face</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\bif.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\eigen_faces.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\face_alignment.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\face_basic.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\facemark.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\facemarkAAM.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\facemarkLBF.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\facerec.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\fisher_faces.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\getlandmarks.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\lbph_faces.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\mace.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\predict_collector.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\regtree.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\face\src\trainFacemark.cpp">
+      <Filter>src\modules\face\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\face\src\face_alignmentimpl.hpp">
+      <Filter>src\modules\face\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\face\src\face_utils.hpp">
+      <Filter>src\modules\face\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\face\src\precomp.hpp">
+      <Filter>src\modules\face\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

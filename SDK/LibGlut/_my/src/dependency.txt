@@ -1,0 +1,1 @@
+Opengl32.lib;Winmm.lib;Glu32.lib

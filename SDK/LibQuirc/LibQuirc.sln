@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibQuirc", "LibQuirc.vcxproj", "{2B049D14-3674-494E-A531-EBB7BD6C2D5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2B049D14-3674-494E-A531-EBB7BD6C2D5C}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{2B049D14-3674-494E-A531-EBB7BD6C2D5C}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{2B049D14-3674-494E-A531-EBB7BD6C2D5C}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{2B049D14-3674-494E-A531-EBB7BD6C2D5C}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88070564-0DE4-4FB9-93F4-59F211F37604}
+	EndGlobalSection
+EndGlobal

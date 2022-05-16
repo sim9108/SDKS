@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Source\FreeImageToolkit\Background.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\BSplineRotate.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Channels.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\ClassicRotate.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Colors.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\CopyPaste.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Display.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Flip.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\JPEGTransform.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\MultigridPoissonSolver.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Rescale.cpp" />
+    <ClCompile Include="src\Source\FreeImageToolkit\Resize.cpp" />
+    <ClCompile Include="src\Source\FreeImage\BitmapAccess.cpp" />
+    <ClCompile Include="src\Source\FreeImage\CacheFile.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ColorLookup.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion16_555.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion16_565.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion24.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion32.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion4.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Conversion8.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionFloat.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionRGB16.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBA16.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBAF.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBF.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionType.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ConversionUINT16.cpp" />
+    <ClCompile Include="src\Source\FreeImage\FreeImage.cpp" />
+    <ClCompile Include="src\Source\FreeImage\FreeImageC.c" />
+    <ClCompile Include="src\Source\FreeImage\FreeImageIO.cpp" />
+    <ClCompile Include="src\Source\FreeImage\GetType.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Halftoning.cpp" />
+    <ClCompile Include="src\Source\FreeImage\J2KHelper.cpp" />
+    <ClCompile Include="src\Source\FreeImage\LFPQuantizer.cpp" />
+    <ClCompile Include="src\Source\FreeImage\MemoryIO.cpp" />
+    <ClCompile Include="src\Source\FreeImage\MNGHelper.cpp" />
+    <ClCompile Include="src\Source\FreeImage\MultiPage.cpp" />
+    <ClCompile Include="src\Source\FreeImage\NNQuantizer.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PixelAccess.cpp" />
+    <ClCompile Include="src\Source\FreeImage\Plugin.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginBMP.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginCUT.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginDDS.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginEXR.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginG3.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginGIF.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginHDR.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginICO.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginIFF.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginJ2K.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginJNG.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginJP2.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginJPEG.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginJXR.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginKOALA.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginMNG.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPCD.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPCX.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPFM.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPICT.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPNG.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPNM.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginPSD.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginRAS.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginRAW.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginSGI.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginTARGA.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginTIFF.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginWBMP.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginWebP.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginXBM.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PluginXPM.cpp" />
+    <ClCompile Include="src\Source\FreeImage\PSDParser.cpp" />
+    <ClCompile Include="src\Source\FreeImage\TIFFLogLuv.cpp" />
+    <ClCompile Include="src\Source\FreeImage\tmoColorConvert.cpp" />
+    <ClCompile Include="src\Source\FreeImage\tmoDrago03.cpp" />
+    <ClCompile Include="src\Source\FreeImage\tmoFattal02.cpp" />
+    <ClCompile Include="src\Source\FreeImage\tmoReinhard05.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ToneMapping.cpp" />
+    <ClCompile Include="src\Source\FreeImage\WuQuantizer.cpp" />
+    <ClCompile Include="src\Source\FreeImage\ZLibInterface.cpp" />
+    <ClCompile Include="src\Source\Metadata\Exif.cpp" />
+    <ClCompile Include="src\Source\Metadata\FIRational.cpp" />
+    <ClCompile Include="src\Source\Metadata\FreeImageTag.cpp" />
+    <ClCompile Include="src\Source\Metadata\IPTC.cpp" />
+    <ClCompile Include="src\Source\Metadata\TagConversion.cpp" />
+    <ClCompile Include="src\Source\Metadata\TagLib.cpp" />
+    <ClCompile Include="src\Source\Metadata\XTIFF.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipImage.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMemoryIO.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMetadataFind.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMultiPage.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipTag.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipWinImage.cpp" />
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\FreeImagePlus.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Source\FreeImageToolkit\Filters.h" />
+    <ClInclude Include="src\Source\FreeImageToolkit\Resize.h" />
+    <ClInclude Include="src\Source\Metadata\FIRational.h" />
+    <ClInclude Include="src\Source\Metadata\FreeImageTag.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e37b83c3-a150-4856-9820-d1d2d6e8e1f2}</ProjectGuid>
+    <RootNamespace>LibFreeImage</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;FREEIMAGE_LIB;LIBRAW_NODLL;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\Source;.\src\Wrapper\FreeImagePlus;..\LibImath\src\src\Imath;..\LibJXR\src\jxrgluelib;..\LibJXR\src\image\sys;..\LibRaw\src;..\LibOpenJPEG\src\src\lib\openjp2;..\LibOpenEXR\src\src\lib\Iex;..\LibOpenEXR\src\src\lib\OpenEXR;..\LibTiff\src\libtiff;..\LibJpegturbo\src;..\LibPng\src;..\LibZ\src;..\LibWebP\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4996;4703;4723;4789;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibImath\lib64;..\LibJXR\lib64;..\LibRaw\lib64;..\LibOpenJPEG\lib64;..\LibOpenEXR\lib64;..\LibTiff\lib64;..\LibJpegturbo\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibWebP\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibImathSMTd.lib;LibJXRSMTd.lib;LibRawSMTd.lib;LibOpenJPEGSMTd.lib;LibOpenEXRSMTd.lib;LibTiffSMTd.lib;LibJpegturboSMTd.lib;LibPngSMTd.lib;LibZSMTd.lib;LibWebPSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;FREEIMAGE_LIB;LIBRAW_NODLL;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\Source;.\src\Wrapper\FreeImagePlus;..\LibImath\src\src\Imath;..\LibJXR\src\jxrgluelib;..\LibJXR\src\image\sys;..\LibRaw\src;..\LibOpenJPEG\src\src\lib\openjp2;..\LibOpenEXR\src\src\lib\Iex;..\LibOpenEXR\src\src\lib\OpenEXR;..\LibTiff\src\libtiff;..\LibJpegturbo\src;..\LibPng\src;..\LibZ\src;..\LibWebP\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4996;4703;4723;4789;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibImath\lib64;..\LibJXR\lib64;..\LibRaw\lib64;..\LibOpenJPEG\lib64;..\LibOpenEXR\lib64;..\LibTiff\lib64;..\LibJpegturbo\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibWebP\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibImathSMT.lib;LibJXRSMT.lib;LibRawSMT.lib;LibOpenJPEGSMT.lib;LibOpenEXRSMT.lib;LibTiffSMT.lib;LibJpegturboSMT.lib;LibPngSMT.lib;LibZSMT.lib;LibWebPSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ActiveRecord\src\ActiveRecord.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\ActiveRecord\src\Context.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\ActiveRecord\src\IDTraits.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\ActiveRecord\src\StatementPlaceholderProvider.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ActiveRecord\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Binder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\ConnectionHandle.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Connector.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\EnvironmentHandle.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Extractor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\ODBCException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\ODBCMetaColumn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\ODBCStatementImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Parameter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Preparator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\SessionImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\TypeInfo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\ODBC\src\Unicode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\Binder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\Connector.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\Extractor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\Notifier.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\SessionImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\sqlite3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\SQLiteException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\SQLiteStatementImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\SQLite\src\Utility.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)SQLite\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Encodings\src\DoubleByteEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Encodings.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_10Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_11Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_13Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_14Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_16Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_3Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_4Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_5Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_6Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_7Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_8Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\ISO8859_9Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacCentralEurRomanEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacChineseSimpEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacChineseTradEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacCyrillicEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacJapaneseEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacKoreanEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\MacRomanEncoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1253Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1254Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1255Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1256Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1257Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows1258Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows874Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows932Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows936Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows949Encoding.cpp" />
+    <ClCompile Include="src\Encodings\src\Windows950Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\AbstractObserver.cpp" />
+    <ClCompile Include="src\Foundation\src\ActiveDispatcher.cpp" />
+    <ClCompile Include="src\Foundation\src\ArchiveStrategy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Ascii.cpp" />
+    <ClCompile Include="src\Foundation\src\ASCIIEncoding.cpp" />
+    <ClCompile Include="src\Foundation\src\AsyncChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\AtomicCounter.cpp" />
+    <ClCompile Include="src\Foundation\src\AtomicFlag.cpp" />
+    <ClCompile Include="src\Foundation\src\Base32Decoder.cpp" />
+    <ClCompile Include="src\Foundation\src\Base32Encoder.cpp" />
+    <ClCompile Include="src\Foundation\src\Base64Decoder.cpp" />
+    <ClCompile Include="src\Foundation\src\Base64Encoder.cpp" />
+    <ClCompile Include="src\Foundation\src\BinaryReader.cpp" />
+    <ClCompile Include="src\Foundation\src\BinaryWriter.cpp" />
+    <ClCompile Include="src\Foundation\src\Bugcheck.cpp" />
+    <ClCompile Include="src\Foundation\src\ByteOrder.cpp" />
+    <ClCompile Include="src\Foundation\src\Channel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Checksum.cpp" />
+    <ClCompile Include="src\Foundation\src\Clock.cpp" />
+    <ClCompile Include="src\Foundation\src\Condition.cpp" />
+    <ClCompile Include="src\Foundation\src\Configurable.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\ConsoleChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\CountingStream.cpp" />
+    <ClCompile Include="src\Foundation\src\DataURIStream.cpp" />
+    <ClCompile Include="src\Foundation\src\DataURIStreamFactory.cpp" />
+    <ClCompile Include="src\Foundation\src\DateTime.cpp" />
+    <ClCompile Include="src\Foundation\src\DateTimeFormat.cpp" />
+    <ClCompile Include="src\Foundation\src\DateTimeFormatter.cpp" />
+    <ClCompile Include="src\Foundation\src\DateTimeParser.cpp" />
+    <ClCompile Include="src\Foundation\src\Debugger.cpp" />
+    <ClCompile Include="src\Foundation\src\DeflatingStream.cpp" />
+    <ClCompile Include="src\Foundation\src\DigestEngine.cpp" />
+    <ClCompile Include="src\Foundation\src\DigestStream.cpp" />
+    <ClCompile Include="src\Foundation\src\DirectoryIterator.cpp" />
+    <ClCompile Include="src\Foundation\src\DirectoryIteratorStrategy.cpp" />
+    <ClCompile Include="src\Foundation\src\Environment.cpp" />
+    <ClCompile Include="src\Foundation\src\NumericString.cpp" />
+    <ClCompile Include="src\Foundation\src\TextConverter.cpp" />
+    <ClCompile Include="src\JSON\src\Array.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Handler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\JSONException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Object.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\ParseHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Parser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\ParserImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\pdjson.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\PrintHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Query.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Stringifier.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\Template.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\JSON\src\TemplateCache.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)JSON\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Array.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Binary.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Connection.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Cursor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Database.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\DeleteRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Document.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Element.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\GetMoreRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\InsertRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\JavaScriptCode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\KillCursorsRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\Message.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\MessageHeader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\ObjectId.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\QueryRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\RegularExpression.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\ReplicaSet.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\RequestMessage.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\ResponseMessage.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\MongoDB\src\UpdateRequest.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)MongoDB\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Net\src\AbstractHTTPRequestHandler.cpp" />
+    <ClCompile Include="src\Net\src\DatagramSocket.cpp" />
+    <ClCompile Include="src\Net\src\DatagramSocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\DialogSocket.cpp" />
+    <ClCompile Include="src\Net\src\DNS.cpp" />
+    <ClCompile Include="src\Net\src\EscapeHTMLStream.cpp" />
+    <ClCompile Include="src\Net\src\FilePartSource.cpp" />
+    <ClCompile Include="src\Net\src\FTPClientSession.cpp" />
+    <ClCompile Include="src\Net\src\FTPStreamFactory.cpp" />
+    <ClCompile Include="src\Net\src\HostEntry.cpp" />
+    <ClCompile Include="src\Net\src\HTMLForm.cpp" />
+    <ClCompile Include="src\Net\src\HTTPAuthenticationParams.cpp" />
+    <ClCompile Include="src\Net\src\HTTPBasicCredentials.cpp" />
+    <ClCompile Include="src\Net\src\HTTPBufferAllocator.cpp" />
+    <ClCompile Include="src\Net\src\HTTPChunkedStream.cpp" />
+    <ClCompile Include="src\Net\src\HTTPClientSession.cpp" />
+    <ClCompile Include="src\Net\src\HTTPCookie.cpp" />
+    <ClCompile Include="src\Net\src\HTTPCredentials.cpp" />
+    <ClCompile Include="src\Net\src\HTTPDigestCredentials.cpp" />
+    <ClCompile Include="src\Net\src\HTTPFixedLengthStream.cpp" />
+    <ClCompile Include="src\Net\src\HTTPHeaderStream.cpp" />
+    <ClCompile Include="src\Net\src\HTTPIOStream.cpp" />
+    <ClCompile Include="src\Net\src\HTTPMessage.cpp" />
+    <ClCompile Include="src\Net\src\HTTPNTLMCredentials.cpp" />
+    <ClCompile Include="src\Net\src\HTTPRequest.cpp" />
+    <ClCompile Include="src\Net\src\HTTPRequestHandler.cpp" />
+    <ClCompile Include="src\Net\src\HTTPRequestHandlerFactory.cpp" />
+    <ClCompile Include="src\Net\src\HTTPResponse.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServer.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerConnection.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerConnectionFactory.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerParams.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerRequest.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerRequestImpl.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerResponse.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerResponseImpl.cpp" />
+    <ClCompile Include="src\Net\src\HTTPServerSession.cpp" />
+    <ClCompile Include="src\Net\src\HTTPSession.cpp" />
+    <ClCompile Include="src\Net\src\HTTPSessionFactory.cpp" />
+    <ClCompile Include="src\Net\src\HTTPSessionInstantiator.cpp" />
+    <ClCompile Include="src\Net\src\HTTPStream.cpp" />
+    <ClCompile Include="src\Net\src\HTTPStreamFactory.cpp" />
+    <ClCompile Include="src\Net\src\ICMPClient.cpp" />
+    <ClCompile Include="src\Net\src\ICMPEventArgs.cpp" />
+    <ClCompile Include="src\Net\src\ICMPPacket.cpp" />
+    <ClCompile Include="src\Net\src\ICMPPacketImpl.cpp" />
+    <ClCompile Include="src\Net\src\ICMPSocket.cpp" />
+    <ClCompile Include="src\Net\src\ICMPSocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\ICMPv4PacketImpl.cpp" />
+    <ClCompile Include="src\Net\src\IPAddress.cpp" />
+    <ClCompile Include="src\Net\src\IPAddressImpl.cpp" />
+    <ClCompile Include="src\Net\src\MailMessage.cpp" />
+    <ClCompile Include="src\Net\src\MailRecipient.cpp" />
+    <ClCompile Include="src\Net\src\MailStream.cpp" />
+    <ClCompile Include="src\Net\src\MediaType.cpp" />
+    <ClCompile Include="src\Net\src\MessageHeader.cpp" />
+    <ClCompile Include="src\Net\src\MulticastSocket.cpp" />
+    <ClCompile Include="src\Net\src\MultipartReader.cpp" />
+    <ClCompile Include="src\Net\src\MultipartWriter.cpp" />
+    <ClCompile Include="src\Net\src\NameValueCollection.cpp" />
+    <ClCompile Include="src\Net\src\Net.cpp" />
+    <ClCompile Include="src\Net\src\NetException.cpp" />
+    <ClCompile Include="src\Net\src\NetworkInterface.cpp" />
+    <ClCompile Include="src\Net\src\NTLMCredentials.cpp" />
+    <ClCompile Include="src\Net\src\NTPClient.cpp" />
+    <ClCompile Include="src\Net\src\NTPEventArgs.cpp" />
+    <ClCompile Include="src\Net\src\NTPPacket.cpp" />
+    <ClCompile Include="src\Net\src\NullPartHandler.cpp" />
+    <ClCompile Include="src\Net\src\OAuth10Credentials.cpp" />
+    <ClCompile Include="src\Net\src\OAuth20Credentials.cpp" />
+    <ClCompile Include="src\Net\src\PartHandler.cpp" />
+    <ClCompile Include="src\Net\src\PartSource.cpp" />
+    <ClCompile Include="src\Net\src\PartStore.cpp" />
+    <ClCompile Include="src\Net\src\PollSet.cpp" />
+    <ClCompile Include="src\Net\src\POP3ClientSession.cpp" />
+    <ClCompile Include="src\Net\src\QuotedPrintableDecoder.cpp" />
+    <ClCompile Include="src\Net\src\QuotedPrintableEncoder.cpp" />
+    <ClCompile Include="src\Net\src\RawSocket.cpp" />
+    <ClCompile Include="src\Net\src\RawSocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\RemoteSyslogChannel.cpp" />
+    <ClCompile Include="src\Net\src\RemoteSyslogListener.cpp" />
+    <ClCompile Include="src\Net\src\ServerSocket.cpp" />
+    <ClCompile Include="src\Net\src\ServerSocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\SMTPChannel.cpp" />
+    <ClCompile Include="src\Net\src\SMTPClientSession.cpp" />
+    <ClCompile Include="src\Net\src\Socket.cpp" />
+    <ClCompile Include="src\Net\src\SocketAddress.cpp" />
+    <ClCompile Include="src\Net\src\SocketAddressImpl.cpp" />
+    <ClCompile Include="src\Net\src\SocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\SocketNotification.cpp" />
+    <ClCompile Include="src\Net\src\SocketNotifier.cpp" />
+    <ClCompile Include="src\Net\src\SocketReactor.cpp" />
+    <ClCompile Include="src\Net\src\SocketStream.cpp" />
+    <ClCompile Include="src\Net\src\SSPINTLMCredentials.cpp" />
+    <ClCompile Include="src\Net\src\StreamSocket.cpp" />
+    <ClCompile Include="src\Net\src\StreamSocketImpl.cpp" />
+    <ClCompile Include="src\Net\src\StringPartSource.cpp" />
+    <ClCompile Include="src\Net\src\TCPServer.cpp" />
+    <ClCompile Include="src\Net\src\TCPServerConnection.cpp" />
+    <ClCompile Include="src\Net\src\TCPServerConnectionFactory.cpp" />
+    <ClCompile Include="src\Net\src\TCPServerDispatcher.cpp" />
+    <ClCompile Include="src\Net\src\TCPServerParams.cpp" />
+    <ClCompile Include="src\Net\src\UDPClient.cpp" />
+    <ClCompile Include="src\Net\src\UDPServerParams.cpp" />
+    <ClCompile Include="src\Net\src\WebSocket.cpp" />
+    <ClCompile Include="src\Net\src\WebSocketImpl.cpp" />
+    <ClCompile Include="src\Redis\src\Array.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\AsyncReader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\Client.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\Command.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\Error.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\Exception.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\RedisEventArgs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\RedisStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Redis\src\Type.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Redis\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Util\src\AbstractConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\Application.cpp" />
+    <ClCompile Include="src\Util\src\ConfigurationMapper.cpp" />
+    <ClCompile Include="src\Util\src\ConfigurationView.cpp" />
+    <ClCompile Include="src\Util\src\FilesystemConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\HelpFormatter.cpp" />
+    <ClCompile Include="src\Util\src\IniFileConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\IntValidator.cpp" />
+    <ClCompile Include="src\Util\src\JSONConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\LayeredConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\LoggingConfigurator.cpp" />
+    <ClCompile Include="src\Util\src\LoggingSubsystem.cpp" />
+    <ClCompile Include="src\Util\src\MapConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\Option.cpp" />
+    <ClCompile Include="src\Util\src\OptionCallback.cpp" />
+    <ClCompile Include="src\Util\src\OptionException.cpp" />
+    <ClCompile Include="src\Util\src\OptionProcessor.cpp" />
+    <ClCompile Include="src\Util\src\OptionSet.cpp" />
+    <ClCompile Include="src\Util\src\PropertyFileConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\RegExpValidator.cpp" />
+    <ClCompile Include="src\Util\src\ServerApplication.cpp" />
+    <ClCompile Include="src\Util\src\Subsystem.cpp" />
+    <ClCompile Include="src\Util\src\SystemConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\Timer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Util\src\TimerTask.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)utils\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)utils\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Util\src\Validator.cpp" />
+    <ClCompile Include="src\Util\src\WinRegistryConfiguration.cpp" />
+    <ClCompile Include="src\Util\src\WinRegistryKey.cpp" />
+    <ClCompile Include="src\Util\src\WinService.cpp" />
+    <ClCompile Include="src\Util\src\XMLConfiguration.cpp" />
+    <ClCompile Include="src\XML\src\AbstractContainerNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\AbstractNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Attr.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Attributes.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\AttributesImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\AttrMap.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\CDATASection.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\CharacterData.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ChildNodesList.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Comment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ContentHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DeclHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DefaultHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Document.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DocumentEvent.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DocumentFragment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DocumentType.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMBuilder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMImplementation.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMObject.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMParser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMSerializer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DOMWriter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DTDHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\DTDMap.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Element.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ElementsByTagNameList.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Entity.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EntityReference.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EntityResolver.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EntityResolverImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ErrorHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Event.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EventDispatcher.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EventException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EventListener.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\EventTarget.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\InputSource.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\LexicalHandler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Locator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\LocatorImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\MutationEvent.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Name.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NamedNodeMap.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NamePool.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NamespaceStrategy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NamespaceSupport.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Node.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NodeAppender.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NodeFilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NodeIterator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\NodeList.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Notation.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ParserEngine.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ProcessingInstruction.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\QName.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\SAXException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\SAXParser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\Text.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\TreeWalker.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\ValueTraits.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\WhitespaceFilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLFilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLFilterImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLReader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLStreamParser.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLStreamParserException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLString.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\XML\src\XMLWriter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DOM\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Add.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\AutoDetectStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Compress.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Decompress.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Delete.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Keep.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ParseCallback.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\PartialStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Rename.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\Replace.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\SkipCallback.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipArchive.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipArchiveInfo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipCommon.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipDataInfo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipFileInfo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipLocalFileHeader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipManipulator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipOperation.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Zip\src\ZipUtil.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ZIP\</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="src\Foundation\include\Poco\AbstractCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AbstractDelegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AbstractEvent.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AbstractObserver.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AbstractPriorityDelegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AbstractStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AccessExpirationDecorator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AccessExpireCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AccessExpireLRUCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AccessExpireStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ActiveDispatcher.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ActiveMethod.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ActiveResult.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ActiveRunnable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ActiveStarter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Activity.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Alignment.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Any.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ArchiveStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Array.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Ascii.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ASCIIEncoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AsyncChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AtomicCounter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AtomicFlag.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AutoPtr.h" />
+    <ClInclude Include="src\Foundation\include\Poco\AutoReleasePool.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Base32Decoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Base32Encoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Base64Decoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Base64Encoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BasicEvent.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BinaryReader.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BinaryWriter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Buffer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BufferAllocator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BufferedBidirectionalStreamBuf.h" />
+    <ClInclude Include="src\Foundation\include\Poco\BufferedStreamBuf.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Bugcheck.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ByteOrder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Channel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Checksum.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ClassLibrary.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ClassLoader.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Clock.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Condition.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Config.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Configurable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ConsoleChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\CountingStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DataURIStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DataURIStreamFactory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DateTime.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DateTimeFormat.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DateTimeFormatter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DateTimeParser.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Debugger.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DefaultStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DeflatingStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Delegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DigestEngine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DigestStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DirectoryIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DirectoryIteratorStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DirectoryIterator_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DirectoryIterator_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DirectoryWatcher.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DynamicAny.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DynamicAnyHolder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DynamicFactory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\DynamicStruct.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Dynamic\Pair.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Dynamic\Struct.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Dynamic\Var.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Dynamic\VarHolder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Dynamic\VarIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Environment.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Environment_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Environment_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Environment_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Environment_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Error.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ErrorHandler.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Event.h" />
+    <ClInclude Include="src\Foundation\include\Poco\EventArgs.h" />
+    <ClInclude Include="src\Foundation\include\Poco\EventChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\EventLogChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Event_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Event_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Event_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Exception.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ExpirationDecorator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Expire.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ExpireCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ExpireLRUCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ExpireStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FIFOBuffer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FIFOBufferStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FIFOEvent.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FIFOStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\File.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FileChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FileStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FileStreamFactory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FileStream_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FileStream_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\File_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\File_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\File_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\File_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Format.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Formatter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FormattingChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Foundation.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_C99.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_DEC.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_DUMMY.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_QNX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_SUN.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FPEnvironment_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FunctionDelegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\FunctionPriorityDelegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Glob.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Hash.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HashFunction.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HashMap.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HashSet.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HashStatistic.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HashTable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HexBinaryDecoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HexBinaryEncoder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\HMACEngine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\InflatingStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Instantiator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\JSONString.h" />
+    <ClInclude Include="src\Foundation\include\Poco\KeyValueArgs.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Latin1Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Latin2Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Latin9Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LinearHashTable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LineEndingConverter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ListMap.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LocalDateTime.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LogFile.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LogFile_STD.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LogFile_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Logger.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LoggingFactory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LoggingRegistry.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LogStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LRUCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\LRUStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Manifest.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MD4Engine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MD5Engine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MemoryPool.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MemoryStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Message.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MetaObject.h" />
+    <ClInclude Include="src\Foundation\include\Poco\MetaProgramming.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Mutex.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Mutex_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Mutex_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Mutex_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Mutex_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedEvent.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedEvent_Android.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedEvent_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedEvent_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedMutex.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedMutex_Android.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedMutex_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedMutex_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NamedTuple.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NestedDiagnosticContext.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NObserver.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Notification.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NotificationCenter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NotificationQueue.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NotificationStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Nullable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NullChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NullStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NumberFormatter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NumberParser.h" />
+    <ClInclude Include="src\Foundation\include\Poco\NumericString.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ObjectPool.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Observer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Optional.h" />
+    <ClInclude Include="src\Foundation\include\Poco\OrderedMap.h" />
+    <ClInclude Include="src\Foundation\include\Poco\OrderedSet.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ordered_hash.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ordered_map.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ordered_set.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Path.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Path_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Path_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Path_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PatternFormatter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PBKDF2Engine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Pipe.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PipeImpl.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PipeImpl_DUMMY.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PipeImpl_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PipeImpl_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PipeStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Platform.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Platform_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Platform_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Platform_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Poco.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PriorityDelegate.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PriorityEvent.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PriorityExpire.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PriorityNotificationQueue.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PriorityStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Process.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Process_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Process_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Process_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Process_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\PurgeStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Random.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RandomStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RecursiveDirectoryIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RecursiveDirectoryIteratorImpl.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RefCountedObject.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RegularExpression.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RotateStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Runnable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RunnableAdapter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock_Android.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\RWLock_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ScopedLock.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ScopedUnlock.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Semaphore.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Semaphore_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Semaphore_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Semaphore_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SHA1Engine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SHA2Engine.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedLibrary.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedLibrary_HPUX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedLibrary_UNIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedLibrary_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedLibrary_WIN32U.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedMemory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedMemory_DUMMY.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedMemory_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedMemory_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SharedPtr.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SignalHandler.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SimpleFileChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SimpleHashTable.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SingletonHolder.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SortedDirectoryIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SplitterChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Stopwatch.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StrategyCollection.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StreamChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StreamConverter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StreamCopier.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StreamTokenizer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StreamUtil.h" />
+    <ClInclude Include="src\Foundation\include\Poco\String.h" />
+    <ClInclude Include="src\Foundation\include\Poco\StringTokenizer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SynchronizedObject.h" />
+    <ClInclude Include="src\Foundation\include\Poco\SyslogChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Task.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TaskManager.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TaskNotification.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TeeStream.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TemporaryFile.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TextBufferIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TextConverter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TextEncoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TextIterator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Thread.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ThreadLocal.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ThreadPool.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ThreadTarget.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Thread_POSIX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Thread_VX.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Thread_WIN32.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Thread_WINCE.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TimedNotificationQueue.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Timer.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Timespan.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Timestamp.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Timezone.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Token.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Tuple.h" />
+    <ClInclude Include="src\Foundation\include\Poco\TypeList.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Types.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UnbufferedStreamBuf.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Unicode.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UnicodeConverter.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueAccessExpireCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueAccessExpireLRUCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueAccessExpireStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueExpireCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueExpireLRUCache.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UniqueExpireStrategy.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UnWindows.h" />
+    <ClInclude Include="src\Foundation\include\Poco\URI.h" />
+    <ClInclude Include="src\Foundation\include\Poco\URIStreamFactory.h" />
+    <ClInclude Include="src\Foundation\include\Poco\URIStreamOpener.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UTF16Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UTF32Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UTF8Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UTF8String.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UTFString.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UUID.h" />
+    <ClInclude Include="src\Foundation\include\Poco\UUIDGenerator.h" />
+    <ClInclude Include="src\Foundation\include\Poco\ValidArgs.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Version.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Void.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Windows1250Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Windows1251Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\Windows1252Encoding.h" />
+    <ClInclude Include="src\Foundation\include\Poco\WindowsConsoleChannel.h" />
+    <ClInclude Include="src\Foundation\include\Poco\zconf.h" />
+    <ClInclude Include="src\Foundation\include\Poco\zlib.h" />
+    <ClInclude Include="src\Foundation\src\Environment_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Environment_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Environment_WIN32U.cpp" />
+    <ClInclude Include="src\Foundation\src\Environment_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Error.cpp" />
+    <ClCompile Include="src\Foundation\src\ErrorHandler.cpp" />
+    <ClCompile Include="src\Foundation\src\Event.cpp" />
+    <ClCompile Include="src\Foundation\src\EventChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\EventLogChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Exception.cpp" />
+    <ClCompile Include="src\Foundation\src\FileStreamFactory.cpp" />
+    <ClCompile Include="src\Foundation\src\Format.cpp" />
+    <ClCompile Include="src\Foundation\src\FPEnvironment.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_C99.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_DEC.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_DUMMY.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_QNX.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_SUN.cpp" />
+    <ClInclude Include="src\Foundation\src\FPEnvironment_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\JSONString.cpp" />
+    <ClCompile Include="src\Foundation\src\MemoryPool.cpp" />
+    <ClCompile Include="src\Foundation\src\NestedDiagnosticContext.cpp" />
+    <ClCompile Include="src\Foundation\src\NumberFormatter.cpp" />
+    <ClCompile Include="src\Foundation\src\NumberParser.cpp" />
+    <ClCompile Include="src\Foundation\src\RefCountedObject.cpp" />
+    <ClCompile Include="src\Foundation\src\String.cpp" />
+    <ClCompile Include="src\Foundation\src\StringTokenizer.cpp" />
+    <ClCompile Include="src\Foundation\src\URI.cpp" />
+    <ClCompile Include="src\Foundation\src\URIStreamFactory.cpp" />
+    <ClCompile Include="src\Foundation\src\URIStreamOpener.cpp" />
+    <ClCompile Include="src\Foundation\src\UUID.cpp" />
+    <ClCompile Include="src\Foundation\src\UUIDGenerator.cpp" />
+    <ClCompile Include="src\Foundation\src\Var.cpp" />
+    <ClCompile Include="src\Foundation\src\VarHolder.cpp" />
+    <ClCompile Include="src\Foundation\src\Void.cpp" />
+    <ClInclude Include="src\Foundation\src\Event_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Event_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Event_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\FIFOBufferStream.cpp" />
+    <ClCompile Include="src\Foundation\src\FileChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\FileStream.cpp" />
+    <ClCompile Include="src\Foundation\src\Latin1Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\Latin2Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\Latin9Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\Mutex.cpp" />
+    <ClInclude Include="src\Foundation\src\Mutex_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Mutex_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Mutex_WIN32.cpp" />
+    <ClInclude Include="src\Foundation\src\Mutex_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Runnable.cpp" />
+    <ClCompile Include="src\Foundation\src\RWLock.cpp" />
+    <ClInclude Include="src\Foundation\src\RWLock_Android.cpp" />
+    <ClInclude Include="src\Foundation\src\RWLock_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\RWLock_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\RWLock_WIN32.cpp" />
+    <ClInclude Include="src\Foundation\src\RWLock_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Semaphore.cpp" />
+    <ClInclude Include="src\Foundation\src\Semaphore_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Semaphore_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Semaphore_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\SignalHandler.cpp" />
+    <ClCompile Include="src\Foundation\src\StreamConverter.cpp" />
+    <ClCompile Include="src\Foundation\src\SynchronizedObject.cpp" />
+    <ClCompile Include="src\Foundation\src\Task.cpp" />
+    <ClCompile Include="src\Foundation\src\TaskManager.cpp" />
+    <ClCompile Include="src\Foundation\src\TaskNotification.cpp" />
+    <ClCompile Include="src\Foundation\src\TextEncoding.cpp" />
+    <ClCompile Include="src\Foundation\src\TextIterator.cpp" />
+    <ClCompile Include="src\Foundation\src\Thread.cpp" />
+    <ClCompile Include="src\Foundation\src\ThreadLocal.cpp" />
+    <ClCompile Include="src\Foundation\src\ThreadPool.cpp" />
+    <ClCompile Include="src\Foundation\src\ThreadTarget.cpp" />
+    <ClInclude Include="src\Foundation\src\Thread_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Thread_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Thread_WIN32.cpp" />
+    <ClInclude Include="src\Foundation\src\Thread_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Timer.cpp" />
+    <ClCompile Include="src\Foundation\src\Unicode.cpp" />
+    <ClCompile Include="src\Foundation\src\UnicodeConverter.cpp" />
+    <ClCompile Include="src\Foundation\src\UTF16Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\UTF32Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\UTF8Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\UTF8String.cpp" />
+    <ClCompile Include="src\Foundation\src\Windows1250Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\Windows1251Encoding.cpp" />
+    <ClCompile Include="src\Foundation\src\Windows1252Encoding.cpp" />
+    <ClInclude Include="src\Foundation\src\FileStream_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\FileStream_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\Formatter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\FormattingChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Hash.cpp" />
+    <ClCompile Include="src\Foundation\src\HashStatistic.cpp" />
+    <ClCompile Include="src\Foundation\src\HexBinaryDecoder.cpp" />
+    <ClCompile Include="src\Foundation\src\HexBinaryEncoder.cpp" />
+    <ClCompile Include="src\Foundation\src\InflatingStream.cpp" />
+    <ClCompile Include="src\Foundation\src\LineEndingConverter.cpp" />
+    <ClCompile Include="src\Foundation\src\LogFile.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Manifest.cpp" />
+    <ClCompile Include="src\Foundation\src\MemoryStream.cpp" />
+    <ClCompile Include="src\Foundation\src\NamedEvent.cpp" />
+    <ClCompile Include="src\Foundation\src\NullStream.cpp" />
+    <ClCompile Include="src\Foundation\src\RegularExpression.cpp" />
+    <ClCompile Include="src\Foundation\src\SharedLibrary.cpp" />
+    <ClCompile Include="src\Foundation\src\StreamCopier.cpp" />
+    <ClCompile Include="src\Foundation\src\StreamTokenizer.cpp" />
+    <ClCompile Include="src\Foundation\src\TeeStream.cpp" />
+    <ClCompile Include="src\Foundation\src\Token.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedLibrary_HPUX.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedLibrary_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedLibrary_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedLibrary_WIN32U.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedEvent_Android.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedEvent_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedEvent_WIN32U.cpp" />
+    <ClCompile Include="src\Foundation\src\NamedMutex.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedMutex_Android.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedMutex_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\NamedMutex_WIN32U.cpp" />
+    <ClCompile Include="src\Foundation\src\Notification.cpp" />
+    <ClCompile Include="src\Foundation\src\NotificationCenter.cpp" />
+    <ClCompile Include="src\Foundation\src\NotificationQueue.cpp" />
+    <ClCompile Include="src\Foundation\src\pcre_byte_order.c" />
+    <ClCompile Include="src\Foundation\src\pcre_chartables.c" />
+    <ClCompile Include="src\Foundation\src\pcre_compile.c" />
+    <ClCompile Include="src\Foundation\src\pcre_config.c" />
+    <ClCompile Include="src\Foundation\src\pcre_dfa_exec.c" />
+    <ClCompile Include="src\Foundation\src\pcre_exec.c" />
+    <ClCompile Include="src\Foundation\src\pcre_fullinfo.c" />
+    <ClCompile Include="src\Foundation\src\pcre_get.c" />
+    <ClCompile Include="src\Foundation\src\pcre_globals.c" />
+    <ClCompile Include="src\Foundation\src\pcre_jit_compile.c" />
+    <ClCompile Include="src\Foundation\src\pcre_maketables.c" />
+    <ClCompile Include="src\Foundation\src\pcre_newline.c" />
+    <ClCompile Include="src\Foundation\src\pcre_ord2utf8.c" />
+    <ClCompile Include="src\Foundation\src\pcre_refcount.c" />
+    <ClCompile Include="src\Foundation\src\pcre_string_utils.c" />
+    <ClCompile Include="src\Foundation\src\pcre_study.c" />
+    <ClCompile Include="src\Foundation\src\pcre_tables.c" />
+    <ClCompile Include="src\Foundation\src\pcre_ucd.c" />
+    <ClCompile Include="src\Foundation\src\pcre_valid_utf8.c" />
+    <ClCompile Include="src\Foundation\src\pcre_version.c" />
+    <ClCompile Include="src\Foundation\src\pcre_xclass.c" />
+    <ClCompile Include="src\Foundation\src\Pipe.cpp" />
+    <ClCompile Include="src\Foundation\src\PipeImpl.cpp" />
+    <ClInclude Include="src\Foundation\src\PipeImpl_DUMMY.cpp" />
+    <ClInclude Include="src\Foundation\src\PipeImpl_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\PipeImpl_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\PipeStream.cpp" />
+    <ClCompile Include="src\Foundation\src\PriorityNotificationQueue.cpp" />
+    <ClCompile Include="src\Foundation\src\Process.cpp" />
+    <ClInclude Include="src\Foundation\src\Process_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Process_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Process_WIN32U.cpp" />
+    <ClInclude Include="src\Foundation\src\Process_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\SharedMemory.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedMemory_DUMMY.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedMemory_POSIX.cpp" />
+    <ClInclude Include="src\Foundation\src\SharedMemory_WIN32.cpp" />
+    <ClCompile Include="src\Foundation\src\TimedNotificationQueue.cpp" />
+    <ClInclude Include="src\Foundation\src\LogFile_STD.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClInclude>
+    <ClInclude Include="src\Foundation\src\LogFile_WIN32U.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClInclude>
+    <ClCompile Include="src\Foundation\src\Logger.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\LoggingFactory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\LoggingRegistry.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\LogStream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\Message.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\NullChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\PatternFormatter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\PurgeStrategy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\RotateStrategy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\SimpleFileChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\SplitterChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Foundation\src\StreamChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="src\Foundation\src\SyslogChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClInclude>
+    <ClCompile Include="src\Foundation\src\WindowsConsoleChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)Fundation\</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="src\Foundation\src\DirectoryIterator_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\DirectoryIterator_WIN32U.cpp" />
+    <ClCompile Include="src\Foundation\src\DirectoryWatcher.cpp" />
+    <ClCompile Include="src\Foundation\src\EventArgs.cpp" />
+    <ClCompile Include="src\Foundation\src\File.cpp" />
+    <ClInclude Include="src\Foundation\src\File_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\File_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\File_WIN32U.cpp" />
+    <ClInclude Include="src\Foundation\src\File_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Glob.cpp" />
+    <ClCompile Include="src\Foundation\src\LocalDateTime.cpp" />
+    <ClCompile Include="src\Foundation\src\MD4Engine.cpp" />
+    <ClCompile Include="src\Foundation\src\MD5Engine.cpp" />
+    <ClCompile Include="src\Foundation\src\Path.cpp" />
+    <ClInclude Include="src\Foundation\src\Path_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Path_WIN32U.cpp" />
+    <ClInclude Include="src\Foundation\src\Path_WINCE.cpp" />
+    <ClCompile Include="src\Foundation\src\Random.cpp" />
+    <ClCompile Include="src\Foundation\src\RandomStream.cpp" />
+    <ClCompile Include="src\Foundation\src\SHA1Engine.cpp" />
+    <ClCompile Include="src\Foundation\src\SHA2Engine.cpp" />
+    <ClCompile Include="src\Foundation\src\SortedDirectoryIterator.cpp" />
+    <ClCompile Include="src\Foundation\src\Stopwatch.cpp" />
+    <ClCompile Include="src\Foundation\src\TemporaryFile.cpp" />
+    <ClCompile Include="src\Foundation\src\Timespan.cpp" />
+    <ClCompile Include="src\Foundation\src\Timestamp.cpp" />
+    <ClCompile Include="src\Foundation\src\Timezone.cpp" />
+    <ClCompile Include="src\Foundation\src\VarIterator.cpp" />
+    <ClInclude Include="src\Foundation\src\Timezone_UNIX.cpp" />
+    <ClInclude Include="src\Foundation\src\Timezone_VX.cpp" />
+    <ClInclude Include="src\Foundation\src\Timezone_WIN32.cpp" />
+    <ClInclude Include="src\Foundation\src\Timezone_WINCE.cpp" />
+    <ClInclude Include="src\Data\ODBC\src\Unicode_UNIXODBC.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClInclude>
+    <ClInclude Include="src\Data\ODBC\src\Unicode_WIN32.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClInclude>
+    <ClCompile Include="src\Data\ODBC\src\Utility.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ODBC\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractBinder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractBinding.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractExtraction.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractExtractor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractPreparation.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\AbstractPreparator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\ArchiveStrategy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Bulk.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Connector.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\DataException.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Date.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\DynamicLOB.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Limit.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\MetaColumn.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\PooledSessionHolder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\PooledSessionImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Position.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Range.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\RecordSet.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Row.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\RowFilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\RowFormatter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\RowIterator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Session.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SessionFactory.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SessionImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SessionPool.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SessionPoolContainer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SimpleRowFormatter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\SQLChannel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Statement.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\StatementCreator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\StatementImpl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Time.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\Data\src\Transaction.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)DATA\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{cd46e413-2779-47bb-8737-b79acfec82c6}</ProjectGuid>
+    <RootNamespace>LibPoco</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;POCO_NO_AUTOMATIC_LIBS;XML_STATIC;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\Foundation\include;.\src\Data\include;.\src\Data\ODBC\include;.\src\Data\SQLite\include;.\src\ActiveRecord\include;.\src\Encodings\include;.\src\JSON\include;.\src\MongoDB\include;.\src\Net\include;.\src\Redis\include;.\src\Util\include;.\src\XML\include;.\src\Zip\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4703;4819;4244;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libZ\lib64;..\LibExpat\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibExpatSMTd.lib;LibZSMTd.lib;Iphlpapi.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;POCO_NO_AUTOMATIC_LIBS;XML_STATIC;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>Default</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\Foundation\include;.\src\Data\include;.\src\Data\ODBC\include;.\src\Data\SQLite\include;.\src\ActiveRecord\include;.\src\Encodings\include;.\src\JSON\include;.\src\MongoDB\include;.\src\Net\include;.\src\Redis\include;.\src\Util\include;.\src\XML\include;.\src\Zip\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996;4703;4819;4244;</DisableSpecificWarnings>
+      <AdditionalOptions>/Zc:strictStrings- %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\libZ\lib64;..\LibExpat\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>LibExpatSMT.lib;LibZSMT.lib;Iphlpapi.lib;Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

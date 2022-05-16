@@ -1,0 +1,939 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{5e47a219-c97a-4fd2-a796-d0645a0840e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{0af0ed04-947c-4d7d-81ee-04dce7dfcd28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder">
+      <UniqueIdentifier>{e62b87ad-3dc5-4e6b-97f5-48e59f85ae07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{f933b917-4653-41b7-bdc6-21bde0481d3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\cinder">
+      <UniqueIdentifier>{a34d9718-f846-4c8c-83bc-89a7931e6400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\cinder\msw">
+      <UniqueIdentifier>{ae6b4309-97d6-4d4e-b565-893ed4909947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\app">
+      <UniqueIdentifier>{cbf11b0c-b1e8-4b75-ad66-bea536571455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\app\msw">
+      <UniqueIdentifier>{2a217b2d-8b9e-4bbd-b987-a46163c1bf4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\msw">
+      <UniqueIdentifier>{09360067-5f77-4477-abe9-7eb3dea5a026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\audio">
+      <UniqueIdentifier>{5ff0d40f-47b7-4785-9ba4-56d7d0ec3184}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\audio\dsp">
+      <UniqueIdentifier>{b09727da-a478-44d3-a993-6f6d9d194cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\audio\dsp\ooura">
+      <UniqueIdentifier>{19689705-ba5a-4ca8-8bb1-bc05f82bd5c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\audio\msw">
+      <UniqueIdentifier>{2a64548c-aa93-4bd8-8bde-f8ff812c8890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\gl">
+      <UniqueIdentifier>{03b4d137-2a12-4d05-82e1-e5ec7d0d6e91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\gl\nv">
+      <UniqueIdentifier>{c45c78af-3476-46f1-8da6-a975e50b37b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\ip">
+      <UniqueIdentifier>{ef385479-fb19-4ce0-8560-0681f37e1042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\params">
+      <UniqueIdentifier>{101008a7-bbe9-4a62-ad6b-faa951989ea8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\cinder\svg">
+      <UniqueIdentifier>{a7a62daa-c1b8-4b07-94a2-538742be742d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\glad">
+      <UniqueIdentifier>{a35faaf3-906b-41c2-aaf6-2e1ae0525219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\r8brain">
+      <UniqueIdentifier>{266d43da-2c16-4e93-80ab-6aab4ce34cb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\tinyexr">
+      <UniqueIdentifier>{d39fdb2e-7c25-43b4-b68d-1088e3bb21f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\linebreak">
+      <UniqueIdentifier>{85956973-78ed-4e22-896e-c4e5b6e40b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\jsoncpp">
+      <UniqueIdentifier>{34feedbc-0cf5-4745-9102-ff4b41835661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\imgui">
+      <UniqueIdentifier>{e595486d-5b77-4158-a996-14e3f71114ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\AntTweakBar">
+      <UniqueIdentifier>{2f6d8ec4-13b5-40ca-8a37-0eafe8e3f71c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\videoInput">
+      <UniqueIdentifier>{8cac9387-86c5-4bd5-b05f-e74185c7252c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\cinder\Area.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BandedMatrix.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Base64.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BSpline.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BSplineFit.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Buffer.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Camera.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CameraUi.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Capture.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CaptureImplDirectShow.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Channel.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderAssert.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderImGui.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderMath.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Clipboard.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Color.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\DataSource.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\DataTarget.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Display.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Exception.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Filesystem.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\FileWatcher.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Font.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Frustum.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\GeomIo.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageFileTinyExr.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageIo.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileRadiance.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileStbImage.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileWic.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageTargetFileStbImage.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageTargetFileWic.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Json.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Log.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Matrix.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\MediaTime.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ObjLoader.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Path2d.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Perlin.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Plane.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\PolyLine.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Rand.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Ray.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Rect.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Serial.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Shape2d.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Signals.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Sphere.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Stream.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Surface.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\System.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Text.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Timeline.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\TimelineItem.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Timer.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Triangulate.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\TriMesh.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Tween.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Unicode.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Url.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\UrlImplWinInet.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Utilities.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Xml.cpp">
+      <Filter>src\src\cinder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\AppBase.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\AppScreenSaver.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\KeyEvent.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Platform.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Renderer.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\RendererGl.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Window.cpp">
+      <Filter>src\src\cinder\app</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMsw.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMswBasic.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMswScreenSaver.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppMsw.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\PlatformMsw.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImpl2dGdi.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImplGlAngle.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImplGlMsw.cpp">
+      <Filter>src\src\cinder\app\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\msw\CinderMsw.cpp">
+      <Filter>src\src\cinder\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\msw\CinderMswGdiPlus.cpp">
+      <Filter>src\src\cinder\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\msw\StackWalker.cpp">
+      <Filter>src\src\cinder\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\ChannelRouterNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Context.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\DelayNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Device.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\FileOggVorbis.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\FilterNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\GenNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\InputNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\MonitorNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Node.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\NodeMath.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\OutputNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\PanNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Param.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\SamplePlayerNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\SampleRecorderNode.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Source.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Target.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Utilities.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Voice.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\WaveTable.cpp">
+      <Filter>src\src\cinder\audio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Converter.cpp">
+      <Filter>src\src\cinder\audio\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\ConverterR8brain.cpp">
+      <Filter>src\src\cinder\audio\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Dsp.cpp">
+      <Filter>src\src\cinder\audio\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Fft.cpp">
+      <Filter>src\src\cinder\audio\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Biquad.cpp">
+      <Filter>src\src\cinder\audio\dsp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\ooura\fftsg.cpp">
+      <Filter>src\src\cinder\audio\dsp\ooura</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\ContextWasapi.cpp">
+      <Filter>src\src\cinder\audio\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\DeviceManagerWasapi.cpp">
+      <Filter>src\src\cinder\audio\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\FileMediaFoundation.cpp">
+      <Filter>src\src\cinder\audio\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\MswUtil.cpp">
+      <Filter>src\src\cinder\audio\msw</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Ubo.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Vao.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplCore.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplEs.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplSoftware.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Vbo.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VboMesh.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\wrapper.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Batch.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\BufferObj.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\BufferTexture.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\ConstantConversions.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Context.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\draw.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Environment.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\EnvironmentCore.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\EnvironmentEs.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Fbo.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\GlslProg.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Pbo.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Query.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Sampler.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\scoped.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Shader.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\ShaderPreprocessor.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Sync.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Texture.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TextureFont.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TextureFormatParsers.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TransformFeedbackObj.cpp">
+      <Filter>src\src\cinder\gl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\nv\Multicast.cpp">
+      <Filter>src\src\cinder\gl\nv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Hdr.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Premultiply.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Resize.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Threshold.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Trim.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Blend.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Blur.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Checkerboard.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\EdgeDetect.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Fill.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Flip.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Grayscale.cpp">
+      <Filter>src\src\cinder\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\params\Params.cpp">
+      <Filter>src\src\cinder\params</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\svg\Svg.cpp">
+      <Filter>src\src\cinder\svg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\glad\glad.c">
+      <Filter>src\src\glad</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\r8brain\r8bbase.cpp">
+      <Filter>src\src\r8brain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\tinyexr\tinyexr.cc">
+      <Filter>src\src\tinyexr</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\linebreak\linebreakdata.c">
+      <Filter>src\src\linebreak</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\linebreak\linebreakdef.c">
+      <Filter>src\src\linebreak</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\linebreak\linebreak.c">
+      <Filter>src\src\linebreak</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\jsoncpp\jsoncpp.cpp">
+      <Filter>src\src\jsoncpp</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_impl_opengl3.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_stdlib.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_widgets.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_demo.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_draw.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\imgui\imgui_freetype.cpp">
+      <Filter>src\src\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\LoadOGL.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\LoadOGLCore.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwBar.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwColors.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwFonts.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwMgr.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwOpenGL.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwOpenGLCore.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwPrecomp.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\AntTweakBar\TwDirect3D11.cpp">
+      <Filter>src\src\AntTweakBar</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\videoInput\videoInput.cpp">
+      <Filter>src\src\videoInput</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\glad\glad_wgl.c">
+      <Filter>src\src\glad</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\cinder\UrlImplCurl.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\UrlImplJni.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\UrlImplNull.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\UrlImplWinInet.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Utilities.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Vector.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Xml.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Arcball.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Area.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\AxisAlignedBox.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\BandedMatrix.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Base64.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Breakpoint.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\BSpline.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\BSplineFit.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Buffer.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Camera.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CameraUi.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Capture.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CaptureImplAvFoundation.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CaptureImplCocoaDummy.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CaptureImplDirectShow.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CaptureImplJni.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Channel.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ChanTraits.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Cinder.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderAssert.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderFwd.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderGlm.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderImGui.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderImGuiConfig.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderMath.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CinderResources.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Clipboard.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Color.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ConcurrentCircularBuffer.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\CurrentFunction.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\DataSource.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\DataTarget.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Display.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Easing.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Exception.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Export.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Filesystem.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\FileWatcher.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Filter.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Font.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Frustum.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Function.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\GeomIo.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageFileTinyExr.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageIo.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageSourceFileQuartz.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageSourceFileRadiance.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageSourceFileStbImage.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageSourceFileWic.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageSourcePng.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageTargetFileQuartz.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageTargetFileStbImage.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ImageTargetFileWic.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Json.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\KdTree.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Log.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Matrix.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Matrix22.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Matrix33.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Matrix44.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\MediaTime.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Noncopyable.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\ObjLoader.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Path2d.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Perlin.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Plane.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\PolyLine.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Quaternion.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Rand.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Ray.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Rect.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Serial.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Shape2d.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Signals.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Sphere.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Stream.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Surface.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\System.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Text.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Thread.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Timeline.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\TimelineItem.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Timer.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Triangulate.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\TriMesh.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Tween.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Unicode.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\Url.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\UrlImplCocoa.h">
+      <Filter>src\include\cinder</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\msw\CinderMsw.h">
+      <Filter>src\include\cinder\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\msw\CinderMswGdiPlus.h">
+      <Filter>src\include\cinder\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\msw\CinderWindowsFwd.h">
+      <Filter>src\include\cinder\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\msw\OutputDebugStringStream.h">
+      <Filter>src\include\cinder\msw</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\cinder\msw\StackWalker.h">
+      <Filter>src\include\cinder\msw</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

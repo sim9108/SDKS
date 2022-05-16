@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\libswscale\rgb2rgb.h" />
+    <ClInclude Include="src\libswscale\swscale.h" />
+    <ClInclude Include="src\libswscale\swscale_internal.h" />
+    <ClInclude Include="src\libswscale\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libswscale\alphablend.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\gamma.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\hscale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\hscale_fast_bilinear.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\input.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\options.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\output.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\rgb2rgb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\slice.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\swscale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\swscale_unscaled.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\vscale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\x86\hscale_fast_bilinear_simd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\x86\rgb2rgb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\x86\swscale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\x86\yuv2rgb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libswscale\yuv2rgb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libswscale\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\input.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\output.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\rgb_2_rgb.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\scale.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\yuv2yuvX.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\yuv_2_rgb.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libswscale\x86\scale_avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1 -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{72CC27C9-0ED1-44E1-A551-20935253BCB0}</ProjectGuid>
+    <RootNamespace>LibFFMPEG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibSwscale\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibSwscale\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;LibAvutilSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib64;..\libZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;..\LibDav1d\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;LibAvutilSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>.\lib64;..\libZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;..\LibDav1d\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

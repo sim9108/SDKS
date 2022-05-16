@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "helloworld_opencl", "helloworld_opencl.vcxproj", "{172C959A-7059-4C2A-A7CC-8A0230E143F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{172C959A-7059-4C2A-A7CC-8A0230E143F6}.Debug|x64.ActiveCfg = Debug|x64
+		{172C959A-7059-4C2A-A7CC-8A0230E143F6}.Debug|x64.Build.0 = Debug|x64
+		{172C959A-7059-4C2A-A7CC-8A0230E143F6}.Release|x64.ActiveCfg = Release|x64
+		{172C959A-7059-4C2A-A7CC-8A0230E143F6}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28F7CCCC-BC74-4697-A884-8A1EB018E0B9}
+	EndGlobalSection
+EndGlobal

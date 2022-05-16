@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9abbacef-217e-4aa9-a6bf-a5e19b7ddeff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{65afa927-a869-40fd-ba1b-c46a54a03d30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\surface_matching">
+      <UniqueIdentifier>{c60bd61c-28ac-41f4-8a81-c4fc98811cb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\surface_matching\src">
+      <UniqueIdentifier>{54bc953c-f538-4ff8-9799-e0d6bb6ed544}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\surface_matching\src\header">
+      <UniqueIdentifier>{810d671f-236a-43da-902b-0eeaac372b4d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\surface_matching\src\icp.cpp">
+      <Filter>src\modules\surface_matching\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\surface_matching\src\pose_3d.cpp">
+      <Filter>src\modules\surface_matching\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\surface_matching\src\ppf_helpers.cpp">
+      <Filter>src\modules\surface_matching\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\surface_matching\src\ppf_match_3d.cpp">
+      <Filter>src\modules\surface_matching\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\surface_matching\src\t_hash_int.cpp">
+      <Filter>src\modules\surface_matching\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\surface_matching\src\hash_murmur.hpp">
+      <Filter>src\modules\surface_matching\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\surface_matching\src\hash_murmur64.hpp">
+      <Filter>src\modules\surface_matching\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\surface_matching\src\hash_murmur86.hpp">
+      <Filter>src\modules\surface_matching\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\surface_matching\src\precomp.hpp">
+      <Filter>src\modules\surface_matching\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\surface_matching\src\c_utils.hpp">
+      <Filter>src\modules\surface_matching\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

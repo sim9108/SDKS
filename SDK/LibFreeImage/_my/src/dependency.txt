@@ -1,0 +1,10 @@
+LibImathSMTd.lib
+LibJXRSMTd.lib
+LibRawSMTd.lib
+LibOpenJPEGSMTd.lib
+LibOpenEXRSMTd.lib
+LibTiffSMTd.lib
+LibJpegturboSMTd.lib
+LibPngSMTd.lib
+LibZSMTd.lib
+LibWebPSMTd.lib

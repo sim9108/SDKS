@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{c4c0dcd0-ca98-49f5-a92a-5a98d56d7da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\lib">
+      <UniqueIdentifier>{84ed7e8a-22ee-4814-8280-df79a8ebb82e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\GL\glut.h">
+      <Filter>src\lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lib\glut\glut_8x13.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_9x15.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_bitmap.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_bwidth.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_cindex.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_cmap.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_cursor.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_dials.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_dstr.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_event.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_ext.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_fbc.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_fullscrn.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_gamemode.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_get.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_glxext.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_hel10.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_hel12.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_hel18.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_init.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_input.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_joy.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_key.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_keyctrl.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_keyup.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_mesa.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_modifier.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_mroman.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_overlay.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_roman.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_shapes.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_space.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_stroke.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_swap.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_swidth.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_tablet.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_teapot.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_tr10.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_tr24.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_util.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_vidresize.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_warp.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_wglext.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_win.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\glut_winmisc.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\win32_glx.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\win32_menu.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\win32_util.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\win32_winproc.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lib\glut\win32_x11.c">
+      <Filter>src\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{9cd4706b-08c1-4edb-8a3b-7df3b909c2aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{d0027874-17d2-4047-8817-2d389070ea7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\header">
+      <UniqueIdentifier>{ae77f019-a39c-46d0-a6fe-5a394f761441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\X86">
+      <UniqueIdentifier>{cdea7ba2-3542-431b-a1ae-4741b55b8a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\X86\asm">
+      <UniqueIdentifier>{2cc30312-7df2-4cb2-aabd-8da457d89b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoder">
+      <UniqueIdentifier>{83834e44-fb5d-43fe-82c7-908bbbb03e63}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\x264dll.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\bitstream.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\cabac.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\common.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dct.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\deblock.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\frame.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\macroblock.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\mc.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\mvpred.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\pixel.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\predict.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\quant.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\rectangle.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\set.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\threadpool.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\vlc.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\x86\mc-c.c">
+      <Filter>src\common\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\x86\predict-c.c">
+      <Filter>src\common\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\set.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\analyse.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\cabac.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\cavlc.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\encoder.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\lookahead.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\macroblock.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\me.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\ratecontrol.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264_config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264cli.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\threadpool.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\set.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\rectangle.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\quant.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\predict.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\pixel.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\opencl.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\mc.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\macroblock.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\frame.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\dct.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\cabac.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\bitstream.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\common\x86\predict-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\quant-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\trellis-64.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\bitstream-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\cabac-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\const-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\dct-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\deblock-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\mc-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\mc-a2.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\pixel-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\dct-64.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\common\x86\sad16-a.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\common\x86\x86inc.asm">
+      <Filter>src\common\X86\asm</Filter>
+    </None>
+  </ItemGroup>
+</Project>

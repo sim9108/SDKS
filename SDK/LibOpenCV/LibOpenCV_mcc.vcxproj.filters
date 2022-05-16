@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{94b75c4c-4965-44f3-a4e1-ec484bd70809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{b3baf0e6-d2d6-44b1-b4f5-5a7829f0c558}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\mcc">
+      <UniqueIdentifier>{8c3c1589-e75d-424f-8fb5-4c8c39f6f067}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\mcc\src">
+      <UniqueIdentifier>{73658fff-5e7c-4910-81e6-fc91e1d28015}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\mcc\opencv_mcc_pch.cpp">
+      <Filter>src\modules\mcc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\linearize.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\mcc.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\operations.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\utils.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\wiener_filter.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\bound_min.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\ccm.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\charts.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\checker_detector.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\checker_model.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\color.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\colorspace.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\common.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\debug.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\distance.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\graph_cluster.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\mcc\src\io.cpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\mcc\src\linearize.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\operations.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\precomp.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\utils.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\wiener_filter.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\bound_min.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\charts.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\checker_detector.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\checker_model.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\color.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\colorspace.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\common.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\debug.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\dictionary.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\distance.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\graph_cluster.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\mcc\src\io.hpp">
+      <Filter>src\modules\mcc\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

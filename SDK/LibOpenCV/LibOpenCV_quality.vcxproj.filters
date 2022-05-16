@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{838b324a-53bd-4a04-baa0-608888b8fc34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{e29e10f5-6529-40cf-80d0-4a6a5b700559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\quality">
+      <UniqueIdentifier>{dbe119b9-a90e-4a3c-afa4-8a97671b392f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\quality\src">
+      <UniqueIdentifier>{c1452e8b-f0b8-4bc1-a209-4a651eba0a4c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\quality\src\qualitybrisque.cpp">
+      <Filter>src\modules\quality\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\quality\src\qualitygmsd.cpp">
+      <Filter>src\modules\quality\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\quality\src\qualitymse.cpp">
+      <Filter>src\modules\quality\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\quality\src\qualityssim.cpp">
+      <Filter>src\modules\quality\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\quality\src\precomp.hpp">
+      <Filter>src\modules\quality\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

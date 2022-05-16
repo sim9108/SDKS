@@ -1,0 +1,1737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\aom\aom.h" />
+    <ClInclude Include="src\aom\aomcx.h" />
+    <ClInclude Include="src\aom\aomdx.h" />
+    <ClInclude Include="src\aom\aom_codec.h" />
+    <ClInclude Include="src\aom\aom_decoder.h" />
+    <ClInclude Include="src\aom\aom_encoder.h" />
+    <ClInclude Include="src\aom\aom_frame_buffer.h" />
+    <ClInclude Include="src\aom\aom_image.h" />
+    <ClInclude Include="src\aom\aom_integer.h" />
+    <ClInclude Include="src\aom\internal\aom_codec_internal.h" />
+    <ClInclude Include="src\aom\internal\aom_image_internal.h" />
+    <ClInclude Include="src\aom_dsp\aom_dsp_common.h" />
+    <ClInclude Include="src\aom_dsp\aom_filter.h" />
+    <ClInclude Include="src\aom_dsp\aom_simd.h" />
+    <ClInclude Include="src\aom_dsp\aom_simd_inline.h" />
+    <ClInclude Include="src\aom_dsp\binary_codes_reader.h" />
+    <ClInclude Include="src\aom_dsp\binary_codes_writer.h" />
+    <ClInclude Include="src\aom_dsp\bitreader.h" />
+    <ClInclude Include="src\aom_dsp\bitreader_buffer.h" />
+    <ClInclude Include="src\aom_dsp\bitwriter.h" />
+    <ClInclude Include="src\aom_dsp\bitwriter_buffer.h" />
+    <ClInclude Include="src\aom_dsp\blend.h" />
+    <ClInclude Include="src\aom_dsp\entcode.h" />
+    <ClInclude Include="src\aom_dsp\entdec.h" />
+    <ClInclude Include="src\aom_dsp\entenc.h" />
+    <ClInclude Include="src\aom_dsp\fft_common.h" />
+    <ClInclude Include="src\aom_dsp\grain_synthesis.h" />
+    <ClInclude Include="src\aom_dsp\grain_table.h" />
+    <ClInclude Include="src\aom_dsp\intrapred_common.h" />
+    <ClInclude Include="src\aom_dsp\noise_model.h" />
+    <ClInclude Include="src\aom_dsp\noise_util.h" />
+    <ClInclude Include="src\aom_dsp\prob.h" />
+    <ClInclude Include="src\aom_dsp\psnr.h" />
+    <ClInclude Include="src\aom_dsp\quantize.h" />
+    <ClInclude Include="src\aom_dsp\recenter.h" />
+    <ClInclude Include="src\aom_dsp\ssim.h" />
+    <ClInclude Include="src\aom_dsp\txfm_common.h" />
+    <ClInclude Include="src\aom_dsp\variance.h" />
+    <ClInclude Include="src\aom_dsp\vmaf.h" />
+    <ClInclude Include="src\aom_dsp\x86\bitdepth_conversion_avx2.h" />
+    <ClInclude Include="src\aom_dsp\x86\bitdepth_conversion_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\blend_mask_sse4.h" />
+    <ClInclude Include="src\aom_dsp\x86\blend_sse4.h" />
+    <ClInclude Include="src\aom_dsp\x86\common_avx2.h" />
+    <ClInclude Include="src\aom_dsp\x86\convolve.h" />
+    <ClInclude Include="src\aom_dsp\x86\convolve_avx2.h" />
+    <ClInclude Include="src\aom_dsp\x86\convolve_common_intrin.h" />
+    <ClInclude Include="src\aom_dsp\x86\convolve_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\convolve_sse4_1.h" />
+    <ClInclude Include="src\aom_dsp\x86\fwd_txfm_impl_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\fwd_txfm_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\intrapred_x86.h" />
+    <ClInclude Include="src\aom_dsp\x86\lpf_common_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\masked_sad_intrin_ssse3.h" />
+    <ClInclude Include="src\aom_dsp\x86\masked_variance_intrin_ssse3.h" />
+    <ClInclude Include="src\aom_dsp\x86\mem_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\obmc_intrinsic_sse4.h" />
+    <ClInclude Include="src\aom_dsp\x86\obmc_intrinsic_ssse3.h" />
+    <ClInclude Include="src\aom_dsp\x86\quantize_x86.h" />
+    <ClInclude Include="src\aom_dsp\x86\sum_squares_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\synonyms.h" />
+    <ClInclude Include="src\aom_dsp\x86\synonyms_avx2.h" />
+    <ClInclude Include="src\aom_dsp\x86\transpose_sse2.h" />
+    <ClInclude Include="src\aom_dsp\x86\txfm_common_avx2.h" />
+    <ClInclude Include="src\aom_dsp\x86\txfm_common_sse2.h" />
+    <ClInclude Include="src\aom_mem\aom_mem.h" />
+    <ClInclude Include="src\aom_mem\include\aom_mem_intrnl.h" />
+    <ClInclude Include="src\aom_ports\aom_once.h" />
+    <ClInclude Include="src\aom_ports\aom_timer.h" />
+    <ClInclude Include="src\aom_ports\arm.h" />
+    <ClInclude Include="src\aom_ports\bitops.h" />
+    <ClInclude Include="src\aom_ports\emmintrin_compat.h" />
+    <ClInclude Include="src\aom_ports\mem.h" />
+    <ClInclude Include="src\aom_ports\mem_ops.h" />
+    <ClInclude Include="src\aom_ports\mem_ops_aligned.h" />
+    <ClInclude Include="src\aom_ports\msvc.h" />
+    <ClInclude Include="src\aom_ports\ppc.h" />
+    <ClInclude Include="src\aom_ports\sanitizer.h" />
+    <ClInclude Include="src\aom_ports\system_state.h" />
+    <ClInclude Include="src\aom_ports\x86.h" />
+    <ClInclude Include="src\aom_scale\aom_scale.h" />
+    <ClInclude Include="src\aom_scale\yv12config.h" />
+    <ClInclude Include="src\aom_util\aom_thread.h" />
+    <ClInclude Include="src\aom_util\debug_util.h" />
+    <ClInclude Include="src\aom_util\endian_inl.h" />
+    <ClInclude Include="src\av1\av1_iface_common.h" />
+    <ClInclude Include="src\av1\common\alloccommon.h" />
+    <ClInclude Include="src\av1\common\av1_common_int.h" />
+    <ClInclude Include="src\av1\common\av1_inv_txfm1d.h" />
+    <ClInclude Include="src\av1\common\av1_inv_txfm1d_cfg.h" />
+    <ClInclude Include="src\av1\common\av1_loopfilter.h" />
+    <ClInclude Include="src\av1\common\av1_txfm.h" />
+    <ClInclude Include="src\av1\common\blockd.h" />
+    <ClInclude Include="src\av1\common\cdef.h" />
+    <ClInclude Include="src\av1\common\cdef_block.h" />
+    <ClInclude Include="src\av1\common\cdef_block_simd.h" />
+    <ClInclude Include="src\av1\common\cfl.h" />
+    <ClInclude Include="src\av1\common\common.h" />
+    <ClInclude Include="src\av1\common\common_data.h" />
+    <ClInclude Include="src\av1\common\convolve.h" />
+    <ClInclude Include="src\av1\common\entropy.h" />
+    <ClInclude Include="src\av1\common\entropymode.h" />
+    <ClInclude Include="src\av1\common\entropymv.h" />
+    <ClInclude Include="src\av1\common\enums.h" />
+    <ClInclude Include="src\av1\common\filter.h" />
+    <ClInclude Include="src\av1\common\frame_buffers.h" />
+    <ClInclude Include="src\av1\common\idct.h" />
+    <ClInclude Include="src\av1\common\mv.h" />
+    <ClInclude Include="src\av1\common\mvref_common.h" />
+    <ClInclude Include="src\av1\common\obmc.h" />
+    <ClInclude Include="src\av1\common\obu_util.h" />
+    <ClInclude Include="src\av1\common\odintrin.h" />
+    <ClInclude Include="src\av1\common\pred_common.h" />
+    <ClInclude Include="src\av1\common\quant_common.h" />
+    <ClInclude Include="src\av1\common\reconinter.h" />
+    <ClInclude Include="src\av1\common\reconintra.h" />
+    <ClInclude Include="src\av1\common\resize.h" />
+    <ClInclude Include="src\av1\common\restoration.h" />
+    <ClInclude Include="src\av1\common\scale.h" />
+    <ClInclude Include="src\av1\common\scan.h" />
+    <ClInclude Include="src\av1\common\seg_common.h" />
+    <ClInclude Include="src\av1\common\thread_common.h" />
+    <ClInclude Include="src\av1\common\tile_common.h" />
+    <ClInclude Include="src\av1\common\timing.h" />
+    <ClInclude Include="src\av1\common\token_cdfs.h" />
+    <ClInclude Include="src\av1\common\txb_common.h" />
+    <ClInclude Include="src\av1\common\warped_motion.h" />
+    <ClInclude Include="src\av1\common\x86\av1_inv_txfm_avx2.h" />
+    <ClInclude Include="src\av1\common\x86\av1_inv_txfm_ssse3.h" />
+    <ClInclude Include="src\av1\common\x86\av1_txfm_sse2.h" />
+    <ClInclude Include="src\av1\common\x86\av1_txfm_sse4.h" />
+    <ClInclude Include="src\av1\common\x86\cfl_simd.h" />
+    <ClInclude Include="src\av1\common\x86\highbd_txfm_utility_sse4.h" />
+    <ClInclude Include="src\av1\decoder\accounting.h" />
+    <ClInclude Include="src\av1\decoder\decodeframe.h" />
+    <ClInclude Include="src\av1\decoder\decodemv.h" />
+    <ClInclude Include="src\av1\decoder\decoder.h" />
+    <ClInclude Include="src\av1\decoder\decodetxb.h" />
+    <ClInclude Include="src\av1\decoder\detokenize.h" />
+    <ClInclude Include="src\av1\decoder\dthread.h" />
+    <ClInclude Include="src\av1\decoder\inspection.h" />
+    <ClInclude Include="src\av1\decoder\obu.h" />
+    <ClInclude Include="src\av1\encoder\aq_complexity.h" />
+    <ClInclude Include="src\av1\encoder\aq_cyclicrefresh.h" />
+    <ClInclude Include="src\av1\encoder\aq_variance.h" />
+    <ClInclude Include="src\av1\encoder\av1_fwd_txfm1d.h" />
+    <ClInclude Include="src\av1\encoder\av1_fwd_txfm1d_cfg.h" />
+    <ClInclude Include="src\av1\encoder\av1_noise_estimate.h" />
+    <ClInclude Include="src\av1\encoder\av1_quantize.h" />
+    <ClInclude Include="src\av1\encoder\bitstream.h" />
+    <ClInclude Include="src\av1\encoder\block.h" />
+    <ClInclude Include="src\av1\encoder\cnn.h" />
+    <ClInclude Include="src\av1\encoder\compound_type.h" />
+    <ClInclude Include="src\av1\encoder\context_tree.h" />
+    <ClInclude Include="src\av1\encoder\corner_detect.h" />
+    <ClInclude Include="src\av1\encoder\corner_match.h" />
+    <ClInclude Include="src\av1\encoder\cost.h" />
+    <ClInclude Include="src\av1\encoder\dwt.h" />
+    <ClInclude Include="src\av1\encoder\encodeframe.h" />
+    <ClInclude Include="src\av1\encoder\encodeframe_utils.h" />
+    <ClInclude Include="src\av1\encoder\encodemb.h" />
+    <ClInclude Include="src\av1\encoder\encodemv.h" />
+    <ClInclude Include="src\av1\encoder\encoder.h" />
+    <ClInclude Include="src\av1\encoder\encoder_alloc.h" />
+    <ClInclude Include="src\av1\encoder\encoder_utils.h" />
+    <ClInclude Include="src\av1\encoder\encodetxb.h" />
+    <ClInclude Include="src\av1\encoder\encode_strategy.h" />
+    <ClInclude Include="src\av1\encoder\enc_enums.h" />
+    <ClInclude Include="src\av1\encoder\ethread.h" />
+    <ClInclude Include="src\av1\encoder\extend.h" />
+    <ClInclude Include="src\av1\encoder\firstpass.h" />
+    <ClInclude Include="src\av1\encoder\global_motion.h" />
+    <ClInclude Include="src\av1\encoder\global_motion_facade.h" />
+    <ClInclude Include="src\av1\encoder\gop_structure.h" />
+    <ClInclude Include="src\av1\encoder\grain_test_vectors.h" />
+    <ClInclude Include="src\av1\encoder\hash.h" />
+    <ClInclude Include="src\av1\encoder\hash_motion.h" />
+    <ClInclude Include="src\av1\encoder\hybrid_fwd_txfm.h" />
+    <ClInclude Include="src\av1\encoder\interp_search.h" />
+    <ClInclude Include="src\av1\encoder\intra_mode_search.h" />
+    <ClInclude Include="src\av1\encoder\intra_mode_search_utils.h" />
+    <ClInclude Include="src\av1\encoder\k_means_template.h" />
+    <ClInclude Include="src\av1\encoder\level.h" />
+    <ClInclude Include="src\av1\encoder\lookahead.h" />
+    <ClInclude Include="src\av1\encoder\mathutils.h" />
+    <ClInclude Include="src\av1\encoder\mcomp.h" />
+    <ClInclude Include="src\av1\encoder\misc_model_weights.h" />
+    <ClInclude Include="src\av1\encoder\ml.h" />
+    <ClInclude Include="src\av1\encoder\model_rd.h" />
+    <ClInclude Include="src\av1\encoder\mode_prune_model_weights.h" />
+    <ClInclude Include="src\av1\encoder\motion_search_facade.h" />
+    <ClInclude Include="src\av1\encoder\mv_prec.h" />
+    <ClInclude Include="src\av1\encoder\palette.h" />
+    <ClInclude Include="src\av1\encoder\partition_cnn_weights.h" />
+    <ClInclude Include="src\av1\encoder\partition_model_weights.h" />
+    <ClInclude Include="src\av1\encoder\partition_search.h" />
+    <ClInclude Include="src\av1\encoder\partition_strategy.h" />
+    <ClInclude Include="src\av1\encoder\pass2_strategy.h" />
+    <ClInclude Include="src\av1\encoder\pickcdef.h" />
+    <ClInclude Include="src\av1\encoder\picklpf.h" />
+    <ClInclude Include="src\av1\encoder\pickrst.h" />
+    <ClInclude Include="src\av1\encoder\pustats.h" />
+    <ClInclude Include="src\av1\encoder\random.h" />
+    <ClInclude Include="src\av1\encoder\ransac.h" />
+    <ClInclude Include="src\av1\encoder\ratectrl.h" />
+    <ClInclude Include="src\av1\encoder\rc_utils.h" />
+    <ClInclude Include="src\av1\encoder\rd.h" />
+    <ClInclude Include="src\av1\encoder\rdopt.h" />
+    <ClInclude Include="src\av1\encoder\rdopt_data_defs.h" />
+    <ClInclude Include="src\av1\encoder\rdopt_utils.h" />
+    <ClInclude Include="src\av1\encoder\reconinter_enc.h" />
+    <ClInclude Include="src\av1\encoder\segmentation.h" />
+    <ClInclude Include="src\av1\encoder\speed_features.h" />
+    <ClInclude Include="src\av1\encoder\superres_scale.h" />
+    <ClInclude Include="src\av1\encoder\svc_layercontext.h" />
+    <ClInclude Include="src\av1\encoder\temporal_filter.h" />
+    <ClInclude Include="src\av1\encoder\tokenize.h" />
+    <ClInclude Include="src\av1\encoder\tpl_model.h" />
+    <ClInclude Include="src\av1\encoder\tune_vmaf.h" />
+    <ClInclude Include="src\av1\encoder\tx_prune_model_weights.h" />
+    <ClInclude Include="src\av1\encoder\tx_search.h" />
+    <ClInclude Include="src\av1\encoder\use_flat_gop_model_params.h" />
+    <ClInclude Include="src\av1\encoder\var_based_part.h" />
+    <ClInclude Include="src\av1\encoder\x86\av1_fwd_txfm_avx2.h" />
+    <ClInclude Include="src\av1\encoder\x86\av1_fwd_txfm_sse2.h" />
+    <ClInclude Include="src\av1\encoder\x86\av1_txfm1d_sse4.h" />
+    <ClInclude Include="src\config\aom_config.h" />
+    <ClInclude Include="src\config\aom_dsp_rtcd.h" />
+    <ClInclude Include="src\config\aom_scale_rtcd.h" />
+    <ClInclude Include="src\config\aom_version.h" />
+    <ClInclude Include="src\config\av1_rtcd.h" />
+    <ClInclude Include="src\third_party\fastfeat\fast.h" />
+    <ClInclude Include="src\third_party\libwebm\common\file_util.h" />
+    <ClInclude Include="src\third_party\libwebm\common\hdr_util.h" />
+    <ClInclude Include="src\third_party\libwebm\common\webmids.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvmuxer\mkvmuxer.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvmuxer\mkvmuxertypes.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvmuxer\mkvmuxerutil.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvmuxer\mkvwriter.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvparser\mkvparser.h" />
+    <ClInclude Include="src\third_party\libwebm\mkvparser\mkvreader.h" />
+    <ClInclude Include="src\third_party\vector\vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\aom\src\aom_codec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom\src\aom_decoder.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom\src\aom_encoder.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom\src\aom_image.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom\src\aom_integer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)aom\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\aom_convolve.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\aom_dsp_rtcd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\avg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\binary_codes_reader.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\binary_codes_writer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\bitreader.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\bitreader_buffer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\bitwriter.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\bitwriter_buffer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\blend_a64_hmask.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\blend_a64_mask.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\blend_a64_vmask.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\blk_sse_sum.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\entcode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\entdec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\entenc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\fft.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\fwd_txfm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\grain_synthesis.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\grain_table.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\intrapred.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\loopfilter.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\noise_model.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\noise_util.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\psnr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\quantize.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\sad.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\sad_av1.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\sse.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\subtract.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\sum_squares.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\variance.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\adaptive_quantize_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\adaptive_quantize_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_asm_stubs.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_convolve_copy_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_convolve_copy_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_quantize_avx.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_subpixel_8t_intrin_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_subpixel_8t_intrin_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\aom_subpixel_8t_intrin_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\avg_intrin_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\avg_intrin_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blend_a64_hmask_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blend_a64_mask_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blend_a64_mask_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blend_a64_vmask_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blk_sse_sum_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\blk_sse_sum_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\fft_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\fft_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\fwd_txfm_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_adaptive_quantize_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_adaptive_quantize_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_convolve_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_convolve_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_convolve_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_intrapred_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_loopfilter_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_loopfilter_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_quantize_intrin_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_quantize_intrin_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_subtract_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_variance_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_variance_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\highbd_variance_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\intrapred_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\intrapred_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\intrapred_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\jnt_sad_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\jnt_variance_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\loopfilter_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\masked_sad4d_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\masked_sad_intrin_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\masked_sad_intrin_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\masked_variance_intrin_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\obmc_sad_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\obmc_sad_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\obmc_variance_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\obmc_variance_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\quantize_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\quantize_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sad4d_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sad_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sad_highbd_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sad_impl_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sse_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sse_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\subtract_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sum_squares_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\sum_squares_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\variance_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\variance_impl_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\variance_impl_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_dsp\x86\variance_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dsp\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_mem\aom_mem.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)mem\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)mem\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_scale\aom_scale_rtcd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_scale\generic\aom_scale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_scale\generic\gen_scalers.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_scale\generic\yv12config.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_scale\generic\yv12extend.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)scale\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_util\aom_thread.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)util\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)util\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\aom_util\debug_util.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)util\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)util\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\av1_cx_iface.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\av1_dx_iface.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\alloccommon.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\av1_inv_txfm1d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\av1_inv_txfm2d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\av1_loopfilter.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\av1_rtcd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\av1_txfm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\blockd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block_avx2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block_neon.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block_sse2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block_sse4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cdef_block_ssse3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\cfl.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\convolve.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\debugmodes.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\entropy.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\entropymode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\entropymv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\frame_buffers.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\idct.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\loopfiltermask.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\mvref_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\obu_util.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\odintrin.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\pred_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\quant_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\reconinter.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\reconintra.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\resize.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\restoration.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\scale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\scan.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\seg_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\thread_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\tile_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\timing.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\txb_common.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\warped_motion.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\common\x86\av1_convolve_horiz_rs_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\av1_convolve_scale_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\av1_inv_txfm_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\av1_inv_txfm_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\av1_txfm_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\cfl_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\cfl_sse2.c" />
+    <ClCompile Include="src\av1\common\x86\cfl_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\convolve_2d_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\convolve_2d_sse2.c" />
+    <ClCompile Include="src\av1\common\x86\convolve_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\convolve_sse2.c" />
+    <ClCompile Include="src\av1\common\x86\filterintra_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_convolve_2d_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_convolve_2d_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_convolve_2d_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_inv_txfm_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_inv_txfm_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_jnt_convolve_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_jnt_convolve_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_warp_affine_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_warp_plane_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_wiener_convolve_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\highbd_wiener_convolve_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\intra_edge_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\jnt_convolve_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\jnt_convolve_sse2.c" />
+    <ClCompile Include="src\av1\common\x86\jnt_convolve_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\reconinter_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\reconinter_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\reconinter_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\resize_ssse3.c" />
+    <ClCompile Include="src\av1\common\x86\selfguided_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\selfguided_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\warp_plane_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\warp_plane_sse2.c" />
+    <ClCompile Include="src\av1\common\x86\warp_plane_sse4.c" />
+    <ClCompile Include="src\av1\common\x86\wiener_convolve_avx2.c" />
+    <ClCompile Include="src\av1\common\x86\wiener_convolve_sse2.c" />
+    <ClCompile Include="src\av1\decoder\decodeframe.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\decoder\decodemv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\decoder\decoder.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\decoder\decodetxb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\decoder\detokenize.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\decoder\obu.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\decoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\aq_complexity.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\aq_cyclicrefresh.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\aq_variance.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\av1_fwd_txfm1d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\av1_fwd_txfm2d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\av1_noise_estimate.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\av1_quantize.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\bitstream.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\blockiness.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\cnn.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\compound_type.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\context_tree.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\corner_detect.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\corner_match.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\cost.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\dwt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encodeframe.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encodeframe_utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encodemb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encodemv.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encoder.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encoder_utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encodetxb.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\encode_strategy.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\ethread.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\extend.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\firstpass.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\global_motion.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\global_motion_facade.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\gop_structure.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\hash.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\hash_motion.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\hybrid_fwd_txfm.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\interp_search.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\intra_mode_search.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\level.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\lookahead.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\mcomp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\ml.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\motion_search_facade.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\mv_prec.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\nonrd_pickmode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\palette.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\partition_search.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\partition_strategy.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\pass2_strategy.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\pickcdef.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\picklpf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\pickrst.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\ransac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\ratectrl.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\rd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\rdopt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\reconinter_enc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\segmentation.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\speed_features.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\superres_scale.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\svc_layercontext.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\temporal_filter.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\tokenize.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\tpl_model.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\tx_search.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\var_based_part.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\wedge_utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)av1\encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\av1\encoder\x86\av1_fwd_txfm1d_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_fwd_txfm2d_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_fwd_txfm2d_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_fwd_txfm_sse2.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_highbd_quantize_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_highbd_quantize_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_quantize_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\av1_quantize_sse2.c" />
+    <ClCompile Include="src\av1\encoder\x86\corner_match_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\corner_match_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\encodetxb_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\encodetxb_sse2.c" />
+    <ClCompile Include="src\av1\encoder\x86\encodetxb_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\error_intrin_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\hash_sse42.c" />
+    <ClCompile Include="src\av1\encoder\x86\highbd_block_error_intrin_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\highbd_block_error_intrin_sse2.c" />
+    <ClCompile Include="src\av1\encoder\x86\highbd_fwd_txfm_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\highbd_fwd_txfm_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\ml_sse3.c" />
+    <ClCompile Include="src\av1\encoder\x86\pickrst_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\pickrst_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\rdopt_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\rdopt_sse4.c" />
+    <ClCompile Include="src\av1\encoder\x86\temporal_filter_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\temporal_filter_sse2.c" />
+    <ClCompile Include="src\av1\encoder\x86\wedge_utils_avx2.c" />
+    <ClCompile Include="src\av1\encoder\x86\wedge_utils_sse2.c" />
+    <ClCompile Include="src\config\aom_config.c" />
+    <ClCompile Include="src\third_party\fastfeat\fast.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\fastfeet\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\fastfeat\fast_9.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\fastfeet\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\fastfeat\nonmax.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\fastfeet\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\common\file_util.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\common\hdr_util.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\mkvmuxer\mkvmuxer.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\mkvmuxer\mkvmuxerutil.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\mkvmuxer\mkvwriter.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\mkvparser\mkvparser.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libwebm\mkvparser\mkvreader.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libwebm\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare_common.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare_gcc.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare_neon.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare_neon64.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\compare_win.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_argb.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_from.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_from_argb.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_jpeg.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_to_argb.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\convert_to_i420.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\cpu_id.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\mjpeg_decoder.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\mjpeg_validate.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\planar_functions.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_any.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_argb.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_common.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_gcc.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_mips.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_neon.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_neon64.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\rotate_win.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_any.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_common.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_gcc.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_mips.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_neon.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_neon64.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\row_win.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_any.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_argb.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_common.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_gcc.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_mips.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_neon.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_neon64.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\scale_win.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\libyuv\source\video_common.cc">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)thrid_party\libyuv\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\third_party\vector\vector.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\aom_dsp\x86\aom_high_subpixel_8t_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\aom_high_subpixel_bilinear_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\aom_subpixel_8t_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\aom_subpixel_8t_ssse3.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\aom_subpixel_bilinear_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\aom_subpixel_bilinear_ssse3.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\fwd_txfm_ssse3_x86_64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\highbd_intrapred_asm_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\highbd_sad4d_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\highbd_sad_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\highbd_subpel_variance_impl_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\highbd_variance_impl_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\intrapred_asm_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\inv_wht_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\quantize_ssse3_x86_64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\sad4d_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\sad_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\ssim_sse2_x86_64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\subpel_variance_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_dsp\x86\subtract_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\aom_ports\emms.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="src\aom_ports\x86_abi_support.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+    <CustomBuild Include="src\av1\encoder\x86\av1_quantize_ssse3_x86_64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\av1\encoder\x86\av1_ssim_opt_x86_64.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\av1\encoder\x86\dct_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\av1\encoder\x86\error_sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -I$(ProjectDir)src\  %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="src\config\aom_config.asm" />
+    <None Include="src\third_party\libyuv\source\row_x86.asm" />
+    <None Include="src\third_party\libyuv\source\x86inc.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7e9c891d-9c7e-4cc3-974c-89f2038391a1}</ProjectGuid>
+    <RootNamespace>LibAom</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\aom\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\aom\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\aom;.\src\aom_dsp;.\src\aom_mem;.\src\aom_ports;.\src\aom_scale;.\src\aom_util;.\src\av1;.\src\common;.\src\third_party\libyuv\include;.\src\third_party\libwebm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\aom;.\src\aom_dsp;.\src\aom_mem;.\src\aom_ports;.\src\aom_scale;.\src\aom_util;.\src\av1;.\src\common;.\src\third_party\libyuv\include;.\src\third_party\libwebm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4703</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

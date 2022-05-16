@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d42e5a4c-e075-4860-a650-5178514ae48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blas">
+      <UniqueIdentifier>{bfb4f383-f779-49f3-b2ff-649e1d4c1f94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blas\f2c">
+      <UniqueIdentifier>{4c6cbe2b-a0f9-4de9-8a3f-6452efba0e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\blas\f2c\header">
+      <UniqueIdentifier>{762cf424-9269-4636-ad53-52d0f548050f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\blas\f2c\d_cnjg.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\drotm.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\drotmg.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\dsbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\dspmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\dtbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\lsame.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\r_cnjg.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\srotm.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\srotmg.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\ssbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\sspmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\stbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\zhbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\zhpmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\ztbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\chbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\chpmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\complexdots.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\f2c\ctbmv.c">
+      <Filter>src\blas\f2c</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\complex_single.cpp">
+      <Filter>src\blas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\double.cpp">
+      <Filter>src\blas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\single.cpp">
+      <Filter>src\blas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\xerbla.cpp">
+      <Filter>src\blas</Filter>
+    </ClCompile>
+    <ClCompile Include="src\blas\complex_double.cpp">
+      <Filter>src\blas</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\blas\f2c\datatypes.h">
+      <Filter>src\blas\f2c\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

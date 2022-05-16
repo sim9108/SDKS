@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\alc\alconfig.h" />
+    <ClInclude Include="src\alc\alu.h" />
+    <ClInclude Include="src\alc\backends\alsa.h" />
+    <ClInclude Include="src\alc\backends\base.h" />
+    <ClInclude Include="src\alc\backends\coreaudio.h" />
+    <ClInclude Include="src\alc\backends\dsound.h" />
+    <ClInclude Include="src\alc\backends\jack.h" />
+    <ClInclude Include="src\alc\backends\loopback.h" />
+    <ClInclude Include="src\alc\backends\null.h" />
+    <ClInclude Include="src\alc\backends\oboe.h" />
+    <ClInclude Include="src\alc\backends\opensl.h" />
+    <ClInclude Include="src\alc\backends\oss.h" />
+    <ClInclude Include="src\alc\backends\pipewire.h" />
+    <ClInclude Include="src\alc\backends\portaudio.h" />
+    <ClInclude Include="src\alc\backends\pulseaudio.h" />
+    <ClInclude Include="src\alc\backends\sdl2.h" />
+    <ClInclude Include="src\alc\backends\sndio.h" />
+    <ClInclude Include="src\alc\backends\solaris.h" />
+    <ClInclude Include="src\alc\backends\wasapi.h" />
+    <ClInclude Include="src\alc\backends\wave.h" />
+    <ClInclude Include="src\alc\backends\winmm.h" />
+    <ClInclude Include="src\alc\context.h" />
+    <ClInclude Include="src\alc\device.h" />
+    <ClInclude Include="src\alc\effects\base.h" />
+    <ClInclude Include="src\alc\inprogext.h" />
+    <ClInclude Include="src\al\auxeffectslot.h" />
+    <ClInclude Include="src\al\buffer.h" />
+    <ClInclude Include="src\al\effect.h" />
+    <ClInclude Include="src\al\effects\effects.h" />
+    <ClInclude Include="src\al\event.h" />
+    <ClInclude Include="src\al\filter.h" />
+    <ClInclude Include="src\al\listener.h" />
+    <ClInclude Include="src\al\source.h" />
+    <ClInclude Include="src\common\albit.h" />
+    <ClInclude Include="src\common\albyte.h" />
+    <ClInclude Include="src\common\alcomplex.h" />
+    <ClInclude Include="src\common\aldeque.h" />
+    <ClInclude Include="src\common\alfstream.h" />
+    <ClInclude Include="src\common\almalloc.h" />
+    <ClInclude Include="src\common\alnumeric.h" />
+    <ClInclude Include="src\common\aloptional.h" />
+    <ClInclude Include="src\common\alspan.h" />
+    <ClInclude Include="src\common\alstring.h" />
+    <ClInclude Include="src\common\atomic.h" />
+    <ClInclude Include="src\common\comptr.h" />
+    <ClInclude Include="src\common\dynload.h" />
+    <ClInclude Include="src\common\intrusive_ptr.h" />
+    <ClInclude Include="src\common\math_defs.h" />
+    <ClInclude Include="src\common\opthelpers.h" />
+    <ClInclude Include="src\common\phase_shifter.h" />
+    <ClInclude Include="src\common\polyphase_resampler.h" />
+    <ClInclude Include="src\common\pragmadefs.h" />
+    <ClInclude Include="src\common\ringbuffer.h" />
+    <ClInclude Include="src\common\strutils.h" />
+    <ClInclude Include="src\common\threads.h" />
+    <ClInclude Include="src\common\vecmat.h" />
+    <ClInclude Include="src\common\vector.h" />
+    <ClInclude Include="src\common\win_main_utf8.h" />
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\core\ambdec.h" />
+    <ClInclude Include="src\core\ambidefs.h" />
+    <ClInclude Include="src\core\async_event.h" />
+    <ClInclude Include="src\core\bformatdec.h" />
+    <ClInclude Include="src\core\bs2b.h" />
+    <ClInclude Include="src\core\bsinc_defs.h" />
+    <ClInclude Include="src\core\bsinc_tables.h" />
+    <ClInclude Include="src\core\bufferline.h" />
+    <ClInclude Include="src\core\buffer_storage.h" />
+    <ClInclude Include="src\core\context.h" />
+    <ClInclude Include="src\core\converter.h" />
+    <ClInclude Include="src\core\cpu_caps.h" />
+    <ClInclude Include="src\core\dbus_wrap.h" />
+    <ClInclude Include="src\core\devformat.h" />
+    <ClInclude Include="src\core\device.h" />
+    <ClInclude Include="src\core\effectslot.h" />
+    <ClInclude Include="src\core\effects\base.h" />
+    <ClInclude Include="src\core\except.h" />
+    <ClInclude Include="src\core\filters\biquad.h" />
+    <ClInclude Include="src\core\filters\nfc.h" />
+    <ClInclude Include="src\core\filters\splitter.h" />
+    <ClInclude Include="src\core\fmt_traits.h" />
+    <ClInclude Include="src\core\fpu_ctrl.h" />
+    <ClInclude Include="src\core\front_stablizer.h" />
+    <ClInclude Include="src\core\helpers.h" />
+    <ClInclude Include="src\core\hrtf.h" />
+    <ClInclude Include="src\core\logging.h" />
+    <ClInclude Include="src\core\mastering.h" />
+    <ClInclude Include="src\core\mixer.h" />
+    <ClInclude Include="src\core\mixer\defs.h" />
+    <ClInclude Include="src\core\mixer\hrtfbase.h" />
+    <ClInclude Include="src\core\mixer\hrtfdefs.h" />
+    <ClInclude Include="src\core\resampler_limits.h" />
+    <ClInclude Include="src\core\rtkit.h" />
+    <ClInclude Include="src\core\uhjfilter.h" />
+    <ClInclude Include="src\core\voice.h" />
+    <ClInclude Include="src\core\voice_change.h" />
+    <ClInclude Include="src\hrtf_default.h" />
+    <ClInclude Include="src\version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\alc\alc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\alconfig.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\alu.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\base.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\dsound.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\loopback.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\null.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\wasapi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\wave.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\backends\winmm.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\backends\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\context.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\device.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\autowah.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\chorus.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\compressor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\convolution.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\dedicated.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\distortion.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\echo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\equalizer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\fshifter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\modulator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\null.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\pshifter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\reverb.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\effects\vmorpher.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\alc\panning.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)alc\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\auxeffectslot.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\buffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effect.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\autowah.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\chorus.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\compressor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\convolution.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\dedicated.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\distortion.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\echo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\equalizer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\fshifter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\modulator.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\null.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\pshifter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\reverb.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\effects\vmorpher.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\effects\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\error.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\event.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\extension.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\filter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\listener.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\source.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\al\state.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)al\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)al\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\alcomplex.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\alfstream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\almalloc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\alstring.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\dynload.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\polyphase_resampler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\ringbuffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\strutils.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\common\threads.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\ambdec.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\ambidefs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\bformatdec.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\bs2b.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\bsinc_tables.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\buffer_storage.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\context.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\converter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\cpu_caps.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\devformat.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\device.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\effectslot.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\except.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\filters\biquad.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\filters\nfc.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\filters\splitter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\filters\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\fmt_traits.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\fpu_ctrl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\helpers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\hrtf.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\logging.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mastering.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer\mixer_c.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer\mixer_sse.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer\mixer_sse2.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer\mixer_sse3.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\mixer\mixer_sse41.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\mixer\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\uhjfilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\uiddefs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\core\voice.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)core\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)core\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e651bd5d-5b1a-4ae5-9c65-95a09998ad70}</ProjectGuid>
+    <RootNamespace>LibOpenAl</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibOpenAl\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibOpenAl\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AL_ALEXT_PROTOTYPES;AL_LIBTYPE_STATIC;NOMINMAX;_CRT_SECURE_NO_WARNINGS;RESTRICT=__restrict;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4065;4127;4268;4324;5030</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>AL_ALEXT_PROTOTYPES;AL_LIBTYPE_STATIC;NOMINMAX;_CRT_SECURE_NO_WARNINGS;RESTRICT=__restrict;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\include;.\src\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4065;4127;4268;4324;5030</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7d2c23e8-76a7-4cfd-843f-5dfaf10f96ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{c20a7709-d8cf-490f-8970-3d91d777cf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\objdetect">
+      <UniqueIdentifier>{e9cfec88-d7bc-44c0-8703-27b408d22fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\objdetect\src">
+      <UniqueIdentifier>{43b86c45-d764-4651-ab13-24d279be805f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\objdetect\src\header">
+      <UniqueIdentifier>{cd6cda2e-7782-4be1-8171-bcf14af9f4dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\objdetect\src\opencl">
+      <UniqueIdentifier>{545d36f2-6852-45db-81b7-e213227eac62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\objdetect\opencl_kernels_objdetect.hpp">
+      <Filter>src\modules\objdetect</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\objdetect\src\cascadedetect.hpp">
+      <Filter>src\modules\objdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\objdetect\src\precomp.hpp">
+      <Filter>src\modules\objdetect\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\objdetect\src\qrcode_encoder_table.inl.hpp">
+      <Filter>src\modules\objdetect\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\objdetect\opencl_kernels_objdetect.cpp">
+      <Filter>src\modules\objdetect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\opencv_objdetect_pch.cpp">
+      <Filter>src\modules\objdetect</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\cascadedetect.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\cascadedetect_convert.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\detection_based_tracker.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\face_detect.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\face_recognize.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\hog.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\main.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\qrcode.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\objdetect\src\qrcode_encoder.cpp">
+      <Filter>src\modules\objdetect\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\objdetect\src\opencl\objdetect_hog.cl">
+      <Filter>src\modules\objdetect\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\objdetect\src\opencl\cascadedetect.cl">
+      <Filter>src\modules\objdetect\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

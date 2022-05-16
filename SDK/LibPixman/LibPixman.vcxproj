@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\pixman-version.h" />
+    <ClInclude Include="src\pixman\dither\blue-noise-64x64.h" />
+    <ClInclude Include="src\pixman\loongson-mmintrin.h" />
+    <ClInclude Include="src\pixman\pixman-accessor.h" />
+    <ClInclude Include="src\pixman\pixman-arm-asm.h" />
+    <ClInclude Include="src\pixman\pixman-arm-common.h" />
+    <ClInclude Include="src\pixman\pixman-arm-neon-asm.h" />
+    <ClInclude Include="src\pixman\pixman-arm-simd-asm.h" />
+    <ClInclude Include="src\pixman\pixman-arma64-neon-asm.h" />
+    <ClInclude Include="src\pixman\pixman-combine32.h" />
+    <ClInclude Include="src\pixman\pixman-compiler.h" />
+    <ClInclude Include="src\pixman\pixman-edge-imp.h" />
+    <ClInclude Include="src\pixman\pixman-inlines.h" />
+    <ClInclude Include="src\pixman\pixman-mips-dspr2-asm.h" />
+    <ClInclude Include="src\pixman\pixman-mips-dspr2.h" />
+    <ClInclude Include="src\pixman\pixman-private.h" />
+    <ClInclude Include="src\pixman\pixman.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pixman\dither\make-blue-noise.c" />
+    <ClCompile Include="src\pixman\pixman-access-accessors.c" />
+    <ClCompile Include="src\pixman\pixman-access.c" />
+    <ClCompile Include="src\pixman\pixman-arm.c" />
+    <ClCompile Include="src\pixman\pixman-bits-image.c" />
+    <ClCompile Include="src\pixman\pixman-combine-float.c" />
+    <ClCompile Include="src\pixman\pixman-combine32.c" />
+    <ClCompile Include="src\pixman\pixman-conical-gradient.c" />
+    <ClCompile Include="src\pixman\pixman-edge-accessors.c" />
+    <ClCompile Include="src\pixman\pixman-edge.c" />
+    <ClCompile Include="src\pixman\pixman-fast-path.c" />
+    <ClCompile Include="src\pixman\pixman-filter.c" />
+    <ClCompile Include="src\pixman\pixman-general.c" />
+    <ClCompile Include="src\pixman\pixman-glyph.c" />
+    <ClCompile Include="src\pixman\pixman-gradient-walker.c" />
+    <ClCompile Include="src\pixman\pixman-image.c" />
+    <ClCompile Include="src\pixman\pixman-implementation.c" />
+    <ClCompile Include="src\pixman\pixman-linear-gradient.c" />
+    <ClCompile Include="src\pixman\pixman-matrix.c" />
+    <ClCompile Include="src\pixman\pixman-mips.c" />
+    <ClCompile Include="src\pixman\pixman-mmx.c" />
+    <ClCompile Include="src\pixman\pixman-noop.c" />
+    <ClCompile Include="src\pixman\pixman-ppc.c" />
+    <ClCompile Include="src\pixman\pixman-radial-gradient.c" />
+    <ClCompile Include="src\pixman\pixman-region16.c" />
+    <ClCompile Include="src\pixman\pixman-region32.c" />
+    <ClCompile Include="src\pixman\pixman-solid-fill.c" />
+    <ClCompile Include="src\pixman\pixman-sse2.c" />
+    <ClCompile Include="src\pixman\pixman-ssse3.c" />
+    <ClCompile Include="src\pixman\pixman-timer.c" />
+    <ClCompile Include="src\pixman\pixman-trap.c" />
+    <ClCompile Include="src\pixman\pixman-utils.c" />
+    <ClCompile Include="src\pixman\pixman-x86.c" />
+    <ClCompile Include="src\pixman\pixman.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ddade32f-b63b-4635-9f80-3afc7f21051e}</ProjectGuid>
+    <RootNamespace>LibPixman</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4305;4244;4819;4267;4146;5105;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4305;4244;4819;4267;4146;5105;</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,4 @@
+LibQhullSMT.lib
+msmpi.lib
+msmpifec.lib
+msmpifmc.lib

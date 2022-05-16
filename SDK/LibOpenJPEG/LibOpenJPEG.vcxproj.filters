@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{71c67fc8-3039-4125-9cd0-35dc95d5309c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{264064d0-d4e5-48d8-83e8-8780614c10d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\lib">
+      <UniqueIdentifier>{54ba911a-480c-4b14-8f48-de71885172c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\lib\openjp2">
+      <UniqueIdentifier>{64c30f9b-8704-4a7a-b45d-75c4214caebd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\lib\openjpip">
+      <UniqueIdentifier>{e638c540-644e-4fe6-93ec-b6b3257a019b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\lib\openjp2\ht_dec.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\image.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\invert.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\j2k.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\jp2.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\mct.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\mqc.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\openjpeg.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\opj_clock.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\opj_malloc.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\pi.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\t1.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\t2.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\tcd.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\tgt.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\thread.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\bio.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\cio.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\dwt.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\event.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\function_list.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjp2\sparse_array.c">
+      <Filter>src\src\lib\openjp2</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\codestream_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\dec_clientmsg_handler.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\faixbox_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\ihdrbox_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\imgreg_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\imgsock_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\index_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\j2kheader_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\jp2k_decoder.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\jp2k_encoder.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\jpip_parser.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\jpipstream_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\manfbox_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\marker_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\metadata_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\mhixbox_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\msgqueue_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\openjpip.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\placeholder_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\query_parser.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\session_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\sock_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\target_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\box_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\boxheader_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\byte_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\cache_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\cachemodel_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\lib\openjpip\channel_manager.c">
+      <Filter>src\src\lib\openjpip</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\lib\openjp2\opj_apps_config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\lib\openjp2\opj_config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\lib\openjp2\opj_config_private.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

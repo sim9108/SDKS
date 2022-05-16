@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f70e9559-76e9-4cc8-a054-9de541129729}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{65fd8d4c-518c-4945-a5f4-4f76693bc983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{2b2d5654-3e93-4b39-8348-e68ad56c9106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\GLFW">
+      <UniqueIdentifier>{745b1bec-c288-4c19-818d-89dad9460603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\include">
+      <UniqueIdentifier>{b09f16c1-319e-4edd-8aa4-54fc09f8239f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\win32_monitor.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_thread.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_time.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_window.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\window.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\context.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\egl_context.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\init.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\input.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\monitor.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\null_init.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\null_joystick.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\null_monitor.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\null_window.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\osmesa_context.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\platform.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\vulkan.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\wgl_context.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_init.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_joystick.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\win32_module.c">
+      <Filter>src\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\GLFW\glfw3.h">
+      <Filter>src\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\GLFW\glfw3native.h">
+      <Filter>src\include\GLFW</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\win32_thread.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\win32_platform.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\win32_joystick.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\platform.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\null_platform.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\null_joystick.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\mappings.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\internal.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\win32_time.h">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

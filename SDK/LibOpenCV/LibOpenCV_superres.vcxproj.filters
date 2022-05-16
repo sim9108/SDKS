@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{a77ad008-932c-4b0f-bee8-893c913d0385}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{b964c932-049f-4926-a81e-f93492ff69b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\superres">
+      <UniqueIdentifier>{3133f085-f7ef-430e-afb6-c7ef0a62ba55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\superres\src">
+      <UniqueIdentifier>{6abe90ce-4a32-4d2f-8512-90767cdc9f14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\superres\src\header">
+      <UniqueIdentifier>{8337e9b8-04be-425e-aa57-801a0ca5df44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\superres\src\opencl">
+      <UniqueIdentifier>{9b6cc7db-bdd9-4772-8880-1d36b1077e89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\superres\opencl_kernels_superres.cpp">
+      <Filter>src\modules\superres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\opencv_superres_pch.cpp">
+      <Filter>src\modules\superres</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\btv_l1.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\btv_l1_cuda.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\frame_source.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\input_array_utility.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\optical_flow.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\superres\src\super_resolution.cpp">
+      <Filter>src\modules\superres\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\superres\opencl_kernels_superres.hpp">
+      <Filter>src\modules\superres</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\superres\src\precomp.hpp">
+      <Filter>src\modules\superres\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\superres\src\ring_buffer.hpp">
+      <Filter>src\modules\superres\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\superres\src\input_array_utility.hpp">
+      <Filter>src\modules\superres\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\superres\src\opencl\superres_btvl1.cl">
+      <Filter>src\modules\superres\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

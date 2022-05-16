@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h" />
+    <ClInclude Include="src\libavutil\adler32.h" />
+    <ClInclude Include="src\libavutil\aes.h" />
+    <ClInclude Include="src\libavutil\aes_ctr.h" />
+    <ClInclude Include="src\libavutil\aes_internal.h" />
+    <ClInclude Include="src\libavutil\attributes.h" />
+    <ClInclude Include="src\libavutil\audio_fifo.h" />
+    <ClInclude Include="src\libavutil\avassert.h" />
+    <ClInclude Include="src\libavutil\avconfig.h" />
+    <ClInclude Include="src\libavutil\avstring.h" />
+    <ClInclude Include="src\libavutil\avutil.h" />
+    <ClInclude Include="src\libavutil\base64.h" />
+    <ClInclude Include="src\libavutil\blowfish.h" />
+    <ClInclude Include="src\libavutil\bprint.h" />
+    <ClInclude Include="src\libavutil\bswap.h" />
+    <ClInclude Include="src\libavutil\buffer.h" />
+    <ClInclude Include="src\libavutil\buffer_internal.h" />
+    <ClInclude Include="src\libavutil\camellia.h" />
+    <ClInclude Include="src\libavutil\cast5.h" />
+    <ClInclude Include="src\libavutil\channel_layout.h" />
+    <ClInclude Include="src\libavutil\colorspace.h" />
+    <ClInclude Include="src\libavutil\color_utils.h" />
+    <ClInclude Include="src\libavutil\common.h" />
+    <ClInclude Include="src\libavutil\cpu.h" />
+    <ClInclude Include="src\libavutil\cpu_internal.h" />
+    <ClInclude Include="src\libavutil\crc.h" />
+    <ClInclude Include="src\libavutil\cuda_check.h" />
+    <ClInclude Include="src\libavutil\des.h" />
+    <ClInclude Include="src\libavutil\detection_bbox.h" />
+    <ClInclude Include="src\libavutil\dict.h" />
+    <ClInclude Include="src\libavutil\display.h" />
+    <ClInclude Include="src\libavutil\dovi_meta.h" />
+    <ClInclude Include="src\libavutil\downmix_info.h" />
+    <ClInclude Include="src\libavutil\dynarray.h" />
+    <ClInclude Include="src\libavutil\encryption_info.h" />
+    <ClInclude Include="src\libavutil\error.h" />
+    <ClInclude Include="src\libavutil\eval.h" />
+    <ClInclude Include="src\libavutil\ffmath.h" />
+    <ClInclude Include="src\libavutil\ffversion.h" />
+    <ClInclude Include="src\libavutil\fifo.h" />
+    <ClInclude Include="src\libavutil\file.h" />
+    <ClInclude Include="src\libavutil\film_grain_params.h" />
+    <ClInclude Include="src\libavutil\fixed_dsp.h" />
+    <ClInclude Include="src\libavutil\float_dsp.h" />
+    <ClInclude Include="src\libavutil\frame.h" />
+    <ClInclude Include="src\libavutil\hash.h" />
+    <ClInclude Include="src\libavutil\hdr_dynamic_metadata.h" />
+    <ClInclude Include="src\libavutil\hmac.h" />
+    <ClInclude Include="src\libavutil\hwcontext.h" />
+    <ClInclude Include="src\libavutil\hwcontext_cuda.h" />
+    <ClInclude Include="src\libavutil\hwcontext_cuda_internal.h" />
+    <ClInclude Include="src\libavutil\hwcontext_d3d11va.h" />
+    <ClInclude Include="src\libavutil\hwcontext_drm.h" />
+    <ClInclude Include="src\libavutil\hwcontext_dxva2.h" />
+    <ClInclude Include="src\libavutil\hwcontext_internal.h" />
+    <ClInclude Include="src\libavutil\hwcontext_mediacodec.h" />
+    <ClInclude Include="src\libavutil\hwcontext_opencl.h" />
+    <ClInclude Include="src\libavutil\hwcontext_qsv.h" />
+    <ClInclude Include="src\libavutil\hwcontext_vaapi.h" />
+    <ClInclude Include="src\libavutil\hwcontext_vdpau.h" />
+    <ClInclude Include="src\libavutil\hwcontext_videotoolbox.h" />
+    <ClInclude Include="src\libavutil\hwcontext_vulkan.h" />
+    <ClInclude Include="src\libavutil\imgutils.h" />
+    <ClInclude Include="src\libavutil\imgutils_internal.h" />
+    <ClInclude Include="src\libavutil\integer.h" />
+    <ClInclude Include="src\libavutil\internal.h" />
+    <ClInclude Include="src\libavutil\intfloat.h" />
+    <ClInclude Include="src\libavutil\intmath.h" />
+    <ClInclude Include="src\libavutil\intreadwrite.h" />
+    <ClInclude Include="src\libavutil\lfg.h" />
+    <ClInclude Include="src\libavutil\libm.h" />
+    <ClInclude Include="src\libavutil\lls.h" />
+    <ClInclude Include="src\libavutil\log.h" />
+    <ClInclude Include="src\libavutil\lzo.h" />
+    <ClInclude Include="src\libavutil\macos_kperf.h" />
+    <ClInclude Include="src\libavutil\macros.h" />
+    <ClInclude Include="src\libavutil\mastering_display_metadata.h" />
+    <ClInclude Include="src\libavutil\mathematics.h" />
+    <ClInclude Include="src\libavutil\md5.h" />
+    <ClInclude Include="src\libavutil\mem.h" />
+    <ClInclude Include="src\libavutil\mem_internal.h" />
+    <ClInclude Include="src\libavutil\motion_vector.h" />
+    <ClInclude Include="src\libavutil\murmur3.h" />
+    <ClInclude Include="src\libavutil\opt.h" />
+    <ClInclude Include="src\libavutil\parseutils.h" />
+    <ClInclude Include="src\libavutil\pca.h" />
+    <ClInclude Include="src\libavutil\pixdesc.h" />
+    <ClInclude Include="src\libavutil\pixelutils.h" />
+    <ClInclude Include="src\libavutil\pixfmt.h" />
+    <ClInclude Include="src\libavutil\qsort.h" />
+    <ClInclude Include="src\libavutil\random_seed.h" />
+    <ClInclude Include="src\libavutil\rational.h" />
+    <ClInclude Include="src\libavutil\rc4.h" />
+    <ClInclude Include="src\libavutil\replaygain.h" />
+    <ClInclude Include="src\libavutil\reverse.h" />
+    <ClInclude Include="src\libavutil\ripemd.h" />
+    <ClInclude Include="src\libavutil\samplefmt.h" />
+    <ClInclude Include="src\libavutil\sha.h" />
+    <ClInclude Include="src\libavutil\sha512.h" />
+    <ClInclude Include="src\libavutil\slicethread.h" />
+    <ClInclude Include="src\libavutil\softfloat.h" />
+    <ClInclude Include="src\libavutil\softfloat_ieee754.h" />
+    <ClInclude Include="src\libavutil\softfloat_tables.h" />
+    <ClInclude Include="src\libavutil\spherical.h" />
+    <ClInclude Include="src\libavutil\stereo3d.h" />
+    <ClInclude Include="src\libavutil\tablegen.h" />
+    <ClInclude Include="src\libavutil\tea.h" />
+    <ClInclude Include="src\libavutil\thread.h" />
+    <ClInclude Include="src\libavutil\threadmessage.h" />
+    <ClInclude Include="src\libavutil\time.h" />
+    <ClInclude Include="src\libavutil\timecode.h" />
+    <ClInclude Include="src\libavutil\timer.h" />
+    <ClInclude Include="src\libavutil\timestamp.h" />
+    <ClInclude Include="src\libavutil\time_internal.h" />
+    <ClInclude Include="src\libavutil\tree.h" />
+    <ClInclude Include="src\libavutil\twofish.h" />
+    <ClInclude Include="src\libavutil\tx.h" />
+    <ClInclude Include="src\libavutil\tx_priv.h" />
+    <ClInclude Include="src\libavutil\version.h" />
+    <ClInclude Include="src\libavutil\video_enc_params.h" />
+    <ClInclude Include="src\libavutil\wchar_filename.h" />
+    <ClInclude Include="src\libavutil\xga_font_data.h" />
+    <ClInclude Include="src\libavutil\xtea.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavutil\hdr_dynamic_vivid_metadata.c" />
+    <ClCompile Include="src\libavutil\x86\fixed_dsp_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\float_dsp_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\imgutils_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\lls_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\pixelutils_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\tx_float_init.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\adler32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\aes.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\aes_ctr.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\audio_fifo.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\avsscanf.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\avstring.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\base64.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\blowfish.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\bprint.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\buffer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\camellia.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\cast5.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\channel_layout.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\color_utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\cpu.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\crc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\des.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\detection_bbox.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\dict.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\display.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\dovi_meta.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\downmix_info.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\encryption_info.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\error.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\eval.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\fifo.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\file.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\file_open.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\film_grain_params.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\fixed_dsp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\float_dsp.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\frame.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hash.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hdr_dynamic_metadata.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hmac.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext_d3d11va.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\hwcontext_dxva2.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\imgutils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\integer.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\intmath.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lfg.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lls.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\log.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\log2_tab.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\lzo.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mastering_display_metadata.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mathematics.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\md5.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\mem.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\murmur3.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\opt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\parseutils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\pixdesc.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\pixelutils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\random_seed.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\rational.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\rc4.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\reverse.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\ripemd.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\samplefmt.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\sha.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\sha512.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\slicethread.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\spherical.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\stereo3d.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tea.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\threadmessage.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\time.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\timecode.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tree.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\twofish.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_double.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_float.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\tx_int32.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\utils.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\video_enc_params.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\x86\cpu.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\x86\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\xga_font_data.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\libavutil\xtea.c">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)libavutil\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\cpuid.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\emms.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\fixed_dsp.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\float_dsp.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\imgutils.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\lls.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\pixelutils.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavutil\x86\tx_float.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -fwin64 -D__NASM_VER__ -D__NASM_MAJOR__=2 -D__NASM_MINOR__=15  -DHAVE_ALIGNED_STACK=0 -DHAVE_MMX_INLINE=0 -DHAVE_MMXEXT_INLINE=0  -DHAVE_AVX512_EXTERNAL=1  -DHAVE_AVX512ICL_EXTERNAL=1  -DHAVE_AVX2_EXTERNAL=1 -DHAVE_FMA3_EXTERNAL=1 -DHAVE_FMA4_EXTERNAL=1 -DHAVE_MMX_EXTERNAL=1 -DHAVE_MMXEXT_EXTERNAL=1 -DHAVE_SSE_EXTERNAL=1 -DHAVE_SSE2_EXTERNAL=1 -DHAVE_SSE3_EXTERNAL=1 -DHAVE_SSE4_EXTERNAL=1 -DHAVE_SSE42_EXTERNAL=1 -DHAVE_SSSE3_EXTERNAL=1 -DHAVE_XOP_EXTERNAL=0 -DHAVE_AVX_EXTERNAL=1 -DHAVE_CPUNOP=0 -DARCH_X86=1 -DARCH_X86_32=0 -DARCH_X86_64=1 -I ".\src\libavutil\X86" -I ".\src" -I ".\src\libavcodec\X86" -o $(IntermediateOutputPath)asm_%(Filename).obj %(Identity)</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">asm_%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="src\libavutil\x86\x86inc.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="src\libavutil\x86\x86util.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{5EFC38C3-C9CE-4F37-A30E-DB0D8C5CD23E}</ProjectGuid>
+    <RootNamespace>LibFFMPEG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibAvutil\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\FFmpeg\LibAvutil\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>HAVE_AV_CONFIG_H;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_WARNINGS;_USE_MATH_DEFINES;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DisableSpecificWarnings>4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>.\include;.\src;.\src\compat\atomics\win32;..\Libx265\src\source;..\LibX264\src;..\LibAom\src;..\LibFdkAcc\include;..\LibDav1d\src\include;..\LibNv-codec\include;..\LibZ\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Bcrypt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

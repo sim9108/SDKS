@@ -1,0 +1,1155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{552af59f-dfe9-44c1-8fe8-efbe73e39179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{65b7d539-951d-40cf-a096-5d70ca95fab3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco">
+      <UniqueIdentifier>{8a8e0124-4e67-469f-9a97-0b4ad7c6b7a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\core">
+      <UniqueIdentifier>{956ef442-2773-44a1-be76-4e1555a16fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\core\header">
+      <UniqueIdentifier>{d4a3de1f-917c-443d-ac1c-125bddf85c44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\animation">
+      <UniqueIdentifier>{c87c6b29-b401-491f-8f0b-681f6a5ad9cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\animation\header">
+      <UniqueIdentifier>{2ec63780-96ba-4f85-806e-1de33b5b8335}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\attributes">
+      <UniqueIdentifier>{f7411491-81d8-4448-a34c-0431426e4702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\attributes\header">
+      <UniqueIdentifier>{e482ff64-7ecd-4995-993e-7731538b94dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression">
+      <UniqueIdentifier>{dde778a8-be31-4339-b36d-77242e81a438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\header">
+      <UniqueIdentifier>{7746cce0-a15d-4f40-98a2-cced1df8f158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\attributes">
+      <UniqueIdentifier>{b3f43637-e458-4954-aa5f-95f50c257fc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\attributes\header">
+      <UniqueIdentifier>{e2e95c5f-2ad7-4d92-b637-2f480fbaa68a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\attributes\prediction_schemes">
+      <UniqueIdentifier>{80d31ce9-7f8c-4579-83f9-9f594a7af909}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\attributes\prediction_schemes\header">
+      <UniqueIdentifier>{e1d2d690-980e-4521-888d-9daa61729462}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\bit_coders">
+      <UniqueIdentifier>{4d42a912-4867-4bff-b131-58ba952aebbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\bit_coders\header">
+      <UniqueIdentifier>{acd1f921-e27c-4c65-9bc6-b6463fe3e7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\io">
+      <UniqueIdentifier>{2c39b669-dcd9-417d-baa8-92c908fb2b2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\io\header">
+      <UniqueIdentifier>{585f88ad-5928-43ef-8a76-1913e922b17a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\material">
+      <UniqueIdentifier>{0e5f6b8a-6611-4ee1-a517-2d5d353d76bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\material\header">
+      <UniqueIdentifier>{ffcba4c7-04af-46c0-ac42-3b794667be91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\mesh">
+      <UniqueIdentifier>{bd5b6b8e-84af-48f5-814c-6fbb0d03f52e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\mesh\header">
+      <UniqueIdentifier>{8f94e3fa-1ca7-4546-8b11-162bca655673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\mesh\traverser">
+      <UniqueIdentifier>{8c4f4154-02e1-4b83-a478-bc24e6c36a37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\mesh">
+      <UniqueIdentifier>{4d04ebc2-a567-412e-9723-5367654dee6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\mesh\header">
+      <UniqueIdentifier>{06fe2970-0baf-404d-a9d0-675f080a20aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\metadata">
+      <UniqueIdentifier>{75f3296c-8fd7-468d-88dd-a452569aeed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\metadata\header">
+      <UniqueIdentifier>{ef987c7b-790c-4dd0-84c5-73f4bc9cfcf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\point_cloud">
+      <UniqueIdentifier>{6b5155ac-5115-4cf6-bc58-098ca1d786ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\point_cloud\header">
+      <UniqueIdentifier>{4062dafe-6859-441a-a80c-6facf50bc9f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\point_cloud\algorithms">
+      <UniqueIdentifier>{547f4d50-5de5-400d-a061-3ba8d1af5827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\point_cloud\algorithms\header">
+      <UniqueIdentifier>{15ca9c77-5739-4a4d-ba9a-7f12dc051104}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\config">
+      <UniqueIdentifier>{ca8a73a6-f85d-4b06-a42d-26e9b87e3a66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\entropy">
+      <UniqueIdentifier>{9f34737a-1c36-4298-9d61-17391bbb1ab5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\compression\entropy\header">
+      <UniqueIdentifier>{a8af98b8-e2f1-4cc4-9fed-955d7b745cb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\point_cloud">
+      <UniqueIdentifier>{cb496055-ee8c-41fc-bb33-d581248192c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\point_cloud\header">
+      <UniqueIdentifier>{f940f89a-a615-45ea-8b71-a3141d2fce12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\scene">
+      <UniqueIdentifier>{74d10c95-afd9-40c5-8a58-961e8e518a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\scene\header">
+      <UniqueIdentifier>{6b47e95b-2cb9-4a9d-9591-722ee56c5bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\texture">
+      <UniqueIdentifier>{a5503cb0-7520-4150-8c02-9346de7e4cb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\texture\header">
+      <UniqueIdentifier>{9d629069-8431-49d8-81db-dae90b101216}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\draco\tools">
+      <UniqueIdentifier>{0a9a9e95-640c-4086-b2f1-e0aefcbd73ad}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\draco\core\bit_utils.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\bounding_box.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\cycle_timer.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\data_buffer.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\decoder_buffer.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\divide.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\draco_types.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\encoder_buffer.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\hash_utils.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\options.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\core\quantization_utils.cc">
+      <Filter>src\src\draco\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\animation\keyframe_animation.cc">
+      <Filter>src\src\draco\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\animation\keyframe_animation_decoder.cc">
+      <Filter>src\src\draco\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\animation\keyframe_animation_encoder.cc">
+      <Filter>src\src\draco\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\animation\animation.cc">
+      <Filter>src\src\draco\animation</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\attributes\attribute_transform.cc">
+      <Filter>src\src\draco\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\attributes\geometry_attribute.cc">
+      <Filter>src\src\draco\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\attributes\point_attribute.cc">
+      <Filter>src\src\draco\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\attributes\attribute_octahedron_transform.cc">
+      <Filter>src\src\draco\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\attributes\attribute_quantization_transform.cc">
+      <Filter>src\src\draco\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\decode.cc">
+      <Filter>src\src\draco\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\encode.cc">
+      <Filter>src\src\draco\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\expert_encode.cc">
+      <Filter>src\src\draco\compression</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_encoders_controller.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_integer_attribute_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_integer_attribute_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_normal_attribute_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_normal_attribute_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_quantization_attribute_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_quantization_attribute_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\attributes_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\attributes_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\kd_tree_attributes_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\kd_tree_attributes_encoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_decoder.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_decoders_controller.cc">
+      <Filter>src\src\draco\compression\attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_factory.cc">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_decoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_encoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\direct_bit_decoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\direct_bit_encoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\rans_bit_decoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\rans_bit_encoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\symbol_bit_decoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\bit_coders\symbol_bit_encoder.cc">
+      <Filter>src\src\draco\compression\bit_coders</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\entropy\symbol_decoding.cc">
+      <Filter>src\src\draco\compression\entropy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\entropy\symbol_encoding.cc">
+      <Filter>src\src\draco\compression\entropy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\entropy\shannon_entropy.cc">
+      <Filter>src\src\draco\compression\entropy</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_encoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_sequential_decoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_sequential_encoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_decoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl.cc">
+      <Filter>src\src\draco\compression\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_sequential_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_sequential_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_encoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.cc">
+      <Filter>src\src\draco\compression\point_cloud\algorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\file_reader_factory.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\file_utils.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\file_writer_factory.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\file_writer_utils.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\gltf_decoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\gltf_encoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\gltf_utils.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\mesh_io.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\obj_decoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\obj_encoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\parser_utils.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\ply_decoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\ply_encoder.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\ply_reader.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\point_cloud_io.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\scene_io.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\stdio_file_reader.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\stdio_file_writer.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\texture_io.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\io\tiny_gltf_utils.cc">
+      <Filter>src\src\draco\io</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\material\material_library.cc">
+      <Filter>src\src\draco\material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\material\material_utils.cc">
+      <Filter>src\src\draco\material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\material\material.cc">
+      <Filter>src\src\draco\material</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_are_equivalent.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_attribute_corner_table.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_cleanup.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_misc_functions.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_splitter.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_stripifier.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\mesh_utils.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\triangle_soup_mesh_builder.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\mesh\corner_table.cc">
+      <Filter>src\src\draco\mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\metadata\metadata_decoder.cc">
+      <Filter>src\src\draco\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\metadata\metadata_encoder.cc">
+      <Filter>src\src\draco\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\metadata\geometry_metadata.cc">
+      <Filter>src\src\draco\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\metadata\metadata.cc">
+      <Filter>src\src\draco\metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\point_cloud\point_cloud_builder.cc">
+      <Filter>src\src\draco\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\point_cloud\point_cloud.cc">
+      <Filter>src\src\draco\point_cloud</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\scene\scene.cc">
+      <Filter>src\src\draco\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\scene\scene_utils.cc">
+      <Filter>src\src\draco\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\scene\trs_matrix.cc">
+      <Filter>src\src\draco\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\texture\texture_utils.cc">
+      <Filter>src\src\draco\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\texture\source_image.cc">
+      <Filter>src\src\draco\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\texture\texture_library.cc">
+      <Filter>src\src\draco\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\texture\texture_map.cc">
+      <Filter>src\src\draco\texture</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\draco\texture\texture_transform.cc">
+      <Filter>src\src\draco\texture</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\draco\core\bit_utils.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\bounding_box.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\cycle_timer.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\data_buffer.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\decoder_buffer.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\divide.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_index_type.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_index_type_vector.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_test_base.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_test_utils.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_types.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\draco_version.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\encoder_buffer.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\hash_utils.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\macros.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\math_utils.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\options.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\quantization_utils.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\status.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\status_or.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\varint_decoding.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\varint_encoding.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\core\vector_d.h">
+      <Filter>src\src\draco\core\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\keyframe_animation_decoder.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\keyframe_animation_encoder.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\node_animation_data.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\skin.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\animation.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\animation\keyframe_animation.h">
+      <Filter>src\src\draco\animation\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\attribute_transform.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\attribute_transform_data.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\attribute_transform_type.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\geometry_attribute.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\geometry_indices.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\point_attribute.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\attribute_octahedron_transform.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\attributes\attribute_quantization_transform.h">
+      <Filter>src\src\draco\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\decode.h">
+      <Filter>src\src\draco\compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\draco_compression_options.h">
+      <Filter>src\src\draco\compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\encode.h">
+      <Filter>src\src\draco\compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\encode_base.h">
+      <Filter>src\src\draco\compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\expert_encode.h">
+      <Filter>src\src\draco\compression\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_decoder_interface.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_shared.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\linear_sequencer.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\mesh_attribute_indices_encoding_data.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\normal_compression_utils.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\point_d_vector.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\points_sequencer.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_decoders_controller.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_encoders_controller.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_integer_attribute_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_integer_attribute_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_normal_attribute_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_normal_attribute_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_quantization_attribute_decoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_quantization_attribute_encoder.h">
+      <Filter>src\src\draco\compression\attributes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_predictor.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder_factory.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder_interface.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_delta_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_delta_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_factory.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_interface.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_factory.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_interface.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_decoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_encoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_transform_base.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_decoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_encoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_transform_base.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_decoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_encoding_transform.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_transform_base.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_shared.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_data.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_predictor_area.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_predictor_base.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_multi_parallelogram_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_multi_parallelogram_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_shared.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_decoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_encoder.h">
+      <Filter>src\src\draco\compression\attributes\prediction_schemes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\folded_integer_bit_decoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\folded_integer_bit_encoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\rans_bit_decoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\rans_bit_encoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\symbol_bit_decoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\symbol_bit_encoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_coding_shared.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_decoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_encoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\direct_bit_decoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\bit_coders\direct_bit_encoder.h">
+      <Filter>src\src\draco\compression\bit_coders\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\config\decoder_options.h">
+      <Filter>src\src\draco\compression\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\config\draco_options.h">
+      <Filter>src\src\draco\compression\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\config\encoder_options.h">
+      <Filter>src\src\draco\compression\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\config\encoding_features.h">
+      <Filter>src\src\draco\compression\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\config\compression_shared.h">
+      <Filter>src\src\draco\compression\config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_encoder.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\shannon_entropy.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\symbol_decoding.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\symbol_encoding.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\ans.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_coding.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_decoder.h">
+      <Filter>src\src\draco\compression\entropy\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_sequential_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_sequential_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl_interface.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl_interface.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_shared.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_predictive_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_predictive_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_valence_decoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_valence_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_encoder.h">
+      <Filter>src\src\draco\compression\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\mesh_traversal_sequencer.h">
+      <Filter>src\src\draco\compression\mesh\traverser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\traverser_base.h">
+      <Filter>src\src\draco\compression\mesh\traverser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\depth_first_traverser.h">
+      <Filter>src\src\draco\compression\mesh\traverser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\max_prediction_degree_traverser.h">
+      <Filter>src\src\draco\compression\mesh\traverser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\mesh_attribute_indices_encoding_observer.h">
+      <Filter>src\src\draco\compression\mesh\traverser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_sequential_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_sequential_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\point_cloud_compression_method.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\point_cloud_types.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\quantize_points_3.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\queuing_policy.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_encoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_decoder.h">
+      <Filter>src\src\draco\compression\point_cloud\algorithms\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\stdio_file_writer.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\texture_io.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\tiny_gltf_utils.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_reader_factory.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_reader_interface.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_reader_test_common.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_utils.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_writer_factory.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_writer_interface.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\file_writer_utils.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\gltf_decoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\gltf_encoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\gltf_utils.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\image_compression_options.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\mesh_io.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\obj_decoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\obj_encoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\parser_utils.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\ply_decoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\ply_encoder.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\ply_property_reader.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\ply_property_writer.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\ply_reader.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\point_cloud_io.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\scene_io.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\io\stdio_file_reader.h">
+      <Filter>src\src\draco\io\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\material\material_library.h">
+      <Filter>src\src\draco\material\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\material\material_utils.h">
+      <Filter>src\src\draco\material\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\material\material.h">
+      <Filter>src\src\draco\material\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_utils.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\triangle_soup_mesh_builder.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\valence_cache.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\corner_table.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\corner_table_iterators.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_are_equivalent.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_attribute_corner_table.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_cleanup.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_misc_functions.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_splitter.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\mesh\mesh_stripifier.h">
+      <Filter>src\src\draco\mesh\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\metadata\geometry_metadata.h">
+      <Filter>src\src\draco\metadata\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\metadata\metadata.h">
+      <Filter>src\src\draco\metadata\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\metadata\metadata_decoder.h">
+      <Filter>src\src\draco\metadata\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\metadata\metadata_encoder.h">
+      <Filter>src\src\draco\metadata\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\point_cloud\point_cloud.h">
+      <Filter>src\src\draco\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\point_cloud\point_cloud_builder.h">
+      <Filter>src\src\draco\point_cloud\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\mesh_group.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\scene.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\scene_indices.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\scene_node.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\scene_utils.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\scene\trs_matrix.h">
+      <Filter>src\src\draco\scene\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\texture_library.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\texture_map.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\texture_transform.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\texture_utils.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\source_image.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\draco\texture\texture.h">
+      <Filter>src\src\draco\texture\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

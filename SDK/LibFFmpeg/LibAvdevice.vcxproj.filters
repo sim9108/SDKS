@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9c25238-74cf-46f7-8d60-4ad3d1be83d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavdevice">
+      <UniqueIdentifier>{66035e1a-0c3b-42aa-8e91-1a91cb0258c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavdevice\alldevices.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\avdevice.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_common.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_crossbar.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_enummediatypes.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_enumpins.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_filter.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\dshow_pin.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\gdigrab.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\lavfi.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\utils.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavdevice\vfwcap.c">
+      <Filter>src\libavdevice</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

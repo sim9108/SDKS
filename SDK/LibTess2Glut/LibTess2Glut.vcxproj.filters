@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{74235df8-aaad-4e04-9869-be30863cbb16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Source">
+      <UniqueIdentifier>{29021832-a3e5-475b-a7ae-cea6fbaef593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Source\header">
+      <UniqueIdentifier>{053d638e-392c-4051-8654-5a439f34652b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{f940eadf-20e4-468d-9111-3211bff80bdb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Source\mesh.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\priorityq.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\sweep.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\tess.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\bucketalloc.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\dict.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\geom.c">
+      <Filter>src\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Source\bucketalloc.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\dict.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\geom.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\mesh.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\priorityq.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\sweep.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\tess.h">
+      <Filter>src\Source\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Include\tesselator.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

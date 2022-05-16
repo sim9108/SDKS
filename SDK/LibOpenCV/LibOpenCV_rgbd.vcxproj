@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\rgbd\opencl_kernels_rgbd.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\colored_tsdf.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\depth_to_3d.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\dqb.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\dynafu_tsdf.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\fast_icp.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\hash_tsdf.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\kinfu_frame.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\marchingcubes.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\nonrigid_icp.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\precomp.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\sparse_block_matrix.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\submap.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\tsdf.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\tsdf_functions.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\utils.hpp" />
+    <ClInclude Include="src\modules\rgbd\src\warpfield.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\rgbd\opencl_kernels_rgbd.cpp" />
+    <ClCompile Include="src\modules\rgbd\opencv_rgbd_pch.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\colored_kinfu.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\colored_tsdf.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\depth_cleaner.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\depth_registration.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\depth_to_3d.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\dqb.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\dynafu.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\dynafu_tsdf.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\fast_icp.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\hash_tsdf.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\kinfu.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\kinfu_frame.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\large_kinfu.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\linemod.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\nonrigid_icp.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\normal.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\odometry.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\plane.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\pose_graph.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\tsdf.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\tsdf_functions.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\utils.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\volume.cpp" />
+    <ClCompile Include="src\modules\rgbd\src\warpfield.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\rgbd\src\normal_lut.i" />
+    <None Include="src\modules\rgbd\src\opencl\hash_tsdf.cl" />
+    <None Include="src\modules\rgbd\src\opencl\icp.cl" />
+    <None Include="src\modules\rgbd\src\opencl\kinfu_frame.cl" />
+    <None Include="src\modules\rgbd\src\opencl\tsdf.cl" />
+    <None Include="src\modules\rgbd\src\opencl\tsdf_functions.cl" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{E653255D-4079-467B-920A-35F368390513}</ProjectGuid>
+    <RootNamespace>LibOpenCVimgproc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\rgbd\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\rgbd\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\imgcodecs\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\stitching\include;.\src\modules\gapi\include;.\src\modules\objdetect\include;.\src\modules\highgui\include;.\src\modules\photo\include;.\src\modules\video\include;.\src\modules\videoio\include;.\src\modules\rgbd;.\src\modules\rgbd\include;.\src\modules\rgbd\src;.\src\modules\dnn\include;.\src\modules\ml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4267;4305;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMTd.lib;LibOpenJPEGSMTd.lib;LibPngSMTd.lib;LibWebPSMTd.lib;LibTiffSMTd.lib;LibJpegturboSMTd.lib;LibImathSMTd.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibProtobufSMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibOpenCV_imgcodecsSMTd.lib;LibOpenCV_flannSMTd.lib;LibOpenCV_calib3dSMTd.lib;LibOpenCV_features2dSMTd.lib;LibOpenCV_dnnSMTd.lib;LibOpenCV_objdetectSMTd.lib;LibOpenCV_photoSMTd.lib;LibOpenCV_mlSMTd.lib;LibOpenCV_tsSMTd.lib;LibOpenCV_videoSMTd.lib;LibOpenCV_videoioSMTd.lib;LibOpenCV_stitchingSMTd.lib;LibOpenCV_gapiSMTd.lib;LibOpenCV_highguiSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\imgcodecs\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\stitching\include;.\src\modules\gapi\include;.\src\modules\objdetect\include;.\src\modules\highgui\include;.\src\modules\photo\include;.\src\modules\video\include;.\src\modules\videoio\include;.\src\modules\rgbd;.\src\modules\rgbd\include;.\src\modules\rgbd\src;.\src\modules\dnn\include;.\src\modules\ml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4267;4305;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMT.lib;LibOpenJPEGSMT.lib;LibPngSMT.lib;LibWebPSMT.lib;LibTiffSMT.lib;LibJpegturboSMT.lib;LibImathSMT.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibProtobufSMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibOpenCV_imgcodecsSMT.lib;LibOpenCV_flannSMT.lib;LibOpenCV_calib3dSMT.lib;LibOpenCV_features2dSMT.lib;LibOpenCV_dnnSMT.lib;LibOpenCV_objdetectSMT.lib;LibOpenCV_photoSMT.lib;LibOpenCV_mlSMT.lib;LibOpenCV_tsSMT.lib;LibOpenCV_videoSMT.lib;LibOpenCV_videoioSMT.lib;LibOpenCV_stitchingSMT.lib;LibOpenCV_gapiSMT.lib;LibOpenCV_highguiSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

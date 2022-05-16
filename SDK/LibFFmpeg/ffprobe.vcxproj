@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\fftools\cmdutils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fftools\cmdutils.c" />
+    <ClCompile Include="src\fftools\ffprobe.c" />
+    <ClCompile Include="src\fftools\opt_common.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{30424132-280D-4F71-96D5-6F09F42C360C}</ProjectGuid>
+    <RootNamespace>ffmpeg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)bin64\</OutDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+    <IntDir>$(ProjectDir)temp\demo\ffprobe\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)bin64\</OutDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+    <IntDir>$(ProjectDir)temp\demo\ffprobe\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;..\LibSDL\src\include;.\src\compat\atomics\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4715;4047;4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Lib64;..\LibSDL\lib64;..\LibZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibDav1d\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Version.lib;Setupapi.lib;Imm32.lib;Winmm.lib;Secur32.lib;Bcrypt.lib;Mfplat.lib;Strmiids.lib;Mfuuid.lib;Vfw32.lib;Shlwapi.lib;Ws2_32.lib;LibAvutilSMTd.lib;LibAvcodec_asmSMTd.lib;LibAvcodecSMTd.lib;LibAvfilterSMTd.lib;LibAvformatSMTd.lib;LibPostprocSMTd.lib;LibSwresampleSMTd.lib;LibSwscaleSMTd.lib;LibAvdeviceSMTd.lib;LibZSMTd.lib;LibX264SMTd.lib;LibX264_bitdepth_8SMTd.lib;LibX264_bitdepth_10SMTd.lib;LibX265SMTd.lib;LibFdkAccSMTd.lib;LibAomSMTd.lib;LibDav1d_bitdepth_8SMTd.lib;LibDav1d_bitdepth_16SMTd.lib;LibDav1dSMTd.lib;LibSDLSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;..\LibSDL\src\include;.\src\compat\atomics\win32;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4715;4047;4566;4293;4114;4267;4244;4819;4090;4305;4700;4146;4334;4996;4018;4554;4028;4703;4013;4116;4133;4101;4333;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\Lib64;..\LibSDL\lib64;..\LibZ\lib64;..\LibX264\lib64;..\LibX265\lib64;..\LibDav1d\lib64;..\LibFdkAcc\lib64;..\LibAom\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Version.lib;Setupapi.lib;Imm32.lib;Winmm.lib;Secur32.lib;Bcrypt.lib;Mfplat.lib;Strmiids.lib;Mfuuid.lib;Vfw32.lib;Shlwapi.lib;Ws2_32.lib;LibAvutilSMT.lib;LibAvcodec_asmSMT.lib;LibAvcodecSMT.lib;LibAvfilterSMT.lib;LibAvformatSMT.lib;LibPostprocSMT.lib;LibSwresampleSMT.lib;LibSwscaleSMT.lib;LibAvdeviceSMT.lib;LibZSMT.lib;LibX264SMT.lib;LibX264_bitdepth_8SMT.lib;LibX264_bitdepth_10SMT.lib;LibX265SMT.lib;LibFdkAccSMT.lib;LibAomSMT.lib;LibDav1d_bitdepth_8SMT.lib;LibDav1d_bitdepth_16SMT.lib;LibDav1dSMT.lib;LibSDLSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,657 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{560564a0-4b8f-4236-b364-dfa7c0c0f4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{3f4b2bd1-ef2e-4454-8eb0-aa585fecc8ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi">
+      <UniqueIdentifier>{d5d293a2-a6eb-489a-9318-c1584862fe74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src">
+      <UniqueIdentifier>{cf014d3d-9139-46a8-9149-923e8153a767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\header">
+      <UniqueIdentifier>{247d1097-499f-4571-a20b-9d8efe5d3c3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\executor">
+      <UniqueIdentifier>{ffc06f1e-b3f1-4570-9695-8ceacbd83ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\utils">
+      <UniqueIdentifier>{8ffd004b-84fb-437a-b8fa-2b92d4bc490a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends">
+      <UniqueIdentifier>{588ea38a-0798-4145-9b35-6c03c16cec20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\compiler">
+      <UniqueIdentifier>{ff1f1582-95ff-4055-aad6-2b7c01be7785}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming">
+      <UniqueIdentifier>{ca23dd6b-108c-4a13-a4cf-2a239598921a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\api">
+      <UniqueIdentifier>{4a12e3f9-a660-4e63-b816-8b5b85292817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\api\header">
+      <UniqueIdentifier>{77d5a217-5e96-42b3-b6fa-70cc0ab14670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\common">
+      <UniqueIdentifier>{bbe9a703-1629-420a-ab77-4d1fba2bf42e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\common\header">
+      <UniqueIdentifier>{bd9c3ea1-9c33-4fb0-97f2-8e7047b5ed11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\cpu">
+      <UniqueIdentifier>{6b9c4267-50f2-46e0-81f5-996a22bb35a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\cpu\header">
+      <UniqueIdentifier>{5f7c7f7f-d018-463e-9551-45ec46ee73b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\fluid">
+      <UniqueIdentifier>{0b4b6508-c9b0-4bb0-92e5-1775ec02a670}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\fluid\header">
+      <UniqueIdentifier>{3e718211-4e47-45c6-ab15-6186f3f5940f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\fluid\simd">
+      <UniqueIdentifier>{71214e51-6343-4873-b206-cf3e2b4e5242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\ie">
+      <UniqueIdentifier>{85bca8e4-06c5-4a81-9bf3-5cdd202a2bcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\ie\header">
+      <UniqueIdentifier>{977a1b81-3c02-4093-b218-eab5576aaf15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\ie\giebackend">
+      <UniqueIdentifier>{c247a423-f2f3-49f2-82bd-1bcbe7f593cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\ocl">
+      <UniqueIdentifier>{9477de41-205c-4634-8fa5-7777c371f840}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\ocl\header">
+      <UniqueIdentifier>{86693ffb-8835-43ac-b8c9-aa3eb53442db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\onnx">
+      <UniqueIdentifier>{b8e6c736-2a7d-41cb-815c-28f1d4a07be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\plaidml">
+      <UniqueIdentifier>{f7e7b12c-406c-4b09-a525-320f7a59a585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\python">
+      <UniqueIdentifier>{4194b331-f4ad-45ee-a663-09c22950bc7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\render">
+      <UniqueIdentifier>{b979e702-5c3b-4ff0-9a52-bcdb3d82683c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\backends\streaming">
+      <UniqueIdentifier>{4a93d060-9e52-4b00-8fc9-aeb216981b11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\compiler\header">
+      <UniqueIdentifier>{a3e11c02-0395-4ef8-ad71-0ab9db9e4d1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\compiler\passes">
+      <UniqueIdentifier>{faf1494d-b90c-41ff-b3fc-da0c7527e441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\compiler\passes\header">
+      <UniqueIdentifier>{5c528b72-3491-4a04-9de5-1a4843a0394b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\executor\header">
+      <UniqueIdentifier>{cfa212ed-5b6f-4c15-b278-4a4736c16690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\onevpl">
+      <UniqueIdentifier>{eae91f71-56b3-4c78-ad65-bef38631d376}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\onevpl\header">
+      <UniqueIdentifier>{8b3c9d55-2855-49f6-806b-50510cb45a21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\onevpl\engine">
+      <UniqueIdentifier>{97dfbc97-9c43-4cea-aacc-2d2654f6bddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\onevpl\engine\decode">
+      <UniqueIdentifier>{3d2c75d5-2ec5-43ef-8674-0b85f68a08d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\gstreamer">
+      <UniqueIdentifier>{fe7b2577-2890-4ed5-ad99-8a18c808ca74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\gapi\src\streaming\gstreamer\header">
+      <UniqueIdentifier>{0ac1900a-e41c-4146-a5bb-228c8ddb4de1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\gapi\opencv_gapi_pch.cpp">
+      <Filter>src\modules\gapi</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\ginfer.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gkernel.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gmat.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gnode.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gopaque.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gorigin.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gproto.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\grunarg.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gscalar.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_core.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_imgproc.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_nnparsers.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_stereo.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_streaming.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\kernels_video.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\media.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\operators.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\render.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\render_ocv.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\rmat.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\s11n.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\garray.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gbackend.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gcall.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gcomputation.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\api\gframe.cpp">
+      <Filter>src\modules\gapi\src\api</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\common\gcompoundbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\common\gcompoundkernel.cpp">
+      <Filter>src\modules\gapi\src\backends\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\common\gmetabackend.cpp">
+      <Filter>src\modules\gapi\src\backends\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\common\serialization.cpp">
+      <Filter>src\modules\gapi\src\backends\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpubackend.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpucore.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpuimgproc.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpukernel.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpustereo.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpuvideo.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gnnparsers.cpp">
+      <Filter>src\modules\gapi\src\backends\cpu</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidbuffer.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.dispatch.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.dispatch.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.sse4_1.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.avx2.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.sse4_1.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.avx2.cpp">
+      <Filter>src\modules\gapi\src\backends\fluid\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ie\bindings_ie.cpp">
+      <Filter>src\modules\gapi\src\backends\ie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ie\giebackend.cpp">
+      <Filter>src\modules\gapi\src\backends\ie</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ie\giebackend\giewrapper.cpp">
+      <Filter>src\modules\gapi\src\backends\ie\giebackend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclcore.cpp">
+      <Filter>src\modules\gapi\src\backends\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclimgproc.cpp">
+      <Filter>src\modules\gapi\src\backends\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclkernel.cpp">
+      <Filter>src\modules\gapi\src\backends\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\onnx\gonnxbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\plaidml\gplaidmlbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\plaidml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\plaidml\gplaidmlcore.cpp">
+      <Filter>src\modules\gapi\src\backends\plaidml</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\python\gpythonbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\python</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\render\ft_render.cpp">
+      <Filter>src\modules\gapi\src\backends\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\render\grenderocv.cpp">
+      <Filter>src\modules\gapi\src\backends\render</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\streaming\gstreamingbackend.cpp">
+      <Filter>src\modules\gapi\src\backends\streaming</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gcompiled.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gcompiler.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gislandmodel.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gmodel.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gmodelbuilder.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\gstreaming.cpp">
+      <Filter>src\modules\gapi\src\compiler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\dump_dot.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\exec.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\helpers.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\intrin.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\islands.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\kernels.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\meta.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\pattern_matching.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\perform_substitution.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\streaming.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\transformations.cpp">
+      <Filter>src\modules\gapi\src\compiler\passes</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\executor\gasync.cpp">
+      <Filter>src\modules\gapi\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\executor\gexecutor.cpp">
+      <Filter>src\modules\gapi\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\executor\gstreamingexecutor.cpp">
+      <Filter>src\modules\gapi\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\executor\gtbbexecutor.cpp">
+      <Filter>src\modules\gapi\src\executor</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_param_device_selector.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_params.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_params_parser.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\data_provider_dispatcher.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\data_provider_interface_exception.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\device_selector_interface.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\file_data_provider.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\source.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\source_priv.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\utils.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\engine_session.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\processing_engine_base.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_session.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_engine_legacy.cpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine\decode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_buffer_utils.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_media_adapter.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_pipeline_facade.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamerenv.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamerpipeline.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamersource.cpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\utils\itt.cpp">
+      <Filter>src\modules\gapi\src\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\gapi\src\logger.hpp">
+      <Filter>src\modules\gapi\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\precomp.hpp">
+      <Filter>src\modules\gapi\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\gnode_priv.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\gorigin.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\gproto_priv.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\ocv_mask_creator.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\render_ocv.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\api\render_priv.hpp">
+      <Filter>src\modules\gapi\src\api\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\common\gbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\common\gmetabackend.hpp">
+      <Filter>src\modules\gapi\src\backends\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\common\serialization.hpp">
+      <Filter>src\modules\gapi\src\backends\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\cpu\gcpubackend.hpp">
+      <Filter>src\modules\gapi\src\backends\cpu\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\cpu\gnnparsers.hpp">
+      <Filter>src\modules\gapi\src\backends\cpu\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidbuffer_priv.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.simd.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_simd_sse41.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.simd.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidutils.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.simd_declarations.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.simd_declarations.hpp">
+      <Filter>src\modules\gapi\src\backends\fluid\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ie\util.hpp">
+      <Filter>src\modules\gapi\src\backends\ie\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ie\giebackend.hpp">
+      <Filter>src\modules\gapi\src\backends\ie\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ie\giebackend\giewrapper.hpp">
+      <Filter>src\modules\gapi\src\backends\ie\giebackend</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\ocl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclcore.hpp">
+      <Filter>src\modules\gapi\src\backends\ocl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclimgproc.hpp">
+      <Filter>src\modules\gapi\src\backends\ocl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\onnx\gonnxbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\onnx</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\plaidml\gplaidmlbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\plaidml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\plaidml\plaidml_util.hpp">
+      <Filter>src\modules\gapi\src\backends\plaidml</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\render\ft_render_priv.hpp">
+      <Filter>src\modules\gapi\src\backends\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\render\ft_render.hpp">
+      <Filter>src\modules\gapi\src\backends\render</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\streaming\gstreamingbackend.hpp">
+      <Filter>src\modules\gapi\src\backends\streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\backends\streaming\gstreamingkernel.hpp">
+      <Filter>src\modules\gapi\src\backends\streaming</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gcompiler.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gislandmodel.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodel.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodel_priv.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodelbuilder.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gobjref.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gstreaming_priv.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\transactions.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\gcompiled_priv.hpp">
+      <Filter>src\modules\gapi\src\compiler\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\helpers.hpp">
+      <Filter>src\modules\gapi\src\compiler\passes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\passes.hpp">
+      <Filter>src\modules\gapi\src\compiler\passes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\pattern_matching.hpp">
+      <Filter>src\modules\gapi\src\compiler\passes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\executor\gexecutor.hpp">
+      <Filter>src\modules\gapi\src\executor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\executor\gstreamingexecutor.hpp">
+      <Filter>src\modules\gapi\src\executor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\executor\gtbbexecutor.hpp">
+      <Filter>src\modules\gapi\src\executor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\executor\last_value.hpp">
+      <Filter>src\modules\gapi\src\executor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\executor\conc_queue.hpp">
+      <Filter>src\modules\gapi\src\executor\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\cfg_params_parser.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\data_provider_defines.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\data_provider_dispatcher.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\file_data_provider.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\onevpl_export.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\source_priv.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\utils.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\cfg_param_device_selector.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\engine_session.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\processing_engine_base.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_engine_legacy.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine\decode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_session.hpp">
+      <Filter>src\modules\gapi\src\streaming\onevpl\engine\decode</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_buffer_utils.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_media_adapter.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_pipeline_facade.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerenv.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerpipeline_priv.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerptr.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamersource_priv.hpp">
+      <Filter>src\modules\gapi\src\streaming\gstreamer\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\gapi\src\utils\itt.hpp">
+      <Filter>src\modules\gapi\src\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

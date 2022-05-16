@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{200acf12-3066-4a06-bff7-695bf9ecc400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{81c0406c-799b-4cc4-89e1-dfdcb31ae3a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode">
+      <UniqueIdentifier>{c49b00db-d9cc-4cf8-8a44-21d009309e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode\src">
+      <UniqueIdentifier>{8276f36d-6067-4361-9d29-c79b5a060e95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode\src\decoder">
+      <UniqueIdentifier>{cc9426df-2672-401f-8705-a9d7aff4ef8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode\src\decoder\header">
+      <UniqueIdentifier>{c460977b-1343-4115-b851-c9bf118c4dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode\src\decoder\common">
+      <UniqueIdentifier>{d417efb8-0603-4f13-b5a7-bf3065d83cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\barcode\src\detector">
+      <UniqueIdentifier>{80446c41-c12b-419d-a0ad-5840148dc316}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\barcode\opencv_barcode_pch.cpp">
+      <Filter>src\modules\barcode</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\barcode.cpp">
+      <Filter>src\modules\barcode\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\abs_decoder.cpp">
+      <Filter>src\modules\barcode\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\ean8_decoder.cpp">
+      <Filter>src\modules\barcode\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\ean13_decoder.cpp">
+      <Filter>src\modules\barcode\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\upcean_decoder.cpp">
+      <Filter>src\modules\barcode\src\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\common\super_scale.cpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\common\utils.cpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\decoder\common\hybrid_binarizer.cpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\barcode\src\detector\bardetect.cpp">
+      <Filter>src\modules\barcode\src\detector</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\barcode\src\precomp.hpp">
+      <Filter>src\modules\barcode\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\abs_decoder.hpp">
+      <Filter>src\modules\barcode\src\decoder\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\ean8_decoder.hpp">
+      <Filter>src\modules\barcode\src\decoder\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\ean13_decoder.hpp">
+      <Filter>src\modules\barcode\src\decoder\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\upcean_decoder.hpp">
+      <Filter>src\modules\barcode\src\decoder\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\common\hybrid_binarizer.hpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\common\super_scale.hpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\decoder\common\utils.hpp">
+      <Filter>src\modules\barcode\src\decoder\common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\barcode\src\detector\bardetect.hpp">
+      <Filter>src\modules\barcode\src\detector</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

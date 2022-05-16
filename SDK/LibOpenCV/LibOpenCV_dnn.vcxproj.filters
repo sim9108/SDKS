@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f1e6ee87-3854-4568-b7ff-af99e6512fb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{1facc577-18cf-4f6c-a679-ccfa615a390d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn">
+      <UniqueIdentifier>{3bda9483-471c-43a6-9549-0686a25962cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\header">
+      <UniqueIdentifier>{e031715e-dadf-4ee3-89bf-58c0cbe19cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src">
+      <UniqueIdentifier>{06822d49-353c-4ba0-97ca-1aafd2208822}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\header">
+      <UniqueIdentifier>{86b0d651-5047-4020-b36d-bd613c3e488b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\opencl">
+      <UniqueIdentifier>{df828fd4-073d-4ba0-94ad-e5b63b5004fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\caffe">
+      <UniqueIdentifier>{9ee9811f-6f9f-4e57-abed-7863a12b6cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\caffe\header">
+      <UniqueIdentifier>{a0671ebf-f7d9-48d8-b5e0-ae926a3fd088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\darknet">
+      <UniqueIdentifier>{ca03599e-61bc-41aa-b5c7-1137263471a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\darknet\header">
+      <UniqueIdentifier>{4db2a663-3301-4137-bad3-be51656972bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\int8layers">
+      <UniqueIdentifier>{2c906bfc-b3f3-4fba-9015-3c8ea1648eb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\int8layers\header">
+      <UniqueIdentifier>{c70a55c6-3253-401d-98d0-a9af9a0ca6ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\layers">
+      <UniqueIdentifier>{d651db35-b69d-4832-865e-5afbb078f294}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\layers\header">
+      <UniqueIdentifier>{0f4f9710-2b8c-47ae-88eb-250b9dce1ff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\ocl4dnn">
+      <UniqueIdentifier>{7a4ac5dd-5c38-4952-ac57-414176e1a3df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\ocl4dnn\src">
+      <UniqueIdentifier>{e464c367-c1db-419d-bcf3-f4480668dbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\ocl4dnn\include">
+      <UniqueIdentifier>{2056e1eb-7786-4bd7-8b2e-988e74186d62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\onnx">
+      <UniqueIdentifier>{ebe83fbb-4bb2-4dcf-a942-5bbe4fde10c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\onnx\header">
+      <UniqueIdentifier>{9ae73eee-dbea-4fab-a1a1-7556faea9bfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\tengine4dnn">
+      <UniqueIdentifier>{379c30e8-a649-4f0f-b1cf-3c4b5312534e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\tengine4dnn\src">
+      <UniqueIdentifier>{03aa8289-6b7c-4171-be67-8b6fa32dec70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\tengine4dnn\include">
+      <UniqueIdentifier>{f33012ce-2a39-488a-bf8a-64e05a4d1cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\tensorflow">
+      <UniqueIdentifier>{bbb747fd-745e-460b-a420-3988958f8617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\tensorflow\header">
+      <UniqueIdentifier>{69e4e898-cd86-44fb-9e33-51f16f422f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\torch">
+      <UniqueIdentifier>{8afcc02d-8320-4da4-ba4d-d50cc73fdbbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\torch\header">
+      <UniqueIdentifier>{06d05e2c-3f17-4337-8f33-9ba6592903dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom">
+      <UniqueIdentifier>{69f6cd55-3837-4adc-93ad-fed969ff31b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\vulkan">
+      <UniqueIdentifier>{a5509497-6031-45dc-879e-9a5f79c548ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\vulkan\header">
+      <UniqueIdentifier>{399434fb-35cc-4082-acf7-96f654170eba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\src">
+      <UniqueIdentifier>{8ddd6213-cf57-447a-9220-abff957dae9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\src\header">
+      <UniqueIdentifier>{840a9652-462f-470f-8e88-065da4f93aae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\shader">
+      <UniqueIdentifier>{f57d0221-72c5-4666-99cf-682021211276}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\vkcom\shader\header">
+      <UniqueIdentifier>{9f8b7d52-1eb8-4ae0-86a1-681e69bd790d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\layers\simd">
+      <UniqueIdentifier>{233731cf-3596-4605-917e-0eb92ff46f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\src\int8layers\simd">
+      <UniqueIdentifier>{f91b3e92-b4ea-47a5-9c08-0f870cc26d74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\misc">
+      <UniqueIdentifier>{2292b0ce-8541-4e96-bcc0-b4162f9bca6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\misc\caffe">
+      <UniqueIdentifier>{7d909327-b055-442e-9be9-aa8f3142ac6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\misc\tensorflow">
+      <UniqueIdentifier>{448cf3f6-ed03-47a1-b2c7-82eed44e261f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\misc\tensorflow\header">
+      <UniqueIdentifier>{be314cbc-d760-4b98-af13-0de88d5c731d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\dnn\misc\onnx">
+      <UniqueIdentifier>{600499dd-1c7b-4a10-bf8a-7555f87ad1e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\dnn\opencl_kernels_dnn.cpp">
+      <Filter>src\modules\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\opencv_dnn_pch.cpp">
+      <Filter>src\modules\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\debug_utils.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\dnn.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\graph_simplifier.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\halide_scheduler.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ie_ngraph.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\init.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\model.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\nms.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_halide.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_inf_engine.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_vkcom.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\op_webnn.cpp">
+      <Filter>src\modules\dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_importer.cpp">
+      <Filter>src\modules\dnn\src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_io.cpp">
+      <Filter>src\modules\dnn\src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\caffe\caffe_shrinker.cpp">
+      <Filter>src\modules\dnn\src\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\darknet\darknet_importer.cpp">
+      <Filter>src\modules\dnn\src\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\darknet\darknet_io.cpp">
+      <Filter>src\modules\dnn\src\darknet</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\quantization_utils.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\scale_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\softmax_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\batch_norm_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\convolution_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\elementwise_layers.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\eltwise_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\fully_connected_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\pooling_layer.cpp">
+      <Filter>src\modules\dnn\src\int8layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\recurrent_layers.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\region_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\reorg_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\reshape_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\resize_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\scale_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\shuffle_channel_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\slice_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\softmax_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\split_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\accum_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\arg_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\batch_norm_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\blank_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\concat_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\const_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\convolution_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\correlation_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\crop_and_resize_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\cumsum_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\detection_output_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\elementwise_layers.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\eltwise_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\flatten_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\flow_warp_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\fully_connected_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\lrn_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\max_unpooling_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\mvn_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\normalize_bbox_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\not_implemented_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\padding_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\permute_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\pooling_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\prior_box_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\proposal_layer.cpp">
+      <Filter>src\modules\dnn\src\layers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_conv_spatial.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_inner_product.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_lrn.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_pool.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\ocl4dnn_softmax.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\common.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\ocl4dnn\src\math_functions.cpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\onnx\onnx_graph_simplifier.cpp">
+      <Filter>src\modules\dnn\src\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\onnx\onnx_importer.cpp">
+      <Filter>src\modules\dnn\src\onnx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\tengine4dnn\src\tengine_graph_convolution.cpp">
+      <Filter>src\modules\dnn\src\tengine4dnn\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_graph_simplifier.cpp">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_importer.cpp">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\tensorflow\tf_io.cpp">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\torch\THDiskFile.cpp">
+      <Filter>src\modules\dnn\src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\torch\THFile.cpp">
+      <Filter>src\modules\dnn\src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\torch\THGeneral.cpp">
+      <Filter>src\modules\dnn\src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\torch\torch_importer.cpp">
+      <Filter>src\modules\dnn\src\torch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\vulkan\vk_functions.cpp">
+      <Filter>src\modules\dnn\src\vkcom\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\vulkan\vk_loader.cpp">
+      <Filter>src\modules\dnn\src\vkcom\vulkan</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\buffer.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\context.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\internal.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_base.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_concat.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_conv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_lrn.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_permute.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_pool.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_prior_box.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_relu.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\op_softmax.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\src\tensor.cpp">
+      <Filter>src\modules\dnn\src\vkcom\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\avg_pool_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\concat_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\conv_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\conv48_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\dw_conv_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\lrn_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\max_pool_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\permute_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\prior_box_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\relu_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\vkcom\shader\softmax_spv.cpp">
+      <Filter>src\modules\dnn\src\vkcom\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx512_skx.cpp">
+      <Filter>src\modules\dnn\src\layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx2.cpp">
+      <Filter>src\modules\dnn\src\layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.avx.cpp">
+      <Filter>src\modules\dnn\src\layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\layers\layers_common.rvv.cpp">
+      <Filter>src\modules\dnn\src\layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\layers_common.avx2.cpp">
+      <Filter>src\modules\dnn\src\int8layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\src\int8layers\layers_common.avx512_skx.cpp">
+      <Filter>src\modules\dnn\src\int8layers\simd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\caffe\opencv-caffe.pb.cc">
+      <Filter>src\modules\dnn\misc\caffe</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\attr_value.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\function.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\graph.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\op_def.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\tensor.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\tensor_shape.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\types.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\tensorflow\versions.pb.cc">
+      <Filter>src\modules\dnn\misc\tensorflow</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\dnn\misc\onnx\opencv-onnx.pb.cc">
+      <Filter>src\modules\dnn\misc\onnx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\dnn\opencl_kernels_dnn.hpp">
+      <Filter>src\modules\dnn\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\dnn_common.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\graph_simplifier.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\halide_scheduler.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\ie_ngraph.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\math_utils.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\nms.inl.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\op_cuda.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\op_halide.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\op_inf_engine.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\op_vkcom.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\op_webnn.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\precomp.hpp">
+      <Filter>src\modules\dnn\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\caffe\caffe_io.hpp">
+      <Filter>src\modules\dnn\src\caffe\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\caffe\glog_emulator.hpp">
+      <Filter>src\modules\dnn\src\caffe\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\darknet\darknet_io.hpp">
+      <Filter>src\modules\dnn\src\darknet\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.hpp">
+      <Filter>src\modules\dnn\src\int8layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.simd.hpp">
+      <Filter>src\modules\dnn\src\int8layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.hpp">
+      <Filter>src\modules\dnn\src\layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.simd.hpp">
+      <Filter>src\modules\dnn\src\layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\default_kernel_config.hpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\math_functions.hpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\ocl4dnn.hpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\ocl4dnn\include\common.hpp">
+      <Filter>src\modules\dnn\src\ocl4dnn\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\onnx\onnx_graph_simplifier.hpp">
+      <Filter>src\modules\dnn\src\onnx\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\tengine4dnn\include\tengine_graph_convolution.hpp">
+      <Filter>src\modules\dnn\src\tengine4dnn\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\tensorflow\tf_graph_simplifier.hpp">
+      <Filter>src\modules\dnn\src\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\tensorflow\tf_io.hpp">
+      <Filter>src\modules\dnn\src\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\torch\THFile.h">
+      <Filter>src\modules\dnn\src\torch\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\torch\THFilePrivate.h">
+      <Filter>src\modules\dnn\src\torch\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\torch\THGeneral.h">
+      <Filter>src\modules\dnn\src\torch\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\torch\THDiskFile.h">
+      <Filter>src\modules\dnn\src\torch\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\function_list.inl.hpp">
+      <Filter>src\modules\dnn\src\vkcom\vulkan\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\vk_functions.hpp">
+      <Filter>src\modules\dnn\src\vkcom\vulkan\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\vulkan\vk_loader.hpp">
+      <Filter>src\modules\dnn\src\vkcom\vulkan\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\context.hpp">
+      <Filter>src\modules\dnn\src\vkcom\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\internal.hpp">
+      <Filter>src\modules\dnn\src\vkcom\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\src\common.hpp">
+      <Filter>src\modules\dnn\src\vkcom\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\vkcom\shader\spv_shader.hpp">
+      <Filter>src\modules\dnn\src\vkcom\shader\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\layers\layers_common.simd_declarations.hpp">
+      <Filter>src\modules\dnn\src\layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\src\int8layers\layers_common.simd_declarations.hpp">
+      <Filter>src\modules\dnn\src\int8layers\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\caffe\opencv-caffe.pb.h">
+      <Filter>src\modules\dnn\misc\caffe</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\function.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\graph.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\op_def.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\tensor.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\tensor_shape.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\types.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\versions.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\tensorflow\attr_value.pb.h">
+      <Filter>src\modules\dnn\misc\tensorflow\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\dnn\misc\onnx\opencv-onnx.pb.h">
+      <Filter>src\modules\dnn\misc\onnx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\dnn\src\opencl\conv_spatial_helper.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\detection_output.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\dummy.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\eltwise.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\gemm_buffer.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\gemm_image.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\im2col.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\lrn.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\math.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\matvec_mul.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\mvn.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\ocl4dnn_lrn.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\ocl4dnn_pooling.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\permute.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\pooling.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\prior_box.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\region.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\slice.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\softmax.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\softmax_loss.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\activations.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\batchnorm.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\col2im.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\concat.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\opencl\conv_layer_spatial.cl">
+      <Filter>src\modules\dnn\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\caffe\opencv-caffe.proto">
+      <Filter>src\modules\dnn\src\caffe</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\onnx\opencv-onnx.proto">
+      <Filter>src\modules\dnn\src\onnx\header</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\attr_value.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\function.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\graph.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\op_def.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\tensor.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\tensor_shape.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\types.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+    <None Include="src\modules\dnn\src\tensorflow\versions.proto">
+      <Filter>src\modules\dnn\src\tensorflow</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,2 @@
+cfgmgr32.lib
+runtimeobject.lib

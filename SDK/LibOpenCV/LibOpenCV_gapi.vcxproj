@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\gapi\opencv_gapi_pch.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\garray.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gcall.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gcomputation.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gframe.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\ginfer.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gkernel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gmat.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gnode.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gopaque.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gorigin.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gproto.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\grunarg.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\gscalar.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_core.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_imgproc.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_nnparsers.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_stereo.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_streaming.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\kernels_video.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\media.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\operators.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\render.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\render_ocv.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\rmat.cpp" />
+    <ClCompile Include="src\modules\gapi\src\api\s11n.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\common\gcompoundbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\common\gcompoundkernel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\common\gmetabackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\common\serialization.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpubackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpucore.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpuimgproc.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpukernel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpustereo.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gcpuvideo.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\cpu\gnnparsers.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidbuffer.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.dispatch.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.avx2.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=AVX2;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;CV_CPU_COMPILE_POPCNT=1;CV_CPU_COMPILE_SSE4_2=1;CV_CPU_COMPILE_FP16=1;CV_CPU_COMPILE_FMA3=1;CV_CPU_COMPILE_AVX=1;CV_CPU_COMPILE_AVX2=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.dispatch.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.sse4_1.cpp">
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">CV_CPU_DISPATCH_MODE=SSE4_1;CV_CPU_COMPILE_SSSE3=1;CV_CPU_COMPILE_SSE4_1=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <ClCompile Include="src\modules\gapi\src\backends\ie\bindings_ie.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ie\giebackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ie\giebackend\giewrapper.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclcore.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclimgproc.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\ocl\goclkernel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\onnx\gonnxbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\plaidml\gplaidmlbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\plaidml\gplaidmlcore.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\python\gpythonbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\render\ft_render.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\render\grenderocv.cpp" />
+    <ClCompile Include="src\modules\gapi\src\backends\streaming\gstreamingbackend.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gcompiled.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gcompiler.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gislandmodel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gmodel.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gmodelbuilder.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\gstreaming.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\dump_dot.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\exec.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\helpers.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\intrin.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\islands.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\kernels.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\meta.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\pattern_matching.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\perform_substitution.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\streaming.cpp" />
+    <ClCompile Include="src\modules\gapi\src\compiler\passes\transformations.cpp" />
+    <ClCompile Include="src\modules\gapi\src\executor\gasync.cpp" />
+    <ClCompile Include="src\modules\gapi\src\executor\gexecutor.cpp" />
+    <ClCompile Include="src\modules\gapi\src\executor\gstreamingexecutor.cpp" />
+    <ClCompile Include="src\modules\gapi\src\executor\gtbbexecutor.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamerenv.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamerpipeline.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamersource.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_buffer_utils.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_media_adapter.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_pipeline_facade.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_params.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_params_parser.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\cfg_param_device_selector.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\data_provider_dispatcher.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\data_provider_interface_exception.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\device_selector_interface.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_engine_legacy.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_session.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\engine_session.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\engine\processing_engine_base.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\file_data_provider.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\source.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\source_priv.cpp" />
+    <ClCompile Include="src\modules\gapi\src\streaming\onevpl\utils.cpp" />
+    <ClCompile Include="src\modules\gapi\src\utils\itt.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\gapi\src\api\gnode_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\api\gorigin.hpp" />
+    <ClInclude Include="src\modules\gapi\src\api\gproto_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\api\ocv_mask_creator.hpp" />
+    <ClInclude Include="src\modules\gapi\src\api\render_ocv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\api\render_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\common\gbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\common\gmetabackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\common\serialization.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\cpu\gcpubackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\cpu\gnnparsers.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidbuffer_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.simd.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_func.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidcore_simd_sse41.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.simd.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidimgproc_func.simd_declarations.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\fluid\gfluidutils.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ie\giebackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ie\giebackend\giewrapper.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ie\util.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclcore.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\ocl\goclimgproc.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\onnx\gonnxbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\plaidml\gplaidmlbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\plaidml\plaidml_util.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\render\ft_render.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\render\ft_render_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\streaming\gstreamingbackend.hpp" />
+    <ClInclude Include="src\modules\gapi\src\backends\streaming\gstreamingkernel.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gcompiled_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gcompiler.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gislandmodel.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodel.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodelbuilder.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gmodel_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gobjref.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\gstreaming_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\helpers.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\passes.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\passes\pattern_matching.hpp" />
+    <ClInclude Include="src\modules\gapi\src\compiler\transactions.hpp" />
+    <ClInclude Include="src\modules\gapi\src\executor\conc_queue.hpp" />
+    <ClInclude Include="src\modules\gapi\src\executor\gexecutor.hpp" />
+    <ClInclude Include="src\modules\gapi\src\executor\gstreamingexecutor.hpp" />
+    <ClInclude Include="src\modules\gapi\src\executor\gtbbexecutor.hpp" />
+    <ClInclude Include="src\modules\gapi\src\executor\last_value.hpp" />
+    <ClInclude Include="src\modules\gapi\src\logger.hpp" />
+    <ClInclude Include="src\modules\gapi\src\precomp.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerenv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerpipeline_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamerptr.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamersource_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_buffer_utils.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_media_adapter.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\gstreamer\gstreamer_pipeline_facade.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\cfg_params_parser.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\cfg_param_device_selector.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\data_provider_defines.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\data_provider_dispatcher.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_engine_legacy.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\decode\decode_session.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\engine_session.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\engine\processing_engine_base.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\file_data_provider.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\onevpl_export.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\source_priv.hpp" />
+    <ClInclude Include="src\modules\gapi\src\streaming\onevpl\utils.hpp" />
+    <ClInclude Include="src\modules\gapi\src\utils\itt.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b220074b-5867-452f-aeb9-4a939a64f02c}</ProjectGuid>
+    <RootNamespace>LibOpenCVgapi</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\gapi\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\modules\gapi\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src;.\src\modules;.\src\modules\core\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\imgproc\include;.\src\modules\video\include;.\src\modules\dnn\include;..\LibAde\src\sources\ade\include;.\src\modules\gapi;.\src\modules\gapi\include;.\src\modules\gapi\src;..\LibTBB\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4996;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;..\LibAde\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;Ws2_32.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibOpenCV_calib3dSMTd.lib;LibOpenCV_dnnSMTd.lib;LibOpenCV_flannSMTd.lib;LibOpenCV_features2dSMTd.lib;LibOpenCV_videoSMTd.lib;LibProtobufSMTd.lib;LibAdeSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src\include;.\src;.\src\modules;.\src\modules\core\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\imgproc\include;.\src\modules\video\include;.\src\modules\dnn\include;..\LibAde\src\sources\ade\include;.\src\modules\gapi;.\src\modules\gapi\include;.\src\modules\gapi\src;..\LibTBB\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4996;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibZ\lib64;..\LibProtobuf\lib64;..\LibAde\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;Ws2_32.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibOpenCV_dnnSMT.lib;LibOpenCV_calib3dSMT.lib;LibOpenCV_flannSMT.lib;LibOpenCV_features2dSMT.lib;LibOpenCV_videoSMT.lib;LibProtobufSMT.lib;LibAdeSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

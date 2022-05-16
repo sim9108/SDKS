@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{b8004403-30f0-4014-913c-77d1be6527ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{db60dfa1-a0c6-4ac5-9a87-0a9e3f4d778c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\intel">
+      <UniqueIdentifier>{161a5b39-2794-400f-a7a1-ffa964c370cd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\pngget.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngmem.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngpread.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngread.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrtran.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngrutil.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngset.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngtrans.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwio.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwrite.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwtran.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngwutil.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\png.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pngerror.c">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intel\filter_sse2_intrinsics.c">
+      <Filter>src\intel</Filter>
+    </ClCompile>
+    <ClCompile Include="src\intel\intel_init.c">
+      <Filter>src\intel</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\png.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pngconf.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pngdebug.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pnginfo.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pnglibconf.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pngpriv.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\pngstruct.h">
+      <Filter>src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

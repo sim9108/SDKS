@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f728618e-fc26-419b-aa8b-813f58aa1e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{9cefc45d-4710-4af0-88c2-8f8ab09b0aa8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\header">
+      <UniqueIdentifier>{d714f697-9f67-478e-9a0a-6760cc88b3f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\x86">
+      <UniqueIdentifier>{30c4e919-bea4-4aaa-b08d-54206fb60285}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\x86\asm">
+      <UniqueIdentifier>{519fb4f3-eff7-4056-a636-b7f62a9494a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\encoder">
+      <UniqueIdentifier>{3f3f4ab4-e62c-44c1-aa51-2a7020f255e0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\tables.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\win32thread.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\base.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\cpu.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\osdep.c">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\encoder\api.c">
+      <Filter>src\encoder</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\base.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\osdep.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\tables.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\win32thread.h">
+      <Filter>src\common\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264_config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\x264cli.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\common\x86\cpu-a.asm">
+      <Filter>src\common\x86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\common\x86\x86inc.asm">
+      <Filter>src\common\x86\asm</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+</Project>

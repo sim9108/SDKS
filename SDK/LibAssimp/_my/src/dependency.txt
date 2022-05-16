@@ -1,0 +1,4 @@
+LibZSMT.lib
+LibOpenddlParserSMT.lib
+LibPugixmlSMT.lib
+LibPoly2triSMT.lib

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\lib\openjp2\bio.c" />
+    <ClCompile Include="src\src\lib\openjp2\cio.c" />
+    <ClCompile Include="src\src\lib\openjp2\dwt.c" />
+    <ClCompile Include="src\src\lib\openjp2\event.c" />
+    <ClCompile Include="src\src\lib\openjp2\function_list.c" />
+    <ClCompile Include="src\src\lib\openjp2\ht_dec.c" />
+    <ClCompile Include="src\src\lib\openjp2\image.c" />
+    <ClCompile Include="src\src\lib\openjp2\invert.c" />
+    <ClCompile Include="src\src\lib\openjp2\j2k.c" />
+    <ClCompile Include="src\src\lib\openjp2\jp2.c" />
+    <ClCompile Include="src\src\lib\openjp2\mct.c" />
+    <ClCompile Include="src\src\lib\openjp2\mqc.c" />
+    <ClCompile Include="src\src\lib\openjp2\openjpeg.c" />
+    <ClCompile Include="src\src\lib\openjp2\opj_clock.c" />
+    <ClCompile Include="src\src\lib\openjp2\opj_malloc.c" />
+    <ClCompile Include="src\src\lib\openjp2\pi.c" />
+    <ClCompile Include="src\src\lib\openjp2\sparse_array.c" />
+    <ClCompile Include="src\src\lib\openjp2\t1.c" />
+    <ClCompile Include="src\src\lib\openjp2\t2.c" />
+    <ClCompile Include="src\src\lib\openjp2\tcd.c" />
+    <ClCompile Include="src\src\lib\openjp2\tgt.c" />
+    <ClCompile Include="src\src\lib\openjp2\thread.c" />
+    <ClCompile Include="src\src\lib\openjpip\boxheader_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\box_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\byte_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\cachemodel_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\cache_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\channel_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\codestream_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\dec_clientmsg_handler.c" />
+    <ClCompile Include="src\src\lib\openjpip\faixbox_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\ihdrbox_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\imgreg_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\imgsock_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\index_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\j2kheader_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\jp2k_decoder.c" />
+    <ClCompile Include="src\src\lib\openjpip\jp2k_encoder.c" />
+    <ClCompile Include="src\src\lib\openjpip\jpipstream_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\jpip_parser.c" />
+    <ClCompile Include="src\src\lib\openjpip\manfbox_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\marker_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\metadata_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\mhixbox_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\msgqueue_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\openjpip.c" />
+    <ClCompile Include="src\src\lib\openjpip\placeholder_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\query_parser.c" />
+    <ClCompile Include="src\src\lib\openjpip\session_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\sock_manager.c" />
+    <ClCompile Include="src\src\lib\openjpip\target_manager.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\lib\openjp2\opj_apps_config.h" />
+    <ClInclude Include="src\src\lib\openjp2\opj_config.h" />
+    <ClInclude Include="src\src\lib\openjp2\opj_config_private.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6c27f81f-c909-4fd8-89c3-b2a09b589ef2}</ProjectGuid>
+    <RootNamespace>LibOpenJPEG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\src\lib\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4477;4996;4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>OPJ_STATIC;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\src\lib\openjp2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4477;4996;4244;4267</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

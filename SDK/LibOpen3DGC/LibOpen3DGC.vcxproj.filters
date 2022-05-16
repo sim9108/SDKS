@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{84f25263-a1f8-47c2-9f73-9fcc5fe90433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{66ac2f9a-bef1-43c1-b263-fd29c50e20a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_common_lib">
+      <UniqueIdentifier>{8c555026-401c-4d7d-ad15-75b34c0f1b6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_common_lib\src">
+      <UniqueIdentifier>{dd225016-cf8b-4f1b-a699-eac4a840e2da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_decode_lib">
+      <UniqueIdentifier>{0a40be83-bad4-48d0-9c54-1fff532e7e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_decode_lib\src">
+      <UniqueIdentifier>{2ad0bb86-188a-43b4-8637-3218eb83f064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_encode_lib">
+      <UniqueIdentifier>{71a9e1f3-395a-42e3-b568-789fbe9d31d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\o3dgc_encode_lib\src">
+      <UniqueIdentifier>{97678ff6-e10f-4d52-a1c3-ab6b3633f788}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\o3dgc_common_lib\src\o3dgcArithmeticCodec.cpp">
+      <Filter>src\src\o3dgc_common_lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\o3dgc_common_lib\src\o3dgcTools.cpp">
+      <Filter>src\src\o3dgc_common_lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\o3dgc_common_lib\src\o3dgcTriangleFans.cpp">
+      <Filter>src\src\o3dgc_common_lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\o3dgc_decode_lib\src\o3dgcDynamicVectorDecoder.cpp">
+      <Filter>src\src\o3dgc_decode_lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\src\o3dgc_encode_lib\src\o3dgcDynamicVectorEncoder.cpp">
+      <Filter>src\src\o3dgc_encode_lib\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

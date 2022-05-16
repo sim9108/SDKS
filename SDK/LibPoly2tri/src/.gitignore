@@ -1,0 +1,16 @@
+# Mac
+.DS_Store
+
+# Waf
+.lock-waf*
+.waf-*
+.waf3-*/
+waf3-*/
+build/
+
+# Visual Studio Code
+/.vscode/*cache*
+/.vscode/ipch/
+/.ccls-cache/
+/compile_commands.json
+/.cache/

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\GL\glut.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\lib\glut\glut_8x13.c" />
+    <ClCompile Include="src\lib\glut\glut_9x15.c" />
+    <ClCompile Include="src\lib\glut\glut_bitmap.c" />
+    <ClCompile Include="src\lib\glut\glut_bwidth.c" />
+    <ClCompile Include="src\lib\glut\glut_cindex.c" />
+    <ClCompile Include="src\lib\glut\glut_cmap.c" />
+    <ClCompile Include="src\lib\glut\glut_cursor.c" />
+    <ClCompile Include="src\lib\glut\glut_dials.c" />
+    <ClCompile Include="src\lib\glut\glut_dstr.c" />
+    <ClCompile Include="src\lib\glut\glut_event.c" />
+    <ClCompile Include="src\lib\glut\glut_ext.c" />
+    <ClCompile Include="src\lib\glut\glut_fbc.c" />
+    <ClCompile Include="src\lib\glut\glut_fullscrn.c" />
+    <ClCompile Include="src\lib\glut\glut_gamemode.c" />
+    <ClCompile Include="src\lib\glut\glut_get.c" />
+    <ClCompile Include="src\lib\glut\glut_glxext.c" />
+    <ClCompile Include="src\lib\glut\glut_hel10.c" />
+    <ClCompile Include="src\lib\glut\glut_hel12.c" />
+    <ClCompile Include="src\lib\glut\glut_hel18.c" />
+    <ClCompile Include="src\lib\glut\glut_init.c" />
+    <ClCompile Include="src\lib\glut\glut_input.c" />
+    <ClCompile Include="src\lib\glut\glut_joy.c" />
+    <ClCompile Include="src\lib\glut\glut_key.c" />
+    <ClCompile Include="src\lib\glut\glut_keyctrl.c" />
+    <ClCompile Include="src\lib\glut\glut_keyup.c" />
+    <ClCompile Include="src\lib\glut\glut_mesa.c" />
+    <ClCompile Include="src\lib\glut\glut_modifier.c" />
+    <ClCompile Include="src\lib\glut\glut_mroman.c" />
+    <ClCompile Include="src\lib\glut\glut_overlay.c" />
+    <ClCompile Include="src\lib\glut\glut_roman.c" />
+    <ClCompile Include="src\lib\glut\glut_shapes.c" />
+    <ClCompile Include="src\lib\glut\glut_space.c" />
+    <ClCompile Include="src\lib\glut\glut_stroke.c" />
+    <ClCompile Include="src\lib\glut\glut_swap.c" />
+    <ClCompile Include="src\lib\glut\glut_swidth.c" />
+    <ClCompile Include="src\lib\glut\glut_tablet.c" />
+    <ClCompile Include="src\lib\glut\glut_teapot.c" />
+    <ClCompile Include="src\lib\glut\glut_tr10.c" />
+    <ClCompile Include="src\lib\glut\glut_tr24.c" />
+    <ClCompile Include="src\lib\glut\glut_util.c" />
+    <ClCompile Include="src\lib\glut\glut_vidresize.c" />
+    <ClCompile Include="src\lib\glut\glut_warp.c" />
+    <ClCompile Include="src\lib\glut\glut_wglext.c" />
+    <ClCompile Include="src\lib\glut\glut_win.c" />
+    <ClCompile Include="src\lib\glut\glut_winmisc.c" />
+    <ClCompile Include="src\lib\glut\win32_glx.c" />
+    <ClCompile Include="src\lib\glut\win32_menu.c" />
+    <ClCompile Include="src\lib\glut\win32_util.c" />
+    <ClCompile Include="src\lib\glut\win32_winproc.c" />
+    <ClCompile Include="src\lib\glut\win32_x11.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b237d5a1-53a5-4319-828f-2e513bfcedb8}</ProjectGuid>
+    <RootNamespace>LibGlut</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(Project)temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)SMT</TargetName>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(Project)temp\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Opengl32.lib;Winmm.lib;Glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

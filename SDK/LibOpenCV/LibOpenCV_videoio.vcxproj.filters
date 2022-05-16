@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{ec8ed130-e1b1-4c89-8002-146342d99da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{f47ea5a6-2755-4399-9b63-f8c12d819004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videoio">
+      <UniqueIdentifier>{11318dba-a0c7-4dec-a8e4-30582bd03527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videoio\src">
+      <UniqueIdentifier>{8ad7387f-e6d3-4693-a1c9-918c6fb3de1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\videoio\src\header">
+      <UniqueIdentifier>{555becd3-c9c2-4bbd-887b-7db0612b3eb1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\videoio\opencv_videoio_pch.cpp">
+      <Filter>src\modules\videoio</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\container_avi.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\videoio_c.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\videoio_registry.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\backend_plugin.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\backend_static.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap_dshow.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap_images.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap_mjpeg_decoder.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap_mjpeg_encoder.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\videoio\src\cap_msmf.cpp">
+      <Filter>src\modules\videoio\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\videoio\src\backend.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\backend_plugin_legacy.impl.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_dshow.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_ffmpeg_hw.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_ffmpeg_impl.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_ffmpeg_legacy_api.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_interface.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_librealsense.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_mfx_common.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_mfx_reader.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_mfx_writer.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_msmf.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_winrt_bridge.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_winrt_capture.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\cap_winrt_video.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\ffmpeg_codecs.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\plugin_api.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\plugin_capture_api.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\plugin_writer_api.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\precomp.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\videoio_registry.hpp">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\videoio\src\wrl.h">
+      <Filter>src\modules\videoio\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

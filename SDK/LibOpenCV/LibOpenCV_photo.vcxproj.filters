@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fc2711aa-f8a0-4b46-bf16-728c878a5856}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{eef0d132-d24d-4250-9c4a-dbd687b703a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\photo">
+      <UniqueIdentifier>{c3af1659-6e55-461c-a31a-d9f23888f847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\photo\src">
+      <UniqueIdentifier>{eb5ece0f-f928-4102-b6aa-0b4ae334607f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\photo\src\header">
+      <UniqueIdentifier>{5ab042f8-42ef-472a-974e-1495f708df80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\photo\src\opencl">
+      <UniqueIdentifier>{f7bc7769-6f21-4ef0-a20a-fc6cc0dbbeb2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\photo\opencl_kernels_photo.cpp">
+      <Filter>src\modules\photo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\opencv_photo_pch.cpp">
+      <Filter>src\modules\photo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\align.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\calibrate.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\contrast_preserve.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\denoise_tvl1.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\denoising.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\denoising.cuda.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\hdr_common.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\inpaint.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\merge.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\npr.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\seamless_cloning.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\seamless_cloning_impl.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\photo\src\tonemap.cpp">
+      <Filter>src\modules\photo\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\photo\opencl_kernels_photo.hpp">
+      <Filter>src\modules\photo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\fast_nlmeans_denoising_invoker_commons.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\fast_nlmeans_denoising_opencl.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\fast_nlmeans_multi_denoising_invoker.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\hdr_common.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\npr.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\precomp.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\seamless_cloning.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\arrays.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\contrast_preserve.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\photo\src\fast_nlmeans_denoising_invoker.hpp">
+      <Filter>src\modules\photo\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\photo\src\opencl\nlmeans.cl">
+      <Filter>src\modules\photo\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

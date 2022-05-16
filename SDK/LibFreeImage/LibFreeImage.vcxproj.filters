@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f90acd79-c3b3-45a0-84e8-43d14bacbc9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source">
+      <UniqueIdentifier>{11fc83a3-623e-4dca-9368-fa03b542621f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImage">
+      <UniqueIdentifier>{231f5bc4-dfdc-4422-ab17-d9f045c011d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImage\Conversion">
+      <UniqueIdentifier>{2abe1520-f13f-4073-b8ff-7585918c682f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImage\MultiPaging">
+      <UniqueIdentifier>{47617da1-beb1-47b4-8e9b-8cd1da062c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImage\Plugins">
+      <UniqueIdentifier>{3f66a8f1-df2d-46e5-aea7-104fe0242969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImage\Quantizers">
+      <UniqueIdentifier>{4341e274-d2b2-47b9-ace6-9d5a8c33e9b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\Metadata">
+      <UniqueIdentifier>{c364536b-a507-49b4-b781-51ac49163aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\Metadata\include">
+      <UniqueIdentifier>{e7fa525d-13fa-440c-9e49-76055e67c41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImageToolkit">
+      <UniqueIdentifier>{a9f992b7-a748-4070-9fd1-fd26555d7c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\source\FreeImageToolkit\include">
+      <UniqueIdentifier>{a232513d-fa28-4e88-a1b1-9de6190389a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wrapper">
+      <UniqueIdentifier>{f2561b7c-9da0-4a17-9a3c-9ae85f3db189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wrapper\FreeImagePlus">
+      <UniqueIdentifier>{ad18b5c9-be68-4e83-ad28-2243a4c0563d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wrapper\FreeImagePlus\src">
+      <UniqueIdentifier>{e682f207-601d-4cb1-9ee5-0183665afc48}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Source\FreeImage\tmoDrago03.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\tmoFattal02.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\tmoReinhard05.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ToneMapping.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion4.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion8.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion16_555.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion16_565.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion24.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Conversion32.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionFloat.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionRGB16.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBA16.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBAF.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionRGBF.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionType.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ConversionUINT16.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Halftoning.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\tmoColorConvert.cpp">
+      <Filter>src\source\FreeImage\Conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\Exif.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\FIRational.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\FreeImageTag.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\IPTC.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\TagConversion.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\TagLib.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\Metadata\XTIFF.cpp">
+      <Filter>src\source\Metadata</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ZLibInterface.cpp">
+      <Filter>src\source\FreeImage\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\CacheFile.cpp">
+      <Filter>src\source\FreeImage\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\MultiPage.cpp">
+      <Filter>src\source\FreeImage\MultiPaging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPFM.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPICT.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPNG.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPNM.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPSD.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginRAS.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginRAW.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginSGI.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginTARGA.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginTIFF.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginWBMP.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginWebP.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginXBM.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginXPM.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PSDParser.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\TIFFLogLuv.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\J2KHelper.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\MNGHelper.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\Plugin.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginBMP.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginCUT.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginDDS.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginEXR.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginG3.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginGIF.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginHDR.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginICO.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginIFF.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginJ2K.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginJNG.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginJP2.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginJPEG.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginJXR.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginKOALA.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginMNG.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPCD.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PluginPCX.cpp">
+      <Filter>src\source\FreeImage\Plugins</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\WuQuantizer.cpp">
+      <Filter>src\source\FreeImage\Quantizers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\LFPQuantizer.cpp">
+      <Filter>src\source\FreeImage\Quantizers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\NNQuantizer.cpp">
+      <Filter>src\source\FreeImage\Quantizers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\PixelAccess.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\BitmapAccess.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\ColorLookup.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\FreeImage.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\FreeImageIO.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\GetType.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\MemoryIO.cpp">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Background.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\BSplineRotate.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Channels.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\ClassicRotate.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Colors.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\CopyPaste.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Display.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Flip.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\JPEGTransform.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\MultigridPoissonSolver.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Rescale.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImageToolkit\Resize.cpp">
+      <Filter>src\source\FreeImageToolkit</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipImage.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMemoryIO.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMetadataFind.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipMultiPage.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipTag.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\fipWinImage.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Wrapper\FreeImagePlus\src\FreeImagePlus.cpp">
+      <Filter>src\wrapper\FreeImagePlus\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Source\FreeImage\FreeImageC.c">
+      <Filter>src\source\FreeImage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Source\Metadata\FIRational.h">
+      <Filter>src\source\Metadata\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\Metadata\FreeImageTag.h">
+      <Filter>src\source\Metadata\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\FreeImageToolkit\Filters.h">
+      <Filter>src\source\FreeImageToolkit\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Source\FreeImageToolkit\Resize.h">
+      <Filter>src\source\FreeImageToolkit\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

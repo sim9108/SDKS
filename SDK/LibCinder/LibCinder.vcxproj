@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\AntTweakBar\LoadOGL.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\LoadOGLCore.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwBar.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwColors.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwDirect3D11.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwFonts.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwMgr.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwOpenGL.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwOpenGLCore.cpp" />
+    <ClCompile Include="src\src\AntTweakBar\TwPrecomp.cpp" />
+    <ClCompile Include="src\src\cinder\app\AppBase.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\AppScreenSaver.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\KeyEvent.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMsw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMswBasic.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppImplMswScreenSaver.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\AppMsw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\PlatformMsw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImpl2dGdi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImplGlAngle.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\msw\RendererImplGlMsw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Platform.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Renderer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\RendererGl.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\app\Window.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)app\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)app\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Area.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\ChannelRouterNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Context.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\DelayNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Device.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Biquad.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Converter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\ConverterR8brain.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Dsp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\Fft.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\dsp\ooura\fftsg.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\FileOggVorbis.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\FilterNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\GenNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\InputNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\MonitorNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\ContextWasapi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\DeviceManagerWasapi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\FileMediaFoundation.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\msw\MswUtil.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Node.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\NodeMath.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\OutputNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\PanNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Param.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\SamplePlayerNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\SampleRecorderNode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Source.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Target.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Utilities.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\Voice.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\audio\WaveTable.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)auido\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BandedMatrix.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Base64.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BSpline.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\BSplineFit.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Buffer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Camera.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CameraUi.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Capture.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CaptureImplDirectShow.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Channel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderAssert.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderImGui.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\CinderMath.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Clipboard.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Color.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\DataSource.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\DataTarget.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Display.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Exception.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Filesystem.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\FileWatcher.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Font.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Frustum.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\GeomIo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Batch.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\BufferObj.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\BufferTexture.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\ConstantConversions.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Context.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\draw.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Environment.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\EnvironmentCore.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\EnvironmentEs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Fbo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\GlslProg.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\nv\Multicast.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Pbo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Query.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Sampler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\scoped.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Shader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\ShaderPreprocessor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Sync.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Texture.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TextureFont.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TextureFormatParsers.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\TransformFeedbackObj.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Ubo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Vao.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplCore.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplEs.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VaoImplSoftware.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\Vbo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\VboMesh.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\gl\wrapper.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)gl\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageFileTinyExr.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageIo.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileRadiance.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileStbImage.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageSourceFileWic.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageTargetFileStbImage.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ImageTargetFileWic.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Blend.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Blur.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Checkerboard.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\EdgeDetect.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Fill.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Flip.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Grayscale.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Hdr.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Premultiply.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Resize.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Threshold.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\ip\Trim.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ip\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Json.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Log.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Matrix.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\MediaTime.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\msw\CinderMsw.cpp" />
+    <ClCompile Include="src\src\cinder\msw\CinderMswGdiPlus.cpp" />
+    <ClCompile Include="src\src\cinder\msw\StackWalker.cpp" />
+    <ClCompile Include="src\src\cinder\ObjLoader.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\params\Params.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)params\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)params\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Path2d.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Perlin.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Plane.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\PolyLine.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Rand.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Ray.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Rect.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Serial.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Shape2d.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Signals.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Sphere.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Stream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Surface.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\svg\Svg.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)svg\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)svg\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\System.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Text.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Timeline.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\TimelineItem.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Timer.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Triangulate.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\TriMesh.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Tween.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Unicode.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Url.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\UrlImplWinInet.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Utilities.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\cinder\Xml.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)ccore\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\src\glad\glad.c" />
+    <ClCompile Include="src\src\glad\glad_wgl.c" />
+    <ClCompile Include="src\src\imgui\imgui.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_demo.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_draw.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_freetype.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_stdlib.cpp" />
+    <ClCompile Include="src\src\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\src\jsoncpp\jsoncpp.cpp" />
+    <ClCompile Include="src\src\linebreak\linebreak.c" />
+    <ClCompile Include="src\src\linebreak\linebreakdata.c" />
+    <ClCompile Include="src\src\linebreak\linebreakdef.c" />
+    <ClCompile Include="src\src\r8brain\r8bbase.cpp" />
+    <ClCompile Include="src\src\tinyexr\tinyexr.cc" />
+    <ClCompile Include="src\src\videoInput\videoInput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\cinder\Arcball.h" />
+    <ClInclude Include="src\include\cinder\Area.h" />
+    <ClInclude Include="src\include\cinder\AxisAlignedBox.h" />
+    <ClInclude Include="src\include\cinder\BandedMatrix.h" />
+    <ClInclude Include="src\include\cinder\Base64.h" />
+    <ClInclude Include="src\include\cinder\Breakpoint.h" />
+    <ClInclude Include="src\include\cinder\BSpline.h" />
+    <ClInclude Include="src\include\cinder\BSplineFit.h" />
+    <ClInclude Include="src\include\cinder\Buffer.h" />
+    <ClInclude Include="src\include\cinder\Camera.h" />
+    <ClInclude Include="src\include\cinder\CameraUi.h" />
+    <ClInclude Include="src\include\cinder\Capture.h" />
+    <ClInclude Include="src\include\cinder\CaptureImplAvFoundation.h" />
+    <ClInclude Include="src\include\cinder\CaptureImplCocoaDummy.h" />
+    <ClInclude Include="src\include\cinder\CaptureImplDirectShow.h" />
+    <ClInclude Include="src\include\cinder\CaptureImplJni.h" />
+    <ClInclude Include="src\include\cinder\Channel.h" />
+    <ClInclude Include="src\include\cinder\ChanTraits.h" />
+    <ClInclude Include="src\include\cinder\Cinder.h" />
+    <ClInclude Include="src\include\cinder\CinderAssert.h" />
+    <ClInclude Include="src\include\cinder\CinderFwd.h" />
+    <ClInclude Include="src\include\cinder\CinderGlm.h" />
+    <ClInclude Include="src\include\cinder\CinderImGui.h" />
+    <ClInclude Include="src\include\cinder\CinderImGuiConfig.h" />
+    <ClInclude Include="src\include\cinder\CinderMath.h" />
+    <ClInclude Include="src\include\cinder\CinderResources.h" />
+    <ClInclude Include="src\include\cinder\Clipboard.h" />
+    <ClInclude Include="src\include\cinder\Color.h" />
+    <ClInclude Include="src\include\cinder\ConcurrentCircularBuffer.h" />
+    <ClInclude Include="src\include\cinder\CurrentFunction.h" />
+    <ClInclude Include="src\include\cinder\DataSource.h" />
+    <ClInclude Include="src\include\cinder\DataTarget.h" />
+    <ClInclude Include="src\include\cinder\Display.h" />
+    <ClInclude Include="src\include\cinder\Easing.h" />
+    <ClInclude Include="src\include\cinder\Exception.h" />
+    <ClInclude Include="src\include\cinder\Export.h" />
+    <ClInclude Include="src\include\cinder\Filesystem.h" />
+    <ClInclude Include="src\include\cinder\FileWatcher.h" />
+    <ClInclude Include="src\include\cinder\Filter.h" />
+    <ClInclude Include="src\include\cinder\Font.h" />
+    <ClInclude Include="src\include\cinder\Frustum.h" />
+    <ClInclude Include="src\include\cinder\Function.h" />
+    <ClInclude Include="src\include\cinder\GeomIo.h" />
+    <ClInclude Include="src\include\cinder\ImageFileTinyExr.h" />
+    <ClInclude Include="src\include\cinder\ImageIo.h" />
+    <ClInclude Include="src\include\cinder\ImageSourceFileQuartz.h" />
+    <ClInclude Include="src\include\cinder\ImageSourceFileRadiance.h" />
+    <ClInclude Include="src\include\cinder\ImageSourceFileStbImage.h" />
+    <ClInclude Include="src\include\cinder\ImageSourceFileWic.h" />
+    <ClInclude Include="src\include\cinder\ImageSourcePng.h" />
+    <ClInclude Include="src\include\cinder\ImageTargetFileQuartz.h" />
+    <ClInclude Include="src\include\cinder\ImageTargetFileStbImage.h" />
+    <ClInclude Include="src\include\cinder\ImageTargetFileWic.h" />
+    <ClInclude Include="src\include\cinder\Json.h" />
+    <ClInclude Include="src\include\cinder\KdTree.h" />
+    <ClInclude Include="src\include\cinder\Log.h" />
+    <ClInclude Include="src\include\cinder\Matrix.h" />
+    <ClInclude Include="src\include\cinder\Matrix22.h" />
+    <ClInclude Include="src\include\cinder\Matrix33.h" />
+    <ClInclude Include="src\include\cinder\Matrix44.h" />
+    <ClInclude Include="src\include\cinder\MediaTime.h" />
+    <ClInclude Include="src\include\cinder\msw\CinderMsw.h" />
+    <ClInclude Include="src\include\cinder\msw\CinderMswGdiPlus.h" />
+    <ClInclude Include="src\include\cinder\msw\CinderWindowsFwd.h" />
+    <ClInclude Include="src\include\cinder\msw\OutputDebugStringStream.h" />
+    <ClInclude Include="src\include\cinder\msw\StackWalker.h" />
+    <ClInclude Include="src\include\cinder\Noncopyable.h" />
+    <ClInclude Include="src\include\cinder\ObjLoader.h" />
+    <ClInclude Include="src\include\cinder\Path2d.h" />
+    <ClInclude Include="src\include\cinder\Perlin.h" />
+    <ClInclude Include="src\include\cinder\Plane.h" />
+    <ClInclude Include="src\include\cinder\PolyLine.h" />
+    <ClInclude Include="src\include\cinder\Quaternion.h" />
+    <ClInclude Include="src\include\cinder\Rand.h" />
+    <ClInclude Include="src\include\cinder\Ray.h" />
+    <ClInclude Include="src\include\cinder\Rect.h" />
+    <ClInclude Include="src\include\cinder\Serial.h" />
+    <ClInclude Include="src\include\cinder\Shape2d.h" />
+    <ClInclude Include="src\include\cinder\Signals.h" />
+    <ClInclude Include="src\include\cinder\Sphere.h" />
+    <ClInclude Include="src\include\cinder\Stream.h" />
+    <ClInclude Include="src\include\cinder\Surface.h" />
+    <ClInclude Include="src\include\cinder\System.h" />
+    <ClInclude Include="src\include\cinder\Text.h" />
+    <ClInclude Include="src\include\cinder\Thread.h" />
+    <ClInclude Include="src\include\cinder\Timeline.h" />
+    <ClInclude Include="src\include\cinder\TimelineItem.h" />
+    <ClInclude Include="src\include\cinder\Timer.h" />
+    <ClInclude Include="src\include\cinder\Triangulate.h" />
+    <ClInclude Include="src\include\cinder\TriMesh.h" />
+    <ClInclude Include="src\include\cinder\Tween.h" />
+    <ClInclude Include="src\include\cinder\Unicode.h" />
+    <ClInclude Include="src\include\cinder\Url.h" />
+    <ClInclude Include="src\include\cinder\UrlImplCocoa.h" />
+    <ClInclude Include="src\include\cinder\UrlImplCurl.h" />
+    <ClInclude Include="src\include\cinder\UrlImplJni.h" />
+    <ClInclude Include="src\include\cinder\UrlImplNull.h" />
+    <ClInclude Include="src\include\cinder\UrlImplWinInet.h" />
+    <ClInclude Include="src\include\cinder\Utilities.h" />
+    <ClInclude Include="src\include\cinder\Vector.h" />
+    <ClInclude Include="src\include\cinder\Xml.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{ede87224-8eff-42c1-b25e-59b7a06690fb}</ProjectGuid>
+    <RootNamespace>LibCinder</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibCinder\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibCinder\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;.\src\include\imgui;.\src\src\AntTweakBar;.\src\include\tinyexr;.\src\src\linebreak;.\src\src\r8brain;..\LibOggvorbis\src\vorbis\include;..\LibOggvorbis\src\ogg\include;..\LibZ\src;..\LibFreetype\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4244;4996;4005;4267;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibFreeType\lib64;..\LibOggvorbis\lib64;..\LibFreetype\lib64;..\LibZ\lib64;..\LibTess2Glut\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>scrnsavw.lib;Comctl32.lib;strmiids.lib;Opengl32.lib;Shlwapi.lib;LibFreeTypeSMTd.lib;LibOggvorbisSMTd.lib;LibFreetypeSMTd.lib;LibZSMTd.lib;LibTess2GlutSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;NOMINMAX;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;.\src\include\imgui;.\src\src\AntTweakBar;.\src\include\tinyexr;.\src\src\linebreak;.\src\src\r8brain;..\LibOggvorbis\src\vorbis\include;..\LibOggvorbis\src\ogg\include;..\LibZ\src;..\LibFreetype\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4244;4996;4005;4267;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibFreeType\lib64;..\LibOggvorbis\lib64;..\LibFreetype\lib64;..\LibZ\lib64;..\LibTess2Glut\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>scrnsavw.lib;Comctl32.lib;strmiids.lib;Opengl32.lib;Shlwapi.lib;LibFreeTypeSMT.lib;LibOggvorbisSMT.lib;LibFreetypeSMT.lib;LibZSMT.lib;LibTess2GlutSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

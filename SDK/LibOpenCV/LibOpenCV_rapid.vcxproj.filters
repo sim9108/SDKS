@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{f1ce3dc3-5fcd-4574-9bb2-128c703a8a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{65de23df-940f-4455-8f37-21161c48b0db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\rapid">
+      <UniqueIdentifier>{80d33e26-e1e0-455b-ae72-19ca596f61b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\rapid\src">
+      <UniqueIdentifier>{9500c2c1-e117-4f70-b3f2-54e9d0581936}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\rapid\src\precomp.hpp">
+      <Filter>src\modules\rapid\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\rapid\src\rapid.cpp">
+      <Filter>src\modules\rapid\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\rapid\src\histogram.cpp">
+      <Filter>src\modules\rapid\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

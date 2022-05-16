@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPugixml", "LibPugixml.vcxproj", "{38B7FFB6-96CB-4B98-9EE7-89E5715EDBAD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug_SMT|x64 = Debug_SMT|x64
+		Release_SMT|x64 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38B7FFB6-96CB-4B98-9EE7-89E5715EDBAD}.Debug_SMT|x64.ActiveCfg = Debug_SMT|x64
+		{38B7FFB6-96CB-4B98-9EE7-89E5715EDBAD}.Debug_SMT|x64.Build.0 = Debug_SMT|x64
+		{38B7FFB6-96CB-4B98-9EE7-89E5715EDBAD}.Release_SMT|x64.ActiveCfg = Release_SMT|x64
+		{38B7FFB6-96CB-4B98-9EE7-89E5715EDBAD}.Release_SMT|x64.Build.0 = Release_SMT|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8B565B44-B10D-40AE-BDE0-8DF34DA6DC09}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{2b1ace98-40ce-4c8b-b086-597c7c267427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{a1116b39-fdc1-4243-ad4c-76efa1b8f3ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\highgui">
+      <UniqueIdentifier>{866261b3-7f8c-4ebe-99ed-91c8852cf2d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\highgui\src">
+      <UniqueIdentifier>{f22e32d9-8ff5-428c-ba84-ca70dfe539ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\highgui\opencv_highgui_config.hpp">
+      <Filter>src\modules\highgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\highgui\opencv_highgui_pch.cpp">
+      <Filter>src\modules\highgui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\highgui\src\backend.cpp">
+      <Filter>src\modules\highgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\highgui\src\roiSelector.cpp">
+      <Filter>src\modules\highgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\highgui\src\window.cpp">
+      <Filter>src\modules\highgui\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\highgui\src\window_w32.cpp">
+      <Filter>src\modules\highgui\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

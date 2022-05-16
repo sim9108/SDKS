@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8be974dc-b220-45c1-b224-c746356b9557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{82fa59cb-56c3-4513-bb7e-0cbb2b3dc3ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs">
+      <UniqueIdentifier>{a6cfb8ff-a0aa-434c-88d2-e26366d2b641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs\src">
+      <UniqueIdentifier>{0158c762-f5fb-422c-b3a7-aac44530576a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs\src\magnitude">
+      <UniqueIdentifier>{95cd9b8f-d4df-4dd5-8ac0-9b3df0393666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs\src\merge">
+      <UniqueIdentifier>{b18cedce-79eb-46b6-9d54-47aaf5238913}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs\src\or_utils">
+      <UniqueIdentifier>{44ebe0ce-5312-467b-b439-26a7db12ab4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\hfs\src\slic">
+      <UniqueIdentifier>{a4509fa7-ee7b-441e-8e00-162808107293}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\hfs\opencv_hfs_pch.cpp">
+      <Filter>src\modules\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\hfs.cpp">
+      <Filter>src\modules\hfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\hfs_core.cpp">
+      <Filter>src\modules\hfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\magnitude\magnitude.cpp">
+      <Filter>src\modules\hfs\src\magnitude</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\merge\merge.cpp">
+      <Filter>src\modules\hfs\src\merge</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\slic\slic.cpp">
+      <Filter>src\modules\hfs\src\slic</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\hfs\src\slic\gslic_engine.cpp">
+      <Filter>src\modules\hfs\src\slic</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\hfs\src\hfs_core.hpp">
+      <Filter>src\modules\hfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\precomp.hpp">
+      <Filter>src\modules\hfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\magnitude\magnitude.hpp">
+      <Filter>src\modules\hfs\src\magnitude</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\merge\merge.hpp">
+      <Filter>src\modules\hfs\src\merge</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\or_utils\or_types.hpp">
+      <Filter>src\modules\hfs\src\or_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\or_utils\or_vector.hpp">
+      <Filter>src\modules\hfs\src\or_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\or_utils\or_image.hpp">
+      <Filter>src\modules\hfs\src\or_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\or_utils\or_memory_block.hpp">
+      <Filter>src\modules\hfs\src\or_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\hfs\src\slic\slic.hpp">
+      <Filter>src\modules\hfs\src\slic</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

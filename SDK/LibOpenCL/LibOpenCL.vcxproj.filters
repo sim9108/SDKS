@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{7da4e4f4-fffd-4ac5-92a6-0d181bab37b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-CLHPP">
+      <UniqueIdentifier>{fac88570-49f7-473b-8d37-1490d9636eab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-CLHPP\include">
+      <UniqueIdentifier>{b73f2e44-45a6-4c70-a27b-c0208255cc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-CLHPP\include\CL">
+      <UniqueIdentifier>{8395e063-d13f-4cc0-ac37-97f025adaac4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-Headers">
+      <UniqueIdentifier>{50e91618-05b4-467f-a125-a3c428952733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-Headers\CL">
+      <UniqueIdentifier>{62600154-2c1f-4e7e-8baf-38d0ead5f323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-ICD-Loader">
+      <UniqueIdentifier>{aeff4df4-e8fb-440e-a685-76e6e57b422d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-ICD-Loader\loader">
+      <UniqueIdentifier>{435095e8-9983-4d35-97dd-2c0c69f134ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-ICD-Loader\loader\header">
+      <UniqueIdentifier>{77d300f5-87bb-4f3c-bccf-e1aee8ab452d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\OpenCL-ICD-Loader\loader\windows">
+      <UniqueIdentifier>{70995bd6-6a9f-4e5f-b425-80b2c7392145}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\OpenCL-CLHPP\include\CL\cl2.hpp">
+      <Filter>src\OpenCL-CLHPP\include\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-CLHPP\include\CL\opencl.hpp">
+      <Filter>src\OpenCL-CLHPP\include\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_dx9_media_sharing_intel.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_egl.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_ext.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_ext_intel.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_gl.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_gl_ext.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_half.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_icd.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_layer.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_platform.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_va_api_media_sharing_intel.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_version.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\opencl.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_d3d10.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_d3d11.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_dx9_media_sharing.h">
+      <Filter>src\OpenCL-Headers\CL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-ICD-Loader\icd_cmake_config.h">
+      <Filter>src\OpenCL-ICD-Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd.h">
+      <Filter>src\OpenCL-ICD-Loader\loader\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_dispatch.h">
+      <Filter>src\OpenCL-ICD-Loader\loader\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_envvars.h">
+      <Filter>src\OpenCL-ICD-Loader\loader\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_platform.h">
+      <Filter>src\OpenCL-ICD-Loader\loader\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd_dispatch.c">
+      <Filter>src\OpenCL-ICD-Loader\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd_dispatch_generated.c">
+      <Filter>src\OpenCL-ICD-Loader\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd.c">
+      <Filter>src\OpenCL-ICD-Loader\loader</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows.c">
+      <Filter>src\OpenCL-ICD-Loader\loader\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_dxgk.c">
+      <Filter>src\OpenCL-ICD-Loader\loader\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_envvars.c">
+      <Filter>src\OpenCL-ICD-Loader\loader\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_hkr.c">
+      <Filter>src\OpenCL-ICD-Loader\loader\windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_apppackage.cpp">
+      <Filter>src\OpenCL-ICD-Loader\loader\windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,1402 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d9c25238-74cf-46f7-8d60-4ad3d1be83d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavfilter">
+      <UniqueIdentifier>{7874edeb-bd44-4d53-a831-391ae44996e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavfilter\X86">
+      <UniqueIdentifier>{a6a2865a-534a-4035-bc73-a38ae7d0869c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavfilter\X86\asm">
+      <UniqueIdentifier>{017ef2e6-a53e-41a5-a0d5-6cc7cb0d6c46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\libavfilter\dnn">
+      <UniqueIdentifier>{64ccfc92-d4d7-47e1-9d78-0efca73507be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config.h">
+      <Filter>src</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\libavfilter\aeval.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_acontrast.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_acopy.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_acrossover.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_acrusher.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_adeclick.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_adelay.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_adenorm.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aderivative.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aecho.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aemphasis.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aexciter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afade.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afftdn.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afftfilt.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afir.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aformat.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afreqshift.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_afwtdn.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_agate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aiir.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_alimiter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_amerge.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_amix.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_amultiply.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_anequalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_anlmdn.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_anlms.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_anull.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_apad.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aphaser.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_apulsator.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_aresample.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_arnndn.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_asetnsamples.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_asetrate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_ashowinfo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_asoftclip.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_astats.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_asubboost.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_asupercut.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_atempo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_axcorrelate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_biquads.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_channelmap.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_channelsplit.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_chorus.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_compand.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_compensationdelay.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_crossfeed.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_crystalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_dcshift.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_deesser.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_drmeter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_dynaudnorm.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_earwax.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_extrastereo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_firequalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_flanger.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_haas.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_hdcd.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_headphone.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_join.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_loudnorm.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_mcompand.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_pan.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_replaygain.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_sidechaincompress.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_silencedetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_silenceremove.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_speechnorm.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_stereotools.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_stereowiden.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_superequalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_surround.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_tremolo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_vibrato.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_volume.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\af_volumedetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\allfilters.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asink_anullsink.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_afirsrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_anoisesrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_anullsrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_hilbert.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_sinc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\asrc_sine.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\audio.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avfilter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avfiltergraph.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_abitscope.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_ahistogram.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_aphasemeter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_avectorscope.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_concat.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showcqt.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showfreqs.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showspatial.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showspectrum.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showvolume.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\avf_showwaves.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\bbox.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\boxblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\buffersink.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\buffersrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\colorspace.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\colorspacedsp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn_filter_common.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\drawutils.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\ebur128.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\fifo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\formats.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\framepool.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\framequeue.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\framesync.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_bench.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_cue.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_drawgraph.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_ebur128.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_graphmonitor.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_interleave.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_loop.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_metadata.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_perms.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_realtime.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_reverse.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_segment.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_select.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_sendcmd.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_sidedata.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\f_streamselect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\generate_wave_table.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\graphdump.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\graphparser.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\lavfutils.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\lswsutils.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\motion_estimation.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\pthread.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\qp_table.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\scale_eval.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\scene_sad.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\setpts.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\settb.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\split.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\src_movie.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\transform.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\trim.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vaf_spectrumsynth.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_addroi.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_alphamerge.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_amplify.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_aspect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_atadenoise.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_avgblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_bbox.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_bilateral.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_bitplanenoise.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_blackdetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_blackframe.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_blend.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_bm3d.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_boxblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_bwdif.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_cas.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_chromakey.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_chromanr.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_chromashift.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_ciescope.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_codecview.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorbalance.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorchannelmixer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorconstancy.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorcontrast.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorcorrect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorize.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorkey.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorlevels.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colormatrix.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colorspace.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_colortemperature.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_convolution.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_convolve.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_copy.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_cover_rect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_crop.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_cropdetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_curves.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_datascope.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dctdnoiz.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_deband.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_deblock.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_decimate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dedot.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_deflicker.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dejudder.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_delogo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_derain.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_deshake.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_despill.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_detelecine.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_displace.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dnn_classify.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dnn_detect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_dnn_processing.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_drawbox.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_edgedetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_elbg.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_entropy.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_epx.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_eq.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_estdif.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_exposure.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_extractplanes.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fade.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fftdnoiz.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fftfilt.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_field.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fieldhint.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fieldmatch.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fieldorder.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fillborders.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_find_rect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_floodfill.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_format.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fps.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_framepack.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_framerate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_framestep.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_freezedetect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_freezeframes.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_fspp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_gblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_geq.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_gradfun.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_guided.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hflip.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_histeq.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_histogram.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hqdn3d.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hqx.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hue.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hwdownload.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hwmap.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hwupload.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_hysteresis.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_identity.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_idet.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_il.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_kerndeint.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lagfun.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lenscorrection.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_limiter.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lumakey.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lut.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lut2.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_lut3d.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_maskedclamp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_maskedmerge.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_maskedminmax.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_maskedthreshold.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_maskfun.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_median.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_mergeplanes.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_mestimate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_midequalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_minterpolate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_mix.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_monochrome.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_mpdecimate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_negate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_neighbor.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_nlmeans.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_nnedi.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_noise.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_normalize.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_null.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_overlay.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_owdenoise.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pad.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_palettegen.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_paletteuse.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_perspective.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_phase.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_photosensitivity.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pixdesctest.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pp7.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_premultiply.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pseudocolor.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_psnr.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_pullup.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_qp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_random.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_readeia608.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_readvitc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_remap.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_removegrain.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_removelogo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_repeatfields.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_rotate.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_sab.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_scale.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_scdet.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_scroll.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_selectivecolor.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_separatefields.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_setparams.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_shear.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_showinfo.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_showpalette.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_shuffleframes.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_shufflepixels.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_shuffleplanes.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_signalstats.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_signature.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_smartblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_spp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_sr.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_ssim.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_stack.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_stereo3d.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_super2xsai.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_swaprect.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_swapuv.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_telecine.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_threshold.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_thumbnail.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_tile.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_tinterlace.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_tmidequalizer.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_tonemap.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_tpad.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_transpose.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_unsharp.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_untile.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_v360.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vaguedenoiser.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vectorscope.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vflip.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vfrdet.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vibrance.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vif.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vignette.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_vmafmotion.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_w3fdif.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_waveform.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_weave.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_xbr.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_xfade.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_xmedian.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_yadif.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_yaepblur.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vf_zoompan.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\video.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsink_nullsink.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_cellauto.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_gradients.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_life.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_mandelbrot.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_mptestsrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_sierpinski.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\vsrc_testsrc.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\yadif_common.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\af_afir_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\af_anlmdn_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\af_volume_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\avf_showcqt_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\colorspacedsp_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\scene_sad_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_atadenoise_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_blend_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_bwdif_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_convolution_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_eq_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_framerate_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_fspp_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_gblur_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_gradfun_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_hflip_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_hqdn3d_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_idet_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_limiter_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_lut3d_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_maskedclamp_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_maskedmerge_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_nlmeans_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_noise.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_overlay_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_pp7_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_psnr_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_pullup_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_removegrain_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_spp.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_ssim_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_stereo3d_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_threshold_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_tinterlace_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_transpose_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_v360_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_w3fdif_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\x86\vf_yadif_init.c">
+      <Filter>src\libavfilter\X86</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_common.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layers.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_avgpool.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_conv2d.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_dense.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_depth2space.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_mathbinary.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_mathunary.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_maximum.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_backend_native_layer_pad.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_interface.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\dnn_io_proc.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\queue.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\dnn\safe_queue.c">
+      <Filter>src\libavfilter\dnn</Filter>
+    </ClCompile>
+    <ClCompile Include="src\libavfilter\edge_common.c">
+      <Filter>src\libavfilter</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\libavfilter\x86\af_afir.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\af_anlmdn.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\af_volume.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\avf_showcqt.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\colorspacedsp.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\scene_sad.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_atadenoise.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_blend.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_bwdif.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_convolution.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_eq.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_framerate.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_fspp.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_gblur.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_gradfun.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_hflip.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_hqdn3d.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_idet.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_interlace.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_limiter.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_lut3d.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_maskedclamp.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_maskedmerge.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_nlmeans.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_overlay.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_pp7.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_psnr.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_pullup.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_removegrain.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_ssim.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_stereo3d.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_threshold.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_transpose.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_v360.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_w3fdif.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\vf_yadif.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\yadif-10.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\libavfilter\x86\yadif-16.asm">
+      <Filter>src\libavfilter\X86\asm</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libavutil\x86\config.asm">
+      <Filter>src</Filter>
+    </None>
+  </ItemGroup>
+</Project>

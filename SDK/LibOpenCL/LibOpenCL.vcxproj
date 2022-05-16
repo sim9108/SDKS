@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\OpenCL-CLHPP\include\CL\cl2.hpp" />
+    <ClInclude Include="src\OpenCL-CLHPP\include\CL\opencl.hpp" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_d3d10.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_d3d11.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_dx9_media_sharing.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_dx9_media_sharing_intel.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_egl.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_ext.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_ext_intel.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_gl.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_gl_ext.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_half.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_icd.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_layer.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_platform.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_va_api_media_sharing_intel.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\cl_version.h" />
+    <ClInclude Include="src\OpenCL-Headers\CL\opencl.h" />
+    <ClInclude Include="src\OpenCL-ICD-Loader\icd_cmake_config.h" />
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd.h" />
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_dispatch.h" />
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_envvars.h" />
+    <ClInclude Include="src\OpenCL-ICD-Loader\loader\icd_platform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd_dispatch.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\icd_dispatch_generated.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_apppackage.cpp" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_dxgk.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_envvars.c" />
+    <ClCompile Include="src\OpenCL-ICD-Loader\loader\windows\icd_windows_hkr.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8b0a5747-87f0-4bed-b73f-4bbe8c4f2313}</ProjectGuid>
+    <RootNamespace>LibOpenCL</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibOpenCL\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibOpenCL\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CL_TARGET_OPENCL_VERSION=300;CL_ENABLE_LAYERS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\OpenCL-ICD-Loader\loader;.\src\OpenCL-CLHPP\include;.\src\OpenCL-Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cfgmgr32.lib;runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir .\include
+mkdir .\include\CL
+xcopy /Y  /s .\src\OpenCL-CLHPP\include\*.h* .\include\
+xcopy /Y  /s .\src\OpenCL-Headers\CL\*.h* .\include\CL\
+copy /Y  .\include\CL\opencl.hpp  .\include\CL\cl.hpp</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>CL_TARGET_OPENCL_VERSION=300;CL_ENABLE_LAYERS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\OpenCL-ICD-Loader\loader;.\src\OpenCL-CLHPP\include;.\src\OpenCL-Headers;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>cfgmgr32.lib;runtimeobject.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>mkdir .\include
+mkdir .\include\CL
+xcopy /Y  /s .\src\OpenCL-CLHPP\include\*.h* .\include\
+xcopy /Y  /s .\src\OpenCL-Headers\CL\*.h* .\include\CL\
+copy /Y  .\include\CL\opencl.hpp  .\include\CL\cl.hpp</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3e52b6d0-f5e3-4a7f-844d-7fe4ba1b391c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{298e67fa-7ec4-4b47-998a-18f663c36466}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bioinspired">
+      <UniqueIdentifier>{a6dd2de7-4945-4611-849f-853df5528b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bioinspired\src">
+      <UniqueIdentifier>{7b3282b1-6c01-4973-a3ec-4830dc731cdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bioinspired\src\header">
+      <UniqueIdentifier>{8ef707d2-37d8-4293-a89c-0a9c753008f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bioinspired\src\opencl">
+      <UniqueIdentifier>{04d596be-5c96-486e-af33-76999d0385ae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\bioinspired\opencv_bioinspired_pch.cpp">
+      <Filter>src\modules\bioinspired</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\basicretinafilter.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\imagelogpolprojection.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\magnoretinafilter.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\parvoretinafilter.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\retina.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\retina_ocl.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\retinacolor.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\retinafasttonemapping.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\retinafilter.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\src\transientareassegmentationmodule.cpp">
+      <Filter>src\modules\bioinspired\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bioinspired\opencl_kernels_bioinspired.cpp">
+      <Filter>src\modules\bioinspired</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\bioinspired\src\magnoretinafilter.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\parvoretinafilter.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\precomp.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\retina_ocl.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\retinacolor.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\retinafilter.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\templatebuffer.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\basicretinafilter.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\src\imagelogpolprojection.hpp">
+      <Filter>src\modules\bioinspired\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\bioinspired\opencl_kernels_bioinspired.hpp">
+      <Filter>src\modules\bioinspired</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\bioinspired\src\opencl\retina_kernel.cl">
+      <Filter>src\modules\bioinspired\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

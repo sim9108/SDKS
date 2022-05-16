@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{8e38c2cd-7ea7-42c2-90f6-c848f941fc04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src">
+      <UniqueIdentifier>{35cd1efd-85e4-45ce-8d17-9e7e30e2ef6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\src\include">
+      <UniqueIdentifier>{d6803ebd-5bae-47df-9eb1-8603f9110bdc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\pugixml.cpp">
+      <Filter>src\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\pugiconfig.hpp">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\src\pugixml.hpp">
+      <Filter>src\src\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

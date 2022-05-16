@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{1355fd6b-d395-4c44-bd5f-57875504370a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\fftools">
+      <UniqueIdentifier>{d3888559-2b0a-4265-ae1f-b54bd5fea29c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\fftools\cmdutils.h">
+      <Filter>src\fftools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\fftools\ffplay.c">
+      <Filter>src\fftools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fftools\cmdutils.c">
+      <Filter>src\fftools</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fftools\opt_common.c">
+      <Filter>src\fftools</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

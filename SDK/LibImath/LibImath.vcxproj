@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\Imath\half.cpp" />
+    <ClCompile Include="src\src\Imath\ImathColorAlgo.cpp" />
+    <ClCompile Include="src\src\Imath\ImathFun.cpp" />
+    <ClCompile Include="src\src\Imath\ImathMatrixAlgo.cpp" />
+    <ClCompile Include="src\src\Imath\ImathRandom.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\Imath\half.h" />
+    <ClInclude Include="src\src\Imath\halfFunction.h" />
+    <ClInclude Include="src\src\Imath\halfLimits.h" />
+    <ClInclude Include="src\src\Imath\ImathBox.h" />
+    <ClInclude Include="src\src\Imath\ImathBoxAlgo.h" />
+    <ClInclude Include="src\src\Imath\ImathColor.h" />
+    <ClInclude Include="src\src\Imath\ImathColorAlgo.h" />
+    <ClInclude Include="src\src\Imath\ImathConfig.h" />
+    <ClInclude Include="src\src\Imath\ImathEuler.h" />
+    <ClInclude Include="src\src\Imath\ImathExport.h" />
+    <ClInclude Include="src\src\Imath\ImathForward.h" />
+    <ClInclude Include="src\src\Imath\ImathFrame.h" />
+    <ClInclude Include="src\src\Imath\ImathFrustum.h" />
+    <ClInclude Include="src\src\Imath\ImathFrustumTest.h" />
+    <ClInclude Include="src\src\Imath\ImathFun.h" />
+    <ClInclude Include="src\src\Imath\ImathGL.h" />
+    <ClInclude Include="src\src\Imath\ImathGLU.h" />
+    <ClInclude Include="src\src\Imath\ImathInt64.h" />
+    <ClInclude Include="src\src\Imath\ImathInterval.h" />
+    <ClInclude Include="src\src\Imath\ImathLine.h" />
+    <ClInclude Include="src\src\Imath\ImathLineAlgo.h" />
+    <ClInclude Include="src\src\Imath\ImathMath.h" />
+    <ClInclude Include="src\src\Imath\ImathMatrix.h" />
+    <ClInclude Include="src\src\Imath\ImathMatrixAlgo.h" />
+    <ClInclude Include="src\src\Imath\ImathNamespace.h" />
+    <ClInclude Include="src\src\Imath\ImathPlane.h" />
+    <ClInclude Include="src\src\Imath\ImathPlatform.h" />
+    <ClInclude Include="src\src\Imath\ImathQuat.h" />
+    <ClInclude Include="src\src\Imath\ImathRandom.h" />
+    <ClInclude Include="src\src\Imath\ImathRoots.h" />
+    <ClInclude Include="src\src\Imath\ImathShear.h" />
+    <ClInclude Include="src\src\Imath\ImathSphere.h" />
+    <ClInclude Include="src\src\Imath\ImathTypeTraits.h" />
+    <ClInclude Include="src\src\Imath\ImathVec.h" />
+    <ClInclude Include="src\src\Imath\ImathVecAlgo.h" />
+    <ClInclude Include="src\src\Imath\toFloat.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{56961277-d02d-431e-b99b-f258ab37f900}</ProjectGuid>
+    <RootNamespace>LibIMath</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LibImath</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

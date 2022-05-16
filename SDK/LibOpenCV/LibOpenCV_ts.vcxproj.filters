@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{fabcb03b-5af1-455b-bcf9-cf6744e4ef4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{74da7836-e603-4805-9bce-98f336065958}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\src">
+      <UniqueIdentifier>{abc20f22-5e2a-476c-b31e-4f516967011f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\src\header">
+      <UniqueIdentifier>{aa6dab52-3b7f-445c-b6e0-d5c6cb8893ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\ts\opencv_ts_pch.cpp">
+      <Filter>src\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\cuda_perf.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\cuda_test.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ocl_perf.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ocl_test.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts_arrtest.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts_func.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts_gtest.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts_perf.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\ts\src\ts_tags.cpp">
+      <Filter>src\modules\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\ts\src\precomp.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\ts\src\ts_tags.hpp">
+      <Filter>src\modules\src\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

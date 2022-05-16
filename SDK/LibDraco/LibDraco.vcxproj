@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\draco\animation\animation.cc" />
+    <ClCompile Include="src\src\draco\animation\keyframe_animation.cc" />
+    <ClCompile Include="src\src\draco\animation\keyframe_animation_decoder.cc" />
+    <ClCompile Include="src\src\draco\animation\keyframe_animation_encoder.cc" />
+    <ClCompile Include="src\src\draco\attributes\attribute_octahedron_transform.cc" />
+    <ClCompile Include="src\src\draco\attributes\attribute_quantization_transform.cc" />
+    <ClCompile Include="src\src\draco\attributes\attribute_transform.cc" />
+    <ClCompile Include="src\src\draco\attributes\geometry_attribute.cc" />
+    <ClCompile Include="src\src\draco\attributes\point_attribute.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\attributes_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\attributes_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\kd_tree_attributes_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\kd_tree_attributes_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_factory.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_decoders_controller.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_attribute_encoders_controller.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_integer_attribute_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_integer_attribute_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_normal_attribute_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_normal_attribute_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_quantization_attribute_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\attributes\sequential_quantization_attribute_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\direct_bit_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\direct_bit_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\rans_bit_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\rans_bit_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\symbol_bit_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\bit_coders\symbol_bit_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\decode.cc" />
+    <ClCompile Include="src\src\draco\compression\encode.cc" />
+    <ClCompile Include="src\src\draco\compression\entropy\shannon_entropy.cc" />
+    <ClCompile Include="src\src\draco\compression\entropy\symbol_decoding.cc" />
+    <ClCompile Include="src\src\draco\compression\entropy\symbol_encoding.cc" />
+    <ClCompile Include="src\src\draco\compression\expert_encode.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_sequential_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\mesh\mesh_sequential_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_encoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_sequential_decoder.cc" />
+    <ClCompile Include="src\src\draco\compression\point_cloud\point_cloud_sequential_encoder.cc" />
+    <ClCompile Include="src\src\draco\core\bit_utils.cc" />
+    <ClCompile Include="src\src\draco\core\bounding_box.cc" />
+    <ClCompile Include="src\src\draco\core\cycle_timer.cc" />
+    <ClCompile Include="src\src\draco\core\data_buffer.cc" />
+    <ClCompile Include="src\src\draco\core\decoder_buffer.cc" />
+    <ClCompile Include="src\src\draco\core\divide.cc" />
+    <ClCompile Include="src\src\draco\core\draco_types.cc" />
+    <ClCompile Include="src\src\draco\core\encoder_buffer.cc" />
+    <ClCompile Include="src\src\draco\core\hash_utils.cc" />
+    <ClCompile Include="src\src\draco\core\options.cc" />
+    <ClCompile Include="src\src\draco\core\quantization_utils.cc" />
+    <ClCompile Include="src\src\draco\io\file_reader_factory.cc" />
+    <ClCompile Include="src\src\draco\io\file_utils.cc" />
+    <ClCompile Include="src\src\draco\io\file_writer_factory.cc" />
+    <ClCompile Include="src\src\draco\io\file_writer_utils.cc" />
+    <ClCompile Include="src\src\draco\io\gltf_decoder.cc" />
+    <ClCompile Include="src\src\draco\io\gltf_encoder.cc" />
+    <ClCompile Include="src\src\draco\io\gltf_utils.cc" />
+    <ClCompile Include="src\src\draco\io\mesh_io.cc" />
+    <ClCompile Include="src\src\draco\io\obj_decoder.cc" />
+    <ClCompile Include="src\src\draco\io\obj_encoder.cc" />
+    <ClCompile Include="src\src\draco\io\parser_utils.cc" />
+    <ClCompile Include="src\src\draco\io\ply_decoder.cc" />
+    <ClCompile Include="src\src\draco\io\ply_encoder.cc" />
+    <ClCompile Include="src\src\draco\io\ply_reader.cc" />
+    <ClCompile Include="src\src\draco\io\point_cloud_io.cc" />
+    <ClCompile Include="src\src\draco\io\scene_io.cc" />
+    <ClCompile Include="src\src\draco\io\stdio_file_reader.cc" />
+    <ClCompile Include="src\src\draco\io\stdio_file_writer.cc" />
+    <ClCompile Include="src\src\draco\io\texture_io.cc" />
+    <ClCompile Include="src\src\draco\io\tiny_gltf_utils.cc" />
+    <ClCompile Include="src\src\draco\material\material.cc" />
+    <ClCompile Include="src\src\draco\material\material_library.cc" />
+    <ClCompile Include="src\src\draco\material\material_utils.cc" />
+    <ClCompile Include="src\src\draco\mesh\corner_table.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_are_equivalent.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_attribute_corner_table.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_cleanup.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_misc_functions.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_splitter.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_stripifier.cc" />
+    <ClCompile Include="src\src\draco\mesh\mesh_utils.cc" />
+    <ClCompile Include="src\src\draco\mesh\triangle_soup_mesh_builder.cc" />
+    <ClCompile Include="src\src\draco\metadata\geometry_metadata.cc" />
+    <ClCompile Include="src\src\draco\metadata\metadata.cc" />
+    <ClCompile Include="src\src\draco\metadata\metadata_decoder.cc" />
+    <ClCompile Include="src\src\draco\metadata\metadata_encoder.cc" />
+    <ClCompile Include="src\src\draco\point_cloud\point_cloud.cc" />
+    <ClCompile Include="src\src\draco\point_cloud\point_cloud_builder.cc" />
+    <ClCompile Include="src\src\draco\scene\scene.cc" />
+    <ClCompile Include="src\src\draco\scene\scene_utils.cc" />
+    <ClCompile Include="src\src\draco\scene\trs_matrix.cc" />
+    <ClCompile Include="src\src\draco\texture\source_image.cc" />
+    <ClCompile Include="src\src\draco\texture\texture_library.cc" />
+    <ClCompile Include="src\src\draco\texture\texture_map.cc" />
+    <ClCompile Include="src\src\draco\texture\texture_transform.cc" />
+    <ClCompile Include="src\src\draco\texture\texture_utils.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\draco\animation\animation.h" />
+    <ClInclude Include="src\src\draco\animation\keyframe_animation.h" />
+    <ClInclude Include="src\src\draco\animation\keyframe_animation_decoder.h" />
+    <ClInclude Include="src\src\draco\animation\keyframe_animation_encoder.h" />
+    <ClInclude Include="src\src\draco\animation\node_animation_data.h" />
+    <ClInclude Include="src\src\draco\animation\skin.h" />
+    <ClInclude Include="src\src\draco\attributes\attribute_octahedron_transform.h" />
+    <ClInclude Include="src\src\draco\attributes\attribute_quantization_transform.h" />
+    <ClInclude Include="src\src\draco\attributes\attribute_transform.h" />
+    <ClInclude Include="src\src\draco\attributes\attribute_transform_data.h" />
+    <ClInclude Include="src\src\draco\attributes\attribute_transform_type.h" />
+    <ClInclude Include="src\src\draco\attributes\geometry_attribute.h" />
+    <ClInclude Include="src\src\draco\attributes\geometry_indices.h" />
+    <ClInclude Include="src\src\draco\attributes\point_attribute.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_decoder_interface.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\attributes_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\kd_tree_attributes_shared.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\linear_sequencer.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\mesh_attribute_indices_encoding_data.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\normal_compression_utils.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\points_sequencer.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\point_d_vector.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_constrained_multi_parallelogram_shared.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_data.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_predictor_area.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_geometric_normal_predictor_base.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_multi_parallelogram_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_multi_parallelogram_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_parallelogram_shared.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\mesh_prediction_scheme_tex_coords_portable_predictor.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder_factory.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoder_interface.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_decoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_delta_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_delta_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_factory.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoder_interface.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_encoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_factory.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_interface.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_decoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_encoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_canonicalized_transform_base.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_decoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_encoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_normal_octahedron_transform_base.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_decoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_encoding_transform.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\prediction_schemes\prediction_scheme_wrap_transform_base.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_decoders_controller.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_attribute_encoders_controller.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_integer_attribute_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_integer_attribute_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_normal_attribute_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_normal_attribute_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_quantization_attribute_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\attributes\sequential_quantization_attribute_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_coding_shared.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\adaptive_rans_bit_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\direct_bit_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\direct_bit_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\folded_integer_bit_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\folded_integer_bit_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\rans_bit_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\rans_bit_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\symbol_bit_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\bit_coders\symbol_bit_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\config\compression_shared.h" />
+    <ClInclude Include="src\src\draco\compression\config\decoder_options.h" />
+    <ClInclude Include="src\src\draco\compression\config\draco_options.h" />
+    <ClInclude Include="src\src\draco\compression\config\encoder_options.h" />
+    <ClInclude Include="src\src\draco\compression\config\encoding_features.h" />
+    <ClInclude Include="src\src\draco\compression\decode.h" />
+    <ClInclude Include="src\src\draco\compression\draco_compression_options.h" />
+    <ClInclude Include="src\src\draco\compression\encode.h" />
+    <ClInclude Include="src\src\draco\compression\encode_base.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\ans.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_coding.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\rans_symbol_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\shannon_entropy.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\symbol_decoding.h" />
+    <ClInclude Include="src\src\draco\compression\entropy\symbol_encoding.h" />
+    <ClInclude Include="src\src\draco\compression\expert_encode.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_decoder_impl_interface.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_encoder_impl_interface.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_shared.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_predictive_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_predictive_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_valence_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_edgebreaker_traversal_valence_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_sequential_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\mesh_sequential_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\depth_first_traverser.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\max_prediction_degree_traverser.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\mesh_attribute_indices_encoding_observer.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\mesh_traversal_sequencer.h" />
+    <ClInclude Include="src\src\draco\compression\mesh\traverser\traverser_base.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\dynamic_integer_points_kd_tree_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\float_points_tree_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\integer_points_kd_tree_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\point_cloud_compression_method.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\point_cloud_types.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\quantize_points_3.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\algorithms\queuing_policy.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_kd_tree_encoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_sequential_decoder.h" />
+    <ClInclude Include="src\src\draco\compression\point_cloud\point_cloud_sequential_encoder.h" />
+    <ClInclude Include="src\src\draco\core\bit_utils.h" />
+    <ClInclude Include="src\src\draco\core\bounding_box.h" />
+    <ClInclude Include="src\src\draco\core\cycle_timer.h" />
+    <ClInclude Include="src\src\draco\core\data_buffer.h" />
+    <ClInclude Include="src\src\draco\core\decoder_buffer.h" />
+    <ClInclude Include="src\src\draco\core\divide.h" />
+    <ClInclude Include="src\src\draco\core\draco_index_type.h" />
+    <ClInclude Include="src\src\draco\core\draco_index_type_vector.h" />
+    <ClInclude Include="src\src\draco\core\draco_test_base.h" />
+    <ClInclude Include="src\src\draco\core\draco_test_utils.h" />
+    <ClInclude Include="src\src\draco\core\draco_types.h" />
+    <ClInclude Include="src\src\draco\core\draco_version.h" />
+    <ClInclude Include="src\src\draco\core\encoder_buffer.h" />
+    <ClInclude Include="src\src\draco\core\hash_utils.h" />
+    <ClInclude Include="src\src\draco\core\macros.h" />
+    <ClInclude Include="src\src\draco\core\math_utils.h" />
+    <ClInclude Include="src\src\draco\core\options.h" />
+    <ClInclude Include="src\src\draco\core\quantization_utils.h" />
+    <ClInclude Include="src\src\draco\core\status.h" />
+    <ClInclude Include="src\src\draco\core\status_or.h" />
+    <ClInclude Include="src\src\draco\core\varint_decoding.h" />
+    <ClInclude Include="src\src\draco\core\varint_encoding.h" />
+    <ClInclude Include="src\src\draco\core\vector_d.h" />
+    <ClInclude Include="src\src\draco\io\file_reader_factory.h" />
+    <ClInclude Include="src\src\draco\io\file_reader_interface.h" />
+    <ClInclude Include="src\src\draco\io\file_reader_test_common.h" />
+    <ClInclude Include="src\src\draco\io\file_utils.h" />
+    <ClInclude Include="src\src\draco\io\file_writer_factory.h" />
+    <ClInclude Include="src\src\draco\io\file_writer_interface.h" />
+    <ClInclude Include="src\src\draco\io\file_writer_utils.h" />
+    <ClInclude Include="src\src\draco\io\gltf_decoder.h" />
+    <ClInclude Include="src\src\draco\io\gltf_encoder.h" />
+    <ClInclude Include="src\src\draco\io\gltf_utils.h" />
+    <ClInclude Include="src\src\draco\io\image_compression_options.h" />
+    <ClInclude Include="src\src\draco\io\mesh_io.h" />
+    <ClInclude Include="src\src\draco\io\obj_decoder.h" />
+    <ClInclude Include="src\src\draco\io\obj_encoder.h" />
+    <ClInclude Include="src\src\draco\io\parser_utils.h" />
+    <ClInclude Include="src\src\draco\io\ply_decoder.h" />
+    <ClInclude Include="src\src\draco\io\ply_encoder.h" />
+    <ClInclude Include="src\src\draco\io\ply_property_reader.h" />
+    <ClInclude Include="src\src\draco\io\ply_property_writer.h" />
+    <ClInclude Include="src\src\draco\io\ply_reader.h" />
+    <ClInclude Include="src\src\draco\io\point_cloud_io.h" />
+    <ClInclude Include="src\src\draco\io\scene_io.h" />
+    <ClInclude Include="src\src\draco\io\stdio_file_reader.h" />
+    <ClInclude Include="src\src\draco\io\stdio_file_writer.h" />
+    <ClInclude Include="src\src\draco\io\texture_io.h" />
+    <ClInclude Include="src\src\draco\io\tiny_gltf_utils.h" />
+    <ClInclude Include="src\src\draco\material\material.h" />
+    <ClInclude Include="src\src\draco\material\material_library.h" />
+    <ClInclude Include="src\src\draco\material\material_utils.h" />
+    <ClInclude Include="src\src\draco\mesh\corner_table.h" />
+    <ClInclude Include="src\src\draco\mesh\corner_table_iterators.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_are_equivalent.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_attribute_corner_table.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_cleanup.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_misc_functions.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_splitter.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_stripifier.h" />
+    <ClInclude Include="src\src\draco\mesh\mesh_utils.h" />
+    <ClInclude Include="src\src\draco\mesh\triangle_soup_mesh_builder.h" />
+    <ClInclude Include="src\src\draco\mesh\valence_cache.h" />
+    <ClInclude Include="src\src\draco\metadata\geometry_metadata.h" />
+    <ClInclude Include="src\src\draco\metadata\metadata.h" />
+    <ClInclude Include="src\src\draco\metadata\metadata_decoder.h" />
+    <ClInclude Include="src\src\draco\metadata\metadata_encoder.h" />
+    <ClInclude Include="src\src\draco\point_cloud\point_cloud.h" />
+    <ClInclude Include="src\src\draco\point_cloud\point_cloud_builder.h" />
+    <ClInclude Include="src\src\draco\scene\mesh_group.h" />
+    <ClInclude Include="src\src\draco\scene\scene.h" />
+    <ClInclude Include="src\src\draco\scene\scene_indices.h" />
+    <ClInclude Include="src\src\draco\scene\scene_node.h" />
+    <ClInclude Include="src\src\draco\scene\scene_utils.h" />
+    <ClInclude Include="src\src\draco\scene\trs_matrix.h" />
+    <ClInclude Include="src\src\draco\texture\source_image.h" />
+    <ClInclude Include="src\src\draco\texture\texture.h" />
+    <ClInclude Include="src\src\draco\texture\texture_library.h" />
+    <ClInclude Include="src\src\draco\texture\texture_map.h" />
+    <ClInclude Include="src\src\draco\texture\texture_transform.h" />
+    <ClInclude Include="src\src\draco\texture\texture_utils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6c792dbf-d552-446f-9f3b-ea7ece7336f3}</ProjectGuid>
+    <RootNamespace>LibDraco</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibDarco\ccore\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\LibDarco\ccore\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;4819;4146;4996;4804;4244;4661;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4018;4819;4146;4996;4804;4244;4661;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{70d0e9de-d363-40d2-8cba-5e94f316be1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{c768e47f-1293-4b80-af83-edcee3ecc3ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\img_hash">
+      <UniqueIdentifier>{43f487b7-b97e-4266-8f7e-0d221acd231c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\img_hash\src">
+      <UniqueIdentifier>{0192c913-aa8a-413e-ab78-662b17b7c614}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\img_hash\opencv_fuzzy_pch.cpp">
+      <Filter>src\modules\img_hash</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\block_mean_hash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\color_moment_hash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\img_hash_base.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\marr_hildreth_hash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\phash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\radial_variance_hash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\img_hash\src\average_hash.cpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\img_hash\src\precomp.hpp">
+      <Filter>src\modules\img_hash\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

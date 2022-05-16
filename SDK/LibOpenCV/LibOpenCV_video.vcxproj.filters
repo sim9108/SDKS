@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d19e15de-7b5f-43f6-86f4-d550a744ab22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{cd5cabc3-703b-4042-b07a-d207fde3f219}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video">
+      <UniqueIdentifier>{5d68a0c3-0fe8-4cf0-ab0f-28ed978ee02f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src">
+      <UniqueIdentifier>{92f88e8d-44d4-48d0-a8f2-5f121c5810f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src\header">
+      <UniqueIdentifier>{d21f949e-1f76-48c7-a429-79bb1d9dcbef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src\tracking">
+      <UniqueIdentifier>{301ba1f8-ae74-4c25-ae4e-8f7676550f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src\tracking\detail">
+      <UniqueIdentifier>{82731a44-ed40-427a-88a7-24662031a80d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src\tracking\detail\header">
+      <UniqueIdentifier>{a1f023f6-2706-4ea6-8653-3a7fefea6ffe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\src\opencl">
+      <UniqueIdentifier>{fcb3921f-cf87-4925-b899-0bf42f6cac16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\video\header">
+      <UniqueIdentifier>{c176a140-d1a9-4eca-b071-8f3be3534528}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\video\opencl_kernels_video.cpp">
+      <Filter>src\modules\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\opencv_video_pch.cpp">
+      <Filter>src\modules\video</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\bgfg_KNN.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\camshift.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\dis_flow.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\ecc.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\kalman.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\lkpyramid.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\optflowgf.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\optical_flow_io.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\variational_refinement.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\bgfg_gaussmix2.cpp">
+      <Filter>src\modules\video\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\tracker.cpp">
+      <Filter>src\modules\video\src\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\tracker_dasiamrpn.cpp">
+      <Filter>src\modules\video\src\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\tracker_goturn.cpp">
+      <Filter>src\modules\video\src\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\tracker_mil.cpp">
+      <Filter>src\modules\video\src\tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_feature.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_feature_set.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_mil_model.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_mil_state.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_model.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_sampler.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_sampler_algorithm.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracker_state_estimator.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracking_feature.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\video\src\tracking\detail\tracking_online_mil.cpp">
+      <Filter>src\modules\video\src\tracking\detail</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\video\src\lkpyramid.hpp">
+      <Filter>src\modules\video\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\precomp.hpp">
+      <Filter>src\modules\video\src\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_feature_haar.impl.hpp">
+      <Filter>src\modules\video\src\tracking\detail\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_mil_model.hpp">
+      <Filter>src\modules\video\src\tracking\detail\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracker_mil_state.hpp">
+      <Filter>src\modules\video\src\tracking\detail\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracking_feature.hpp">
+      <Filter>src\modules\video\src\tracking\detail\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\src\tracking\detail\tracking_online_mil.hpp">
+      <Filter>src\modules\video\src\tracking\detail\header</Filter>
+    </ClInclude>
+    <ClInclude Include="src\modules\video\opencl_kernels_video.hpp">
+      <Filter>src\modules\video\header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\modules\video\src\opencl\bgfg_mog2.cl">
+      <Filter>src\modules\video\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\video\src\opencl\dis_flow.cl">
+      <Filter>src\modules\video\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\video\src\opencl\optical_flow_farneback.cl">
+      <Filter>src\modules\video\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\video\src\opencl\pyrlk.cl">
+      <Filter>src\modules\video\src\opencl</Filter>
+    </None>
+    <None Include="src\modules\video\src\opencl\bgfg_knn.cl">
+      <Filter>src\modules\video\src\opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

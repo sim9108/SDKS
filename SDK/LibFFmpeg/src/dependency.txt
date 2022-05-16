@@ -1,0 +1,98 @@
+LibAvutil = { Bcrypt.lib }
+LibAvcodec_asm = {}
+LibPostproc ={
+	Bcrypt.lib
+	LibAvutilSMT.lib
+}
+LibAvcodec = {
+	Bcrypt.lib
+	Mfplat.lib
+	Strmiids.lib
+	Mfuuid.lib
+	LibAvcodec_asmSMT.lib
+	LibZSMT.lib
+	LibAvutilSMT.lib
+	LibSwresampleSMT.lib
+	LibX264SMT.lib	
+	LibX264_bitdepth_8SMT.lib
+	LibX264_bitdepth_10SMT.lib
+	LibX265SMT.lib
+	LibFdkAccSMT.lib
+	LibAomSMT.lib
+	LibDav1d_bitdepth_8SMT.lib
+	LibDav1d_bitdepth_16SMT.lib
+	LibDav1dSMT.lib
+}
+LibAvdevice ={
+	Secur32.lib
+	Bcrypt.lib
+	Mfplat.lib
+	Strmiids.lib
+	Mfuuid.lib
+	Vfw32.lib
+	Shlwapi.lib
+	Ws2_32.lib
+	LibAvutilSMT.lib
+	LibAvcodecSMT.lib
+	LibSwresampleSMT.lib
+	LibAvformatSMT.lib
+	LibAvfilterSMT.lib
+	LibSwscaleSMT.lib
+	LibPostprocSMT.lib
+	LibZSMT.lib
+	LibX264SMT.lib
+	LibX264_bitdepth_8SMT.lib
+	LibX264_bitdepth_10SMT.lib
+	LibX265SMT.lib
+	LibFdkAccSMT.lib
+	LibAomSMT.lib
+	LibDav1d_bitdepth_8SMT.lib
+	LibDav1d_bitdepth_16SMT.lib
+	LibDav1dSMT.lib
+}
+
+LibAvfilter = { 
+	Secur32.lib
+	Bcrypt.lib
+	Mfplat.lib
+	Strmiids.lib
+	Mfuuid.lib
+	Ws2_32.lib
+	LibAvutilSMT.lib
+	LibAvcodecSMT.lib
+	LibSwresampleSMT.lib
+	LibSwscaleSMT.lib
+	LibAvformatSMT.lib
+	LibPostprocSMT.lib
+	LibZSMT.lib
+	LibX264SMT.lib
+	LibX264_bitdepth_8SMT.lib
+	LibX264_bitdepth_10SMT.lib
+	LibX265SMT.lib
+	LibFdkAccSMT.lib
+	LibAomSMT.lib
+	LibDav1d_bitdepth_8SMT.lib
+	LibDav1d_bitdepth_16SMT.lib
+	LibDav1dSMT.lib
+}
+LibAvformat ={
+	Bcrypt.lib
+	Ws2_32.lib
+	Secur32.lib
+	Mfplat.lib
+	Strmiids.lib
+	Mfuuid.lib
+	LibZSMT.lib
+	LibAvutilSMT.lib
+	LibAvcodecSMT.lib
+	LibSwresampleSMT.lib
+	LibAomSMT.lib
+	LibDav1d_bitdepth_8SMT.lib
+	LibDav1d_bitdepth_16SMT.lib
+	LibDav1dSMT.lib
+	LibX264SMT.lib
+	LibX264_bitdepth_8SMT.lib
+	LibX264_bitdepth_10SMT.lib
+	LibX265SMT.lib
+	LibFdkAccSMT.lib
+}

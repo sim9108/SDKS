@@ -1,0 +1,4 @@
+..\lib64
+
+LibX264_bitdepth_8SMT.lib
+LibX264_bitdepth_10SMT.lib

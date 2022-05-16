@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{02e15516-c8bf-43cb-b229-30253ea5e9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\iw">
+      <UniqueIdentifier>{8df45abe-bc9b-4cbe-9329-adc6935df29f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\iw\src">
+      <UniqueIdentifier>{09f28f63-a019-4ef4-9d59-8aa748e6040e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\iw\src\iw_image_color_convert_all.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_color_convert_rgbs.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_bilateral.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_box.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_canny.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_gaussian.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_general.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_laplacian.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_morphology.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_scharr.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_filter_sobel.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_copy.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_copy_channel.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_copy_make_border.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_copy_merge.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_copy_split.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_scale.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_set.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_set_channel.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_op_swap_channels.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_transform_mirror.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_transform_resize.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_transform_rotate.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image_transform_warpaffine.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_own.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_core.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\iw\src\iw_image.c">
+      <Filter>src\iw\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt">
+      <Filter>src</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\jaricom.c" />
+    <ClCompile Include="src\jcapimin.c" />
+    <ClCompile Include="src\jcapistd.c" />
+    <ClCompile Include="src\jcarith.c" />
+    <ClCompile Include="src\jccoefct.c" />
+    <ClCompile Include="src\jccolor.c" />
+    <ClCompile Include="src\jcdctmgr.c" />
+    <ClCompile Include="src\jchuff.c" />
+    <ClCompile Include="src\jcicc.c" />
+    <ClCompile Include="src\jcinit.c" />
+    <ClCompile Include="src\jcmainct.c" />
+    <ClCompile Include="src\jcmarker.c" />
+    <ClCompile Include="src\jcmaster.c" />
+    <ClCompile Include="src\jcomapi.c" />
+    <ClCompile Include="src\jcparam.c" />
+    <ClCompile Include="src\jcphuff.c" />
+    <ClCompile Include="src\jcprepct.c" />
+    <ClCompile Include="src\jcsample.c" />
+    <ClCompile Include="src\jctrans.c" />
+    <ClCompile Include="src\jdapimin.c" />
+    <ClCompile Include="src\jdapistd.c" />
+    <ClCompile Include="src\jdarith.c" />
+    <ClCompile Include="src\jdatadst-tj.c" />
+    <ClCompile Include="src\jdatadst.c" />
+    <ClCompile Include="src\jdatasrc-tj.c" />
+    <ClCompile Include="src\jdatasrc.c" />
+    <ClCompile Include="src\jdcoefct.c" />
+    <ClCompile Include="src\jdcolor.c" />
+    <ClCompile Include="src\jddctmgr.c" />
+    <ClCompile Include="src\jdhuff.c" />
+    <ClCompile Include="src\jdicc.c" />
+    <ClCompile Include="src\jdinput.c" />
+    <ClCompile Include="src\jdmainct.c" />
+    <ClCompile Include="src\jdmarker.c" />
+    <ClCompile Include="src\jdmaster.c" />
+    <ClCompile Include="src\jdmerge.c" />
+    <ClCompile Include="src\jdphuff.c" />
+    <ClCompile Include="src\jdpostct.c" />
+    <ClCompile Include="src\jdsample.c" />
+    <ClCompile Include="src\jdtrans.c" />
+    <ClCompile Include="src\jerror.c" />
+    <ClCompile Include="src\jfdctflt.c" />
+    <ClCompile Include="src\jfdctfst.c" />
+    <ClCompile Include="src\jfdctint.c" />
+    <ClCompile Include="src\jidctflt.c" />
+    <ClCompile Include="src\jidctfst.c" />
+    <ClCompile Include="src\jidctint.c" />
+    <ClCompile Include="src\jidctred.c" />
+    <ClCompile Include="src\jmemmgr.c" />
+    <ClCompile Include="src\jmemnobs.c" />
+    <ClCompile Include="src\jquant1.c" />
+    <ClCompile Include="src\jquant2.c" />
+    <ClCompile Include="src\jutils.c" />
+    <ClCompile Include="src\simd\x86_64\jsimd.c" />
+    <ClCompile Include="src\transupp.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\cdjpeg.h" />
+    <ClInclude Include="src\cmyk.h" />
+    <ClInclude Include="src\jchuff.h" />
+    <ClInclude Include="src\jconfig.h" />
+    <ClInclude Include="src\jconfigint.h" />
+    <ClInclude Include="src\jdcoefct.h" />
+    <ClInclude Include="src\jdct.h" />
+    <ClInclude Include="src\jdhuff.h" />
+    <ClInclude Include="src\jdmainct.h" />
+    <ClInclude Include="src\jdmaster.h" />
+    <ClInclude Include="src\jdmerge.h" />
+    <ClInclude Include="src\jdsample.h" />
+    <ClInclude Include="src\jerror.h" />
+    <ClInclude Include="src\jinclude.h" />
+    <ClInclude Include="src\jmemsys.h" />
+    <ClInclude Include="src\jmorecfg.h" />
+    <ClInclude Include="src\jpegcomp.h" />
+    <ClInclude Include="src\jpegint.h" />
+    <ClInclude Include="src\jpeglib.h" />
+    <ClInclude Include="src\jpeg_nbits_table.h" />
+    <ClInclude Include="src\jsimd.h" />
+    <ClInclude Include="src\jsimddct.h" />
+    <ClInclude Include="src\jversion.h" />
+    <ClInclude Include="src\tjutil.h" />
+    <ClInclude Include="src\transupp.h" />
+    <ClInclude Include="src\turbojpeg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\simd\x86_64\jccolor-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jccolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jcgray-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jcgray-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jchuff-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jcphuff-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jcsample-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jcsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdcolor-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdcolor-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdmerge-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdmerge-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdsample-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jdsample-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jfdctflt-sse.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jfdctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jfdctint-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jfdctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jidctflt-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jidctfst-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jidctint-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jidctint-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jidctred-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jquantf-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jquanti-avx2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jquanti-sse2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\simd\x86_64\jsimdcpu.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\tools\NASM\nasm.exe -fwin64 -DWIN64 -D__x86_64__ -I"./src/simd/nasm/" -I"./src/simd/x86_64/" %(Identity) -o$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(ProjectDir)temp\$(Configuration)\%(Filename).obj</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a5209722-7f31-4f7d-a7a3-01e5e6515bd0}</ProjectGuid>
+    <RootNamespace>LibJpegturbo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

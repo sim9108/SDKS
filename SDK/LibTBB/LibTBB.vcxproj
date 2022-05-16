@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\tbbmalloc\backend.cpp" />
+    <ClCompile Include="src\src\tbbmalloc\backref.cpp" />
+    <ClCompile Include="src\src\tbbmalloc\frontend.cpp" />
+    <ClCompile Include="src\src\tbbmalloc\large_objects.cpp" />
+    <ClCompile Include="src\src\tbbmalloc\tbbmalloc.cpp" />
+    <ClCompile Include="src\src\tbb\address_waiter.cpp" />
+    <ClCompile Include="src\src\tbb\allocator.cpp" />
+    <ClCompile Include="src\src\tbb\arena.cpp" />
+    <ClCompile Include="src\src\tbb\arena_slot.cpp" />
+    <ClCompile Include="src\src\tbb\assert_impl.cpp" />
+    <ClCompile Include="src\src\tbb\concurrent_bounded_queue.cpp" />
+    <ClCompile Include="src\src\tbb\dynamic_link.cpp" />
+    <ClCompile Include="src\src\tbb\exception.cpp" />
+    <ClCompile Include="src\src\tbb\global_control.cpp" />
+    <ClCompile Include="src\src\tbb\governor.cpp" />
+    <ClCompile Include="src\src\tbb\itt_notify.cpp" />
+    <ClCompile Include="src\src\tbb\main.cpp" />
+    <ClCompile Include="src\src\tbb\market.cpp" />
+    <ClCompile Include="src\src\tbb\misc.cpp" />
+    <ClCompile Include="src\src\tbb\misc_ex.cpp" />
+    <ClCompile Include="src\src\tbb\observer_proxy.cpp" />
+    <ClCompile Include="src\src\tbb\parallel_pipeline.cpp" />
+    <ClCompile Include="src\src\tbb\private_server.cpp" />
+    <ClCompile Include="src\src\tbb\profiling.cpp" />
+    <ClCompile Include="src\src\tbb\queuing_rw_mutex.cpp" />
+    <ClCompile Include="src\src\tbb\rml_tbb.cpp" />
+    <ClCompile Include="src\src\tbb\rtm_mutex.cpp" />
+    <ClCompile Include="src\src\tbb\rtm_rw_mutex.cpp" />
+    <ClCompile Include="src\src\tbb\semaphore.cpp" />
+    <ClCompile Include="src\src\tbb\small_object_pool.cpp" />
+    <ClCompile Include="src\src\tbb\task.cpp" />
+    <ClCompile Include="src\src\tbb\task_dispatcher.cpp" />
+    <ClCompile Include="src\src\tbb\task_group_context.cpp" />
+    <ClCompile Include="src\src\tbb\version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\src\tbbmalloc\backend.h" />
+    <ClInclude Include="src\src\tbbmalloc\Customize.h" />
+    <ClInclude Include="src\src\tbbmalloc\large_objects.h" />
+    <ClInclude Include="src\src\tbbmalloc\MapMemory.h" />
+    <ClInclude Include="src\src\tbbmalloc\shared_utils.h" />
+    <ClInclude Include="src\src\tbbmalloc\Statistics.h" />
+    <ClInclude Include="src\src\tbbmalloc\Synchronize.h" />
+    <ClInclude Include="src\src\tbbmalloc\tbbmalloc_internal.h" />
+    <ClInclude Include="src\src\tbbmalloc\tbbmalloc_internal_api.h" />
+    <ClInclude Include="src\src\tbbmalloc\TypeDefinitions.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{7ac8bef5-dde9-42eb-9864-06ac95b1ab1c}</ProjectGuid>
+    <RootNamespace>LibTBB</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__TBB_BUILD=1;__TBB_SOURCE_DIRECTLY_INCLUDED=1;__TBB_USE_ITT_NOTIFY=0;__TBBMALLOC_BUILD=1;TBB_USE_ASSERT=0;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4018;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;__TBB_BUILD=1;__TBB_SOURCE_DIRECTLY_INCLUDED=1;__TBB_USE_ITT_NOTIFY=0;__TBBMALLOC_BUILD=1;TBB_USE_ASSERT=0;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;4244;4018;</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

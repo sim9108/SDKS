@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\src\decoders\canon_600.cpp" />
+    <ClCompile Include="src\src\decoders\crx.cpp" />
+    <ClCompile Include="src\src\decoders\decoders_dcraw.cpp" />
+    <ClCompile Include="src\src\decoders\decoders_libraw.cpp" />
+    <ClCompile Include="src\src\decoders\decoders_libraw_dcrdefs.cpp" />
+    <ClCompile Include="src\src\decoders\dng.cpp" />
+    <ClCompile Include="src\src\decoders\fp_dng.cpp" />
+    <ClCompile Include="src\src\decoders\fuji_compressed.cpp" />
+    <ClCompile Include="src\src\decoders\generic.cpp" />
+    <ClCompile Include="src\src\decoders\kodak_decoders.cpp" />
+    <ClCompile Include="src\src\decoders\load_mfbacks.cpp" />
+    <ClCompile Include="src\src\decoders\smal.cpp" />
+    <ClCompile Include="src\src\decoders\unpack.cpp" />
+    <ClCompile Include="src\src\decoders\unpack_thumb.cpp" />
+    <ClCompile Include="src\src\demosaic\aahd_demosaic.cpp" />
+    <ClCompile Include="src\src\demosaic\ahd_demosaic.cpp" />
+    <ClCompile Include="src\src\demosaic\dcb_demosaic.cpp" />
+    <ClCompile Include="src\src\demosaic\dht_demosaic.cpp" />
+    <ClCompile Include="src\src\demosaic\misc_demosaic.cpp" />
+    <ClCompile Include="src\src\demosaic\xtrans_demosaic.cpp" />
+    <ClCompile Include="src\src\integration\dngsdk_glue.cpp" />
+    <ClCompile Include="src\src\integration\rawspeed_glue.cpp" />
+    <ClCompile Include="src\src\libraw_c_api.cpp" />
+    <ClCompile Include="src\src\libraw_datastream.cpp" />
+    <ClCompile Include="src\src\metadata\adobepano.cpp" />
+    <ClCompile Include="src\src\metadata\canon.cpp" />
+    <ClCompile Include="src\src\metadata\ciff.cpp" />
+    <ClCompile Include="src\src\metadata\cr3_parser.cpp" />
+    <ClCompile Include="src\src\metadata\epson.cpp" />
+    <ClCompile Include="src\src\metadata\exif_gps.cpp" />
+    <ClCompile Include="src\src\metadata\fuji.cpp" />
+    <ClCompile Include="src\src\metadata\hasselblad_model.cpp" />
+    <ClCompile Include="src\src\metadata\identify.cpp" />
+    <ClCompile Include="src\src\metadata\identify_tools.cpp" />
+    <ClCompile Include="src\src\metadata\kodak.cpp" />
+    <ClCompile Include="src\src\metadata\leica.cpp" />
+    <ClCompile Include="src\src\metadata\makernotes.cpp" />
+    <ClCompile Include="src\src\metadata\mediumformat.cpp" />
+    <ClCompile Include="src\src\metadata\minolta.cpp" />
+    <ClCompile Include="src\src\metadata\misc_parsers.cpp" />
+    <ClCompile Include="src\src\metadata\nikon.cpp" />
+    <ClCompile Include="src\src\metadata\normalize_model.cpp" />
+    <ClCompile Include="src\src\metadata\olympus.cpp" />
+    <ClCompile Include="src\src\metadata\p1.cpp" />
+    <ClCompile Include="src\src\metadata\pentax.cpp" />
+    <ClCompile Include="src\src\metadata\samsung.cpp" />
+    <ClCompile Include="src\src\metadata\sony.cpp" />
+    <ClCompile Include="src\src\metadata\tiff.cpp" />
+    <ClCompile Include="src\src\postprocessing\aspect_ratio.cpp" />
+    <ClCompile Include="src\src\postprocessing\dcraw_process.cpp" />
+    <ClCompile Include="src\src\postprocessing\mem_image.cpp" />
+    <ClCompile Include="src\src\postprocessing\postprocessing_aux.cpp" />
+    <ClCompile Include="src\src\postprocessing\postprocessing_utils.cpp" />
+    <ClCompile Include="src\src\postprocessing\postprocessing_utils_dcrdefs.cpp" />
+    <ClCompile Include="src\src\preprocessing\ext_preprocess.cpp" />
+    <ClCompile Include="src\src\preprocessing\raw2image.cpp" />
+    <ClCompile Include="src\src\preprocessing\subtract_black.cpp" />
+    <ClCompile Include="src\src\tables\cameralist.cpp" />
+    <ClCompile Include="src\src\tables\colorconst.cpp" />
+    <ClCompile Include="src\src\tables\colordata.cpp" />
+    <ClCompile Include="src\src\tables\wblists.cpp" />
+    <ClCompile Include="src\src\utils\curves.cpp" />
+    <ClCompile Include="src\src\utils\decoder_info.cpp" />
+    <ClCompile Include="src\src\utils\init_close_utils.cpp" />
+    <ClCompile Include="src\src\utils\open.cpp" />
+    <ClCompile Include="src\src\utils\phaseone_processing.cpp" />
+    <ClCompile Include="src\src\utils\read_utils.cpp" />
+    <ClCompile Include="src\src\utils\thumb_utils.cpp" />
+    <ClCompile Include="src\src\utils\utils_dcraw.cpp" />
+    <ClCompile Include="src\src\utils\utils_libraw.cpp" />
+    <ClCompile Include="src\src\write\apply_profile.cpp" />
+    <ClCompile Include="src\src\write\file_write.cpp" />
+    <ClCompile Include="src\src\write\tiff_writer.cpp" />
+    <ClCompile Include="src\src\x3f\x3f_parse_process.cpp" />
+    <ClCompile Include="src\src\x3f\x3f_utils_patched.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{e3e5f235-10ed-420c-81ef-a5489f1a7517}</ProjectGuid>
+    <RootNamespace>LibRaw</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LIBRAW_NODLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4244;4305;4804;4018;4267;4146;4703;4101</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>LIBRAW_NODLL;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4244;4305;4804;4018;4267;4146;4703;4101</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

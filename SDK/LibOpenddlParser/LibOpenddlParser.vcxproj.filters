@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{e02f0e0f-7d21-4c1d-8c41-2843e841a46b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\code">
+      <UniqueIdentifier>{094b88fc-b1f2-4d4d-804e-b35bf575ca0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include">
+      <UniqueIdentifier>{454387c9-88c3-4862-a68e-7c9f7ed13309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\include\openddlparser">
+      <UniqueIdentifier>{e27219a1-6aa7-4610-b144-2bdd0493cc2d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\code\OpenDDLCommon.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\code\OpenDDLExport.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\code\OpenDDLParser.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\code\OpenDDLStream.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\code\Value.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+    <ClCompile Include="src\code\DDLNode.cpp">
+      <Filter>src\code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\include\openddlparser\OpenDDLCommon.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\OpenDDLExport.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\OpenDDLParser.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\OpenDDLParserUtils.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\OpenDDLStream.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\TPoolAllocator.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\Value.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+    <ClInclude Include="src\include\openddlparser\DDLNode.h">
+      <Filter>src\include\openddlparser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

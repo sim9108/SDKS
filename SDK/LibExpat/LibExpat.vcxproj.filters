@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{3104cb85-2e42-4ff8-b6bb-2ff949d95522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expat">
+      <UniqueIdentifier>{d60f10a5-ae25-41d5-923d-b486d8c045b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expat\lib">
+      <UniqueIdentifier>{2f8259fc-44e3-4173-9f70-b6f56e0f1ce3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\expat\lib\include">
+      <UniqueIdentifier>{f4daa369-6b19-4d20-8f45-01759f17f7a0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\expat\lib\xmlparse.c">
+      <Filter>src\expat\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\expat\lib\xmlrole.c">
+      <Filter>src\expat\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="src\expat\lib\xmltok.c">
+      <Filter>src\expat\lib</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\expat\lib\asciitab.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\expat.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\expat_external.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\iasciitab.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\internal.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\latin1tab.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\nametab.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\siphash.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\utf8tab.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\winconfig.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\xmlrole.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\xmltok.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\xmltok_impl.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\expat\lib\ascii.h">
+      <Filter>src\expat\lib\include</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

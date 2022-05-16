@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.cpp" />
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.cpp" />
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.cpp" />
+    <ClCompile Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxBaseGui.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxButton.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxColorPicker.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxGuiGroup.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxInputField.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxLabel.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxPanel.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxSlider.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxSliderGroup.cpp" />
+    <ClCompile Include="src\addons\ofxGui\src\ofxToggle.cpp" />
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxNetworkUtils.cpp" />
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPClient.cpp" />
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPManager.cpp" />
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxTCPServer.cpp" />
+    <ClCompile Include="src\addons\ofxNetwork\src\ofxUDPManager.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvColorImage.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvContourFinder.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvFloatImage.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvGrayscaleImage.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvHaarFinder.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvImage.cpp" />
+    <ClCompile Include="src\addons\ofxOpenCv\src\ofxCvShortImage.cpp" />
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscBundle.cpp" />
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscMessage.cpp" />
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscParameterSync.cpp" />
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscReceiver.cpp" />
+    <ClCompile Include="src\addons\ofxOsc\src\ofxOscSender.cpp" />
+    <ClCompile Include="src\addons\ofxPoco\src\ofxXmlPoco.cpp" />
+    <ClCompile Include="src\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.cpp" />
+    <ClCompile Include="src\addons\ofxVectorGraphics\libs\CreEPS.cpp" />
+    <ClCompile Include="src\addons\ofxVectorGraphics\src\ofxVectorGraphics.cpp" />
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="src\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="src\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\3d\of3dPrimitives.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\3d\of3dUtils.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\3d\ofCamera.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\3d\ofEasyCam.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\3d\ofNode.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppGLFWWindow.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppGlutWindow.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppNoWindow.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofAppRunner.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofBaseApp.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\app\ofMainLoop.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\communication\ofArduino.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\communication\ofSerial.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\events\ofEvents.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofBufferObject.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofFbo.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLProgrammableRenderer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLRenderer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofGLUtils.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofLight.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofMaterial.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofShader.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofTexture.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofVbo.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\gl\ofVboMesh.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\of3dGraphics.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofBitmapFont.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofCairoRenderer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofGraphics.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofGraphicsBaseTypes.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofImage.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofPath.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofPixels.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofRendererCollection.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofTessellator.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\graphics\ofTrueTypeFont.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofMath.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofMatrix3x3.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofMatrix4x4.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofQuaternion.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofVec2f.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\math\ofVec4f.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofFmodSoundPlayer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofOpenALSoundPlayer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofRtAudioSoundStream.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundBaseTypes.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundBuffer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundPlayer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\sound\ofSoundStream.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\types\ofBaseTypes.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\types\ofColor.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\types\ofParameter.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\types\ofParameterGroup.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\types\ofRectangle.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofFileUtils.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofFpsCounter.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofLog.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofMatrixStack.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofSystemUtils.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofThread.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofTimer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofURLFileLoader.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofUtils.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\utils\ofXml.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\video\ofDirectShowGrabber.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\video\ofDirectShowPlayer.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\video\ofVideoGrabber.cpp" />
+    <ClCompile Include="src\libs\openFrameworks\video\ofVideoPlayer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpAnimation.h" />
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpMeshHelper.h" />
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpModelLoader.h" />
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpTexture.h" />
+    <ClInclude Include="src\addons\ofxAssimpModelLoader\src\ofxAssimpUtils.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxBaseGui.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxButton.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxColorPicker.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxGui.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxGuiGroup.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxGuiUtils.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxInputField.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxLabel.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxPanel.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxSlider.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxSliderGroup.h" />
+    <ClInclude Include="src\addons\ofxGui\src\ofxToggle.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxNetwork.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxNetworkUtils.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPClient.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPManager.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPServer.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxTCPSettings.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxUDPManager.h" />
+    <ClInclude Include="src\addons\ofxNetwork\src\ofxUDPSettings.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvBlob.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvColorImage.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvConstants.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvContourFinder.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvFloatImage.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvGrayscaleImage.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvHaarFinder.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvImage.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxCvShortImage.h" />
+    <ClInclude Include="src\addons\ofxOpenCv\src\ofxOpenCv.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOsc.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscArg.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscBundle.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscMessage.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscParameterSync.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscReceiver.h" />
+    <ClInclude Include="src\addons\ofxOsc\src\ofxOscSender.h" />
+    <ClInclude Include="src\addons\ofxPoco\src\ofxXmlPoco.h" />
+    <ClInclude Include="src\addons\ofxThreadedImageLoader\src\ofxThreadedImageLoader.h" />
+    <ClInclude Include="src\addons\ofxVectorGraphics\libs\CreEPS.hpp" />
+    <ClInclude Include="src\addons\ofxVectorGraphics\libs\CreEPS_Types.hpp" />
+    <ClInclude Include="src\addons\ofxVectorGraphics\src\ofxVectorGraphics.h" />
+    <ClInclude Include="src\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="src\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\of3dPrimitives.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\of3dUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\ofCamera.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\ofEasyCam.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\ofMesh.h" />
+    <ClInclude Include="src\libs\openFrameworks\3d\ofNode.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppBaseWindow.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppEGLWindow.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppGLFWWindow.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppGlutWindow.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppNoWindow.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofAppRunner.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofBaseApp.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofIcon.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofMainLoop.h" />
+    <ClInclude Include="src\libs\openFrameworks\app\ofWindowSettings.h" />
+    <ClInclude Include="src\libs\openFrameworks\communication\ofArduino.h" />
+    <ClInclude Include="src\libs\openFrameworks\communication\ofSerial.h" />
+    <ClInclude Include="src\libs\openFrameworks\events\ofEvent.h" />
+    <ClInclude Include="src\libs\openFrameworks\events\ofEvents.h" />
+    <ClInclude Include="src\libs\openFrameworks\events\ofEventUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofBufferObject.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofFbo.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLBaseTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLProgrammableRenderer.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLRenderer.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofGLUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofLight.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofMaterial.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofShader.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofTexture.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofVbo.h" />
+    <ClInclude Include="src\libs\openFrameworks\gl\ofVboMesh.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\of3dGraphics.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofBitmapFont.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofCairoRenderer.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphics.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphicsBaseTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofGraphicsConstants.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofImage.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPath.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPixels.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofPolyline.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofRendererCollection.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofTessellator.h" />
+    <ClInclude Include="src\libs\openFrameworks\graphics\ofTrueTypeFont.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofMath.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofMathConstants.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofMatrix3x3.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofMatrix4x4.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofQuaternion.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec2f.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec3f.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofVec4f.h" />
+    <ClInclude Include="src\libs\openFrameworks\math\ofVectorMath.h" />
+    <ClInclude Include="src\libs\openFrameworks\ofMain.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofFmodSoundPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofOpenALSoundPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofRtAudioSoundStream.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundBaseTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundBuffer.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundStream.h" />
+    <ClInclude Include="src\libs\openFrameworks\sound\ofSoundUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofBaseTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofColor.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofParameter.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofParameterGroup.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofPoint.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofRectangle.h" />
+    <ClInclude Include="src\libs\openFrameworks\types\ofTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofConstants.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofFileUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofFpsCounter.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofJson.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofLog.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofMatrixStack.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofNoise.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofSystemUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofThread.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofThreadChannel.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofTimer.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofURLFileLoader.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\utils\ofXml.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofAVFoundationVideoPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofDirectShowGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofDirectShowPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstVideoGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofGstVideoPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitMovieRenderer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQTKitPlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQtUtils.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQuickTimeGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofQuickTimePlayer.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoBaseTypes.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoGrabber.h" />
+    <ClInclude Include="src\libs\openFrameworks\video\ofVideoPlayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\libs\openFrameworks\3d\ofMesh.inl" />
+    <None Include="src\libs\openFrameworks\gl\shaders\phong.frag" />
+    <None Include="src\libs\openFrameworks\gl\shaders\phong.vert" />
+    <None Include="src\libs\openFrameworks\graphics\ofPolyline.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\dependency.txt" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{9b317420-8b4a-4cd8-ae33-f57035d84106}</ProjectGuid>
+    <RootNamespace>LibOpenFrameworks</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;CAIRO_WIN32_STATIC_BUILD=1;FREEIMAGE_LIB;URI_STATIC_BUILD;CURL_STATICLIB;OSC_HOST_LITTLE_ENDIAN;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;POCO_NO_AUTOMATIC_LIBS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\libs\openFrameworks;.\src\libs\openFrameworks\types;.\src\libs\openFrameworks\utils;.\src\libs\openFrameworks\math;.\src\libs\openFrameworks\graphics;.\src\libs\openFrameworks\gl;.\src\libs\openFrameworks\events;.\src\libs\openFrameworks\app;.\src\libs\openFrameworks\sound;.\src\libs\openFrameworks\communication;.\src\libs\openFrameworks\video;.\src\libs\openFrameworks\3d;.\src\addons\ofxOsc\libs\oscpack\src;.\src\addons\ofxOsc\libs\oscpack\src\ip;.\src\addons\ofxOsc\libs\oscpack\src\osc;..\LibGlut\src\include;..\LibGlut\src\include\GL;..\LibGlfw\src\include;..\LibGlew\src\include;..\LibTess2Glut\src\Include;..\LibGlm\src;..\LibUtfcpp\src\source;..\LibFmod\include;..\LibCairo\src\src;..\LibFreeImage\src\Source;..\LibFreetype\src\include;..\LibUriparser\src\include;..\LibRtAudio\src;..\LibRtAudio\src\include;..\LibPugixml\src\src;..\LibCurl\src\include;..\LibVideoInput\src;..\LibJson\src\include;..\LibJson\src\include\nlohmann;..\LibPoco\src\Foundation\include;..\LibPoco\src\XML\include;.\src\addons\ofxVectorGraphics\libs;..\LibOpenCV\include;..\LibAssimp\src\include;..\LibBoost\src;..\LibOscpack\src;..\LibOscpack\src\ip;..\LibOscpack\src\osc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4267;4996;4834;4333;4101;4305;4244;4477;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibGlut\lib64;..\LibGlfw\lib64;..\LibGlew\lib64;..\LibTess2Glut\lib64;..\LibFmod\lib64;..\LibCairo\lib64;..\LibFreeImage\lib64;..\LibFreetype\lib64;..\LibUriparser\lib64;..\LibRtAudio\lib64;..\LibPugixml\lib64;..\LibCurl\lib64;..\LibVideoInput\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibPixman\lib64;..\LibFontConfig\lib64;..\LibJpegturbo\lib64;..\LibTiff\lib64;..\LibImath\lib64;..\LibOpenEXR\lib64;..\LibOpenJPEG\lib64;..\LibRaw\lib64;..\LibWebP\lib64;..\LibJXR\lib64;..\LibExpat\lib64;..\LibOpenCV\lib64;..\LibPoco\lib64;..\LibIppicv\src\icv\lib\intel64\;..\LibIppicv\lib64;..\LibIttnotify\lib64;..\LibTBB\lib64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmod_vc.lib;Opengl32.lib;Winmm.lib;Setupapi.lib;Glu32.lib;Wldap32.lib;ippicvmt.lib;Iphlpapi.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibOpenCV_calib3dSMTd.lib;LibOpenCV_features2dSMTd.lib;LibOpenCV_flannSMTd.lib;LibOpenCV_highguiSMTd.lib;LibOpenCV_imgcodecsSMTd.lib;LibOpenCV_mlSMTd.lib;LibOpenCV_objdetectSMTd.lib;LibOpenCV_photoSMTd.lib;LibOpenCV_videoSMTd.lib;LibOpenCV_videoioSMTd.lib;LibOpenCV_dnnSMTd.lib;LibOpenCV_stitchingSMTd.lib;LibGlutSMTd.lib;LibGlfwSMTd.lib;LibGlewSMTd.lib;LibTess2GlutSMTd.lib;LibCairoSMTd.lib;LibFreeImageSMTd.lib;LibFreetypeSMTd.lib;LibUriparserSMTd.lib;LibRtAudioSMTd.lib;LibPugixmlSMTd.lib;LibCurlSMTd.lib;LibVideoInputSMTd.lib;LibPixmanSMTd.lib;LibPngSMTd.lib;LibZSMTd.lib;LibFontConfigSMTd.lib;LibJpegturboSMTd.lib;LibTiffSMTd.lib;LibImathSMTd.lib;LibOpenEXRSMTd.lib;LibOpenJPEGSMTd.lib;LibRawSMTd.lib;LibWebPSMTd.lib;LibJXRSMTd.lib;LibExpatSMTd.lib;LibPocoSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_HAS_STD_BYTE=0;CAIRO_WIN32_STATIC_BUILD=1;FREEIMAGE_LIB;URI_STATIC_BUILD;CURL_STATICLIB;OSC_HOST_LITTLE_ENDIAN;POCO_ENABLE_CPP14;POCO_ENABLE_CPP11;POCO_OS_FAMILY_WINDOWS;POCO_NO_AUTOMATIC_LIBS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src\libs\openFrameworks;.\src\libs\openFrameworks\types;.\src\libs\openFrameworks\utils;.\src\libs\openFrameworks\math;.\src\libs\openFrameworks\graphics;.\src\libs\openFrameworks\gl;.\src\libs\openFrameworks\events;.\src\libs\openFrameworks\app;.\src\libs\openFrameworks\sound;.\src\libs\openFrameworks\communication;.\src\libs\openFrameworks\video;.\src\libs\openFrameworks\3d;.\src\addons\ofxOsc\libs\oscpack\src;.\src\addons\ofxOsc\libs\oscpack\src\ip;.\src\addons\ofxOsc\libs\oscpack\src\osc;..\LibGlut\src\include;..\LibGlut\src\include\GL;..\LibGlfw\src\include;..\LibGlew\src\include;..\LibTess2Glut\src\Include;..\LibGlm\src;..\LibUtfcpp\src\source;..\LibFmod\include;..\LibCairo\src\src;..\LibFreeImage\src\Source;..\LibFreetype\src\include;..\LibUriparser\src\include;..\LibRtAudio\src;..\LibRtAudio\src\include;..\LibPugixml\src\src;..\LibCurl\src\include;..\LibVideoInput\src;..\LibJson\src\include;..\LibJson\src\include\nlohmann;..\LibPoco\src\Foundation\include;..\LibPoco\src\XML\include;.\src\addons\ofxVectorGraphics\libs;..\LibOpenCV\include;..\LibAssimp\src\include;..\LibBoost\src;..\LibOscpack\src;..\LibOscpack\src\ip;..\LibOscpack\src\osc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;4267;4996;4834;4333;4101;4305;4244;4477;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\LibGlut\lib64;..\LibGlfw\lib64;..\LibGlew\lib64;..\LibTess2Glut\lib64;..\LibFmod\lib64;..\LibCairo\lib64;..\LibFreeImage\lib64;..\LibFreetype\lib64;..\LibUriparser\lib64;..\LibRtAudio\lib64;..\LibPugixml\lib64;..\LibCurl\lib64;..\LibVideoInput\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibPixman\lib64;..\LibFontConfig\lib64;..\LibJpegturbo\lib64;..\LibTiff\lib64;..\LibImath\lib64;..\LibOpenEXR\lib64;..\LibOpenJPEG\lib64;..\LibRaw\lib64;..\LibWebP\lib64;..\LibJXR\lib64;..\LibExpat\lib64;..\LibOpenCV\lib64;..\LibPoco\lib64;..\LibIppicv\src\icv\lib\intel64\;..\LibIppicv\lib64;..\LibIttnotify\lib64;..\LibTBB\lib64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmod_vc.lib;Opengl32.lib;Winmm.lib;Setupapi.lib;Glu32.lib;Wldap32.lib;ippicvmt.lib;Iphlpapi.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibOpenCV_calib3dSMT.lib;LibOpenCV_features2dSMT.lib;LibOpenCV_flannSMT.lib;LibOpenCV_highguiSMT.lib;LibOpenCV_imgcodecsSMT.lib;LibOpenCV_mlSMT.lib;LibOpenCV_objdetectSMT.lib;LibOpenCV_photoSMT.lib;LibOpenCV_videoSMT.lib;LibOpenCV_videoioSMT.lib;LibOpenCV_dnnSMT.lib;LibOpenCV_stitchingSMT.lib;LibGlutSMT.lib;LibGlfwSMT.lib;LibGlewSMT.lib;LibTess2GlutSMT.lib;LibCairoSMT.lib;LibFreeImageSMT.lib;LibFreetypeSMT.lib;LibUriparserSMT.lib;LibRtAudioSMT.lib;LibPugixmlSMT.lib;LibCurlSMT.lib;LibVideoInputSMT.lib;LibPixmanSMT.lib;LibPngSMT.lib;LibZSMT.lib;LibFontConfigSMT.lib;LibJpegturboSMT.lib;LibTiffSMT.lib;LibImathSMT.lib;LibOpenEXRSMT.lib;LibOpenJPEGSMT.lib;LibRawSMT.lib;LibWebPSMT.lib;LibJXRSMT.lib;LibExpatSMT.lib;LibPocoSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

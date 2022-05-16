@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\wechat_qrcode\opencv_wechat_qrcode_pch.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\binarizermgr.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\decodermgr.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\detector\align.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\detector\ssd_detector.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\imgsource.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\scale\super_scale.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\wechat_qrcode.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\binarybitmap.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\adaptive_threshold_mean_binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\fast_window_binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\global_histogram_binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\hybrid_binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\simple_adaptive_binarizer.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\bitarray.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\bitmatrix.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\bitsource.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\bytematrix.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\characterseteci.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\decoder_result.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\detector_result.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\greyscale_luminance_source.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\greyscale_rotated_luminance_source.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\grid_sampler.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\imagecut.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\kmeans.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\perspective_transform.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\genericgf.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\genericgfpoly.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\reed_solomon_decoder.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\str.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\stringutils.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\common\unicomblock.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\errorhandler.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\luminance_source.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\bitmatrixparser.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\datablock.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\datamask.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\decoded_bit_stream_parser.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\decoder.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\mode.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\alignment_pattern.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\alignment_pattern_finder.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\detector.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern_finder.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern_info.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\pattern_result.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\error_correction_level.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\format_information.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\qrcode_reader.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\qrcode\version.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\reader.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\result.cpp" />
+    <ClCompile Include="src\modules\wechat_qrcode\src\zxing\resultpoint.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\wechat_qrcode\src\binarizermgr.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\decodermgr.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\detector\align.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\detector\ssd_detector.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\imgsource.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\precomp.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\scale\super_scale.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\binarybitmap.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\array.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\adaptive_threshold_mean_binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\fast_window_binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\global_histogram_binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\hybrid_binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\binarizer\simple_adaptive_binarizer.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\bitarray.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\bitmatrix.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\bitsource.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\bytematrix.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\characterseteci.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\counted.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\decoder_result.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\detector_result.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\greyscale_luminance_source.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\greyscale_rotated_luminance_source.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\grid_sampler.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\imagecut.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\kmeans.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\mathutils.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\perspective_transform.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\genericgf.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\genericgfpoly.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\reedsolomon\reed_solomon_decoder.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\str.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\stringutils.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\common\unicomblock.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\decodehints.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\errorhandler.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\luminance_source.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\bitmatrixparser.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\datablock.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\datamask.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\decoded_bit_stream_parser.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\decoder.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\mode.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\decoder\qrcode_decoder_metadata.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\alignment_pattern.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\alignment_pattern_finder.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\detector.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern_finder.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\finder_pattern_info.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\detector\pattern_result.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\error_correction_level.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\format_information.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\qrcode_reader.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\qrcode\version.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\reader.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\result.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\resultpoint.hpp" />
+    <ClInclude Include="src\modules\wechat_qrcode\src\zxing\zxing.hpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{E66F21D2-741C-42A6-8DCC-544A3359C6E1}</ProjectGuid>
+    <RootNamespace>LibOpenCVimgproc</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\wechat_qrcode\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\moduels\wechat_qrcode\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\imgcodecs\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\stitching\include;.\src\modules\gapi\include;.\src\modules\objdetect\include;.\src\modules\highgui\include;.\src\modules\photo\include;.\src\modules\video\include;.\src\modules\videoio\include;.\src\modules\wechat_qrcode;.\src\modules\wechat_qrcode\include;.\src\modules\wechat_qrcode\src;.\src\modules\dnn\include;.\src\modules\ml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4267;4305;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMTd.lib;LibOpenJPEGSMTd.lib;LibPngSMTd.lib;LibWebPSMTd.lib;LibTiffSMTd.lib;LibJpegturboSMTd.lib;LibImathSMTd.lib;LibIppicvSMTd.lib;LibTBBSMTd.lib;LibIttnotifySMTd.lib;LibZSMTd.lib;LibProtobufSMTd.lib;LibOpenCV_coreSMTd.lib;LibOpenCV_imgprocSMTd.lib;LibOpenCV_imgcodecsSMTd.lib;LibOpenCV_flannSMTd.lib;LibOpenCV_calib3dSMTd.lib;LibOpenCV_features2dSMTd.lib;LibOpenCV_dnnSMTd.lib;LibOpenCV_objdetectSMTd.lib;LibOpenCV_photoSMTd.lib;LibOpenCV_mlSMTd.lib;LibOpenCV_tsSMTd.lib;LibOpenCV_videoSMTd.lib;LibOpenCV_videoioSMTd.lib;LibOpenCV_stitchingSMTd.lib;LibOpenCV_gapiSMTd.lib;LibOpenCV_highguiSMTd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__OPENCV_BUILD=1;OPENCV_WITH_ITT=1;_USE_MATH_DEFINES;__TBB_NO_IMPLICIT_LINKAGE=1;__STDC_CONSTANT_MACROS;__STDC_LIMIT_MACROS;__STDC_FORMAT_MACROS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..\LibIppicv\src\iw\include;..\LibIppicv\src\icv\include;..\LibIttnotify\src\include;..\LibEigen\src;.\src;.\src\include;.\src\modules;.\src\modules\core\include;.\src\modules\imgproc\include;.\src\modules\imgcodecs\include;.\src\modules\calib3d\include;.\src\modules\features2d\include;.\src\modules\flann\include;.\src\modules\stitching\include;.\src\modules\gapi\include;.\src\modules\objdetect\include;.\src\modules\highgui\include;.\src\modules\photo\include;.\src\modules\video\include;.\src\modules\videoio\include;.\src\modules\wechat_qrcode;.\src\modules\wechat_qrcode\include;.\src\modules\wechat_qrcode\src;.\src\modules\dnn\include;.\src\modules\ml\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5055;4267;4305;</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>.\lib64;..\LibIppicv\src\icv\lib\intel64;..\LibIppicv\lib64;..\LibTBB\lib64;..\LibIttnotify\lib64;..\LibPng\lib64;..\LibZ\lib64;..\LibOpenEXR\lib64;..\LibJpegturbo\lib64;..\LibOpenJPEG\lib64;..\LibTiff\lib64;..\LibWebP\lib64;..\LibImath\lib64;..\LibProtobuf\lib64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ippicvmt.lib;LibOpenEXRSMT.lib;LibOpenJPEGSMT.lib;LibPngSMT.lib;LibWebPSMT.lib;LibTiffSMT.lib;LibJpegturboSMT.lib;LibImathSMT.lib;LibIppicvSMT.lib;LibTBBSMT.lib;LibIttnotifySMT.lib;LibZSMT.lib;LibProtobufSMT.lib;LibOpenCV_coreSMT.lib;LibOpenCV_imgprocSMT.lib;LibOpenCV_imgcodecsSMT.lib;LibOpenCV_flannSMT.lib;LibOpenCV_calib3dSMT.lib;LibOpenCV_features2dSMT.lib;LibOpenCV_dnnSMT.lib;LibOpenCV_objdetectSMT.lib;LibOpenCV_photoSMT.lib;LibOpenCV_mlSMT.lib;LibOpenCV_tsSMT.lib;LibOpenCV_videoSMT.lib;LibOpenCV_videoioSMT.lib;LibOpenCV_stitchingSMT.lib;LibOpenCV_gapiSMT.lib;LibOpenCV_highguiSMT.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d84fab49-df92-4b7b-a8f2-7d72e88095a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules">
+      <UniqueIdentifier>{8ccaa462-1c6a-4fb2-94d5-a6b7112cbd71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bgsegm">
+      <UniqueIdentifier>{d54b7340-edaf-4703-918d-17295c5b6b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\modules\bgsegm\src">
+      <UniqueIdentifier>{85667c7f-87d4-485e-8015-89496d148b2a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\modules\bgsegm\opencv_bgsegm_pch.cpp">
+      <Filter>src\modules\bgsegm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bgsegm\src\bgfg_gmg.cpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bgsegm\src\bgfg_gsoc.cpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bgsegm\src\bgfg_subcnt.cpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bgsegm\src\synthetic_seq.cpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\modules\bgsegm\src\bgfg_gaussmix.cpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\modules\bgsegm\src\precomp.hpp">
+      <Filter>src\modules\bgsegm\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

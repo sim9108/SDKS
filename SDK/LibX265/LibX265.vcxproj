@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_SMT|x64">
+      <Configuration>Debug_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_SMT|x64">
+      <Configuration>Release_SMT</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\source\common\bitstream.h" />
+    <ClInclude Include="src\source\common\common.h" />
+    <ClInclude Include="src\source\common\constants.h" />
+    <ClInclude Include="src\source\common\contexts.h" />
+    <ClInclude Include="src\source\common\cpu.h" />
+    <ClInclude Include="src\source\common\cudata.h" />
+    <ClInclude Include="src\source\common\deblock.h" />
+    <ClInclude Include="src\source\common\frame.h" />
+    <ClInclude Include="src\source\common\framedata.h" />
+    <ClInclude Include="src\source\common\lowres.h" />
+    <ClInclude Include="src\source\common\md5.h" />
+    <ClInclude Include="src\source\common\mv.h" />
+    <ClInclude Include="src\source\common\param.h" />
+    <ClInclude Include="src\source\common\piclist.h" />
+    <ClInclude Include="src\source\common\picyuv.h" />
+    <ClInclude Include="src\source\common\predict.h" />
+    <ClInclude Include="src\source\common\primitives.h" />
+    <ClInclude Include="src\source\common\quant.h" />
+    <ClInclude Include="src\source\common\scaler.h" />
+    <ClInclude Include="src\source\common\scalinglist.h" />
+    <ClInclude Include="src\source\common\shortyuv.h" />
+    <ClInclude Include="src\source\common\slice.h" />
+    <ClInclude Include="src\source\common\threading.h" />
+    <ClInclude Include="src\source\common\threadpool.h" />
+    <ClInclude Include="src\source\common\wavefront.h" />
+    <ClInclude Include="src\source\common\winxp.h" />
+    <ClInclude Include="src\source\common\x86\blockcopy8.h" />
+    <ClInclude Include="src\source\common\x86\dct8.h" />
+    <ClInclude Include="src\source\common\x86\intrapred.h" />
+    <ClInclude Include="src\source\common\x86\ipfilter8.h" />
+    <ClInclude Include="src\source\common\x86\loopfilter.h" />
+    <ClInclude Include="src\source\common\x86\mc.h" />
+    <ClInclude Include="src\source\common\x86\pixel-util.h" />
+    <ClInclude Include="src\source\common\x86\pixel.h" />
+    <ClInclude Include="src\source\common\x86\seaintegral.h" />
+    <ClInclude Include="src\source\common\yuv.h" />
+    <ClInclude Include="src\source\dynamicHDR10\BasicStructures.h" />
+    <ClInclude Include="src\source\dynamicHDR10\hdr10plus.h" />
+    <ClInclude Include="src\source\dynamicHDR10\json11\json11.h" />
+    <ClInclude Include="src\source\dynamicHDR10\JsonHelper.h" />
+    <ClInclude Include="src\source\dynamicHDR10\metadataFromJson.h" />
+    <ClInclude Include="src\source\dynamicHDR10\SeiMetadataDictionary.h" />
+    <ClInclude Include="src\source\encoder\analysis.h" />
+    <ClInclude Include="src\source\encoder\bitcost.h" />
+    <ClInclude Include="src\source\encoder\dpb.h" />
+    <ClInclude Include="src\source\encoder\encoder.h" />
+    <ClInclude Include="src\source\encoder\entropy.h" />
+    <ClInclude Include="src\source\encoder\frameencoder.h" />
+    <ClInclude Include="src\source\encoder\framefilter.h" />
+    <ClInclude Include="src\source\encoder\level.h" />
+    <ClInclude Include="src\source\encoder\motion.h" />
+    <ClInclude Include="src\source\encoder\nal.h" />
+    <ClInclude Include="src\source\encoder\ratecontrol.h" />
+    <ClInclude Include="src\source\encoder\rdcost.h" />
+    <ClInclude Include="src\source\encoder\reference.h" />
+    <ClInclude Include="src\source\encoder\sao.h" />
+    <ClInclude Include="src\source\encoder\search.h" />
+    <ClInclude Include="src\source\encoder\sei.h" />
+    <ClInclude Include="src\source\encoder\slicetype.h" />
+    <ClInclude Include="src\source\encoder\svt.h" />
+    <ClInclude Include="src\source\x265.h" />
+    <ClInclude Include="src\source\x265cli.h" />
+    <ClInclude Include="src\x265_config.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\source\common\bitstream.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\common.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\constants.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\cpu.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\cudata.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\dct.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\deblock.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\frame.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\framedata.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\intrapred.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\ipfilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\loopfilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\lowpassdct.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\lowres.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\md5.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\param.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\piclist.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\picyuv.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\pixel.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\predict.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\primitives.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\quant.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\scaler.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\scalinglist.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\shortyuv.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\slice.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\threading.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\threadpool.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\vec\dct-sse3.cpp" />
+    <ClCompile Include="src\source\common\vec\dct-sse41.cpp" />
+    <ClCompile Include="src\source\common\vec\dct-ssse3.cpp" />
+    <ClCompile Include="src\source\common\vec\vec-primitives.cpp" />
+    <ClCompile Include="src\source\common\version.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\wavefront.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\winxp.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\common\x86\asm-primitives.cpp" />
+    <ClCompile Include="src\source\common\yuv.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)common\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)common\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\dynamicHDR10\api.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\dynamicHDR10\json11\json11.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\dynamicHDR10\JsonHelper.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\dynamicHDR10\metadataFromJson.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\dynamicHDR10\SeiMetadataDictionary.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)dynamiccHDR10\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\analysis.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\api.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\bitcost.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\dpb.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\encoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\entropy.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\frameencoder.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\framefilter.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\level.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\motion.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\nal.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\ratecontrol.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\reference.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\sao.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\search.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\sei.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\slicetype.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="src\source\encoder\weightPrediction.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntDir)encoder\</ObjectFileName>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\source\common\x86\blockcopy8.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\const-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\cpu-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\dct8.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\h-ipfilter16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\h4-ipfilter16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\intrapred16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\ipfilter16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\loopfilter.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\mc-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\mc-a2.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\pixel-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\pixel-util8.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\pixeladd8.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\sad16-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\seaintegral.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\ssd-a.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\source\common\x86\v4-ipfilter16.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">..\Tools\NASM\nasm.exe -f win64 -w-macro-params-legacy -DARCH_X86_64=1 -I$(ProjectDir)src\source\common\x86\ -I$(ProjectDir)include\ -DPIC -DHAVE_ALIGNED_STACK=0 -DHIGH_BIT_DEPTH=1 -DBIT_DEPTH=10 -DX265_NS=x265 %(Identity)  -o$(IntermediateOutputPath)asm_%(Filename).obj</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">%(Filename).obj</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">$(IntermediateOutputPath)asm_%(Filename).obj</Outputs>
+    </CustomBuild>
+    <None Include="src\source\common\x86\x86inc.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+    <None Include="src\source\common\x86\x86util.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a32e5a56-e876-4064-a4fb-69649c9bc3c1}</ProjectGuid>
+    <RootNamespace>LibX265</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\libX265\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMTd</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)lib64\</OutDir>
+    <IntDir>$(ProjectDir)temp\libX265\core\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)SMT</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;ENABLE_ASSEMBLY=1;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\source\;.\src\source\common;.\src\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5033</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_SMT|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>X265_ARCH_X86=1;X86_64=1;_CRT_SECURE_NO_WARNINGS;HAVE_INT_TYPES_H=1;HIGH_BIT_DEPTH=1;X265_DEPTH=10;ENABLE_HDR10_PLUS;EXPORT_C_API=1;X265_NS=x265;ENABLE_ASSEMBLY=1;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>.\src;.\src\source\;.\src\source\common;.\src\source\encoder;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4819;5033</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>
+      </SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
